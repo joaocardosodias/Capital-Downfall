@@ -11,7 +11,7 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/in/victorbarq/">Ana Cristina Alves Jardim</a>
+- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 1</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 2</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 3</a> 
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 4</a> 
