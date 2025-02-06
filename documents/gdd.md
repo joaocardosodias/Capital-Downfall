@@ -8,11 +8,12 @@
 ## Nome do Grupo
 
 #### Nomes dos integrantes do grupo
-Ana Cristina Alves Jardim
-Henrique de Lima da Rós
-Lucas Garcia Rodrigues Lopes
-Lucas Michel Pereira
-Nicole Zanin Silva
+Ana Cristina Alves Jardim <br>
+Henrique de Lima da Rós <br>
+Lucas Garcia Rodrigues Lopes <br>
+Lucas Michel Pereira <br>
+Nicole Zanin Silva <br>
+
 
 ## Sumário
 
