@@ -13,6 +13,7 @@ Henrique de Lima da Rós <br>
 Lucas Garcia Rodrigues Lopes <br>
 Lucas Michel Pereira <br>
 Nicole Zanin Silva <br>
+João Cardoso Dias <br>
 
 
 ## Sumário
