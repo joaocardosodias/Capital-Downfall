@@ -238,6 +238,7 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 Para o desenvolvimento preliminar no jogo foram realizados testes de cenários, escolhas de design e algumas diretrizes para o jogo. Nesses testes de cenário foi produzida uma  sala temporária do escritório do banco juntamente com um personagem(bloco branco) para exemplificar a movimentação.
 Para a movimentação do personagem foi realizado uma sequência de códigos, iniciando pela construção da página em HTML , seguido das configurações do jogo em JavaScript:
 
+Cenário Incial:
 <p align="center">
 <img src="../assets/cenainicial.png">
 </p>
@@ -246,6 +247,30 @@ Estrutura da página web do jogo em HTML:
 <p align="center">
 <img src="../assets/estruturahtml.png">
 </p>
+
+Configuração inicial do jogo no Phaser:
+<p align="center">
+<img src="../assets/configphaser.png">
+</p>
+
+Configuração da tela inicial do jogo:
+<p align="center">
+<img src="../assets/configtelainicial.png">
+</p>
+<p align="center">
+<img src="../assets/configtelainicial2.png">
+</p>
+<p align="center">
+<img src="../assets/configtelainicial3.png">
+</p>
+<p align="center">
+<img src="../assets/configtelainicial4.png">
+</p>
+<p align="center">
+<img src="../assets/configtelainicial5.png">
+</p>
+
+
 
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
