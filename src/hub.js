@@ -28,6 +28,7 @@
 
       preload()
       {
+
           //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
 
           this.load.image('tiles', 'assets/tilesetInicial.png');

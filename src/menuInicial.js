@@ -43,6 +43,6 @@ class menuInicial extends Phaser.Scene
             game.scene.stop('menuInicial');
 
             game.scene.start('hub');
-        }
+        }   
     )}
 }
