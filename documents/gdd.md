@@ -75,8 +75,25 @@ Teodoro Borges de Carvalho Neira <br>
 *Definição de metas SMART (específicas, mensuráveis, alcançáveis, relevantes e temporais) para seu projeto, com indicadores claros para mensuração*
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
+Durante a reunião com o parceiro do projeto foi possível definir uma série de requisitos que contemplam desde a estética até a mecânica do jogo.
 
-*Posicione aqui a lista de requisitos levantados para o projeto, sejam pedidos do parceiro ou invenções do grupo. Descreva-os de forma objetiva, de modo que seja possível entender claramente como implementá-los tecnicamente.*
+
+<div align="center">
+<sub>Quadro 02 - Requisitos do Projeto</sub>
+</div>
+
+**Quadro de requisitos**
+\# | **Requisito**  
+--- | ---
+1 | Desconstruir a ideia que é um processo complicado e garantir um senso de responsabilidade
+2 | O jogo terá uma câmera oblíqua, seguindo o jogador
+3 | O jogador poderá interagir com os botões presentes na tela utilizando  o botão esquerdo do mouse
+4 | O jogador se movimenta utilizando as “setinhas” do  teclado.
+5 |O jogador poderá interagir com terminais, computadores e outros elementos ao pressionar a tecla "espaço "
+6 | Menus de tarefas e quizzes aparecerão na tela quando o jogador interagir com determinados pontos no mapa
+
+<div align="center">
+
 
 *ATUALIZE ESTA SEÇÃO SEMPRE QUE ALGUM REQUISITO MUDAR EM SEU PROJETO*
 
