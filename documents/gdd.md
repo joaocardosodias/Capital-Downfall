@@ -281,6 +281,16 @@ Configuração sobre a “Tela de login”:
 <img src="../assets/configtelalogin3.png">
 </p>
 
+Configuração da fase inicial do jogo:
+<p align="center">
+<img src="../assets/configfaseinicial.png">
+</p>
+<p align="center">
+<img src="../assets/configfaseinicial2.png">
+</p>
+
+
+
 
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
