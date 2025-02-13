@@ -250,7 +250,7 @@ Estrutura da página web do jogo em HTML:
 
 Configuração inicial do jogo no Phaser:
 <p align="center">
-<img src="../assets/configphaser.png">
+<img src="../assets/configuracaophaser.png">
 </p>
 
 Configuração da tela inicial do jogo:
@@ -270,6 +270,16 @@ Configuração da tela inicial do jogo:
 <img src="../assets/configtelainicial5.png">
 </p>
 
+Configuração sobre a “Tela de login”:
+<p align="center">
+<img src="../assets/configtelalogin.png">
+</p>
+<p align="center">
+<img src="../assets/configtelalogin2.png">
+</p>
+<p align="center">
+<img src="../assets/configtelalogin3.png">
+</p>
 
 
 
