@@ -249,7 +249,7 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 
 Cena da interface do computador:
 <p align="center">
-<img src="..assets/imailInicial.png">
+<img src="../assets/imailInicial.png">
 </p>
 
 Parte do código referente a cena:
