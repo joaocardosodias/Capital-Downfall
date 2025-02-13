@@ -242,6 +242,11 @@ Para a movimentação do personagem foi realizado uma sequência de códigos, in
 <img src="../assets/cenainicial.png">
 </p>
 
+Estrutura da página web do jogo em HTML:
+<p align="center">
+<img src="../assets/estruturahtml.png">
+</p>
+
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
