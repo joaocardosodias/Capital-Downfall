@@ -85,11 +85,11 @@ Durante a reunião com o parceiro do projeto foi possível definir uma série de
 **Quadro de requisitos**
 \# | **Requisito**  
 --- | ---
-1 | Desconstruir a ideia que é um processo complicado e garantir um senso de responsabilidade
+1 | Desconstruir a ideia que o onboarding é um processo complicado e garantir um senso de responsabilidade para o usuário
 2 | O jogo terá uma câmera oblíqua, seguindo o jogador
-3 | O jogador poderá interagir com os botões presentes na tela utilizando  o botão esquerdo do mouse
+3 | O jogador poderá interagir com os botões presentes na tela utilizando o botão esquerdo do mouse
 4 | O jogador se movimenta utilizando as “setinhas” do  teclado.
-5 |O jogador poderá interagir com terminais, computadores e outros elementos ao pressionar a tecla "espaço "
+5 |O jogador poderá interagir com terminais, computadores e outros elementos ao pressionar a tecla "espaço"
 6 | Menus de tarefas e quizzes aparecerão na tela quando o jogador interagir com determinados pontos no mapa
 
 <div align="center">
@@ -241,62 +241,39 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
 
-Para o desenvolvimento preliminar no jogo foram realizados testes de cenários, escolhas de design e algumas diretrizes para o jogo. Nesses testes de cenário foi produzida uma  sala temporária do escritório do banco juntamente com um personagem(bloco branco) para exemplificar a movimentação.
-Para a movimentação do personagem foi realizado uma sequência de códigos, iniciando pela construção da página em HTML , seguido das configurações do jogo em JavaScript:
+Para o desenvolvimento do nosso projeto, o método _Scrum_ foi utilizado. Nele, o desenvolvimento é divido em _sprints_, cada uma com aproximadamente 2 semanas de duração. Cada _sprint_ é essencial para o progresso do projeto, o primeiro deles sendo o mais significante, já que é o período na qual grupo estipulou o escopo do projeto, além de escolher a direção a ser seguida. Nessa etapa também foi definido que a linguagem de programação utilizada seria o JavaScript, unido ao framework Phaser.
 
-Cenário Incial:
-<p align="center">
-<img src="../assets/cenainicial.png">
-</p>
+De acordo com as mêcanicas definidas pela equipe, a tela escolhida para ser a primeira a ser desenvolvida foi a da interface do computador. Nela, o jogador recebe o contexto por trás da narrativa apresentada, além de ser o local que precede os minijogos. Ela precisava capturar a essência do projeto, sendo capaz de comunicar para o usuário o estilo de ensino abordado. Na parte do código, uma função de tempo foi utilizada, como forma de evitar que o jogador apenas pule a cena sem ao menos ter a lido. Além disso, um botão foi posicionado no canto inferior direito da tela que, ao ser clickado, mudaria para a cena seguinte.
 
-Estrutura da página web do jogo em HTML:
+A criação dessa tela não tem apenas uma importância técnica, mas também temática. Ela é essencial para a validação do progresso do projeto, permitindo que o grupo consiga entender se está seguindo o carrinho correto de desenvolvimento, conforme o desejo da empresa parceira. No método _Scrum_, a constante incrementação dos entregáveis é uma de suas características marcantes, e essa cena também seguirá esses passos, sendo melhorada conforme o _feedback_ recebido.
+
+Cena da interface do computador:
 <p align="center">
-<img src="../assets/estruturahtml.png">
+<img src="..assets/imailInicial.png">
 </p>
 
-Configuração inicial do jogo no Phaser:
+Parte do código referente a cena:
 <p align="center">
-<img src="../assets/configuracaophaser.png">
+<img src="../assets/printCodigoDia1.png">
 </p>
 
-Configuração da tela inicial do jogo:
+A outra cena escolhida para ser desenvolvida pelo grupo foi a da hub inicial. Isso se deve ao fato da mesma permitir o teste de algumas das tecnologias que serão utilizadas futuramente no projeto, com destaque para os _Tilesets_ e _Tilemaps_. Um _Tileset_ é um conjunto de imagens do mesmo tamanho, denominadas de _Tiles_, que servem como "blocos de construção" para cenas, permitindo que elas sejam criadas de maneira rápida e eficiente. Um _Tilemap_ é um arquivo que armazena as informações do posicionamento das _Tiles_ em uma cena, trazendo informações como colisões e camadas.
+
+Além disso, a movimentação simples de um personagem foi implementada, se utilizando das "setinhas" para poder se deslocar pelo mapa. Interações simples com objetos também foi adicionada, permitindo que o jogador utilize da tecla "espaço" para realizar uma ação em determinado objeto.
+
+Exemplo do _Tileset_ utilizado:
 <p align="center">
-<img src="../assets/configtelainicial.png">
-</p>
-<p align="center">
-<img src="../assets/configtelainicial2.png">
-</p>
-<p align="center">
-<img src="../assets/configtelainicial3.png">
-</p>
-<p align="center">
-<img src="../assets/configtelainicial4.png">
-</p>
-<p align="center">
-<img src="../assets/configtelainicial5.png">
+<img src="../assets/tilesetInicial.png">
 </p>
 
-Configuração sobre a “Tela de login”:
+Parte do código referente a cena:
 <p align="center">
-<img src="../assets/configtelalogin.png">
-</p>
-<p align="center">
-<img src="../assets/configtelalogin2.png">
-</p>
-<p align="center">
-<img src="../assets/configtelalogin3.png">
+<img src="../assets/printCodigoHub.png">
 </p>
 
-Configuração da fase inicial do jogo:
-<p align="center">
-<img src="../assets/configfaseinicial.png">
-</p>
-<p align="center">
-<img src="../assets/configfaseinicial2.png">
-</p>
+De forma geral, a _sprint_ 1 trouxe diversos desafios, porém também trouxe uma maior familiarização com o projeto e com as ferramentas a serem utilizadas. Um obstáculo significativo no decorrer do desenvolvimento foi a utilização do _Tilemap_, que envolve a referência de múltiplos outros arquivos e variáveis. A ideia central do projeto também foi alterada algumas vezes, para melhor condizer com os desejos da empresa parceira.
 
-
-
+Para os próximos passos, pretendemos começar a implementação do conteúdo técnico requisitado pelo parceiro, além iniciar a criação dos minijogos em si.
 
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
