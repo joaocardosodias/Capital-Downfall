@@ -237,7 +237,7 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
 Para o desenvolvimento preliminar no jogo foram realizados testes de cenários, escolhas de design e algumas diretrizes para o jogo. Nesses testes de cenário foi produzida uma  sala temporária do escritório do banco juntamente com um personagem(bloco branco) para exemplificar a movimentação.
 Para a movimentação do personagem foi realizado uma sequência de códigos, iniciando pela construção da página em HTML , seguido das configurações do jogo em JavaScript:
-<img src="../assets/cenainicial.PNG">
+<img src="../assets/cenainicial.png">
 
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
