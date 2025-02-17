@@ -99,7 +99,7 @@ Inovação e Tecnologia – Forte investimento em soluções digitais e platafor
 Rede de Clientes e Relacionamento – Possui uma base sólida de clientes institucionais e de alta renda, além de um forte relacionamento com empresas e investidores.
 Atuação em diversos segmentos – Mercado de capitais, crédito corporativo e gestão de fortunas, reduzindo riscos de dependência em um único setor.
 
-**Fraquezas::**
+**Fraquezas:**
 
 Concorrência Agressiva no Digital – No segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes.
 Exposição a Riscos de Mercado – Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
