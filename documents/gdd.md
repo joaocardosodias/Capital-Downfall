@@ -95,28 +95,38 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 **Forças:**
 
 Liderança no Mercado Financeiro – O BTG Pactual é o maior banco de investimentos da América Latina, com alta presença no setor financeiro.
+
 Inovação e Tecnologia – Forte investimento em soluções digitais e plataformas tecnológicas, como o BTG Pactual Digital, permitindo o crescimento no varejo financeiro.
+
 Rede de Clientes e Relacionamento – Possui uma base sólida de clientes institucionais e de alta renda, além de um forte relacionamento com empresas e investidores.
+
 Atuação em diversos segmentos – Mercado de capitais, crédito corporativo e gestão de fortunas, reduzindo riscos de dependência em um único setor.
+
 
 **Fraquezas:**
 
 Concorrência Agressiva no Digital – No segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes.
+
 Exposição a Riscos de Mercado – Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
+
 Dependência de Grandes Clientes e Investidores Institucionais – A maior parte das receitas vem de clientes de alta renda e grandes empresas, tornando-o vulnerável a mudanças de comportamento desse público.
 
 **Ameaças:**
 
 Concorrência Forte – Disputa acirrada com bancos tradicionais e fintechs, que oferecem serviços mais acessíveis e taxas reduzidas.
 Mudanças no Perfil dos Investidores – Novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis.
+
 Regulação Rigorosa – O setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco.
 Cibersegurança e Fraudes – Como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados.
 
 **Oportunidades:**
 
 Crescimento no Mercado de Investimentos Digitais – Com a popularização do investimento online, o BTG pode ampliar sua base de clientes via BTG Pactual Digital.
-Cenário Favorável para Ativos Alternativos – O aumento do interesse por ativos como fundos estruturados, private equity e crédito privado pode impulsionar o banco.
+
+enário Favorável para Ativos Alternativos – O aumento do interesse por ativos como fundos estruturados, private equity e crédito privado pode impulsionar o banco.
+
 Atuação internacional – O BTG Pactual tem expandido sua atuação internacionalmente, podendo capturar mais oportunidades fora do Brasil.
+
 Expansão para o Varejo Financeiro – O banco tem ampliado sua atuação para o público de alta renda e varejo, competindo com fintechs e bancos tradicionais.
 
 
