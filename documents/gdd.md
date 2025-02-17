@@ -59,6 +59,7 @@ O BTG Pactual  é considerado um dos líderes no cenário dos investimentos, ope
 **Poder de Barganha dos Fornecedores:** É definido pelo poder de negociação em insumos de produção e disponibilidade de materiais. Os fornecedores são considerados poderosos quando não têm que lutar contra outros produtos substitutos, não dependem dos compradores e possuem produtos únicos e insubstituíveis para os compradores.
 
 **Rivalidade entre os Concorrentes Existentes:** Define o nível de competição em um setor. É mais intenso quando o número de empresas competindo é grande e quando as empresas sofrem restrições de tempo para venda do produto . 
+
 Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forças de Porter ao BTG Pactual para avaliar sua posição competitiva e identificar os principais impulsionadores de lucratividade e os desafios enfrentados pela empresa.
 
 <p align="center">
