@@ -86,7 +86,37 @@ Em suma, as Cinco Forças de Porter oferecem uma estrutura abrangente para avali
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-*Posicione aqui a análise SWOT relacionada ao parceiro de projeto. Utilize a análise SWOT para fazer uma análise ambiental do parceiro no âmbito estratégico. Leve em consideração o contexto da indústria, concorrência e as características do ambiente interno (forças e fraquezas) e externo (oportunidades e ameaças) do parceiro.*
+A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo.
+
+<p align="center">
+<img src="../assets/analiseswot.png">
+</p>
+
+**Forças**
+Liderança no Mercado Financeiro – O BTG Pactual é o maior banco de investimentos da América Latina, com alta presença no setor financeiro.
+Inovação e Tecnologia – Forte investimento em soluções digitais e plataformas tecnológicas, como o BTG Pactual Digital, permitindo o crescimento no varejo financeiro.
+Rede de Clientes e Relacionamento – Possui uma base sólida de clientes institucionais e de alta renda, além de um forte relacionamento com empresas e investidores.
+Atuação em diversos segmentos – Mercado de capitais, crédito corporativo e gestão de fortunas, reduzindo riscos de dependência em um único setor.
+
+**Fraquezas**
+Concorrência Agressiva no Digital – No segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes.
+Exposição a Riscos de Mercado – Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
+Dependência de Grandes Clientes e Investidores Institucionais – A maior parte das receitas vem de clientes de alta renda e grandes empresas, tornando-o vulnerável a mudanças de comportamento desse público.
+
+**Ameaças**
+Concorrência Forte – Disputa acirrada com bancos tradicionais e fintechs, que oferecem serviços mais acessíveis e taxas reduzidas.
+Mudanças no Perfil dos Investidores – Novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis.
+Regulação Rigorosa – O setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco.
+Cibersegurança e Fraudes – Como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados.
+
+**Oportunidades**
+Crescimento no Mercado de Investimentos Digitais – Com a popularização do investimento online, o BTG pode ampliar sua base de clientes via BTG Pactual Digital.
+Cenário Favorável para Ativos Alternativos – O aumento do interesse por ativos como fundos estruturados, private equity e crédito privado pode impulsionar o banco.
+Atuação internacional – O BTG Pactual tem expandido sua atuação internacionalmente, podendo capturar mais oportunidades fora do Brasil.
+Expansão para o Varejo Financeiro – O banco tem ampliado sua atuação para o público de alta renda e varejo, competindo com fintechs e bancos tradicionais.
+
+
+
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
