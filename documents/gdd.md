@@ -114,6 +114,7 @@ Dependência de Grandes Clientes e Investidores Institucionais – A maior parte
 **Ameaças:**
 
 Concorrência Forte – Disputa acirrada com bancos tradicionais e fintechs, que oferecem serviços mais acessíveis e taxas reduzidas.
+
 Mudanças no Perfil dos Investidores – Novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis.
 
 Regulação Rigorosa – O setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco.
