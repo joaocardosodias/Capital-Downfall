@@ -64,7 +64,7 @@ O BTG Pactual  é considerado um dos líderes no cenário dos investimentos, ope
 Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forças de Porter ao BTG Pactual para avaliar sua posição competitiva e identificar os principais impulsionadores de lucratividade e os desafios enfrentados pela empresa.
 
 <p align="center">
-<img src="../assets/5forcasdeporternovo.png">
+<img src="../assets/5forcasdeporter.png">
 </p>
 
 **Ameaça de produtos substitutos:** O nível de ameaça de produtos substitutos para o BTG Pactual varia conforme seus segmentos de atuação, mas é alto em algumas áreas estratégicas. No mercado de investimentos, fintechs e corretoras independentes oferecem alternativas acessíveis e automatizadas, desafiando os serviços tradicionais de wealth management e asset management. No corporate banking e mercado de crédito, bancos digitais e plataformas de financiamento descentralizado (DeFi) criam novas formas de captação de recursos, reduzindo a dependência de grandes instituições. 
