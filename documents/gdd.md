@@ -135,7 +135,7 @@ Expansão para o Varejo Financeiro – O banco tem ampliado sua atuação para o
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
-*Posicione aqui a Missão, Visão e Valores do seu projeto.*
+Nosso projeto tem como missão transformar o onboarding de novos analistas de tecnologia do BTG Pactual com uma experiência gamificada, imersiva e alinhada aos desafios reais da empresa. Nossa visão é criar a principal ferramenta de integração para esses profissionais, tornando o aprendizado dinâmico e estratégico, refletindo o dinamismo do mercado financeiro. Guiamo-nos por valores essenciais, como excelência e inovação, para garantir uma experiência envolvente e eficiente; autonomia e protagonismo, incentivando o aprendizado ativo e contínuo, para além do onboarding; impacto e responsabilidade, demonstrando como cada decisão afeta os resultados do banco; e colaboração e engajamento, promovendo a integração.
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
