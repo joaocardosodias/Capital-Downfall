@@ -130,9 +130,38 @@
       {
 
           /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
-          O código foi escrito de uma maneira para que o movimento na diagonal não ocorra, para evitar problemas de aceleração */ 
+          O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.707 */ 
 
-          if (teclado.left.isDown) 
+          if (teclado.left.isDown && teclado.up.isDown) 
+            {
+                player.setVelocityX (-150*0.707);
+                
+                player.setVelocityY (-150*0.707);
+            }
+  
+          else if (teclado.left.isDown && teclado.down.isDown) 
+            {
+                player.setVelocityX (-150*0.707);
+                
+                player.setVelocityY (150*0.707);
+            }
+  
+          else if (teclado.right.isDown && teclado.up.isDown) 
+            {
+                player.setVelocityX (150*0.707);
+                
+                player.setVelocityY (-150*0.707);
+            }
+  
+          else if (teclado.right.isDown && teclado.down.isDown) 
+            {
+                player.setVelocityX (150*0.707);
+                
+                player.setVelocityY (150*0.707);
+            }
+
+  
+          else if (teclado.left.isDown) 
           {
               player.setVelocityX (-150);
               
@@ -144,24 +173,21 @@
               player.setVelocityX (150);
 
               player.setVelocityY (0);
-              
           }
 
 
           else if (teclado.up.isDown) 
           {
-              player.setVelocityY (-150);
-              
               player.setVelocityX (0);
               
+              player.setVelocityY (-150);
           }
 
           else if (teclado.down.isDown) 
           {
-              player.setVelocityY (150);
-
               player.setVelocityX (0);
-              
+
+              player.setVelocityY (150);
           }
 
           //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
