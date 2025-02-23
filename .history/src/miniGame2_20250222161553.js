@@ -1,0 +1,1 @@
+class miniGame2 extends 

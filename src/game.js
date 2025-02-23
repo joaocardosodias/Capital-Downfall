@@ -22,7 +22,7 @@
                 gravity:  { y: 0 },
             }
         },
-        scene: [menuInicial,hub,telaLogin,dia1]
+        scene: [menuInicial,hub,telaLogin,dia1, miniGame2]
     };
 
     const game = new Phaser.Game(config);  
