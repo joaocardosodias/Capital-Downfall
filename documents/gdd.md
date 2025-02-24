@@ -100,11 +100,9 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 
 - **Concorrência Agressiva no Digital:** No segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes.
 
-<<<<<<< Updated upstream
 - **Exposição a Riscos de Mercado:** Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
-=======
--**Exposição a Riscos de Mercado:** Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
->>>>>>> Stashed changes
+
+- **Exposição a Riscos de Mercado:** Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
 
 - **Dependência de Grandes Clientes e Investidores Institucionais:** A maior parte das receitas vem de clientes de alta renda e grandes empresas, tornando-o vulnerável a mudanças de comportamento desse público.
 
@@ -298,7 +296,7 @@ Isabela sempre foi curiosa e determinada. Desde pequena, gostava de desafios e s
 Aprendeu programação por conta própria e se aprofundou no mundo dos investimentos. Com muita dedicação, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. Seu talento não passou despercebido.
 
 <p align="center">
-<img src="../assets/personagens/personagemMasculino1.png">
+<img src="../assets/personagens/personagemFeminino1.png">
 </p>
 
 Agora, aos 25 anos, Isabela acaba de ser contratada como Analista de Fundos de Investimento do BTG Pactual, pronta para usar a tecnologia para transformar o mercado.
