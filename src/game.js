@@ -20,9 +20,10 @@
             arcade: 
             {
                 gravity:  { y: 0 },
+                debug: false,
             }
         },
-        scene: [menuInicial,hub,telaLogin,dia1]
+        scene: [menuInicial,hub,telaLogin,dia1,miniGame1]
     };
 
     const game = new Phaser.Game(config);  
