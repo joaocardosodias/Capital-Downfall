@@ -52,7 +52,7 @@ O BTG Pactual é considerado um dos líderes no cenário dos investimentos, oper
 
 **Ameaça de Produtos Substitutos:** Refere-se à facilidade com que o comprador pode substituir um tipo de produto ou serviço por outro(NAKAGAWA, [20--]).
 
-**Poder de Barganha dos Compradores:** Refere-se à influência dos clientes em relação ao preço de aquisição do produto. É considerado alto quando os clientes compram em grandes volumes, têm interesse em economias e estão preocupados com a qualidade do produto adquirido .
+**Poder de Barganha dos Compradores:** Refere-se à influência dos clientes em relação ao preço de aquisição do produto. É considerado alto quando os clientes compram em grandes volumes, têm interesse em economias e estão preocupados com a qualidade do produto adquirido(NAKAGAWA, [20--]).
 
 **Poder de Barganha dos Fornecedores:** É definido pelo poder de negociação em insumos de produção e disponibilidade de materiais. Os fornecedores são considerados poderosos quando não têm que lutar contra outros produtos substitutos, não dependem dos compradores e possuem produtos únicos e insubstituíveis para os compradores(NAKAGAWA, [20--]).
 
@@ -100,7 +100,11 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 
 - **Concorrência Agressiva no Digital:** No segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes.
 
+<<<<<<< Updated upstream
 - **Exposição a Riscos de Mercado:** Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
+=======
+-**Exposição a Riscos de Mercado:** Como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras.
+>>>>>>> Stashed changes
 
 - **Dependência de Grandes Clientes e Investidores Institucionais:** A maior parte das receitas vem de clientes de alta renda e grandes empresas, tornando-o vulnerável a mudanças de comportamento desse público.
 
@@ -253,10 +257,51 @@ _Caso seu jogo não possua enredo/história (ex. jogo Tetris), mencione os motiv
 
 ### 3.2.1. Controláveis
 
-_Descreva os personagens controláveis pelo jogador. Mencione nome, objetivos, características, habilidades, diferenciais etc. Utilize figuras (character art, sprite sheets etc.) para ilustrá-los. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
+Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de tornar o jogador mais imerso, pois ele pode se identificar mais com a opção de personagem escolhida.
 
-_Caso não existam personagens (ex. jogo Tetris), mencione os motivos de não existirem e como o jogador pode interpretar tal fato._
+---
 
+Eliseu cresceu em uma comunidade humilde, mas via na tecnologia um caminho para mudar de vida. Aprendeu programação sozinho e, aos 18 anos, criou um app para ajudar pequenos comerciantes. Logo percebeu que tecnologia e mercado financeiro andavam juntos, especializando-se em fundos de investimento.
+<p align="center">
+<img src="../assets/personagens/personagemMasculino2.png">
+</p>
+
+Agora, aos 25 anos, Eliseu acaba de ser contratado como Analista de Fundos de Investimento do BTG Pactual, transformando sua visão de futuro em realidade.
+
+---
+
+Roberta sempre foi curiosa e determinada. Desde criança, adorava resolver problemas e entender como as coisas funcionavam. Cresceu em um bairro simples, onde a maioria das pessoas via a tecnologia como algo distante, mas ela enxergava nela um futuro cheio de possibilidades.
+
+Com poucos recursos, aprendeu programação por conta própria e logo se interessou pelo mercado financeiro. Descobriu como a tecnologia poderia transformar investimentos e decidiu se especializar na área. Estudou com dedicação, superou desafios e se destacou.
+
+<p align="center">
+<img src="../assets/personagens/personagemFeminino2.png">
+</p>
+
+Agora, aos 28 anos, Roberta acaba de ser contratada como Analista de Fundos de Investimento do BTG Pactual, pronta para inovar e fazer a diferença.
+
+---
+
+Milton sempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida.
+
+Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. Seu esforço e dedicação chamaram atenção.
+<p align="center">
+<img src="../assets/personagens/personagemMasculino1.png">
+</p>
+
+Agora, aos 25 anos, Milton acaba de ser contratado como Analista de Fundos de Investimento do BTG Pactual, pronto para usar a tecnologia para impulsionar o futuro do mercado.
+
+---
+
+Isabela sempre foi curiosa e determinada. Desde pequena, gostava de desafios e se interessava por tecnologia. Cresceu em um bairro simples, onde poucos falavam sobre o mercado financeiro, mas ela logo percebeu como a tecnologia poderia revolucionar esse setor.
+
+Aprendeu programação por conta própria e se aprofundou no mundo dos investimentos. Com muita dedicação, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. Seu talento não passou despercebido.
+
+<p align="center">
+<img src="../assets/personagens/personagemMasculino1.png">
+</p>
+
+Agora, aos 25 anos, Isabela acaba de ser contratada como Analista de Fundos de Investimento do BTG Pactual, pronta para usar a tecnologia para transformar o mercado.
 ### 3.2.2. Non-Playable Characters (NPC)
 
 _\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção._
