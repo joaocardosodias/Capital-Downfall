@@ -168,7 +168,7 @@ class miniGame1 extends Phaser.Scene {
 
 
 
-
+// Esta funcionalidade ainda não está funcionando, pois não consegui encontrar uma solução em tempo razoável. Então, o jogo só funciona se você acertar todas as questões :P
     feedback() {
         this.tweens.add({
             targets: [feedbacks[cardIndex], botaoContinuar],
