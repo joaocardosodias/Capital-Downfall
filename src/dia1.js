@@ -73,6 +73,9 @@ class dia1 extends Phaser.Scene
                 iniciarFase1.setVisible(false);
                 imailInicial.setVisible(false);
                 tutorialLido = false;
+
+                game.scene.stop('dia1');
+                game.scene.start('miniGame2');
             });
         }
     }

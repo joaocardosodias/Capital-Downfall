@@ -1,0 +1,18 @@
+// Variáveis utilizadas
+let perfil1; 
+
+class miniGame2 extends Phaser.Scene{
+    constructor() {
+        super('miniGame2');
+    }
+
+    preload() { 
+        this.load.image('testePerfil','assets/testePerfil.png');
+        this.load.image('botaoV', 'assets/botaoV.png');
+        this.load.image('botaoF')
+    }
+
+    create() {
+        perfil1 = this.add.image(200, 300, 'testePerfil').setScale(0.3);
+    }
+}
