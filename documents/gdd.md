@@ -306,7 +306,13 @@ _\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrev
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-Considerando as personagens do game, analise se estas estão alinhadas ao público-alvo do jogo (seção 1.3), e compare-as dentro da realidade da sociedade brasileira. Por fim, discorra sobre qual é o impacto esperado da escolha dessas personagens.
+  O primeiro personagem do nosso jogo é o Eliseu , um analista júnior de 25 anos com experiência prévia em estágios no setor financeiro. Acredito que o Eliseu está totalmente alinhado com o nosso público-alvo, que são os analistas. Além disso, ele representa bem a realidade da sociedade brasileira, já que é um homem negro, jovem e no início de sua carreira. Acredito que as escolhas feitas para a construção do Eliseu foram muito bem pensadas e terão um impacto positivo na questão da representatividade.
+  
+  O segundo personagem é a Isabela , uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Isabela também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Eliseu , ela não te uma trajetória prévia no setor financeiro. Essa diferença de background entre Isabela e Eliseu é muito positiva, pois, apesar das diferenças, ambos estão dentro do nosso público-alvo. A Isabela, diferente do Eliseu, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
+
+  A terceira personagem é a Roberta, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Roberta, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, Roberta traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
+  
+  Esses três personagens, com suas diferentes trajetórias e perfis, refletem a diversidade e a complexidade da sociedade brasileira, ao mesmo tempo em que se alinham com o público-alvo do nosso jogo. Acredito que essa abordagem trará um impacto positivo tanto em termos de engajamento quanto de representatividade.
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
