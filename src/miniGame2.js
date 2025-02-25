@@ -1,24 +1,27 @@
-// Variáveis utilizadas
-let perfil1;
-let botaoV;
-let botaoF;
-let pontuacao = 0;
-let perfisRestantes = []; //Lista que armazena os perfis restantes
-let perfilIndex = 0;
-let carimbo;
-let textoPontuacao; 
-let textoMudancaPontuacao; // Variável para o texto de "+100 pontos" ou "-50 pontos"
-let fim; //Imagem de fim de jogo
-let botaoVoltar;
-let respostaEmAndamento = false; // Variável para controlar se já foi feita uma resposta
-
 class miniGame2 extends Phaser.Scene {
-    constructor() {
+    constructor(perfil1, botaoV, botaoF, perfisRestantes, perfilIndex, carimbo, textoPontuacao, textoMudancaPontuacao, fim, botaoVoltar, respostaEmAndamento) {
         super('miniGame2');
+        this.perfil1 = perfil1;
+        this.botaoV = botaoV;
+        this.botaoF = botaoF;
+        this.perfisRestantes = perfisRestantes;
+        this.perfilIndex = perfilIndex;
+        this.carimbo = carimbo;
+        this.textoPontuacao = textoPontuacao;
+        this.textoMudancaPontuacao = textoMudancaPontuacao;
+        this.fim = fim;
+        this.botaoVoltar = botaoVoltar;
+        this.respostaEmAndamento = respostaEmAndamento;
+
     }
 
     preload() {
         // Carrega as imagens 
+
+        miniGame2.perfisRestantes = [];
+        miniGame2.perfilIndex = 0;
+        miniGame2.respostaEmAndamento = false;
+
         this.load.image('botaoV', 'assets/miniGame2/botaoV.png');
         this.load.image('botaoF', 'assets/miniGame2/botaoF.png');
         this.load.image('carimboV', 'assets/miniGame2/carimboV.png');
@@ -54,32 +57,32 @@ class miniGame2 extends Phaser.Scene {
         this.add.rectangle(400, 300, 800, 600, 0x3B9AD6).setDepth(-20);
 
         // Criação do primeiro perfil
-        perfil1 = this.add.image(400, 280, perfis[perfilIndex].nome).setScale(0.3).setDepth(10);
+        miniGame2.perfil1 = this.add.image(400, 280, perfis[miniGame2.perfilIndex].nome).setScale(0.3).setDepth(10);
 
         // Armazena os perfis restantes no array perfisRestantes com um laço for
         for (let i = 1; i < perfis.length; i++) {
             let perfil = this.add.image(400 + (i * 80), 308, perfis[i].nome).setScale(0.3).setDepth(-i);
-            perfisRestantes.push(perfil); // Adiciona os perfis restantes no array
+            miniGame2.perfisRestantes.push(perfil); // Adiciona os perfis restantes no array
         }
         
         //Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
-        textoPontuacao = this.add.text(20, 40, 'Pontuação: ' + pontuacao, {
+        miniGame2.textoPontuacao = this.add.text(20, 40, 'Pontuação: ' + pontuacao, {
             font: '40px Arial',
             fill: '#ffffff'
         }).setDepth(15);   
 
         // Criação dos botões
-        botaoV = this.add.image(334, 485, 'botaoV').setScale(0.3).setInteractive().setDepth(10);
-        botaoF = this.add.image(466, 485, 'botaoF').setScale(0.3).setInteractive().setDepth(10);
+        miniGame2.botaoV = this.add.image(334, 485, 'botaoV').setScale(0.3).setInteractive().setDepth(10);
+        miniGame2.botaoF = this.add.image(466, 485, 'botaoF').setScale(0.3).setInteractive().setDepth(10);
 
         //Se você clicar em um dos botões...
-        botaoV.on('pointerdown', () => {
-            if (!respostaEmAndamento) {  // Verifica se uma resposta está em andamento
+        miniGame2.botaoV.on('pointerdown', () => {
+            if (!miniGame2.respostaEmAndamento) {  // Verifica se uma resposta está em andamento
                 this.responder(true, perfis); // Chama a função responder passando "true" como resposta do jogador
             }
         });
-        botaoF.on('pointerdown', () => {
-            if (!respostaEmAndamento) {  // Verifica se uma resposta está em andamento
+        miniGame2.botaoF.on('pointerdown', () => {
+            if (!miniGame2.respostaEmAndamento) {  // Verifica se uma resposta está em andamento
                 this.responder(false, perfis); // Chama a função responder passando "true" como resposta do jogador
             }
         });
@@ -87,21 +90,21 @@ class miniGame2 extends Phaser.Scene {
 
     // Função responsável por verificar a resposta do jogador
     responder(respostaJogador, perfis) {
-        respostaEmAndamento = true; // Marca que uma resposta está em andamento
+        miniGame2.respostaEmAndamento = true; // Marca que uma resposta está em andamento
         // Desabilita os botões para evitar múltiplas respostas
-        botaoV.setInteractive(false);
-        botaoF.setInteractive(false);
+        miniGame2.botaoV.setInteractive(false);
+        miniGame2.botaoF.setInteractive(false);
 
-        let respostaCerta = perfis[perfilIndex].resposta;
+        let respostaCerta = perfis[miniGame2.perfilIndex].resposta;
 
         // Verifica se a resposta do jogador está correta
         if (respostaJogador === respostaCerta) {
             pontuacao += 100; //Aumenta a pontuação
             //Adiciona uma imagem de certo na tela
-            carimbo = this.add.image(400, 300, 'carimboV').setDepth(15);
+            miniGame2.carimbo = this.add.image(400, 300, 'carimboV').setDepth(15);
 
             //Adiciona um texto ao lado que mostra que o jogador ganhou 100 pontos
-            textoMudancaPontuacao = this.add.text(20, 400, '+100 pontos', {
+            miniGame2.textoMudancaPontuacao = this.add.text(20, 400, '+100 pontos', {
                 font: '50px Arial',
                 fill: '#00FF00' // Cor do texto: verde
             }).setDepth(15);
@@ -109,10 +112,10 @@ class miniGame2 extends Phaser.Scene {
         } else { //Se o jogador errou
             pontuacao -= 50; //Ele perde 50 pontos
             //Uma imagem de 'errado'(X) é adicionada a tela
-            carimbo = this.add.image(400, 300, 'carimboF').setDepth(15);
+            miniGame2.carimbo = this.add.image(400, 300, 'carimboF').setDepth(15);
             
             //Adiciona um texto ao lado que mostra que o jogador perdeu 50 pontos
-            textoMudancaPontuacao = this.add.text(20, 400, '-50 pontos', {
+            miniGame2.textoMudancaPontuacao = this.add.text(20, 400, '-50 pontos', {
                 font: '50px Arial',
                 fill:  '#FF0000' //Cor do texto: vermelha
             }).setDepth(15);
@@ -120,27 +123,27 @@ class miniGame2 extends Phaser.Scene {
 
         //faz o texto do lado subir 
         this.tweens.add({
-            targets: textoMudancaPontuacao, // O objeto que será animado
+            targets: miniGame2.textoMudancaPontuacao, // O objeto que será animado
             y: 50, // Posição até onde o texto vai subir
             alpha: 0, // Faz o texto desaparecer gradualmente
             duration: 2000, // A animação dura 2 segundos
             ease: 'Power2', // Usa a curva de suavização "Power2" (aceleração suave)
             onComplete: () => {
-                textoMudancaPontuacao.destroy(); // Após a animação ser completada, remove o texto da tela
+                miniGame2.textoMudancaPontuacao.destroy(); // Após a animação ser completada, remove o texto da tela
             }
         });
 
         //Atualiza o placar
-        textoPontuacao.setText('Pontuação: ' + pontuacao);
+        miniGame2.textoPontuacao.setText('Pontuação: ' + pontuacao);
 
         // Anima a exibição do carimbo
         this.tweens.add({
-            targets: carimbo,
+            targets: miniGame2.carimbo,
             alpha: 1, // Fica visível
             duration: 1000,
             ease: 'Power2',
             onComplete: () => { // Quando a animação terminar...
-                this.time.delayedCall(500, () => carimbo.destroy()); // Remove a imagem do carimbo após 500ms
+                this.time.delayedCall(500, () => miniGame2.carimbo.destroy()); // Remove a imagem do carimbo após 500ms
                 this.animaPerfilSubindo(perfis); //chama a próxima função
             }
         });
@@ -150,23 +153,23 @@ class miniGame2 extends Phaser.Scene {
     animaPerfilSubindo(perfis) {
         // Move o perfil, os botões e o carimbo para cima
         this.tweens.add({
-            targets: [perfil1, botaoV, botaoF, carimbo], //elementos que serão animados
+            targets: [miniGame2.perfil1, miniGame2.botaoV, miniGame2.botaoF, miniGame2.carimbo], //elementos que serão animados
             y: -200, // Posição até qual eles vão subir
             duration: 1000,
             ease: 'Power2',
             onComplete: () => {
-                perfilIndex++; // Adiciona uma unidade ao perfilIndex
-                if (perfilIndex < 5) {
+                miniGame2.perfilIndex++; // Adiciona uma unidade ao perfilIndex
+                if (miniGame2.perfilIndex < 5) {
                     // Se ainda houver perfis, troca a imagem do perfil e reposiciona os outros
-                    perfil1.setTexture(perfis[perfilIndex].nome);
-                    perfil1.setY(280); // Restaura a posição Y do perfil para o valor inicial
+                    miniGame2.perfil1.setTexture(perfis[miniGame2.perfilIndex].nome);
+                    miniGame2.perfil1.setY(280); // Restaura a posição Y do perfil para o valor inicial
 
                     // Chama a funçaõ que anima os perfis restantes para a esquerda
                     this.animaPerfisEsquerda(perfis);
                 } else {
                     // Se não houver mais perfis, vai para a próxima cena
                     this.add.rectangle(400, 300, 800, 600, 0x000000).setDepth(20); // Fundo preto 
-                    fim = this.add.image(400, 300, 'fim').setDepth(21); // Exibe a tela final
+                    miniGame2.fim = this.add.image(400, 300, 'fim').setDepth(21); // Exibe a tela final
 
                     //Mostra a pontuação final do jogador na tela
                     let textoFinal = this.add.text(565, 295, pontuacao, {
@@ -175,10 +178,11 @@ class miniGame2 extends Phaser.Scene {
                     }).setOrigin(0.5).setDepth(21);
 
                     // Criação do botão para voltar ao jogo
-                    botaoVoltar = this.add.image(400, 400, 'botaoVoltar').setInteractive().setDepth(22).setScale(0.9);
+                    miniGame2.botaoVoltar = this.add.image(400, 400, 'botaoVoltar').setInteractive().setDepth(22).setScale(0.9);
 
-                    botaoVoltar.on('pointerdown', () => {
-                        this.scene.start('hub'); //Se você clicar no botão Voltar, você volta pra hub do jogo
+                    miniGame2.botaoVoltar.on('pointerdown', () => {
+                        this.scene.start('miniGame3'); //Se você clicar no botão Voltar, você volta pra hub do jogo
+                        this.scene.stop('miniGame2');
                     });
                 }
             }
@@ -187,12 +191,12 @@ class miniGame2 extends Phaser.Scene {
 
     // Função que move os perfis restantes para a esquerda
     animaPerfisEsquerda(perfis) {
-        let perfilRemovido = perfisRestantes.shift(); // Remove o primeiro perfil da lista
+        let perfilRemovido = miniGame2.perfisRestantes.shift(); // Remove o primeiro perfil da lista
         perfilRemovido.destroy(); // Remove a imagem do perfil da tela
 
         // Atualiza a lista de perfis restantes após remoção
-        for (let i = 0; i < perfisRestantes.length; i++) {
-            let perfil = perfisRestantes[i]; 
+        for (let i = 0; i < miniGame2.perfisRestantes.length; i++) {
+            let perfil = miniGame2.perfisRestantes[i]; 
             //Adiciona a animação que move os perfis restantes para a esquerda
             this.tweens.add({
                 targets: perfil,
@@ -207,15 +211,15 @@ class miniGame2 extends Phaser.Scene {
 
         // Traz os botões V e F de volta à tela
         this.tweens.add({
-            targets: [botaoV, botaoF],
+            targets: [miniGame2.botaoV, miniGame2.botaoF],
             y: 485, // Restaura a posição Y dos botões
             duration: 500, // Duração da animação
             ease: 'Power2',
             onComplete: () => { //Quando a animação terminar
-                respostaEmAndamento = false; // Permite novas respostas após essa animação
+                miniGame2.respostaEmAndamento = false; // Permite novas respostas após essa animação
                 //Os botões voltam a ser interativos, ou seja, o jogo volta a aceitar novas respostas
-                botaoV.setInteractive(true); 
-                botaoF.setInteractive(true);
+                miniGame2.botaoV.setInteractive(true); 
+                miniGame2.botaoF.setInteractive(true);
             }
         });
     }

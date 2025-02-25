@@ -31,8 +31,6 @@ class dia1 extends Phaser.Scene
         this.load.image('fundoLaranja', 'assets/fundo_laranja.jpg');
 
         this.load.image('iniciarFase1', 'assets/iniciarFase1.png');
-        // JEITO PROVISÓRIO DE ACESSAR MINIGAME1:
-        this.load.image('iniciarFase', 'assets/iniciarFase1.png');
 
         tutorialLido = false;      
     }
@@ -49,11 +47,9 @@ class dia1 extends Phaser.Scene
 
         iniciarFase1 = this.add.image(615,560, 'iniciarFase1').setInteractive().setScale(0.50);
 
-        iniciarFase = this.add.image(615,600, 'iniciarFase').setInteractive().setScale(0.50);
-
         //Essa parte adiciona um delay de 3 segundos para iniciar a função onEvent
 
-        this.timedEvent = this.time.delayedCall(3000, this.onEvent, [], this);    
+        this.timedEvent = this.time.delayedCall(1000, this.onEvent, [], this);    
 
         
     }
@@ -81,17 +77,11 @@ class dia1 extends Phaser.Scene
                 tutorialLido = false;
 
                 game.scene.stop('dia1');
-                game.scene.start('miniGame2');
+                game.scene.start('miniGame1');
             });
 
 
-            // JEITO PROVISÓRIO DE ACESSAR MINIGAME1:
-            iniciarFase.on('pointerdown', function (pointer){
-
-                game.scene.stop('dia1');
-
-                game.scene.start('miniGame1');
-            })
+            
         }
     }
 }
