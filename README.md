@@ -56,8 +56,28 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o código e executar o jogo a partir de sua máquina ou seu repositório.*
+<b>Executar o código:</b>
+Caso você seja um programador ou deseja fazer a execução do código desenvolvido para esse projeto basta instalar a versão mais recente do Visual Studio Code (VS Code) e instalar a extensão Live Server.
 
+Para instalar o VS Code basta acessar o seguinte link:
+<a href="https://code.visualstudio.com/Download">Download</a>
+
+
+E para realizar a configuração siga os passos abaixo:
+<a href="https://code.visualstudio.com/docs/setup/setup-overview">Setup Manual</a>
+
+
+Por fim, o último recurso que deve ser instalado e configurado é o live server, para isso basta seguir o tutorial abaixo:
+<a href="https://learn.microsoft.com/pt-br/visualstudio/liveshare/use/install-live-share-visual-studio-code">Microsoft Tutorial</a>
+
+Com todos os programas e extensões devidamente configurados é necessário que você acesse o VS Code, abra o arquivo intitulado ‘index.html’ e o execute utilizando o live server, dessa forma é esperado que uma guia seja aberta no seu navegador.
+
+<b>Jogar o Game:</b>
+
+Caso você apenas deseja testar o jogo, sem instalar nenhum programa, basta acessar o jogo publicado do GitHub Pages, disponível no link abaixo:
+<a href="https://inteli-college.github.io/2024-T0014-IN01-G04/src/index.html">Jogue Agora!</a>
+
+Observação: o jogo foi feito para o navegador Google Chrome, portanto há alguns outros navegadores em que ele poderá não ser compatível.
 
 ## 🗃 Histórico de lançamentos
 
@@ -74,6 +94,6 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 📋 Licença/License
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli, Nome do integrante 1, Nome do integrante 2, Nome do integrante 3, Nome do integrante 4, Nome do integrante 5, Nome do integrante 6, Nome do integrante 7</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli,Ana Cristina, Henrique Da Rós, João Cardoso, Lucas Lopes,Lucas Michel, Nicole Zanin, Teodoro Neira </a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
 
 
