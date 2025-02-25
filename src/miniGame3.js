@@ -30,12 +30,12 @@
 
 
                 this.load.image('timeline', 'assets/miniGame3/Timeline.png');
-                this.load.image('botao', 'assets/miniGame3/button.png');
-                this.load.image('card1', 'assets/miniGame3/card1.png');
-                this.load.image('card2', 'assets/miniGame3/card2.png');
-                this.load.image('card3', 'assets/miniGame3/card3.png');
-                this.load.image('card4', 'assets/miniGame3/card4.png');
-                this.load.image('card5', 'assets/miniGame3/card5.png');
+                this.load.image('3botao', 'assets/miniGame3/button.png');
+                this.load.image('3card1', 'assets/miniGame3/card1.png');
+                this.load.image('3card2', 'assets/miniGame3/card2.png');
+                this.load.image('3card3', 'assets/miniGame3/card3.png');
+                this.load.image('3card4', 'assets/miniGame3/card4.png');
+                this.load.image('3card5', 'assets/miniGame3/card5.png');
 
                 miniGame3.larguraJogo = 800;
                 miniGame3.alturaJogo = 600;
@@ -43,10 +43,10 @@
                 miniGame3.botaoVerificar = null;
                 miniGame3.textoCentral = null;
                 miniGame3.posicoesOcupadas = new Map();
-                miniGame3.ordemCorreta = ['card1', 'card2', 'card3', 'card4', 'card5'];
+                miniGame3.ordemCorreta = ['3card1', '3card2', '3card3', '3card4', '3card5'];
                 miniGame3.cardsSuperiores = [];
                 miniGame3.cardsInferiores = [];
-                miniGame3.imagensCards = ['card3', 'card5', 'card2', 'card1', 'card4'];
+                miniGame3.imagensCards = ['3card3', '3card5', '3card2', '3card1', '3card4'];
             }
 
             create() {
@@ -97,7 +97,7 @@
                 let timeline = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo * 0.7, 'timeline')
                     .setScale(1.5, 1);
 
-                miniGame3.botaoVerificar = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo - 500, 'botao')
+                miniGame3.botaoVerificar = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo - 500, '3botao')
                     .setScale(0.5)
                     .setInteractive()
                     .setVisible(false);
