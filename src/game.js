@@ -20,12 +20,12 @@
             arcade: 
             {
                 gravity:  { y: 0 },
-                debug: false,
+                debug: true,
             }
         },
 
   
-        scene: [menuInicial,hub,telaLogin,dia1,miniGame1,miniGame2]
+        scene: [menuInicial,hub,telaLogin,dia1,miniGame1,miniGame2,miniGame3,fimDoDia1]
 
     };
 

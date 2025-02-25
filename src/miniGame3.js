@@ -1,45 +1,71 @@
-<script>
-        let larguraJogo = 1100;
-        let alturaJogo = 700;
-        let cardSelecionado = null;
-        let botaoVerificar = null;
-        let textoCentral = null;
-        let posicoesOcupadas = new Map();
-        let ordemCorreta = ['card1', 'card2', 'card3', 'card4', 'card5'];
-        let cardsSuperiores = [];
-        let cardsInferiores = [];
-        let imagensCards = ['card3', 'card5', 'card2', 'card1', 'card4'];
-        let pontuacao = 0; // Armazena a pontuação do jogador
+  
+        class miniGame3 extends Phaser.Scene {
+            constructor(larguraJogo,alturaJogo,cardSelecionado,botaoVerificar,textoCentral,posicoesOcupadas,ordemCorreta,cardsSuperiores,cardsInferiores,imagensCards) {
+                super({ key: 'miniGame3' });
 
-        class Scene1 extends Phaser.Scene {
-            constructor() {
-                super({ key: 'Scene1' });
+                this.larguraJogo = larguraJogo;
+
+                this.alturaJogo = alturaJogo;
+
+                this.cardSelecionado = cardSelecionado;
+
+                this.botaoVerificar = botaoVerificar;
+
+                this.textoCentral = textoCentral;
+
+                this.posicoesOcupadas = posicoesOcupadas;
+
+                this.ordemCorreta = ordemCorreta;
+
+                this.cardsSuperiores = cardsSuperiores;
+
+                this.cardsInferiores = cardsInferiores;
+
+                this.imagensCards = imagensCards;
+
             }
 
             preload() {
-                this.load.image('timeline', 'assets/Timeline.png');
-                this.load.image('botao', 'assets/button.png');
-                this.load.image('card1', 'assets/card1.png');
-                this.load.image('card2', 'assets/card2.png');
-                this.load.image('card3', 'assets/card3.png');
-                this.load.image('card4', 'assets/card4.png');
-                this.load.image('card5', 'assets/card5.png');
+                
+
+
+                this.load.image('timeline', 'assets/miniGame3/Timeline.png');
+                this.load.image('botao', 'assets/miniGame3/button.png');
+                this.load.image('card1', 'assets/miniGame3/card1.png');
+                this.load.image('card2', 'assets/miniGame3/card2.png');
+                this.load.image('card3', 'assets/miniGame3/card3.png');
+                this.load.image('card4', 'assets/miniGame3/card4.png');
+                this.load.image('card5', 'assets/miniGame3/card5.png');
+
+                miniGame3.larguraJogo = 800;
+                miniGame3.alturaJogo = 600;
+                miniGame3.cardSelecionado = null;
+                miniGame3.botaoVerificar = null;
+                miniGame3.textoCentral = null;
+                miniGame3.posicoesOcupadas = new Map();
+                miniGame3.ordemCorreta = ['card1', 'card2', 'card3', 'card4', 'card5'];
+                miniGame3.cardsSuperiores = [];
+                miniGame3.cardsInferiores = [];
+                miniGame3.imagensCards = ['card3', 'card5', 'card2', 'card1', 'card4'];
             }
 
             create() {
-                let espacamento = larguraJogo / 6;
-                let tamanhoCard = 150;
+
+                this.cameras.main.setBackgroundColor('#195A4B');
+
+                let espacamento = miniGame3.larguraJogo / 6;
+                let tamanhoCard = 100;
                 let yTopo = 100;
-                let yBase = alturaJogo - 100;
+                let yBase = miniGame3.alturaJogo - 100;
 
                 this.input.setTopOnly(false);
 
-                cardsSuperiores = [];
-                cardsInferiores = [];
-                posicoesOcupadas.clear();
+                miniGame3.cardsSuperiores = [];
+                miniGame3.cardsInferiores = [];
+                miniGame3.posicoesOcupadas.clear();
 
                 // Texto inicial no centro da tela
-                textoCentral = this.add.text(larguraJogo / 2, alturaJogo / 2, 'Organize os cards superiores na ordem correta!', {
+                miniGame3.textoCentral = this.add.text(miniGame3.larguraJogo / 2, miniGame3.alturaJogo / 2, 'Organize os cards superiores na ordem correta!', {
                     fontSize: '24px',
                     fill: '#fff',
                     backgroundColor: '#000',
@@ -48,13 +74,13 @@
 
                 // Criar os cards superiores
                 for (let i = 0; i < 5; i++) {
-                    let card = this.add.image((i + 1) * espacamento, yTopo, imagensCards[i])
+                    let card = this.add.image((i + 1) * espacamento, yTopo, miniGame3.imagensCards[i])
                         .setOrigin(0.5)
                         .setInteractive()
                         .setDepth(2)
-                        .setScale(0.6);
+                        .setScale(0.4);
 
-                    cardsSuperiores.push(card);
+                    miniGame3.cardsSuperiores.push(card);
                 }
 
                 // Criar os espaços inferiores
@@ -64,141 +90,196 @@
                         .setDepth(1)
                         .setInteractive();
 
-                    cardsInferiores.push(espaco);
-                    posicoesOcupadas.set(espaco, null);
+                    miniGame3.cardsInferiores.push(espaco);
+                    miniGame3.posicoesOcupadas.set(espaco, null);
                 }
 
-                let timeline = this.add.image(larguraJogo / 2, alturaJogo * 0.7, 'timeline')
+                let timeline = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo * 0.7, 'timeline')
                     .setScale(1.5, 1);
 
-                botaoVerificar = this.add.image(larguraJogo / 2, alturaJogo - 500, 'botao')
+                miniGame3.botaoVerificar = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo - 500, 'botao')
                     .setScale(0.5)
                     .setInteractive()
                     .setVisible(false);
 
-                botaoVerificar.on('pointerdown', () => {
-                    this.scene.start('Scene2', { cardsSuperiores });
-                });
+                    miniGame3.botaoVerificar.on('pointerdown', () => {
+                        // Passando os dados para a próxima cena corretamente
+                        this.scene.start('fimDoDia1', {
+                            cardsSuperiores: miniGame3.cardsSuperiores,
+                            ordemCorreta: miniGame3.ordemCorreta, // Se você precisar da ordem correta também
+                            // Adicione outros dados se necessário
+                        });
+                    });
+                    
 
                 // Evento de clique nos cards
+                let interacaoBloqueada = false; // Variável de controle para bloquear interações temporariamente
+
                 this.input.on('gameobjectdown', (pointer, gameObject) => {
-                    if (cardsSuperiores.includes(gameObject)) {
-                        if (cardSelecionado) {
-                            cardSelecionado.setAlpha(1);
-                        }
-                        cardSelecionado = gameObject;
-                        cardSelecionado.setAlpha(0.7);
-                    } else if (cardsInferiores.includes(gameObject) && cardSelecionado) {
-                        let cardAtual = posicoesOcupadas.get(gameObject);
-
-                        if (cardAtual) {
-                            let posicaoAntiga = { x: cardSelecionado.x, y: cardSelecionado.y };
-                            let novoAlvo = { x: gameObject.x, y: gameObject.y };
-
-                            this.tweens.add({
-                                targets: cardSelecionado,
-                                x: novoAlvo.x,
-                                y: novoAlvo.y,
-                                duration: 500,
-                                ease: 'Power2',
-                                onComplete: () => {
-                                    posicoesOcupadas.set(gameObject, cardSelecionado);
-                                    cardSelecionado.setAlpha(1);
-                                    cardSelecionado = null;
-                                }
-                            });
-
-                            this.tweens.add({
-                                targets: cardAtual,
-                                x: posicaoAntiga.x,
-                                y: posicaoAntiga.y,
-                                duration: 500,
-                                ease: 'Power2',
-                                onComplete: () => {
-                                    posicoesOcupadas.set(cardsInferiores.find(e => e.x === posicaoAntiga.x), cardAtual);
-                                }
-                            });
-
-                        } else {
-                            this.tweens.add({
-                                targets: cardSelecionado,
-                                x: gameObject.x,
-                                y: gameObject.y,
-                                duration: 500,
-                                ease: 'Power2',
-                                onComplete: () => {
-                                    posicoesOcupadas.set(gameObject, cardSelecionado);
-                                    cardSelecionado.setAlpha(1);
-                                    cardSelecionado = null;
-                                    verificaEncaixes();
-                                }
-                            });
+                    // Se estiver bloqueada a interação, não faz nada
+                    if (interacaoBloqueada) {
+                        return;
+                    }
+                
+                    // Quando um card superior é clicado
+                    if (miniGame3.cardsSuperiores.includes(gameObject) && miniGame3.cardSelecionado === null) {
+                        // Verifica se o card ainda é interativo
+                        if (!gameObject.getData('moved')) {
+                            // Se um card não foi selecionado ainda, seleciona o card
+                            if (miniGame3.cardSelecionado) {
+                                miniGame3.cardSelecionado.setAlpha(1); // Restaura a transparência do card anterior
+                            }
+                            miniGame3.cardSelecionado = gameObject;
+                            miniGame3.cardSelecionado.setAlpha(0.7); // Dá transparência ao card selecionado
                         }
                     }
+                
+                    // Quando um card inferior é clicado
+                    else if (miniGame3.cardsInferiores.includes(gameObject)) {
+                        // Só permite a interação com os cards inferiores se um card superior foi selecionado
+                        if (miniGame3.cardSelecionado !== null && !gameObject.getData('moved') && !miniGame3.posicoesOcupadas.get(gameObject)) {
+                            interacaoBloqueada = true; // Bloqueia novas interações até que a animação termine
+                
+                            let cardAtual = miniGame3.posicoesOcupadas.get(gameObject);
+                
+                            // Se o espaço inferior já tem um card
+                            if (cardAtual) {
+                                let posicaoAntiga = { x: miniGame3.cardSelecionado.x, y: miniGame3.cardSelecionado.y };
+                                let novoAlvo = { x: gameObject.x, y: gameObject.y };
+                
+                                // Move o card superior para o espaço inferior
+                                this.tweens.add({
+                                    targets: miniGame3.cardSelecionado,
+                                    x: novoAlvo.x,
+                                    y: novoAlvo.y,
+                                    duration: 500,
+                                    ease: 'Power2',
+                                    onComplete: () => {
+                                        miniGame3.posicoesOcupadas.set(gameObject, miniGame3.cardSelecionado);
+                                        miniGame3.cardSelecionado.setAlpha(1);
+                                        miniGame3.cardSelecionado.setData('moved', true); // Marca o card como movido
+                                        miniGame3.cardSelecionado = null; // Reseta a seleção
+                                        interacaoBloqueada = false; // Libera novas interações após a animação
+                                    }
+                                });
+                
+                                // Move o card que estava no espaço inferior de volta para o topo
+                                this.tweens.add({
+                                    targets: cardAtual,
+                                    x: posicaoAntiga.x,
+                                    y: posicaoAntiga.y,
+                                    duration: 500,
+                                    ease: 'Power2',
+                                    onComplete: () => {
+                                        miniGame3.posicoesOcupadas.set(miniGame3.cardsInferiores.find(e => e.x === miniGame3.posicaoAntiga.x), cardAtual);
+                                    }
+                                });
+                
+                            } 
+
+                            else
+                            {
+                                // Se o espaço inferior ainda está vazio
+                                this.tweens.add({
+                                    targets: miniGame3.cardSelecionado,
+                                    x: gameObject.x,
+
+                                    y: gameObject.y,
+
+                                    duration: 500,
+
+                                    ease: 'Power2',
+
+                                    onComplete: () => 
+                                    {
+                                        miniGame3.posicoesOcupadas.set(gameObject, miniGame3.cardSelecionado);
+
+                                        miniGame3.cardSelecionado.setAlpha(1);
+                                        
+                                        miniGame3.cardSelecionado.setData('moved', true); 
+                                        
+                                        miniGame3.cardSelecionado = null; 
+                                        
+                                        interacaoBloqueada = false; 
+
+                                        verificaEncaixes();
+                                    }
+                                });
+                            }                        
+                        } 
+                    }
                 });
+                
+                
 
                 function verificaEncaixes() {
-                    let totalEncaixados = [...posicoesOcupadas.values()].filter(Boolean).length;
-                    botaoVerificar.setVisible(totalEncaixados === 5);
+                    let totalEncaixados = [...miniGame3.posicoesOcupadas.values()].filter(Boolean).length;
+                    miniGame3.botaoVerificar.setVisible(totalEncaixados === 5);
 
                     if (totalEncaixados === 5) {
-                        textoCentral.setVisible(false);
+                        miniGame3.textoCentral.setVisible(false);
                     }
                 }
             }
         }
 
-        class Scene2 extends Phaser.Scene {
+        class fimDoDia1 extends Phaser.Scene {
             constructor() {
-                super({ key: 'Scene2' });
+                super({ key: 'fimDoDia1' });
             }
-
+        
             init(data) {
+                // Agora estamos recebendo os dados corretos
                 this.cardsSuperiores = data.cardsSuperiores;
+                this.ordemCorreta = data.ordemCorreta; // Salva a ordem correta
             }
-
+        
             create() {
-                this.add.text(larguraJogo / 2, 200, 'Resultado', { fontSize: '40px', fill: '#fff' })
+                this.cameras.main.setBackgroundColor('#195A4B');
+            
+                this.add.text(400, 200, 'Resultado', { fontSize: '40px', fill: '#fff' })
                     .setOrigin(0.5);
-
-                let erros = this.contaErros();
-                let percentualCorreto = 1 - (erros * 0.2);
-                let pontuacaoRodada = Math.max(100 * percentualCorreto, 0); // Garante que a pontuação não seja negativa
-
-                pontuacao += pontuacaoRodada; // Atualiza a pontuação total
-
-                let mensagem = erros === 0 ? 'Parabéns! Você acertou a ordem!' : `Você teve ${erros} erro(s).`;
-                let corTexto = erros === 0 ? '#0f0' : '#f00';
-
-                this.add.text(larguraJogo / 2, 300, mensagem, { fontSize: '30px', fill: corTexto })
+                
+                // Obter os acertos e erros
+                let { acertos, erros } = this.contaErros();
+            
+                // Aumenta a pontuação em 50 para cada acerto e diminui 50 para cada erro
+                let pontuacaoRodada = (acertos * 50) - (erros * 50);
+            
+                // Atualiza a pontuação total
+                pontuacao += pontuacaoRodada;
+            
+                // Exibe a pontuação no jogo
+                this.add.text(400, 350, `Pontuação: ${Math.round(pontuacao)}`, { fontSize: '30px', fill: '#fff' })
                     .setOrigin(0.5);
-
-                this.add.text(larguraJogo / 2, 350, `Pontuação: ${Math.round(pontuacao)}`, { fontSize: '30px', fill: '#fff' })
-                    .setOrigin(0.5);
-
-                let botaoVoltar = this.add.text(larguraJogo / 2, 400, 'Voltar', { fontSize: '30px', fill: '#fff', backgroundColor: '#333' })
+            
+                let botaoVoltar = this.add.text(400, 400, 'Voltar', { fontSize: '30px', fill: '#fff', backgroundColor: '#333' })
                     .setOrigin(0.5)
                     .setPadding(10)
                     .setInteractive();
-
+            
                 botaoVoltar.on('pointerdown', () => {
-                    this.scene.start('Scene1');
+                    this.scene.start('menuInicial');
                 });
             }
-
+            
+        
             contaErros() {
                 let ordemAtual = this.cardsSuperiores.slice().sort((a, b) => a.x - b.x).map(card => card.texture.key);
-                return ordemAtual.reduce((erros, card, index) => erros + (card !== ordemCorreta[index] ? 1 : 0), 0);
+                let acertos = 0;
+                let erros = 0;
+            
+                // Compara a ordem atual com a ordem correta
+                ordemAtual.forEach((card, index) => {
+                    if (card === miniGame3.ordemCorreta[index]) {
+                        acertos++;
+                    } else {
+                        erros++;
+                    }
+                });
+            
+                return { acertos, erros };
             }
+            
         }
-
-        const config = {
-            type: Phaser.AUTO,
-            width: larguraJogo,
-            height: alturaJogo,
-            backgroundColor: "#195AB4",
-            scene: [Scene1, Scene2]
-        };
-
-        const game = new Phaser.Game(config);
-    </script>
+        
