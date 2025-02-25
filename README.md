@@ -39,7 +39,7 @@
 
 🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. *
 
-(https://inteli-college.github.io/2025-1A-T16-IN01-G05/)
+link para jogar:https://inteli-college.github.io/2025-1A-T16-IN01-G05/
 
 
 ## 📁 Estrutura de pastas
