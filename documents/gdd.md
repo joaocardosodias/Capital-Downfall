@@ -259,47 +259,40 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 ---
 
-Eliseu cresceu em uma comunidade humilde, mas via na tecnologia um caminho para mudar de vida. Aprendeu programação sozinho e, aos 18 anos, criou um app para ajudar pequenos comerciantes. Logo percebeu que tecnologia e mercado financeiro andavam juntos, especializando-se em fundos de investimento.
-<p align="center">
-<img src="../assets/personagens/personagemMasculino2.png">
-</p>
 
-Agora, aos 25 anos, Eliseu acaba de ser contratado como Analista de Fundos de Investimento do BTG Pactual, transformando sua visão de futuro em realidade.
-
----
-
-Roberta sempre foi curiosa e determinada. Desde criança, adorava resolver problemas e entender como as coisas funcionavam. Cresceu em um bairro simples, onde a maioria das pessoas via a tecnologia como algo distante, mas ela enxergava nela um futuro cheio de possibilidades.
-
-Com poucos recursos, aprendeu programação por conta própria e logo se interessou pelo mercado financeiro. Descobriu como a tecnologia poderia transformar investimentos e decidiu se especializar na área. Estudou com dedicação, superou desafios e se destacou.
-
-<p align="center">
-<img src="../assets/personagens/personagemFeminino2.png">
-</p>
-
-Agora, aos 28 anos, Roberta acaba de ser contratada como Analista de Fundos de Investimento do BTG Pactual, pronta para inovar e fazer a diferença.
+<div align="center">
+  <sub>Personagem 1: Eliseu</sub><br>
+  <img src="../assets/personagens/personagemMasculino2.png"alt="Alocação dos Entregadores"><br>
+  
+</div>
 
 ---
 
-Milton sempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida.
 
-Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. Seu esforço e dedicação chamaram atenção.
-<p align="center">
-<img src="../assets/personagens/personagemMasculino1.png">
-</p>
+<div align="center">
+  <sub>Personagem 2: Roberta </sub><br>
+  <img src="../assets/personagens/personagemFeminino2.png"<br>
+</div>
 
-Agora, aos 25 anos, Milton acaba de ser contratado como Analista de Fundos de Investimento do BTG Pactual, pronto para usar a tecnologia para impulsionar o futuro do mercado.
+
 
 ---
 
-Isabela sempre foi curiosa e determinada. Desde pequena, gostava de desafios e se interessava por tecnologia. Cresceu em um bairro simples, onde poucos falavam sobre o mercado financeiro, mas ela logo percebeu como a tecnologia poderia revolucionar esse setor.
+<div align="center">
+  <sub>Personagem 2: Milton </sub><br>
+  <img src="../assets/personagens/personagemMasculino1.png"<br>
+</div>
 
-Aprendeu programação por conta própria e se aprofundou no mundo dos investimentos. Com muita dedicação, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. Seu talento não passou despercebido.
 
-<p align="center">
-<img src="../assets/personagens/personagemFeminino1.png">
-</p>
+---
 
-Agora, aos 25 anos, Isabela acaba de ser contratada como Analista de Fundos de Investimento do BTG Pactual, pronta para usar a tecnologia para transformar o mercado.
+
+<div align="center">
+  <sub>Personagem 2: Isabela </sub><br>
+  <img src="../assets/personagens/personagemFeminino1.png"<br>
+</div>
+
+
 ### 3.2.2. Non-Playable Characters (NPC)
 
 _\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção._
@@ -307,12 +300,17 @@ _\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrev
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
   O primeiro personagem do nosso jogo é o Eliseu , um analista júnior de 25 anos com experiência prévia em estágios no setor financeiro. Acredito que o Eliseu está totalmente alinhado com o nosso público-alvo, que são os analistas. Além disso, ele representa bem a realidade da sociedade brasileira, já que é um homem negro, jovem e no início de sua carreira. Acredito que as escolhas feitas para a construção do Eliseu foram muito bem pensadas e terão um impacto positivo na questão da representatividade.
-  
-  O segundo personagem é a Isabela , uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Isabela também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Eliseu , ela não te uma trajetória prévia no setor financeiro. Essa diferença de background entre Isabela e Eliseu é muito positiva, pois, apesar das diferenças, ambos estão dentro do nosso público-alvo. A Isabela, diferente do Eliseu, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
 
-  A terceira personagem é a Roberta, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Roberta, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, Roberta traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
+  A segundo  personagem é a Roberta, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Roberta, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, Roberta traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
+
+  O terceiro personagem é o Milton,que ssempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida.
+Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. 
   
-  Esses três personagens, com suas diferentes trajetórias e perfis, refletem a diversidade e a complexidade da sociedade brasileira, ao mesmo tempo em que se alinham com o público-alvo do nosso jogo. Acredito que essa abordagem trará um impacto positivo tanto em termos de engajamento quanto de representatividade.
+  O quarto personagem é a Isabela , uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Isabela também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Eliseu , ela não te uma trajetória prévia no setor financeiro. Essa diferença de background entre Isabela e Eliseu é muito positiva, pois, apesar das diferenças, ambos estão dentro do nosso público-alvo. A Isabela, diferente do Eliseu, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
+
+  
+  
+  Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a diversidade e a complexidade da sociedade brasileira, ao mesmo tempo em que se alinham com o público-alvo do nosso jogo. Acredito que essa abordagem trará um impacto positivo tanto em termos de engajamento quanto de representatividade.
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
