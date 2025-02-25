@@ -23,7 +23,10 @@
                 debug: false,
             }
         },
-        scene: [menuInicial,hub,telaLogin,dia1,miniGame1]
+
+  
+        scene: [menuInicial,hub,telaLogin,dia1,miniGame1,miniGame2]
+
     };
 
     const game = new Phaser.Game(config);  

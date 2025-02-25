@@ -21,6 +21,7 @@ class menuInicial extends Phaser.Scene
 
     create() 
     {
+
         // Cria o sprite da tela inicial
 
         const iniciar = this.add.sprite(400, 300, 'menu');
