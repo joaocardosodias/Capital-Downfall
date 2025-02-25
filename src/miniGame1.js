@@ -1,16 +1,16 @@
 
-let botaoContinuar;
+// let botaoContinuar;
 let botaoVoltar;
 let fim;
 let gavetas;
 let pontuacao = 0;
 let card1;
 let cardIndex = 0;
-let feedback1;
+// let feedback1;
 let textoPontuacao;
 let textoMudancaPontuacao;
 let cardsRestantes = [];
-let feedbacks = [];
+// let feedbacks = [];
 let cardAtual;
 
 
@@ -26,16 +26,16 @@ class miniGame1 extends Phaser.Scene {
         //Preload das imagens guardadas em assets
 
         this.load.image('botaoIniciar', 'assets/botaoIniciar.png');
-        this.load.image('botaoContinuar', 'assets/botaoLogin.png');
+        // this.load.image('botaoContinuar', 'assets/botaoLogin.png');
         this.load.image('gavetas', 'assets/miniGame1/gavetas.png');
 
         for (let i = 1; i <= 10; i++) {
             this.load.image('card' + i, 'assets/miniGame1/card' + i + '.png');
         }
 
-        for (let i = 1; i <= 10; i++) {
-            this.load.image('feedback' + i, 'assets/miniGame1/feedback' + i + '.png');
-        }
+        // for (let i = 1; i <= 10; i++) {
+        //     this.load.image('feedback' + i, 'assets/miniGame1/feedback' + i + '.png');
+        // }
 
         this.load.image('fim', 'assets/miniGame1/fim.png');
         this.load.image('botaoVoltar', 'assets/miniGame1/botaoVoltar.png');
@@ -47,16 +47,16 @@ class miniGame1 extends Phaser.Scene {
     create() {
 
         let cards = [
-            { nome: 'card1', resposta: true, feedback: 'feedback1' },
-            { nome: 'card2', resposta: true, feedback: 'feedback2' },
-            { nome: 'card3', resposta: true, feedback: 'feedback3' },
-            { nome: 'card4', resposta: true, feedback: 'feedback4' },
-            { nome: 'card5', resposta: true, feedback: 'feedback5' },
-            { nome: 'card6', resposta: false, feedback: 'feedback6' },
-            { nome: 'card7', resposta: false, feedback: 'feedback7' },
-            { nome: 'card8', resposta: false, feedback: 'feedback8' },
-            { nome: 'card9', resposta: false, feedback: 'feedback9' },
-            { nome: 'card10', resposta: false, feedback: 'feedback10' },
+            { nome: 'card1', resposta: true},
+            { nome: 'card2', resposta: true},
+            { nome: 'card3', resposta: true},
+            { nome: 'card4', resposta: true},
+            { nome: 'card5', resposta: true},
+            { nome: 'card6', resposta: false},
+            { nome: 'card7', resposta: false},
+            { nome: 'card8', resposta: false},
+            { nome: 'card9', resposta: false},
+            { nome: 'card10', resposta: false},
         ];
 
         // Embaralha os cards e pega 5 aleatórios
@@ -65,21 +65,21 @@ class miniGame1 extends Phaser.Scene {
 
         this.cards = cards;
 
-        let feedbacks = []; // Adiciona um array para armazenar os feedbacks
+        // let feedbacks = []; // Adiciona um array para armazenar os feedbacks
 
         // Fundo
         this.add.rectangle(400, 300, 800, 600, 0x9999ff).setDepth(-10);
 
         // Criação do primeiro card e feedback
         card1 = this.add.image(400, -500, cards[cardIndex].nome).setScale(1).setDepth(0);
-        feedback1 = this.add.image(400, -500, cards[cardIndex].feedback).setScale(1).setDepth(10);
+        // feedback1 = this.add.image(400, -500, cards[cardIndex].feedback).setScale(1).setDepth(10);
 
         // Armazena os cards restantes no array cardsRestantes com um laço for
         for (let i = 1; i < cards.length; i++) {
             let card = this.add.image(400, -500, cards[i].nome).setScale(1).setDepth(0);
             cardsRestantes.push(card); // Adiciona os cards restantes no array
-            let feedback = this.add.image(400, -500, cards[i].feedback).setScale(1).setDepth(i + 10);
-            feedbacks.push(feedback); // Adiciona os feedbacks no array
+            // let feedback = this.add.image(400, -500, cards[i].feedback).setScale(1).setDepth(i + 10);
+            // feedbacks.push(feedback); // Adiciona os feedbacks no array
         }
 
         //Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
@@ -90,7 +90,7 @@ class miniGame1 extends Phaser.Scene {
 
         botaoIniciar = this.add.image(400, 300, 'botaoIniciar').setInteractive().setDepth(0).setVisible(true).setScale(1);
 
-        botaoContinuar = this.add.image(400, 450, 'botaoContinuar').setInteractive(false).setDepth(cards.length + 11).setVisible(false).setScale(1);
+        // botaoContinuar = this.add.image(400, 450, 'botaoContinuar').setInteractive(false).setDepth(cards.length + 11).setVisible(false).setScale(1);
 
         gavetas = this.add.image(400, 300, 'gavetas').setDepth(-1).setVisible(false).setScale(1);
 
@@ -138,7 +138,6 @@ class miniGame1 extends Phaser.Scene {
                 font: '20px Arial',
                 fill: '#00cc00', // Cor do texto: verde
             }).setDepth(10);
-            this.animaCardSumindo(cards);
         } else { //Se o jogador errou
             pontuacao -= 50; //Ele perde 50 pontos
             //Adiciona um texto ao lado que mostra que o jogador perdeu 50 pontos
@@ -146,7 +145,6 @@ class miniGame1 extends Phaser.Scene {
                 font: '20px Arial',
                 fill: '#cc0000', //Cor do texto: vermelha
             }).setDepth(10);
-            this.feedback();
         }
 
         //faz o texto do lado subir 
@@ -164,33 +162,35 @@ class miniGame1 extends Phaser.Scene {
         //Atualiza o placar
         textoPontuacao.setText('Pontuação: ' + pontuacao);
 
+        this.animaCardSumindo(cards);
+
     }
 
 
 
 // Esta funcionalidade ainda não está funcionando, pois não consegui encontrar uma solução em tempo razoável. Então, o jogo só funciona se você acertar todas as questões :P
-    feedback() {
-        this.tweens.add({
-            targets: [feedbacks[cardIndex], botaoContinuar],
-            alpha: 1,
-            duration: 1000,
-            ease: 'Power2',
-            onComplete: () => {
-                botaoContinuar.on('pointerdown', () => {
-                    this.tweens.add({
-                        targets: [feedbacks[cardIndex], botaoContinuar],
-                        alpha: 0,
-                        duration: 1000,
-                        ease: 'Power2',
-                        onComplete: () => {
-                            this.proximoCard();
-                            botaoContinuar.setInteractive(false).setVisible(false);
-                        }
-                    });
-                }).setInteractive(true).setVisible(true);
-            }
-        })
-    }
+    // feedback() {
+    //     this.tweens.add({
+    //         targets: [feedbacks[cardIndex], botaoContinuar],
+    //         alpha: 1,
+    //         duration: 1000,
+    //         ease: 'Power2',
+    //         onComplete: () => {
+    //             botaoContinuar.on('pointerdown', () => {
+    //                 this.tweens.add({
+    //                     targets: [feedbacks[cardIndex], botaoContinuar],
+    //                     alpha: 0,
+    //                     duration: 1000,
+    //                     ease: 'Power2',
+    //                     onComplete: () => {
+    //                         this.proximoCard();
+    //                         botaoContinuar.setInteractive(false).setVisible(false);
+    //                     }
+    //                 });
+    //             }).setInteractive(true).setVisible(true);
+    //         }
+    //     })
+    // }
 
 
 
