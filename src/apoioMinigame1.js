@@ -22,12 +22,10 @@ class apoioMinigame1 extends Phaser.Scene
     }
     
     create() 
-    {
-       
-        
+    {  
         //Carrega os dois fundos, coloca o fundo laranja como invisível
 
-        let listaImagens= 0;
+        let listaImagens = 0;
 
         let tutorialCtrlMinigame1 = this.add.image(400,300, 'tutorialCtrlMinigame1');
 
@@ -37,63 +35,56 @@ class apoioMinigame1 extends Phaser.Scene
 
         let botaoTutorialMinigame1 = this.add.image(615,560, 'botaoSeguirAdiante').setInteractive().setScale(0.50);
 
+        let botaoTutorialMinigame2 = this.add.image(615, 560, 'botaoSeguirAdiante').setScale(0.50).setVisible(false);
+
+        let botaoTutorialMinigame3 = this.add.image(615, 560, 'botaoSeguirAdiante').setScale(0.50).setVisible(false);
+
         botaoTutorialMinigame1.on('pointerdown', function (pointer)
         {
-            if(listaImagens == 0 && seguirAdiante == true)
-            {
-                tutorialCtrlMinigame1.setVisible(false);
+            tutorialCtrlMinigame1.setVisible(false);
                 
-                tutorialFundoAberto.setVisible(true);
-                
-                listaImagens = 1;
-
-                seguirAdiante = false;
-
-            }
-            if(listaImagens == 1 && seguirAdiante == true)
-                {
-                    tutorialFundoAberto.setVisible(false);
-
-                    tutorialFundoFechado.setVisible(true);
-                    
-                    listaImagens = 2;
-    
-                    seguirAdiante = false;
-    
-                }
-            if(listaImagens == 2 && seguirAdiante == true)
-                {
-                        this.scene.start('miniGame1')
-
-                        this.scene.stop('apoioMinigame1');
+            tutorialFundoAberto.setVisible(true);
         
-                }
-            if(seguirAdiante == false)
-                {
-            
-                        this.timedEvent = this.time.delayedCall(1000, this.onEvent, [], this);  
-            
-                }
+            botaoTutorialMinigame2.setInteractive().setVisible(true)
+
+            botaoTutorialMinigame1.setVisible(false);
         });
-        
 
-        
+        botaoTutorialMinigame2.on('pointerdown', function (pointer)
+        {
+            tutorialFundoAberto.setVisible(false);
+
+            tutorialFundoFechado.setVisible(true);
+            
+            botaoTutorialMinigame3.setInteractive().setVisible(true)
+
+            botaoTutorialMinigame2.setVisible(false);
+        });
+
+        botaoTutorialMinigame3.on('pointerdown', function (pointer)
+        {
+            game.scene.start('miniGame1');
+
+            game.scene.stop('apoioMinigame1');
+        });
+
+
+
     }
+
+
+
+
+
+
+
+          
 
     //Essa função permite que o tutorial seja clicado após o tempo ser passado, assim evitando um bug que um click registrava logo no início da cena
-
-    onEvent()
-    {
-        seguirAdiante = true;
-        return
-    }
     
     update()
     {
         
-
- 
-    }
-    
-};
+    } 
+}
 

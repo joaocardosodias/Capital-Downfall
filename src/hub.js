@@ -174,7 +174,7 @@
 
                         avisoMinigame2.setVisible(false);
 
-                        game.scene.start('miniGame2');
+                        game.scene.start('apoioMinigame2');
 
                         minigame2Jogado = true;
 
@@ -198,7 +198,7 @@
 
                         avisoMinigame3.setVisible(false);
 
-                        game.scene.start('miniGame3');
+                        game.scene.start('apoioMinigame3');
 
                         minigame3Jogado = true;
 
@@ -300,6 +300,4 @@
               player.setVelocityY (0);
           } 
       }
-
-      
   }

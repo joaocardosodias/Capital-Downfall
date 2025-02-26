@@ -25,7 +25,7 @@
         },
 
   
-        scene: [menuInicial,hub,telaLogin,dia1,miniGame1,miniGame2,miniGame3,fimDoDia1,apoioMinigame1]
+        scene: [menuInicial,hub,telaLogin,dia1,miniGame1,miniGame2,miniGame3,fimDoDia1,apoioMinigame1,apoioMinigame2,apoioMinigame3]
 
     };
 
