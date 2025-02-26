@@ -79,6 +79,8 @@
                         .setInteractive()
                         .setDepth(2)
                         .setScale(0.4);
+                        
+
 
                     miniGame3.cardsSuperiores.push(card);
                 }
@@ -104,11 +106,17 @@
 
                     miniGame3.botaoVerificar.on('pointerdown', () => {
                         // Passando os dados para a próxima cena corretamente
+
+                        
+                        
                         this.scene.start('fimDoDia1', {
                             cardsSuperiores: miniGame3.cardsSuperiores,
                             ordemCorreta: miniGame3.ordemCorreta, // Se você precisar da ordem correta também
                             // Adicione outros dados se necessário
                         });
+
+                        this.scene.stop('miniGame3');
+                        
                     });
                     
 
@@ -243,8 +251,8 @@
                 // Obter os acertos e erros
                 let { acertos, erros } = this.contaErros();
             
-                // Aumenta a pontuação em 50 para cada acerto e diminui 50 para cada erro
-                let pontuacaoRodada = (acertos * 50) - (erros * 50);
+                // Aumenta a pontuação em 100 para cada acerto e diminui 50 para cada erro
+                let pontuacaoRodada = (acertos * 100) - (erros * 50);
             
                 // Atualiza a pontuação total
                 pontuacao += pontuacaoRodada;
@@ -258,14 +266,22 @@
                     .setPadding(10)
                     .setInteractive();
             
-                botaoVoltar.on('pointerdown', () => {
-                    this.scene.start('menuInicial');
-                });
+                    botaoVoltar.on('pointerdown', () => {
+
+
+                        minigame3Jogado = true;
+
+                        this.scene.restart('hub');  
+                    
+                        this.scene.stop('fimDoDia1');
+                    });
+                    
+                    
             }
             
         
             contaErros() {
-                let ordemAtual = this.cardsSuperiores.slice().sort((a, b) => a.x - b.x).map(card => card.texture.key);
+                let ordemAtual = miniGame3.cardsSuperiores.slice().sort((a, b) => a.x - b.x).map(card => card.texture.key);
                 let acertos = 0;
                 let erros = 0;
             
