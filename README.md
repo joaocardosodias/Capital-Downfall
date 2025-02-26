@@ -31,13 +31,13 @@
 
 ## 📜 Descrição
 
-*🧑‍💼O nosso jogo foi desenvolvido para aquele(a) analista junior , que precisa ser introdusido ao mercado de trabalho de forma rapida e eficiente , de forma que o player não fique entediado , se prenda ao jogo e possa se divertir aprendendo.Além disso é uma peça fundamental para qualquer Banco que busca novos analistas de investimentos e precisam de um onboarding diferente de qulquer outro.
+*🧑‍💼O nosso jogo foi desenvolvido para aquele(a) que precisa se integrar rapidamente no mercado de trabalho de forma dinâmica e eficiente, tornando o aprendizado uma experiência envolvente e divertida. Além disso, ele se destaca como uma ferramenta essencial para bancos que buscam atrair novos analistas de investimentos, oferecendo um onboarding inovador e diferenciado.
 
 
-❓O jogo "Capital DownFall" foi desenvolvido de forma 2D(jogo com uma visão bidimensional, na qual todo o jogo se passa em um plano), para que qualquer pessoa consiga entender e jogar de forma fácil, além de o jogador ter uma perspectiva maior do ambiente. Ele é uma forma de onboarding gameficado feito para preparar novos analistas de fundos com pouca ou sem experiências no mercado.
+❓O jogo "Capital DownFall" foi desenvolvido no formato 2D(jogo com uma visão bidimensional, na qual todo o jogo se passa em um plano), para que qualquer pessoa consiga entender e jogar de forma fácil, além de o jogador ter uma perspectiva maior do ambiente. Ele é uma forma de onboarding gameficado feito para preparar novos analistas de fundos com pouca ou sem experiências no mercado.
 
 
-🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. *
+🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma grave crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. *
 
 link para jogar:https://inteli-college.github.io/2025-1A-T16-IN01-G05/
 
