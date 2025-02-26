@@ -219,7 +219,7 @@ Tiago Mendes é um analista de fundos de investimento recém-contratado para o B
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-_Descreva o que o jogador deve cumprir para avançar ou concluir o jogo_
+  Para concluir o jogo, o jogador deve avançar por três dias (módulos), começando cada dia na hub principal, onde escolhe a ordem de três tarefas a serem realizadas; após concluí-las, enfrenta um miniboss em forma de quiz sobre os temas abordados, sendo direcionado, ao final, para uma de três telas: Desempenho Satisfatório (pode prosseguir), Desempenho Mediano (precisa melhorar, mas continua) ou Game Over (encerra a partida por pontuação insuficiente). Esse ciclo se repete por três dias, e, no final do terceiro, o jogador é levado para uma hub alternativa com atmosfera tensa, onde repete o mesmo loop de tarefas, podendo ser direcionado ao Game Over ou à tela de parabéns pela conclusão do jogo, garantindo uma progressão desafiadora e engajante até o fim da experiência.
 
 ## 2.2. Características do Jogo (sprint 2)
 
