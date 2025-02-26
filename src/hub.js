@@ -150,7 +150,7 @@
 
                         avisoMinigame1.setVisible(false);
 
-                        game.scene.start('miniGame1');
+                        game.scene.start('apoioMinigame1');
                         
                         minigame1Jogado = true;
 
