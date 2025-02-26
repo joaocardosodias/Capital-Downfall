@@ -2,6 +2,12 @@
 
 let botaoIniciar;
 
+let minigame1Jogado; 
+
+let minigame2Jogado;
+
+let minigame3Jogado;
+
 //Cria a cena do menu inicial do jogo
 
 class menuInicial extends Phaser.Scene 
@@ -27,6 +33,12 @@ class menuInicial extends Phaser.Scene
         const iniciar = this.add.sprite(400, 300, 'menu');
 
         // Cria a animação da tela inicial
+
+        minigame1Jogado = false;
+
+        minigame2Jogado = false;
+
+        minigame3Jogado = false;
 
         this.anims.create({
             key: 'iniciar',

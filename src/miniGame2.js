@@ -18,6 +18,9 @@ class miniGame2 extends Phaser.Scene {
     preload() {
         // Carrega as imagens 
 
+
+        
+
         miniGame2.perfisRestantes = [];
         miniGame2.perfilIndex = 0;
         miniGame2.respostaEmAndamento = false;
@@ -181,7 +184,8 @@ class miniGame2 extends Phaser.Scene {
                     miniGame2.botaoVoltar = this.add.image(400, 400, 'botaoVoltar').setInteractive().setDepth(22).setScale(0.9);
 
                     miniGame2.botaoVoltar.on('pointerdown', () => {
-                        this.scene.start('miniGame3'); //Se você clicar no botão Voltar, você volta pra hub do jogo
+                        minigame2Jogado = true;
+                        this.scene.restart('hub'); //Se você clicar no botão Voltar, você volta pra hub do jogo
                         this.scene.stop('miniGame2');
                     });
                 }

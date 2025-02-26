@@ -6,9 +6,11 @@
 
  let player;
 
- let computador;
+ let colisaoMinigame1;
 
- let colisaoComputador;
+ let colisaoMinigame2;
+
+ let colisaoMinigame3;
 
  let teclado;
 
@@ -17,6 +19,12 @@
  let layerDecoracoes;
 
  let spacebar; 
+
+ let avisoMinigame1;
+
+ let avisoMinigame2;
+
+ let avisoMinigame3;
 
   
  //Cria a cena da Hub
@@ -34,13 +42,15 @@
           pontuacao = 0;
           //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
 
-          this.load.image('tiles', 'assets/tilesetInicial.png');
+          this.load.image('tiles', 'assets/spriteSheet.png');
 
           this.load.image('player', 'assets/player.png');
 
-          this.load.tilemapTiledJSON('hub','assets/hubInicialTeste.json');
+          this.load.tilemapTiledJSON('hub','assets/hubInicial.json');
 
-          this.load.image('computador', 'assets/mesaComputador.png');
+          this.load.image('colisao', 'assets/colisao.png');
+
+          this.load.spritesheet('avisoMinigame', 'assets/aviso.png', { frameWidth: 32, frameHeight: 64 });
 
           //Armazena na variável teclado o input das setinhas
 
@@ -49,6 +59,7 @@
       
       create() 
       {
+
           // Antes do código a seguir, importante esclarecer: tileset(são as imagens utilizadas na criação do mapa)  tilemap(posição que as imagens assumirão)
 
           //Armazena na variável spacebar a tecla espaço
@@ -61,17 +72,15 @@
 
           //Armazena na variável tileset  o tileset utilizado
           
-          const tileset = map.addTilesetImage('tilesetInicial', 'tiles')
+          const tileset = map.addTilesetImage('tileset', 'tiles')
 
-          //Cria na tela a layer do chão do tilemap
+          //Cria as layers do tilemap
 
           map.createLayer('ground', tileset)
 
-          //Cria na tela a layer das paredes do tilemap, armazenando na variável layerParede
+          map.createLayer('noCollision', tileset)
 
           layerParede = map.createLayer('walls', tileset)
-
-          //Cria na tela a layer das decorações do tilemap, armazenando na variável layerDecoracoes
 
           layerDecoracoes = map.createLayer('decorations', tileset)
           
@@ -83,59 +92,148 @@
 
           layerDecoracoes.setCollisionByExclusion([-1]); 
 
-          /* No código adiante, para ser possível detectar a interação com o objeto, não era possível manter sua propriedade de colisão (Ou seja, era posssível andar dentro do objeto)
-          Como solução, um objeto extra é utilizado, tendo uma área de colisão ligeiramente menor que a parte de interação, permitindo que a colisão com a parede aconteça */
+          //Criação dos objetos de detecção da interação do jogador com os terminais
 
-          // Criação da objeto da colisão do computador (a parte física). 
+          colisaoMinigame1 = this.physics.add.sprite(100,130, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
 
-          colisaoComputador = this.physics.add.sprite(200,200, 'computador').setScale(1.5).setImmovable(true);
+          colisaoMinigame2 = this.physics.add.sprite(1440,130, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
 
-          //Criação do objeto da deteção da interação com o computador. Ele fica invisível pois ele serve apenas para detectar a interação do player, sendo o colisaoComputador o objeto real que o player colide
+          colisaoMinigame3 = this.physics.add.sprite(1375,950, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
 
-          computador = this.physics.add.sprite(200,200, 'computador').setScale(1.6).setVisible(false).setImmovable(true);
+          //Adiciona a animação dos indicadores
+
+          this.anims.create({
+            key: 'movimentoAviso',
+
+            frames: this.anims.generateFrameNumbers('avisoMinigame', { start: 0, end: 12 }),
+
+            frameRate: 15,  
+            
+            repeat: -1
+        });
+
+        //Adiciona os indicadores
+
+        avisoMinigame1 = this.add.sprite(98, 72, 'avisoMinigame');
+
+        avisoMinigame2 = this.add.sprite(1440, 75, 'avisoMinigame');
+
+        avisoMinigame3 = this.add.sprite(1375, 870, 'avisoMinigame');
+
+        avisoMinigame1.play('movimentoAviso');
+
+        avisoMinigame2.play('movimentoAviso');
+
+        avisoMinigame3.play('movimentoAviso');
 
           //Criação do objeto do player
 
-          player = this.physics.add.sprite(100,100, 'player').setScale(0.1);
+          player = this.physics.add.sprite(800,800, 'player').setScale(0.1);
 
-          // Impede que o player consiga sair pelas bordas da tela
-
-          player.setCollideWorldBounds(true);
-
-          //Adiciona a colisão entre o player e a parede
+          //Adiciona a colisão entre os objetos
 
           this.physics.add.collider(player, layerParede);
-
-          //Adiciona a colisão entre o player as decorações
           
-          this.physics.add.collider(player, layerDecoracoes);
-          
-          //Adiciona a colisão entre o player e o computador
-
-          this.physics.add.collider(player, colisaoComputador);  
+          this.physics.add.collider(player, layerDecoracoes); 
      
-          //Verifica se o player está na mesma área que o detector de colisão do computador
+          //Verifica se o player está na mesma área que o detector de colisão do minigame 1
 
-          this.physics.add.overlap(player, computador, function()
+          this.physics.add.overlap(player, colisaoMinigame1, function()
           {
               //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
 
               if (spacebar && Phaser.Input.Keyboard.JustDown(spacebar)) 
                   {
-                      //Caso as condições sejam cumpridas, ocorre a troca de cena para o login do computador
+                    //O player não pode jogar o minigame mais de 1 vez
 
-                      game.scene.start('telaLogin'); 
+                      if (minigame1Jogado == false){
+
+                        avisoMinigame1.setVisible(false);
+
+                        game.scene.start('miniGame1');
+                        
+                        minigame1Jogado = true;
+
+                        
+
+                        
+
+                      }
                   }
           });
+
+          this.physics.add.overlap(player, colisaoMinigame2, function()
+          {
+              //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
+
+              if (spacebar && Phaser.Input.Keyboard.JustDown(spacebar)) 
+                  {
+                    //O player não pode jogar o minigame mais de 1 vez
+
+                      if (minigame2Jogado == false){
+
+                        avisoMinigame2.setVisible(false);
+
+                        game.scene.start('miniGame2');
+
+                        minigame2Jogado = true;
+
+                        
+
+                        
+
+                      }
+                  }
+          });
+
+          this.physics.add.overlap(player, colisaoMinigame3, function()
+          {
+              //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
+
+              if (spacebar && Phaser.Input.Keyboard.JustDown(spacebar)) 
+                  {
+                    //O player não pode jogar o minigame mais de 1 vez
+
+                      if (minigame3Jogado == false){
+
+                        avisoMinigame3.setVisible(false);
+
+                        game.scene.start('miniGame3');
+
+                        minigame3Jogado = true;
+
+                        
+
+                        
+
+                      }
+                  }
+          });
+
+
+          //Configura a câmera para seguir o jogador
+          
+          this.cameras.main.startFollow(player, true);
+
+          
       }
+
       
+
+
+
+
+
       update()
       {
+        
+
+
 
           /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
           O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.707 */ 
 
-          if (teclado.left.isDown && teclado.up.isDown) 
+        if (teclado.left.isDown && teclado.up.isDown) 
             {
                 player.setVelocityX (-150*0.707);
                 
@@ -202,4 +300,6 @@
               player.setVelocityY (0);
           } 
       }
+
+      
   }

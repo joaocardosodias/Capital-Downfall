@@ -113,7 +113,7 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 - **Mudanças no Perfil dos Investidores:** Novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis.
 
 - **Regulação Rigorosa:** O setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco.
-Cibersegurança e Fraudes – Como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados.
+  Cibersegurança e Fraudes – Como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados.
 
 **Oportunidades:**
 
@@ -172,8 +172,6 @@ Durante a reunião com o parceiro do projeto foi possível definir uma série de
 14|Conquistas serão desbloqueadas ao atingir certos marcos de progresso.
 15|O jogador poderá gastar moedas para personalizar o seu personagem, adquirindo acessórios e itens cosméticos.
 
-
-
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
 O público-alvo consiste em um grupo de indivíduos com características em comum, tornando-os mais inclinados a consumir determinados produtos ou serviços oferecidos por uma empresa que os tem como foco (SEBRAE, [20--]).
@@ -190,30 +188,30 @@ Para garantir um jogo mais personalizado e voltado para experiências reais, foi
 
 ### Persona do usuário:
 
-- **Nome:** *Tiago Mendes*  
-- **Idade:** *24*  
-- **Gênero:** *Masculino*  
-- **Cargo:** *Analista de Fundos de Investimentos do BTG Pactual*  
+- **Nome:** _Tiago Mendes_
+- **Idade:** _24_
+- **Gênero:** _Masculino_
+- **Cargo:** _Analista de Fundos de Investimentos do BTG Pactual_
 
 #### Características:
+
 - Proativo
 - Curioso
 - Esforçado
 
 #### Biografia:
+
 Tiago Mendes é um analista de fundos de investimento recém-contratado para o BTG Pactual, nascido e criado em São Paulo. Possui graduação em Economia pela Universidade de São Paulo (USP) e pós-graduação em Gestão Financeira pela Fundação Getúlio Vargas (FGV). Destacou-se no gerenciamento de investimentos em diversos e-commerces antes de ser contratado pelo banco BTG, onde atualmente está realizando o processo de onboarding da empresa.
 
 #### Dores:
+
 - Falta de uma abordagem didática e prática para compreender os processos internos sobre fundos de investimento do banco BTG.
 - Dificuldade em manter o foco e o engajamento ao longo de treinamentos tradicionais sobre conteúdos extensos e pouco didáticos.
 
 #### Necessidades:
+
 - Mecanismo que simplifique e promova o entendimento didático do processo de onboarding de fundos de investimentos do banco BTG.
 - Treinamento mais divertido para manter sua atenção.
-
-
-
-
 
 # <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
 
@@ -225,7 +223,7 @@ _Descreva o que o jogador deve cumprir para avançar ou concluir o jogo_
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-Capital Downfall é um Role Playing Game(RPG) corporativo com elementos de simulação e estratégia. O jogador assume o papel de um analista de tecnologia de um banco  e deve cumprir tarefas essenciais para manter o banco funcionando. A progressão ocorre por meio de decisões estratégicas, quizzes, resolução de desafios e mini-games, impactando diretamente o desempenho da empresa. Com um ambiente dinâmico e desafios progressivos, o jogo combina narrativa imersiva e aprendizado interativo, trazendo uma experiência única de gestão e tomada de decisões no mercado financeiro.
+Capital Downfall é um Role Playing Game(RPG) corporativo com elementos de simulação e estratégia. O jogador assume o papel de um analista de tecnologia de um banco e deve cumprir tarefas essenciais para manter o banco funcionando. A progressão ocorre por meio de decisões estratégicas, quizzes, resolução de desafios e mini-games, impactando diretamente o desempenho da empresa. Com um ambiente dinâmico e desafios progressivos, o jogo combina narrativa imersiva e aprendizado interativo, trazendo uma experiência única de gestão e tomada de decisões no mercado financeiro.
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
@@ -259,7 +257,6 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 ---
 
-
 <div align="center">
   <sub>Personagem 1: Eliseu</sub><br>
   <img src="../assets/personagens/personagemMasculino2.png"alt="Alocação dos Entregadores"><br>
@@ -268,13 +265,10 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 ---
 
-
 <div align="center">
   <sub>Personagem 2: Roberta </sub><br>
   <img src="../assets/personagens/personagemFeminino2.png"<br>
 </div>
-
-
 
 ---
 
@@ -283,15 +277,12 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
   <img src="../assets/personagens/personagemMasculino1.png"<br>
 </div>
 
-
 ---
-
 
 <div align="center">
   <sub>Personagem 2: Isabela </sub><br>
   <img src="../assets/personagens/personagemFeminino1.png"<br>
 </div>
-
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
@@ -299,18 +290,16 @@ _\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrev
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-  O primeiro personagem do nosso jogo é o Eliseu , um analista júnior de 25 anos com experiência prévia em estágios no setor financeiro. Acredito que o Eliseu está totalmente alinhado com o nosso público-alvo, que são os analistas. Além disso, ele representa bem a realidade da sociedade brasileira, já que é um homem negro, jovem e no início de sua carreira. Acredito que as escolhas feitas para a construção do Eliseu foram muito bem pensadas e terão um impacto positivo na questão da representatividade.
+O primeiro personagem do nosso jogo é o Eliseu , um analista júnior de 25 anos com experiência prévia em estágios no setor financeiro. Acredito que o Eliseu está totalmente alinhado com o nosso público-alvo, que são os analistas. Além disso, ele representa bem a realidade da sociedade brasileira, já que é um homem negro, jovem e no início de sua carreira. Acredito que as escolhas feitas para a construção do Eliseu foram muito bem pensadas e terão um impacto positivo na questão da representatividade.
 
-  A segundo  personagem é a Roberta, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Roberta, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, Roberta traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
+A segundo personagem é a Roberta, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Roberta, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, Roberta traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
 
-  O terceiro personagem é o Milton,que ssempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida.
-Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. 
-  
-  O quarto personagem é a Isabela , uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Isabela também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Eliseu , ela não te uma trajetória prévia no setor financeiro. Essa diferença de background entre Isabela e Eliseu é muito positiva, pois, apesar das diferenças, ambos estão dentro do nosso público-alvo. A Isabela, diferente do Eliseu, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
+O terceiro personagem é o Milton,que ssempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida.
+Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados.
 
-  
-  
-  Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a diversidade e a complexidade da sociedade brasileira, ao mesmo tempo em que se alinham com o público-alvo do nosso jogo. Acredito que essa abordagem trará um impacto positivo tanto em termos de engajamento quanto de representatividade.
+O quarto personagem é a Isabela , uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Isabela também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Eliseu , ela não te uma trajetória prévia no setor financeiro. Essa diferença de background entre Isabela e Eliseu é muito positiva, pois, apesar das diferenças, ambos estão dentro do nosso público-alvo. A Isabela, diferente do Eliseu, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
+
+Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a diversidade e a complexidade da sociedade brasileira, ao mesmo tempo em que se alinham com o público-alvo do nosso jogo. Acredito que essa abordagem trará um impacto positivo tanto em termos de engajamento quanto de representatividade.
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
@@ -373,9 +362,9 @@ _Exemplo de tabela_
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
-<img src= "../assets/fluxograma.jpg">
+<img src= "../assets/diagrama.jpg">
 
-A trajetória do usuário em nosso jogo pode ser representada por meio do fluxograma acima. Nele, o jogador inicia no Menu Inicial, podendo apertar o botão para começar. Após isso, ele será posicionado na hub, durante o primeiro dia (módulo 1). Nesse módulo, ele vai poder selecionar a ordem das tarefas que ele irá realizar (totalizando três). Após essas atividades, ele enfrentará um miniboss, sendo ele um quiz contendo perguntas sobre os assuntos abordados. Após esse acontecimento, ele é direcionado para uma de três possíveis telas. A primeira indica que ele teve um desempenho satisfatório, e que pode prosseguir. A segunda indica que ele teve um desempenho mediano, precisando melhorar no futuro. Nessa tela, ele ainda pode continuar. A terceira é a de _Game Over_, que ocorre quando ele não atinge a pontuação necessária durante as tarefas.
+A trajetória do usuário em nosso jogo pode ser representada por meio do diagrama acima. Nele, o jogador inicia no Menu Inicial, podendo apertar o botão para começar. Após isso, ele será posicionado na hub, durante o primeiro dia (módulo 1). Nesse módulo, ele vai poder selecionar a ordem das tarefas que ele irá realizar (totalizando três). Após essas atividades, ele enfrentará um miniboss, sendo ele um quiz contendo perguntas sobre os assuntos abordados. Após esse acontecimento, ele é direcionado para uma de três possíveis telas. A primeira indica que ele teve um desempenho satisfatório, e que pode prosseguir. A segunda indica que ele teve um desempenho mediano, precisando melhorar no futuro. Nessa tela, ele ainda pode continuar. A terceira é a de _Game Over_, que ocorre quando ele não atinge a pontuação necessária durante as tarefas.
 
 Em seguida, o jogador repete esse _loop_ de gameplay mais duas vezes, totalizando três dias. No final do terceiro dia, o jogador é direcionado para uma hub alternativa. Ela possui uma atmosfera tensa, representando uma "sala de guerra". Nessa hub, o jogador segue o _loop_ existente na _hub_ normal, podendo escolher a ordem das três tarefas a serem realizadas. Quando as tarefas são terminadas, o jogador ou chegará na tela de _Game Over_, ou em uma tela parabenizando-o por ter finalizado a experiência.
 
@@ -500,7 +489,6 @@ _Relacione os pontos de melhorias evidenciados nos testes com plano de ações p
 _Relacione também quaisquer ideias que o grupo tenha para melhorias futuras_
 
 # <a name="c7"></a>7. Referências (sprint 5)
-
 
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 23 fev. 2025.<br>
 
