@@ -219,7 +219,13 @@ Tiago Mendes é um analista de fundos de investimento recém-contratado para o B
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-  Para concluir o jogo, o jogador deve avançar por três dias (módulos), começando cada dia na hub principal, onde escolhe a ordem de três tarefas a serem realizadas; após concluí-las, enfrenta um miniboss em forma de quiz sobre os temas abordados, sendo direcionado, ao final, para uma de três telas: Desempenho Satisfatório (pode prosseguir), Desempenho Mediano (precisa melhorar, mas continua) ou Game Over (encerra a partida por pontuação insuficiente). Esse ciclo se repete por três dias, e, no final do terceiro, o jogador é levado para uma hub alternativa com atmosfera tensa, onde repete o mesmo loop de tarefas, podendo ser direcionado ao Game Over ou à tela de parabéns pela conclusão do jogo, garantindo uma progressão desafiadora e engajante até o fim da experiência.
+Para concluir o jogo, o jogador deve avançar por quatro dias, cada um representando desafios progressivos dentro do ambiente corporativo do banco. No primeiro dia, ele inicia na hub principal do escritório e pode escolher a ordem das tarefas introdutórias, que abordam conceitos básicos e operações fundamentais do banco. Ao concluir todas as tarefas, um relatório em formato de jornal apresenta o impacto de suas decisões, determinando se pode prosseguir para o dia seguinte.
+
+No segundo dia, as tarefas se tornam mais complexas, exigindo maior atenção aos detalhes e tomada de decisão estratégica. O jogador precisa lidar com desafios mais técnicos e gerenciar riscos operacionais. Ao final, novamente, o jornal avalia seu desempenho, e, caso tenha obtido um resultado satisfatório, ele avança para o próximo dia.
+
+No terceiro dia, a crise financeira se intensifica e as tarefas ganham um nível de urgência maior. O jogador precisa gerenciar múltiplos problemas simultaneamente, tomando decisões que podem impactar diretamente o desempenho do banco. O relatório do jornal pode indicar estabilidade, recuperação parcial ou um cenário crítico, influenciando o desfecho da jornada.
+
+No quarto e último dia, o jogador é levado a um ambiente de alta tensão, simulando uma verdadeira "sala de guerra", onde precisa tomar decisões rápidas e coordenar soluções para estabilizar o banco. As tarefas são ainda mais desafiadoras e exigem precisão para evitar o colapso financeiro. No final, o jornal apresenta o desfecho do jogo, que pode variar entre a recuperação total do banco, uma situação instável ou a falência definitiva.
 
 ## 2.2. Características do Jogo (sprint 2)
 
