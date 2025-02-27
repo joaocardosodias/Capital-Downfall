@@ -5,7 +5,7 @@ let tutorialLido;
 let imailInicial;
 
 let iniciarFase1;
-// JEITO PROVISÓRIO DE ACESSAR MINIGAME1:
+
 let iniciarFase;
 
 let fundoLaranja;
