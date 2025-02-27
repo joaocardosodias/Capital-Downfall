@@ -75,7 +75,7 @@ Com todos os programas e extensões devidamente configurados é necessário que 
 <b>Jogar o Game:</b>
 
 Caso você apenas deseja testar o jogo, sem instalar nenhum programa, basta acessar o jogo publicado do GitHub Pages, disponível no link abaixo:
-<a href="https://inteli-college.github.io/2024-T0014-IN01-G04/src/index.html">Jogue Agora!</a>
+<a href="https://inteli-college.github.io/2025-1A-T16-IN01-G05/">Jogue Agora!</a>
 
 Observação: o jogo foi feito para o navegador Google Chrome, portanto há alguns outros navegadores em que ele poderá não ser compatível.
 
