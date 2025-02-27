@@ -52,6 +52,8 @@
 
           this.load.spritesheet('avisoMinigame', 'assets/aviso.png', { frameWidth: 32, frameHeight: 64 });
 
+          this.load.spritesheet('playerSpritesheet', 'assets/markSpritesheet.png', { frameWidth: 32, frameHeight: 64});
+
           //Armazena na variável teclado o input das setinhas
 
           teclado = this.input.keyboard.createCursorKeys();            
@@ -78,7 +80,7 @@
 
           map.createLayer('ground', tileset)
 
-          map.createLayer('noCollision', tileset)
+          let layerColisao = map.createLayer('noCollision', tileset)
 
           layerParede = map.createLayer('walls', tileset)
 
@@ -92,6 +94,9 @@
 
           layerDecoracoes.setCollisionByExclusion([-1]); 
 
+          
+          layerColisao.setCollisionByExclusion([-1]);
+
           //Criação dos objetos de detecção da interação do jogador com os terminais
 
           colisaoMinigame1 = this.physics.add.sprite(100,130, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
@@ -102,6 +107,9 @@
 
           //Adiciona a animação dos indicadores
 
+
+
+        
           this.anims.create({
             key: 'movimentoAviso',
 
@@ -112,6 +120,55 @@
             repeat: -1
         });
 
+        this.anims.create({
+          key: 'movimentoParado',
+
+          frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 0, end: 0 }),
+
+          frameRate: 4,  
+          
+          repeat: -1
+        });
+
+        this.anims.create({
+          key: 'movimentoCima',
+
+          frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 5, end: 9 }),
+
+          frameRate: 4,  
+          
+          repeat: -1
+        });
+        this.anims.create({
+          key: 'movimentoBaixo',
+
+          frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 0, end: 4 }),
+
+          frameRate: 4,  
+          
+          repeat: -1
+        });
+        this.anims.create({
+          key: 'movimentoDireita',
+
+          frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 10, end: 14 }),
+
+          frameRate: 4,  
+          
+          repeat: -1
+        });
+        this.anims.create({
+          key: 'movimentoEsquerda',
+
+          frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 15, end: 19 }),
+
+          frameRate: 4,  
+          
+          repeat: -1
+        });
+
+        
+
         //Adiciona os indicadores
 
         avisoMinigame1 = this.add.sprite(98, 72, 'avisoMinigame');
@@ -120,21 +177,25 @@
 
         avisoMinigame3 = this.add.sprite(1375, 870, 'avisoMinigame');
 
-        avisoMinigame1.play('movimentoAviso');
+        avisoMinigame1.anims.play('movimentoAviso');
 
-        avisoMinigame2.play('movimentoAviso');
+        avisoMinigame2.anims.play('movimentoAviso');
 
-        avisoMinigame3.play('movimentoAviso');
+        avisoMinigame3.anims.play('movimentoAviso');
 
           //Criação do objeto do player
 
-          player = this.physics.add.sprite(800,800, 'player').setScale(0.1);
+          player = this.physics.add.sprite(800,800).setScale(0.9);
+
+          player.anims.play('movimentoParado');
 
           //Adiciona a colisão entre os objetos
 
-          this.physics.add.collider(player, layerParede);
+          this.physics.add.collider(player, layerParede);   
           
           this.physics.add.collider(player, layerDecoracoes); 
+
+          this.physics.add.collider(player, layerColisao); 
      
           //Verifica se o player está na mesma área que o detector de colisão do minigame 1
 
@@ -224,6 +285,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
       update()
       {
         
@@ -238,6 +310,8 @@
                 player.setVelocityX (-150*0.707);
                 
                 player.setVelocityY (-150*0.707);
+
+                player.anims.play('movimentoCima', true);
             }
   
           else if (teclado.left.isDown && teclado.down.isDown) 
@@ -245,6 +319,8 @@
                 player.setVelocityX (-150*0.707);
                 
                 player.setVelocityY (150*0.707);
+
+                player.anims.play('movimentoBaixo', true);
             }
   
           else if (teclado.right.isDown && teclado.up.isDown) 
@@ -252,6 +328,8 @@
                 player.setVelocityX (150*0.707);
                 
                 player.setVelocityY (-150*0.707);
+
+                player.anims.play('movimentoCima', true);
             }
   
           else if (teclado.right.isDown && teclado.down.isDown) 
@@ -259,6 +337,8 @@
                 player.setVelocityX (150*0.707);
                 
                 player.setVelocityY (150*0.707);
+
+                player.anims.play('movimentoBaixo', true);
             }
 
   
@@ -267,6 +347,8 @@
               player.setVelocityX (-150);
               
               player.setVelocityY (0);
+
+              player.anims.play('movimentoEsquerda', true);
           }
 
           else if (teclado.right.isDown) 
@@ -274,6 +356,8 @@
               player.setVelocityX (150);
 
               player.setVelocityY (0);
+
+              player.anims.play('movimentoDireita', true);
           }
 
 
@@ -282,6 +366,8 @@
               player.setVelocityX (0);
               
               player.setVelocityY (-150);
+
+              player.anims.play('movimentoCima', true);
           }
 
           else if (teclado.down.isDown) 
@@ -289,6 +375,8 @@
               player.setVelocityX (0);
 
               player.setVelocityY (150);
+
+              player.anims.play('movimentoBaixo', true);
           }
 
           //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
@@ -298,6 +386,10 @@
               player.setVelocityX (0);
 
               player.setVelocityY (0);
+
+              player.anims.play('movimentoParado', true);
+              
           } 
+          
       }
   }
