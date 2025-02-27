@@ -441,73 +441,99 @@ Assim, nessa _sprint_, desenvolvemos três _minigames_. Cada um deles apresentam
 
 O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classificar arquivos em duas categorias: fundos abertos e fundos fechados. Para isso, basta clicar no arquivo com o botão esquerdo do mouse, e arrastá-lo para a classificação correta. No topo da tela, a pontuação vai sendo atualizada em tempo real.
 
+
 _Gameplay_ do _minigame_ 1:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/gameplay1.png">
 </p>
 
+
 O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao usuário classificar diferentes registros de transações de investidores, levando em conta discrepâncias nos dados. Em cada arquivo, há dois botões, permitindo a classificação do material. Da mesma forma do primeiro _minigame_, a pontuação é atualizada conforme o seu progresso.
 
+
 _Gameplay_ do minigame 2:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/gameplay2.png">
 </p>
 
+
 O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da cotação. O jogador precisa colocar, em uma linha do tempo, a ordem dos acontecimentos em um resgate típico de valores. Isso pode ser feito ao clicar em um _card_ na parte superior da tela, depois clicando na sua posição correspondente na parte inferior. Após todos os _cards_ serem posicionados, basta clicar na seta que aparece na tela, para receber a sua pontuação.
 
+
 _Gameplay_ do _minigame_ 3:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/gameplay3.png">
 </p>
 
+
 É importante destacar que cada um desses _minigames_ contém um material de apoio específico, indicando a maneira correta de jogar, além das informações necessárias para compreender o conteúdo por traz do minijogo.
 
+
 Exemplo do material de apoio do _minigame_ 1:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/apoioMinigame1.png">
 </p>
 
+
 A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve ao fato de eles não serem extremamente complexos, tanto no quesito da programação quanto para a experiência do usuário. Assim, eles servem como uma forma de introdução para o _gameplay loop_ do nosso jogo.
 
+
 Exemplo do código do _minigame_ 2:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/codigo2.png">
 </p>
 
+
 Também fizemos algumas atualizações para outras telas diversas do jogo, adicionando novas informações em pontos necessários. Entre essas mudanças, gostaríamos de destacar a _hub_. O seu mapa foi expandido, contando com novas salas e objetos interativos. Cada um desses objetos leva à um _minigame_ diferente, podendo ser interagidos em qualquer ordem. Eles possuem um ponto de exclamação ao seu lado, indicando que as tarefas ainda não foram realizadas. Cada _minigame_ pode ser jogado uma vez.
 
+
 Layout da _hub_:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/hubJogo.png">
 </p>
 
+
 Exemplo de objeto interativo na _hub_:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/objeto.png">
 </p>
 
+
 Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spriesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
 
+
 _Spritesheet_ do personagem:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/markSpritesheet.png">
 </p>
 
+
 Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fundo animada. Ela também apresenta o logo do nosso jogo, trazendo uma maior identificação do jogador com o nosso _game_.
 
+
 Menu inicial:
+
 
 <p align="center">
 <img src="../assets/gdd-4.2/menuInicial.gif">
 </p>
+
 
 De forma geral, a _sprint_ 2 ficou marcada pelo desenvolvimento de novas habilidades, além de uma maior clarificação dos objetivos do nosso projeto. Ainda enfrentamos diversos desafios, principalmente em relação ao tempo de desenvolvimento, mas conseguimos cumprir as tarefas necessárias, tanto para o entregável quanto para apresentação ao parceiro.
 
@@ -531,8 +557,8 @@ _Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da vers�
 
 Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ referentes ao dia 1 do jogo, além do funcionamento do menu inicial.
 
-| pré-condição | descrição do teste                                                            | pós-condição                                                                                        |
-| ------------ | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|número | pré-condição | descrição do teste                                                            | pós-condição                       |                                                                                                                       
+| ----  | -------      | ----------------------------------------------------------------------------- |----------------------------------- | 
 | 1            | entrar no _link_ do jogo                                                      | apertar o botão: jogar                                                                              | o jogo deve passar para uma cena explicando os controles básicos                                                                                                  |
 | 2            | posicionar o personagem em em frente a um objeto que ainda não foi interagido | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | a explicação do _minigame_ deverá aparecer                                                                                                                        |
 | 3            | iniciar o _minigame_ 1 (fundos de investimento)                               | arrastar o _card_ para uma das gavetas                                                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                             |
@@ -541,7 +567,7 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 | 6            | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em uma posição na linha do tempo     | o _card_ deverá se deslocar até a posição designada                                                                                                               |
 | 7            | realizar o teste número 6                                                     | clicar em um _card_ que já está na linha do tempo, e depois clicar em outro local na linha do tempo | o jogo deverá impedir que essa mudança ocorra, para evitar erros                                                                                                  |
 | 8            | iniciar algum dos _minigames_                                                 | finalizar o _minigame_                                                                              | o jogo deverá voltar até a _hub_, e o ponto de exclamação azul ao lado do terminal do _minigame_ escolhido deverá sumir                                           |
-| 9            | posicionar o personagem em em frente a um objeto que já foi interagido        | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | o jogo deverá impedir que o _minigame_ ocorra novamente                                                                                                           |
+| 9            | posicionar o personagem em em frente a um objeto que já foi interagido        | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | o jogo deverá impedir que o _minigame_ ocorra novamente |                                                                                                          
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
