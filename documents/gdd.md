@@ -328,6 +328,18 @@ _Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outr
 
 Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
+<img src="../assets/imagensConceptArt/telaInicial.jpg">
+Figura 1: tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
+
+<img src="../assets/imagensConceptArt/mapa1.jpg">
+Figura 2: visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.
+
+<img src="../assets/imagensConceptArt/materialDeApoio3.jpg">
+Figura 3: exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
+
+<img src="../assets/imagensConceptArt/miniGame1.jpg">
+Figura 4: minijogo sobre diferenciação de fundos de investimento. 
+
 ### 3.3.5. Trilha sonora (sprint 3)
 
 _Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no mundo e nas fases. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
