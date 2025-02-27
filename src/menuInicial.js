@@ -20,7 +20,7 @@ class menuInicial extends Phaser.Scene
     // Preload dos assets
     preload()
     {
-        this.load.spritesheet('menu', 'assets/menuInicial.png', { frameWidth: 800, frameHeight: 600 });
+        this.load.spritesheet('menu', 'assets/menuInicial2.png', { frameWidth: 800, frameHeight: 600 });
 
         this.load.image('botaoIniciar', 'assets/botaoIniciar.png');
     }
@@ -32,7 +32,7 @@ class menuInicial extends Phaser.Scene
 
         const iniciar = this.add.sprite(400, 300, 'menu');
 
-        // Cria a animação da tela inicial
+        //Variáveis do controle sobre os minigames
 
         minigame1Jogado = false;
 
@@ -40,10 +40,12 @@ class menuInicial extends Phaser.Scene
 
         minigame3Jogado = false;
 
+        // Cria a animação da tela inicial
+
         this.anims.create({
             key: 'iniciar',
 
-            frames: this.anims.generateFrameNumbers('menu', { start: 0, end: 29 }),
+            frames: this.anims.generateFrameNumbers('menu', { start: 0, end: 102 }),
 
             // O Phaser não consegue lidar com uma framerate menor que 1, então é preciso controlar manualmente a velocidade
 
@@ -56,15 +58,9 @@ class menuInicial extends Phaser.Scene
 
         iniciar.play('iniciar');
 
-        // Variáveis para controle de tempo da animação
-
-        this.lastFrameTime = 0;
-
-        this.frameInterval = 1000;  
-
         // Cria as imagens na tela
 
-        botaoIniciar = this.add.image(180, 535, 'botaoIniciar').setInteractive();
+        botaoIniciar = this.add.image(670, 400, 'botaoIniciar').setInteractive().setScale(1);
 
         // Verifica se o botão de iniciar foi clicado
 
@@ -74,28 +70,7 @@ class menuInicial extends Phaser.Scene
 
             game.scene.stop('menuInicial');
 
-            game.scene.start('hub');
+            game.scene.start('contratoInicial');
         });
-    }
-
-    //Controla o tempo de cada sprite da spritesheet
-
-    update(time, delta)
-    {
-        // Verifica se o tempo desde o último quadro passou o intervalo desejado, antes de iniciar o próximo
-
-        if (time - this.lastFrameTime >= this.frameInterval) {
-
-            this.lastFrameTime = time;
-            
-            
-            const iniciar = this.children.getByName('iniciar');
-
-            if (iniciar) {
-
-                
-                iniciar.anims.nextFrame();
-            }
-        }
     }
 }

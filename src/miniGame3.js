@@ -97,7 +97,7 @@
                 }
 
                 let timeline = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo * 0.7, 'timeline')
-                    .setScale(1.5, 1);
+                    .setScale(1.2, 1);
 
                 miniGame3.botaoVerificar = this.add.image(miniGame3.larguraJogo / 2, miniGame3.alturaJogo - 500, '3botao')
                     .setScale(0.5)
@@ -111,8 +111,8 @@
                         
                         this.scene.start('fimDoDia1', {
                             cardsSuperiores: miniGame3.cardsSuperiores,
-                            ordemCorreta: miniGame3.ordemCorreta, // Se você precisar da ordem correta também
-                            // Adicione outros dados se necessário
+                            ordemCorreta: miniGame3.ordemCorreta,
+                            
                         });
 
                         this.scene.stop('miniGame3');
