@@ -322,23 +322,45 @@ _Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante 
 
 ### 3.3.4. Concept Art (sprint 2)
 
-_Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo._
+<div align="center">
+    <img src="../assets/imagensConceptArt/telaInicial.png" width="500"><br>
+    <p>Figura 1: tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
+</div>
 
-<img src="../assets/concept1.jpg">
+<div align="center">
+    <img src="../assets/imagensConceptArt/mapa1.png" width="500"><br>
+    <p>Figura 2: visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.</p>
+</div>
 
-Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
+<div align="center">
+    <img src="../assets/imagensConceptArt/materialDeApoio1.png" width="500"><br>
+    <p>Figura 3: exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
+</div>
 
-<img src="../assets/imagensConceptArt/telaInicial.jpg">
-Figura 1: tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
+<div align="center">
+    <img src="../assets/imagensConceptArt/miniGame1.png" width="500"><br>
+    <p>Figura 4: minijogo sobre diferenciação de fundos de investimento.</p>
+</div>
 
-<img src="../assets/imagensConceptArt/mapa1.jpg">
-Figura 2: visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.
+<div align="center">
+    <img src="../assets/imagensConceptArt/miniGame2.png" width="500"><br>
+    <p>Figura 5: minijogo sobre resgate em fundos de investimentoo.</p>
+</div>
 
-<img src="../assets/imagensConceptArt/materialDeApoio3.jpg">
-Figura 3: exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
+<div align="center">
+    <img src="../assets/imagensConceptArt/miniGame3.png" width="500"><br>
+    <p>Figura 6: minijogo sobre monitoramento de transações bancárias.</p>
+</div>
 
-<img src="../assets/imagensConceptArt/miniGame1.jpg">
-Figura 4: minijogo sobre diferenciação de fundos de investimento. 
+<div align="center">
+    <img src="../assets/imagensConceptArt/pontuacao.png" width="500"><br>
+    <p>Figura 7: tela exibida ao final de um minijogo, apresentando a pontuação final do jogador.</p>
+</div>
+
+<div align="center">
+    <img src="../assets/imagensConceptArt/conceptArt.jpeg" width="500"><br>
+    <p>Figura 8: Concept art dos personagens Steve e Mary.</p>
+</div>
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
