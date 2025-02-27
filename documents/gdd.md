@@ -2,7 +2,6 @@
 
 # GDD - Game Design Document - Módulo 1 - Inteli
 
-
 ## Nome do Grupo
 
 #### Nomes dos integrantes do grupo
@@ -75,7 +74,7 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
 
 Um exemplo prático da importância das Cinco Forças de Porter em relação ao BTG Pactual pode ser visto na crescente competição com fintechs e corretoras independentes, especialmente no segmento de investimentos. A ameaça de produtos substitutos tem se intensificado com o surgimento de plataformas digitais que oferecem produtos de investimento de forma simplificada, com baixas taxas e experiência 100% digital. Diante disso, a estratégia do BTG foi fortalecer sua presença digital por meio de iniciativas como a plataforma BTG Pactual digital, que oferece acesso a investimentos com taxas competitivas, interface intuitiva e serviços personalizados. Essa resposta estratégica mostra como a análise das Cinco Forças permitiu ao banco identificar riscos e oportunidades, adaptando-se às mudanças do mercado para manter sua posição competitiva.
 
-Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferramenta extremamente  abrangente para avaliar o ambiente competitivo de uma indústria e ajudar as empresas a desenvolver estratégias eficazes para superar dilemas e aproveitar oportunidades. Ao entender tais forças, o BTG Pactual pode posicionar-se de forma mais competitiva e realista em seu mercado-alvo.
+Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferramenta extremamente abrangente para avaliar o ambiente competitivo de uma indústria e ajudar as empresas a desenvolver estratégias eficazes para superar dilemas e aproveitar oportunidades. Ao entender tais forças, o BTG Pactual pode posicionar-se de forma mais competitiva e realista em seu mercado-alvo.
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
@@ -110,7 +109,6 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 - **Mudanças no perfil dos investidores:** novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis.
 
 - **Regulação rigorosa:** o setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco.
-  
 - **Cibersegurança e Fraudes:** como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados.
 
 **Oportunidades:**
@@ -298,8 +296,8 @@ O primeiro personagem do nosso jogo é o Mark, um analista júnior de 25 anos co
 
 O segundo personagem é a Margaret, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Margaret, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, a Margaret traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
 
-O terceiro personagem é o Steve, um jovem que  sempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida. Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. 
-  
+O terceiro personagem é o Steve, um jovem que sempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida. Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados.
+
 O quarto personagem é a Mary, uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Mary também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Mark, ela não tem uma trajetória prévia no setor financeiro. A Mary, diferente do Mark, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
 
 Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a diversidade e a complexidade da sociedade brasileira, ao mesmo tempo em que se alinham com o público-alvo do nosso jogo. Essa abordagem trará um impacto positivo tanto em termos de engajamento quanto de representatividade.
@@ -367,9 +365,11 @@ _Exemplo de tabela_
 
 <img src= "../assets/diagrama.jpg">
 
-A trajetória do usuário em nosso jogo pode ser representada por meio do diagrama acima. Nele, o jogador inicia no Menu Inicial, podendo apertar o botão para começar. Após isso, ele será posicionado na hub, durante o primeiro dia (módulo 1). Nesse módulo, ele vai poder selecionar a ordem das tarefas que ele irá realizar (totalizando três). Após essas atividades, ele enfrentará um miniboss, sendo ele um quiz contendo perguntas sobre os assuntos abordados. Após esse acontecimento, ele é direcionado para uma de três possíveis telas. A primeira indica que ele teve um desempenho satisfatório, e que pode prosseguir. A segunda indica que ele teve um desempenho mediano, precisando melhorar no futuro. Nessa tela, ele ainda pode continuar. A terceira é a de _Game Over_, que ocorre quando ele não atinge a pontuação necessária durante as tarefas.
+A trajetória do usuário em nosso jogo pode ser representada por meio do diagrama acima. Nele, o jogador inicia no Menu Inicial, podendo apertar o botão para começar. Após isso, ele será redirecionado para uma tela explicando o contexto por trás da narrativa. Depois, ele é posicionado na _hub_, durante o primeiro dia (módulo 1). Nesse módulo, ele vai poder selecionar a ordem das tarefas que ele irá realizar (totalizando três). Após essas atividades, ele enfrentará um _miniboss_, sendo ele um _quiz_ contendo perguntas sobre os assuntos abordados. Após esse acontecimento, ele é direcionado para uma de três possíveis telas. A primeira indica que ele teve um desempenho satisfatório, e que pode prosseguir. A segunda indica que ele teve um desempenho mediano, precisando melhorar no futuro. Nessa tela, ele ainda pode continuar. A terceira é a de _Game Over_, que ocorre quando ele não atinge a pontuação necessária durante as tarefas.
 
-Em seguida, o jogador repete esse _loop_ de gameplay mais duas vezes, totalizando três dias. No final do terceiro dia, o jogador é direcionado para uma hub alternativa. Ela possui uma atmosfera tensa, representando uma "sala de guerra". Nessa hub, o jogador segue o _loop_ existente na _hub_ normal, podendo escolher a ordem das três tarefas a serem realizadas. Quando as tarefas são terminadas, o jogador ou chegará na tela de _Game Over_, ou em uma tela parabenizando-o por ter finalizado a experiência.
+Em seguida, o jogador repete esse _loop_ de gameplay mais duas vezes, totalizando três dias. No final do terceiro dia, o jogador é direcionado para uma _hub_ alternativa. Ela possui uma atmosfera tensa, representando uma "sala de guerra". Nessa _hub_, o jogador segue o _loop_ existente na _hub_ normal, podendo escolher a ordem das três tarefas a serem realizadas. Quando as tarefas são terminadas, o jogador ou chegará na tela de _Game Over_, ou em uma tela parabenizando-o por ter finalizado a experiência.
+
+A seção em rosa se refere representa a opção de escolha quanto a ordem de jogar os _minigames_, já a seção em azul representa o _loop_ de um dia.
 
 ## 3.6. Regras do jogo (sprint 3)
 
@@ -435,7 +435,83 @@ Para os próximos passos, pretendemos começar a implementação do conteúdo t�
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-_Descreva e ilustre aqui o desenvolvimento da versão básica do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos._
+Para a _sprint_ 2, avançamos no desenvolvimento das cenas do jogo. Focamos nas cenas que compõe o primeiro dia dentro do jogo, assim permitindo que a nossa entrega capture a ideia geral por traz do nosso planejamento.
+
+Assim, nessa _sprint_, desenvolvemos três _minigames_. Cada um deles apresentam mecânicas diferentes, abordando áreas do conteúdo requisitadas pelo parceiro do projeto.
+
+O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classificar arquivos em duas categorias: fundos abertos e fundos fechados. Para isso, basta clicar no arquivo com o botão esquerdo do mouse, e arrastá-lo para a classificação correta. No topo da tela, a pontuação vai sendo atualizada em tempo real.
+
+_Gameplay_ do _minigame_ 1:
+
+<p align="center">
+<img src="../assets/gdd-4.2/gameplay1.png">
+</p>
+
+O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao usuário classificar diferentes registros de transações de investidores, levando em conta discrepâncias nos dados. Em cada arquivo, há dois botões, permitindo a classificação do material. Da mesma forma do primeiro _minigame_, a pontuação é atualizada conforme o seu progresso.
+
+_Gameplay_ do minigame 2:
+
+<p align="center">
+<img src="../assets/gdd-4.2/gameplay2.png">
+</p>
+
+O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da cotação. O jogador precisa colocar, em uma linha do tempo, a ordem dos acontecimentos em um resgate típico de valores. Isso pode ser feito ao clicar em um _card_ na parte superior da tela, depois clicando na sua posição correspondente na parte inferior. Após todos os _cards_ serem posicionados, basta clicar na seta que aparece na tela, para receber a sua pontuação.
+
+_Gameplay_ do _minigame_ 3:
+
+<p align="center">
+<img src="../assets/gdd-4.2/gameplay3.png">
+</p>
+
+É importante destacar que cada um desses _minigames_ contém um material de apoio específico, indicando a maneira correta de jogar, além das informações necessárias para compreender o conteúdo por traz do minijogo.
+
+Exemplo do material de apoio do _minigame_ 1:
+
+<p align="center">
+<img src="../assets/gdd-4.2/apoioMinigame1.png">
+</p>
+
+A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve ao fato de eles não serem extremamente complexos, tanto no quesito da programação quanto para a experiência do usuário. Assim, eles servem como uma forma de introdução para o _gameplay loop_ do nosso jogo.
+
+Exemplo do código do _minigame_ 2:
+
+<p align="center">
+<img src="../assets/gdd-4.2/codigo2.png">
+</p>
+
+Também fizemos algumas atualizações para outras telas diversas do jogo, adicionando novas informações em pontos necessários. Entre essas mudanças, gostaríamos de destacar a _hub_. O seu mapa foi expandido, contando com novas salas e objetos interativos. Cada um desses objetos leva à um _minigame_ diferente, podendo ser interagidos em qualquer ordem. Eles possuem um ponto de exclamação ao seu lado, indicando que as tarefas ainda não foram realizadas. Cada _minigame_ pode ser jogado uma vez.
+
+Layout da _hub_:
+
+<p align="center">
+<img src="../assets/gdd-4.2/hubJogo.png">
+</p>
+
+Exemplo de objeto interativo na _hub_:
+
+<p align="center">
+<img src="../assets/gdd-4.2/objeto.png">
+</p>
+
+Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spriesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
+
+_Spritesheet_ do personagem:
+
+<p align="center">
+<img src="../assets/gdd-4.2/markSpritesheet.png">
+</p>
+
+Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fundo animada. Ela também apresenta o logo do nosso jogo, trazendo uma maior identificação do jogador com o nosso _game_.
+
+Menu inicial:
+
+<p align="center">
+<img src="../assets/gdd-4.2/menuInicial.gif">
+</p>
+
+De forma geral, a _sprint_ 2 ficou marcada pelo desenvolvimento de novas habilidades, além de uma maior clarificação dos objetivos do nosso projeto. Ainda enfrentamos diversos desafios, principalmente em relação ao tempo de desenvolvimento, mas conseguimos cumprir as tarefas necessárias, tanto para o entregável quanto para apresentação ao parceiro.
+
+Para os próximos passos, iremos implementar novas fases (dias) no nosso jogo, trazendo uma maior variedade de conteúdos. Também levaremos em conta o _feedback_ feito pelo parceiro.
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
@@ -453,14 +529,19 @@ _Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da vers�
 
 ## 5.1. Casos de Teste (sprints 2 a 4)
 
-_Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização._
+Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ referentes ao dia 1 do jogo, além do funcionamento do menu inicial.
 
-_Exemplo de tabela_
-\# | pré-condição | descrição do teste | pós-condição
---- | --- | --- | ---
-1 | posicionar o jogo na tela de abertura | iniciar o jogo desde seu início | o jogo deve iniciar da fase 1
-2 | posicionar o personagem em local seguro de inimigos | aguardar o tempo passar até o final da contagem | o personagem deve perder uma vida e reiniciar a fase
-3 | ...
+| pré-condição | descrição do teste                                                            | pós-condição                                                                                        |
+| ------------ | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1            | entrar no _link_ do jogo                                                      | apertar o botão: jogar                                                                              | o jogo deve passar para uma cena explicando os controles básicos                                                                                                  |
+| 2            | posicionar o personagem em em frente a um objeto que ainda não foi interagido | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | a explicação do _minigame_ deverá aparecer                                                                                                                        |
+| 3            | iniciar o _minigame_ 1 (fundos de investimento)                               | arrastar o _card_ para uma das gavetas                                                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                             |
+| 4            | iniciar o _minigame_ 2 (transações suspeitas)                                 | clicar no botão de verdadeiro ou falso                                                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo |
+| 5            | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em outro _card_ ao lado              | o jogo deverá impedir a seleção de outro _card_, mantendo o original selecionado                                                                                  |
+| 6            | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em uma posição na linha do tempo     | o _card_ deverá se deslocar até a posição designada                                                                                                               |
+| 7            | realizar o teste número 6                                                     | clicar em um _card_ que já está na linha do tempo, e depois clicar em outro local na linha do tempo | o jogo deverá impedir que essa mudança ocorra, para evitar erros                                                                                                  |
+| 8            | iniciar algum dos _minigames_                                                 | finalizar o _minigame_                                                                              | o jogo deverá voltar até a _hub_, e o ponto de exclamação azul ao lado do terminal do _minigame_ escolhido deverá sumir                                           |
+| 9            | posicionar o personagem em em frente a um objeto que já foi interagido        | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | o jogo deverá impedir que o _minigame_ ocorra novamente                                                                                                           |
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
