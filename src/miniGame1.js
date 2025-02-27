@@ -219,9 +219,9 @@ class miniGame1 extends Phaser.Scene {
                     miniGame1.fim = this.add.image(400, 300, 'fim').setDepth(31); // Exibe a tela final
 
                     //Mostra a pontuação final do jogador na tela
-                    let textoFinal = this.add.text(565, 295, pontuacao, {
-                        font: '40px Arial',
-                        fill: '#00000' //Cor preta
+                    let textoFinal = this.add.text(520, 275, pontuacao, {
+                        font: '40px Lexend',
+                        fill: '#ffffff' //Cor branca
                     }).setOrigin(0.5).setDepth(31);
 
                     // Criação do botão para voltar ao jogo

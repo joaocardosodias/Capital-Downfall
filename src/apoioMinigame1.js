@@ -67,24 +67,6 @@ class apoioMinigame1 extends Phaser.Scene
 
             game.scene.stop('apoioMinigame1');
         });
-
-
-
     }
-
-
-
-
-
-
-
-          
-
-    //Essa função permite que o tutorial seja clicado após o tempo ser passado, assim evitando um bug que um click registrava logo no início da cena
-    
-    update()
-    {
-        
-    } 
 }
 

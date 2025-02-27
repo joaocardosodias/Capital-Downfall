@@ -167,7 +167,7 @@ class miniGame2 extends Phaser.Scene {
                     miniGame2.perfil1.setTexture(perfis[miniGame2.perfilIndex].nome);
                     miniGame2.perfil1.setY(280); // Restaura a posição Y do perfil para o valor inicial
 
-                    // Chama a funçaõ que anima os perfis restantes para a esquerda
+                    // Chama a função que anima os perfis restantes para a esquerda
                     this.animaPerfisEsquerda(perfis);
                 } else {
                     // Se não houver mais perfis, vai para a próxima cena
@@ -175,10 +175,10 @@ class miniGame2 extends Phaser.Scene {
                     miniGame2.fim = this.add.image(400, 300, 'fim').setDepth(21); // Exibe a tela final
 
                     //Mostra a pontuação final do jogador na tela
-                    let textoFinal = this.add.text(565, 295, pontuacao, {
-                        font: '40px Arial',
-                        fill: '#00000' //Cor preta
-                    }).setOrigin(0.5).setDepth(21);
+                    let textoFinal = this.add.text(520, 275, pontuacao, {
+                        font: '40px Lexend',
+                        fill: '#ffffff' //Cor branca
+                    }).setOrigin(0.5).setDepth(31);
 
                     // Criação do botão para voltar ao jogo
                     miniGame2.botaoVoltar = this.add.image(400, 400, 'botaoVoltar').setInteractive().setDepth(22).setScale(0.9);
