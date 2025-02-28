@@ -80,7 +80,7 @@
 
           map.createLayer('ground', tileset)
 
-          let layerColisao = map.createLayer('noCollision', tileset)
+          map.createLayer('noCollision', tileset)
 
           layerParede = map.createLayer('walls', tileset)
 
@@ -93,9 +93,6 @@
           //Traz colisões para a layer das decorações
 
           layerDecoracoes.setCollisionByExclusion([-1]); 
-
-          
-          layerColisao.setCollisionByExclusion([-1]);
 
           //Criação dos objetos de detecção da interação do jogador com os terminais
 
@@ -125,7 +122,7 @@
 
           frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 0, end: 0 }),
 
-          frameRate: 4,  
+          frameRate: 6,  
           
           repeat: -1
         });
@@ -135,7 +132,7 @@
 
           frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 5, end: 9 }),
 
-          frameRate: 4,  
+          frameRate: 6,  
           
           repeat: -1
         });
@@ -144,7 +141,7 @@
 
           frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 0, end: 4 }),
 
-          frameRate: 4,  
+          frameRate: 6,  
           
           repeat: -1
         });
@@ -153,7 +150,7 @@
 
           frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 10, end: 14 }),
 
-          frameRate: 4,  
+          frameRate: 6,  
           
           repeat: -1
         });
@@ -162,7 +159,7 @@
 
           frames: this.anims.generateFrameNumbers('playerSpritesheet', { start: 15, end: 19 }),
 
-          frameRate: 4,  
+          frameRate: 6,  
           
           repeat: -1
         });
@@ -185,17 +182,19 @@
 
           //Criação do objeto do player
 
-          player = this.physics.add.sprite(800,800).setScale(0.9);
+          player = this.physics.add.sprite(800,800).setScale(0.83);
 
           player.anims.play('movimentoParado');
+
+          player.body.setSize(player.width, player.height);
+
+          player.refreshBody();
 
           //Adiciona a colisão entre os objetos
 
           this.physics.add.collider(player, layerParede);   
           
           this.physics.add.collider(player, layerDecoracoes); 
-
-          this.physics.add.collider(player, layerColisao); 
      
           //Verifica se o player está na mesma área que o detector de colisão do minigame 1
 
@@ -307,36 +306,36 @@
 
         if (teclado.left.isDown && teclado.up.isDown) 
             {
-                player.setVelocityX (-150*0.707);
+                player.setVelocityX (-200*0.707);
                 
-                player.setVelocityY (-150*0.707);
+                player.setVelocityY (-200*0.707);
 
                 player.anims.play('movimentoCima', true);
             }
   
           else if (teclado.left.isDown && teclado.down.isDown) 
             {
-                player.setVelocityX (-150*0.707);
+                player.setVelocityX (-200*0.707);
                 
-                player.setVelocityY (150*0.707);
+                player.setVelocityY (200*0.707);
 
                 player.anims.play('movimentoBaixo', true);
             }
   
           else if (teclado.right.isDown && teclado.up.isDown) 
             {
-                player.setVelocityX (150*0.707);
+                player.setVelocityX (200*0.707);
                 
-                player.setVelocityY (-150*0.707);
+                player.setVelocityY (-200*0.707);
 
                 player.anims.play('movimentoCima', true);
             }
   
           else if (teclado.right.isDown && teclado.down.isDown) 
             {
-                player.setVelocityX (150*0.707);
+                player.setVelocityX (200*0.707);
                 
-                player.setVelocityY (150*0.707);
+                player.setVelocityY (200*0.707);
 
                 player.anims.play('movimentoBaixo', true);
             }
@@ -344,7 +343,7 @@
   
           else if (teclado.left.isDown) 
           {
-              player.setVelocityX (-150);
+              player.setVelocityX (-200);
               
               player.setVelocityY (0);
 
@@ -353,7 +352,7 @@
 
           else if (teclado.right.isDown) 
           {   
-              player.setVelocityX (150);
+              player.setVelocityX (200);
 
               player.setVelocityY (0);
 
@@ -365,7 +364,7 @@
           {
               player.setVelocityX (0);
               
-              player.setVelocityY (-150);
+              player.setVelocityY (-200);
 
               player.anims.play('movimentoCima', true);
           }
@@ -374,7 +373,7 @@
           {
               player.setVelocityX (0);
 
-              player.setVelocityY (150);
+              player.setVelocityY (200);
 
               player.anims.play('movimentoBaixo', true);
           }
