@@ -51,7 +51,7 @@
 
             create() {
 
-                this.cameras.main.setBackgroundColor('#195A4B');
+                this.cameras.main.setBackgroundColor('#195AB4');
 
                 let espacamento = miniGame3.larguraJogo / 6;
                 let tamanhoCard = 100;
