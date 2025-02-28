@@ -1,18 +1,26 @@
-
-// let botaoContinuar;
-
 class miniGame1 extends Phaser.Scene {
+
+    //Para evitar conflitos com o mesmo nome de variáveis, elas foram colocadas dentro do constructor da classe.
 
     constructor(botaoVoltar,fim,gavetas,card1,cardIndex,textoPontuacao,textoMudancaPontuacao,cardsRestantes,cardAtual) {
         super('miniGame1');
+
         this.botaoVoltar = botaoVoltar;
+
         this.fim = fim;
+
         this.gavetas = gavetas;
+
         this.card1 = card1;
+
         this.cardIndex = cardIndex;
+
         this.textoPontuacao = textoPontuacao;
+
         this.textoMudancaPontuacao = textoMudancaPontuacao;
+
         this.cardsRestantes = cardsRestantes;
+        
         this.cardAtual = cardAtual;
         }
 

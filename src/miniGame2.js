@@ -1,16 +1,30 @@
 class miniGame2 extends Phaser.Scene {
+
+   //Para evitar conflitos com o mesmo nome de variáveis, elas foram colocadas dentro do constructor da classe
+
     constructor(perfil1, botaoV, botaoF, perfisRestantes, perfilIndex, carimbo, textoPontuacao, textoMudancaPontuacao, fim, botaoVoltar, respostaEmAndamento) {
         super('miniGame2');
+
         this.perfil1 = perfil1;
+
         this.botaoV = botaoV;
+
         this.botaoF = botaoF;
+
         this.perfisRestantes = perfisRestantes;
+
         this.perfilIndex = perfilIndex;
+
         this.carimbo = carimbo;
+
         this.textoPontuacao = textoPontuacao;
+
         this.textoMudancaPontuacao = textoMudancaPontuacao;
+
         this.fim = fim;
+
         this.botaoVoltar = botaoVoltar;
+
         this.respostaEmAndamento = respostaEmAndamento;
 
     }
@@ -18,22 +32,28 @@ class miniGame2 extends Phaser.Scene {
     preload() {
         // Carrega as imagens 
 
-
-        
-
         miniGame2.perfisRestantes = [];
+
         miniGame2.perfilIndex = 0;
+
         miniGame2.respostaEmAndamento = false;
 
         this.load.image('botaoV', 'assets/miniGame2/botaoV.png');
+
         this.load.image('botaoF', 'assets/miniGame2/botaoF.png');
+
         this.load.image('carimboV', 'assets/miniGame2/carimboV.png');
+
         this.load.image('carimboF', 'assets/miniGame2/carimboF.png');
+
         // Carrega as imagens dos perfis usando um laço for
         for (let i = 1; i <= 10; i++) {
+
             this.load.image('perfil' + i, 'assets/miniGame2/perfil' + i + '.png');
         }
+
         this.load.image('fim', 'assets/miniGame2/fim.png');
+
         this.load.image('botaoVoltar', 'assets/miniGame2/botaoVoltar.png');
     }
 
@@ -54,6 +74,7 @@ class miniGame2 extends Phaser.Scene {
 
         // Embaralha os perfis e pega 5 aleatórios
         Phaser.Utils.Array.Shuffle(perfis);
+
         perfis = perfis.slice(0, 5);
 
         // Fundo
@@ -64,18 +85,25 @@ class miniGame2 extends Phaser.Scene {
 
         // Armazena os perfis restantes no array perfisRestantes com um laço for
         for (let i = 1; i < perfis.length; i++) {
+
             let perfil = this.add.image(400 + (i * 80), 308, perfis[i].nome).setScale(0.3).setDepth(-i);
+
             miniGame2.perfisRestantes.push(perfil); // Adiciona os perfis restantes no array
         }
         
         //Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
         miniGame2.textoPontuacao = this.add.text(20, 40, 'Pontuação: ' + pontuacao, {
+
             font: '40px Arial',
+
             fill: '#ffffff'
+
         }).setDepth(15);   
 
         // Criação dos botões
+        
         miniGame2.botaoV = this.add.image(334, 485, 'botaoV').setScale(0.3).setInteractive().setDepth(10);
+
         miniGame2.botaoF = this.add.image(466, 485, 'botaoF').setScale(0.3).setInteractive().setDepth(10);
 
         //Se você clicar em um dos botões...
