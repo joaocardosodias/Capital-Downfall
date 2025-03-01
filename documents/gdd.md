@@ -321,17 +321,55 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-_Descreva o ambiente do jogo, em que locais ele ocorre. Ilustre com imagens. Se houverem mapas, posicione-os aqui, descrevendo as áreas em acordo com o enredo. Se houverem fases, descreva-as também em acordo com o enredo (pode ser um jogo de uma fase só). Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
+O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais dez salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
 
-### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
+<div align="center">
+    <img src="../assets/imagensConceptArt/mapa.png" width="500"><br>
+    <p>Mapa do jogo.</p>
+</div>
 
-_Descreva como os personagens se movem no mundo criado e as relações entre as locações – como as áreas/fases são acessadas ou desbloqueadas, o que é necessário para serem acessadas etc. Utilize listas ou tabelas para organizar esta seção._
+No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo. O jogador terá total liberdade para se movimentar e escolher a ordem em que deseja realizar os minigames disponíveis.
+
+<div align="center">
+    <img src="../assets/imagensConceptArt/mapa2.png" width="500"><br>
+    <p>No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele ao pressionar a tecla de espaço.</p>
+</div>
+
+O jogo possuirá três fases, e cada fase terá três minigames que abordarão algum dos assuntos solicitados pelo BTG Pactual, além de um quiz ao final, que contemplará todo o conteúdo da fase. Também haverá uma fase 4, que simulará o contexto de pressão de uma sala de guerra, em que todos os conteúdos serão abordados de uma só vez e haverá um limite de tempo. A tabela a seguir ilustra e explica os três minigames implementados na primeira fase do jogo:
+
+| Imagem do minigame | Resumo |
+|--------------------|--------|
+| <img src="../assets/imagensConceptArt/miniGame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
+| <img src="../assets/imagensConceptArt/miniGame2.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento. |
+| <img src="../assets/imagensConceptArt/miniGame3.png" width="800"> | O jogador deve revisar as transações financeiras, marcando se são transações válidas ou fraudulentas. |
+
+### 3.3.2. Navegação pelo mundo (Sprints 2 e 3)
+
+A navegação no jogo é simples e intuitiva, permitindo que o jogador explore o ambiente do escritório de um grande banco e interaja com os elementos disponíveis.
+
+#### Movimentação do Personagem  
+- O jogador pode movimentar o personagem utilizando as setas do teclado (`↑ ↓ → ←`).  
+- A movimentação é livre, permitindo que o jogador explore todas as áreas do escritório desde o início.  
+
+#### Interação com os Computadores  
+- Ao se aproximar de um computador interativo, um ícone de exclamação aparecerá sobre ele, indicando que o jogador pode interagir.  
+- Para acessar os minigames, o jogador deve pressionar a tecla **espaço** (`Space`).  
+- Ao interagir, o jogador será redirecionado para um dos minigames disponíveis no jogo.  
+
+#### Acesso aos Minigames  
+- Dentro dos minigames, o jogador utilizará o **mouse** para realizar as ações necessárias.
+  
+  - **Minigame 1:** O jogador deve arrastar cards para as gavetas corretas.  
+  - **Minigame 2:** O jogador deve ordenar corretamente as etapas do resgate.  
+  - **Minigame 3:** O jogador deve marcar transações como válidas ou fraudulentas.
+
+Ao concluir cada minigame, o jogador pode retornar ao escritório e escolher um novo desafio.  
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-_\<opcional\> Descreva diferentes condições de clima que podem afetar o mundo e as fases, se aplicável_
+O jogo utiliza uma progressão baseada em dias, onde cada fase representa um dia de trabalho no escritório do banco. O jogador pode completar os desafios no seu próprio ritmo dentro de cada fase. Ao concluir todos os 3 minigames e o quiz final de cada fase, o jogador receberá um relatório de desempenho, que destaca seu progresso e acertos.  
 
-_Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante ao jogo (ex. contagem de tempo para terminar uma fase)_
+Durante as três primeiras fases, não há limite de tempo para a conclusão dos minigames e quizzes. Entretanto, na fase 4, que irá simular uma sala de guerra, todos os conteúdos das fases anteriores serão abordados de forma combinada. Nessa fase final, haverá um limite de tempo, desafiando o jogador a aplicar rapidamente seus conhecimentos sob pressão.  
 
 ### 3.3.4. Concept Art (sprint 2)
 
