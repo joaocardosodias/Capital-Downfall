@@ -104,9 +104,6 @@
 
           //Adiciona a animação dos indicadores
 
-
-
-        
           this.anims.create({
             key: 'movimentoAviso',
 
@@ -116,6 +113,8 @@
             
             repeat: -1
         });
+
+        //Adiciona as animações do player
 
         this.anims.create({
           key: 'movimentoParado',
@@ -136,6 +135,7 @@
           
           repeat: -1
         });
+
         this.anims.create({
           key: 'movimentoBaixo',
 
@@ -145,6 +145,7 @@
           
           repeat: -1
         });
+
         this.anims.create({
           key: 'movimentoDireita',
 
@@ -154,6 +155,7 @@
           
           repeat: -1
         });
+
         this.anims.create({
           key: 'movimentoEsquerda',
 
@@ -166,7 +168,7 @@
 
         
 
-        //Adiciona os indicadores
+        //Adiciona os indicadores e inicia suas animações
 
         avisoMinigame1 = this.add.sprite(98, 72, 'avisoMinigame');
 
@@ -278,29 +280,8 @@
           
       }
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       update()
       {
-        
-
-
-
           /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
           O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.707 */ 
 

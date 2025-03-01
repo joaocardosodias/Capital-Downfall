@@ -47,8 +47,6 @@ class menuInicial extends Phaser.Scene
 
             frames: this.anims.generateFrameNumbers('menu', { start: 0, end: 102 }),
 
-            // O Phaser não consegue lidar com uma framerate menor que 1, então é preciso controlar manualmente a velocidade
-
             frameRate: 10,  
             
             repeat: -1

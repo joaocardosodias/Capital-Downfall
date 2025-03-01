@@ -9,7 +9,7 @@ class apoioMinigame1 extends Phaser.Scene
 
     preload()
     {
-        //Preload dos assets, coloca a variável tutorialLido como false
+        //Preload dos assets
 
         this.load.image('tutorialCtrlMinigame1', 'assets/materialApoioDia1/tutorialControlesMinigame1.png');
 
@@ -23,9 +23,7 @@ class apoioMinigame1 extends Phaser.Scene
     
     create() 
     {  
-        //Carrega os dois fundos, coloca o fundo laranja como invisível
-
-        let listaImagens = 0;
+        //Carrega as telas e botões utilizados
 
         let tutorialCtrlMinigame1 = this.add.image(400,300, 'tutorialCtrlMinigame1');
 
@@ -39,6 +37,9 @@ class apoioMinigame1 extends Phaser.Scene
 
         let botaoTutorialMinigame3 = this.add.image(615, 560, 'botaoSeguirAdiante').setScale(0.50).setVisible(false);
 
+
+        //Verifica se o primeiro botão foi pressionado
+
         botaoTutorialMinigame1.on('pointerdown', function (pointer)
         {
             tutorialCtrlMinigame1.setVisible(false);
@@ -48,7 +49,9 @@ class apoioMinigame1 extends Phaser.Scene
             botaoTutorialMinigame2.setInteractive().setVisible(true)
 
             botaoTutorialMinigame1.setVisible(false);
-        });
+        })
+
+        //Verifica se o segundo botão foi pressionado
 
         botaoTutorialMinigame2.on('pointerdown', function (pointer)
         {
@@ -60,6 +63,8 @@ class apoioMinigame1 extends Phaser.Scene
 
             botaoTutorialMinigame2.setVisible(false);
         });
+
+        //Verifica se o terceiro botão foi pressionado
 
         botaoTutorialMinigame3.on('pointerdown', function (pointer)
         {

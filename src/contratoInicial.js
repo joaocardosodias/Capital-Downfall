@@ -7,7 +7,7 @@ class contratoInicial extends Phaser.Scene
 
     preload()
     {
-        //Preload dos assets, coloca a variável tutorialLido como false
+        //Preload dos assets
 
         this.load.image('tutorialControles', 'assets/tutorialControles.png');
 
@@ -17,9 +17,14 @@ class contratoInicial extends Phaser.Scene
     
     create() 
     {  
+
+        //Carrega as imagens
+
         let tutorialControles = this.add.image(400,300, 'tutorialControles');
 
         let botaoSeguirAdiante = this.add.image(615,560, 'botaoSeguirAdiante').setInteractive().setScale(0.50);
+
+        //Verifica se o botão foi pressionado
 
         botaoSeguirAdiante.on('pointerdown', function (pointer)
         {
