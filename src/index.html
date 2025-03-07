@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minigame de Conexão de Siglas - Phaser</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const config = {
+            type: Phaser.AUTO,
+            width: 1200,
+            height: 827,
+            parent: 'phaser-container',
+            scene: {
+                preload: preload,
+                create: create,
+                update: update
+            }
+        };
+
+        let game = new Phaser.Game(config);
+        let cards = [];
+        let definitions = [];
+        let lines = [];
+        let draggingLine = null;
+        let draggingStart = null;
+        let score = 0; // Variável para armazenar a pontuação
+        let scoreText; // Texto para exibir a pontuação na tela
+        let arrow; // Seta que aparece após todas as conexões
+        let connectionsMade = 0; // Contador de conexões feitas
+        let connectedDefinitions = new Set(); // Conjunto para armazenar significados já conectados
+
+        function preload() {
+            this.load.image('swapCard', 'assets/swapCard.png');
+            this.load.image('fipCard', 'assets/fipCard.png');
+            this.load.image('tirCard', 'assets/tirCard.png');
+            this.load.image('ibovCard', 'assets/ibovCard.png');
+            this.load.image('dxCard', 'assets/d+xCard.png');
+            this.load.image('hedgeCard', 'assets/hedgeCard.png');
+            
+            this.load.image('swapDefinition', 'assets/swap_def.png');
+            this.load.image('fipDefinition', 'assets/fip_def.png');
+            this.load.image('tirDefinition', 'assets/tir_def.png');
+            this.load.image('ibovDefinition', 'assets/ibov_def.png');
+            this.load.image('dxDefinition', 'assets/d+x_def.png');
+            this.load.image('hedgeDefinition', 'assets/hedge_def.png');
+            
+            this.load.image('background', 'assets/background.png');
+            this.load.image('arrow', 'assets/arrow.png'); // Carrega a imagem da seta
+        }
+
+        function create() {
+            this.add.image(600, 450, 'background').setOrigin(0.5, 0.5).setScale(9.0);
+
+            // Exibe a pontuação no topo central da tela
+            scoreText = this.add.text(600, 30, `Pontuação: ${score}`, {
+                font: '48px Arial',
+                fill: '#ffffff',
+                padding: { x: 20, y: 10 }
+            }).setOrigin(0.5, 0); // Centraliza o texto horizontalmente
+
+            // Lista contendo as siglas e seus respectivos conceitos
+            let data = [
+                { sigla: 'SWAP', conceito: 'Contrato de Troca de Fluxos de Caixa', imgSigla: 'swapCard', imgDef: 'swapDefinition' },
+                { sigla: 'FIP', conceito: 'Fundo de Investimento em Participações', imgSigla: 'fipCard', imgDef: 'fipDefinition' },
+                { sigla: 'TIR', conceito: 'Taxa Interna de Retorno', imgSigla: 'tirCard', imgDef: 'tirDefinition' },
+                { sigla: 'IBOV', conceito: 'Índice Bovespa', imgSigla: 'ibovCard', imgDef: 'ibovDefinition' },
+                { sigla: 'D+X', conceito: 'Data de Liquidação de Operações', imgSigla: 'dxCard', imgDef: 'dxDefinition' },
+                { sigla: 'HEDGE', conceito: 'Estratégia de Proteção contra Riscos', imgSigla: 'hedgeCard', imgDef: 'hedgeDefinition' }
+            ];
+
+            // Embaralha a ordem dos cartões de siglas
+            shuffleArray(data);
+
+            // Cria uma cópia dos dados e embaralha a ordem dos significados
+            let shuffledDefinitions = [...data];
+            shuffleArray(shuffledDefinitions);
+
+            let startX = 200; // Posição X dos cartões de siglas (esquerda)
+            let endX = 1000; // Posição X dos cartões de significados (direita)
+            let yPositions = [120, 240, 360, 480, 600, 720]; // Posições Y dos cartões (com espaçamento reduzido)
+
+            // Cria os cartões de siglas
+            data.forEach((item, index) => {
+                let card = this.add.image(startX, yPositions[index], item.imgSigla).setInteractive();
+                card.setScale(0.4); // Tamanho dos cartões de siglas
+                card.setData('sigla', item.sigla);
+                card.setData('connected', false); // Inicializa como não conectado
+                card.on('pointerdown', () => startDragging(card, this));
+                cards.push(card);
+            });
+
+            // Cria os cartões de definições (embaralhados)
+            shuffledDefinitions.forEach((item, index) => {
+                let definition = this.add.image(endX, yPositions[index], item.imgDef);
+                definition.setScale(0.6); // Tamanho dos cartões de significados
+                definition.setData('sigla', item.sigla);
+                definitions.push(definition);
+            });
+        }
+
+        // Função para embaralhar um array (Fisher-Yates shuffle)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]]; // Troca os elementos
+            }
+        }
+
+        function startDragging(card, scene) {
+            // Verifica se o card de sigla já foi conectado
+            if (card.getData('connected')) {
+                return; // Impede que o card seja arrastado novamente
+            }
+
+            draggingStart = card;
+
+            // Calcula a posição da borda direita do cartão de sigla
+            const cardWidth = card.displayWidth;
+            const startX = card.x + cardWidth / 2; // Borda direita do cartão
+            const startY = card.y;
+
+            // Cria a linha a partir da borda direita do cartão
+            draggingLine = scene.add.line(startX, startY, 0, 0, 0, 0, 0x000000);
+            draggingLine.setLineWidth(4);
+            draggingLine.setAlpha(0.5);
+            scene.input.on('pointermove', (pointer) => updateLine(pointer, scene));
+            scene.input.on('pointerup', () => endDragging(scene));
+        }
+
+        function updateLine(pointer, scene) {
+            if (draggingLine) {
+                // Atualiza a linha para seguir o ponteiro do mouse
+                const cardWidth = draggingStart.displayWidth;
+                const startX = draggingStart.x + cardWidth / 2;
+                const startY = draggingStart.y;
+                draggingLine.setTo(0, 0, pointer.x - startX, pointer.y - startY);
+            }
+        }
+
+        function endDragging(scene) {
+            let pointer = scene.input.activePointer;
+            let matchedDefinition = definitions.find(def => def.getBounds().contains(pointer.x, pointer.y));
+
+            if (matchedDefinition) {
+                // Verifica se o significado já foi conectado
+                if (connectedDefinitions.has(matchedDefinition)) {
+                    // Significado já conectado, não permite nova conexão
+                    draggingLine.destroy();
+                } else {
+                    // Verifica se o card de sigla já foi conectado
+                    if (draggingStart.getData('connected')) {
+                        draggingLine.destroy();
+                        return;
+                    }
+
+                    if (matchedDefinition.getData('sigla') === draggingStart.getData('sigla')) {
+                        // Conexão correta: ganha 100 pontos
+                        score += 100;
+                        scoreText.setText(`Pontuação: ${score}`); // Atualiza o texto da pontuação
+
+                        // Exibe a animação de pontuação ganha
+                        showScoreAnimation(scene, '+100', 0x00ff00); // Verde para acerto
+                    } else {
+                        // Conexão incorreta: perde 50 pontos
+                        score -= 50;
+                        scoreText.setText(`Pontuação: ${score}`); // Atualiza o texto da pontuação
+
+                        // Exibe a animação de pontuação perdida
+                        showScoreAnimation(scene, '-50', 0xff0000); // Vermelho para erro
+                    }
+
+                    // Marca o card de sigla como conectado
+                    draggingStart.setData('connected', true);
+
+                    // Adiciona o significado ao conjunto de significados conectados
+                    connectedDefinitions.add(matchedDefinition);
+
+                    // Incrementa o contador de conexões feitas
+                    connectionsMade++;
+
+                    // Verifica se todas as conexões foram feitas
+                    if (connectionsMade === cards.length) {
+                        showArrow(scene); // Mostra a seta
+                    }
+
+                    // Ajusta a linha para ir até a borda do card de significado
+                    const endX = matchedDefinition.x - matchedDefinition.displayWidth / 2;
+                    const endY = matchedDefinition.y;
+                    draggingLine.setTo(0, 0, endX - (draggingStart.x + draggingStart.displayWidth / 2), endY - draggingStart.y);
+                }
+            } else {
+                // Se o jogador não soltar o botão sobre um cartão de significado, remove a linha
+                draggingLine.destroy();
+            }
+
+            draggingStart = null;
+            draggingLine = null;
+
+            // Remove os eventos de movimento e clique
+            scene.input.off('pointermove', updateLine);
+            scene.input.off('pointerup', endDragging);
+        }
+
+        function showScoreAnimation(scene, text, color) {
+            // Cria um texto temporário para exibir a pontuação ganha ou perdida
+            let scoreAnimation = scene.add.text(600, 450, text, {
+                font: '64px Arial',
+                fill: color,
+                stroke: '#000000',
+                strokeThickness: 4
+            }).setOrigin(0.5, 0.5); // Centraliza o texto
+
+            // Animação: o texto sobe e desaparece
+            scene.tweens.add({
+                targets: scoreAnimation,
+                y: 400, // Move o texto para cima
+                alpha: 0, // Faz o texto desaparecer
+                duration: 1000, // Duração da animação (1 segundo)
+                onComplete: () => {
+                    scoreAnimation.destroy(); // Remove o texto após a animação
+                }
+            });
+        }
+
+        function showArrow(scene) {
+            // Adiciona a seta no meio da tela
+            arrow = scene.add.image(600, 450, 'arrow').setInteractive();
+            arrow.setScale(0.5); // Ajusta o tamanho da seta
+            arrow.on('pointerdown', () => {
+                // Redireciona para a tela de pontuação final
+                scene.scene.start('ScoreScene', { score: score });
+            });
+        }
+
+        function update() {
+            // Função update não utilizada neste minigame
+        }
+
+        // Cena para exibir a pontuação final
+        const ScoreScene = new Phaser.Class({
+            Extends: Phaser.Scene,
+            initialize: function () {
+                Phaser.Scene.call(this, { key: 'ScoreScene' });
+            },
+            init: function (data) {
+                this.finalScore = data.score; // Recebe a pontuação final
+            },
+            create: function () {
+                // Adiciona o fundo da cena de pontuação final
+                this.add.image(600, 450, 'background').setOrigin(0.5, 0.5).setScale(9.0);
+
+                // Exibe a pontuação final no centro da tela
+                this.add.text(600, 450, `Pontuação Final: ${this.finalScore}`, {
+                    font: '64px Arial',
+                    fill: '#ffffff',
+                    padding: { x: 20, y: 10 }
+                }).setOrigin(0.5, 0.5); // Centraliza o texto
+            }
+        });
+
+        // Adiciona a cena de pontuação final ao jogo
+        game.scene.add('ScoreScene', ScoreScene);
+    </script>
+</body>
+</html>
