@@ -465,11 +465,27 @@ _Ex. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se 
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-_Descreva aqui as formas de controle e interação que o jogador tem sobre o jogo: quais os comandos disponíveis, quais combinações de comandos, e quais as ações consequentes desses comandos. Utilize listas ou tabelas para organizar esta seção._
+Level 0 - Mecanismos e Funcionamento
 
-_Ex. Em um jogo de plataforma 2D para desktop, o jogador pode usar as teclas WASD para mecânicas de andar, mirar para cima, agachar, e as teclas JKL para atacar, correr, arremesar etc._
+1. Controles e Interação
+O jogo é um 2D interativo, utilizando mouse/touchpad e setas do teclado para movimentação e interações.
 
-_Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la_
+
+
+2. Mecanismos e Funcionamento
+
+📌 Mouse ou Touchpad
+Botão direito + arrastar: Define se um fundo é aberto ou fechado ao reorganizar os cards.
+Clique para conectar características: Arraste e conecte corretamente os atributos de cada tipo de fundo.
+Validação de transações suspeitas: Clique em um conjunto de operações e verifique se há movimentações suspeitas (exemplo: arbitragem indevida).
+
+
+🎮 Setas do Teclado (Exploração do Mapa)
+
+Seta para a direita → Move o personagem para a direita no mapa.
+Seta para a esquerda ← Move o personagem para a esquerda no mapa.
+Seta para cima ↑ Move o personagem para trás no mapa (navegação em profundidade).
+Seta para baixo ↓ Move o personagem para frente no mapa.
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
