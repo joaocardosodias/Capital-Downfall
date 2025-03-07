@@ -321,14 +321,14 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais dez salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/mapa.png" width="500"><br>
+    <img src="../assets/conceptArt/mapa.png" width="500"><br>
     <p>Mapa do jogo.</p>
 </div>
 
 No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo. O jogador terá total liberdade para se movimentar e escolher a ordem em que deseja realizar os minigames disponíveis.
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/mapa2.png" width="500"><br>
+    <img src="../assets/conceptArt/mapa2.png" width="500"><br>
     <p>No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele ao pressionar a tecla de espaço.</p>
 </div>
 
@@ -336,9 +336,9 @@ O jogo possuirá três fases, e cada fase terá três minigames que abordarão a
 
 | Imagem do minigame | Resumo |
 |--------------------|--------|
-| <img src="../assets/imagensConceptArt/miniGame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
-| <img src="../assets/imagensConceptArt/miniGame2.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento. |
-| <img src="../assets/imagensConceptArt/miniGame3.png" width="800"> | O jogador deve revisar as transações financeiras, marcando se são transações válidas ou fraudulentas. |
+| <img src="../assets/conceptArt/miniGame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
+| <img src="../assets/conceptArt/miniGame2.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento. |
+| <img src="../assets/conceptArt/miniGame3.png" width="800"> | O jogador deve revisar as transações financeiras, marcando se são transações válidas ou fraudulentas. |
 
 ### 3.3.2. Navegação pelo mundo (Sprints 2 e 3)
 
@@ -371,44 +371,50 @@ Durante as três primeiras fases, não há limite de tempo para a conclusão dos
 ### 3.3.4. Concept Art (sprint 2)
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/telaInicial.png" width="500"><br>
+    <img src="../assets/conceptArt/telaInicial.png" width="500"><br>
     <p>Figura 1: tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/mapa1.png" width="500"><br>
+    <img src="../assets/conceptArt/mapa1.png" width="500"><br>
     <p>Figura 2: visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/materialDeApoio1.png" width="500"><br>
+    <img src="../assets/conceptArt/materialDeApoio1.png" width="500"><br>
     <p>Figura 3: exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/miniGame1.png" width="500"><br>
+    <img src="../assets/conceptArt/miniGame1.png" width="500"><br>
     <p>Figura 4: minijogo sobre diferenciação de fundos de investimento.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/miniGame2.png" width="500"><br>
+    <img src="../assets/conceptArt/miniGame2.png" width="500"><br>
     <p>Figura 5: minijogo sobre resgate em fundos de investimentoo.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/miniGame3.png" width="500"><br>
+    <img src="../assets/conceptArt/miniGame3.png" width="500"><br>
     <p>Figura 6: minijogo sobre monitoramento de transações bancárias.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/pontuacao.png" width="500"><br>
+    <img src="../assets/conceptArt/pontuacao.png" width="500"><br>
     <p>Figura 7: tela exibida ao final de um minijogo, apresentando a pontuação final do jogador.</p>
 </div>
 
 <div align="center">
-    <img src="../assets/imagensConceptArt/conceptArt.jpeg" width="500"><br>
+    <img src="../assets/conceptArt/personagens.jpeg" width="500"><br>
     <p>Figura 8: Concept art dos personagens Steve e Mary.</p>
 </div>
+
+<div align="center">
+    <img src="../assets/conceptArt/menuInicial.gif" width="500"><br>
+    <p>Figura 8: Concept art do menu inicial.</p>
+</div>
+
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
@@ -504,13 +510,13 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 Cena da interface do computador:
 
 <p align="center">
-<img src="../assets/imailInicial.png">
+<img src="../assets/conceptArt/imailInicial.png">
 </p>
 
 Parte do código referente a cena:
 
 <p align="center">
-<img src="../assets/printCodigoDia1.png">
+<img src="../assets/gdd_4.2/printCodigoDia1.png">
 </p>
 
 A outra cena escolhida para ser desenvolvida pelo grupo foi a da hub inicial. Isso se deve ao fato da mesma permitir o teste de algumas das tecnologias que serão utilizadas futuramente no projeto, com destaque para os _Tilesets_ e _Tilemaps_. Um _Tileset_ é um conjunto de imagens do mesmo tamanho, denominadas de _Tiles_, que servem como "blocos de construção" para cenas, permitindo que elas sejam criadas de maneira rápida e eficiente. Um _Tilemap_ é um arquivo que armazena as informações do posicionamento das _Tiles_ em uma cena, trazendo informações como colisões e camadas.
@@ -520,13 +526,13 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 Exemplo do _Tileset_ utilizado:
 
 <p align="center">
-<img src="../assets/tilesetInicial.png">
+<img src="../assets/gdd_4.2/tilesetInicial.png">
 </p>
 
 Parte do código referente a cena:
 
 <p align="center">
-<img src="../assets/printCodigoHub.png">
+<img src="../assets/gdd_4.2/printCodigoHub.png">
 </p>
 
 De forma geral, a _sprint_ 1 trouxe diversos desafios, porém também trouxe uma maior familiarização com o projeto e com as ferramentas a serem utilizadas. Um obstáculo significativo no decorrer do desenvolvimento foi a utilização do _Tilemap_, que envolve a referência de múltiplos outros arquivos e variáveis. A ideia central do projeto também foi alterada algumas vezes, para melhor condizer com os desejos da empresa parceira.
@@ -546,7 +552,7 @@ _Gameplay_ do _minigame_ 1:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/gameplay1.png">
+<img src="../assets/gdd_4.2/gameplay1.png">
 </p>
 
 
@@ -557,7 +563,7 @@ _Gameplay_ do minigame 2:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/gameplay2.png">
+<img src="../assets/gdd_4.2/gameplay2.png">
 </p>
 
 
@@ -568,7 +574,7 @@ _Gameplay_ do _minigame_ 3:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/gameplay3.png">
+<img src="../assets/gdd_4.2/gameplay3.png">
 </p>
 
 
@@ -579,7 +585,7 @@ Exemplo do material de apoio do _minigame_ 1:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/apoioMinigame1.png">
+<img src="../assets/gdd_4.2/apoioMinigame1.png">
 </p>
 
 
@@ -590,7 +596,7 @@ Exemplo do código do _minigame_ 2:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/codigo2.png">
+<img src="../assets/gdd_4.2/codigo2.png">
 </p>
 
 
@@ -601,7 +607,7 @@ Layout da _hub_:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/hubJogo.png">
+<img src="../assets/gdd_4.2/hubJogo.png">
 </p>
 
 
@@ -609,7 +615,7 @@ Exemplo de objeto interativo na _hub_:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/objeto.png">
+<img src="../assets/gdd_4.2/objeto.png">
 </p>
 
 
@@ -620,7 +626,7 @@ _Spritesheet_ do personagem:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/markSpritesheet.png">
+<img src="../assets/gdd_4.2/markSpritesheet.png">
 </p>
 
 
@@ -631,7 +637,7 @@ Menu inicial:
 
 
 <p align="center">
-<img src="../assets/gdd-4.2/menuInicial.gif">
+<img src="../assets/gdd_4.2/menuInicial.gif">
 </p>
 
 

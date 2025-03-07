@@ -11,13 +11,13 @@ class apoioMinigame1 extends Phaser.Scene
     {
         //Preload dos assets
 
-        this.load.image('tutorialCtrlMinigame1', 'assets/materialApoioDia1/tutorialControlesMinigame1.png');
+        this.load.image('tutorialCtrlMinigame1', 'src/assets/dia1/tutorialControlesMinigame1.png');
 
-        this.load.image('tutorialFundoAberto', 'assets/materialApoioDia1/tutorialFundoAberto.png');
+        this.load.image('tutorialFundoAberto', 'src/assets/dia1/tutorialFundoAberto.png');
 
-        this.load.image('tutorialFundoFechado', 'assets/materialApoioDia1/tutorialFundoFechado.png');
+        this.load.image('tutorialFundoFechado', 'src/assets/dia1/tutorialFundoFechado.png');
 
-        this.load.image('botaoSeguirAdiante', 'assets/botaoSeguirAdiante.png');
+        this.load.image('botaoSeguirAdiante', 'src/assets/botoes/botaoSeguirAdiante.png');
   
     }
     

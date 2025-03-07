@@ -42,17 +42,17 @@
           pontuacao = 0;
           //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
 
-          this.load.image('tiles', 'assets/spriteSheet.png');
+          this.load.image('tiles', 'src/assets/hub/spriteSheet.png');
 
-          this.load.image('player', 'assets/player.png');
+          this.load.image('player', 'src/assets/players/player.png');
 
-          this.load.tilemapTiledJSON('hub','assets/hubInicial.json');
+          this.load.tilemapTiledJSON('hub','src/assets/hub/hubInicial.json');
 
-          this.load.image('colisao', 'assets/colisao.png');
+          this.load.image('colisao', 'src/assets/hub/colisao.png');
 
-          this.load.spritesheet('avisoMinigame', 'assets/aviso.png', { frameWidth: 32, frameHeight: 64 });
+          this.load.spritesheet('avisoMinigame', 'src/assets/hub/aviso.png', { frameWidth: 32, frameHeight: 64 });
 
-          this.load.spritesheet('playerSpritesheet', 'assets/markSpritesheet.png', { frameWidth: 32, frameHeight: 64});
+          this.load.spritesheet('playerSpritesheet', 'src/assets/players/markSpritesheet.png', { frameWidth: 32, frameHeight: 64});
 
           //Armazena na variável teclado o input das setinhas
 

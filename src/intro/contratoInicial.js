@@ -9,9 +9,9 @@ class contratoInicial extends Phaser.Scene
     {
         //Preload dos assets
 
-        this.load.image('tutorialControles', 'assets/tutorialControles.png');
+        this.load.image('tutorialControles', 'src/assets/intro/tutorialControles.png');
 
-        this.load.image('botaoSeguirAdiante', 'assets/botaoSeguirAdiante.png');
+        this.load.image('botaoSeguirAdiante', 'src/assets/botoes/botaoSeguirAdiante.png');
   
     }
     
