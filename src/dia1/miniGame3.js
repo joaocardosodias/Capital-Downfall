@@ -153,7 +153,7 @@
                     miniGame3.botaoVerificar.on('pointerdown', () => {
                         
                         
-                        this.scene.start('fimDoDia1', {
+                        this.scene.start('fimDoMinigame3', {
 
                             cardsSuperiores: miniGame3.cardsSuperiores,
 

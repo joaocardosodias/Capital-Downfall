@@ -42,11 +42,11 @@
           pontuacao = 0;
           //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
 
-          this.load.image('tiles', 'src/assets/hub/spriteSheet.png');
+          this.load.image('tiles', 'src/assets/hub/tileset.png');
 
           this.load.image('player', 'src/assets/players/player.png');
 
-          this.load.tilemapTiledJSON('hub','src/assets/hub/hubInicial.json');
+          this.load.tilemapTiledJSON('hub','src/assets/hub/tilemap.json');
 
           this.load.image('colisao', 'src/assets/hub/colisao.png');
 
@@ -88,7 +88,7 @@
           
           //Resgata a propriedade de colisão presente nas informações do tilemap
 
-          layerParede.setCollisionByProperty({ collides: true}) 
+          layerParede.setCollisionByExclusion([-1]);
 
           //Traz colisões para a layer das decorações
 
@@ -96,11 +96,11 @@
 
           //Criação dos objetos de detecção da interação do jogador com os terminais
 
-          colisaoMinigame1 = this.physics.add.sprite(100,130, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
+          colisaoMinigame1 = this.physics.add.sprite(230,1100, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
 
-          colisaoMinigame2 = this.physics.add.sprite(1440,130, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
+          colisaoMinigame2 = this.physics.add.sprite(1215,610, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
 
-          colisaoMinigame3 = this.physics.add.sprite(1375,950, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
+          colisaoMinigame3 = this.physics.add.sprite(225, 300, 'colisao').setScale(2.5).setVisible(false).setImmovable(true);
 
           //Adiciona a animação dos indicadores
 
@@ -170,11 +170,11 @@
 
         //Adiciona os indicadores e inicia suas animações
 
-        avisoMinigame1 = this.add.sprite(98, 72, 'avisoMinigame');
+        avisoMinigame1 = this.add.sprite(227, 1025, 'avisoMinigame');
 
-        avisoMinigame2 = this.add.sprite(1440, 75, 'avisoMinigame');
+        avisoMinigame2 = this.add.sprite(1215,550, 'avisoMinigame');
 
-        avisoMinigame3 = this.add.sprite(1375, 870, 'avisoMinigame');
+        avisoMinigame3 = this.add.sprite(225, 230, 'avisoMinigame');
 
         avisoMinigame1.anims.play('movimentoAviso');
 
@@ -184,7 +184,7 @@
 
           //Criação do objeto do player
 
-          player = this.physics.add.sprite(800,800).setScale(0.83);
+          player = this.physics.add.sprite(785, 820).setScale(0.83);
 
           player.anims.play('movimentoParado');
 
