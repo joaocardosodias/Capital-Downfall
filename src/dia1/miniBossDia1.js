@@ -17,13 +17,13 @@ class miniBossDia1 extends Phaser.Scene {
     preload() { //Carrega os elementos da cena
         //Estrutura de repetição para carregar as 9 perguntas, as 9 imagens de feedback correto e as 9 imagens de feedback negativo
         for (let i = 1; i <= 9; i++) {
-            this.load.image(`pergunta${i}`, `assets/miniBossDia1/pergunta${i}.png`);
-            this.load.image(`acertou${i}`, `assets/miniBossDia1/acertou${i}.png`);
-            this.load.image(`errou${i}`, `assets/miniBossDia1/errou${i}.png`);
+            this.load.image(`pergunta${i}`, `src/assets/dia1/miniBossDia1/pergunta${i}.png`);
+            this.load.image(`acertou${i}`, `src/assets/dia1/miniBossDia1/acertou${i}.png`);
+            this.load.image(`errou${i}`, `src/assets/dia1/miniBossDia1/errou${i}.png`);
         }
-        this.load.image('botao', 'assets/miniBossDia1/botao.png');
-        this.load.image('pular', 'assets/miniBossDia1/pular.png');
-        this.load.image('botaoVoltar', 'assets/miniBossDia1/botaoVoltar.png');
+        this.load.image('botao', 'src/assets/dia1/miniBossDia1/botao.png');
+        this.load.image('pular', 'src/assets/dia1/miniBossDia1/pular.png');
+        this.load.image('botaoVoltar', 'src/assets/dia1/miniBossDia1/botaoVoltar.png');
     }
 
     create() {//Adiciona os elementos carregados anteriormente a tela
