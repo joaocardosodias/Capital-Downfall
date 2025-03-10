@@ -42,13 +42,13 @@ class miniGame2 extends Phaser.Scene {
 
         miniGame2.respostaEmAndamento = false;
 
-        this.load.image('fundo', 'assets/miniGame2/fundo.png');
+        this.load.image('fundo', 'src/assets/dia1/miniGame2/fundo.png');
 
         for (let i = 1; i <= 8; i++) {
 
             for (let u = 1; u <= 8; u++) {
 
-                this.load.image('botao' + i + '-' + u, 'assets/miniGame2/botao' + i + '-' + u + '.png');
+                this.load.image('botao' + i + '-' + u, 'src/assets/dia1/miniGame2/botao' + i + '-' + u + '.png');
             }
         }
 
@@ -56,23 +56,23 @@ class miniGame2 extends Phaser.Scene {
 
             for (let u = 1; u <= 8; u++) {
 
-                this.load.image('botao' + i + 'Pressionado-' + u, 'assets/miniGame2/botao' + i + 'Apertado-' + u + '.png');
+                this.load.image('botao' + i + 'Pressionado-' + u, 'src/assets/dia1/miniGame2/botao' + i + 'Apertado-' + u + '.png');
             }
         }
 
-        this.load.image('carimboV', 'assets/miniGame2/carimboV.png');
+        this.load.image('carimboV', 'src/assets/dia1/miniGame2/carimboV.png');
 
-        this.load.image('carimboF', 'assets/miniGame2/carimboF.png');
+        this.load.image('carimboF', 'src/assets/dia1/miniGame2/carimboF.png');
 
         // Carrega as imagens dos perfis usando um laço for
         for (let i = 1; i <= 8; i++) {
 
-            this.load.image('perfil' + i, 'assets/miniGame2/perfil' + i + '.png');
+            this.load.image('perfil' + i, 'src/assets/dia1/miniGame2/perfil' + i + '.png');
         }
 
-        this.load.image('fim', 'assets/miniGame2/fim.png');
+        this.load.image('fim', 'src/assets/dia1/miniGame2/fim.png');
 
-        this.load.image('botaoVoltar', 'assets/miniGame2/botaoVoltar.png');
+        this.load.image('botaoVoltar', 'src/assets/dia1/miniGame2/botaoVoltar.png');
     }
 
     create() {
