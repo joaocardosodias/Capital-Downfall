@@ -471,22 +471,18 @@ _Ex. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se 
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-Level 0 - Mecanismos e Funcionamento
-
-
-1. Controles e Interação:
-
+***Controles e Interação:***
 O jogo é um 2D interativo, utilizando mouse/touchpad e setas do teclado para movimentação e interações.
 
 
 
 
 
-2. Mecanismos e Funcionamento
+***Mecanismos e Funcionamento***
 
 
 
-Mouse ou Touchpad
+**Mouse ou Touchpad**
 
 
 Botão direito + arrastar: Define se um fundo é aberto ou fechado ao reorganizar os cards.
@@ -496,7 +492,8 @@ Clique para conectar características: Arraste e conecte corretamente os atribut
 Validação de transações suspeitas: Clique em um conjunto de operações e verifique se há movimentações suspeitas (exemplo: arbitragem indevida).
 
 
-Setas do Teclado (Exploração do Mapa)
+**Setas do Teclado (Exploração do Mapa)**
+
 
 
 Seta para a direita → Move o personagem para a direita no mapa.
