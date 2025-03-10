@@ -1,28 +1,28 @@
-class apoioMinigame2 extends Phaser.Scene 
+class apoioMinigame3 extends Phaser.Scene 
 {
     constructor ()
     {
-        super('apoioMinigame2');
+        super('apoioMinigame3');
     }
 
     preload()
     {
         //Preload dos assets
 
-        this.load.image('tutorialCtrlMinigame2', 'assets/materialApoioDia1/tutorialControlesMinigame2.png');
+        this.load.image('tutorialCtrlMinigame3', 'src/assets/dia1/tutorialControlesMinigame3.png');
 
-        this.load.image('tutorialTransacoesSuspeitas', 'assets/materialApoioDia1/tutorialTransacoesSuspeitas.png');  
+        this.load.image('tutorialProcessoDeResgate', 'src/assets/dia1/tutorialProcessoDeResgate.png');  
 
-        this.load.image('botaoSeguirAdiante', 'assets/botaoSeguirAdiante.png');
+        this.load.image('botaoSeguirAdiante', 'src/assets/botoes/botaoSeguirAdiante.png'); 
     }
     
     create() 
     {  
         //Carrega as telas e os botões utilizados
 
-        let tutorialCtrlMinigame2 = this.add.image(400,300, 'tutorialCtrlMinigame2');
+        let tutorialCtrlMinigame2 = this.add.image(400,300, 'tutorialCtrlMinigame3');
 
-        let tutorialTransacoesSuspeitas = this.add.image(400,300, 'tutorialTransacoesSuspeitas').setVisible(false);
+        let tutorialProcessoDeResgate = this.add.image(400,300, 'tutorialProcessoDeResgate').setVisible(false);
 
         let botaoTutorialMinigame1 = this.add.image(615,560, 'botaoSeguirAdiante').setInteractive().setScale(0.50);
 
@@ -34,7 +34,7 @@ class apoioMinigame2 extends Phaser.Scene
         {
             tutorialCtrlMinigame2.setVisible(false);
                 
-            tutorialTransacoesSuspeitas.setVisible(true);
+            tutorialProcessoDeResgate.setVisible(true);
         
             botaoTutorialMinigame2.setInteractive().setVisible(true)
 
@@ -45,9 +45,9 @@ class apoioMinigame2 extends Phaser.Scene
 
         botaoTutorialMinigame2.on('pointerdown', function (pointer)
         {
-            game.scene.start('miniGame2');
+            game.scene.start('miniGame3');
 
-            game.scene.stop('apoioMinigame2');
+            game.scene.stop('apoioMinigame3');
 
         });
     }

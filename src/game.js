@@ -25,7 +25,7 @@
         },
 
   
-        scene: [menuInicial,contratoInicial,hub,telaLogin,dia1,miniGame1,miniGame2,miniGame3,fimDoDia1,apoioMinigame1,apoioMinigame2,apoioMinigame3]
+        scene: [menuInicial,contratoInicial,hub,miniGame1,miniGame2,miniGame3,fimDoMinigame3,apoioMinigame1,apoioMinigame2,apoioMinigame3]
 
     };
 

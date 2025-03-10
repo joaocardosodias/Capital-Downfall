@@ -31,20 +31,20 @@ class miniGame1 extends Phaser.Scene {
         
         miniGame1.cardsRestantes = [];
 
-        this.load.image('botaoIniciar', 'assets/botaoIniciar.png');
+        this.load.image('botaoIniciar', 'src/assets/botao/botaoIniciar.png');
         // this.load.image('botaoContinuar', 'assets/botaoLogin.png');
-        this.load.image('gavetas', 'assets/miniGame1/gavetas.png');
+        this.load.image('gavetas', 'src/assets/dia1/miniGame1/gavetas.png');
 
         for (let i = 1; i <= 10; i++) {
-            this.load.image('card' + i, 'assets/miniGame1/card' + i + '.png');
+            this.load.image('card' + i, 'src/assets/dia1/miniGame1/card' + i + '.png');
         }
 
         // for (let i = 1; i <= 10; i++) {
         //     this.load.image('feedback' + i, 'assets/miniGame1/feedback' + i + '.png');
         // }
 
-        this.load.image('fim', 'assets/miniGame1/fim.png');
-        this.load.image('botaoVoltar', 'assets/miniGame1/botaoVoltar.png');
+        this.load.image('fim', 'src/assets/dia1/miniGame1/fim.png');
+        this.load.image('botaoVoltar', 'src/assets/dia1/miniGame1/botaoVoltar.png');
     }
 
 

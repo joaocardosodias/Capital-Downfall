@@ -20,9 +20,9 @@ class menuInicial extends Phaser.Scene
     // Preload dos assets
     preload()
     {
-        this.load.spritesheet('menu', 'assets/menuInicial2.png', { frameWidth: 800, frameHeight: 600 });
+        this.load.spritesheet('menu', 'src/assets/intro/menuInicial.png', { frameWidth: 800, frameHeight: 600 });
 
-        this.load.image('botaoIniciar', 'assets/botaoIniciar.png');
+        this.load.image('botaoIniciar', 'src/assets/intro/botaoIniciar.png');
     }
 
     create() 

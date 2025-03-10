@@ -38,23 +38,23 @@ class miniGame2 extends Phaser.Scene {
 
         miniGame2.respostaEmAndamento = false;
 
-        this.load.image('botaoV', 'assets/miniGame2/botaoV.png');
+        this.load.image('botaoV', 'src/assets/dia1/miniGame2/botaoV.png');
 
-        this.load.image('botaoF', 'assets/miniGame2/botaoF.png');
+        this.load.image('botaoF', 'src/assets/dia1/miniGame2/botaoF.png');
 
-        this.load.image('carimboV', 'assets/miniGame2/carimboV.png');
+        this.load.image('carimboV', 'src/assets/dia1/miniGame2/carimboV.png');
 
-        this.load.image('carimboF', 'assets/miniGame2/carimboF.png');
+        this.load.image('carimboF', 'src/assets/dia1/miniGame2/carimboF.png');
 
         // Carrega as imagens dos perfis usando um laço for
         for (let i = 1; i <= 10; i++) {
 
-            this.load.image('perfil' + i, 'assets/miniGame2/perfil' + i + '.png');
+            this.load.image('perfil' + i, 'src/assets/dia1/miniGame2/perfil' + i + '.png');
         }
 
-        this.load.image('fim', 'assets/miniGame2/fim.png');
+        this.load.image('fim', 'src/assets/dia1/miniGame2/fim.png');
 
-        this.load.image('botaoVoltar', 'assets/miniGame2/botaoVoltar.png');
+        this.load.image('botaoVoltar', 'src/assets/dia1/miniGame2/botaoVoltar.png');
     }
 
     create() {
