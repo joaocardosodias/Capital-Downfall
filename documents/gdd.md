@@ -463,11 +463,7 @@ A seção em rosa se refere representa a opção de escolha quanto a ordem de jo
 
 ## 3.6. Regras do jogo (sprint 3)
 
-_Descreva aqui as regras do seu jogo: objetivos/desafios, meios para se conseguir alcançar_
-
-_Ex. O jogador deve pilotar o carro e conseguir terminar a corrida dentro de um minuto sem bater em nenhum obstáculo._
-
-_Ex. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto._
+O objetivo principal do nosso jogo é guiar o jogador através de três módulos. Cada módulo contém três minigames e um miniboss. Antes de cada minigame, há um texto introdutório que auxilia o jogador a entender o desafio. Se o jogador conseguir superar os minigames, ele avança para enfrentar o miniboss. Esse ciclo se repete em cada um dos três módulos, proporcionando uma experiência progressiva e desafiadora.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
