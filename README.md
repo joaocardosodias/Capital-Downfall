@@ -31,15 +31,15 @@
 
 ## 📜 Descrição
 
-*🧑‍💼O nosso jogo foi desenvolvido para aquele(a) analista junior , que precisa ser introdusido ao mercado de trabalho de forma rapida e eficiente , de forma que o player não fique entediado , se prenda ao jogo e possa se divertir aprendendo.Além disso é uma peça fundamental para qualquer Banco que busca novos analistas de investimentos e precisam de um onboarding diferente de qulquer outro.
+*🧑‍💼O nosso jogo foi desenvolvido para aquele(a) que precisa se integrar rapidamente no mercado de trabalho de forma dinâmica e eficiente, tornando o aprendizado uma experiência envolvente e divertida. Além disso, ele se destaca como uma ferramenta essencial para bancos que buscam atrair novos analistas de investimentos, oferecendo um onboarding inovador e diferenciado.
 
 
-❓O jogo "Capital DownFall" foi desenvolvido de forma 2D(jogo com uma visão bidimensional, na qual todo o jogo se passa em um plano), para que qualquer pessoa consiga entender e jogar de forma fácil, além de o jogador ter uma perspectiva maior do ambiente. Ele é uma forma de onboarding gameficado feito para preparar novos analistas de fundos com pouca ou sem experiências no mercado.
+❓O jogo "Capital DownFall" foi desenvolvido no formato 2D(jogo com uma visão bidimensional, na qual todo o jogo se passa em um plano), para que qualquer pessoa consiga entender e jogar de forma fácil, além de o jogador ter uma perspectiva maior do ambiente. Ele é uma forma de onboarding gameficado feito para preparar novos analistas de fundos com pouca ou sem experiências no mercado.
 
 
-🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. *
+🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma grave crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. *
 
-*Inclua o link para o jogo aqui*
+link para jogar:https://inteli-college.github.io/2025-1A-T16-IN01-G05/
 
 
 ## 📁 Estrutura de pastas
@@ -56,8 +56,28 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o código e executar o jogo a partir de sua máquina ou seu repositório.*
+<b>Executar o código:</b>
+Caso você seja um programador ou deseja fazer a execução do código desenvolvido para esse projeto basta instalar a versão mais recente do Visual Studio Code (VS Code) e instalar a extensão Live Server.
 
+Para instalar o VS Code basta acessar o seguinte link:
+<a href="https://code.visualstudio.com/Download">Download</a>
+
+
+E para realizar a configuração siga os passos abaixo:
+<a href="https://code.visualstudio.com/docs/setup/setup-overview">Setup Manual</a>
+
+
+Por fim, o último recurso que deve ser instalado e configurado é o live server, para isso basta seguir o tutorial abaixo:
+<a href="https://learn.microsoft.com/pt-br/visualstudio/liveshare/use/install-live-share-visual-studio-code">Microsoft Tutorial</a>
+
+Com todos os programas e extensões devidamente configurados é necessário que você acesse o VS Code, abra o arquivo intitulado ‘index.html’ e o execute utilizando o live server, dessa forma é esperado que uma guia seja aberta no seu navegador.
+
+<b>Jogar o Game:</b>
+
+Caso você apenas deseja testar o jogo, sem instalar nenhum programa, basta acessar o jogo publicado do GitHub Pages, disponível no link abaixo:
+<a href="https://inteli-college.github.io/2025-1A-T16-IN01-G05/">Jogue Agora!</a>
+
+Observação: o jogo foi feito para o navegador Google Chrome, portanto há alguns outros navegadores em que ele poderá não ser compatível.
 
 ## 🗃 Histórico de lançamentos
 
@@ -74,6 +94,6 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 📋 Licença/License
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli, Nome do integrante 1, Nome do integrante 2, Nome do integrante 3, Nome do integrante 4, Nome do integrante 5, Nome do integrante 6, Nome do integrante 7</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli,Ana Cristina, Henrique Da Rós, João Cardoso, Lucas Lopes,Lucas Michel, Nicole Zanin, Teodoro Neira </a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
 
 
