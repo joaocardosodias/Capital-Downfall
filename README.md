@@ -23,11 +23,11 @@
 ### Orientador(a) 
 - <a href="https://www.linkedin.com/in/victorbarq/">Claudio Fernando André</a>
 ### Instrutores
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do instrutor 1</a>
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do instrutor 2</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do instrutor 3</a> 
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do instrutor 4</a>
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do instrutor 5</a> 
+- <a href="https://www.linkedin.com/in/victorbarq/">Bryan Ferreira </a>
+- <a href="https://github.com/brunamayer">Bruna Mayer </a> 
+- <a href="">Fernando Pizzo</a> 
+- <a href="https://www.linkedin.com/in/victorbarq/">Renato Penha </a>
+- <a href="https://www.linkedin.com/in/victorbarq/">Marcelo Gonçalves</a> 
 
 ## 📜 Descrição
 
