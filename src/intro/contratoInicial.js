@@ -6,7 +6,7 @@ class contratoInicial extends Phaser.Scene
     }
 
     preload()
-    {
+    {   
         //Preload dos assets
         this.load.image('tutorialControles', 'src/assets/intro/tutorialControles.png');
 
