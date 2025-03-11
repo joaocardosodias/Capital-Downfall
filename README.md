@@ -25,7 +25,7 @@
 ### Instrutores
 - <a href="https://www.linkedin.com/in/victorbarq/">Bryan Ferreira </a>
 - <a href="https://github.com/brunamayer">Bruna Mayer </a> 
-- <a href="">Fernando Pizzo</a> 
+- <a href="https://www.linkedin.com/in/fernando-pizzo-208b526a/">Fernando Pizzo</a> 
 - <a href="https://www.linkedin.com/in/victorbarq/">Renato Penha </a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Marcelo Gonçalves</a> 
 
