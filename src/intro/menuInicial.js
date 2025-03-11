@@ -67,7 +67,6 @@ class menuInicial extends Phaser.Scene
             // Caso ele seja, o jogo para a cena atual e passa para a próxima
 
             game.scene.stop('menuInicial');
-
             game.scene.start('contratoInicial');
         });
     }
