@@ -25,7 +25,9 @@
         },
 
   
-        scene: [menuInicial,contratoInicial,hub,miniGame1,miniGame2,miniGame3,fimDoMinigame3,apoioMinigame1,apoioMinigame2,apoioMinigame3, miniBossDia1]
+
+        scene: [menuInicial,contratoInicial,selecaoPersonagens,hub,miniGame1,miniGame2,miniGame3,fimDoMinigame3,apoioMinigame1,apoioMinigame2,apoioMinigame3, miniBossDia1]
+
 
     };
 

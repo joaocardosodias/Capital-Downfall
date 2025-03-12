@@ -27,7 +27,7 @@ class contratoInicial extends Phaser.Scene
 
         botaoSeguirAdiante.on('pointerdown', function (pointer)
         {
-            game.scene.start('hub');
+            game.scene.start('selecaoPersonagens');
 
             game.scene.stop('contratoInicial');
         });
