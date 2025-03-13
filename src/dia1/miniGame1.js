@@ -237,7 +237,7 @@ class miniGame1 extends Phaser.Scene {
 
                     miniGame1.botaoVoltar.on('pointerdown', () => {
                         minigame1Jogado = true;
-                        this.scene.restart('hub'); //Se você clicar no botão Voltar, você volta pra hub do jogo
+                        this.scene.wake('hub'); //Se você clicar no botão Voltar, você volta pra hub do jogo
                         this.scene.stop('miniGame1');
                     });
                 }
