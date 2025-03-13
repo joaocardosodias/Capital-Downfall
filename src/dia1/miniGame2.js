@@ -44,7 +44,7 @@ class miniGame2 extends Phaser.Scene {
 
         this.load.image('fundo', 'src/assets/dia1/miniGame2/fundo.png');
 
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 1; i <= 4; i++) {
 
             for (let u = 1; u <= 8; u++) {
 
@@ -52,7 +52,7 @@ class miniGame2 extends Phaser.Scene {
             }
         }
 
-        for (let i = 1; i <= 8; i++) {
+        for (let i = 1; i <= 4; i++) {
 
             for (let u = 1; u <= 8; u++) {
 
@@ -261,7 +261,7 @@ class miniGame2 extends Phaser.Scene {
 
                     miniGame2.botaoVoltar.on('pointerdown', () => {
                         minigame2Jogado = true;
-                        this.scene.restart('hub'); //Se você clicar no botão Voltar, você volta pra hub do jogo
+                        this.scene.wake('hub'); //Se você clicar no botão Voltar, você volta pra hub do jogo
                         this.scene.stop('miniGame2');
                     });
                 }

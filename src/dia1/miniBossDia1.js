@@ -4,7 +4,6 @@ class miniBossDia1 extends Phaser.Scene {
         super('miniBossDia1'); //Nome da cena
         //Declaração de algumas das variáveis que serão usadas no código
         this.perguntaAtual = 0;
-        this.pontuacao = 0;
         //Lista que vai armazenar as perguntas selecionadas
         this.selectedQuestions = [];
         //Array que armazena as perguntas e as alternativas corretas para cada uma delas 
@@ -92,7 +91,7 @@ class miniBossDia1 extends Phaser.Scene {
         const acertou = letraResposta === correta; // Verifica se a resposta está correta
 
         //Se o jogador tiver acertado, a pontuação dele aumenta em 100 pontos e se ele tiver errado a pontuação dele diminui em 50 pontos
-        this.pontuacao += acertou ? 100 : -50;
+        pontuacao += acertou ? 100 : -50;
         //Console que verifica se a seleção das opções e a verificação das respotas está funcionando corretamente
         console.log(`Pergunta: ${this.numPerguntaAtual}, Resposta Escolhida: ${letraResposta}, Resposta Correta: ${correta}`);
 
@@ -108,7 +107,7 @@ class miniBossDia1 extends Phaser.Scene {
         this.add.image(400, 300, `${tipo}${this.numPerguntaAtual}`);
 
         //Adiciona um texto que mostra a pontuação do jogador na tela
-        this.add.text(60, 570, `Pontuação: ${this.pontuacao}`, {
+        this.add.text(60, 570, `Pontuação: ${pontuacao}`, {
             fontSize: '24px', //Tamanho da fonte
             fill: '#FFF', //Cor da fonte é branco
             backgroundColor: '#000000' //Cor do fundo é preto
@@ -170,7 +169,7 @@ class miniBossDia1 extends Phaser.Scene {
         }).setOrigin(0.5);
 
         //Adiciona um texo que mostra a pontuação final
-        this.add.text(400, 300, `Pontuação Final: ${this.pontuacao}`, {
+        this.add.text(400, 300, `Pontuação Final: ${pontuacao}`, {
             fontSize: '32px',
             fill: '#FFFFFF',
             fontFamily: 'Arial',
@@ -180,7 +179,8 @@ class miniBossDia1 extends Phaser.Scene {
         this.add.image(400, 420, 'botaoVoltar').setInteractive()
         .setScale(0.8)
         .on('pointerdown', () => {
-            this.scene.start('hub');
+            this.scene.stop("miniBossDia1");
+            this.scene.start('finalDia1');
         });
     }
 }

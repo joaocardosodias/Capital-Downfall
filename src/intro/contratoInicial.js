@@ -6,7 +6,7 @@ class contratoInicial extends Phaser.Scene
     }
 
     preload()
-    {
+    {   
         //Preload dos assets
         this.load.image('tutorialControles', 'src/assets/intro/tutorialControles.png');
 
@@ -27,7 +27,7 @@ class contratoInicial extends Phaser.Scene
 
         botaoSeguirAdiante.on('pointerdown', function (pointer)
         {
-            game.scene.start('hub');
+            game.scene.start('selecaoPersonagens');
 
             game.scene.stop('contratoInicial');
         });

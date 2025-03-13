@@ -463,7 +463,11 @@ A seção em rosa se refere representa a opção de escolha quanto a ordem de jo
 
 ## 3.6. Regras do jogo (sprint 3)
 
-O objetivo principal do nosso jogo é conduzir o jogador por três módulos, cada módulo é composto por três minigames e um mini boss. Os minigames possuem uma jogabilidade focada em questionários, acompanhados de um texto introdutório que orienta o jogador sobre o desafio. Se o jogador conseguir superar os três minigames, ele avança para enfrentar o miniboss. Esse ciclo se repete ao longo dos três módulos.
+Após selecionar o personagem, o jogador é conduzido à hub principal do jogo. O objetivo central é guiá-lo através de três módulos, cada um composto por três minigames e um miniboss. Durante a jornada, o jogador encontra diversas tarefas espalhadas pelo mapa, podendo selecioná-las para avançar nas fases.
+
+Os minigames possuem uma jogabilidade focada em questionários, sempre acompanhados de um texto introdutório que orienta o jogador e disponibiliza conhecimento sobre o desafio a ser enfrentado. Eles estão estrategicamente distribuídos pelo mapa, contribuindo para a dinâmica do jogo. Caso o jogador consiga superar os três minigames de um módulo, ele ganha acesso ao miniboss, que representa um desafio de revisão para a fixação do conteúdo, antes de avançar para o próximo módulo.
+
+Esse ciclo se repete ao longo dos três módulos. É importante destacar que cada tarefa pode ser realizada apenas uma vez. Desse modo, uma vez concluída, não há como refazê-la, garantindo ao jogador apenas uma chance para cada desafio.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 

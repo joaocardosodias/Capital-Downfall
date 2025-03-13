@@ -1,10 +1,8 @@
-    //Declaração das variáveis utilizadas no código
-
-   
-
-
-   
+ 
     //Configurações do Phaser, necessário incluir o nome das cenas no array em scene: []
+
+
+  
 
     const config = 
     {
@@ -21,11 +19,14 @@
             {
                 gravity:  { y: 0 },
                 debug: false,
+                pixelArt: true,
             }
         },
 
   
-        scene: [menuInicial,contratoInicial,hub,miniGame1,miniGame2,miniGame3,fimDoMinigame3,apoioMinigame1,apoioMinigame2,apoioMinigame3, miniBossDia1]
+
+        scene: [menuInicial,contratoInicial,selecaoPersonagens,hub,miniGame1,miniGame2,miniGame3,fimDoMinigame3,apoioMinigame1,apoioMinigame2,apoioMinigame3,apoioMiniboss1, miniBossDia1,finalDia1]
+
 
     };
 

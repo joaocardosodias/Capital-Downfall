@@ -1,10 +1,12 @@
 //Variáveis globais utilizadas no código
 
 let pontuacao = 0;
+let personagemSelecionado;
 
 //Cria a cena da Hub
 
-class hub extends Phaser.Scene {
+class hub extends Phaser.Scene 
+{
   constructor() {
     super('hub');
     this.tiles;
