@@ -8,6 +8,7 @@ let minigame2Jogado;
 
 let minigame3Jogado;
 
+
 //Cria a cena do menu inicial do jogo
 
 class menuInicial extends Phaser.Scene 

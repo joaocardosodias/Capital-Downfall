@@ -26,6 +26,7 @@ class miniGame3 extends Phaser.Scene {
     }
 
     create() {
+
         this.cameras.main.setBackgroundColor('#195AB4');
 
         // Embaralha a ordem dos cards
@@ -259,7 +260,7 @@ class fimDoMinigame3 extends Phaser.Scene {
     }
 
     init(data) {
-        this.pontuacao = data.pontuacao; // Recebe a pontuação da cena anterior
+        pontuacao = data.pontuacao; // Recebe a pontuação da cena anterior
     }
 
     create() {
@@ -269,7 +270,7 @@ class fimDoMinigame3 extends Phaser.Scene {
         this.add.text(400, 200, 'Resultado', { fontSize: '40px', fill: '#fff' }).setOrigin(0.5);
 
         // Exibe a pontuação obtida
-        this.add.text(400, 350, `Pontuação: ${this.pontuacao}`, { fontSize: '30px', fill: '#fff' }).setOrigin(0.5);
+        this.add.text(400, 350, `Pontuação: ${pontuacao}`, { fontSize: '30px', fill: '#fff' }).setOrigin(0.5);
 
         // Botão para voltar à hub
         let botaoVoltar = this.add.text(400, 400, 'Voltar', { fontSize: '30px', fill: '#fff', backgroundColor: '#333' })
@@ -277,8 +278,11 @@ class fimDoMinigame3 extends Phaser.Scene {
             .setPadding(10)
             .setInteractive();
 
+
         botaoVoltar.on('pointerdown', () => {
-            this.scene.restart('hub');
+
+            minigame3Jogado = true;
+            this.scene.wake('hub');
             this.scene.stop('fimDoMinigame3');
         });
     }
