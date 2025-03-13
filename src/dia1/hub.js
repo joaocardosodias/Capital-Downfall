@@ -1,6 +1,7 @@
-//Variáveis globais utilizadas
+//Variáveis globais utilizadas no código
 
 let pontuacao = 0;
+
 //Cria a cena da Hub
 
 class hub extends Phaser.Scene {
