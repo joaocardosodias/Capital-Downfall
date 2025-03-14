@@ -631,7 +631,7 @@ O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o 
 Novo _minigame_ 2:
 
 <p align="center">
-<img src="../assets/gdd_4.3/minig0,3558ame2.png">
+<img src="../assets/gdd_4.3/minigame2.png">
 </p>
 
 Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ também teve que ser expandido. Para evitar com que o usuário esqueça de pontos importantes, implementamos um botão de voltar atrás no material de apoio, permitindo com que ele leia seções anteriores. O objetivo é implementar esse botão no material de apoio de todos os _minigames_, no entanto, só houve tempo hábil para implementar essa função no _minigame_ 2, durante a segunda _sprint_.
