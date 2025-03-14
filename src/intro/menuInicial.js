@@ -2,73 +2,84 @@
 
 let botaoIniciar;
 
-let minigame1Jogado; 
+let minigame1Jogado;
 
 let minigame2Jogado;
 
 let minigame3Jogado;
 
+let minigame4Jogado;
+
+let minigame5Jogado;
+
+let minigame6Jogado;
 
 //Cria a cena do menu inicial do jogo
 
-class menuInicial extends Phaser.Scene 
-{
-    constructor()
-    {
-        super('menuInicial');
-    }
+class menuInicial extends Phaser.Scene {
+  constructor() {
+    super("menuInicial");
+  }
 
-    // Preload dos assets
-    preload()
-    {
-        this.load.spritesheet('menu', 'src/assets/intro/menuInicial.png', { frameWidth: 800, frameHeight: 600 });
+  // Preload dos assets
+  preload() {
+    this.load.spritesheet("menu", "src/assets/intro/menuInicial.png", {
+      frameWidth: 800,
+      frameHeight: 600,
+    });
 
-        this.load.image('botaoIniciar', 'src/assets/intro/botaoIniciar.png');
-    }
+    this.load.image("botaoIniciar", "src/assets/intro/botaoIniciar.png");
+  }
 
-    create() 
-    {
+  create() {
+    // Cria o sprite da tela inicial
 
-        // Cria o sprite da tela inicial
+    const iniciar = this.add.sprite(400, 300, "menu");
 
-        const iniciar = this.add.sprite(400, 300, 'menu');
+    //Variáveis do controle sobre os minigames
 
-        //Variáveis do controle sobre os minigames
+    minigame1Jogado = false;
 
-        minigame1Jogado = false;
+    minigame2Jogado = false;
 
-        minigame2Jogado = false;
+    minigame3Jogado = false;
 
-        minigame3Jogado = false;
+    minigame4Jogado = false;
 
-        // Cria a animação da tela inicial
+    minigame5Jogado = false;
 
-        this.anims.create({
-            key: 'iniciar',
+    minigame6Jogado = false;
 
-            frames: this.anims.generateFrameNumbers('menu', { start: 0, end: 102 }),
+    // Cria a animação da tela inicial
 
-            frameRate: 10,  
-            
-            repeat: -1
-        });
+    this.anims.create({
+      key: "iniciar",
 
-        // Inicia a animação
+      frames: this.anims.generateFrameNumbers("menu", { start: 0, end: 102 }),
 
-        iniciar.play('iniciar');
+      frameRate: 10,
 
-        // Cria as imagens na tela
+      repeat: -1,
+    });
 
-        botaoIniciar = this.add.image(670, 400, 'botaoIniciar').setInteractive().setScale(1);
+    // Inicia a animação
 
-        // Verifica se o botão de iniciar foi clicado
+    iniciar.play("iniciar");
 
-        botaoIniciar.on('pointerdown', function (pointer)
-        {
-            // Caso ele seja, o jogo para a cena atual e passa para a próxima
+    // Cria as imagens na tela
 
-            game.scene.stop('menuInicial');
-            game.scene.start('contratoInicial');
-        });
-    }
+    botaoIniciar = this.add
+      .image(670, 400, "botaoIniciar")
+      .setInteractive()
+      .setScale(1);
+
+    // Verifica se o botão de iniciar foi clicado
+
+    botaoIniciar.on("pointerdown", function (pointer) {
+      // Caso ele seja, o jogo para a cena atual e passa para a próxima
+
+      game.scene.stop("menuInicial");
+      game.scene.start("contratoInicial");
+    });
+  }
 }

@@ -1,77 +1,96 @@
 let seguirAdiante;
 
-class apoioMinigame1 extends Phaser.Scene 
-{
-    constructor ()
-    {
-        super('apoioMinigame1');
-    }
+class apoioMinigame1 extends Phaser.Scene {
+  constructor() {
+    super("apoioMinigame1");
+  }
 
-    preload()
-    {
-        //Preload dos assets
+  preload() {
+    //Preload dos assets
 
-        this.load.image('tutorialCtrlMinigame1', 'src/assets/dia1/tutorialControlesMinigame1.png');
+    this.load.image(
+      "tutorialCtrlMinigame1",
+      "src/assets/dia1/tutorialControlesMinigame1.png"
+    );
 
-        this.load.image('tutorialFundoAberto', 'src/assets/dia1/tutorialFundoAberto.png');
+    this.load.image(
+      "tutorialFundoAberto",
+      "src/assets/dia1/tutorialFundoAberto.png"
+    );
 
-        this.load.image('tutorialFundoFechado', 'src/assets/dia1/tutorialFundoFechado.png');
+    this.load.image(
+      "tutorialFundoFechado",
+      "src/assets/dia1/tutorialFundoFechado.png"
+    );
 
-        this.load.image('botaoSeguirAdiante', 'src/assets/botoes/botaoSeguirAdiante.png');
-  
-    }
-    
-    create() 
-    {  
-        //Carrega as telas e botões utilizados
+    this.load.image(
+      "botaoSeguirAdiante",
+      "src/assets/botoes/botaoSeguirAdiante.png"
+    );
+  }
 
-        let tutorialCtrlMinigame1 = this.add.image(400,300, 'tutorialCtrlMinigame1');
+  create() {
+    //Carrega as telas e botões utilizados
 
-        let tutorialFundoAberto = this.add.image(400,300, 'tutorialFundoAberto').setVisible(false);
+    let tutorialCtrlMinigame1 = this.add.image(
+      400,
+      300,
+      "tutorialCtrlMinigame1"
+    );
 
-        let tutorialFundoFechado = this.add.image(400,300, 'tutorialFundoFechado').setVisible(false);
+    let tutorialFundoAberto = this.add
+      .image(400, 300, "tutorialFundoAberto")
+      .setVisible(false);
 
-        let botaoTutorialMinigame1 = this.add.image(615,560, 'botaoSeguirAdiante').setInteractive().setScale(0.50);
+    let tutorialFundoFechado = this.add
+      .image(400, 300, "tutorialFundoFechado")
+      .setVisible(false);
 
-        let botaoTutorialMinigame2 = this.add.image(615, 560, 'botaoSeguirAdiante').setScale(0.50).setVisible(false);
+    let botaoTutorialMinigame1 = this.add
+      .image(615, 560, "botaoSeguirAdiante")
+      .setInteractive()
+      .setScale(0.5);
 
-        let botaoTutorialMinigame3 = this.add.image(615, 560, 'botaoSeguirAdiante').setScale(0.50).setVisible(false);
+    let botaoTutorialMinigame2 = this.add
+      .image(615, 560, "botaoSeguirAdiante")
+      .setScale(0.5)
+      .setVisible(false);
 
+    let botaoTutorialMinigame3 = this.add
+      .image(615, 560, "botaoSeguirAdiante")
+      .setScale(0.5)
+      .setVisible(false);
 
-        //Verifica se o primeiro botão foi pressionado
+    //Verifica se o primeiro botão foi pressionado
 
-        botaoTutorialMinigame1.on('pointerdown', function (pointer)
-        {
-            tutorialCtrlMinigame1.setVisible(false);
-                
-            tutorialFundoAberto.setVisible(true);
-        
-            botaoTutorialMinigame2.setInteractive().setVisible(true)
+    botaoTutorialMinigame1.on("pointerdown", function (pointer) {
+      tutorialCtrlMinigame1.setVisible(false);
 
-            botaoTutorialMinigame1.setVisible(false);
-        })
+      tutorialFundoAberto.setVisible(true);
 
-        //Verifica se o segundo botão foi pressionado
+      botaoTutorialMinigame2.setInteractive().setVisible(true);
 
-        botaoTutorialMinigame2.on('pointerdown', function (pointer)
-        {
-            tutorialFundoAberto.setVisible(false);
+      botaoTutorialMinigame1.setVisible(false);
+    });
 
-            tutorialFundoFechado.setVisible(true);
-            
-            botaoTutorialMinigame3.setInteractive().setVisible(true)
+    //Verifica se o segundo botão foi pressionado
 
-            botaoTutorialMinigame2.setVisible(false);
-        });
+    botaoTutorialMinigame2.on("pointerdown", function (pointer) {
+      tutorialFundoAberto.setVisible(false);
 
-        //Verifica se o terceiro botão foi pressionado
+      tutorialFundoFechado.setVisible(true);
 
-        botaoTutorialMinigame3.on('pointerdown', function (pointer)
-        {
-            game.scene.start('miniGame1');
+      botaoTutorialMinigame3.setInteractive().setVisible(true);
 
-            game.scene.stop('apoioMinigame1');
-        });
-    }
+      botaoTutorialMinigame2.setVisible(false);
+    });
+
+    //Verifica se o terceiro botão foi pressionado
+
+    botaoTutorialMinigame3.on("pointerdown", function (pointer) {
+      game.scene.start("miniGame1");
+
+      game.scene.stop("apoioMinigame1");
+    });
+  }
 }
-
