@@ -81,15 +81,15 @@ Observação: o jogo foi feito para o navegador Google Chrome, portanto há algu
 
 ## 🗃 Histórico de lançamentos
 
-- 0.5.0 - XX/XX/2024
+- 0.5.0 - XX/XX/2025
   -
-- 0.4.0 - XX/XX/2024
+- 0.4.0 - XX/XX/2025
   -
-- 0.3.0 - XX/XX/2024
+- 0.3.0 - 14/03/2025
   -
-- 0.2.0 - XX/XX/2024
+- 0.2.0 - 28/02/2025
   -
-- 0.1.0 - XX/XX/2024
+- 0.1.0 - 14/02/2025
   -
 
 ## 📋 Licença/License
