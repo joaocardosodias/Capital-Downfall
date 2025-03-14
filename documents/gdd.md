@@ -109,7 +109,6 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 - **Mudanças no perfil dos investidores:** novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis(GLOBALDATA).
 
 - **Regulação rigorosa:** o setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco(GLOBALDATA).
-  
 - **Cibersegurança e Fraudes:** como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados(GLOBALDATA).
 
 **Oportunidades:**
@@ -127,7 +126,6 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 O BTG Pactual tem como missão prover soluções financeiras inovadoras e eficientes, combinando expertise e tecnologia para gerar valor sustentável a clientes, investidores e à sociedade. O banco busca transformar o mercado por meio de um atendimento consultivo, focado em resultados, sempre priorizando a excelência e a inovação. Sua visão é consolidar-se como a principal instituição financeira independente da América Latina, sendo reconhecido pela sua capacidade de adaptação, impacto positivo e liderança no setor de investimentos e serviços financeiros. Seus valores são pautados pela meritocracia, parceria e foco no cliente, promovendo um ambiente dinâmico e colaborativo. Além disso, o compromisso com a integridade, a excelência e a visão de longo prazo fortalece sua cultura empreendedora, impulsionando o crescimento sustentável e a criação de soluções diferenciadas para o mercado(BTG PACTUAL).
 
 Da mesma forma, nosso projeto visa transformar o onboarding de novos analistas de tecnologia do BTG Pactual, oferecendo uma experiência gamificada, imersiva e alinhada aos desafios reais da empresa. Nossa missão é tornar o aprendizado dinâmico e estratégico, refletindo o dinamismo do mercado financeiro. Assim como o banco se guia por valores como meritocracia, parceria e foco no cliente, nosso projeto também se baseia na excelência e inovação, garantindo uma experiência envolvente e eficiente. Além disso, buscamos incentivar a autonomia e o protagonismo, promovendo um aprendizado ativo e contínuo que vai além do onboarding. Valorizamos o impacto e a responsabilidade, demonstrando como cada decisão afeta os resultados do banco, e promovemos a colaboração e o engajamento, fortalecendo a integração entre os profissionais.
-
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
@@ -253,13 +251,10 @@ O jogo pode ser concluído entre 15 e 20 minutos passando por todas as fases.
 
 O enredo do nosso jogo se baseia em um problema financeiro em um banco. Para resolver essa crise, o banco decidiu contratar um analista. No jogo, você pode escolher entre quatro personagens, e aquele que você selecionar será o profissional contratado para enfrentar o desafio. O arco narrativo do jogo será apresentado ao jogador logo no início, será nosso texto inicial que irá introduzir o jogador a uma trama envolvente e cheia de decisões críticas.
 
-
 “Seja muito bem-vindo! Na crise atual do mundo financeiro, precisamos de sua ajuda para garantir o crescimento da empresa. Ao redor do nosso escritório, estão 3 tarefas para você realizar. Elas estão demarcadas por pontos de exclamação.
-
 
 Movimente-se com as setinhas do teclado, e interaja com essas tarefas utilizando a barra de espaço.
 Contamos com você!”
-
 
 O objetivo do texto inicial é introduzir o jogador nos módulos que se seguem. O arco de conflito do jogo é representado pelos módulos, que funcionam como mini games projetados para testar as habilidades do jogador, desafiando-o a resolver problemas financeiros. Já o arco de resolução se concentra na "sala de guerra", um ambiente que, embora semelhante aos módulos, eleva a dificuldade e intensifica o clima de tensão, simulando uma situação real e crítica. Se o jogador conseguir superar esse desafio final, ele concluirá o jogo, encerrando o arco de resolução com sucesso.
 
@@ -321,7 +316,7 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais dez salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
 
 <div align="center">
-    <img src="../assets/conceptArt/mapa.png" width="500"><br>
+    <img src="../assets/gdd_3.3/hub.png" width="500"><br>
     <p>Mapa do jogo.</p>
 </div>
 
@@ -334,39 +329,48 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 
 O jogo possuirá três fases, e cada fase terá três minigames que abordarão algum dos assuntos solicitados pelo BTG Pactual, além de um quiz ao final, que contemplará todo o conteúdo da fase. Também haverá uma fase 4, que simulará o contexto de pressão de uma sala de guerra, em que todos os conteúdos serão abordados de uma só vez e haverá um limite de tempo. A tabela a seguir ilustra e explica os três minigames implementados na primeira fase do jogo:
 
-| Imagem do minigame | Resumo |
-|--------------------|--------|
-| <img src="../assets/conceptArt/miniGame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
-| <img src="../assets/conceptArt/miniGame2.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento. |
-| <img src="../assets/conceptArt/miniGame3.png" width="800"> | O jogador deve revisar as transações financeiras, marcando se são transações válidas ou fraudulentas. |
+| Imagem do minigame                                      | Resumo                                                                                                                                                                        |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="../assets/gdd_3.3/minigame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
+| <img src="../assets/gdd_3.3/minigame2.png" width="800"> | O jogador deve realizar cálculos financeiros.                                                                                                                                 |
+| <img src="../assets/gdd_3.3/minigame3.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento.                                                                                         |
+| <img src="../assets/gdd_3.3/minigame4.png" width="800"> | O jogador deve ordenar responder questões sobre impostos diversos                                                                                                             |
+| <img src="../assets/gdd_3.3/minigame5.png" width="800"> | O jogador deve ligar termos e definições de conceitos financeiros.                                                                                                            |
+| <img src="../assets/gdd_3.3/minigame6.png" width="800"> | O jogador deve avaliar perfis de candidatos.                                                                                                                                  |
 
 ### 3.3.2. Navegação pelo mundo (Sprints 2 e 3)
 
 A navegação no jogo é simples e intuitiva, permitindo que o jogador explore o ambiente do escritório de um grande banco e interaja com os elementos disponíveis.
 
-#### Movimentação do Personagem  
-- O jogador pode movimentar o personagem utilizando as setas do teclado (`↑ ↓ → ←`).  
-- A movimentação é livre, permitindo que o jogador explore todas as áreas do escritório desde o início.  
+#### Movimentação do Personagem
 
-#### Interação com os Computadores  
-- Ao se aproximar de um computador interativo, um ícone de exclamação aparecerá sobre ele, indicando que o jogador pode interagir.  
-- Para acessar os minigames, o jogador deve pressionar a tecla **espaço** (`Space`).  
-- Ao interagir, o jogador será redirecionado para um dos minigames disponíveis no jogo.  
+- O jogador pode movimentar o personagem utilizando as setas do teclado (`↑ ↓ → ←`).
+- A movimentação é livre, permitindo que o jogador explore todas as áreas do escritório desde o início.
 
-#### Acesso aos Minigames  
+#### Interação com os Objetos
+
+- Ao se aproximar de um objeto interativo, um ícone de exclamação aparecerá sobre ele, indicando que o jogador pode interagir.
+- Para acessar os minigames, o jogador deve pressionar a tecla **espaço** (`Space`).
+- Ao interagir, o jogador será redirecionado para um dos minigames disponíveis no jogo.
+
+#### Acesso aos Minigames
+
 - Dentro dos minigames, o jogador utilizará o **mouse** para realizar as ações necessárias.
-  
-  - **Minigame 1:** O jogador deve arrastar cards para as gavetas corretas.  
-  - **Minigame 2:** O jogador deve ordenar corretamente as etapas do resgate.  
-  - **Minigame 3:** O jogador deve marcar transações como válidas ou fraudulentas.
 
-Ao concluir cada minigame, o jogador pode retornar ao escritório e escolher um novo desafio.  
+  - **Minigame 1:** O jogador deve arrastar cards para as gavetas corretas.
+  - **Minigame 2:** O jogador deve realizar cálculos financeiros.
+  - **Minigame 3:** O jogador deve ordenar corretamente as etapas do resgate.
+  - **Minigame 4:** O jogador deve responder questões sobre impostos.
+  - **Minigame 5:** O jogador deve ligar nomes e definições de conceitos financeiros.
+  - **Minigame 6:** O jogador deve ordenar avaliar perfis de candidatos.
+
+Ao concluir cada minigame, o jogador pode retornar ao escritório e escolher um novo desafio.
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-O jogo utiliza uma progressão baseada em dias, onde cada fase representa um dia de trabalho no escritório do banco. O jogador pode completar os desafios no seu próprio ritmo dentro de cada fase. Ao concluir todos os 3 minigames e o quiz final de cada fase, o jogador receberá um relatório de desempenho, que destaca seu progresso e acertos.  
+O jogo utiliza uma progressão baseada em dias, onde cada fase representa um dia de trabalho no escritório do banco. O jogador pode completar os desafios no seu próprio ritmo dentro de cada fase. Ao concluir todos os 3 minigames e o quiz final de cada fase, o jogador receberá um relatório de desempenho, que destaca seu progresso e acertos.
 
-Durante as três primeiras fases, não há limite de tempo para a conclusão dos minigames e quizzes. Entretanto, na fase 4, que irá simular uma sala de guerra, todos os conteúdos das fases anteriores serão abordados de forma combinada. Nessa fase final, haverá um limite de tempo, desafiando o jogador a aplicar rapidamente seus conhecimentos sob pressão.  
+Durante as três primeiras fases, não há limite de tempo para a conclusão dos minigames e quizzes. Entretanto, na fase 4, que irá simular uma sala de guerra, todos os conteúdos das fases anteriores serão abordados de forma combinada. Nessa fase final, haverá um limite de tempo, desafiando o jogador a aplicar rapidamente seus conhecimentos sob pressão.
 
 ### 3.3.4. Concept Art (sprint 2)
 
@@ -415,8 +419,7 @@ Durante as três primeiras fases, não há limite de tempo para a conclusão dos
     <p>Figura 8: Concept art do menu inicial.</p>
 </div>
 
-
-### 3.3.5. Trilha sonora (sprint 3)
+### 3.3.5. Trilha sonora (sprint 4)
 
 _Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no mundo e nas fases. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
 
@@ -425,30 +428,6 @@ _Exemplo de tabela_
 --- | --- | --- | ---
 1 | tema de abertura | tela de início | própria
 2 | tema de combate | cena de combate com inimigos comuns | Hans Zimmer
-3 | ...
-
-## 3.4. Inventário e Bestiário (sprint 3)
-
-### 3.4.1. Inventário
-
-_\<opcional\> Caso seu jogo utilize itens ou poderes para os personagens obterem, descreva-os aqui, indicando títulos, imagens, meios de obtenção e funções no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
-
-_Exemplo de tabela_
-\# | item | | como obter | função | efeito sonoro
---- | --- | --- | --- | --- | ---
-1 | moeda | <img src="../assets/coin.png"> | há muitas espalhadas em todas as fases | acumula dinheiro para comprar outros itens | som de moeda
-2 | madeira | <img src="../assets/wood.png"> | há muitas espalhadas em todas as fases | acumula madeira para construir casas | som de madeiras
-3 | ...
-
-### 3.4.2. Bestiário
-
-_\<opcional\> Caso seu jogo tenha inimigos, descreva-os aqui, indicando nomes, imagens, momentos de aparição, funções e impactos no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
-
-_Exemplo de tabela_
-\# | inimigo | | ocorrências | função | impacto | efeito sonoro
---- | --- | --- | --- | --- | --- | ---
-1 | robô terrestre | <img src="../assets/inimigo2.PNG"> | a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
-2 | robô voador | <img src="../assets/inimigo1.PNG"> | a partir da fase 2 | ataca o personagem vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar, o personagem perde 3 pontos de vida | som de hélice
 3 | ...
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
@@ -463,43 +442,35 @@ A seção em rosa se refere representa a opção de escolha quanto a ordem de jo
 
 ## 3.6. Regras do jogo (sprint 3)
 
-Após selecionar o personagem, o jogador é conduzido à hub principal do jogo. O objetivo central é guiá-lo através de três módulos, cada um composto por três minigames e um miniboss. Durante a jornada, o jogador encontra diversas tarefas espalhadas pelo mapa, podendo selecioná-las para avançar nas fases.
+Após selecionar o personagem, o jogador é conduzido à hub principal do jogo. O objetivo central é guiá-lo através de módulos, cada um composto por três minigames e um miniboss. Durante a jornada, o jogador encontra diversas tarefas espalhadas pelo mapa, podendo selecioná-las para avançar nas fases.
 
 Os minigames possuem uma jogabilidade focada em questionários, sempre acompanhados de um texto introdutório que orienta o jogador e disponibiliza conhecimento sobre o desafio a ser enfrentado. Eles estão estrategicamente distribuídos pelo mapa, contribuindo para a dinâmica do jogo. Caso o jogador consiga superar os três minigames de um módulo, ele ganha acesso ao miniboss, que representa um desafio de revisão para a fixação do conteúdo, antes de avançar para o próximo módulo.
 
-Esse ciclo se repete ao longo dos três módulos. É importante destacar que cada tarefa pode ser realizada apenas uma vez. Desse modo, uma vez concluída, não há como refazê-la, garantindo ao jogador apenas uma chance para cada desafio.
+Esse ciclo se repete ao longo dos módulos. É importante destacar que cada tarefa pode ser realizada apenas uma vez. Desse modo, uma vez concluída, não há como refazê-la, garantindo ao jogador apenas uma chance para cada desafio.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-***Controles e Interação***
+**_Controles e Interação_**
 
-O jogo é um 2D interativo, utilizando mouse/touchpad e setas do teclado para movimentação e interações.
+O jogo é um 2D interativo, utilizando mouse/touchpad, setas do teclado para movimentação e a barra de espaço para interações.
 
-
-
-
-
-
-***Mecanismos e Funcionamento***
-
-
-
+**_Mecanismos e Funcionamento_**
 
 **Mouse ou Touchpad**
 
+(Minigame 1) Botão esquerdo + arrastar: Define se um fundo é aberto ou fechado ao reorganizar os _cards_.
 
-Botão direito + arrastar: Define se um fundo é aberto ou fechado ao reorganizar os cards.
+(Mnigame 2) Botão esquerdo: Seleciona a resposta que indica o saldo resultante.
 
-Clique para conectar características: Arraste e conecte corretamente os atributos de cada tipo de fundo.
+(Minigame 3) Botão esquerdo + arrastar: Coloca os \_cards\_\_ nos seus respectivos lugares na linha do tempo.
 
-Validação de transações suspeitas: Clique em um conjunto de operações e verifique se há movimentações suspeitas (exemplo: arbitragem indevida).
+(Minigame 4) Botão esquerdo + arrastar: Seleciona a questão do imposto, rascunha a resposta na lousa e seleciona o resultado da questão.
 
+(Minigame 5) Botão esquerdo + arrastar: Liga os termos e as definições de conteúdos-chave do mundo financeiro
 
-
+(Minigame 6) Botão esquerdo: Seleciona se um candidato condiz com o perfil desejado.
 
 **Setas do Teclado (Exploração do Mapa)**
-
-
 
 Seta para a direita → Move o personagem para a direita no mapa.
 
@@ -508,6 +479,10 @@ Seta para a esquerda ← Move o personagem para a esquerda no mapa.
 Seta para cima ↑ Move o personagem para trás no mapa (navegação em profundidade).
 
 Seta para baixo ↓ Move o personagem para frente no mapa.
+
+**Barra de Espaço (Interação)**
+
+A barra de espaço permite que o jogador interaja, na _hub_, com objetos demarcados com um ponto de exclamação azul.
 
 ## 3.8. Implementação Matemática de Animação/Movimento (sprint 3)
 
@@ -563,99 +538,73 @@ Assim, nessa _sprint_, desenvolvemos três _minigames_. Cada um deles apresentam
 
 O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classificar arquivos em duas categorias: fundos abertos e fundos fechados. Para isso, basta clicar no arquivo com o botão esquerdo do mouse, e arrastá-lo para a classificação correta. No topo da tela, a pontuação vai sendo atualizada em tempo real.
 
-
 _Gameplay_ do _minigame_ 1:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/gameplay1.png">
 </p>
 
-
 O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao usuário classificar diferentes registros de transações de investidores, levando em conta discrepâncias nos dados. Em cada arquivo, há dois botões, permitindo a classificação do material. Da mesma forma do primeiro _minigame_, a pontuação é atualizada conforme o seu progresso.
 
-
 _Gameplay_ do minigame 2:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/gameplay2.png">
 </p>
 
-
 O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da cotação. O jogador precisa colocar, em uma linha do tempo, a ordem dos acontecimentos em um resgate típico de valores. Isso pode ser feito ao clicar em um _card_ na parte superior da tela, depois clicando na sua posição correspondente na parte inferior. Após todos os _cards_ serem posicionados, basta clicar na seta que aparece na tela, para receber a sua pontuação.
 
-
 _Gameplay_ do _minigame_ 3:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/gameplay3.png">
 </p>
 
-
 É importante destacar que cada um desses _minigames_ contém um material de apoio específico, indicando a maneira correta de jogar, além das informações necessárias para compreender o conteúdo por traz do minijogo.
 
-
 Exemplo do material de apoio do _minigame_ 1:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/apoioMinigame1.png">
 </p>
 
-
 A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve ao fato de eles não serem extremamente complexos, tanto no quesito da programação quanto para a experiência do usuário. Assim, eles servem como uma forma de introdução para o _gameplay loop_ do nosso jogo.
 
-
 Exemplo do código do _minigame_ 2:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/codigo2.png">
 </p>
 
-
 Também fizemos algumas atualizações para outras telas diversas do jogo, adicionando novas informações em pontos necessários. Entre essas mudanças, gostaríamos de destacar a _hub_. O seu mapa foi expandido, contando com novas salas e objetos interativos. Cada um desses objetos leva à um _minigame_ diferente, podendo ser interagidos em qualquer ordem. Eles possuem um ponto de exclamação ao seu lado, indicando que as tarefas ainda não foram realizadas. Cada _minigame_ pode ser jogado uma vez.
 
-
 Layout da _hub_:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/hubJogo.png">
 </p>
 
-
 Exemplo de objeto interativo na _hub_:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/objeto.png">
 </p>
 
-
 Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spriesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
 
-
 _Spritesheet_ do personagem:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/markSpritesheet.png">
 </p>
 
-
 Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fundo animada. Ela também apresenta o logo do nosso jogo, trazendo uma maior identificação do jogador com o nosso _game_.
 
-
 Menu inicial:
-
 
 <p align="center">
 <img src="../assets/gdd_4.2/menuInicial.gif">
 </p>
-
 
 De forma geral, a _sprint_ 2 ficou marcada pelo desenvolvimento de novas habilidades, além de uma maior clarificação dos objetivos do nosso projeto. Ainda enfrentamos diversos desafios, principalmente em relação ao tempo de desenvolvimento, mas conseguimos cumprir as tarefas necessárias, tanto para o entregável quanto para apresentação ao parceiro.
 
@@ -663,7 +612,99 @@ Para os próximos passos, iremos implementar novas fases (dias) no nosso jogo, t
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-_Descreva e ilustre aqui o desenvolvimento da versão intermediária do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos._
+No período de desenvolvimento da _sprint_ 3, focamos em correções apontadas pelo parceiro de projeto, além da implementação da segunda fase, com foco nos _minigames_ desse dia.
+
+Entre os problemas levantados, é importante destacar dois deles: a _hub_ do jogo, que era grande demais. Pelo fato de conter diversas salas, e um ambiente considerável para explorar, o nosso jogo não levava em conta a acessibilidade. Algumas pessoas que não estão acostumadas em jogar _videogames_ poderiam acabar se frustrando. Além disso, o foco principal do projeto é o ensinamento dos conteúdos para o _onboarding_.
+
+Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo os aspectos essenciais. Mantivemos a utilização do _software_ _Tiled_, utilizando de marcações presentes no chão para guiar o jogador ao caminho necessário para a progressão. De forma geral, a _hub_ ainda representa um andar de um escritório, mantendo objetos-chave, como computadores e papéis.
+
+Novo layout da _hub_:
+
+<p align="center">
+<img src="../assets/gdd_4.3/hub.png">
+</p>
+
+Outro problema apontado foi a implementação do _minigame_ 2. Ele se tratava da análise de transações suspeitas, permitindo com que o usuário avaliasse se os casos apresentados eram verídicos. No entanto, o conteúdo não se alinhava com aquilo que era desejado para o _onboarding_. Por esse motivo, alteramos a ideia por trás desse _minigame_.
+
+O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o cálculo de juros, por exemplo. Ela apresenta o histórico de transações dos clientes, fornecendo as informações essenciais para que o jogador calcule o saldo final.
+
+Novo _minigame_ 2:
+
+<p align="center">
+<img src="../assets/gdd_4.3/minig0,3558ame2.png">
+</p>
+
+Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ também teve que ser expandido. Para evitar com que o usuário esqueça de pontos importantes, implementamos um botão de voltar atrás no material de apoio, permitindo com que ele leia seções anteriores. O objetivo é implementar esse botão no material de apoio de todos os _minigames_, no entanto, só houve tempo hábil para implementar essa função no _minigame_ 2, durante a segunda _sprint_.
+
+Exemplo de parte do material de apoio do _minigame_ 2:
+
+<p align="center">
+<img src="../assets/gdd_4.3/minigame2Apoio.png">
+</p>
+
+Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltamos o nosso foco para a implementação de novas partes do projeto. A primeira delas foi o _miniboss_ do dia 1. Ele é um quiz, contendo 3 perguntas, cada uma sobre o conteúdo presente em um _minigame_. As perguntas são selecionadas de um banco de questões, totalizando 9 opções. No entanto, para evitar com que todas as perguntas sejam de apenas um tópico, o código garante que apenas uma pergunta por conteúdo será selecionada.
+
+Exemplo de questão do _miniboss_:
+
+<p align="center">
+<img src="../assets/gdd_4.3/miniboss.png">
+</p>
+
+Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de sua performance logo em seguida. Ou seja, caso ele tenha errado a questão, ele receberá uma explicação sobre a maneira correta de responder a pergunta.
+
+Exemplo de _feedback_:
+
+<p align="center">
+<img src="../assets/gdd_4.3/minibossFeedback.png">
+</p>
+
+Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em adicionar novas mecânicas de jogo, para trazer uma experiência mais variada. O primeiro deles é sobre impostos existentes no mundo financeiro. O jogador é apresentado quatro impostos diferentes, cada um contendo uma questão para o usuário resolver. Após ele selecionar uma opção, ele é conduzido para uma lousa digital, servindo como rascunho para os seus cálculos.
+
+_Gameplay_ do _minigame_ 4:
+
+<p align="center">
+<img src="../assets/gdd_4.3/minigame4.png">
+</p>
+
+O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precisa ligar o nome dos conceitos com a sua definição correta. Essa ação é feita utilizando o botão esquerdo do mouse, arrastando uma linha para interligar as opções. Conforme dito anteriormente, todo os conteúdos estão presentes no material de apoio de cada _minigame_.
+
+_Gameplay_ do _minigame_ 5:
+
+<p align="center">
+<img src="../assets/gdd_4.3/minigame5.png">
+</p>
+
+O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura empresarial do parceiro de projeto. Com base nos principais valores da empresa, o jogador deve analisar diversos perfis de candidatos, e selecionar aqueles que melhor se encaixam. Tal ação é feita por meio de dois botões presentes na tela, um para aprovar e outro para recusar.
+
+_Gameplay_ do _minigame_ 6:
+
+<p align="center">
+<img src="../assets/gdd_4.3/minigame6.png">
+</p>
+
+Além disso, também introduzimos a opção do jogador selecionar o personagem jogável, entre quatro opções diferentes. Tomamos essa decisão com base em nossa aula de inclusão e diversidade. Por meio de decisões como essa, é possível aumentar o engajamento do jogador com a experiência. Sobre o código, é importante destacar que a seleção do jogador é guardada em uma variável. Isso ocorre pois os diferentes dias no jogo utilizam de outras cenas da _hub_. Logo, para manter a consistência, todas essas cenas conseguem identificar a escolha do jogador, e assim mostrar o personagem correto.
+
+Tela de seleção de personagens:
+
+<p align="center">
+<img src="../assets/gdd_4.3/selecaoPersonagem.png">
+</p>
+
+Exemplo do código da seleção de personagens:
+
+<p align="center">
+<img src="../assets/gdd_4.3/codigoPersonagem.png">
+</p>
+
+Por fim, também adicionamos telas de _feedback_ após a realização do _miniboss_. Elas alteram-se de acordo com a sua performance do jogo. Elas possuem função estética quanto mecânica. Por um lado, ajudam a compor a atmosfera da experiência, sendo apresentada como uma edição de jornal. Porém, ela também serve como um alerta de performance para o jogador, indicando se está indo abaixo ou acima do esperado.
+
+Exemplo da tela de _feedback_:
+
+<p align="center">
+<img src="../assets/gdd_4.3/telaPontuacao.png">
+</p>
+
+Por se tratar de uma _sprint_ mais curta, por causa do feriado, o desenvolvimento acabou sendo mais corrido. Um fator notável foi a rotatividade dos papéis exercidos pelos integrantes, que permitiu com que todos pudessem trabalhar em diferentes áreas do projeto. Sob um olhar geral, o grupo conseguiu cumprir aquilo que tinha proposto. Para os próximos passos, continuaremos ajustando o nosso projeto com base nos _feedbacks_ recebidos, e começaremos o desenvolvimento da fase da Sala de Guerra.
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
@@ -679,17 +720,23 @@ _Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da vers�
 
 Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ referentes ao dia 1 do jogo, além do funcionamento do menu inicial.
 
-|número | pré-condição | descrição do teste                                                            | pós-condição                       |                                                                                                                       
-| ----  | -------      | ----------------------------------------------------------------------------- |----------------------------------- | 
-| 1            | entrar no _link_ do jogo                                                      | apertar o botão: jogar                                                                              | o jogo deve passar para uma cena explicando os controles básicos                                                                                                  |
-| 2            | posicionar o personagem em em frente a um objeto que ainda não foi interagido | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | a explicação do _minigame_ deverá aparecer                                                                                                                        |
-| 3            | iniciar o _minigame_ 1 (fundos de investimento)                               | arrastar o _card_ para uma das gavetas                                                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                             |
-| 4            | iniciar o _minigame_ 2 (transações suspeitas)                                 | clicar no botão de verdadeiro ou falso                                                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo |
-| 5            | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em outro _card_ ao lado              | o jogo deverá impedir a seleção de outro _card_, mantendo o original selecionado                                                                                  |
-| 6            | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em uma posição na linha do tempo     | o _card_ deverá se deslocar até a posição designada                                                                                                               |
-| 7            | realizar o teste número 6                                                     | clicar em um _card_ que já está na linha do tempo, e depois clicar em outro local na linha do tempo | o jogo deverá impedir que essa mudança ocorra, para evitar erros                                                                                                  |
-| 8            | iniciar algum dos _minigames_                                                 | finalizar o _minigame_                                                                              | o jogo deverá voltar até a _hub_, e o ponto de exclamação azul ao lado do terminal do _minigame_ escolhido deverá sumir                                           |
-| 9            | posicionar o personagem em em frente a um objeto que já foi interagido        | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                     | o jogo deverá impedir que o _minigame_ ocorra novamente |                                                                                                          
+| número | pré-condição                                                                  | descrição do teste                                                                                             | pós-condição                                                                                                                                                      |
+| ------ | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1      | entrar no _link_ do jogo                                                      | apertar o botão: jogar                                                                                         | o jogo deve passar para uma cena explicando os controles básicos                                                                                                  |
+| 2      | posicionar o personagem em em frente a um objeto que ainda não foi interagido | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                | a explicação do _minigame_ deverá aparecer                                                                                                                        |
+| 3      | iniciar o _minigame_ 1 (fundos de investimento)                               | arrastar o _card_ para uma das gavetas                                                                         | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                             |
+| 4      | iniciar o _minigame_ 2 (transações suspeitas)                                 | clicar no botão de verdadeiro ou falso                                                                         | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo |
+| 5      | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em outro _card_ ao lado                         | o jogo deverá impedir a seleção de outro _card_, mantendo o original selecionado                                                                                  |
+| 6      | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em uma posição na linha do tempo                | o _card_ deverá se deslocar até a posição designada                                                                                                               |
+| 7      | realizar o teste número 6                                                     | clicar em um _card_ que já está na linha do tempo, e depois clicar em outro local na linha do tempo            | o jogo deverá impedir que essa mudança ocorra, para evitar erros                                                                                                  |
+| 8      | iniciar algum dos _minigames_                                                 | finalizar o _minigame_                                                                                         | o jogo deverá voltar até a _hub_, e o ponto de exclamação azul ao lado do terminal do _minigame_ escolhido deverá sumir                                           |
+| 9      | posicionar o personagem em em frente a um objeto que já foi interagido        | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                | o jogo deverá impedir que o _minigame_ ocorra novamente                                                                                                           |
+| 10     | passar pelas duas primeiras cenas do jogo                                     | selecionar uma das opções de personagem jogáveis                                                               | o personagem selecionado deverá aparecer na próxima cena                                                                                                          |
+| 11     | iniciar o _minigame_ 4 e escolher um dos _cards_                              | selecionar uma cor do lado esquerdo, e clicar e arrastar com o botão esquerdo na área branca da tela           | o rastro do mouse deverá aparecer na cor escolhida                                                                                                                |
+| 12     | iniciar o _minigame_ 5                                                        | arrastar a linha de um _card_ vazio para outro _card_ que já foi conectado                                     | o jogo deverá impedir que os _cards_ se conectem                                                                                                                  |
+| 13     | iniciar o _minigame_ 6                                                        | apertar o botão verde ou vermelho                                                                              | o jogo deverá atualizar a pontuação no canto superior da tela, conforme a precisão da resposta                                                                    |
+| 14     | iniciar o material de apoio do _minigame_ 2                                   | clicar no botão de seguir adiante, e depois clicar no botão de voltar atrás, para todas as páginas do material | o jogo deverá transicionar as cenas conforme o esperado                                                                                                           |
+| 15     | terminar os três _minigames_ do dia 1                                         | responder as questões do _miniboss_                                                                            | o jogo deverá apresentar uma de três telas de jornal de acordo com a sua performance                                                                              |
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
