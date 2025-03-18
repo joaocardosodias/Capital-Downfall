@@ -172,7 +172,8 @@ class hub extends Phaser.Scene
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame1Jogado == false) {
           this.avisoMinigame1.setVisible(false);
-          game.scene.start('apoioMinigame1');
+          this.minigameAtual = 1;
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
           game.scene.sleep('hub');
         }
       }
@@ -184,7 +185,8 @@ class hub extends Phaser.Scene
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame2Jogado == false) {
           this.avisoMinigame2.setVisible(false);
-          game.scene.start('apoioMinigame2');
+          this.minigameAtual = 2;
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
           game.scene.sleep('hub');
         }
       }
@@ -196,7 +198,8 @@ class hub extends Phaser.Scene
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame3Jogado == false) {
           this.avisoMinigame3.setVisible(false);
-          game.scene.start('apoioMinigame3');
+          this.minigameAtual = 3;
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
           this.scene.sleep('hub');
         }
       }
@@ -213,7 +216,8 @@ class hub extends Phaser.Scene
 
     if (minigame1Jogado === true && minigame2Jogado === true && minigame3Jogado === true) {
       this.scene.stop('hub');
-      this.scene.start('apoioMiniboss1');
+      this.minigameAtual = 10;
+      game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
     }
 
     if (this.teclado.left.isDown && this.teclado.up.isDown) {
@@ -327,6 +331,23 @@ class hub extends Phaser.Scene
         this.player.anims.play('movimentoParadoBaixo', true);
 
       }
+    }
+ 
+    // Faz com que o aviso não suma caso o player entre e saia de um tutorial
+    if (!minigame1Jogado) {
+      this.avisoMinigame1.setVisible(true);
+    } else {
+      this.avisoMinigame1.setVisible(false);
+    }
+    if (!minigame2Jogado) {
+      this.avisoMinigame2.setVisible(true);
+    } else {
+      this.avisoMinigame2.setVisible(false);
+    }
+    if (!minigame3Jogado) {
+      this.avisoMinigame3.setVisible(true);
+    } else {
+      this.avisoMinigame3.setVisible(false);
     }
   }
 }

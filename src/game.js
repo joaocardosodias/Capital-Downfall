@@ -25,9 +25,7 @@ const config = {
     miniGame2,
     miniGame3,
     fimDoMinigame3,
-    apoioMinigame1,
-    apoioMinigame2,
-    apoioMinigame3,
+    apoioDia1,
     apoioMiniboss1,
     miniBossDia1,
     finalDia1,
@@ -47,5 +45,9 @@ const config = {
     apoioMinigame6,
   ],
 };
+//Adicionando a fonte customizada que será utilizada ao redor do jogo
+const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontePixelArt.ttf)');
+fontePixelArt.load()
+document.fonts.add(fontePixelArt);
 
 const game = new Phaser.Game(config);

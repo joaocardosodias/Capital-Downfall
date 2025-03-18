@@ -1,0 +1,209 @@
+let minigameAtual;
+
+class apoioDia1 extends Phaser.Scene {
+
+    constructor() {
+        super("apoioDia1");
+        // Esse valor servirá para armazenar qual página do tutorial o player está lendo
+        this.j = 0;
+        // Arrays para o armazenamento dos tutoriais
+        this.tutoriaisMinigame1 = [
+            `texto1`,
+            `texto2`,
+            `texto3`
+        ];
+        this.tutoriaisMinigame2 = [
+            `Nessa tarefa, você precisará aprender um pouco de matemática financeira.
+
+Seu objetivo é simples: descobrir o saldo final das contas bancárias apresentadas.
+
+Para isso, basta usar a legenda no lado esquerdo da tela para analisar as atividades da conta, fazer os cálculos necessários e escolher a alternativa que corresponde ao saldo final da conta clicando nela com o mouse. 
+
+Segue em anexo os materiais necessários para a tarefa.
+
+Boa sorte!
+            `,
+
+            `A seguir estão os conceitos que serão utilizados nesta tarefa, juntamente com suas respectivas siglas.
+
+Mas não se preocupe! Você não precisará decorar as siglas, apenas entender os efeitos de cada uma.
+
+Durante todo o minigame, haverá uma legenda para te auxiliar. Além disso, fique à vontade para usar uma calculadora, caso considere necessário.
+            `,
+
+            `Depósito (D): Adiciona dinheiro à conta.
+Saque (S): Retira dinheiro da conta.
+Transferência recebida (TR): Dinheiro entra na conta vindo de outra pessoa.
+Transferência enviada (TE): Dinheiro é enviado para outra conta.
+Investimento (I): Parte do dinheiro é investida, saindo da conta principal.
+Resgate de Investimento (RI): Retorno de um investimento, adicionando dinheiro à conta.
+            `,
+
+            `Juros sobre Investimentos (JI): Quando um valor é investido, ele pode crescer ao longo do tempo devido à incidência de juros compostos. A fórmula para calcular o rendimento de um investimento a uma certa taxa de juros em função do tempo é: 
+
+M = C × (1 + i)¥
+
+Em que:
+M = Montante, ou seja, valor total que o investidor recebe
+C = Capital aplicado
+i = taxa de juros
+t = tempo de aplicação do investimento
+            `,
+
+            `Exemplo prático: Imagine que você investe R$ 1.000,00 em uma aplicação financeira que rende 5% ao mês. Isso significa que, ao final de um mês, seu investimento terá aumentado em 5%.
+
+Cálculo: 
+M = C × (1 + i)¥
+M = 1.000 × (1+0,05)² = 
+1.000 × 1,05 × 1,05 =
+1.050 × 1,05 = 
+1.102,50
+
+Esse crescimento ocorre devido aos juros compostos, onde os rendimentos de um mês são aplicados sobre o saldo do mês anterior.
+            `,
+
+            `Depreciação de Investimento (DI): Nem todo investimento gera lucro. Em alguns casos, ele pode perder valor devido a fatores como crise econômica, mudanças no mercado ou desvalorização do ativo. Esse fenômeno é chamado de depreciação. A fórmula é a mesma do juros, mas a taxa é negativa:
+
+DI = valor × (1 - taxa)¥
+            `,
+
+            `Se você investiu R$ 1.000,00 em um fundo de ações e ele sofreu uma queda de 10%, isso significa que o valor do investimento diminuiu.
+
+Cálculo:
+
+DI = Valor × (1 - taxa)
+1000 × (1 - 0,10) = 
+1000 × 0,90 = 
+900
+
+Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valor.
+            `
+        ];
+        this.tutoriaisMinigame3 = [
+            `texto1`,
+            `texto2`,
+            `texto3`
+        ];
+        // Obs: minigame 10 é o miniboss do dia 1. Apenas utilizamos essa nomenclatura por simplicidade do código
+        this.tutoriaisMinigame10 = [
+            'texto1'
+        ];
+    }
+
+    init(data) {
+        // Se tivermos um minigame atual salvo, usamos esse valor
+        if (data.minigameAtual) {
+
+            this.minigameAtual = data.minigameAtual;
+        }
+    }
+
+    preload() {
+        //Preload dos assets
+
+        this.load.image("imailFundo", "src/assets/materiais_apoio/imailFundo.png");
+
+        this.load.image("botaoProximo", "src/assets/materiais_apoio/botaoProximo.png");
+
+        this.load.image("botaoAnterior", "src/assets/materiais_apoio/botaoAnterior.png");
+
+        this.load.image("botaoDesistir", "src/assets/materiais_apoio/botaoDesistir.png");
+
+        this.load.image("botaoComecar", "src/assets/materiais_apoio/botaoComecar.png");
+    }
+
+    create() {
+        //Carrega o fundo e os botões utilizados
+
+        this.imailFundo = this.add.image(400, 300, "imailFundo");
+
+
+        this.textoTutorial = this.add.text(185, 95, this['tutoriaisMinigame' + this.minigameAtual][this.j], {
+            fontFamily: 'pixelArt',
+            fill: '#324891',
+            lineSpacing: 1
+        }).setWordWrapWidth(600);
+
+        // Caso haja apenas um tutorial, começar com botaoComecar
+        if (this.j === this['tutoriaisMinigame' + this.minigameAtual].length - 1) {
+            this.botaoProximo = this.add.image(660, 555, "botaoComecar")
+                .setInteractive();
+        } else {
+            this.botaoProximo = this.add.image(660, 555, "botaoProximo")
+                .setInteractive();
+        }
+
+        this.botaoAnterior = this.add.image(300, 555, "botaoAnterior")
+            .setVisible(false)
+            .setInteractive();
+
+        this.botaoDesistir = this.add.image(750, 40, "botaoDesistir")
+            .setInteractive();
+
+        this.atrasoClick = false;
+
+        //Verifica se botão próximo foi pressionado
+
+        this.botaoProximo.on("pointerdown", (pointer) => {
+            if (!this.atrasoClick) {
+                this.j++; // 'j' serve como uma forma de armazenar qual tutorial o player está lendo
+                this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][this.j]);
+
+                this.atrasoClick = true; // Impede cliques repetidos
+
+                setTimeout(() => {
+                    this.atrasoClick = false; // Libera cliques após 0,5 segundos
+                }, 500);
+
+                // Caso não haja tutoriais anteriores, botão anterior é oculto, caso haja, é exposto
+                if (this.j > 0) {
+                    this.botaoAnterior.setVisible(true).setInteractive(true);
+                } else {
+                    this.botaoAnterior.setVisible(false).setInteractive(false);
+                }
+
+                // Caso não haja mais tutoriais após o atual, apresentar botão começar
+                if (this.j === this['tutoriaisMinigame' + this.minigameAtual].length - 1) {
+                    this.botaoProximo.setTexture('botaoComecar');
+                }
+
+                // Caso o player clique no botão começar, o minigame começa
+                if (this.j === this['tutoriaisMinigame' + this.minigameAtual].length) {
+                    this.j = 0;
+                    this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][0]);
+                    game.scene.start("miniGame" + this.minigameAtual);
+                    game.scene.stop("apoioDia1");
+                }
+            }
+        });
+
+        this.botaoAnterior.on("pointerdown", (pointer) => {
+            if (!this.atrasoClick && this.j > 0) {
+                this.j--; // 'j' serve como uma forma de armazenar qual tutorial o player está lendo
+                this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][this.j]);
+                this.atrasoClick = true; // Impede cliques repetidos
+
+                setTimeout(() => {
+                    this.atrasoClick = false; // Libera cliques após 0,5 segundos
+                }, 500);
+
+                // Caso não haja tutoriais anteriores, botão anterior é oculto
+                if (this.j === 0) {
+                    this.botaoAnterior.setVisible(false).setInteractive(false);
+                }
+
+                // Reabilita o botão próximo caso o player vá até o final e volte
+                if (this.j < this['tutoriaisMinigame' + this.minigameAtual].length - 1) {
+                    this.botaoProximo.setTexture('botaoProximo').setVisible(true).setInteractive(true);
+                }
+            }
+        });
+
+        this.botaoDesistir.on("pointerdown", (pointer) => {
+            this.j = 0;
+            this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][0]);
+            game.scene.wake("hub");
+            game.scene.stop("apoioDia1");
+        });
+    }
+}
