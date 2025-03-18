@@ -46,8 +46,12 @@ const config = {
   ],
 };
 //Adicionando a fonte customizada que será utilizada ao redor do jogo
-const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontePixelArt.ttf)');
+const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontes/fontePixelArt.ttf)');
 fontePixelArt.load()
 document.fonts.add(fontePixelArt);
+
+const fontePixelArtNegrito = new FontFace('pixelArtNegrito', 'url(src/assets/fontes/fontePixelArt.ttf)');
+fontePixelArtNegrito.load()
+document.fonts.add(fontePixelArtNegrito);
 
 const game = new Phaser.Game(config);
