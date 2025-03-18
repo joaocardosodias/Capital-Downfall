@@ -129,9 +129,24 @@ Da mesma forma, nosso projeto visa transformar o onboarding de novos analistas d
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
-O conceito do _canvas_ da Proposta de Valor foi criado por Alex Osterwalder, no livro _Value Proposition Design: How to Create Products and Services Customers want_. Na obra, Osterwalder (2014) apresenta um modelo com dois lados: o perfil do consumidor e o mapa de valor. O principal objetivo da ferramenta é verificar o conhecimento sobre o consumidor, além de descrever como o negócio pretende criar valor para o mesmo. Dessa forma, o _canvas_ permite uma análise detalhada da solução, verificando se ela se encaixa com aquilo que o consumidor realmente deseja.
+O conceito do _Canvas_ da Proposta de Valor foi criado por Alex Osterwalder, no livro _Value Proposition Design: How to Create Products and Services Customers want_. Na obra, Osterwalder (2014) apresenta um modelo com dois lados: o perfil do consumidor e o mapa de valor. 
 
-Por esse caminho, consideramos que o _canvas_ da proposta de valor é capaz de nos esclarecer os principais aspectos desejados pelo BTG Pactual em nosso projeto. Além disso, ele permite que alinhemos nossa proposta com os interesses da empresa, mapeando as dores e ganhos do cliente, e como o nosso produto é capaz de suprimir os problemas e alavancar os ganhos. Segundo a linha de raciocínio de Osterwalder (2014), o consumidor tem diversas expectativas para a solução, porém entende que não pode ter todos os seus desejos cumpridos. Logo, corroboramos com esse pensamento, aplicando-o no desenvolvimento do nosso projeto, priorizando os aspectos que terão maior impacto na solução dos desafios apresentados. Sob esse viés, elaboramos o _canvas_ da Proposta de Valor, visto na imagem à seguir:
+No perfil do consumidor, destacam-se três elementos principais:
+
+- **Tarefas**: o que o consumidor precisa realizar.
+- **Dores**: os obstáculos que dificultam a execução dessas tarefas.
+- **Ganhos**: os fatores que tornam a experiência do consumidor mais satisfatória, considerando o contexto das tarefas.
+
+O principal objetivo dessa parte da ferramenta é verificar o conhecimento sobre o consumidor.
+
+Já o mapa de valor contém os seguintes elementos:
+- **Analgésicos**: soluções que eliminam ou minimizam as dores do cliente.
+- **Criadores de ganho**: tudo o que pode melhorar a experiência do consumidor, agregando mais valor ao produto ou serviço.
+- **Produtos e serviços**: produtos ou seviços que sirvam como solução para os problemas apresentados
+
+Dessa forma, o _canvas_ permite uma análise detalhada da solução, verificando se ela se encaixa com aquilo que o consumidor realmente deseja.
+
+Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de esclarecer os principais aspectos desejados pelo BTG Pactual em nosso projeto. Além disso, ele permite que alinhemos nossa proposta com os interesses da empresa, mapeando as dores e ganhos do cliente, e como o nosso produto é capaz de suprimir os problemas e alavancar os ganhos. Segundo a linha de raciocínio de Osterwalder (2014), o consumidor tem diversas expectativas para a solução, porém entende que não pode ter todos os seus desejos cumpridos. Logo, corroboramos com esse pensamento, aplicando-o no desenvolvimento do nosso projeto, priorizando os aspectos que terão maior impacto na solução dos desafios apresentados. Sob esse viés, elaboramos o _Canvas_ da Proposta de Valor, visto na imagem à seguir:
 
 Figura 3 - _Canvas_ de Proposta de Valor
 
@@ -141,9 +156,9 @@ Figura 3 - _Canvas_ de Proposta de Valor
 
 Produção Autoral
 
-Destacamos alguns aspectos do _canvas_, principalmente quanto às dores do cliente e os criadores de ganho da solução. O principal desafio do BTG Pactual nos apresentado envolve o atual processo de _onboarding_, sendo pouco dinâmico e atrativo. Dessa forma, os criadores de ganho que definimos precisam trazer uma experiência que, junto aos analgésicos apresentados, seja capaz de suprir os desejos do parceiro de projeto, condizendo com a nossa solução.
+Destacamos alguns aspectos do canvas, principalmente quanto às dores do cliente e os criadores de ganho da solução. O principal desafio apresentado pelo BTG Pactual envolve o atual processo de onboarding, que se mostra pouco dinâmico e atrativo. Dessa forma, os criadores de ganho que definimos buscam proporcionar uma experiência que, aliada aos analgésicos propostos, seja capaz de atender às expectativas do parceiro de projeto e esteja alinhada com a nossa solução.
 
-No entanto, como temos 10 semanas de trabalho, a priorização das tarefas, dores e ganhos, conceito apresentado anteriormente, demonstra a sua importância. No caso de nosso projeto, o foco desejado pela empresa parceira está nas informações passadas para novos funcionários. Ou seja, o aspecto principal de nossa solução precisa estar alinhada com a transmissão de conteúdos. Por esse caminho, definimos a seção "Criadores de ganho", visto na figura 3, trazendo a nossa proposta de gamificação do processo de onboarding junto com a validação da performance do jogador, buscando garantir que o mesmo compreendeu os conteúdos necessários, principal ponto desejado.
+No entanto, como temos 10 semanas de trabalho, a priorização das tarefas, dores e ganhos, conceito apresentado anteriormente, demonstra a sua importância. No caso de nosso projeto, o foco desejado pela empresa parceira está nas informações passadas para novos funcionários. Ou seja, o aspecto principal de nossa solução precisa estar alinhada com a transmissão de conteúdos. Por esse caminho, definimos a seção "Criadores de ganho", visto na figura 3, trazendo a nossa proposta de gamificação do processo de onboarding junto com a validação da performance do jogador, visando garantir que o mesmo compreendeu os conteúdos necessários, principal ponto desejado pelo parceiro.
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
