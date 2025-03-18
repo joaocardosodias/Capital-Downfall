@@ -341,6 +341,7 @@ class miniGame5 extends Phaser.Scene {
     this.arrow = scene.add.image(400, 300, "arrow").setInteractive();
     this.arrow.setScale(0.3); // Ajusta o tamanho da seta
     this.arrow.on("pointerdown", () => {
+      this.clickSound.play(); // Reproduz o som de clique
       // Redireciona para a tela de pontuação final
       scene.scene.start("fimMinigame5");
     });
@@ -388,6 +389,7 @@ class fimMinigame5 extends Phaser.Scene {
       .setInteractive();
 
     botaoVoltar.on("pointerdown", () => {
+      this.clickSound.play(); // Reproduz o som de clique
       minigame5Jogado = true;
       this.scene.wake("hub2"); //Se você clicar no botão Voltar, você volta pra hub do jogo
       this.scene.stop("fimMinigame5");

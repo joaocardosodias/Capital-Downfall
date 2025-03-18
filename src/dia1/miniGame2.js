@@ -1,6 +1,4 @@
 class miniGame2 extends Phaser.Scene {
-  //Para evitar conflitos com o mesmo nome de variáveis, elas foram colocadas dentro do constructor da classe
-
   constructor(
     perfil1,
     botao1,
@@ -19,39 +17,24 @@ class miniGame2 extends Phaser.Scene {
     super("miniGame2");
 
     this.perfil1 = perfil1;
-
     this.botao1 = botao1;
-
     this.botao2 = botao2;
-
     this.botao3 = botao3;
-
     this.botao4 = botao4;
-
     this.perfisRestantes = perfisRestantes;
-
     this.perfilIndex = perfilIndex;
-
     this.carimbo = carimbo;
-
     this.textoPontuacao = textoPontuacao;
-
     this.textoMudancaPontuacao = textoMudancaPontuacao;
-
     this.fim = fim;
-
     this.botaoVoltar = botaoVoltar;
-
     this.respostaEmAndamento = respostaEmAndamento;
   }
 
   preload() {
     // Carrega as imagens
-
     miniGame2.perfisRestantes = [];
-
     miniGame2.perfilIndex = 0;
-
     miniGame2.respostaEmAndamento = false;
 
     this.load.image("fundoMinigame2", "src/assets/dia1/miniGame2/fundo.png");
@@ -75,10 +58,9 @@ class miniGame2 extends Phaser.Scene {
     }
 
     this.load.image("carimboV", "src/assets/dia1/miniGame2/carimboV.png");
-
     this.load.image("carimboF", "src/assets/dia1/miniGame2/carimboF.png");
 
-    // Carrega as imagens dos perfis usando um laço for
+    // Carrega as imagens dos perfis
     for (let i = 1; i <= 8; i++) {
       this.load.image(
         "perfil" + i,
@@ -87,8 +69,10 @@ class miniGame2 extends Phaser.Scene {
     }
 
     this.load.image("fim", "src/assets/dia1/miniGame2/fim.png");
-
     this.load.image("botaoVoltar", "src/assets/dia1/miniGame2/botaoVoltar.png");
+
+    // Carrega o som de clique
+    this.load.audio('clique', 'src/assets/dia2/minigame4/sons/clique.mp3');
   }
 
   create() {
@@ -106,7 +90,6 @@ class miniGame2 extends Phaser.Scene {
 
     // Embaralha os perfis e pega 5 aleatórios
     Phaser.Utils.Array.Shuffle(perfis);
-
     perfis = perfis.slice(0, 4);
 
     // Fundo
@@ -118,9 +101,8 @@ class miniGame2 extends Phaser.Scene {
       .setScale(1)
       .setDepth(10);
 
-    // Armazena os perfis restantes no array perfisRestantes com um laço for
+    // Armazena os perfis restantes no array perfisRestantes
     for (let i = 1; i < perfis.length; i++) {
-      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
       let perfil = this.add
         .image(
           400 + i * 20 + Phaser.Math.Between(0, 10),
@@ -133,17 +115,15 @@ class miniGame2 extends Phaser.Scene {
       miniGame2.perfisRestantes.push(perfil); // Adiciona os perfis restantes no array
     }
 
-    //Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
+    // Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
     miniGame2.textoPontuacao = this.add
       .text(20, 40, "Pontuação: " + pontuacao, {
         font: "30px Arial",
-
         fill: "#ffffff",
       })
       .setDepth(15);
 
     // Criação dos botões
-
     miniGame2.botao1 = this.add
       .image(400, 500, "botao1-" + perfis[miniGame2.perfilIndex].pergunta)
       .setScale(1)
@@ -172,38 +152,114 @@ class miniGame2 extends Phaser.Scene {
       .setDepth(10)
       .setOrigin(0, 0);
 
-    //Se você clicar em um dos botões...
+    // Animação de aumento ao passar o mouse sobre os botões
+    miniGame2.botao1.on('pointerover', () => {
+      this.tweens.add({
+        targets: miniGame2.botao1,
+        scale: 1.05, // Aumenta o tamanho do botão em 5%
+        duration: 300, // Duração da animação em milissegundos
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao1.on('pointerout', () => {
+      this.tweens.add({
+        targets: miniGame2.botao1,
+        scale: 1, // Retorna ao tamanho original
+        duration: 100,
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao2.on('pointerover', () => {
+      this.tweens.add({
+        targets: miniGame2.botao2,
+        scale: 1.05,
+        duration: 300,
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao2.on('pointerout', () => {
+      this.tweens.add({
+        targets: miniGame2.botao2,
+        scale: 1,
+        duration: 300,
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao3.on('pointerover', () => {
+      this.tweens.add({
+        targets: miniGame2.botao3,
+        scale: 1.05,
+        duration: 300,
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao3.on('pointerout', () => {
+      this.tweens.add({
+        targets: miniGame2.botao3,
+        scale: 1,
+        duration: 300,
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao4.on('pointerover', () => {
+      this.tweens.add({
+        targets: miniGame2.botao4,
+        scale: 1.05,
+        duration: 300,
+        ease: 'Power2'
+      });
+    });
+
+    miniGame2.botao4.on('pointerout', () => {
+      this.tweens.add({
+        targets: miniGame2.botao4,
+        scale: 1,
+        duration: 300,
+        ease: 'Power2'
+      });
+    });
+
+    // Eventos de clique nos botões
     miniGame2.botao1.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        // Verifica se uma resposta está em andamento
-        this.responder(1, perfis); // Chama a função responder passando "1" como resposta do jogador
+        this.sound.play('clique'); // Reproduz o som de clique
+        this.responder(1, perfis);
         miniGame2.botao1.setTexture(
           "botao1Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
         );
       }
     });
+
     miniGame2.botao2.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        // Verifica se uma resposta está em andamento
-        this.responder(2, perfis); // Chama a função responder passando "2" como resposta do jogador
+        this.sound.play('clique'); // Reproduz o som de clique
+        this.responder(2, perfis);
         miniGame2.botao2.setTexture(
           "botao2Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
         );
       }
     });
+
     miniGame2.botao3.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        // Verifica se uma resposta está em andamento
-        this.responder(3, perfis); // Chama a função responder passando "3" como resposta do jogador
+        this.sound.play('clique'); // Reproduz o som de clique
+        this.responder(3, perfis);
         miniGame2.botao3.setTexture(
           "botao3Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
         );
       }
     });
+
     miniGame2.botao4.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        // Verifica se uma resposta está em andamento
-        this.responder(4, perfis); // Chama a função responder passando "4" como resposta do jogador
+        this.sound.play('clique'); // Reproduz o som de clique
+        this.responder(4, perfis);
         miniGame2.botao4.setTexture(
           "botao4Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
         );
@@ -211,7 +267,6 @@ class miniGame2 extends Phaser.Scene {
     });
   }
 
-  // Função responsável por verificar a resposta do jogador
   responder(respostaJogador, perfis) {
     miniGame2.respostaEmAndamento = true; // Marca que uma resposta está em andamento
     // Desabilita os botões para evitar múltiplas respostas
@@ -224,14 +279,14 @@ class miniGame2 extends Phaser.Scene {
 
     // Verifica se a resposta do jogador está correta
     if (respostaJogador === respostaCerta) {
-      pontuacao += 100; //Aumenta a pontuação
-      //Adiciona uma imagem de certo na tela
+      pontuacao += 100; // Aumenta a pontuação
+      // Adiciona uma imagem de certo na tela
       miniGame2.carimbo = this.add
         .image(400, Phaser.Math.Between(150, 330), "carimboV")
         .setRotation(Phaser.Math.DegToRad(Phaser.Math.Between(-30, 30)))
         .setDepth(15);
 
-      //Adiciona um texto ao lado que mostra que o jogador ganhou 100 pontos
+      // Adiciona um texto ao lado que mostra que o jogador ganhou 100 pontos
       miniGame2.textoMudancaPontuacao = this.add
         .text(20, 400, "+100 pontos", {
           font: "50px Arial",
@@ -239,24 +294,24 @@ class miniGame2 extends Phaser.Scene {
         })
         .setDepth(15);
     } else {
-      //Se o jogador errou
-      pontuacao -= 50; //Ele perde 50 pontos
-      //Uma imagem de 'errado'(X) é adicionada a tela
+      // Se o jogador errou
+      pontuacao -= 50; // Ele perde 50 pontos
+      // Uma imagem de 'errado'(X) é adicionada a tela
       miniGame2.carimbo = this.add
         .image(400, Phaser.Math.Between(150, 330), "carimboF")
         .setRotation(Phaser.Math.DegToRad(Phaser.Math.Between(-30, 30)))
         .setDepth(15);
 
-      //Adiciona um texto ao lado que mostra que o jogador perdeu 50 pontos
+      // Adiciona um texto ao lado que mostra que o jogador perdeu 50 pontos
       miniGame2.textoMudancaPontuacao = this.add
         .text(20, 400, "-50 pontos", {
           font: "50px Arial",
-          fill: "#cc0000", //Cor do texto: vermelha
+          fill: "#cc0000", // Cor do texto: vermelha
         })
         .setDepth(15);
     }
 
-    //faz o texto do lado subir
+    // Faz o texto do lado subir
     this.tweens.add({
       targets: miniGame2.textoMudancaPontuacao, // O objeto que será animado
       y: 50, // Posição até onde o texto vai subir
@@ -268,7 +323,7 @@ class miniGame2 extends Phaser.Scene {
       },
     });
 
-    //Atualiza o placar
+    // Atualiza o placar
     miniGame2.textoPontuacao.setText("Pontuação: " + pontuacao);
 
     // Anima a exibição do carimbo
@@ -280,16 +335,15 @@ class miniGame2 extends Phaser.Scene {
       onComplete: () => {
         // Quando a animação terminar...
         this.time.delayedCall(500, () => miniGame2.carimbo.destroy()); // Remove a imagem do carimbo após 500ms
-        this.animaPerfilSubindo(perfis); //chama a próxima função
+        this.animaPerfilSubindo(perfis); // Chama a próxima função
       },
     });
   }
 
-  // Função que anima o perfil, os botões e o carimbo subindo até desaparecer da tela
   animaPerfilSubindo(perfis) {
     // Move o perfil, os botões e o carimbo para cima
     this.tweens.add({
-      targets: [miniGame2.perfil1, miniGame2.carimbo], //elementos que serão animados
+      targets: [miniGame2.perfil1, miniGame2.carimbo], // Elementos que serão animados
       y: -200, // Posição até qual eles vão subir
       duration: 1000,
       ease: "Power2",
@@ -301,7 +355,7 @@ class miniGame2 extends Phaser.Scene {
           miniGame2.perfil1.setY(230); // Restaura a posição Y do perfil para o valor inicial
 
           miniGame2.respostaEmAndamento = false; // Permite novas respostas após essa animação
-          //Os botões voltam a ser interativos, ou seja, o jogo volta a aceitar novas respostas
+          // Os botões voltam a ser interativos, ou seja, o jogo volta a aceitar novas respostas
           miniGame2.botao1.setTexture(
             "botao1-" + perfis[miniGame2.perfilIndex].pergunta
           );
@@ -327,11 +381,11 @@ class miniGame2 extends Phaser.Scene {
           this.add.rectangle(400, 300, 800, 600, 0x000000).setDepth(20); // Fundo preto
           miniGame2.fim = this.add.image(400, 300, "fim").setDepth(21); // Exibe a tela final
 
-          //Mostra a pontuação final do jogador na tela
+          // Mostra a pontuação final do jogador na tela
           let textoFinal = this.add
             .text(520, 275, pontuacao, {
               font: "40px Lexend",
-              fill: "#ffffff", //Cor branca
+              fill: "#ffffff", // Cor branca
             })
             .setOrigin(0.5)
             .setDepth(31);
@@ -344,8 +398,9 @@ class miniGame2 extends Phaser.Scene {
             .setScale(0.9);
 
           miniGame2.botaoVoltar.on("pointerdown", () => {
+            this.sound.play('clique'); // Reproduz o som de clique
             minigame2Jogado = true;
-            this.scene.wake("hub"); //Se você clicar no botão Voltar, você volta pra hub do jogo
+            this.scene.wake("hub"); // Se você clicar no botão Voltar, você volta pra hub do jogo
             this.scene.stop("miniGame2");
           });
         }
@@ -353,7 +408,6 @@ class miniGame2 extends Phaser.Scene {
     });
   }
 
-  // Função que move os perfis restantes para a esquerda
   animaPerfisEsquerda(perfis) {
     let perfilRemovido = miniGame2.perfisRestantes.shift(); // Remove o primeiro perfil da lista
     perfilRemovido.destroy(); // Remove a imagem do perfil da tela
@@ -361,14 +415,14 @@ class miniGame2 extends Phaser.Scene {
     // Atualiza a lista de perfis restantes após remoção
     for (let i = 0; i < miniGame2.perfisRestantes.length; i++) {
       let perfil = miniGame2.perfisRestantes[i];
-      //Adiciona a animação que move os perfis restantes para a esquerda
+      // Adiciona a animação que move os perfis restantes para a esquerda
       this.tweens.add({
         targets: perfil,
         x: perfil.x - 20, // Move o perfil para a esquerda
         duration: 500, // Duração da animação, 500ms
         ease: "Power2",
         onComplete: () => {
-          //Quando a animação terminar
+          // Quando a animação terminar
           perfil.setDepth(-i); // Ajusta a profundidade após a animação
         },
       });

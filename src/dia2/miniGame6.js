@@ -6,6 +6,7 @@ class miniGame6 extends Phaser.Scene {
     this.botaoAprovado = null;
     this.botaoReprovado = null;
     this.placarTexto = null;
+    this.clickSound = null; // Som de clique
   }
 
   preload() {
@@ -25,6 +26,9 @@ class miniGame6 extends Phaser.Scene {
     this.load.image("vagner", "src/assets/dia2/miniGame6/imagem8game6.png");
     this.load.image("amanda", "src/assets/dia2/miniGame6/imagem9game6.png");
     this.load.image("bruna", "src/assets/dia2/miniGame6/imagem10game6.png");
+
+    // Carrega o som de clique
+    this.load.audio("click", ["src/assets/dia2/miniGame4/click.mp3"]); // Substitua pelo caminho do seu som
   }
 
   create() {
@@ -43,6 +47,9 @@ class miniGame6 extends Phaser.Scene {
       fontSize: "32px",
       fill: "#FFFFFF",
     });
+
+    // Carrega o som de clique
+    this.clickSound = this.sound.add("click");
 
     this.exibirProximaImagem();
   }
@@ -73,9 +80,10 @@ class miniGame6 extends Phaser.Scene {
         .setInteractive()
         .setScale(1.5)
         .setOrigin(0, 1)
-        .on("pointerdown", () =>
-          this.avaliarImagem(proximaImagem.pontosAprovado)
-        );
+        .on("pointerdown", () => {
+          this.clickSound.play(); // Reproduz o som de clique
+          this.avaliarImagem(proximaImagem.pontosAprovado);
+        });
 
       this.botaoReprovado = this.add
         .image(
@@ -86,9 +94,10 @@ class miniGame6 extends Phaser.Scene {
         .setInteractive()
         .setScale(1.5)
         .setOrigin(1, 1)
-        .on("pointerdown", () =>
-          this.avaliarImagem(proximaImagem.pontosReprovado)
-        );
+        .on("pointerdown", () => {
+          this.clickSound.play(); // Reproduz o som de clique
+          this.avaliarImagem(proximaImagem.pontosReprovado);
+        });
     } else {
       this.exibirResultadoFinal();
     }
@@ -132,6 +141,7 @@ class miniGame6 extends Phaser.Scene {
       .setInteractive();
 
     botaoVoltar.on("pointerdown", () => {
+      this.clickSound.play(); // Reproduz o som de clique
       minigame6Jogado = true;
       this.scene.wake("hub2"); //Se você clicar no botão Voltar, você volta pra hub do jogo
       this.scene.stop("miniGame6");
