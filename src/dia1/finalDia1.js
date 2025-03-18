@@ -32,7 +32,7 @@ class finalDia1 extends Phaser.Scene {
       this.botaoGameOver = this.add.image(100, 75, "gameOver").setInteractive();
       this.botaoGameOver.on("pointerdown", () => {
         this.scene.stop("finalDia1");
-        this.scene.start("menuInicial");
+        window.location.reload();
       });
     }
 
