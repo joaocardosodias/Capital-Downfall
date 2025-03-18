@@ -8,9 +8,30 @@ class apoioDia1 extends Phaser.Scene {
         this.j = 0;
         // Arrays para o armazenamento dos tutoriais
         this.tutoriaisMinigame1 = [
-            `texto1`,
-            `texto2`,
-            `texto3`
+            `Um analista de fundos de investimento deve entender profundamente a diferença entre fundos abertos e fechados e como cada tipo de fundo reage a diferentes condições econômicas. Durante crises econômicas, ele deve ser capaz de gerenciar a liquidez, avaliar o impacto de uma crise nos fundos e tomar decisões estratégicas para preservar o capital ou aproveitar oportunidades de longo prazo. As decisões são cruciais, pois impactam diretamente as estratégias de alocação, o perfil de risco e o potencial de retorno de cada fundo, além da liquidez e das necessidades de resgate dos investidores. Compreender essas distinções permite que o analista forneça recomendações mais precisas e adequadas aos objetivos e perfis dos investidores. 
+`,
+            `Fundo Aberto:
+
+- Liquidez: Você pode comprar e vender suas cotas a qualquer momento.
+- Resgates: O investidor pode retirar o dinheiro sempre que precisar, geralmente em poucos dias.
+- Novas Aplicações: É possível adicionar mais dinheiro ao fundo quando quiser.
+- Objetivo: Ideal para quem busca flexibilidade e acesso rápido ao investimento.
+- Exemplo: Fundos de renda fixa ou ações, onde você pode entrar e sair quando quiser.
+`,
+            `Fundo Fechado:
+
+- Liquidez: Você não pode vender as cotas a qualquer momento. Só pode resgatar no final do período determinado ou em datas específicas.
+- Resgates: O resgate do dinheiro só é permitido após um prazo fixo, como 3, 5 ou 10 anos.
+- Novas Aplicações: Não é possível fazer novas aplicações durante o período de fechamento do fundo.
+- Objetivo: Focado em quem está disposto a manter o investimento por um longo período sem acesso imediato ao dinheiro.
+- Exemplo: Fundos imobiliários ou de private equity, onde o investidor deve aguardar até o final do período de investimento.
+`,
+            `Diferença Principal:
+
+Fundo Aberto: Acessibilidade e flexibilidade (pode entrar e sair do fundo quando quiser).
+
+Fundo Fechado: Compromisso a longo prazo (não pode acessar o dinheiro até o final do prazo estipulado).
+`
         ];
         this.tutoriaisMinigame2 = [
             `Nessa tarefa, você precisará aprender um pouco de matemática financeira.
@@ -80,13 +101,33 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
             `
         ];
         this.tutoriaisMinigame3 = [
-            `texto1`,
-            `texto2`,
-            `texto3`
+            `Nessa tarefa você precisará aprender sobre o processo de resgate de fundos.
+
+Seu objetivo é organizar a linha do tempo de acontecimentos sobre o processo.
+Para isso, clique e arraste um card para sua posição na linha do tempo. Atenção! Após ser solto em qualquer posição, o card não poderá ser movido novamente.
+
+Segue em anexo os materiais necessários para a tarefa.
+
+Boa sorte!            `,
+            `O processo de resgate se inicia com uma solicitação do cliente.
+
+Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e começe a render.
+
+Após isso, ocorre o prazo de liquidação, que se trata do tempo que leva para a conclusão da transação, disponibilizando o dinheiro para o cliente.
+
+Por fim, ele pode receber o valor resultante.`
         ];
         // Obs: minigame 10 é o miniboss do dia 1. Apenas utilizamos essa nomenclatura por simplicidade do código
         this.tutoriaisMinigame10 = [
-            'texto1'
+            `Belo trabalho resolvendo as tarefas! No entanto, ainda tenho uma última coisa para mocê resolver hoje.
+
+Como parte da poítica da empresa, preciso avaliar seu conhecimento sobre os principais assuntos vistos neste dia.
+
+Para isso, preparei um quiz com algumas perguntas.
+
+Basta utilizar o botão esquerdo do mouse para selecionar a resposta que julgar correta.
+
+Boa sorte!`
         ];
     }
 
@@ -103,6 +144,8 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
 
         this.load.image("imailFundo", "src/assets/materiais_apoio/imailFundo.png");
 
+        this.load.image("imailFundoCelebracao", "src/assets/materiais_apoio/imailFundoCelebracao.png");
+
         this.load.image("botaoProximo", "src/assets/materiais_apoio/botaoProximo.png");
 
         this.load.image("botaoAnterior", "src/assets/materiais_apoio/botaoAnterior.png");
@@ -115,7 +158,11 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
     create() {
         //Carrega o fundo e os botões utilizados
 
-        this.imailFundo = this.add.image(400, 300, "imailFundo");
+        if (this.minigameAtual < 10) {
+            this.imailFundo = this.add.image(400, 300, "imailFundo");
+        } else {
+            this.imailFundo = this.add.image(400, 300, "imailFundoCelebracao");
+        }
 
 
         this.textoTutorial = this.add.text(185, 95, this['tutoriaisMinigame' + this.minigameAtual][this.j], {
@@ -171,7 +218,11 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
                 if (this.j === this['tutoriaisMinigame' + this.minigameAtual].length) {
                     this.j = 0;
                     this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][0]);
-                    game.scene.start("miniGame" + this.minigameAtual);
+                    if (this.minigameAtual < 10) {
+                        game.scene.start("miniGame" + this.minigameAtual);
+                    } else {
+                        game.scene.start("miniBossDia" + (this.minigameAtual) / 10);
+                    }
                     game.scene.stop("apoioDia1");
                 }
             }
