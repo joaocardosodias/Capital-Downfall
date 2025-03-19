@@ -32,10 +32,10 @@ class miniGame5 extends Phaser.Scene {
     this.load.image("arrow", "src/assets/dia2/miniGame5/arrow.png"); // Carrega a imagem da seta
 
     // Carrega a imagem do enunciado
-    this.load.image("enunciado", "src/assets/dia2/miniGame5/enunciado.png"); // Substitua pelo caminho da sua imagem
+    this.load.image("enunciado", "src/assets/dia2/miniGame5/enunciado.png");
 
     // Carrega o som de clique
-    this.load.audio("click", ["src/assets/dia2/miniGame5/click.mp3"]); // Substitua pelo caminho do seu som
+    this.load.audio("click", ["src/assets/dia2/miniGame5/click.mp3"]);
   }
 
   create() {
@@ -365,10 +365,19 @@ class miniGame5 extends Phaser.Scene {
 class fimMinigame5 extends Phaser.Scene {
   constructor() {
     super("fimMinigame5");
+    this.clickSound = null; // Som de clique
   }
+  preload() {
+    // Carrega o som de clique
+    this.load.audio("click", ["src/assets/dia2/miniGame5/click.mp3"]);
+  }
+
   create() {
     // Adiciona o fundo da cena de pontuação final
     this.add.image(400, 300, "background").setOrigin(0.5, 0.5).setScale(8);
+
+    // Carrega o som de clique
+    this.clickSound = this.sound.add("click");
 
     // Exibe a pontuação final no centro da tela
     this.add
