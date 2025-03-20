@@ -16,17 +16,17 @@ class miniGame5 extends Phaser.Scene {
 
   preload() {
     // Carrega as imagens dos cartões e significados
-    this.load.image("swapCard", "src/assets/dia2/miniGame5/swapCard.png");
-    this.load.image("fipCard", "src/assets/dia2/miniGame5/fipCard.png");
-    this.load.image("tirCard", "src/assets/dia2/miniGame5/tirCard.png");
-    this.load.image("ibovCard", "src/assets/dia2/miniGame5/ibovCard.png");
-    this.load.image("dxCard", "src/assets/dia2/miniGame5/d+xCard.png");
+    this.load.image("imobiliarioCard", "src/assets/dia2/miniGame5/imobiliariosCard.png");
+    this.load.image("multimercadoCard", "src/assets/dia2/miniGame5/multimercadoCard.png");
+    this.load.image("privatyequityCard", "src/assets/dia2/miniGame5/privatyequityCard.png");
+    this.load.image("rendafixaCard", "src/assets/dia2/miniGame5/rendafixaCard.png");
+    this.load.image("acoesCard", "src/assets/dia2/miniGame5/acoesCard.png");
 
-    this.load.image("swapDefinition", "src/assets/dia2/miniGame5/swap_def.png");
-    this.load.image("fipDefinition", "src/assets/dia2/miniGame5/fip_def.png");
-    this.load.image("tirDefinition", "src/assets/dia2/miniGame5/tir_def.png");
-    this.load.image("ibovDefinition", "src/assets/dia2/miniGame5/ibov_def.png");
-    this.load.image("dxDefinition", "src/assets/dia2/miniGame5/d+x_def.png");
+    this.load.image("imobiliarioDefinition", "src/assets/dia2/miniGame5/imobiliario_def.png");
+    this.load.image("multimercadoDefinition", "src/assets/dia2/miniGame5/multimercado_def.png");
+    this.load.image("privatyequityDefinition", "src/assets/dia2/miniGame5/privatyequity_def.png");
+    this.load.image("rendafixaDefinition", "src/assets/dia2/miniGame5/rendafixa_def.png");
+    this.load.image("acoesDefinition", "src/assets/dia2/miniGame5/acoes_def.png");
 
     this.load.image("background", "src/assets/dia2/miniGame5/background.png");
     this.load.image("arrow", "src/assets/dia2/miniGame5/arrow.png"); // Carrega a imagem da seta
@@ -63,34 +63,24 @@ class miniGame5 extends Phaser.Scene {
     // Lista contendo as siglas e seus respectivos conceitos (apenas 5 cards)
     let data = [
       {
-        sigla: "SWAP",
-        conceito: "Contrato de Troca de Fluxos de Caixa",
-        imgSigla: "swapCard",
-        imgDef: "swapDefinition",
+        imgSigla: "acoesCard",
+        imgDef: "acoesDefinition",
       },
       {
-        sigla: "FIP",
-        conceito: "Fundo de Investimento em Participações",
-        imgSigla: "fipCard",
-        imgDef: "fipDefinition",
+        imgSigla: "imobiliarioCard",
+        imgDef: "imobiliarioDefinition",
       },
       {
-        sigla: "TIR",
-        conceito: "Taxa Interna de Retorno",
-        imgSigla: "tirCard",
-        imgDef: "tirDefinition",
+        imgSigla: "multimercadoCard",
+        imgDef: "multimercadoDefinition",
       },
       {
-        sigla: "IBOV",
-        conceito: "Índice Bovespa",
-        imgSigla: "ibovCard",
-        imgDef: "ibovDefinition",
+        imgSigla: "rendafixaCard",
+        imgDef: "rendafixaDefinition",
       },
       {
-        sigla: "D+X",
-        conceito: "Data de Liquidação de Operações",
-        imgSigla: "dxCard",
-        imgDef: "dxDefinition",
+        imgSigla: "privatyequityCard",
+        imgDef: "privatyequityDefinition",
       },
     ];
 
@@ -108,7 +98,7 @@ class miniGame5 extends Phaser.Scene {
     // Cria os cartões de siglas com animação de queda suave
     data.forEach((item, index) => {
       let card = this.add.image(startX, -100, item.imgSigla).setInteractive();
-      card.setScale(0.8); // Tamanho dos cartões de siglas
+      card.setScale(0.9); // Define a escala inicial como 0.9
       card.setData("sigla", item.sigla);
       card.setData("connected", false); // Inicializa como não conectado
       card.on("pointerdown", () => {
@@ -119,8 +109,8 @@ class miniGame5 extends Phaser.Scene {
         if (!card.getData("connected")) {
           this.tweens.add({
             targets: card,
-            scaleX: 0.85,
-            scaleY: 0.85,
+            scaleX: 0.8,
+            scaleY: 0.8,
             duration: 100,
             ease: "Power2",
           });
@@ -130,8 +120,8 @@ class miniGame5 extends Phaser.Scene {
         if (!card.getData("connected")) {
           this.tweens.add({
             targets: card,
-            scaleX: 0.8,
-            scaleY: 0.8,
+            scaleX: 0.9,
+            scaleY: 0.9,
             duration: 100,
             ease: "Power2",
           });
@@ -150,7 +140,7 @@ class miniGame5 extends Phaser.Scene {
     // Cria os cartões de definições (embaralhados) com animação de queda suave
     shuffledDefinitions.forEach((item, index) => {
       let definition = this.add.image(endX, -100, item.imgDef);
-      definition.setScale(0.7); // Tamanho dos cartões de significados
+      definition.setScale(0.9); // Tamanho dos cartões de significados
       definition.setData("sigla", item.sigla);
       // Animação de queda suave
       this.tweens.add({
@@ -185,9 +175,9 @@ class miniGame5 extends Phaser.Scene {
     const startY = card.y;
 
     // Cria a linha a partir da borda direita do cartão
-    this.draggingLine = scene.add.line(startX, startY, 0, 0, 0, 0, 0x000000);
-    this.draggingLine.setLineWidth(4);
-    this.draggingLine.setAlpha(0.5);
+    this.draggingLine = scene.add.line(startX, startY, 0, 0, 0, 0, 0xffffff);
+    this.draggingLine.setLineWidth(8);
+    this.draggingLine.setAlpha(1);
     this.input.on("pointermove", (pointer) => this.updateLine(pointer, scene));
     this.input.on("pointerup", () => this.endDragging(scene));
   }
@@ -250,6 +240,15 @@ class miniGame5 extends Phaser.Scene {
         // Marca o card de sigla como conectado
         this.draggingStart.setData("connected", true);
 
+        // Restaura a escala do cartão conectado
+        this.tweens.add({
+          targets: this.draggingStart,
+          scaleX: 0.9,
+          scaleY: 0.9,
+          duration: 100,
+          ease: "Power2",
+        });
+
         // Adiciona o significado ao conjunto de significados conectados
         this.connectedDefinitions.add(matchedDefinition);
 
@@ -262,7 +261,7 @@ class miniGame5 extends Phaser.Scene {
         }
 
         // Ajusta a linha para ir até a borda do card de significado
-        const endX = matchedDefinition.x - matchedDefinition.displayWidth / 2;
+        const endX = matchedDefinition.x - matchedDefinition.displayWidth / 2.5;
         const endY = matchedDefinition.y;
         if (this.draggingLine) {
           this.draggingLine.setTo(
@@ -295,22 +294,50 @@ class miniGame5 extends Phaser.Scene {
     // Animação de aumento sutil
     scene.tweens.add({
       targets: [card, definition],
-      scaleX: 0.8, // Aumenta um pouco (10%)
-      scaleY: 0.8, // Aumenta um pouco (10%)
-      duration: 450, // Duração mais longa para suavizar
+      scaleX: 0.85,
+      scaleY: 0.85,
+      duration: 450,
       ease: "Power2",
       onComplete: () => {
         // Animação de diminuição e transparência
         scene.tweens.add({
           targets: [card, definition],
-          scaleX: 0.7,
-          scaleY: 0.7,
-          alpha: 0.6,
-          duration: 400, // Duração mais longa para suavizar
+          scaleX: 0.8,
+          scaleY: 0.8,
+          alpha: 1,
+          duration: 400,
           ease: "Power2",
+          onComplete: () => {
+            // Atualiza a linha após a animação
+            this.updateLineAfterAnimation(scene, card, definition);
+          },
         });
       },
     });
+  }
+
+  updateLineAfterAnimation(scene, card, definition) {
+    if (this.draggingLine) {
+      // Recalcula as coordenadas da linha com base na escala e posição atual do card e definition
+      const cardWidth = card.displayWidth;
+      const startX = card.x + cardWidth / 2; // Borda direita do card
+      const startY = card.y;
+
+      const definitionWidth = definition.displayWidth;
+      const endX = definition.x - definitionWidth / 2; // Borda esquerda do definition
+      const endY = definition.y;
+
+      // Atualiza a linha para seguir o card com a nova escala e posição
+      this.draggingLine.setTo(
+        0,
+        0,
+        endX - startX,
+        endY - startY
+      );
+
+      // Reposiciona a linha para que ela comece na borda direita do card e termine na borda esquerda do definition
+      this.draggingLine.setPosition(startX, startY);
+    }
   }
 
   showScoreAnimation(scene, text, color) {
