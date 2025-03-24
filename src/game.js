@@ -1,11 +1,13 @@
-//Configurações do Phaser, necessário incluir o nome das cenas no array em scene: []
-
 const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
 
-  //Define o modelo de física utilizado durante o jogo, importante durante a cena 'hub'
+  scale: {
+    mode: Phaser.Scale.FIT, // Faz o jogo se ajustar à tela mantendo a proporção
+    autoCenter: Phaser.Scale.CENTER_BOTH, // Centraliza o jogo
+    parent: 'game-container', // Se estiver dentro de um container específico
+  },
 
   physics: {
     default: "arcade",
@@ -43,15 +45,35 @@ const config = {
     apoioMinigame4,
     apoioMinigame5,
     apoioMinigame6,
+    finalDia2,
+    salaDeGuerra
   ],
 };
-//Adicionando a fonte customizada que será utilizada ao redor do jogo
+
+// Adicionando fontes personalizadas
 const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArt.load()
-document.fonts.add(fontePixelArt);
+fontePixelArt.load().then(() => document.fonts.add(fontePixelArt));
 
 const fontePixelArtNegrito = new FontFace('pixelArtNegrito', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArtNegrito.load()
-document.fonts.add(fontePixelArtNegrito);
+fontePixelArtNegrito.load().then(() => document.fonts.add(fontePixelArtNegrito));
 
 const game = new Phaser.Game(config);
+
+// Função para redimensionar o jogo caso a janela seja ajustada
+window.addEventListener('resize', resizeGame);
+
+function resizeGame() {
+  const canvas = game.canvas;
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const wratio = width / height;
+  const gameRatio = game.config.width / game.config.height;
+
+  if (wratio < gameRatio) {
+    canvas.style.width = width + "px";
+    canvas.style.height = (width / gameRatio) + "px";
+  } else {
+    canvas.style.width = (height * gameRatio) + "px";
+    canvas.style.height = height + "px";
+  }
+}
