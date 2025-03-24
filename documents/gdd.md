@@ -724,7 +724,33 @@ Por se tratar de uma _sprint_ mais curta, por causa do feriado, o desenvolviment
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
-_Descreva e ilustre aqui o desenvolvimento da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e planos futuros._
+A construção de um MVP (Produto Mínimo Viável) é essencial para validar, de forma rápida e eficiente, uma proposta de valor antes da implementação completa. Com o uso mínimo de recursos, é possível testar a solução, obter feedback, identificar melhorias e entender melhor o cliente, reduzindo riscos e apoiando decisões mais assertivas com base em dados reais.
+Por esse motivo, nossa prioridade nesta sprint foi finalizar e viabilizar o jogo em sua totalidade. Considerando que já abordamos conteúdos mais densos nas primeiras duas fases e, alinhando esse fator à limitação de tempo disponível, validamos com o parceiro, ao final da sprint 3, a não necessidade de uma terceira fase com novos conteúdos. Em vez disso, optamos por uma abordagem focada em uma nova fase apenas destinada à revisão e consolidação dos conteúdos já trabalhados.
+Portanto, acreditamos que a revisão de conteúdos contribui significativamente para a eficiência do aprendizado, pois reforça conhecimentos previamente adquiridos, corrige possíveis lacunas e promove uma compreensão mais sólida. Esse processo facilita a fixação das informações e prepara melhor os participantes para a aplicação prática dos conceitos. (DUNLOSKY ET AL. 2013)
+Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
+
+Tela inicial do jogo
+Desing: Lucas Michel
+O MVP da tela final contribui visuamente para a construção do contexto do jogo e oferece coerência ao jogo a partir de elementos relacionados ao mercado de fundos de investimentos.
+
+Portanto, como consolidação inicial do MVP, nessa sprint aprimoramos o desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer instruções do jogo de tela de e-mail. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo e incorporamos todos os nossos sistemas de feedback. 
+
+Tela de e-mail antiga
+Tela de e-mail nova.
+
+
+Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
+
+FOTO
+
+Durante a última sprint, concentramos nossos esforços na validação dos jogos da Fase Dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, conseguimos integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
+
+Com base no miniboss desenvolvido para a Fase Um, criamos um novo miniboss para a Fase Dois, mantendo o mesmo contexto narrativo e temático. Essa continuidade fortalece a imersão do jogador e garante coerência entre as fases, ao mesmo tempo em que introduz novos desafios alinhados à progressão da história. 
+
+Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações. O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
+Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
+
+Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
 
 ## 4.5. Revisão do MVP (sprint 5)
 
