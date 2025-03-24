@@ -58,9 +58,15 @@ O BTG Pactual é considerado um dos líderes no cenário dos investimentos, oper
 
 Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forças de Porter ao BTG Pactual para avaliar sua posição competitiva e identificar os principais impulsionadores de lucratividade e os desafios enfrentados pela empresa.
 
+#
+
 <p align="center">
+<p>Figura 1: 5 forças de Porter</p>
 <img src="../assets/5forcasdeporter.png">
+<p>Produção autoral</p>
 </p>
+
+#
 
 **Ameaça de produtos substitutos:** o nível de ameaça de produtos substitutos para o BTG Pactual varia conforme seus segmentos de atuação, mas é alto em algumas áreas estratégicas. No mercado de investimentos, fintechs e corretoras independentes oferecem alternativas acessíveis e automatizadas, desafiando os serviços tradicionais de wealth management e asset management. No corporate banking e mercado de crédito, bancos digitais e plataformas de financiamento descentralizado (DeFi) criam novas formas de captação de recursos, reduzindo a dependência de grandes instituições(DCF MODELING).
 
@@ -80,9 +86,15 @@ Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferr
 
 A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA).
 
+#
+
 <p align="center">
+<p>Figura 2: Análise SWOT</p>
 <img src="../assets/analiseswot.png">
+<p>Produção autoral</p>
 </p>
+
+#
 
 **Forças:**
 
@@ -133,13 +145,15 @@ O conceito do _canvas_ da Proposta de Valor foi criado por Alex Osterwalder, no 
 
 Por esse caminho, consideramos que o _canvas_ da proposta de valor é capaz de nos esclarecer os principais aspectos desejados pelo BTG Pactual em nosso projeto. Além disso, ele permite que alinhemos nossa proposta com os interesses da empresa, mapeando as dores e ganhos do cliente, e como o nosso produto é capaz de suprimir os problemas e alavancar os ganhos. Segundo a linha de raciocínio de Osterwalder (2014), o consumidor tem diversas expectativas para a solução, porém entende que não pode ter todos os seus desejos cumpridos. Logo, corroboramos com esse pensamento, aplicando-o no desenvolvimento do nosso projeto, priorizando os aspectos que terão maior impacto na solução dos desafios apresentados. Sob esse viés, elaboramos o _canvas_ da Proposta de Valor, visto na imagem à seguir:
 
-Figura 3 - _Canvas_ de Proposta de Valor
+#
 
 <p align="center">
+<p>Figura 3: _Canvas_ de Proposta de Valor</p>
 <img src="../assets/gdd_1.1/canvasPropostaValor.png">
+<p>Produção autoral</p>
 </p>
 
-Produção Autoral
+#
 
 Destacamos alguns aspectos do _canvas_, principalmente quanto às dores do cliente e os criadores de ganho da solução. O principal desafio do BTG Pactual nos apresentado envolve o atual processo de _onboarding_, sendo pouco dinâmico e atrativo. Dessa forma, os criadores de ganho que definimos precisam trazer uma experiência que, junto aos analgésicos apresentados, seja capaz de suprir os desejos do parceiro de projeto, condizendo com a nossa solução.
 
@@ -162,7 +176,7 @@ _Definição de metas SMART (específicas, mensuráveis, alcançáveis, relevant
 Durante a reunião com o parceiro do projeto foi possível definir uma série de requisitos que contemplam desde a estética até a mecânica do jogo.
 
 <div align="center">
-<sub>Quadro 02 - Requisitos do Projeto</sub>
+<p>Quadro 1: Requisitos do Projeto</p>
 </div>
 
 **Quadro de requisitos**
@@ -278,34 +292,40 @@ O objetivo do texto inicial é introduzir o jogador nos módulos que se seguem. 
 
 Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de tornar o jogador mais imerso, pois ele pode se identificar mais com a opção de personagem escolhida.
 
----
+#
 
 <div align="center">
-  <sub>Personagem 1: Mark</sub><br>
+  <p>Figura 1: Mark</p>
   <img src="../assets/personagens/personagemMasculino2.png"><br>
+  <p>Produção autoral</p>
   
 </div>
 
----
+#
 
 <div align="center">
-  <sub>Personagem 2: Margaret</sub><br>
+  <p>Figura 2: Margaret</p>
   <img src="../assets/personagens/personagemFeminino2.png"<br>
+  <p>Produção autoral</p>
 </div>
 
----
+#
 
 <div align="center">
-  <sub>Personagem 3: Steve</sub><br>
+  <p>Figura 3: Steve</p>
   <img src="../assets/personagens/personagemMasculino1.png"<br>
+  <p>Produção autoral</p>
 </div>
 
----
+#
 
 <div align="center">
-  <sub>Personagem 4: Mary</sub><br>
+  <p>Figura 4: Mary</p>
   <img src="../assets/personagens/personagemFeminino1.png"<br>
+  <p>Produção autoral</p>
 </div>
+
+#
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
@@ -313,11 +333,11 @@ _\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrev
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-O primeiro personagem do nosso jogo é o Mark, um analista júnior de 25 anos com experiência prévia em estágios no setor financeiro. Acreditamos que o Mark está totalmente alinhado com o nosso público-alvo, que são os analistas. Além disso, ele representa bem a realidade da sociedade brasileira, já que é um homem negro, jovem e no início de sua carreira. As escolhas feitas para a construção do Mark foram muito bem pensadas e terão um impacto positivo na questão da representatividade.
+O primeiro personagem do nosso jogo é o Mark, um analista júnior de 25 anos com experiência prévia em estágios no setor financeiro. Acreditamos que o Mark está totalmente alinhado com o nosso público-alvo, que são os analistas. Além disso, ele representa bem a realidade da sociedade brasileira, já que é um homem negro, jovem e no início de sua carreira.Segundo o IBGE, no Brasil, 20,6 milhões de pessoas se declaram como pretas, compondo uma porcentagem de 10,2% da população total, indicando a significância de representação do grupo. As escolhas feitas para a construção do Mark foram muito bem pensadas e terão um impacto positivo na questão da representatividade.
 
 O segundo personagem é a Margaret, que tem uma carreira consolidada em contabilidade e planejamento financeiro, mas há quatro anos decidiu migrar para a área de fundos de investimento, onde se estabeleceu como uma analista experiente. A Margaret, apesar de sua trajetória inicial em outro setor, se encaixa perfeitamente no nosso público-alvo, já que possui quatro anos de experiência como analista. Em termos de representação da realidade brasileira, a Margaret traz a perspectiva de uma mulher experiente em sua área, mas que busca uma transição de carreira, mantendo-se dentro do nosso foco principal.
 
-O terceiro personagem é o Steve, um jovem que sempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida. Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados.
+O terceiro personagem é o Steve, um jovem que sempre teve uma mente inquieta e apaixonada por números. Cresceu em um bairro simples, onde poucos falavam sobre tecnologia e investimentos, mas ele via neles um caminho para transformar sua vida. Aprendeu programação sozinho e logo percebeu o impacto que a tecnologia poderia ter no mercado financeiro. Mergulhou nos estudos, especializou-se em fundos de investimento e desenvolveu soluções inovadoras para análise de dados. Steve também enfrentou dificuldades no decorrer da vida, por causa de sua orientação sexual, porém encontrou na empresa um local seguro e acolhedor.
 
 O quarto personagem é a Mary, uma cientista de dados com experiência em machine learning e inteligência artificial, que recentemente decidiu migrar para o setor financeiro. A Mary também está alinhada com o impacto que esperamos gerar, pois, ao contrário do Mark, ela não tem uma trajetória prévia no setor financeiro. A Mary, diferente do Mark, já tem uma carreira consolidada, mas isso não diminui sua representatividade. Pelo contrário, como uma mulher negra em uma posição de destaque, ela reforça a importância da representatividade e deve gerar um impacto significativo nesse aspecto.
 
@@ -329,17 +349,27 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 
 O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais dez salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
 
+#
+
 <div align="center">
+    <p>Figura 1: Mapa do jogo</p>
     <img src="../assets/gdd_3.3/hub.png" width="500"><br>
-    <p>Mapa do jogo.</p>
+    <p>Produção autoral</p>
 </div>
 
-No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo. O jogador terá total liberdade para se movimentar e escolher a ordem em que deseja realizar os minigames disponíveis.
+#
+
+No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará terminais com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo. O jogador terá total liberdade para se movimentar e escolher a ordem em que deseja realizar os minigames disponíveis.
+
+#
 
 <div align="center">
+    <p>Figura 2: Exemplo de objeto interativo, marcado pela exclamação</p>
     <img src="../assets/conceptArt/mapa2.png" width="500"><br>
-    <p>No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele ao pressionar a tecla de espaço.</p>
+    <p>Produção autoral</p>
 </div>
+
+#
 
 O jogo possuirá três fases, e cada fase terá três minigames que abordarão algum dos assuntos solicitados pelo BTG Pactual, além de um quiz ao final, que contemplará todo o conteúdo da fase. Também haverá uma fase 4, que simulará o contexto de pressão de uma sala de guerra, em que todos os conteúdos serão abordados de uma só vez e haverá um limite de tempo. A tabela a seguir ilustra e explica os três minigames implementados na primeira fase do jogo:
 
@@ -388,50 +418,79 @@ Durante as três primeiras fases, não há limite de tempo para a conclusão dos
 
 ### 3.3.4. Concept Art (sprint 2)
 
+#
+
 <div align="center">
+    <p>Figura 1: Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
     <img src="../assets/conceptArt/telaInicial.png" width="500"><br>
-    <p>Figura 1: tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
+    <p>Produção autoral</p>
 </div>
 
-<div align="center">
-    <img src="../assets/conceptArt/mapa1.png" width="500"><br>
-    <p>Figura 2: visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.</p>
-</div>
+#
 
 <div align="center">
-    <img src="../assets/conceptArt/materialDeApoio1.png" width="500"><br>
-    <p>Figura 3: exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
+  <p>Figura 2: Visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.</p>
+  <img src="../assets/conceptArt/mapa1.png" width="500"><br>
+  <p>Produção autoral</p>
 </div>
 
+#
+
 <div align="center">
+  <p>Figura 3: Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
+  <img src="../assets/conceptArt/materialDeApoio1.png" width="500"><br>
+  <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+    <p>Figura 4: Minijogo sobre diferenciação de fundos de investimento.</p>
     <img src="../assets/conceptArt/miniGame1.png" width="500"><br>
-    <p>Figura 4: minijogo sobre diferenciação de fundos de investimento.</p>
+    <p>Produção autoral</p>
 </div>
 
+#
+
 <div align="center">
+    <p>Figura 5: Minijogo sobre resgate em fundos de investimento.</p>
     <img src="../assets/conceptArt/miniGame2.png" width="500"><br>
-    <p>Figura 5: minijogo sobre resgate em fundos de investimentoo.</p>
+    <p>Produção autoral</p>
 </div>
 
+#
+
 <div align="center">
+    <p>Figura 6: Minijogo sobre monitoramento de transações bancárias.</p>
     <img src="../assets/conceptArt/miniGame3.png" width="500"><br>
-    <p>Figura 6: minijogo sobre monitoramento de transações bancárias.</p>
+    <p>Produção autoral</p>
 </div>
 
-<div align="center">
-    <img src="../assets/conceptArt/pontuacao.png" width="500"><br>
-    <p>Figura 7: tela exibida ao final de um minijogo, apresentando a pontuação final do jogador.</p>
-</div>
+#
 
 <div align="center">
-    <img src="../assets/conceptArt/personagens.jpeg" width="500"><br>
+  <p>Figura 7: Tela exibida ao final de um minijogo, apresentando a pontuação final do jogador.</p>
+  <img src="../assets/conceptArt/pontuacao.png" width="500"><br>
+  <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
     <p>Figura 8: Concept art dos personagens Steve e Mary.</p>
+    <img src="../assets/conceptArt/personagens.jpeg" width="500"><br>
+    <p>Produção autoral</p>
 </div>
 
+#
+
 <div align="center">
+    <p>Figura 9: Concept art do menu inicial.</p>
     <img src="../assets/conceptArt/menuInicial.gif" width="500"><br>
-    <p>Figura 8: Concept art do menu inicial.</p>
+    <p>Produção autoral</p>
 </div>
+
+#
 
 ### 3.3.5. Trilha sonora (sprint 4)
 
@@ -446,9 +505,66 @@ _Exemplo de tabela_
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
-<img src= "../assets/diagrama.jpg">
 
 A trajetória do usuário em nosso jogo pode ser representada por meio do diagrama a seguir, dividido em seções. As setas indicam as conexões entre as cenas, enquanto as linhas tracejadas buscam explicar essas conexões. Cada quadro representa uma cena, contendo sua classe, atributos e métodos, além de uma pequena explicação e imagem representativa.
+
+#
+
+<div align="center">
+  <p>Figura 1: Quadro 1</p>
+    <img src="../assets/gdd_3.5/quadro_1.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+  <p>Figura 2: Quadro 2</p>
+    <img src="../assets/gdd_3.5/quadro_2.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+  <p>Figura 3: Quadro 3</p>
+    <img src="../assets/gdd_3.5/quadro_3.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+  <p>Figura 4: Quadro 4</p>
+    <img src="../assets/gdd_3.5/quadro_4.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+  <p>Figura 5: Quadro 5</p>
+    <img src="../assets/gdd_3.5/quadro_5.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+  <p>Figura 6: Quadro 6</p>
+    <img src="../assets/gdd_3.5/quadro_6.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
+
+<div align="center">
+  <p>Figura 7: Quadro 7</p>
+    <img src="../assets/gdd_3.5/quadro_7.png"width="500"><br>
+    <p>Produção autoral</p>
+</div>
+
+#
 
 ## 3.6. Regras do jogo (sprint 3)
 
@@ -508,33 +624,45 @@ De acordo com as mêcanicas definidas pela equipe, a tela escolhida para ser a p
 
 A criação dessa tela não tem apenas uma importância técnica, mas também temática. Ela é essencial para a validação do progresso do projeto, permitindo que o grupo consiga entender se está seguindo o caminho correto de desenvolvimento, conforme o desejo da empresa parceira. No método _Scrum_, a constante incrementação dos entregáveis é uma de suas características marcantes, e essa cena também seguirá esses passos, sendo melhorada conforme o _feedback_ recebido.
 
-Cena da interface do computador:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 1: Cena da interface do computador:</p>
 <img src="../assets/conceptArt/imailInicial.png">
-</p>
+<p>Produção autoral</p>
+</div>
 
-Parte do código referente a cena:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 2: Parte do código referente à cena:</p>
 <img src="../assets/gdd_4.2/printCodigoDia1.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 A outra cena escolhida para ser desenvolvida pelo grupo foi a da hub inicial. Isso se deve ao fato da mesma permitir o teste de algumas das tecnologias que serão utilizadas futuramente no projeto, com destaque para os _Tilesets_ e _Tilemaps_. Um _Tileset_ é um conjunto de imagens do mesmo tamanho, denominadas de _Tiles_, que servem como "blocos de construção" para cenas, permitindo que elas sejam criadas de maneira rápida e eficiente. Um _Tilemap_ é um arquivo que armazena as informações do posicionamento das _Tiles_ em uma cena, trazendo informações como colisões e camadas.
 
 Além disso, a movimentação simples de um personagem foi implementada, se utilizando das "setinhas" para poder se deslocar pelo mapa. Interações simples com objetos também foi adicionada, permitindo que o jogador utilize da tecla "espaço" para realizar uma ação em determinado objeto.
 
-Exemplo do _Tileset_ utilizado:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 3: Exemplo do _Tileset_ utilizado:</p>
 <img src="../assets/gdd_4.2/tilesetInicial.png">
-</p>
+<p>Produção autoral</p>
+</div>
 
-Parte do código referente a cena:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 4: Parte do código referente à cena:</p>
 <img src="../assets/gdd_4.2/printCodigoHub.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 De forma geral, a _sprint_ 1 trouxe diversos desafios, porém também trouxe uma maior familiarização com o projeto e com as ferramentas a serem utilizadas. Um obstáculo significativo no decorrer do desenvolvimento foi a utilização do _Tilemap_, que envolve a referência de múltiplos outros arquivos e variáveis. A ideia central do projeto também foi alterada algumas vezes, para melhor condizer com os desejos da empresa parceira.
 
@@ -548,73 +676,107 @@ Assim, nessa _sprint_, desenvolvemos três _minigames_. Cada um deles apresentam
 
 O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classificar arquivos em duas categorias: fundos abertos e fundos fechados. Para isso, basta clicar no arquivo com o botão esquerdo do mouse, e arrastá-lo para a classificação correta. No topo da tela, a pontuação vai sendo atualizada em tempo real.
 
-_Gameplay_ do _minigame_ 1:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 1: _Gameplay_ do _minigame 1:</p>
 <img src="../assets/gdd_4.2/gameplay1.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao usuário classificar diferentes registros de transações de investidores, levando em conta discrepâncias nos dados. Em cada arquivo, há dois botões, permitindo a classificação do material. Da mesma forma do primeiro _minigame_, a pontuação é atualizada conforme o seu progresso.
 
-_Gameplay_ do minigame 2:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 2: _Gameplay_ do _minigame 2:</p>
 <img src="../assets/gdd_4.2/gameplay2.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da cotação. O jogador precisa colocar, em uma linha do tempo, a ordem dos acontecimentos em um resgate típico de valores. Isso pode ser feito ao clicar em um _card_ na parte superior da tela, depois clicando na sua posição correspondente na parte inferior. Após todos os _cards_ serem posicionados, basta clicar na seta que aparece na tela, para receber a sua pontuação.
 
-_Gameplay_ do _minigame_ 3:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 3: _Gameplay_ do _minigame 3:</p>
 <img src="../assets/gdd_4.2/gameplay3.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 É importante destacar que cada um desses _minigames_ contém um material de apoio específico, indicando a maneira correta de jogar, além das informações necessárias para compreender o conteúdo por traz do minijogo.
 
-Exemplo do material de apoio do _minigame_ 1:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 4: Exemplo do material de apoio do _minigame_ 1:</p>
 <img src="../assets/gdd_4.2/apoioMinigame1.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve ao fato de eles não serem extremamente complexos, tanto no quesito da programação quanto para a experiência do usuário. Assim, eles servem como uma forma de introdução para o _gameplay loop_ do nosso jogo.
 
-Exemplo do código do _minigame_ 2:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 5: Exemplo do código do _minigame_ 2:</p>
 <img src="../assets/gdd_4.2/codigo2.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Também fizemos algumas atualizações para outras telas diversas do jogo, adicionando novas informações em pontos necessários. Entre essas mudanças, gostaríamos de destacar a _hub_. O seu mapa foi expandido, contando com novas salas e objetos interativos. Cada um desses objetos leva à um _minigame_ diferente, podendo ser interagidos em qualquer ordem. Eles possuem um ponto de exclamação ao seu lado, indicando que as tarefas ainda não foram realizadas. Cada _minigame_ pode ser jogado uma vez.
 
-Layout da _hub_:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 6: Layout da _hub_:</p>
 <img src="../assets/gdd_4.2/hubJogo.png">
-</p>
+<p>Produção autoral</p>
+</div>
 
-Exemplo de objeto interativo na _hub_:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 7: Exemplo de objeto interativo na _hub_:</p>
 <img src="../assets/gdd_4.2/objeto.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spriesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
 
-_Spritesheet_ do personagem:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 8: _Spritesheet_ do personagem:</p>
 <img src="../assets/gdd_4.2/markSpritesheet.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fundo animada. Ela também apresenta o logo do nosso jogo, trazendo uma maior identificação do jogador com o nosso _game_.
 
-Menu inicial:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 9: Menu Inicial:</p>
 <img src="../assets/gdd_4.2/menuInicial.gif">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 De forma geral, a _sprint_ 2 ficou marcada pelo desenvolvimento de novas habilidades, além de uma maior clarificação dos objetivos do nosso projeto. Ainda enfrentamos diversos desafios, principalmente em relação ao tempo de desenvolvimento, mas conseguimos cumprir as tarefas necessárias, tanto para o entregável quanto para apresentação ao parceiro.
 
@@ -628,91 +790,133 @@ Entre os problemas levantados, é importante destacar dois deles: a _hub_ do jog
 
 Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo os aspectos essenciais. Mantivemos a utilização do _software_ _Tiled_, utilizando de marcações presentes no chão para guiar o jogador ao caminho necessário para a progressão. De forma geral, a _hub_ ainda representa um andar de um escritório, mantendo objetos-chave, como computadores e papéis.
 
-Novo layout da _hub_:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 1: Novo _layout_ da _hub_:</p>
 <img src="../assets/gdd_4.3/hub.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Outro problema apontado foi a implementação do _minigame_ 2. Ele se tratava da análise de transações suspeitas, permitindo com que o usuário avaliasse se os casos apresentados eram verídicos. No entanto, o conteúdo não se alinhava com aquilo que era desejado para o _onboarding_. Por esse motivo, alteramos a ideia por trás desse _minigame_.
 
 O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o cálculo de juros, por exemplo. Ela apresenta o histórico de transações dos clientes, fornecendo as informações essenciais para que o jogador calcule o saldo final.
 
-Novo _minigame_ 2:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 2: Novo _minigame 2:</p>
 <img src="../assets/gdd_4.3/minigame2.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ também teve que ser expandido. Para evitar com que o usuário esqueça de pontos importantes, implementamos um botão de voltar atrás no material de apoio, permitindo com que ele leia seções anteriores. O objetivo é implementar esse botão no material de apoio de todos os _minigames_, no entanto, só houve tempo hábil para implementar essa função no _minigame_ 2, durante a segunda _sprint_.
 
-Exemplo de parte do material de apoio do _minigame_ 2:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 3: Exemplo de parte do material de apoio do _minigame_ 2:</p>
 <img src="../assets/gdd_4.3/minigame2Apoio.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltamos o nosso foco para a implementação de novas partes do projeto. A primeira delas foi o _miniboss_ do dia 1. Ele é um quiz, contendo 3 perguntas, cada uma sobre o conteúdo presente em um _minigame_. As perguntas são selecionadas de um banco de questões, totalizando 9 opções. No entanto, para evitar com que todas as perguntas sejam de apenas um tópico, o código garante que apenas uma pergunta por conteúdo será selecionada.
 
-Exemplo de questão do _miniboss_:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 4: Exemplo de questão do _miniboss_:</p>
 <img src="../assets/gdd_4.3/miniboss.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de sua performance logo em seguida. Ou seja, caso ele tenha errado a questão, ele receberá uma explicação sobre a maneira correta de responder a pergunta.
 
-Exemplo de _feedback_:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 5: Exemplo de _feedback_:</p>
 <img src="../assets/gdd_4.3/minibossFeedback.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em adicionar novas mecânicas de jogo, para trazer uma experiência mais variada. O primeiro deles é sobre impostos existentes no mundo financeiro. O jogador é apresentado quatro impostos diferentes, cada um contendo uma questão para o usuário resolver. Após ele selecionar uma opção, ele é conduzido para uma lousa digital, servindo como rascunho para os seus cálculos.
 
-_Gameplay_ do _minigame_ 4:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 6: _Gameplay_ do _minigame_ 4:</p>
 <img src="../assets/gdd_4.3/minigame4.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precisa ligar o nome dos conceitos com a sua definição correta. Essa ação é feita utilizando o botão esquerdo do mouse, arrastando uma linha para interligar as opções. Conforme dito anteriormente, todo os conteúdos estão presentes no material de apoio de cada _minigame_.
 
-_Gameplay_ do _minigame_ 5:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 7: _Gameplay_ do _minigame_ 5:</p>
 <img src="../assets/gdd_4.3/minigame5.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura empresarial do parceiro de projeto. Com base nos principais valores da empresa, o jogador deve analisar diversos perfis de candidatos, e selecionar aqueles que melhor se encaixam. Tal ação é feita por meio de dois botões presentes na tela, um para aprovar e outro para recusar.
 
-_Gameplay_ do _minigame_ 6:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 8: _Gameplay_ do _minigame_ 6:</p>
 <img src="../assets/gdd_4.3/minigame6.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Além disso, também introduzimos a opção do jogador selecionar o personagem jogável, entre quatro opções diferentes. Tomamos essa decisão com base em nossa aula de inclusão e diversidade. Por meio de decisões como essa, é possível aumentar o engajamento do jogador com a experiência. Sobre o código, é importante destacar que a seleção do jogador é guardada em uma variável. Isso ocorre pois os diferentes dias no jogo utilizam de outras cenas da _hub_. Logo, para manter a consistência, todas essas cenas conseguem identificar a escolha do jogador, e assim mostrar o personagem correto.
 
-Tela de seleção de personagens:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 9: Tela de seleção de personagens:</p>
 <img src="../assets/gdd_4.3/selecaoPersonagem.png">
-</p>
+<p>Produção autoral</p>
+</div>
 
-Exemplo do código da seleção de personagens:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 10: Exemplo do código da seleção de personagens:</p>
 <img src="../assets/gdd_4.3/codigoPersonagem.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Por fim, também adicionamos telas de _feedback_ após a realização do _miniboss_. Elas alteram-se de acordo com a sua performance do jogo. Elas possuem função estética quanto mecânica. Por um lado, ajudam a compor a atmosfera da experiência, sendo apresentada como uma edição de jornal. Porém, ela também serve como um alerta de performance para o jogador, indicando se está indo abaixo ou acima do esperado.
 
-Exemplo da tela de _feedback_:
+#
 
-<p align="center">
+<div align="center">
+<p>Figura 11: Exemplo da tela de _feedback_:</p>
 <img src="../assets/gdd_4.3/telaPontuacao.png">
-</p>
+<p>Produção autoral</p>
+</div>
+
+#
 
 Por se tratar de uma _sprint_ mais curta, por causa do feriado, o desenvolvimento acabou sendo mais corrido. Um fator notável foi a rotatividade dos papéis exercidos pelos integrantes, que permitiu com que todos pudessem trabalhar em diferentes áreas do projeto. Sob um olhar geral, o grupo conseguiu cumprir aquilo que tinha proposto. Para os próximos passos, continuaremos ajustando o nosso projeto com base nos _feedbacks_ recebidos, e começaremos o desenvolvimento da fase da Sala de Guerra.
 
@@ -804,6 +1008,8 @@ DCF MODELING. BTG Pactual: Porter’s Five Forces Analysis. Disponível em: http
 ASANA. Análise SWOT: o que é, importância e como fazer. Disponível em: https://asana.com/pt/resources/swot-analysis. Acesso em: 28 fev. 2025.
 
 BTG PACTUAL. Nosso DNA: Valores. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
+
+BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
 
 # <a name="c8"></a>Anexos
 
