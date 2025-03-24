@@ -17,6 +17,7 @@ const config = {
   },
 
   scene: [
+    miniGame5,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,
@@ -37,7 +38,7 @@ const config = {
     tributacaoScene3,
     tributacaoScene4,
     fimMinigame4,
-    miniGame5,
+    
     fimMinigame5,
     miniGame6,
     apoioMinigame4,
