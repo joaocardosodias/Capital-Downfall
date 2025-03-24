@@ -5,8 +5,6 @@ const config = {
 
   scale: {
     mode: Phaser.Scale.FIT, // Ajusta o jogo à tela mantendo a proporção
-    autoCenter: Phaser.Scale.CENTER_BOTH,
-    parent: 'game-container', // Adicionando o contêiner correto
   },
 
   physics: {
@@ -50,15 +48,4 @@ const config = {
   ],
 };
 
-// Criar o game-container no body (caso não esteja no HTML)
-const gameContainer = document.createElement('div');
-gameContainer.id = 'game-container';
-document.body.appendChild(gameContainer);
-
 const game = new Phaser.Game(config);
-
-// Redimensiona o jogo automaticamente
-window.addEventListener('resize', () => {
-  game.scale.resize(window.innerWidth, window.innerHeight);
-});
-
