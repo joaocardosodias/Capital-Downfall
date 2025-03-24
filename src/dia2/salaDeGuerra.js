@@ -1,4 +1,4 @@
-class salaDeGuerra extends Phaser.scene {
+class salaDeGuerra extends Phaser.Scene {
     constructor () {
         super('salaDeGuerra');
         // Declaração de algumas das variáveis que serão usadas no código
@@ -14,7 +14,7 @@ class salaDeGuerra extends Phaser.scene {
     }
 
     preload () {
-        this.load.image('fundoPeguntas', 'src/assets/dia2/salaDeGuerra');
+        this.load.image('fundoPerguntas', 'src/assets/dia2/salaDeGuerra/fundoSalaDeGuerra');
     }
 
     create() {

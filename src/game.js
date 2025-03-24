@@ -4,9 +4,9 @@ const config = {
   height: 600,
 
   scale: {
-    mode: Phaser.Scale.FIT, // Faz o jogo se ajustar à tela mantendo a proporção
-    autoCenter: Phaser.Scale.CENTER_BOTH, // Centraliza o jogo
-    parent: 'game-container', // Se estiver dentro de um container específico
+    mode: Phaser.Scale.FIT, // Ajusta o jogo à tela mantendo a proporção
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    parent: 'game-container', // Adicionando o contêiner correto
   },
 
   physics: {
@@ -50,30 +50,15 @@ const config = {
   ],
 };
 
-// Adicionando fontes personalizadas
-const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArt.load().then(() => document.fonts.add(fontePixelArt));
-
-const fontePixelArtNegrito = new FontFace('pixelArtNegrito', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArtNegrito.load().then(() => document.fonts.add(fontePixelArtNegrito));
+// Criar o game-container no body (caso não esteja no HTML)
+const gameContainer = document.createElement('div');
+gameContainer.id = 'game-container';
+document.body.appendChild(gameContainer);
 
 const game = new Phaser.Game(config);
 
-// Função para redimensionar o jogo caso a janela seja ajustada
-window.addEventListener('resize', resizeGame);
+// Redimensiona o jogo automaticamente
+window.addEventListener('resize', () => {
+  game.scale.resize(window.innerWidth, window.innerHeight);
+});
 
-function resizeGame() {
-  const canvas = game.canvas;
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  const wratio = width / height;
-  const gameRatio = game.config.width / game.config.height;
-
-  if (wratio < gameRatio) {
-    canvas.style.width = width + "px";
-    canvas.style.height = (width / gameRatio) + "px";
-  } else {
-    canvas.style.width = (height * gameRatio) + "px";
-    canvas.style.height = height + "px";
-  }
-}
