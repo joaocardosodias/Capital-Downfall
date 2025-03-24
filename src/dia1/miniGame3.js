@@ -102,13 +102,13 @@ class miniGame3 extends Phaser.Scene {
         this.botaoVerificar.on('pointerdown', () => {
             // Calcula a pontuação
             let { acertos, erros } = this.contaErros();
-            let pontuacaoRodada = (acertos * 100) - (erros * 50);
+            pontuacao += (acertos * 100) - (erros * 50);
 
             //console.log(`Acertos: ${acertos}, Erros: ${erros}, Pontuação: ${pontuacaoRodada}`); // Debug: Exibe a pontuação no console
 
             // Avança para a cena de resultado com a pontuação
             this.scene.start('fimDoMinigame3', {
-                pontuacao: pontuacaoRodada
+                pontuacao: pontuacao
             });
             this.scene.stop('miniGame3');
         });

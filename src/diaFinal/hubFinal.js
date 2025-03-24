@@ -2,11 +2,14 @@
 class hubFinal extends Phaser.Scene {
   constructor() {
     super("hubFinal");
+    this.map;
+    this.tileset;
     this.tiles;
     this.player;
-    this.payerDirecao = "baixo";
+    this.playerDirecao = "baixo";
     this.personagens = ["Mary", "Mark", "Margaret", "Steve"];
     this.personagemSelecionado = 3;
+    this.colisaoApoioGeral;
     this.colisaoBossFinal;
     this.avisoBossFinal;
     this.teclado;
@@ -15,11 +18,19 @@ class hubFinal extends Phaser.Scene {
     this.layerObjetos;
   }
 
+  init(data) {
+    // Se tivermos uma posição salva, usamos ela
+    if (data.personagemSelecionado) {
+
+      this.personagemSelecionado = data.personagemSelecionado.numero;
+    }
+  }
+
   preload() {
     //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
     this.load.image("tiles", "src/assets/hub/tileset.png");
     this.load.image("player", "src/assets/players/player.png");
-    this.load.tilemapTiledJSON("hub", "src/assets/hub/tilemap2.json");
+    this.load.tilemapTiledJSON("hubFinal", "src/assets/hub/tilemap2.json");
     this.load.image("colisao", "src/assets/hub/colisao.png");
     this.load.spritesheet("avisoMinigame", "src/assets/hub/aviso.png", {
       frameWidth: 32,
@@ -59,17 +70,20 @@ class hubFinal extends Phaser.Scene {
     );
 
     //Armazena na variável map o tilemap utilizado
-    const map = this.make.tilemap({ key: "hub" });
+    this.map = this.make.tilemap({ key: "hubFinal" });
 
     //Armazena na variável tileset  o tileset utilizado
-    const tileset = map.addTilesetImage("tileset", "tiles");
+    this.tileset = this.map.addTilesetImage("tileset", "tiles");
+
+    // Aplica o filtro NEAREST para evitar o efeito de suavização no pixel art
+    this.textures.get('tiles').setFilter(Phaser.Textures.FilterMode.NEAREST);
 
     //Cria as layers do tilemap
-    map.createLayer("ground", tileset);
-    map.createLayer("noCollisionLow", tileset);
-    this.layerParede = map.createLayer("walls", tileset);
-    this.layerObjetos = map.createLayer("objects", tileset);
-    map.createLayer("noCollisionHigh", tileset);
+    this.map.createLayer("ground", this.tileset, 0, 0);
+    this.map.createLayer("noCollisionLow", this.tileset, 0, 0);
+    this.layerParede = this.map.createLayer("walls", this.tileset, 0, 0);
+    this.layerObjetos = this.map.createLayer("objects", this.tileset, 0, 0);
+    this.map.createLayer("noCollisionHigh", this.tileset, 0, 0).setDepth(2);
 
     //Resgata a propriedade de colisão presente nas informações do tilemap
     this.layerParede.setCollisionByExclusion([-1]);
@@ -77,28 +91,39 @@ class hubFinal extends Phaser.Scene {
     //Traz colisões para a layer das decorações
     this.layerObjetos.setCollisionByExclusion([-1]);
 
+    //Criação do objeto de detecção da interação do jogador com o apoio geral
+    this.colisaoApoioGeral = this.physics.add.sprite(496, 550, 'colisao').setScale(2.5).setVisible(true).setImmovable(true);
+
     //Criação dos objetos de detecção da interação do jogador com os terminais
     this.colisaoBossFinal = this.physics.add
-      .sprite(230, 1100, "colisao")
+      .sprite(400, 200, "colisao")
       .setScale(2.5)
       .setVisible(false)
       .setImmovable(true);
 
     //Adiciona os indicadores e inicia suas animações
-    this.avisoBossFinal = this.add.sprite(227, 1025, "avisoMinigame");
+    this.avisoBossFinal = this.add.sprite(400, 60, "avisoMinigame");
     this.avisoBossFinal.anims.play("movimentoAviso");
 
     //Criação do objeto do player
-    this.player = this.physics.add.sprite(785, 820).setScale(1);
-    this.player.anims.play("movimentoParadoBaixo");
-    this.player.body.setSize(30, 30).setOffset(0, 40);
+    this.player = this.physics.add.sprite(408, 1200).setScale(1.5);
+    this.player.anims.play('movimentoParadoBaixo');
+    this.player.body.setSize(28, 22).setOffset(2, 40);
     this.player.refreshBody();
 
     //Adiciona a colisão entre os objetos
     this.physics.add.collider(this.player, this.layerParede);
     this.physics.add.collider(this.player, this.layerObjetos);
 
-    //Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
+      //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
+      if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
+        game.scene.start('apoioGeral', { diaAtual: this.diaAtual });
+        game.scene.sleep('hubFinal');
+      }
+    });
+
+    //Verifica se o player está na mesma área que o detector de colisão do boss final
     this.physics.add.overlap(this.player, this.colisaoBossFinal, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
@@ -110,7 +135,7 @@ class hubFinal extends Phaser.Scene {
 
     //Configura a câmera para seguir o jogador, além do zoom
     this.cameras.main.startFollow(this.player, true, 0.2, 0.2);
-    this.cameras.main.setZoom(1.5).setRoundPixels(true);
+    this.cameras.main.setZoom(1).setRoundPixels(true);
   }
 
   update() {
@@ -118,89 +143,115 @@ class hubFinal extends Phaser.Scene {
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
 
     if (this.teclado.left.isDown && this.teclado.up.isDown) {
-      this.player.setVelocityX(-140);
+      this.player.setVelocityX(-210);
 
-      this.player.setVelocityY(-140);
+      this.player.setVelocityY(-210);
 
-      this.player.anims.play("movimentoEsquerda", true);
+      this.player.anims.play('movimentoEsquerda', true);
 
-      this.playerDirecao = "esquerda";
-    } else if (this.teclado.left.isDown && this.teclado.down.isDown) {
-      this.player.setVelocityX(-140);
+      this.playerDirecao = 'esquerda';
+    }
 
-      this.player.setVelocityY(140);
+    else if (this.teclado.left.isDown && this.teclado.down.isDown) {
+      this.player.setVelocityX(-210);
 
-      this.player.anims.play("movimentoEsquerda", true);
+      this.player.setVelocityY(210);
 
-      this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown && this.teclado.up.isDown) {
-      this.player.setVelocityX(140);
+      this.player.anims.play('movimentoEsquerda', true);
 
-      this.player.setVelocityY(-140);
+      this.playerDirecao = 'esquerda';
+    }
 
-      this.player.anims.play("movimentoDireita", true);
+    else if (this.teclado.right.isDown && this.teclado.up.isDown) {
+      this.player.setVelocityX(210);
 
-      this.playerDirecao = "direita";
-    } else if (this.teclado.right.isDown && this.teclado.down.isDown) {
-      this.player.setVelocityX(140);
+      this.player.setVelocityY(-210);
 
-      this.player.setVelocityY(140);
+      this.player.anims.play('movimentoDireita', true);
 
-      this.player.anims.play("movimentoDireita", true);
+      this.playerDirecao = 'direita';
+    }
 
-      this.playerDirecao = "direita";
-    } else if (this.teclado.left.isDown) {
-      this.player.setVelocityX(-200);
+    else if (this.teclado.right.isDown && this.teclado.down.isDown) {
+      this.player.setVelocityX(210);
+
+      this.player.setVelocityY(210);
+
+      this.player.anims.play('movimentoDireita', true);
+
+      this.playerDirecao = 'direita';
+    }
+
+
+    else if (this.teclado.left.isDown) {
+      this.player.setVelocityX(-300);
 
       this.player.setVelocityY(0);
 
-      this.player.anims.play("movimentoEsquerda", true);
+      this.player.anims.play('movimentoEsquerda', true);
 
-      this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown) {
-      this.player.setVelocityX(200);
+      this.playerDirecao = 'esquerda';
+    }
+
+    else if (this.teclado.right.isDown) {
+      this.player.setVelocityX(300);
 
       this.player.setVelocityY(0);
 
-      this.player.anims.play("movimentoDireita", true);
+      this.player.anims.play('movimentoDireita', true);
 
-      this.playerDirecao = "direita";
-    } else if (this.teclado.up.isDown) {
+      this.playerDirecao = 'direita';
+    }
+
+
+    else if (this.teclado.up.isDown) {
       this.player.setVelocityX(0);
 
-      this.player.setVelocityY(-200);
+      this.player.setVelocityY(-300);
 
-      this.player.anims.play("movimentoCima", true);
+      this.player.anims.play('movimentoCima', true);
 
-      this.playerDirecao = "cima";
-    } else if (this.teclado.down.isDown) {
+      this.playerDirecao = 'cima';
+    }
+
+    else if (this.teclado.down.isDown) {
       this.player.setVelocityX(0);
 
-      this.player.setVelocityY(200);
+      this.player.setVelocityY(300);
 
-      this.player.anims.play("movimentoBaixo", true);
+      this.player.anims.play('movimentoBaixo', true);
 
-      this.playerDirecao = "baixo";
+      this.playerDirecao = 'baixo';
     }
 
     //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
+
     else {
       this.player.setVelocityX(0);
 
       this.player.setVelocityY(0);
 
       //vê a direção que o player estava virado e toca a animação parado correspondente
-      if (this.playerDirecao === "cima") {
-        this.player.anims.play("movimentoParadoCima", true);
-      } else if (this.playerDirecao === "baixo") {
-        this.player.anims.play("movimentoParadoBaixo", true);
-      } else if (this.playerDirecao === "direita") {
-        this.player.anims.play("movimentoParadoDireita", true);
-      } else if (this.playerDirecao === "esquerda") {
-        this.player.anims.play("movimentoParadoEsquerda", true);
+      if (this.playerDirecao === 'cima') {
+
+        this.player.anims.play('movimentoParadoCima', true);
+
+      } else if (this.playerDirecao === 'baixo') {
+
+        this.player.anims.play('movimentoParadoBaixo', true);
+
+      } else if (this.playerDirecao === 'direita') {
+
+        this.player.anims.play('movimentoParadoDireita', true);
+
+      } else if (this.playerDirecao === 'esquerda') {
+
+        this.player.anims.play('movimentoParadoEsquerda', true);
+
       } else {
         // define a animação parado default como a para baixo
-        this.player.anims.play("movimentoParadoBaixo", true);
+        this.player.anims.play('movimentoParadoBaixo', true);
+
       }
     }
   }
