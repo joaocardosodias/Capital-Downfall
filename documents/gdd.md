@@ -504,6 +504,138 @@ A barra de espaço permite que o jogador interaja, na _hub_, com objetos demarca
 
 _Descreva aqui a função que implementa a movimentação/animação de personagens ou elementos gráficos no seu jogo. Sua função deve se basear em alguma formulação matemática (e.g. fórmula de aceleração). A explicação do funcionamento desta função deve conter notação matemática formal de fórmulas/equações. Se necessário, crie subseções para sua descrição._
 
+Antes da fase final do jogo, foi implementada uma animação de movimento em um elemento gráfico: um jornal que 'entra' na tela vindo de fora, gira e cai sobre uma mesa. O movimento ocorre simultaneamente nos eixos x e y, sendo o **eixo x** regido por um **Movimento Uniforme (MU)** e o **eixo y** por um **Movimento Uniformemente Variado (MUV)**, com velocidade inicial nula.
+
+Para garantir uma animação realista e fluida, definimos os seguintes parâmetros:
+
+- Posição inicial do elemento gráfico: (-32 px; 100 px);
+
+- Posição final do elemento gráfico: (500 px; 550 px);
+
+- Tempo total da animação: 1,5 segundos.
+
+A seguir, apresentamos as equações matemáticas utilizadas para descrever o movimento do jornal ao longo do tempo.
+
+---
+
+### 3.8.1. Função matemática que representa o valor da velocidade no eixo x
+
+Conforme Halliday, Resnick e Walker (2023) para se determinar a velocidade em um eixo com **Movimento Uniforme (MU)** em um instante t, usa-se a equação:
+
+$V_x = \frac{\Delta S}{\Delta t} = \frac{X_f - X_i}{\Delta t}$ 
+
+Onde:
+- \( V_x \) é a velocidade do elemento gráfico no eixo x;
+- \( \Delta S_x\) representa a variação da posição no eixo x, ou seja, \( X_f - X_i \);
+- \( \Delta t \) corresponde a variação do tempo;
+- \( X_f \) é a posição final do elemento gráfico no eixo x;
+- \( X_i \) é a posição inicial do elemento gráfico no eixo x.
+
+Substituindo os valores com base nos parâmetros anteriormente definidos:
+
+$V_x = \frac{500 - (-32)}{1,5} = \frac{500 + 32}{1,5} = \frac{532}{1,5} \approx 354,67 \text{ px/s}$
+
+Como no MU a aceleração é nula, a velocidade permanece constante e não depende do tempo t. Assim, a velocidade no eixo x será sempre igual à 354,67 px/s (pixels por segundo) considerando os valores escolhidos.
+
+### 3.8.2. Função matemática que representa a coordenada no eixo x
+
+Ainda segundo Halliday, Resnick e Walker (2023), para se definir a posição de uma partícula em um eixo com **Movimento Uniforme (MU)**, usa-se a equação:
+
+$x(t) = x_0 + v_x \cdot t$
+
+Onde:  
+- \( x(t) \) representa a posição do elemento gráfico no eixo x no instante \( t \);  
+- \( x_0 \) é a posição inicial do elemento gráfico no eixo x;  
+- \( v_x \) é a velocidade no eixo x (constante no MU);  
+- \( t \) é o tempo decorrido desde o início do movimento.  
+
+Substituindo os valores definidos anteriormente:
+
+$x(t) = (-32) + (354,67) \cdot t$
+
+Ou seja, a posição do elemento gráfico no eixo x varia linearmente ao longo do tempo, aumentando a uma taxa constante de **354,67 px/s**, conforme esperado para um **Movimento Uniforme (MU)**.
+
+### 3.8.3. Função matemática que representa a aceleração no eixo y
+
+De acordo com Halliday, Resnick e Walker (2023), para determinar a aceleração em um eixo com **Movimento Uniformemente Variado (MUV)** podemos utilizar a **equação de Torricelli**:
+
+$V_f^2 = V_0^2 + 2 \cdot a_y \cdot \Delta S$
+
+Nosso objetivo é isolar a aceleração \( a_y \). Para isso, subtraímos \( V_0^2 \) de ambos os lados da equação:
+
+$V_f^2 - V_0^2 = 2 \cdot a_y \cdot \Delta S$
+
+Agora, dividimos ambos os lados por \( 2 \cdot \Delta S \):
+
+$a_y = \frac{V_f^2 - V_0^2}{2 \cdot \Delta S}$
+
+Agora, substituímos os valores previamente definidos:  
+- \( V_f = 550 \) px/s  
+- \( V_0 = 0 \) px/s  
+- \( \Delta S = Y_f - Y_i = 550 - 100 = 450 \) px  
+
+$a_y = \frac{550^2 - 0^2}{2 \cdot 450}$
+
+
+$a_y = \frac{302500}{900}$
+
+$a_y \approx 336,1 \text{ px/s}^2$
+
+Assim, a aceleração no eixo y arredondada é aproximadamente **336,1 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
+
+### 3.8.4. Função matemática que representa a velocidade no eixo y
+
+Ainda segundo Halliday, Resnick e Walker (2023), para determinar a velocidade em um instante \( t \) em um eixo com **Movimento Uniformemente Variado (MUV)**, utilizamos a seguinte equação:
+
+$V_y = V_{0y} + a_y \cdot t$
+
+Onde:
+- $V_y$ é a velocidade do elemento gráfico no eixo y no instante $t$;
+- $V_{0y}$ é a velocidade inicial no eixo y;
+- $a_y$ é a aceleração no eixo y;
+- $t$ é o tempo decorrido desde o início do movimento.
+
+Como a velocidade inicial no eixo y é **nula** $(V_{0y} = 0)$, temos:
+
+
+$V_y = 0 + a_y \cdot t$
+
+Substituindo o valor da aceleração $a_y \approx 336,1 px/s²$ obtido anteriormente:
+
+$V_y = 336,1 \cdot t$
+
+Portanto, a velocidade do elemento gráfico no eixo y varia linearmente com o tempo, sendo expressa pela equação, considerando-se os parâmetros definidos anteriormente:
+
+$V_y \approx 336,1t \text{ px/s}$
+
+### 3.8.5 - Função matemática que representa a coordenada no eixo y
+
+Conforme Halliday, Resnick e Walker (2023), para determinar a coordenada em um eixo com **Movimento Uniformemente Variado (MUV)** em um instante \( t \), utiliza-se a seguinte equação:
+
+$y(t) = y_0 + V_{0y} t + \frac{1}{2} a_y t^2$
+
+Onde:
+- \( y(t) \) é a posição do elemento gráfico no eixo y no instante \( t \);
+- \( y_0 \) é a posição inicial no eixo y;
+- \( V_{0y} \) é a velocidade inicial no eixo y;
+- \( a_y \) é a aceleração no eixo y;
+- \( t \) é o tempo decorrido desde o início do movimento.
+
+Sabemos que:
+- \( y_0 = 100 \) px (posição inicial);
+- \( V_{0y} = 0 \) px/s (pois começa do repouso);
+- \( a_y \approx 336,1 \) px/s² (aceleração obtida anteriormente).
+
+Substituindo os valores na equação:
+
+$y(t) = 100 + 0 \cdot t + \frac{1}{2} \times 336,1 \times t^2$
+
+$y(t) = 100 + 168,05 t^2$
+
+Portanto, a posição do elemento gráfico no eixo y ao longo do tempo pode ser expressa por:
+
+$y(t) \approx 100 + 168,05 t^2 \text{ px}$
+
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
@@ -810,6 +942,8 @@ DCF MODELING. BTG Pactual: Porter’s Five Forces Analysis. Disponível em: http
 ASANA. Análise SWOT: o que é, importância e como fazer. Disponível em: https://asana.com/pt/resources/swot-analysis. Acesso em: 28 fev. 2025.
 
 BTG PACTUAL. Nosso DNA: Valores. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
+
+HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física: Mecânica – Volume 1. 12. ed. Rio de Janeiro: LTC, 2023.
 
 # <a name="c8"></a>Anexos
 
