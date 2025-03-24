@@ -1,11 +1,11 @@
-//Configurações do Phaser, necessário incluir o nome das cenas no array em scene: []
-
 const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
 
-  //Define o modelo de física utilizado durante o jogo, importante durante a cena 'hub'
+  scale: {
+    mode: Phaser.Scale.FIT, // Ajusta o jogo à tela mantendo a proporção
+  },
 
   physics: {
     default: "arcade",
@@ -43,15 +43,9 @@ const config = {
     apoioMinigame4,
     apoioMinigame5,
     apoioMinigame6,
+    finalDia2,
+    salaDeGuerra
   ],
 };
-//Adicionando a fonte customizada que será utilizada ao redor do jogo
-const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArt.load()
-document.fonts.add(fontePixelArt);
-
-const fontePixelArtNegrito = new FontFace('pixelArtNegrito', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArtNegrito.load()
-document.fonts.add(fontePixelArtNegrito);
 
 const game = new Phaser.Game(config);
