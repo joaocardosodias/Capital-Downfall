@@ -4,15 +4,15 @@ const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
+  render: { pixelArt: true },
 
   //Define o modelo de física utilizado durante o jogo, importante durante a cena 'hub'
-
+  
   physics: {
     default: "arcade",
     arcade: {
       gravity: { y: 0 },
       debug: false,
-      pixelArt: true,
     },
   },
 
@@ -21,6 +21,7 @@ const config = {
     contratoInicial,
     selecaoPersonagens,
     hub,
+    apoioGeral,
     miniGame1,
     miniGame2,
     miniGame3,
@@ -45,6 +46,7 @@ const config = {
     apoioMinigame4,
     apoioMinigame5,
     apoioMinigame6,
+    hubFinal,
   ],
 };
 
