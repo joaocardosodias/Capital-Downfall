@@ -496,9 +496,18 @@ _Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no
 _Exemplo de tabela_
 \# | titulo | ocorrência | autoria
 --- | --- | --- | ---
-1 | tema de abertura | tela de início | própria
-2 | tema de combate | cena de combate com inimigos comuns | Hans Zimmer
-3 | ...
+1 | TaskSucess | Após a finalização da Task |PixaBay 
+2 | Passos | Quando o personagem se mover  | PixaBay
+3 | Clique|Ao  clicar nos "botões" dos minigames|PixaBay
+4|Carimbo|Quando o jogador selecionar uma alternativa no minigame 2|PixaBay
+5|BeepErro|Após o o jogador clicar em uma alternativa errada|PixaBay
+6|OpenMinigame|Quando o jogador iniciar um minigame|PixaBay
+7|EscritorioFlow|Enquanto o jogador não estiver realizando um minigame|PixaBay
+8|CloseMinigame|Quando o jogador finalizar o minigame|PixaBay
+9|ScrathPencil|Enquanto o jogador estiver desenhando na lousa  do minigame 4|PixaBay
+10|MovePostIt|Quando o jogador arrastar o "post it" do minigame 1|PixaBay
+11|BeepAcerto|Após o jogador clicar em uma alternativa correta|PixaBay
+12|MusicaHub|Enquanto o jogador não estiver realizando um minigame|PixaBay
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
