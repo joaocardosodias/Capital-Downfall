@@ -2,6 +2,7 @@ const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
+  render: { pixelArt: true },
 
   scale: {
     mode: Phaser.Scale.FIT, // Ajusta o jogo à tela mantendo a proporção
@@ -12,7 +13,6 @@ const config = {
     arcade: {
       gravity: { y: 0 },
       debug: false,
-      pixelArt: true,
     },
   },
 
@@ -21,6 +21,7 @@ const config = {
     contratoInicial,
     selecaoPersonagens,
     hub,
+    apoioGeral,
     miniGame1,
     miniGame2,
     miniGame3,
@@ -43,9 +44,18 @@ const config = {
     apoioMinigame4,
     apoioMinigame5,
     apoioMinigame6,
+    hubFinal,
     finalDia2,
     salaDeGuerra
   ],
 };
+//Adicionando a fonte customizada que será utilizada ao redor do jogo
+const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontes/fontePixelArt.ttf)');
+fontePixelArt.load()
+document.fonts.add(fontePixelArt);
+
+const fontePixelArtNegrito = new FontFace('pixelArtNegrito', 'url(src/assets/fontes/fontePixelArt.ttf)');
+fontePixelArtNegrito.load()
+document.fonts.add(fontePixelArtNegrito);
 
 const game = new Phaser.Game(config);

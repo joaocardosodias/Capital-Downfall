@@ -105,11 +105,11 @@ class miniGame3 extends Phaser.Scene {
             this.sound.play('clique'); // Reproduz o som de clique
             // Calcula a pontuação
             let { acertos, erros } = this.contaErros();
-            let pontuacaoRodada = (acertos * 100) - (erros * 50);
+            pontuacao += (acertos * 100) - (erros * 50);
 
             // Avança para a cena de resultado com a pontuação
             this.scene.start('fimDoMinigame3', {
-                pontuacao: pontuacaoRodada
+                pontuacao: pontuacao
             });
             this.scene.stop('miniGame3');
         });
