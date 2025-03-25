@@ -561,11 +561,9 @@ De acordo com Halliday, Resnick e Walker (2023), para determinar a aceleração 
 
 $V_f^2 = V_0^2 + 2 \cdot a_y \cdot \Delta S$
 
-Nosso objetivo é isolar a aceleração \( a_y \). Para isso, subtraímos \( V_0^2 \) de ambos os lados da equação:
+Nosso objetivo é isolar a aceleração \( a_y \). 
 
 $V_f^2 - V_0^2 = 2 \cdot a_y \cdot \Delta S$
-
-Agora, dividimos ambos os lados por \( 2 \cdot \Delta S \):
 
 $a_y = \frac{V_f^2 - V_0^2}{2 \cdot \Delta S}$
 
@@ -583,58 +581,6 @@ $a_y \approx 336,1 \text{ px/s}^2$
 
 Assim, a aceleração no eixo y arredondada é aproximadamente **336,1 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
 
-### 3.8.4. Função matemática que representa a velocidade no eixo y
-
-Ainda segundo Halliday, Resnick e Walker (2023), para determinar a velocidade em um instante \( t \) em um eixo com **Movimento Uniformemente Variado (MUV)**, utilizamos a seguinte equação:
-
-$V_y = V_{0y} + a_y \cdot t$
-
-Onde:
-- $V_y$ é a velocidade do elemento gráfico no eixo y no instante $t$;
-- $V_{0y}$ é a velocidade inicial no eixo y;
-- $a_y$ é a aceleração no eixo y;
-- $t$ é o tempo decorrido desde o início do movimento.
-
-Como a velocidade inicial no eixo y é **nula** $(V_{0y} = 0)$, temos:
-
-
-$V_y = 0 + a_y \cdot t$
-
-Substituindo o valor da aceleração $a_y \approx 336,1 px/s²$ obtido anteriormente:
-
-$V_y = 336,1 \cdot t$
-
-Portanto, a velocidade do elemento gráfico no eixo y varia linearmente com o tempo, sendo expressa pela equação, considerando-se os parâmetros definidos anteriormente:
-
-$V_y \approx 336,1t \text{ px/s}$
-
-### 3.8.5 - Função matemática que representa a coordenada no eixo y
-
-Conforme Halliday, Resnick e Walker (2023), para determinar a coordenada em um eixo com **Movimento Uniformemente Variado (MUV)** em um instante \( t \), utiliza-se a seguinte equação:
-
-$y(t) = y_0 + V_{0y} t + \frac{1}{2} a_y t^2$
-
-Onde:
-- \( y(t) \) é a posição do elemento gráfico no eixo y no instante \( t \);
-- \( y_0 \) é a posição inicial no eixo y;
-- \( V_{0y} \) é a velocidade inicial no eixo y;
-- \( a_y \) é a aceleração no eixo y;
-- \( t \) é o tempo decorrido desde o início do movimento.
-
-Sabemos que:
-- \( y_0 = 100 \) px (posição inicial);
-- \( V_{0y} = 0 \) px/s (pois começa do repouso);
-- \( a_y \approx 336,1 \) px/s² (aceleração obtida anteriormente).
-
-Substituindo os valores na equação:
-
-$y(t) = 100 + 0 \cdot t + \frac{1}{2} \times 336,1 \times t^2$
-
-$y(t) = 100 + 168,05 t^2$
-
-Portanto, a posição do elemento gráfico no eixo y ao longo do tempo pode ser expressa por:
-
-$y(t) \approx 100 + 168,05 t^2 \text{ px}$
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
