@@ -2,7 +2,7 @@
 
 # GDD - Game Design Document - Módulo 1 - Inteli
 
-## Nome do Grupo
+## Nome do Grupo: Level Zero
 
 #### Nomes dos integrantes do grupo
 
@@ -40,61 +40,61 @@ Teodoro Borges de Carvalho Neira <br>
 
 ### 1.1.1. Contexto da indústria (sprint 2)
 
-Os fundos de investimento tiveram aportes líquidos de R$ 40,1 bilhões em abril de 2024, de acordo com a ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais). O valor representa a segunda maior captação líquida do ano, atrás apenas de janeiro, que fechou com R$ 52,1 bilhões. O acumulado de 2024 é positivo em R$ 150,8 bilhões. O BTG Pactual é um banco de investimentos que fornece uma grande gama de serviços, como mercado de capitais, prestação de serviço de consultoria financeira para empresas e etc. Fornecem serviços de corretagem, compensação e custódia de vários produtos no mercado latino-americano para uma base de clientes diversificada(ANBIMA).
+Os fundos de investimento tiveram aportes líquidos de R$ 40,1 bilhões em abril de 2024, de acordo com a ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais). O valor representa a segunda maior captação líquida do ano, atrás apenas de janeiro, que fechou com R$ 52,1 bilhões. O acumulado de 2024 é positivo em R$ 150,8 bilhões. O BTG Pactual é um banco de investimentos que fornece uma grande gama de serviços, como mercado de capitais, prestação de serviço de consultoria financeira para empresas e etc. Fornecem serviços de corretagem, compensação e custódia de vários produtos no mercado latino-americano para uma base de clientes diversificada(ANBIMA, s.d.).
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
 O BTG Pactual é considerado um dos líderes no cenário dos investimentos, operando em um mercado caracterizado por uma concorrência acirrada. Logo, para uma análise aprofundada do contexto desse setor, é preciso recorrer a uma ferramenta de análise estratégica reconhecida, como o modelo das 5 Forças de Porter. Conforme apresentado por Magretta (2019), para que uma empresa/organização avalie ou formule uma estratégia de mercado é preciso utilizar a estrutura das cinco forças, essa estrutura foi formulada por Michael Porter e fornece parâmetros para medir o desempenho superior e foca na competição a ser enfrentada. Além disso, essa ferramenta busca entender o que acontece em determinado setor, fornecendo uma visão clara e direta que está relacionada com a lucratividade do mercado. Para obter uma análise completa, as cinco forças de Porter se dividem em ameaça de entrada de novos concorrentes, ameaça de produtos substitutos, poder de negociação dos clientes, poder de negociação dos fornecedores e rivalidade entre os concorrentes (PORTER, 1896). Elas são:
 
-**Ameaça de entrada de novos concorrentes:** consiste nas métricas de entrada no setor. Quanto mais difícil for a entrada, menor é a concorrência e maior a probabilidade de lucros a longo prazo. Segundo Porter (1896), as barreiras que dificultam a entrada de novos concorrentes são: economias de escala, diferenciação de produto, exigências de capital, custo de troca, acesso aos canais de distribuição, desvantagem de custos e políticas governamentais(NAKAGAWA).
+**Ameaça de entrada de novos concorrentes:** consiste nas métricas de entrada no setor. Quanto mais difícil for a entrada, menor é a concorrência e maior a probabilidade de lucros a longo prazo. Segundo Porter (1896), as barreiras que dificultam a entrada de novos concorrentes são: economias de escala, diferenciação de produto, exigências de capital, custo de troca, acesso aos canais de distribuição, desvantagem de custos e políticas governamentais(NAKAGAWA, s.d.).
 
-**Ameaça de Produtos Substitutos:** refere-se à facilidade com que o comprador pode substituir um tipo de produto ou serviço por outro(NAKAGAWA).
+**Ameaça de Produtos Substitutos:** refere-se à facilidade com que o comprador pode substituir um tipo de produto ou serviço por outro(NAKAGAWA, s.d.).
 
-**Poder de Barganha dos Compradores:** refere-se à influência dos clientes em relação ao preço de aquisição do produto. É considerado alto quando os clientes compram em grandes volumes, têm interesse em economias e estão preocupados com a qualidade do produto adquirido(NAKAGAWA).
+**Poder de Barganha dos Compradores:** refere-se à influência dos clientes em relação ao preço de aquisição do produto. É considerado alto quando os clientes compram em grandes volumes, têm interesse em economias e estão preocupados com a qualidade do produto adquirido(NAKAGAWA, s.d.).
 
-**Poder de Barganha dos Fornecedores:** é definido pelo poder de negociação em insumos de produção e disponibilidade de materiais. Os fornecedores são considerados poderosos quando não têm que lutar contra outros produtos substitutos, não dependem dos compradores e possuem produtos únicos e insubstituíveis para os compradores(NAKAGAWA).
+**Poder de Barganha dos Fornecedores:** é definido pelo poder de negociação em insumos de produção e disponibilidade de materiais. Os fornecedores são considerados poderosos quando não têm que lutar contra outros produtos substitutos, não dependem dos compradores e possuem produtos únicos e insubstituíveis para os compradores(NAKAGAWA, s.d.).
 
-**Rivalidade entre os Concorrentes Existentes:** define o nível de competição em um setor. É mais intenso quando o número de empresas competindo é grande e quando as empresas sofrem restrições de tempo para venda do produto(NAKAGAWA).
+**Rivalidade entre os Concorrentes Existentes:** define o nível de competição em um setor. É mais intenso quando o número de empresas competindo é grande e quando as empresas sofrem restrições de tempo para venda do produtohttps (NAKAGAWA, s.d.).
 
 Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forças de Porter ao BTG Pactual para avaliar sua posição competitiva e identificar os principais impulsionadores de lucratividade e os desafios enfrentados pela empresa.
 
-#
+=======
+                                                             Figura xx
 
 <p align="center">
 <p>Figura 1: 5 forças de Porter</p>
 <img src="../assets/5forcasdeporter.png">
 <p>Produção autoral</p>
 </p>
+Autores: Grupo Level Zero
 
-#
+**Ameaça de produtos substitutos:** o nível de ameaça de produtos substitutos para o BTG Pactual varia conforme seus segmentos de atuação, mas é alto em algumas áreas estratégicas. No mercado de investimentos, fintechs e corretoras independentes oferecem alternativas acessíveis e automatizadas, desafiando os serviços tradicionais de wealth management e asset management. No corporate banking e mercado de crédito, bancos digitais e plataformas de financiamento descentralizado (DeFi) criam novas formas de captação de recursos, reduzindo a dependência de grandes instituições(DCF MODELING, s.d.).
 
-**Ameaça de produtos substitutos:** o nível de ameaça de produtos substitutos para o BTG Pactual varia conforme seus segmentos de atuação, mas é alto em algumas áreas estratégicas. No mercado de investimentos, fintechs e corretoras independentes oferecem alternativas acessíveis e automatizadas, desafiando os serviços tradicionais de wealth management e asset management. No corporate banking e mercado de crédito, bancos digitais e plataformas de financiamento descentralizado (DeFi) criam novas formas de captação de recursos, reduzindo a dependência de grandes instituições(DCF MODELING).
+**Poder de negociação dos compradores:** o poder de negociação dos compradores do BTG Pactual pode ser considerado moderado, variando conforme o perfil do cliente. Grandes investidores, clientes institucionais e grandes fundos de investimento exercem uma influência significativa, pois movimentam altos volumes de capital e têm maior poder de barganha. Eles podem negociar taxas mais competitivas, acesso a produtos exclusivos, serviços personalizados e condições diferenciadas para otimizar seus investimentos(DCF MODELING, s.d.)
 
-**Poder de negociação dos compradores:** o poder de negociação dos compradores do BTG Pactual pode ser considerado moderado, variando conforme o perfil do cliente. Grandes investidores, clientes institucionais e grandes fundos de investimento exercem uma influência significativa, pois movimentam altos volumes de capital e têm maior poder de barganha. Eles podem negociar taxas mais competitivas, acesso a produtos exclusivos, serviços personalizados e condições diferenciadas para otimizar seus investimentos(DCF MODELING).
+**Rivalidade entre os concorrentes:** a rivalidade entre os concorrentes do BTG Pactual é alta, especialmente no setor de investimentos e serviços financeiros. O mercado é altamente competitivo, com a presença de grandes bancos tradicionais, corretoras independentes e fintechs inovadoras, todos disputando a preferência de investidores institucionais e clientes de varejo. Os bancos tradicionais, como Itaú, Bradesco e Santander, possuem grande capilaridade e uma base consolidada de clientes, o que os torna concorrentes diretos em diversas frentes. Já as corretoras independentes, como XP Investimentos e Genial, se destacam pela oferta de plataformas digitais ágeis e produtos financeiros personalizados, atraindo investidores que buscam maior autonomia e diversificação(DCF MODELING, s.d.).
 
-**Rivalidade entre os concorrentes:** a rivalidade entre os concorrentes do BTG Pactual é alta, especialmente no setor de investimentos e serviços financeiros. O mercado é altamente competitivo, com a presença de grandes bancos tradicionais, corretoras independentes e fintechs inovadoras, todos disputando a preferência de investidores institucionais e clientes de varejo. Os bancos tradicionais, como Itaú, Bradesco e Santander, possuem grande capilaridade e uma base consolidada de clientes, o que os torna concorrentes diretos em diversas frentes. Já as corretoras independentes, como XP Investimentos e Genial, se destacam pela oferta de plataformas digitais ágeis e produtos financeiros personalizados, atraindo investidores que buscam maior autonomia e diversificação(DCF MODELING).
+**Poder de negociação dos fornecedores:** o poder de barganha dos fornecedores do BTG Pactual varia de moderado a alto, especialmente em setores estratégicos como tecnologia, dados financeiros e consultoria especializada. Fornecedores de soluções tecnológicas, plataformas de análise de mercado e serviços de infraestrutura digital desempenham um papel essencial no suporte às operações do banco, tornando-se parceiros-chave na execução de suas atividades. A dependência de dados precisos e atualizados, bem como de sistemas robustos e seguros, confere a esses fornecedores uma influência significativa. No entanto, o BTG Pactual, por ser uma das maiores instituições financeiras da América Latina, possui um forte poder de negociação. Sua relevância no setor e seu volume de operações permitem que o banco exerça influência sobre os contratos, buscando sempre as melhores condições comerciais, alinhamento estratégico e inovação contínua. Além disso, a diversificação de fornecedores e investimentos em tecnologia própria ajudam a reduzir a dependência excessiva de qualquer parceiro específico, equilibrando essa dinâmica de poder(DCF MODELING, s.d.).
 
-**Poder de negociação dos fornecedores:** o poder de barganha dos fornecedores do BTG Pactual varia de moderado a alto, especialmente em setores estratégicos como tecnologia, dados financeiros e consultoria especializada. Fornecedores de soluções tecnológicas, plataformas de análise de mercado e serviços de infraestrutura digital desempenham um papel essencial no suporte às operações do banco, tornando-se parceiros-chave na execução de suas atividades. A dependência de dados precisos e atualizados, bem como de sistemas robustos e seguros, confere a esses fornecedores uma influência significativa. No entanto, o BTG Pactual, por ser uma das maiores instituições financeiras da América Latina, possui um forte poder de negociação. Sua relevância no setor e seu volume de operações permitem que o banco exerça influência sobre os contratos, buscando sempre as melhores condições comerciais, alinhamento estratégico e inovação contínua. Além disso, a diversificação de fornecedores e investimentos em tecnologia própria ajudam a reduzir a dependência excessiva de qualquer parceiro específico, equilibrando essa dinâmica de poder(DCF MODELING).
+**Ameaça de entrada de novos concorrentes:** a ameaça de entrada de novos concorrentes no mercado financeiro, especialmente no setor de investimentos, varia de moderada a alta. A indústria financeira é caracterizada por barreiras de entrada significativas, como a necessidade de grandes investimentos iniciais, conformidade regulatória rigorosa e a construção de uma infraestrutura robusta para atender a clientes de alta complexidade. No entanto, a transformação digital e o crescimento das fintechs têm diminuído algumas dessas barreiras, permitindo a entrada de novos players com modelos de negócios mais ágeis e custos mais baixos. As fintechs, em particular, têm se mostrado uma ameaça crescente, oferecendo soluções inovadoras, como plataformas de investimentos automatizados (robo-advisors), serviços bancários digitais e investimentos de impacto, que atraem, principalmente, os consumidores mais jovens e aqueles em busca de maior flexibilidade e custos reduzidos. Empresas de tecnologia também estão cada vez mais entrando no setor financeiro, trazendo expertise em dados, inteligência artificial e blockchain, o que pode representar uma disrupção no mercado(DCF MODELING, s.d.).
 
-**Ameaça de entrada de novos concorrentes:** a ameaça de entrada de novos concorrentes no mercado financeiro, especialmente no setor de investimentos, varia de moderada a alta. A indústria financeira é caracterizada por barreiras de entrada significativas, como a necessidade de grandes investimentos iniciais, conformidade regulatória rigorosa e a construção de uma infraestrutura robusta para atender a clientes de alta complexidade. No entanto, a transformação digital e o crescimento das fintechs têm diminuído algumas dessas barreiras, permitindo a entrada de novos players com modelos de negócios mais ágeis e custos mais baixos. As fintechs, em particular, têm se mostrado uma ameaça crescente, oferecendo soluções inovadoras, como plataformas de investimentos automatizados (robo-advisors), serviços bancários digitais e investimentos de impacto, que atraem, principalmente, os consumidores mais jovens e aqueles em busca de maior flexibilidade e custos reduzidos. Empresas de tecnologia também estão cada vez mais entrando no setor financeiro, trazendo expertise em dados, inteligência artificial e blockchain, o que pode representar uma disrupção no mercado(DCF MODELING).
+Um exemplo prático da importância das Cinco Forças de Porter em relação ao BTG Pactual pode ser visto na crescente competição com fintechs e corretoras independentes, especialmente no segmento de investimentos. A ameaça de produtos substitutos tem se intensificado com o surgimento de plataformas digitais que oferecem produtos de investimento de forma simplificada, com baixas taxas e experiência 100% digital. Diante disso, a estratégia do BTG foi fortalecer sua presença digital por meio de iniciativas como a plataforma BTG Pactual digital, que oferece acesso a investimentos com taxas competitivas, interface intuitiva e serviços personalizados. Essa resposta estratégica mostra como a análise das Cinco Forças permitiu ao banco identificar riscos e oportunidades, adaptando-se às mudanças do mercado para manter sua posição competitiva(DCF MODELING, s.d.).
 
-Um exemplo prático da importância das Cinco Forças de Porter em relação ao BTG Pactual pode ser visto na crescente competição com fintechs e corretoras independentes, especialmente no segmento de investimentos. A ameaça de produtos substitutos tem se intensificado com o surgimento de plataformas digitais que oferecem produtos de investimento de forma simplificada, com baixas taxas e experiência 100% digital. Diante disso, a estratégia do BTG foi fortalecer sua presença digital por meio de iniciativas como a plataforma BTG Pactual digital, que oferece acesso a investimentos com taxas competitivas, interface intuitiva e serviços personalizados. Essa resposta estratégica mostra como a análise das Cinco Forças permitiu ao banco identificar riscos e oportunidades, adaptando-se às mudanças do mercado para manter sua posição competitiva(DCF MODELING).
-
-Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferramenta extremamente abrangente para avaliar o ambiente competitivo de uma indústria e ajudar as empresas a desenvolver estratégias eficazes para superar dilemas e aproveitar oportunidades. Ao entender tais forças, o BTG Pactual pode posicionar-se de forma mais competitiva e realista em seu mercado-alvo(DCF MODELING).
+Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferramenta extremamente abrangente para avaliar o ambiente competitivo de uma indústria e ajudar as empresas a desenvolver estratégias eficazes para superar dilemas e aproveitar oportunidades. Ao entender tais forças, o BTG Pactual pode posicionar-se de forma mais competitiva e realista em seu mercado-alvo(DCF MODELING, s.d.).
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA).
+A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA - 2025).
 
-#
+=======
+                                                                    Figura xx
 
 <p align="center">
 <p>Figura 2: Análise SWOT</p>
 <img src="../assets/analiseswot.png">
 <p>Produção autoral</p>
 </p>
-
-#
+Autores: Grupo Level Zero
 
 **Forças:**
 
@@ -157,11 +157,11 @@ Por esse caminho, consideramos que o _canvas_ da proposta de valor é capaz de n
 
 Destacamos alguns aspectos do _canvas_, principalmente quanto às dores do cliente e os criadores de ganho da solução. O principal desafio do BTG Pactual nos apresentado envolve o atual processo de _onboarding_, sendo pouco dinâmico e atrativo. Dessa forma, os criadores de ganho que definimos precisam trazer uma experiência que, junto aos analgésicos apresentados, seja capaz de suprir os desejos do parceiro de projeto, condizendo com a nossa solução.
 
-No entanto, como temos 10 semanas de trabalho, a priorização das tarefas, dores e ganhos, conceito apresentado anteriormente, demonstra a sua importância. No caso de nosso projeto, o foco desejado pela empresa parceira está nas informações passadas para novos funcionários. Ou seja, o aspecto principal de nossa solução precisa estar alinhada com a transmissão de conteúdos. Por esse caminho, definimos a seção "Criadores de ganho", visto na figura 3, trazendo a nossa proposta de gamificação do processo de onboarding junto com a validação da performance do jogador, buscando garantir que o mesmo compreendeu os conteúdos necessários, principal ponto desejado.
+No entanto, como temos 10 semanas de trabalho, a priorização das tarefas, dores e ganhos, conceito apresentado anteriormente, demonstra a sua importância. No caso de nosso projeto, o foco desejado pela empresa parceira está nas informações passadas para novos funcionários. Ou seja, o aspecto principal de nossa solução precisa estar alinhada com a transmissão de conteúdos. Por esse caminho, definimos a seção "Criadores de ganho", visto na figura 3, trazendo a nossa proposta de gamificação do processo de _onboarding_ junto com a validação da performance do jogador, buscando garantir que o mesmo compreendeu os conteúdos necessários, principal ponto desejado.
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
-_Descreva brevemente a solução desenvolvida para o parceiro de negócios. Descreva os aspectos essenciais para a criação de valor da ideia do produto com o objetivo de ajudar a entender melhor a realidade do cliente e entregar uma solução que está alinhado com o que ele espera. Observe a seção 2 e verifique que ali é possível trazer mais detalhes, portanto seja objetivo aqui. Atualize esta descrição até a entrega final, conforme desenvolvimento._
+O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em relação à falta de engajamento dos novos funcionários com o _onboarding_, à burocracia desse processo e à falta de dinamização na aprendizagem.  Diante disso, a solução proposta oferece uma experiência gamificada que transforma o _onboarding_ tradicional em um processo mais ágil, interativo e envolvente. Para agregar ainda mais valor à experiência do usuário, o jogo conta com um sistema de pontuação que permite que os jogadores acompanhem seu progresso e se mantenham motivados, materiais de apoio integrados que possibilitam o acesso rápido e fácil a conteúdos essenciais, sem a necessidade de sair da tela do jogo, e minigames interativos que reforçam o aprendizado de forma criativa e envolvente, tornando a assimilação do conteúdo mais eficiente.
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
@@ -614,6 +614,125 @@ A barra de espaço permite que o jogador interaja, na _hub_, com objetos demarca
 
 _Descreva aqui a função que implementa a movimentação/animação de personagens ou elementos gráficos no seu jogo. Sua função deve se basear em alguma formulação matemática (e.g. fórmula de aceleração). A explicação do funcionamento desta função deve conter notação matemática formal de fórmulas/equações. Se necessário, crie subseções para sua descrição._
 
+Antes da fase final do jogo, foi implementada uma animação de movimento em um elemento gráfico: um jornal que 'entra' na tela vindo de fora, gira e cai sobre uma mesa. O movimento ocorre simultaneamente nos eixos x e y, sendo o **eixo x** regido por um **Movimento Uniforme (MU)** e o **eixo y** por um **Movimento Uniformemente Variado (MUV)**, com velocidade inicial nula.
+
+Para garantir uma animação realista e fluida, definimos os seguintes parâmetros:
+
+- Posição inicial do elemento gráfico: (-32 px; 100 px);
+
+- Posição final do elemento gráfico: (500 px; 550 px);
+
+- Tempo total da animação: 1,5 segundos.
+
+A seguir, apresentamos as equações matemáticas utilizadas para descrever o movimento do jornal ao longo do tempo.
+
+---
+
+### 3.8.1. Função matemática que representa o valor da velocidade no eixo x
+
+Conforme Halliday, Resnick e Walker (2023) para se determinar a velocidade em um eixo com **Movimento Uniforme (MU)** em um instante t, usa-se a equação:
+
+$V_x = \frac{\Delta S}{\Delta t} = \frac{X_f - X_i}{\Delta t}$ 
+
+Onde:
+- $V_x$ é a velocidade do elemento gráfico no eixo x;
+- $\Delta S_x$ representa a variação da posição no eixo x, ou seja, $X_f - X_i$;
+- $\Delta t$ corresponde a variação do tempo;
+- $X_f$ é a posição final do elemento gráfico no eixo x;
+- $X_i$ é a posição inicial do elemento gráfico no eixo x.
+
+Substituindo os valores com base nos parâmetros anteriormente definidos:
+
+$V_x = \frac{500 - (-32)}{1,5} = \frac{500 + 32}{1,5} = \frac{532}{1,5} \approx 354,67 \text{ px/s}$
+
+Como no MU a aceleração é nula, a velocidade permanece constante e não depende do tempo t. Assim, a velocidade no eixo x será sempre igual à 354,67 px/s (pixels por segundo) considerando os valores escolhidos.
+
+### 3.8.2. Função matemática que representa a coordenada no eixo x
+
+Ainda segundo Halliday, Resnick e Walker (2023), para se definir a posição de uma partícula em um eixo com **Movimento Uniforme (MU)**, usa-se a equação:
+
+$x(t) = x_0 + v_x \cdot t$
+
+Onde:  
+- $x(t)$ representa a posição do elemento gráfico no eixo x no instante $t$;  
+- $x_0$ é a posição inicial do elemento gráfico no eixo x;  
+- $v_x$ é a velocidade no eixo x (constante no MU);  
+- $t$ é o tempo decorrido desde o início do movimento.  
+
+Substituindo os valores definidos anteriormente:
+
+$x(t) = (-32) + (354,67) \cdot t$
+
+Ou seja, a posição do elemento gráfico no eixo x varia linearmente ao longo do tempo, aumentando a uma taxa constante de **354,67 px/s**, conforme esperado para um **Movimento Uniforme (MU)**.
+
+### 3.8.3. Função matemática que representa a aceleração no eixo y
+
+De acordo com Halliday, Resnick e Walker (2023), para determinar a aceleração em um eixo com **Movimento Uniformemente Variado (MUV)** podemos utilizar a **equação de Torricelli**:
+
+$V_f^2 = V_0^2 + 2 \cdot a_y \cdot \Delta S$
+
+Nosso objetivo é isolar a aceleração $a_y$. 
+
+$V_f^2 - V_0^2 = 2 \cdot a_y \cdot \Delta S$
+
+$a_y = \frac{V_f^2 - V_0^2}{2 \cdot \Delta S}$
+
+Agora, substituímos os valores previamente definidos:  
+- $V_f = 550 \text{ px/s}$
+- $V_0 = 0 \text{ px/s}$  
+- $\Delta S = Y_f - Y_i = 550 - 100 = 450 px$  
+
+$a_y = \frac{550^2 - 0^2}{2 \cdot 450}$
+
+
+$a_y = \frac{302500}{900}$
+
+$a_y \approx 336,1 \text{ px/s}^2$
+
+Assim, a aceleração no eixo y arredondada é aproximadamente **336,1 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
+
+### 3.8.4. Função matemática que representa a velocidade no eixo y
+
+Ainda segundo Halliday, Resnick e Walker (2023), para se determinar a velocidade em um instante $t$ em um eixo com **Movimento Uniformemente Variado (MUV)**, basta utilizar a equação:
+
+$V_y = V_0 + a_y \cdot t$
+
+Onde:
+- $V_y$ representa a velocidade do elemento gráfico no eixo y no instante $t$;
+- $V_0$ é a velocidade inicial no eixo y;
+- $a_y$ é a aceleração no eixo y;
+- $t$ é o tempo decorrido desde o início do movimento.
+
+Substituindo os valores previamente definidos:
+
+$V_y = 0 + (336,1 \cdot t)$
+
+$V_y = 336,1 \cdot t$
+
+Dessa forma, a velocidade do elemento gráfico no eixo y aumenta linearmente ao longo do tempo, conforme esperado para um **Movimento Uniformemente Variado (MUV)**.
+
+### 3.8.5. Função matemática que representa a coordenada no eixo y 
+
+Conforme Halliday, Resnick e Walker (2023), para se determinar a coordenada em um eixo com **Movimento Uniformemente Variado (MUV)** em um instante $t$, usa-se a equação:
+
+$y(t) = y_0 + v_{0y} \cdot t + \frac{1}{2} a_y \cdot t^2$
+
+Onde:
+- $y(t)$ representa a posição do elemento gráfico no eixo y no instante $t$;
+- $y_0$ é a posição inicial no eixo y;
+- $v_{0y}$ é a velocidade inicial no eixo y (nula neste caso);
+- $a_y$ é a aceleração no eixo y;
+- $t$ é o tempo decorrido desde o início do movimento.
+
+Substituindo os valores previamente definidos:
+
+$y(t) = 100 + 0 \cdot t + \frac{1}{2} \cdot 336,1 \cdot t^2$
+
+$y(t) = 100 + 168,05 \cdot t^2$
+
+Dessa forma, a posição do elemento gráfico no eixo y segue uma curva parabólica ao longo do tempo, caracterizando um **Movimento Uniformemente Variado (MUV)**.
+
+
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
@@ -922,7 +1041,33 @@ Por se tratar de uma _sprint_ mais curta, por causa do feriado, o desenvolviment
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
-_Descreva e ilustre aqui o desenvolvimento da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e planos futuros._
+A construção de um MVP (Produto Mínimo Viável) é essencial para validar, de forma rápida e eficiente, uma proposta de valor antes da implementação completa. Com o uso mínimo de recursos, é possível testar a solução, obter feedback, identificar melhorias e entender melhor o cliente, reduzindo riscos e apoiando decisões mais assertivas com base em dados reais.
+Por esse motivo, nossa prioridade nesta sprint foi finalizar e viabilizar o jogo em sua totalidade. Considerando que já abordamos conteúdos mais densos nas primeiras duas fases e, alinhando esse fator à limitação de tempo disponível, validamos com o parceiro, ao final da sprint 3, a não necessidade de uma terceira fase com novos conteúdos. Em vez disso, optamos por uma abordagem focada em uma nova fase apenas destinada à revisão e consolidação dos conteúdos já trabalhados.
+Portanto, acreditamos que a revisão de conteúdos contribui significativamente para a eficiência do aprendizado, pois reforça conhecimentos previamente adquiridos, corrige possíveis lacunas e promove uma compreensão mais sólida. Esse processo facilita a fixação das informações e prepara melhor os participantes para a aplicação prática dos conceitos. (DUNLOSKY ET AL. 2013)
+Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
+
+Tela inicial do jogo
+Desing: Lucas Michel
+O MVP da tela final contribui visuamente para a construção do contexto do jogo e oferece coerência ao jogo a partir de elementos relacionados ao mercado de fundos de investimentos.
+
+Portanto, como consolidação inicial do MVP, nessa sprint aprimoramos o desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer instruções do jogo de tela de e-mail. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo e incorporamos todos os nossos sistemas de feedback. 
+
+Tela de e-mail antiga
+Tela de e-mail nova.
+
+
+Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
+
+FOTO
+
+Durante a última sprint, concentramos nossos esforços na validação dos jogos da Fase Dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, conseguimos integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
+
+Com base no miniboss desenvolvido para a Fase Um, criamos um novo miniboss para a Fase Dois, mantendo o mesmo contexto narrativo e temático. Essa continuidade fortalece a imersão do jogador e garante coerência entre as fases, ao mesmo tempo em que introduz novos desafios alinhados à progressão da história. 
+
+Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações. O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
+Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
+
+Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
 
 ## 4.5. Revisão do MVP (sprint 5)
 
@@ -1010,6 +1155,9 @@ ASANA. Análise SWOT: o que é, importância e como fazer. Disponível em: https
 BTG PACTUAL. Nosso DNA: Valores. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
 
 BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
+
+HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física: Mecânica – Volume 1. 12. ed. Rio de Janeiro: LTC, 2023.
+
 
 # <a name="c8"></a>Anexos
 
