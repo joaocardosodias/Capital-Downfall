@@ -527,11 +527,11 @@ Conforme Halliday, Resnick e Walker (2023) para se determinar a velocidade em um
 $V_x = \frac{\Delta S}{\Delta t} = \frac{X_f - X_i}{\Delta t}$ 
 
 Onde:
-- \( V_x \) é a velocidade do elemento gráfico no eixo x;
-- \( \Delta S_x\) representa a variação da posição no eixo x, ou seja, \( X_f - X_i \);
-- \( \Delta t \) corresponde a variação do tempo;
-- \( X_f \) é a posição final do elemento gráfico no eixo x;
-- \( X_i \) é a posição inicial do elemento gráfico no eixo x.
+- $V_x$ é a velocidade do elemento gráfico no eixo x;
+- $\Delta S_x$ representa a variação da posição no eixo x, ou seja, $X_f - X_i$;
+- $\Delta t$ corresponde a variação do tempo;
+- $X_f$ é a posição final do elemento gráfico no eixo x;
+- $X_i$ é a posição inicial do elemento gráfico no eixo x.
 
 Substituindo os valores com base nos parâmetros anteriormente definidos:
 
@@ -546,10 +546,10 @@ Ainda segundo Halliday, Resnick e Walker (2023), para se definir a posição de 
 $x(t) = x_0 + v_x \cdot t$
 
 Onde:  
-- \( x(t) \) representa a posição do elemento gráfico no eixo x no instante \( t \);  
-- \( x_0 \) é a posição inicial do elemento gráfico no eixo x;  
-- \( v_x \) é a velocidade no eixo x (constante no MU);  
-- \( t \) é o tempo decorrido desde o início do movimento.  
+- $x(t)$ representa a posição do elemento gráfico no eixo x no instante $t$;  
+- $x_0$ é a posição inicial do elemento gráfico no eixo x;  
+- $v_x$ é a velocidade no eixo x (constante no MU);  
+- $t$ é o tempo decorrido desde o início do movimento.  
 
 Substituindo os valores definidos anteriormente:
 
@@ -563,16 +563,16 @@ De acordo com Halliday, Resnick e Walker (2023), para determinar a aceleração 
 
 $V_f^2 = V_0^2 + 2 \cdot a_y \cdot \Delta S$
 
-Nosso objetivo é isolar a aceleração \( a_y \). 
+Nosso objetivo é isolar a aceleração $a_y$. 
 
 $V_f^2 - V_0^2 = 2 \cdot a_y \cdot \Delta S$
 
 $a_y = \frac{V_f^2 - V_0^2}{2 \cdot \Delta S}$
 
 Agora, substituímos os valores previamente definidos:  
-- \( V_f = 550 \) px/s  
-- \( V_0 = 0 \) px/s  
-- \( \Delta S = Y_f - Y_i = 550 - 100 = 450 \) px  
+- $V_f = 550 px/s$
+- $V_0 = 0 px/s$  
+- $\Delta S = Y_f - Y_i = 550 - 100 = 450 px$  
 
 $a_y = \frac{550^2 - 0^2}{2 \cdot 450}$
 
@@ -582,6 +582,47 @@ $a_y = \frac{302500}{900}$
 $a_y \approx 336,1 \text{ px/s}^2$
 
 Assim, a aceleração no eixo y arredondada é aproximadamente **336,1 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
+
+### 3.8.4. Função matemática que representa a velocidade no eixo y
+
+Ainda segundo Halliday, Resnick e Walker (2023), para se determinar a velocidade em um instante $t$ em um eixo com **Movimento Uniformemente Variado (MUV)**, basta utilizar a equação:
+
+$V_y = V_0 + a_y \cdot t$
+
+Onde:
+- $V_y$ representa a velocidade do elemento gráfico no eixo y no instante $t$;
+- $V_0$ é a velocidade inicial no eixo y;
+- $a_y$ é a aceleração no eixo y;
+- $t$ é o tempo decorrido desde o início do movimento.
+
+Substituindo os valores previamente definidos:
+
+$V_y = 0 + (336,1 \cdot t)$
+
+$V_y = 336,1 \cdot t$
+
+Dessa forma, a velocidade do elemento gráfico no eixo y aumenta linearmente ao longo do tempo, conforme esperado para um **Movimento Uniformemente Variado (MUV)**.
+
+### 3.8.5. Função matemática que representa a coordenada no eixo y 
+
+Conforme Halliday, Resnick e Walker (2023), para se determinar a coordenada em um eixo com **Movimento Uniformemente Variado (MUV)** em um instante $t$, usa-se a equação:
+
+$y(t) = y_0 + v_{0y} \cdot t + \frac{1}{2} a_y \cdot t^2$
+
+Onde:
+- $y(t)$ representa a posição do elemento gráfico no eixo y no instante $t$;
+- $y_0$ é a posição inicial no eixo y;
+- $v_{0y}$ é a velocidade inicial no eixo y (nula neste caso);
+- $a_y$ é a aceleração no eixo y;
+- $t$ é o tempo decorrido desde o início do movimento.
+
+Substituindo os valores previamente definidos:
+
+$y(t) = 100 + 0 \cdot t + \frac{1}{2} \cdot 336,1 \cdot t^2$
+
+$y(t) = 100 + 168,05 \cdot t^2$
+
+Dessa forma, a posição do elemento gráfico no eixo y segue uma curva parabólica ao longo do tempo, caracterizando um **Movimento Uniformemente Variado (MUV)**.
 
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
