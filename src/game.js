@@ -1,13 +1,13 @@
-//Configurações do Phaser, necessário incluir o nome das cenas no array em scene: []
-
 const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
   render: { pixelArt: true },
 
-  //Define o modelo de física utilizado durante o jogo, importante durante a cena 'hub'
-  
+  scale: {
+    mode: Phaser.Scale.FIT, // Ajusta o jogo à tela mantendo a proporção
+  },
+
   physics: {
     default: "arcade",
     arcade: {
@@ -26,9 +26,7 @@ const config = {
     miniGame2,
     miniGame3,
     fimDoMinigame3,
-    apoioMinigame1,
-    apoioMinigame2,
-    apoioMinigame3,
+    apoioDia1,
     apoioMiniboss1,
     miniBossDia1,
     finalDia1,
@@ -47,6 +45,8 @@ const config = {
     apoioMinigame5,
     apoioMinigame6,
     hubFinal,
+    finalDia2,
+    salaDeGuerra
   ],
 };
 //Adicionando a fonte customizada que será utilizada ao redor do jogo

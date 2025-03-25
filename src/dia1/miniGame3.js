@@ -23,10 +23,12 @@ class miniGame3 extends Phaser.Scene {
         this.load.image('3card3', 'src/assets/dia1/miniGame3/card3.png');
         this.load.image('3card4', 'src/assets/dia1/miniGame3/card4.png');
         this.load.image('3card5', 'src/assets/dia1/miniGame3/card5.png');
+
+        // Carrega o som de clique
+        this.load.audio('clique', 'src/assets//dia2/miniGame4/sons/clique.mp3');
     }
 
     create() {
-
         this.cameras.main.setBackgroundColor('#195AB4');
 
         // Embaralha a ordem dos cards
@@ -100,11 +102,10 @@ class miniGame3 extends Phaser.Scene {
 
         // Evento de clique no botão de verificação
         this.botaoVerificar.on('pointerdown', () => {
+            this.sound.play('clique'); // Reproduz o som de clique
             // Calcula a pontuação
             let { acertos, erros } = this.contaErros();
             pontuacao += (acertos * 100) - (erros * 50);
-
-            //console.log(`Acertos: ${acertos}, Erros: ${erros}, Pontuação: ${pontuacaoRodada}`); // Debug: Exibe a pontuação no console
 
             // Avança para a cena de resultado com a pontuação
             this.scene.start('fimDoMinigame3', {
@@ -114,6 +115,12 @@ class miniGame3 extends Phaser.Scene {
         });
 
         // Evento de arrastar
+        this.input.on('dragstart', (pointer, gameObject) => {
+            if (this.cardsSuperiores.includes(gameObject)) {
+                this.sound.play('clique'); // Reproduz o som de clique ao começar a arrastar
+            }
+        });
+
         this.input.on('drag', (pointer, gameObject, dragX, dragY) => {
             if (this.cardsSuperiores.includes(gameObject)) {
                 // Atualiza a posição do card enquanto ele é arrastado
@@ -219,7 +226,6 @@ class miniGame3 extends Phaser.Scene {
     // Função para verificar se todos os cards foram encaixados
     verificaEncaixes() {
         let totalEncaixados = [...this.posicoesOcupadas.values()].filter(Boolean).length;
-        //console.log(`Total encaixados: ${totalEncaixados}`); // Debug: Verifica quantos cards foram encaixados
         this.botaoVerificar.setVisible(totalEncaixados === 5);
 
         if (totalEncaixados === 5) {
@@ -278,9 +284,8 @@ class fimDoMinigame3 extends Phaser.Scene {
             .setPadding(10)
             .setInteractive();
 
-
         botaoVoltar.on('pointerdown', () => {
-
+            this.sound.play('clique'); // Reproduz o som de clique
             minigame3Jogado = true;
             this.scene.wake('hub');
             this.scene.stop('fimDoMinigame3');

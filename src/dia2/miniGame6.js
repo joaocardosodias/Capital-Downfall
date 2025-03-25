@@ -6,9 +6,11 @@ class miniGame6 extends Phaser.Scene {
     this.botaoAprovado = null;
     this.botaoReprovado = null;
     this.placarTexto = null;
+    this.clickSound = null; // Som de clique
   }
 
   preload() {
+    //Preload das imagens
     this.load.image("imagem1", "src/assets/dia2/miniGame6/imagemgame6.png");
     this.load.image("imagem3", "src/assets/dia2/miniGame6/imagem3game6.png");
     this.load.image("botao", "src/assets/dia2/miniGame6/imagem2game6.png");
@@ -25,10 +27,15 @@ class miniGame6 extends Phaser.Scene {
     this.load.image("vagner", "src/assets/dia2/miniGame6/imagem8game6.png");
     this.load.image("amanda", "src/assets/dia2/miniGame6/imagem9game6.png");
     this.load.image("bruna", "src/assets/dia2/miniGame6/imagem10game6.png");
+
+    // Carrega o som de clique
+    this.load.audio("click", ["src/assets/dia2/miniGame4/click.mp3"]);
   }
 
   create() {
-    this.cameras.main.setBackgroundColor("#195A4B");
+    this.cameras.main.setBackgroundColor("#195A4B"); //Define a cor do plano de fundo
+
+    //Coloca as imagens em um array, definindo uma key para cada um dos cards. Além disso, define a pontuação de cada resposta
     this.imagens = [
       { key: "bruna", pontosAprovado: 100, pontosReprovado: -50 },
       { key: "amanda", pontosAprovado: 100, pontosReprovado: -50 },
@@ -37,29 +44,38 @@ class miniGame6 extends Phaser.Scene {
       { key: "pedro", pontosAprovado: -50, pontosReprovado: 100 },
     ];
 
-    this.imagens = Phaser.Utils.Array.Shuffle(this.imagens);
+    this.imagens = Phaser.Utils.Array.Shuffle(this.imagens); //Utiliza um comando do Phaser para embaralhar a ordem dos itens do array
 
+    //Cria o placar de pontuação
     this.placarTexto = this.add.text(20, 20, `Pontuação: ${pontuacao}`, {
       fontSize: "32px",
       fill: "#FFFFFF",
     });
 
+    // Carrega o som de clique
+    this.clickSound = this.sound.add("click");
+
+    //Inicia o método para exibir a próxima imagem
     this.exibirProximaImagem();
   }
 
   exibirProximaImagem() {
+    //Verifica se já existe um card na tela. Se sim, ele é removido
     if (this.imagemAtual) {
       this.imagemAtual.destroy();
     }
 
     if (this.botaoAprovado) {
+      //Caso os botões estejam na tela, eles também são removidos
       this.botaoAprovado.destroy();
       this.botaoReprovado.destroy();
     }
 
     if (this.imagens.length > 0) {
-      const proximaImagem = this.imagens.pop();
+      //Verifica se ainda há imagens para serem mostradas
+      const proximaImagem = this.imagens.pop(); //O método .pop() remove o último item do array, retornando o mesmo
 
+      //Adiciona um card para a variável imagemAtual
       this.imagemAtual = this.add
         .image(
           this.sys.game.config.width / 2,
@@ -68,14 +84,18 @@ class miniGame6 extends Phaser.Scene {
         )
         .setScale(0.8);
 
+      //Adiciona o botão de aprovado e reprovado, de acordo com os valores de pontuação definidos
+      //Eles também são configurados para serem interativos, executando o método avaliarImagem() ao serem clicados
+
       this.botaoAprovado = this.add
         .image(75, this.sys.game.config.height, "botaoaprovado")
         .setInteractive()
         .setScale(1.5)
         .setOrigin(0, 1)
-        .on("pointerdown", () =>
-          this.avaliarImagem(proximaImagem.pontosAprovado)
-        );
+        .on("pointerdown", () => {
+          this.clickSound.play(); // Reproduz o som de clique
+          this.avaliarImagem(proximaImagem.pontosAprovado);
+        });
 
       this.botaoReprovado = this.add
         .image(
@@ -86,28 +106,32 @@ class miniGame6 extends Phaser.Scene {
         .setInteractive()
         .setScale(1.5)
         .setOrigin(1, 1)
-        .on("pointerdown", () =>
-          this.avaliarImagem(proximaImagem.pontosReprovado)
-        );
+        .on("pointerdown", () => {
+          this.clickSound.play(); // Reproduz o som de clique
+          this.avaliarImagem(proximaImagem.pontosReprovado);
+        });
     } else {
-      this.exibirResultadoFinal();
+      this.exibirResultadoFinal(); //Caso não hajam mais cards no array, inicia-se o método exibirResultadoFinal ()
     }
   }
 
   avaliarImagem(pontos) {
+    //Adiciona a pontuação conforme o resultado passado para o método.
     pontuacao += pontos;
 
-    this.placarTexto.setText(`Pontuação: ${pontuacao}`);
+    this.placarTexto.setText(`Pontuação: ${pontuacao}`); //Atualiza o placar
 
+    //Inicia o método para exibir a próxima imagem
     this.exibirProximaImagem();
   }
 
   exibirResultadoFinal() {
+    //Remove as imagens da tela
     this.imagemAtual.destroy();
-
     this.botaoAprovado.destroy();
     this.botaoReprovado.destroy();
 
+    //Adiciona o te xto de resultado
     this.add
       .text(400, 200, "Resultado", { fontSize: "40px", fill: "#fff" })
       .setOrigin(0.5);
@@ -132,6 +156,7 @@ class miniGame6 extends Phaser.Scene {
       .setInteractive();
 
     botaoVoltar.on("pointerdown", () => {
+      this.clickSound.play(); // Reproduz o som de clique
       minigame6Jogado = true;
       this.scene.wake("hub2"); //Se você clicar no botão Voltar, você volta pra hub do jogo
       this.scene.stop("miniGame6");

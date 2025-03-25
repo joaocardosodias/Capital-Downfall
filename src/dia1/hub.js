@@ -189,9 +189,9 @@ class hub extends Phaser.Scene
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame1Jogado == false) {
-          this.minigameAtual = 1;
           this.avisoMinigame1.setVisible(false);
-          game.scene.start('apoioDia1', {minigameAtual: this.minigameAtual});
+          this.minigameAtual = 1;
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
           game.scene.sleep('hub');
         }
       }
@@ -202,9 +202,9 @@ class hub extends Phaser.Scene
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame2Jogado == false) {
+          this.avisoMinigame2.setVisible(false);
           this.minigameAtual = 2;
-          this.avisoMinigame1.setVisible(false);
-          game.scene.start('apoioDia1', {minigameAtual: this.minigameAtual});
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
           game.scene.sleep('hub');
         }
       }
@@ -215,10 +215,10 @@ class hub extends Phaser.Scene
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame3Jogado == false) {
+          this.avisoMinigame3.setVisible(false);
           this.minigameAtual = 3;
-          this.avisoMinigame1.setVisible(false);
-          game.scene.start('apoioDia1', {minigameAtual: this.minigameAtual});
-          game.scene.sleep('hub');
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
+          this.scene.sleep('hub');
         }
       }
     });
@@ -233,7 +233,7 @@ class hub extends Phaser.Scene
     if (minigame1Jogado === true && minigame2Jogado === true && minigame3Jogado === true) {
       this.scene.stop('hub');
       this.minigameAtual = 10;
-       game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
+      game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
     }
     
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
