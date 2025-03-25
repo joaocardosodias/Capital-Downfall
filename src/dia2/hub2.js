@@ -26,7 +26,7 @@ class hub2 extends Phaser.Scene
   preload() {
 
     //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
-    this.load.image('tiles', 'src/assets/hub2/tileset.png');
+    this.load.image('tiles', 'src/assets/hub/tileset.png');
     this.load.image('player', 'src/assets/players/player.png');
     this.load.tilemapTiledJSON('hub2', 'src/assets/hub/tilemap.json');
     this.load.image('colisao', 'src/assets/hub/colisao.png');
@@ -61,86 +61,21 @@ class hub2 extends Phaser.Scene
     map.createLayer("noCollisionLow", tileset, 0, 0);
     this.layerParede = map.createLayer("walls", tileset, 0, 0);
     this.layerObjetos = map.createLayer("objects", tileset, 0, 0);
-    map.createLayer("noCollisionHigh", tileset, 0, 0).setDepth(2);
+    map.createLayer("noCollisionHigh", tileset, 0, 0).setDepth(1);
 
     //Resgata a propriedade de colisão presente nas informações do tilemap
     this.layerParede.setCollisionByExclusion([-1]);
 
     //Traz colisões para a layer das decorações
-    this.layerDecoracoes.setCollisionByExclusion([-1]);
+    this.layerObjetos.setCollisionByExclusion([-1]);
 
     //Criação do objeto de detecção da interação do jogador com o apoio geral
-    this.colisaoApoioGeral = this.physics.add.sprite(672, 411, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
+    this.colisaoApoioGeral = this.physics.add.sprite(1300, 850, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
 
     //Criação dos objetos de detecção da interação do jogador com os terminais
     this.colisaoMinigame4 = this.physics.add.sprite(345, 1650, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
     this.colisaoMinigame5 = this.physics.add.sprite(1822, 915, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
     this.colisaoMinigame6 = this.physics.add.sprite(336, 450, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
-
-    //Adiciona a animação dos indicadores
-    this.anims.create({
-      key: 'movimentoAviso',
-      frames: this.anims.generateFrameNumbers('avisoMinigame', { start: 0, end: 12 }),
-      frameRate: 15,
-      repeat: -1
-    });
-
-    //Adiciona as animações do player
-    this.anims.create({
-      key: 'movimentoParadoBaixo',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 0, end: 0 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoParadoCima',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 5, end: 5 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoParadoDireita',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 10, end: 10 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoParadoEsquerda',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 15, end: 15 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoCima',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 6, end: 9 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoBaixo',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 1, end: 4 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoDireita',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 11, end: 14 }),
-      frameRate: 6,
-      repeat: -1
-    });
-
-    this.anims.create({
-      key: 'movimentoEsquerda',
-      frames: this.anims.generateFrameNumbers('playerSpritesheet' + this.personagens[this.personagemSelecionado], { start: 16, end: 19 }),
-      frameRate: 6,
-      repeat: -1
-    });
 
     //Adiciona os indicadores e inicia suas animações
     this.avisoMinigame4 = this.add.sprite(339, 1536, 'avisoMinigame').setScale(1.5);
@@ -158,7 +93,7 @@ class hub2 extends Phaser.Scene
 
     //Adiciona a colisão entre os objetos
     this.physics.add.collider(this.player, this.layerParede);
-    this.physics.add.collider(this.player, this.layerDecoracoes);
+    this.physics.add.collider(this.player, this.layerObjetos);
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
@@ -211,17 +146,10 @@ class hub2 extends Phaser.Scene
   }
 
   update() {
-    /*
-    O código a seguir só será utilizado quando o miniboss do dia 2 estiver pronto
-    
-    if (minigame4Jogado === true && minigame5Jogado === true && minigame6Jogado === true) {
-      this.scene.stop('hub2');
-      this.scene.start('apoioMiniboss2');
-    }
-    */
+
    if (minigame4Jogado === true && minigame5Jogado === true && minigame6Jogado === true) {
       this.scene.stop('hub2');
-      this.scene.start('hubFinal'); //MUDAR DEPOIS
+      this.scene.start('finalDia2'); 
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
@@ -342,6 +270,7 @@ class hub2 extends Phaser.Scene
       }
     }
 
+    // Faz com que o aviso não suma caso o player entre e saia de um tutorial
     if (!minigame4Jogado) {
       this.avisoMinigame4.setVisible(true);
     } else {

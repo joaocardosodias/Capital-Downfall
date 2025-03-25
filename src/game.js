@@ -46,7 +46,7 @@ const config = {
     apoioMinigame6,
     hubFinal,
     finalDia2,
-    salaDeGuerra
+    salaDeGuerra,
   ],
 };
 //Adicionando a fonte customizada que será utilizada ao redor do jogo

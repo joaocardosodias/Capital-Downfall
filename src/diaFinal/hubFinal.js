@@ -6,6 +6,7 @@ class hubFinal extends Phaser.Scene {
     this.tileset;
     this.tiles;
     this.player;
+    this.diaAtual = 3;
     this.playerDirecao = "baixo";
     this.personagens = ["Mary", "Mark", "Margaret", "Steve"];
     this.personagemSelecionado = 3;

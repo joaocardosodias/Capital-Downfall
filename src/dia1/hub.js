@@ -76,7 +76,7 @@ class hub extends Phaser.Scene
     map.createLayer("noCollisionLow", tileset, 0, 0);
     this.layerParede = map.createLayer("walls", tileset, 0, 0);
     this.layerObjetos = map.createLayer("objects", tileset, 0, 0);
-    map.createLayer("noCollisionHigh", tileset, 0, 0).setDepth(2);
+    map.createLayer("noCollisionHigh", tileset, 0, 0).setDepth(1);
 
     //Resgata a propriedade de colisão presente nas informações do tilemap
     this.layerParede.setCollisionByExclusion([-1]);
