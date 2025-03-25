@@ -570,8 +570,8 @@ $V_f^2 - V_0^2 = 2 \cdot a_y \cdot \Delta S$
 $a_y = \frac{V_f^2 - V_0^2}{2 \cdot \Delta S}$
 
 Agora, substituímos os valores previamente definidos:  
-- $V_f = 550 px/s$
-- $V_0 = 0 px/s$  
+- $V_f = 550 \text{ px/s}$
+- $V_0 = 0 \text{ px/s}$  
 - $\Delta S = Y_f - Y_i = 550 - 100 = 450 px$  
 
 $a_y = \frac{550^2 - 0^2}{2 \cdot 450}$
