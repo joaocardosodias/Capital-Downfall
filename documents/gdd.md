@@ -648,7 +648,7 @@ Como no MU a aceleração é nula, a velocidade permanece constante e não depen
 
 Ainda segundo Halliday, Resnick e Walker (2023), para se definir a posição de uma partícula em um eixo com **Movimento Uniforme (MU)**, usa-se a equação:
 
-$x(t) = x_0 + v_x \cdot t$
+$$x(t) = x_0 + v_x \cdot t$$
 
 Onde:  
 - $x(t)$ representa a posição do elemento gráfico no eixo x no instante $t$;  
@@ -664,29 +664,39 @@ Ou seja, a posição do elemento gráfico no eixo x varia linearmente ao longo d
 
 ### 3.8.3. Função matemática que representa a aceleração no eixo y
 
-De acordo com Halliday, Resnick e Walker (2023), para determinar a aceleração em um eixo com **Movimento Uniformemente Variado (MUV)** podemos utilizar a **equação de Torricelli**:
+De acordo com Halliday, Resnick e Walker (2023), para determinar a aceleração em um eixo com **Movimento Uniformemente Variado (MUV)**, podemos utilizar a equação:
 
-$V_f^2 = V_0^2 + 2 \cdot a_y \cdot \Delta S$
+$$
+S = S_0 + V_0 t + \frac{1}{2} a t^2
+$$
 
-Nosso objetivo é isolar a aceleração $a_y$. 
+Onde:
+- $S$ é a posição final no eixo y;
+- $S_0$ é a posição inicial no eixo y;
+- $V_0$ representa a velocidade inicial do elemento gráfico no eixo y;
+- $a$ é a aceleração no eixo y;
+- $t$ é o tempo decorrido desde o início do movimento.
+  
+Nosso objetivo é isolar a aceleração $a$. Como o movimento começa do repouso ($V_0$ = 0), a equação simplifica para:
 
-$V_f^2 - V_0^2 = 2 \cdot a_y \cdot \Delta S$
+$$
+ S_{} = S_{0} + \frac{1}{2}at^{2}
+$$
 
-$a_y = \frac{V_f^2 - V_0^2}{2 \cdot \Delta S}$
+$$
+ a = \frac{2(S - S_{0})}{t^{2}}
+$$
 
 Agora, substituímos os valores previamente definidos:  
-- $V_f = 550 \text{ px/s}$
-- $V_0 = 0 \text{ px/s}$  
-- $\Delta S = Y_f - Y_i = 550 - 100 = 450 px$  
+- $S = 550 \text{ px/s}$;
+- $S_0 = 100 \text{ px/s}$;
+- $t = 1,5 \text{ segundos}$. 
 
-$a_y = \frac{550^2 - 0^2}{2 \cdot 450}$
+$$
+a = \frac{2(550 - 100)}{1,5^{2}} = 400 \text{px/s²}
+$$
 
-
-$a_y = \frac{302500}{900}$
-
-$a_y \approx 336,1 \text{ px/s}^2$
-
-Assim, a aceleração no eixo y arredondada é aproximadamente **336,1 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
+Assim, a aceleração no eixo y é 400 (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
 
 ### 3.8.4. Função matemática que representa a velocidade no eixo y
 
