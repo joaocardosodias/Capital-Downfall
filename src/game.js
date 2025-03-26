@@ -47,6 +47,7 @@ const config = {
     hubFinal,
     finalDia2,
     salaDeGuerra,
+    movimento,
   ],
 };
 //Adicionando a fonte customizada que será utilizada ao redor do jogo
