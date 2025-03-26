@@ -508,23 +508,51 @@ Durante as três primeiras fases, não há limite de tempo para a conclusão dos
 
 ### 3.3.5. Trilha sonora (sprint 4)
 
-_Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no mundo e nas fases. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
+| #  | **Título**         | **Ocorrência**                                | **Autoria**  |
+|----|--------------------|-----------------------------------------------|--------------|
+| 1  | BeepAcerto         | Após o jogador clicar em uma alternativa correta | PixaBay      |
+| 2  | BeepErro           | Após o jogador clicar em uma alternativa errada| PixaBay      |
+| 3  | Carimbo            | Quando o jogador selecionar uma alternativa no minigame 2 | PixaBay |
+| 4  | Clique             | Ao clicar nos "botões" dos minigames          | PixaBay      |
+| 5  | CloseMinigame      | Quando o jogador finalizar o minigame         | PixaBay      |
+| 6  | EscritorioFlow     | Enquanto o jogador não estiver realizando um minigame | PixaBay |
+| 7  | MovePostIt         | Quando o jogador arrastar o "post-it" do minigame 1 | PixaBay |
+| 8  | MusicaHub          | Enquanto o jogador não estiver realizando um minigame | PixaBay |
+| 9  | NewspaperPutDown   | Quando o jornal encosta na mesa no fim da animação | Freesound    |
+| 10 | PaperLoose         | Durante a queda do jornal na animação         | Freesound    |
+| 11 | Passos             | Quando o personagem se mover                  | PixaBay      |
+| 12 | ScrathPencil       | Enquanto o jogador estiver desenhando na lousa do minigame 4 | PixaBay |
+| 13 | TaskSucess         | Após a finalização da Task                    | PixaBay      |
+| 14 | OpenMinigame       | Quando o jogador iniciar um minigame          | PixaBay      |
 
-_Exemplo de tabela_
-\# | titulo | ocorrência | autoria
---- | --- | --- | ---
-1 | TaskSucess | Após a finalização da Task |PixaBay 
-2 | Passos | Quando o personagem se mover  | PixaBay
-3 | Clique|Ao  clicar nos "botões" dos minigames|PixaBay
-4|Carimbo|Quando o jogador selecionar uma alternativa no minigame 2|PixaBay
-5|BeepErro|Após o o jogador clicar em uma alternativa errada|PixaBay
-6|OpenMinigame|Quando o jogador iniciar um minigame|PixaBay
-7|EscritorioFlow|Enquanto o jogador não estiver realizando um minigame|PixaBay
-8|CloseMinigame|Quando o jogador finalizar o minigame|PixaBay
-9|ScrathPencil|Enquanto o jogador estiver desenhando na lousa  do minigame 4|PixaBay
-10|MovePostIt|Quando o jogador arrastar o "post it" do minigame 1|PixaBay
-11|BeepAcerto|Após o jogador clicar em uma alternativa correta|PixaBay
-12|MusicaHub|Enquanto o jogador não estiver realizando um minigame|PixaBay
+\
+Os áudios utilizados no jogo foram extraídos do **PixaBay**, um site gratuito que disponibiliza imagens, vídeos, ilustrações, gráficos vetoriais, músicas e efeitos sonoros. Você pode acessá-lo em: [PixaBay Sound Effects](https://pixabay.com/pt/sound-effects/).
+
+Além disso, alguns sons foram retirados do **Freesound**, uma plataforma colaborativa onde os usuários podem compartilhar e baixar áudios. O site pode ser acessado em: [Freesound](https://freesound.org/).
+
+A seguir, apresentamos como som visa impactar na experiência do usuário:
+
+| #  | **Som**              | **Descrição**                                                                                  |
+|----|----------------------|-----------------------------------------------------------------------------------------------|
+| 1  | BeepAcerto.mp3       | Fornece um feedback positivo ao usuário, demonstrando que ele acertou o minigame.              |
+| 2  | BeepErro.mp3         | Ajuda o jogador a entender que errou alguma parte do minigame movendo o “post-it”.             |
+| 3  | Carimbo.mp3          | Cria um efeito sonoro baseado na animação do carimbo estampando o “card”.                       |
+| 4  | Clique.mp3           | Fornece um feedback imediato ao jogador de que um botão foi pressionado, tornando a navegação pelo menu mais responsiva e intuitiva. |
+| 5  | CloseMinigame.mp3    | Ajuda o jogador a compreender que ele finalizou o minigame.                                    |
+| 6  | EscritorioFlow.mp3   | Cria uma atmosfera imersiva, simulando um ambiente real de trabalho e evitando que o jogo pareça "vazio" quando não há interações diretas. |
+| 7  | MovePostIt.mp3       | Cria a sensação de estar organizando documentos, tornando a experiência mais realista e conectada ao tema fiscal. |
+| 8  | MusicaHub.mp3        | Simula o ambiente de um banco real, ajudando o jogador a se sentir dentro do jogo.              |
+| 9  | NewspaperPutDown.mp3 | Simula o impacto entre dois objetos no mundo real, tornando a experiência mais fiel à realidade. |
+| 10 | PaperLoose.mp3       | Simula a queda real de um objeto, tornando a experiência do jogo mais realista.                |
+| 11 | Passos.mp3           | Dá uma sensação de presença física no ambiente, tornando a movimentação do personagem mais realista e envolvente. |
+| 12 | ScrathPencil.mp3     | Cria uma imersão interativa ao desenhar na lousa digital do minigame 4.                        |
+| 13 | TaskSucess.mp3       | Cria um sentimento de progresso, reforçando a conclusão bem-sucedida de uma atividade.          |
+| 14 | OpenMinigame.mp3     | Reforça a transição fluida entre telas, melhorando a experiência do usuário ao abrir menus ou consultar tarefas. |
+
+\
+O link abaixo leva a um drive do grupo, onde todos os sons utilizados no jogo estão disponíveis:
+[Sons Capital Downfall](https://drive.google.com/drive/u/0/folders/17yBORjCD1kmkHqtc_jtOFSGNY5rt7wF0)
+
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
@@ -725,6 +753,7 @@ a = \frac{2(515 - 100)}{1,5^{2}} \approx 368.89 \text{px/s²}
 $$
 
 Assim, a aceleração no eixo y é aproximadamente **368.89 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
+
 
 ### 3.8.4. Função matemática que representa a velocidade no eixo y
 
