@@ -181,7 +181,7 @@ O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em 
 
 A Matriz de Riscos, também conhecida como Matriz de Probabilidade e Impacto, é uma ferramenta visual amplamente utilizada na gestão de riscos com o objetivo de priorizar os riscos identificados em um projeto. Sua principal função é apoiar a tomada de decisões e a definição de medidas preventivas, além de promover o engajamento da equipe no processo de identificação, análise e controle dos riscos envolvidos.
 
-A estrutura da matriz é baseada em duas dimensões principais. A primeira é a probabilidade, que mede a chance de um risco ocorrer, sendo normalmente classificada em níveis como muito baixo, baixo, moderado, alto e muito alto, podendo também ser expressa por porcentagens. A segunda dimensão é o impacto, que representa as consequências da ocorrência do risco. Assim como a probabilidade, o impacto também é classificado em níveis que variam de muito baixo a muito alto. Project Management Institute (PMI). A Guide to the Project Management Body of Knowledge (PMBOK® Guide) – 6ª Edição. PMI, 2017.
+A estrutura da matriz é baseada em duas dimensões principais. A primeira é a probabilidade, que mede a chance de um risco ocorrer, sendo normalmente classificada em níveis como muito baixo, baixo, moderado, alto e muito alto, podendo também ser expressa por porcentagens. A segunda dimensão é o impacto, que representa as consequências da ocorrência do risco. Assim como a probabilidade, o impacto também é classificado em níveis que variam de muito baixo a muito alto. (A GUIDE TO THE PROJECT MANAGEMENT BODY OF KNOWLEDGE – 6ª EDIÇÃO. PMI, 2017.)
 
 A combinação entre probabilidade e impacto resulta na classificação do risco, que é geralmente representada por cores em uma matriz visual, permitindo identificar facilmente o nível de criticidade de cada risco: alta, média ou baixa. Essa visualização facilita o foco da equipe nos riscos mais relevantes e permite que um plano de ações eficaz seja elaborado. 
 
@@ -202,43 +202,43 @@ Impacto: Moderado
 Probabilidade: 90%
 Descrição: Impossibilidade de fazer com que os analistas de fundos de investimento joguem e validem o jogo e o conteúdo abordado.
 Plano de Ação: Planejar e executar testes de usabilidade com usuários-alvo antes da implementação no processo de onboarding, além de incorporar os feedbacks nas sprints de desenvolvimento para melhorias contínuas.
-
+.
 2. Abordar conteúdo insuficiente para o onboarding.
 Impacto: Alto
 Probabilidade: 30%
 Descrição: O jogo não aborda tudo aquilo que precisa ser passado para que o estagiário complete o aprendizado requisitado no onboarding.
 Plano de Ação: Levantar as informações essenciais junto ao parceiro e criar um roteiro de conteúdo claro, baseado na documentação disponibilizada pelo banco BTG, revisando com base em testes nas sprints de validações.
-
+.
 3. Expectativas do parceiro desalinhadas com a realidade do produto.
 Impacto: Muito Alto
 Probabilidade: 30%
 Descrição: O produto final torna-se algo diferente daquilo que será aplicado e as validações não são suficientes para um alinhamento contínuo. 
 Plano de Ação:  Definir escopo, entregas e critérios de sucesso de forma clara e documentada, além de realizar reuniões periódicas de alinhamento com o parceiro para revisar expectativas.
-
+.
 4. Falta de experiência técnica
 Impacto: Alto
 Probabilidade: 70%
 Descrição: O grupo pode enfrentar dificuldades técnicas ao lidar pela primeira vez com linguagens de programação e tecnologias de desenvolvimento de projeto.
 Plano de Ação: Identificar os níveis de conhecimento e promover treinamentos adicionais por meio de cursos e professores.
-
+.
 5. Prazos não cumpridos
 Impacto: Alto
 Probabilidade: 50%
 Descrição: Dificuldade na organização de tarefas e consequentemente atraso na entrega, uma vez que na equipe, uma tarefa depende diretamente da finalização de outra.
 Plano de Ação: Definir as metas semanais no Trello e seguir a linha de tempo determinada, acompanhando o progresso com métodos ágeis e ajustando o cronograma sempre que necessário.
-
+.
 6. Falta de comunicação interna na equipe
 Impacto: Muito Alto
 Probabilidade: 50%
 Descrição: Desalinhamento entre membros pode afetar o desempenho geral, uma vez que as tarefas e o grupo é dependente entre si para o sucesso do projeto.
 Plano de Ação: Adotar rituais ágeis como o Scrum, realizando constantemente dailys e retrospectivas.
-
+.
 7. Má distribuição de tarefas
 Impacto: Moderado
 Probabilidade: 70%
 Descrição: Manter os alunos que possuem algum conhecimento prévio fixos em determinada área, desequilibrando o bom andamento das atividades, sobrecarregando o grupo como um todo e impossibilitando a troca de saberes.
 Plano de Ação: Reavaliar o planejamento e dividir as tarefas de forma mais equilibrada, realizar reuniões diárias de alinhamento para redistribuir atividades quando necessário e respeitar as atividades definidas no Kanban.
-
+.
 O setor de oportunidades na matriz de riscos representa os riscos positivos, ou seja, eventos incertos que, se ocorrerem, podem trazer benefícios ao projeto. Assim como as ameaças, as oportunidades são avaliadas com base na probabilidade de ocorrência e no impacto, mas com foco em resultados favoráveis. Baseado nisso, o nosso grupo pontuou as principais oportunidades que obtivemos como equipe no decorrer do projeto.
 
 
@@ -253,32 +253,50 @@ Descrição:
 Impacto: Muito alto
 Probabilidade: 90%
 Descrição: Aprendizados novos todos os dias sobre metodologias ágeis por meio de uma metodologia ágil que garante proatividade, o método PBL.
-
+.
 2. Compartilhamento de conhecimento na equipe.
 Impacto: Alto
 Probabilidade: 90%
 Descrição: A equipe durante as 10 semanas de desenvolvimento, troca seus conhecimentos e explora novas áreas de saberes a partir de outros integrantes do grupo.
-
+.
 3. Validação antecipada de funcionalidades com o parceiro.
 Impacto: Muito alto
 Probabilidade: 70%
 Descrição: A oportunidade de validar o projeto com o parceiro a cada duas semanas permite o alinhamento contínuo com o cliente.
-
+.
 4. Desenvolvimento de Hard Skills
 Impacto: Alto
 Probabilidade: 70%
 Descrição: Aprender novas habilidades técnicas para utilizar no projeto e consequentemente, em outros projetos futuros.
-
+.
 6. Desenvolvimento de Soft Skills
 Impacto: Muito alto
 Probabilidade: 50%
 Descrição: O trabalho e o desenvolvimento em grupo, permite a formação de habilidades socioemocionais novas, como a colaboração, a empatia e o trabalho em equipe.
-
+.
 Portanto, baseado na matriz de riscos apresentada, é possível concluir que a análise estruturada dos riscos, considerando tanto ameaças quanto oportunidades, permite uma visão mais clara das prioridades do projeto, contribuindo para o bom desenvolvimento como um todo.
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
-_Definição de metas SMART (específicas, mensuráveis, alcançáveis, relevantes e temporais) para seu projeto, com indicadores claros para mensuração_
+As metas SMART são uma metodologia eficaz para definir objetivos de forma clara e alcançável, tanto no contexto pessoal quanto profissional. A sigla SMART representa cinco critérios que uma meta bem formulada deve atender. Desse modo, ela deve ser:
+
+- Específica, ou seja, claramente definida e focada em um resultado concreto. 
+- Mensurável, permitindo avaliar o progresso por meio de indicadores ou resultados observáveis. 
+- Atingível, ou seja, realista dentro das possibilidades e recursos disponíveis.
+- Relevante, estando alinhada com objetivos maiores ou com algo que realmente faça sentido para quem a define.
+- Temporal, com um prazo definido para ser cumprida. 
+
+Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revista Management Review, e desde então tem sido amplamente utilizado na gestão de projetos, planejamento estratégico e desenvolvimento pessoal por facilitar o foco, o comprometimento e o acompanhamento dos resultados.
+
+<p align="center">
+<p>Metas SMART:</p>
+<img src="../assets/smart.png">
+<p>Produção autoral</p>
+</p>
+
+Ao conhecer as metas SMART, é nítido a importância de planejar objetivos de forma estratégica e estruturada. Essa abordagem não só aumenta as chances de sucesso, mas facilita a organização e a motivação ao longo do projeto.
+
+
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 
