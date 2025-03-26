@@ -634,7 +634,7 @@ Para garantir uma animação realista e fluida, definimos os seguintes parâmetr
 
 - Posição inicial do elemento gráfico: (-32 px; 100 px);
 
-- Posição final do elemento gráfico: (500 px; 550 px);
+- Posição final do elemento gráfico: (500 px; 515 px);
 
 - Tempo total da animação: 1,5 segundos.
 
@@ -646,7 +646,7 @@ A seguir, apresentamos as equações matemáticas utilizadas para descrever o mo
 
 Conforme Halliday, Resnick e Walker (2023) para se determinar a velocidade em um eixo com **Movimento Uniforme (MU)** em um instante t, usa-se a equação:
 
-$V_x = \frac{\Delta S}{\Delta t} = \frac{X_f - X_i}{\Delta t}$ 
+$$V_x = \frac{\Delta S}{\Delta t} = \frac{X_f - X_i}{\Delta t}$$
 
 Onde:
 - $V_x$ é a velocidade do elemento gráfico no eixo x;
@@ -657,15 +657,17 @@ Onde:
 
 Substituindo os valores com base nos parâmetros anteriormente definidos:
 
-$V_x = \frac{500 - (-32)}{1,5} = \frac{500 + 32}{1,5} = \frac{532}{1,5} \approx 354,67 \text{ px/s}$
+$$V_x = \frac{500 - (-32)}{1,5} = \frac{500 + 32}{1,5} = \frac{532}{1,5} \approx 354,67 \text{ px/s}$$
 
-Como no MU a aceleração é nula, a velocidade permanece constante e não depende do tempo t. Assim, a velocidade no eixo x será sempre igual à 354,67 px/s (pixels por segundo) considerando os valores escolhidos.
+Como no MU a aceleração é nula, a velocidade permanece constante e não depende do tempo t. Assim, a velocidade no eixo x será sempre igual à **354,67 px/s** (pixels por segundo) considerando os valores escolhidos para os parâmetros.
 
 ### 3.8.2. Função matemática que representa a coordenada no eixo x
 
 Ainda segundo Halliday, Resnick e Walker (2023), para se definir a posição de uma partícula em um eixo com **Movimento Uniforme (MU)**, usa-se a equação:
 
-$$x(t) = x_0 + v_x \cdot t$$
+$$
+x(t) = x_0 + v_x \cdot t
+$$
 
 Onde:  
 - $x(t)$ representa a posição do elemento gráfico no eixo x no instante $t$;  
@@ -675,9 +677,9 @@ Onde:
 
 Substituindo os valores definidos anteriormente:
 
-$x(t) = (-32) + (354,67) \cdot t$
+$$x(t) = (-32) + (354,67) \cdot t$$
 
-Ou seja, a posição do elemento gráfico no eixo x varia linearmente ao longo do tempo, aumentando a uma taxa constante de **354,67 px/s**, conforme esperado para um **Movimento Uniforme (MU)**.
+Ou seja, a posição do elemento gráfico no eixo x varia linearmente ao longo do tempo, aumentando a uma taxa constante de **354,67 px/s** (pixels por segundo) considerando os valores escolhidos para os parâmetros, conforme esperado para um **Movimento Uniforme (MU)**.
 
 ### 3.8.3. Função matemática que representa a aceleração no eixo y
 
@@ -705,21 +707,21 @@ $$
 $$
 
 Agora, substituímos os valores previamente definidos:  
-- $S = 550 \text{ px/s}$;
+- $S = 515 \text{ px/s}$;
 - $S_0 = 100 \text{ px/s}$;
 - $t = 1,5 \text{ segundos}$. 
 
 $$
-a = \frac{2(550 - 100)}{1,5^{2}} = 400 \text{px/s²}
+a = \frac{2(515 - 100)}{1,5^{2}} \approx 368.89 \text{px/s²}
 $$
 
-Assim, a aceleração no eixo y é 400 (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
+Assim, a aceleração no eixo y é aproximadamente **368.89 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
 
 ### 3.8.4. Função matemática que representa a velocidade no eixo y
 
 Ainda segundo Halliday, Resnick e Walker (2023), para se determinar a velocidade em um instante $t$ em um eixo com **Movimento Uniformemente Variado (MUV)**, basta utilizar a equação:
 
-$V_y = V_0 + a_y \cdot t$
+$$V_y = V_0 + a_y \cdot t$$
 
 Onde:
 - $V_y$ representa a velocidade do elemento gráfico no eixo y no instante $t$;
@@ -729,9 +731,9 @@ Onde:
 
 Substituindo os valores previamente definidos:
 
-$V_y = 0 + (336,1 \cdot t)$
+$$V_y = 0 + (368.89 \cdot t)$$
 
-$V_y = 336,1 \cdot t$
+$$V_y = 368.89 \cdot t$$
 
 Dessa forma, a velocidade do elemento gráfico no eixo y aumenta linearmente ao longo do tempo, conforme esperado para um **Movimento Uniformemente Variado (MUV)**.
 
@@ -739,7 +741,7 @@ Dessa forma, a velocidade do elemento gráfico no eixo y aumenta linearmente ao 
 
 Conforme Halliday, Resnick e Walker (2023), para se determinar a coordenada em um eixo com **Movimento Uniformemente Variado (MUV)** em um instante $t$, usa-se a equação:
 
-$y(t) = y_0 + v_{0y} \cdot t + \frac{1}{2} a_y \cdot t^2$
+$$y(t) = y_0 + v_{0y} \cdot t + \frac{1}{2} a_y \cdot t^2$$
 
 Onde:
 - $y(t)$ representa a posição do elemento gráfico no eixo y no instante $t$;
@@ -750,9 +752,9 @@ Onde:
 
 Substituindo os valores previamente definidos:
 
-$y(t) = 100 + 0 \cdot t + \frac{1}{2} \cdot 336,1 \cdot t^2$
+$$y(t) = 100 + 0 \cdot t + \frac{1}{2} \cdot 368.89 \cdot t^2$$
 
-$y(t) = 100 + 168,05 \cdot t^2$
+$$y(t) = 100 + 184,445 \cdot t^2$$
 
 Dessa forma, a posição do elemento gráfico no eixo y segue uma curva parabólica ao longo do tempo, caracterizando um **Movimento Uniformemente Variado (MUV)**.
 
