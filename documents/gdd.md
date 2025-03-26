@@ -179,7 +179,102 @@ O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em 
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
-_Registre na matriz os riscos identificados no projeto, visando avaliar situações que possam representar ameaças e oportunidades, bem como os impactos relevantes sobre o projeto. Apresente os riscos, ressaltando, para cada um, impactos e probabilidades com plano de ação e respostas._
+A Matriz de Riscos, também conhecida como Matriz de Probabilidade e Impacto, é uma ferramenta visual amplamente utilizada na gestão de riscos com o objetivo de priorizar os riscos identificados em um projeto. Sua principal função é apoiar a tomada de decisões e a definição de medidas preventivas, além de promover o engajamento da equipe no processo de identificação, análise e controle dos riscos envolvidos.
+
+A estrutura da matriz é baseada em duas dimensões principais. A primeira é a probabilidade, que mede a chance de um risco ocorrer, sendo normalmente classificada em níveis como muito baixo, baixo, moderado, alto e muito alto, podendo também ser expressa por porcentagens. A segunda dimensão é o impacto, que representa as consequências da ocorrência do risco. Assim como a probabilidade, o impacto também é classificado em níveis que variam de muito baixo a muito alto. Project Management Institute (PMI). A Guide to the Project Management Body of Knowledge (PMBOK® Guide) – 6ª Edição. PMI, 2017.
+
+A combinação entre probabilidade e impacto resulta na classificação do risco, que é geralmente representada por cores em uma matriz visual, permitindo identificar facilmente o nível de criticidade de cada risco: alta, média ou baixa. Essa visualização facilita o foco da equipe nos riscos mais relevantes e permite que um plano de ações eficaz seja elaborado. 
+
+Em contrapartida, para cada risco existe um plano de ação para ser feito dentro da equipe. O plano de ação na matriz de risco consiste em medidas estratégicas definidas para prevenir, minimizar ou responder aos riscos identificados, com o objetivo de reduzir seus impactos no projeto. Ele orienta as ações da equipe diante de cada risco, promovendo uma gestão mais eficiente e proativa. 
+
+Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada para avaliar os riscos identificados ao longo do desenvolvimento do jogo, considerando tanto aspectos internos, como as expectativas da equipe, quanto os relacionados à entrega do produto e ao feedback do parceiro.
+
+<p align="center">
+<p>Matriz de Risco: Ameaças</p>
+<img src="../assets/matrizrisco.png">
+<p>Produção autoral</p>
+</p>
+
+Descrição
+
+1. Falta de testes com usuários reais
+Impacto: Moderado
+Probabilidade: 90%
+Descrição: Impossibilidade de fazer com que os analistas de fundos de investimento joguem e validem o jogo e o conteúdo abordado.
+Plano de Ação: Planejar e executar testes de usabilidade com usuários-alvo antes da implementação no processo de onboarding, além de incorporar os feedbacks nas sprints de desenvolvimento para melhorias contínuas.
+
+2. Abordar conteúdo insuficiente para o onboarding.
+Impacto: Alto
+Probabilidade: 30%
+Descrição: O jogo não aborda tudo aquilo que precisa ser passado para que o estagiário complete o aprendizado requisitado no onboarding.
+Plano de Ação: Levantar as informações essenciais junto ao parceiro e criar um roteiro de conteúdo claro, baseado na documentação disponibilizada pelo banco BTG, revisando com base em testes nas sprints de validações.
+
+3. Expectativas do parceiro desalinhadas com a realidade do produto.
+Impacto: Muito Alto
+Probabilidade: 30%
+Descrição: O produto final torna-se algo diferente daquilo que será aplicado e as validações não são suficientes para um alinhamento contínuo. 
+Plano de Ação:  Definir escopo, entregas e critérios de sucesso de forma clara e documentada, além de realizar reuniões periódicas de alinhamento com o parceiro para revisar expectativas.
+
+4. Falta de experiência técnica
+Impacto: Alto
+Probabilidade: 70%
+Descrição: O grupo pode enfrentar dificuldades técnicas ao lidar pela primeira vez com linguagens de programação e tecnologias de desenvolvimento de projeto.
+Plano de Ação: Identificar os níveis de conhecimento e promover treinamentos adicionais por meio de cursos e professores.
+
+5. Prazos não cumpridos
+Impacto: Alto
+Probabilidade: 50%
+Descrição: Dificuldade na organização de tarefas e consequentemente atraso na entrega, uma vez que na equipe, uma tarefa depende diretamente da finalização de outra.
+Plano de Ação: Definir as metas semanais no Trello e seguir a linha de tempo determinada, acompanhando o progresso com métodos ágeis e ajustando o cronograma sempre que necessário.
+
+6. Falta de comunicação interna na equipe
+Impacto: Muito Alto
+Probabilidade: 50%
+Descrição: Desalinhamento entre membros pode afetar o desempenho geral, uma vez que as tarefas e o grupo é dependente entre si para o sucesso do projeto.
+Plano de Ação: Adotar rituais ágeis como o Scrum, realizando constantemente dailys e retrospectivas.
+
+7. Má distribuição de tarefas
+Impacto: Moderado
+Probabilidade: 70%
+Descrição: Manter os alunos que possuem algum conhecimento prévio fixos em determinada área, desequilibrando o bom andamento das atividades, sobrecarregando o grupo como um todo e impossibilitando a troca de saberes.
+Plano de Ação: Reavaliar o planejamento e dividir as tarefas de forma mais equilibrada, realizar reuniões diárias de alinhamento para redistribuir atividades quando necessário e respeitar as atividades definidas no Kanban.
+
+O setor de oportunidades na matriz de riscos representa os riscos positivos, ou seja, eventos incertos que, se ocorrerem, podem trazer benefícios ao projeto. Assim como as ameaças, as oportunidades são avaliadas com base na probabilidade de ocorrência e no impacto, mas com foco em resultados favoráveis. Baseado nisso, o nosso grupo pontuou as principais oportunidades que obtivemos como equipe no decorrer do projeto.
+
+
+<p align="center">
+<p>Matriz de Risco: Oportunidades</p>
+<img src="../assets/matrizrisco2.png">
+<p>Produção autoral</p>
+</p>
+
+Descrição:
+1. Aprendizado constante e proatividade.
+Impacto: Muito alto
+Probabilidade: 90%
+Descrição: Aprendizados novos todos os dias sobre metodologias ágeis por meio de uma metodologia ágil que garante proatividade, o método PBL.
+
+2. Compartilhamento de conhecimento na equipe.
+Impacto: Alto
+Probabilidade: 90%
+Descrição: A equipe durante as 10 semanas de desenvolvimento, troca seus conhecimentos e explora novas áreas de saberes a partir de outros integrantes do grupo.
+
+3. Validação antecipada de funcionalidades com o parceiro.
+Impacto: Muito alto
+Probabilidade: 70%
+Descrição: A oportunidade de validar o projeto com o parceiro a cada duas semanas permite o alinhamento contínuo com o cliente.
+
+4. Desenvolvimento de Hard Skills
+Impacto: Alto
+Probabilidade: 70%
+Descrição: Aprender novas habilidades técnicas para utilizar no projeto e consequentemente, em outros projetos futuros.
+
+6. Desenvolvimento de Soft Skills
+Impacto: Muito alto
+Probabilidade: 50%
+Descrição: O trabalho e o desenvolvimento em grupo, permite a formação de habilidades socioemocionais novas, como a colaboração, a empatia e o trabalho em equipe.
+
+Portanto, baseado na matriz de riscos apresentada, é possível concluir que a análise estruturada dos riscos, considerando tanto ameaças quanto oportunidades, permite uma visão mais clara das prioridades do projeto, contribuindo para o bom desenvolvimento como um todo.
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
 
@@ -1077,13 +1172,19 @@ Por se tratar de uma _sprint_ mais curta, por causa do feriado, o desenvolviment
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
 A construção de um MVP (Produto Mínimo Viável) é essencial para validar, de forma rápida e eficiente, uma proposta de valor antes da implementação completa. Com o uso mínimo de recursos, é possível testar a solução, obter feedback, identificar melhorias e entender melhor o cliente, reduzindo riscos e apoiando decisões mais assertivas com base em dados reais.
+
 Por esse motivo, nossa prioridade nesta sprint foi finalizar e viabilizar o jogo em sua totalidade. Considerando que já abordamos conteúdos mais densos nas primeiras duas fases e, alinhando esse fator à limitação de tempo disponível, validamos com o parceiro, ao final da sprint 3, a não necessidade de uma terceira fase com novos conteúdos. Em vez disso, optamos por uma abordagem focada em uma nova fase apenas destinada à revisão e consolidação dos conteúdos já trabalhados.
+
 Portanto, acreditamos que a revisão de conteúdos contribui significativamente para a eficiência do aprendizado, pois reforça conhecimentos previamente adquiridos, corrige possíveis lacunas e promove uma compreensão mais sólida. Esse processo facilita a fixação das informações e prepara melhor os participantes para a aplicação prática dos conceitos. (DUNLOSKY ET AL. 2013)
+
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
-Tela inicial do jogo
-Desing: Lucas Michel
-O MVP da tela final contribui visuamente para a construção do contexto do jogo e oferece coerência ao jogo a partir de elementos relacionados ao mercado de fundos de investimentos.
+<div align="center">
+<p> Tela Inicial do Jogo:</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - O MVP da tela inicial contribui visuamente para a construção do contexto do jogo e oferece coerência ao jogo a partir de elementos relacionados ao mercado de fundos de investimentos. </p>
+</div>
+
 
 Portanto, como consolidação inicial do MVP, nessa sprint aprimoramos o desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer instruções do jogo de tela de e-mail. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo e incorporamos todos os nossos sistemas de feedback. 
 
@@ -1097,9 +1198,10 @@ FOTO
 
 Durante a última sprint, concentramos nossos esforços na validação dos jogos da Fase Dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, conseguimos integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
 
-Com base no miniboss desenvolvido para a Fase Um, criamos um novo miniboss para a Fase Dois, mantendo o mesmo contexto narrativo e temático. Essa continuidade fortalece a imersão do jogador e garante coerência entre as fases, ao mesmo tempo em que introduz novos desafios alinhados à progressão da história. 
+Para a última fase do jogo e para consolidar a experiência do jogador, abordamos uma experiência imersiva em uma Sala de Guerra. Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações.
 
-Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações. O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
+ O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
+
 Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
 
 Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
