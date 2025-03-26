@@ -29,6 +29,7 @@ class miniGame2 extends Phaser.Scene {
     this.fim = fim;
     this.botaoVoltar = botaoVoltar;
     this.respostaEmAndamento = respostaEmAndamento;
+    this.musicaFundo;
   }
 
   preload() {
@@ -72,7 +73,19 @@ class miniGame2 extends Phaser.Scene {
     this.load.image("botaoVoltar", "src/assets/dia1/miniGame2/botaoVoltar.png");
 
     // Carrega o som de clique
-    this.load.audio('clique', 'src/assets/dia2/minigame4/sons/clique.mp3');
+    this.load.audio("clique", "src/assets/dia2/minigame4/sons/clique.mp3");
+    // Carrega o som de carimbo
+    this.load.audio("carimbo", "src/assets/sounds/carimbo.mp3");
+    // Carrega a música de fundo
+    this.load.audio("musicaFundo", "src/assets/sounds/escritorioFlow.mp3");
+    // Carrega o som de conclusão
+    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
+    // Carrega o som de movimento
+    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
+    // Carrga o som de erro
+    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
+    // Carrega o som de acerto
+    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
   }
 
   create() {
@@ -91,6 +104,10 @@ class miniGame2 extends Phaser.Scene {
     // Embaralha os perfis e pega 5 aleatórios
     Phaser.Utils.Array.Shuffle(perfis);
     perfis = perfis.slice(0, 4);
+
+    this.musicaFundo = this.sound.add("musicaFundo"); // Adiciona o som da música de fundo
+    this.musicaFundo.setLoop(true); // Define que a música de fundo deve ser repetida
+    this.musicaFundo.play(); // Inicia a música de fundo
 
     // Fundo
     this.add.image(0, 0, "fundoMinigame2").setDepth(-10).setOrigin(0, 0);
@@ -153,82 +170,82 @@ class miniGame2 extends Phaser.Scene {
       .setOrigin(0, 0);
 
     // Animação de aumento ao passar o mouse sobre os botões
-    miniGame2.botao1.on('pointerover', () => {
+    miniGame2.botao1.on("pointerover", () => {
       this.tweens.add({
         targets: miniGame2.botao1,
         scale: 1.05, // Aumenta o tamanho do botão em 5%
         duration: 300, // Duração da animação em milissegundos
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao1.on('pointerout', () => {
+    miniGame2.botao1.on("pointerout", () => {
       this.tweens.add({
         targets: miniGame2.botao1,
         scale: 1, // Retorna ao tamanho original
         duration: 100,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao2.on('pointerover', () => {
+    miniGame2.botao2.on("pointerover", () => {
       this.tweens.add({
         targets: miniGame2.botao2,
         scale: 1.05,
         duration: 300,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao2.on('pointerout', () => {
+    miniGame2.botao2.on("pointerout", () => {
       this.tweens.add({
         targets: miniGame2.botao2,
         scale: 1,
         duration: 300,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao3.on('pointerover', () => {
+    miniGame2.botao3.on("pointerover", () => {
       this.tweens.add({
         targets: miniGame2.botao3,
         scale: 1.05,
         duration: 300,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao3.on('pointerout', () => {
+    miniGame2.botao3.on("pointerout", () => {
       this.tweens.add({
         targets: miniGame2.botao3,
         scale: 1,
         duration: 300,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao4.on('pointerover', () => {
+    miniGame2.botao4.on("pointerover", () => {
       this.tweens.add({
         targets: miniGame2.botao4,
         scale: 1.05,
         duration: 300,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
-    miniGame2.botao4.on('pointerout', () => {
+    miniGame2.botao4.on("pointerout", () => {
       this.tweens.add({
         targets: miniGame2.botao4,
         scale: 1,
         duration: 300,
-        ease: 'Power2'
+        ease: "Power2",
       });
     });
 
     // Eventos de clique nos botões
     miniGame2.botao1.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        this.sound.play('clique'); // Reproduz o som de clique
+        this.sound.play("carimbo"); // Reproduz o som de clique
         this.responder(1, perfis);
         miniGame2.botao1.setTexture(
           "botao1Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
@@ -238,7 +255,7 @@ class miniGame2 extends Phaser.Scene {
 
     miniGame2.botao2.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        this.sound.play('clique'); // Reproduz o som de clique
+        this.sound.play("carimbo"); // Reproduz o som de clique
         this.responder(2, perfis);
         miniGame2.botao2.setTexture(
           "botao2Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
@@ -248,7 +265,7 @@ class miniGame2 extends Phaser.Scene {
 
     miniGame2.botao3.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        this.sound.play('clique'); // Reproduz o som de clique
+        this.sound.play("carimbo"); // Reproduz o som de clique
         this.responder(3, perfis);
         miniGame2.botao3.setTexture(
           "botao3Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
@@ -258,7 +275,7 @@ class miniGame2 extends Phaser.Scene {
 
     miniGame2.botao4.on("pointerdown", () => {
       if (!miniGame2.respostaEmAndamento) {
-        this.sound.play('clique'); // Reproduz o som de clique
+        this.sound.play("carimbo"); // Reproduz o som de clique
         this.responder(4, perfis);
         miniGame2.botao4.setTexture(
           "botao4Pressionado-" + perfis[miniGame2.perfilIndex].pergunta
@@ -280,6 +297,7 @@ class miniGame2 extends Phaser.Scene {
     // Verifica se a resposta do jogador está correta
     if (respostaJogador === respostaCerta) {
       pontuacao += 100; // Aumenta a pontuação
+      this.sound.play("somAcerto", { volume: 2 }); // Reproduz o som de acerto
       // Adiciona uma imagem de certo na tela
       miniGame2.carimbo = this.add
         .image(400, Phaser.Math.Between(150, 330), "carimboV")
@@ -295,7 +313,8 @@ class miniGame2 extends Phaser.Scene {
         .setDepth(15);
     } else {
       // Se o jogador errou
-      pontuacao -= 50; // Ele perde 50 pontos
+      pontuacao -= 50; // Ele perde 50 pontos]
+      this.sound.play("somErro", { volume: 2 }); // Reproduz o som de erro
       // Uma imagem de 'errado'(X) é adicionada a tela
       miniGame2.carimbo = this.add
         .image(400, Phaser.Math.Between(150, 330), "carimboF")
@@ -319,6 +338,7 @@ class miniGame2 extends Phaser.Scene {
       duration: 2000, // A animação dura 2 segundos
       ease: "Power2", // Usa a curva de suavização "Power2" (aceleração suave)
       onComplete: () => {
+        this.sound.play("somMovimento", { volume: 2 }); // Reproduz o som de movimento
         miniGame2.textoMudancaPontuacao.destroy(); // Após a animação ser completada, remove o texto da tela
       },
     });
@@ -390,6 +410,8 @@ class miniGame2 extends Phaser.Scene {
             .setOrigin(0.5)
             .setDepth(31);
 
+          this.sound.play("conclusao"); // Reproduz o som de conclusão
+
           // Criação do botão para voltar ao jogo
           miniGame2.botaoVoltar = this.add
             .image(400, 400, "botaoVoltar")
@@ -398,9 +420,11 @@ class miniGame2 extends Phaser.Scene {
             .setScale(0.9);
 
           miniGame2.botaoVoltar.on("pointerdown", () => {
-            this.sound.play('clique'); // Reproduz o som de clique
+            this.sound.play("clique"); // Reproduz o som de clique
+            this.musicaFundo.stop(); // Para a música de fundo
             minigame2Jogado = true;
             this.scene.wake("hub"); // Se você clicar no botão Voltar, você volta pra hub do jogo
+            musicaHub.resume();
             this.scene.stop("miniGame2");
           });
         }

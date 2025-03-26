@@ -19,6 +19,7 @@ let minigame6Jogado;
 class menuInicial extends Phaser.Scene {
   constructor() {
     super("menuInicial");
+    this.musicaHub;
   }
 
   // Preload dos assets
@@ -82,4 +83,5 @@ class menuInicial extends Phaser.Scene {
       game.scene.start("contratoInicial");
     });
   }
+  update() {}
 }
