@@ -1198,65 +1198,67 @@ Portanto, a revisão de conteúdos contribui significativamente para a eficiênc
 
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
-
+<div align="center">
+<p> Figura 1: Tela Inicial do Jogo</p>
+<img src="../assets/gdd_4.4/menuinicial55_360.gif">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
 
- Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
+ Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p> Figura 2: Tela nova de comunicação</p>
+<img src="../assets/gdd_4.4/slick1.png">
+<p>Produção autoral </p>
 </div>
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p> Figura 3: Tela antiga de comunicação</p>
+<img src="../assets/gdd_4.4/telavelha.png">
+<p>Produção autoral  </p>
 </div>
 
 Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos minigames que já haviam sido consolidados na Sprint 3.
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p> Figura 4: Minigame 1</p>
+<img src="../assets/gdd_4.4/jogo1.png">
+<p>Produção autoral  </p>
 </div>
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p> Figura 5: Minigame 2</p>
+<img src="../assets/gdd_4.4/jogo2.png">
+<p>Produção autoral  </p>
 </div>
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p> Figura 6: Tela Inicial do Jogo</p>
+<img src="../assets/gdd_4.4/jogo3.png">
+<p>Produção autoral  </p>
 </div>
 
 
 Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p> Figura 7: Miniboss da Fase 1</p>
+<img src="../assets/gdd_4.4/miniboss.png">
+<p>Produção autoral - Exemplo de uma das perguntas revisionais </p>
 </div>
 
 Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da narrativa, utilizando telas de jornais e respostas com resolução para contribuir com o processo de aprendizado.
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
+<p> Figura 8: Feedback das fases</p>
+<img src="../assets/gdd_4.4/feedback1.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div> 
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
+<p> Figura 9: Feedback do Miniboss</p>
+<img src="../assets/gdd_4.4/feedback2.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
@@ -1264,20 +1266,20 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais de acordo com a validação dos jogos da fase dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, foi possível integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
+<p> Figura 10: Tela Inicial do Jogo</p>
+<img src="../assets/gdd_4.4/jogo4.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+<div align="center">
+<p> Figura 11: Tela Inicial do Jogo</p>
+<img src="../assets/gdd_4.4/jogo5.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
 <div align="center">
 <p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
-</div>
-
-<div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
+<img src="../assets/gdd_4.4/jogo6.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
@@ -1288,10 +1290,12 @@ Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esfo
 Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
+<p> Figura 13: Tela Inicial do Jogo</p>
+<img src="../assets/gdd_4.4/saladg.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
+
+
 
 Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
 
