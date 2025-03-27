@@ -135,7 +135,7 @@ class miniBossDia1 extends Phaser.Scene {
     // Se o jogador tiver acertado, a pontuação dele aumenta em 100 pontos e se ele tiver errado a pontuação dele diminui em 50 pontos
     pontuacao += acertou ? 100 : -50;
 
-    if (acertou === correta) {
+    if (letraResposta === correta) {
       this.sound.play("somAcerto");
     } else {
       this.sound.play("somErro");

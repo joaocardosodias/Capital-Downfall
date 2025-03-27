@@ -1,4 +1,6 @@
 let cardsDisponiveis = [true, true, true, true]; // true = disponível, false = indisponível
+let lousaDesligada = false;
+let musicaMinigame4;
 
 // Classe principal da cena inicial do jogo
 class miniGame4 extends Phaser.Scene {
@@ -6,6 +8,7 @@ class miniGame4 extends Phaser.Scene {
     super({ key: "miniGame4" });
     // Variável para controlar se a animação dos cards já foi executada
     this.animacaoCardsExecutada = false;
+    this.musicaFundo;
   }
 
   // Método para carregar recursos (imagens, sons, etc.)
@@ -27,6 +30,11 @@ class miniGame4 extends Phaser.Scene {
       "src/assets/dia2/miniGame4/botaoVerificar.png"
     ); // Carrega a imagem do botão de finalizar
     this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3"); // Carrega o som de clique
+    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
+    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
+    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
+    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
+    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
   }
 
   // Método para criar e configurar a cena
@@ -38,6 +46,10 @@ class miniGame4 extends Phaser.Scene {
 
     // Adiciona a imagem do enunciado na cena
     this.add.image(400, 100, "enunciadoMinigame4").setScale(2);
+
+    musicaMinigame4 = this.sound.add("somFundo", { volume: 1 });
+    musicaMinigame4.setLoop(true); 
+    musicaMinigame4.play();
 
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacao}`, {
@@ -157,6 +169,7 @@ class miniGame4 extends Phaser.Scene {
       });
       botaoFinalizar.on("pointerdown", () => {
         this.sound.play("clique"); // Toca o som de clique
+
         this.transicaoParaCena("fimMinigame4");
       });
     }
@@ -233,6 +246,7 @@ class miniGame4 extends Phaser.Scene {
 class BaseTributacaoScene extends Phaser.Scene {
   constructor(key) {
     super({ key });
+    this.canetaEscrevendo;
   }
 
   // Método para carregar recursos específicos de cada cena
@@ -350,10 +364,23 @@ class BaseTributacaoScene extends Phaser.Scene {
         "src/assets/dia2/miniGame4/bloquinho4Card4.png"
       );
     }
+    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
+    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
+    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
+    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
+    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
+    this.load.audio("canetaEscrevendo", "src/assets/sounds/scratchPencil.mp3")
   }
 
   // Método para criar e configurar a cena
   create() {
+    lousaDesligada = false;
+
+
+    this.canetaEscrevendo = this.sound.add("canetaEscrevendo");
+    this.canetaEscrevendo.setLoop(true);
+
+
     // Adiciona o fundo da cena
     const bg = this.add.image(0, 0, "backgroundMinigame4").setOrigin(0, 0);
     bg.displayWidth = this.sys.game.config.width;
@@ -410,11 +437,15 @@ class BaseTributacaoScene extends Phaser.Scene {
         novaLinha.lineStyle(this.espessuraDesenho, this.corDesenho);
         novaLinha.moveTo(pointer.x, pointer.y);
         this.linhasDesenhadas.push(novaLinha);
+        if(!lousaDesligada){
+        this.canetaEscrevendo.play();
+        }
       }
     });
 
     this.input.on("pointerup", () => {
       this.desenhoAtivo = false;
+      this.canetaEscrevendo.stop();
     });
 
     this.input.on("pointermove", (pointer) => {
@@ -654,8 +685,10 @@ class BaseTributacaoScene extends Phaser.Scene {
         this.sound.play("clique"); // Toca o som de clique
         if (index + 1 === respostaCorreta) {
           pontuacao += 100;
+          this.sound.play("somAcerto", { volume: 2});
         } else {
           pontuacao -= 50;
+          this.sound.play("somErro", {volume: 2});
         }
         // Indisponibiliza o card correspondente
         cardsDisponiveis[cardIndex] = false;
@@ -671,6 +704,8 @@ class BaseTributacaoScene extends Phaser.Scene {
     // Animação de transição (fade-out)
     this.cameras.main.fadeOut(500, 0, 0, 0, (camera, progress) => {
       if (progress === 1) {
+        lousaDesligada = true;
+        this.canetaEscrevendo.stop();
         this.scene.start(cena, data);
       }
     });
@@ -708,8 +743,14 @@ class fimMinigame4 extends Phaser.Scene {
     super({ key: "fimMinigame4" });
   }
 
+  preload(){
+    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
+  }
+
   // Método para criar a cena de finalização
   create() {
+    this.sound.play("conclusao");
+    musicaMinigame4.stop();
     this.cameras.main.setBackgroundColor("#195A4B");
     this.add
       .text(400, 250, "Você finalizou o minigame!", {
@@ -738,6 +779,7 @@ class fimMinigame4 extends Phaser.Scene {
     botaoVoltar.on("pointerdown", () => {
       minigame4Jogado = true;
       this.scene.wake("hub2"); //Se você clicar no botão Voltar, você volta pra hub do jogo
+      musicaHub2.resume(); // A música da hub volta a tocar
       this.scene.stop("fimMinigame4");
     });
   }

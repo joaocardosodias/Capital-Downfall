@@ -29,6 +29,8 @@ class apoioMinigame5 extends Phaser.Scene {
     // Carrega as telas e os botões utilizados
     this.tutorialCtrlMinigame5 = this.add.image(400, 300, "tutorialCtrlMinigame5");
 
+    musicaHub2.pause();
+
     this.apoioMinigame5 = this.add
       .image(400, 300, "apoioMinigame5")
       .setVisible(false);

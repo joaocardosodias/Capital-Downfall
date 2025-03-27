@@ -7,6 +7,8 @@ class miniGame6 extends Phaser.Scene {
     this.botaoReprovado = null;
     this.placarTexto = null;
     this.clickSound = null; // Som de clique
+    this.somFundo;
+
   }
 
   preload() {
@@ -29,10 +31,18 @@ class miniGame6 extends Phaser.Scene {
     this.load.image("bruna", "src/assets/dia2/miniGame6/imagem10game6.png");
 
     // Carrega o som de clique
-    this.load.audio("click", ["src/assets/dia2/miniGame4/click.mp3"]);
+    this.load.audio("click", "src/assets/sounds/clique.mp3");
+    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
+    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
+    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
+    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
   }
 
   create() {
+    
+    this.somFundo = this.sound.add("somFundo", { loop: true });
+    this.somFundo.play();
+
     this.cameras.main.setBackgroundColor("#195A4B"); //Define a cor do plano de fundo
 
     //Coloca as imagens em um array, definindo uma key para cada um dos cards. Além disso, define a pontuação de cada resposta
@@ -119,6 +129,13 @@ class miniGame6 extends Phaser.Scene {
     //Adiciona a pontuação conforme o resultado passado para o método.
     pontuacao += pontos;
 
+    if(pontos<0){
+      this.sound.play("somErro");
+    }
+    else{
+      this.sound.play("somAcerto");
+    }
+
     this.placarTexto.setText(`Pontuação: ${pontuacao}`); //Atualiza o placar
 
     //Inicia o método para exibir a próxima imagem
@@ -130,6 +147,9 @@ class miniGame6 extends Phaser.Scene {
     this.imagemAtual.destroy();
     this.botaoAprovado.destroy();
     this.botaoReprovado.destroy();
+
+    this.somFundo.stop(); // Para a música de fundo
+    this.sound.play("conclusao");
 
     //Adiciona o te xto de resultado
     this.add
@@ -158,6 +178,7 @@ class miniGame6 extends Phaser.Scene {
     botaoVoltar.on("pointerdown", () => {
       this.clickSound.play(); // Reproduz o som de clique
       minigame6Jogado = true;
+      musicaHub2.resume();
       this.scene.wake("hub2"); //Se você clicar no botão Voltar, você volta pra hub do jogo
       this.scene.stop("miniGame6");
     });

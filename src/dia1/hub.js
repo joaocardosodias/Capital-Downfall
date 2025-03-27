@@ -269,10 +269,11 @@ class hub extends Phaser.Scene {
     this.physics.add.overlap(this.player, this.colisaoMinigame1, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
-        this.interacaoMinigame.play();
+
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame1Jogado == false) {
           this.avisoMinigame1.setVisible(false);
+          this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 1;
           game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
@@ -284,10 +285,10 @@ class hub extends Phaser.Scene {
     this.physics.add.overlap(this.player, this.colisaoMinigame2, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
-        this.interacaoMinigame.play();
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame2Jogado == false) {
           this.avisoMinigame2.setVisible(false);
+          this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 2;
           game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
@@ -299,10 +300,10 @@ class hub extends Phaser.Scene {
     this.physics.add.overlap(this.player, this.colisaoMinigame3, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
-        this.interacaoMinigame.play();
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame3Jogado == false) {
           this.avisoMinigame3.setVisible(false);
+          this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 3;
           game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
