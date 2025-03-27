@@ -2,6 +2,7 @@ class contratoInicial extends Phaser.Scene {
 
     constructor() {
         super("contratoInicial");
+        this.somAdiante;
         // Armazena a página atual do tutorial
         this.paginaAtiva = 0;
         // Arrays com os tutoriais de cada minigame
@@ -27,9 +28,14 @@ Confiamos em você...`
         
         // Carrega o som de clique
         this.load.audio('clique', 'src/assets/dia2/miniGame4/sons/clique.mp3');
+        this.load.audio("somAdiante", "src/assets/sounds/clique.mp3");
     }
 
     create() {
+      
+        // Configura o som de troca de cenas
+        this.somAdiante = this.sound.add("somAdiante");
+      
         // Configura o fundo
         this.imailFundo = this.add.image(400, 300, "imailFundo");
 
@@ -116,6 +122,8 @@ Confiamos em você...`
         if (this.paginaAtiva === this.texto.length) {
             this.paginaAtiva = 0;
             this.textoTutorial.setText(this.texto[0]);
+            this.somAdiante.play();
+            musicaIntro.stop();
                 game.scene.start("selecaoPersonagens");
             game.scene.stop("contratoInicial");
         }

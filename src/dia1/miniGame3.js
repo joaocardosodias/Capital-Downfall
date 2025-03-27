@@ -1,5 +1,4 @@
 class miniGame3 extends Phaser.Scene {
-
     constructor() {
         super({ key: 'miniGame3' });
 
@@ -13,6 +12,7 @@ class miniGame3 extends Phaser.Scene {
         this.cardsSuperiores = [];
         this.cardsInferiores = [];
         this.imagensCards = ['3card1', '3card2', '3card3', '3card4', '3card5']; // Ordem original dos cards
+        this.somFundo;
     }
 
     preload() {
@@ -24,13 +24,19 @@ class miniGame3 extends Phaser.Scene {
         this.load.image('3card4', 'src/assets/dia1/miniGame3/card4.png');
         this.load.image('3card5', 'src/assets/dia1/miniGame3/card5.png');
 
-        // Carrega o som de clique
-        this.load.audio('clique', 'src/assets//dia2/miniGame4/sons/clique.mp3');
+        // Carrega os sons utilizados
+        this.load.audio("clique", "src/assets//dia2/miniGame4/sons/clique.mp3");
+        this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
+        this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
+        this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
     }
 
     create() {
         this.cameras.main.setBackgroundColor('#195AB4');
 
+        this.somFundo = this.sound.add("somFundo", { loop: true });
+        this.somFundo.play();
+      
         // Embaralha a ordem dos cards
         this.embaralharArray(this.imagensCards);
 
@@ -76,7 +82,7 @@ class miniGame3 extends Phaser.Scene {
             this.input.setDraggable(card);
             this.cardsSuperiores.push(card);
         }
-
+      
         // Criar os espaços inferiores manualmente
         espacosInferiores.forEach((espaco, index) => {
             let area = this.add.rectangle(espaco.x, espaco.y, tamanhoCard, tamanhoCard, 0xffffff)
@@ -106,6 +112,8 @@ class miniGame3 extends Phaser.Scene {
             // Calcula a pontuação
             let { acertos, erros } = this.contaErros();
             pontuacao += (acertos * 100) - (erros * 50);
+          
+            this.somFundo.stop();
 
             // Avança para a cena de resultado com a pontuação
             this.scene.start('fimDoMinigame3', {
@@ -117,7 +125,7 @@ class miniGame3 extends Phaser.Scene {
         // Evento de arrastar
         this.input.on('dragstart', (pointer, gameObject) => {
             if (this.cardsSuperiores.includes(gameObject)) {
-                this.sound.play('clique'); // Reproduz o som de clique ao começar a arrastar
+                this.sound.play("somMovimento"); // Reproduz o som de movimento ao começar a arrastar
             }
         });
 
@@ -200,57 +208,59 @@ class miniGame3 extends Phaser.Scene {
                             }
                             gameObject.setData('moved', false);
                             this.verificaEncaixes();
+                            }
+                          });
                         }
+                      }
                     });
-                }
-            }
-        });
-    }
+                  }
 
     // Função para embaralhar um array
     embaralharArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]]; // Troca os elementos
-        }
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Troca os elementos
+      }
     }
 
     // Função para verificar se todos os cards foram encaixados
     verificaEncaixes() {
-        let totalEncaixados = [...this.posicoesOcupadas.values()].filter(Boolean).length;
-        this.botaoVerificar.setVisible(totalEncaixados === 5);
+      let totalEncaixados = [...this.posicoesOcupadas.values()].filter(
+        Boolean
+      ).length;
+      this.botaoVerificar.setVisible(totalEncaixados === 5);
 
-        if (totalEncaixados === 5) {
-            this.textoCentral.setVisible(false);
-        }
+      if (totalEncaixados === 5) {
+        this.textoCentral.setVisible(false);
+      }
     }
 
     // Função para calcular acertos e erros
     contaErros() {
-        let ordemAtual = [];
-        this.cardsInferiores.forEach((espaco) => {
-            let card = this.posicoesOcupadas.get(espaco);
-            if (card) {
-                ordemAtual.push(card.texture.key); // Adiciona a chave do card à ordem atual
-            } else {
-                ordemAtual.push(null); // Se o espaço estiver vazio, adiciona null
-            }
-        });
+      let ordemAtual = [];
+      this.cardsInferiores.forEach((espaco) => {
+        let card = this.posicoesOcupadas.get(espaco);
+        if (card) {
+          ordemAtual.push(card.texture.key); // Adiciona a chave do card à ordem atual
+        } else {
+          ordemAtual.push(null); // Se o espaço estiver vazio, adiciona null
+        }
+      });
 
-        let acertos = 0;
-        let erros = 0;
+      let acertos = 0;
+      let erros = 0;
 
-        ordemAtual.forEach((card, index) => {
-            if (card === this.ordemCorreta[index]) {
-                acertos++;
-            } else if (card !== null) {
-                erros++;
-            }
-        });
+      ordemAtual.forEach((card, index) => {
+        if (card === this.ordemCorreta[index]) {
+          acertos++;
+        } else if (card !== null) {
+          erros++;
+        }
+      });
 
-        return { acertos, erros };
+      return { acertos, erros };
     }
-}
+  }
 
 class fimDoMinigame3 extends Phaser.Scene {
     constructor() {
@@ -260,8 +270,14 @@ class fimDoMinigame3 extends Phaser.Scene {
     init(data) {
         pontuacao = data.pontuacao; // Recebe a pontuação da cena anterior
     }
+  
+    preload(){
+      this.load.audio("clique", "src/assets/sounds/clique.mp3");
+      this.load.audio("somConclusao", "src/assets/sounds/taskSucess.mp3");
+    }
 
     create() {
+        this.sound.play("somConclusao"); // Reproduz o som de conclusão
         this.cameras.main.setBackgroundColor('#324891');
 
         // Exibe o texto de resultado
@@ -280,6 +296,7 @@ class fimDoMinigame3 extends Phaser.Scene {
             this.sound.play('clique'); // Reproduz o som de clique
             minigame3Jogado = true;
             this.scene.wake('hub');
+            musicaHub.resume();
             this.scene.stop('fimDoMinigame3');
         });
     }

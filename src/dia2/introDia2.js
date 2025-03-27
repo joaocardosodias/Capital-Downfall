@@ -26,12 +26,17 @@ Boa sorte!`
         this.load.image("selecaoDesistir", "src/assets/materiais_apoio/selecaoDesistir.png");
         
         // Carrega o som de clique
-        this.load.audio('clique', 'src/assets/dia2/miniGame4/sons/clique.mp3');
+        this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
+        this.load.audio("clique", "src/assets/sounds/clique.mp3");
     }
 
     create() {
         // Configura o fundo
         this.imailFundo = this.add.image(400, 300, "imailFundo");
+      
+        // Configura o som de fundo
+        this.somFundo = this.sound.add("somFundo", { loop: true });
+        this.somFundo.play();
 
         // Adiciona o texto do tutorial
         this.textoTutorial = this.add.text(185, 95, this.texto[this.paginaAtiva], {
@@ -115,6 +120,7 @@ Boa sorte!`
         // Inicia o minigame ao clicar em "começar"
         if (this.paginaAtiva === this.texto.length) {
             this.paginaAtiva = 0;
+            this.somFundo.stop();
             this.textoTutorial.setText(this.texto[0]);
             game.scene.start("hub2");
             game.scene.stop("introDia2");
@@ -143,3 +149,4 @@ Boa sorte!`
         });
     }
 }
+

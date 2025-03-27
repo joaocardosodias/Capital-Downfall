@@ -29,6 +29,9 @@ class miniGame5 extends Phaser.Scene {
     this.animationCompleteCount = 0;
     // Flag para controlar animação de conexão
     this.connectionAnimationInProgress = false;
+    this.somFundo;
+    this.somAcerto;
+    this.somErro;
   }
 
   // Pré-carrega todos os assets do jogo
@@ -51,13 +54,22 @@ class miniGame5 extends Phaser.Scene {
     this.load.image("background", "src/assets/dia2/miniGame5/background.png");
     this.load.image("arrow", "src/assets/dia2/miniGame5/arrow.png");
     this.load.image("enunciado", "src/assets/dia2/miniGame5/enunciado.png");
-    this.load.audio("click", ["src/assets/dia2/miniGame5/click.mp3"]);
+    this.load.audio("click", "src/assets/dia2/miniGame5/click.mp3");
+    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
+    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
+    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
   }
 
   // Cria todos os elementos do jogo
   create() {
     // Adiciona o background centralizado e escalado
     this.add.image(400, 300, "background").setOrigin(0.5, 0.5).setScale(8);
+    this.somFundo = this.sound.add("somFundo", { loop: true });
+    this.somFundo.play();
+
+    this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
+    this.somErro = this.sound.add("somErro", { volume: 2 });
+
 
     // Adiciona o enunciado na parte superior
     this.enunciadoImage = this.add.image(400, 50, "enunciado")
@@ -254,10 +266,13 @@ class miniGame5 extends Phaser.Scene {
       // Lógica de pontuação
       if (matchedDefinition.getData("sigla") === this.draggingStart.getData("sigla")) {
         pontuacao += 100;
+        this.somAcerto.play();
         this.scoreText.setText(`Pontuação: ${pontuacao}`);
         this.showScoreAnimation(scene, "+100", 0x00ff00); // Feedback verde
-      } else {
+      } 
+      else {
         pontuacao -= 50;
+        this.somErro.play();
         this.scoreText.setText(`Pontuação: ${pontuacao}`);
         this.showScoreAnimation(scene, "-50", 0xff0000); // Feedback vermelho
       }
@@ -362,6 +377,7 @@ class miniGame5 extends Phaser.Scene {
     this.arrow.setScale(0.3);
     // Configura clique na seta para avançar
     this.arrow.on("pointerdown", () => {
+      this.somFundo.stop();
       this.clickSound.play();
       scene.scene.start("fimMinigame5");
     });
@@ -377,7 +393,9 @@ class miniGame5 extends Phaser.Scene {
     });
   }
 
-  update() {}
+  update() {
+
+  }
 }
 
 // Cena que mostra a pontuação final
@@ -385,11 +403,13 @@ class fimMinigame5 extends Phaser.Scene {
   constructor() {
     super("fimMinigame5");
     this.clickSound = null;
+    this.somCorrect;
   }
   
   // Pré-carrega assets
   preload() {
-    this.load.audio("click", ["src/assets/dia2/miniGame5/click.mp3"]);
+    this.load.audio("click", "src/assets/dia2/miniGame5/click.mp3");
+    this.load.audio("correct", "src/assets/sounds/taskSucess.mp3");
   }
 
   // Cria elementos da cena final
@@ -397,6 +417,8 @@ class fimMinigame5 extends Phaser.Scene {
     // Configura background
     this.add.image(400, 300, "background").setOrigin(0.5, 0.5).setScale(8);
     this.clickSound = this.sound.add("click");
+    this.somCorrect = this.sound.add("correct");
+    this.somCorrect.play();
 
     // Mostra pontuação final
     this.add.text(400, 300, `Pontuação Final: ${pontuacao}`, {
@@ -415,6 +437,7 @@ class fimMinigame5 extends Phaser.Scene {
     // Configura clique no botão
     botaoVoltar.on("pointerdown", () => {
       this.clickSound.play();
+      musicaHub2.resume();
       minigame5Jogado = true;
       this.scene.wake("hub2");
       this.scene.stop("fimMinigame5");
