@@ -23,7 +23,11 @@ class selecaoPersonagens extends Phaser.Scene {
 
         this.add.image(400, 300, 'fundo').setDepth(-1);
 
-        this.texto = this.add.text(100, 100, 'confiamos em você, ...uhh', { fontSize: '35px', fill: '#ffffff' });
+        this.texto = this.add.text(100, 90, 'confiamos em você, ...uhh', {
+            fontFamily: "pixelArt",
+            color: '#ffffff',
+            fontSize: '24px',
+        });
 
         for (let i=1; i<5; i++){
         this.add.rectangle(160*i, 300, 140, 300, 0xffffff).setAlpha(0.25)

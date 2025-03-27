@@ -57,6 +57,8 @@ class miniGame2 extends Phaser.Scene {
       }
     }
 
+    this.load.image("selecaoM2", "src/assets/dia1/miniGame2/selecao.png")
+
     this.load.image("carimboV", "src/assets/dia1/miniGame2/carimboV.png");
     this.load.image("carimboF", "src/assets/dia1/miniGame2/carimboF.png");
 
@@ -123,6 +125,8 @@ class miniGame2 extends Phaser.Scene {
       })
       .setDepth(15);
 
+    this.selecaoM2 = this.add.image(0, 0, "selecaoM2").setDepth(10).setVisible(false);
+
     // Criação dos botões
     miniGame2.botao1 = this.add
       .image(400, 500, "botao1-" + perfis[miniGame2.perfilIndex].pergunta)
@@ -153,77 +157,37 @@ class miniGame2 extends Phaser.Scene {
       .setOrigin(0, 0);
 
     // Animação de aumento ao passar o mouse sobre os botões
+    if (!miniGame2.respostaEmAndamento) {
     miniGame2.botao1.on('pointerover', () => {
-      this.tweens.add({
-        targets: miniGame2.botao1,
-        scale: 1.05, // Aumenta o tamanho do botão em 5%
-        duration: 300, // Duração da animação em milissegundos
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(332, 453).setVisible(true).setDepth(100);
     });
-
     miniGame2.botao1.on('pointerout', () => {
-      this.tweens.add({
-        targets: miniGame2.botao1,
-        scale: 1, // Retorna ao tamanho original
-        duration: 100,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(0, 0).setVisible(false);
     });
 
     miniGame2.botao2.on('pointerover', () => {
-      this.tweens.add({
-        targets: miniGame2.botao2,
-        scale: 1.05,
-        duration: 300,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(468, 453).setVisible(true).setDepth(100);
     });
-
     miniGame2.botao2.on('pointerout', () => {
-      this.tweens.add({
-        targets: miniGame2.botao2,
-        scale: 1,
-        duration: 300,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(0, 0).setVisible(false);
     });
 
     miniGame2.botao3.on('pointerover', () => {
-      this.tweens.add({
-        targets: miniGame2.botao3,
-        scale: 1.05,
-        duration: 300,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(332, 539).setVisible(true).setDepth(100);
     });
-
     miniGame2.botao3.on('pointerout', () => {
-      this.tweens.add({
-        targets: miniGame2.botao3,
-        scale: 1,
-        duration: 300,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(0, 0).setVisible(false);
     });
 
     miniGame2.botao4.on('pointerover', () => {
-      this.tweens.add({
-        targets: miniGame2.botao4,
-        scale: 1.05,
-        duration: 300,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(468, 539).setVisible(true).setDepth(100);
     });
-
     miniGame2.botao4.on('pointerout', () => {
-      this.tweens.add({
-        targets: miniGame2.botao4,
-        scale: 1,
-        duration: 300,
-        ease: 'Power2'
-      });
+      this.selecaoM2.setPosition(0, 0).setVisible(false);
     });
+   } else {
+    this.selecaoM2.setVisible(false);
+   }
 
     // Eventos de clique nos botões
     miniGame2.botao1.on("pointerdown", () => {
@@ -427,5 +391,40 @@ class miniGame2 extends Phaser.Scene {
         },
       });
     }
+  }
+
+  update() {
+    // Animação ao passar o mouse sobre os botões
+    if (!miniGame2.respostaEmAndamento) {
+      miniGame2.botao1.on('pointerover', () => {
+        this.selecaoM2.setPosition(332, 453).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao1.on('pointerout', () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
+  
+      miniGame2.botao2.on('pointerover', () => {
+        this.selecaoM2.setPosition(468, 453).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao2.on('pointerout', () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
+  
+      miniGame2.botao3.on('pointerover', () => {
+        this.selecaoM2.setPosition(332, 539).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao3.on('pointerout', () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
+  
+      miniGame2.botao4.on('pointerover', () => {
+        this.selecaoM2.setPosition(468, 539).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao4.on('pointerout', () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
+     } else {
+      this.selecaoM2.setVisible(false);
+     }
   }
 }

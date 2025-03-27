@@ -110,7 +110,8 @@ class hub2 extends Phaser.Scene
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame4Jogado == false) {
           this.avisoMinigame4.setVisible(false);
-          game.scene.start('apoioMinigame4');
+          this.minigameAtual = 4;
+          game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
           game.scene.sleep('hub2');
         }
       }
@@ -122,7 +123,8 @@ class hub2 extends Phaser.Scene
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame5Jogado == false) {
           this.avisoMinigame5.setVisible(false);
-          game.scene.start('apoioMinigame5');
+          this.minigameAtual = 5;
+          game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
           game.scene.sleep('hub2');
         }
       }
@@ -134,7 +136,8 @@ class hub2 extends Phaser.Scene
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame6Jogado == false) {
           this.avisoMinigame6.setVisible(false);
-          game.scene.start('apoioMinigame6');
+          this.minigameAtual = 6;
+          game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
           this.scene.sleep('hub2');
         }
       }

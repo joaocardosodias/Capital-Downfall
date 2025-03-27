@@ -165,7 +165,7 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
     preload() {
         //Preload dos assets
 
-        this.load.image("imailFundoGeral", "src/assets/materiais_apoio/imailFundoGeral.png");
+        this.load.image("imailFundoGeral", "src/assets/materiais_apoio/SlickGeral.png");
 
         for (let i = 1; i <= 6; i++) {
             this.load.image("botaoMinigame" + i, "src/assets/materiais_apoio/botaoMinigame" + i + ".png");
@@ -179,6 +179,9 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
         this.load.image("botaoAnterior", "src/assets/materiais_apoio/botaoAnterior.png");
 
         this.load.image("botaoDesistir", "src/assets/materiais_apoio/botaoDesistir.png");
+
+        this.load.image("selecao", "src/assets/materiais_apoio/selecao.png");
+        this.load.image("selecaoDesistir", "src/assets/materiais_apoio/selecaoDesistir.png");
     }
 
     create() {
@@ -189,7 +192,7 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
 
         this.textoApoio = this.add.text(185, 95, this['apoioMinigame' + this.apoioEscolhido][this.paginaAtiva], {
             fontFamily: "pixelArt",
-            color: 0x324891
+            color: '#324891'
         }).setWordWrapWidth(600);
 
         // Caso haja apenas um tutorial, começar com botaoComecar
@@ -309,6 +312,31 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
                 game.scene.wake("hubFinal");
             }
             game.scene.stop("apoioGeral");
+        });
+
+        // Adição do efeito de pointer over nos botões
+        this.selecao = this.add.image(0, 0, 'selecao').setVisible(false).setDepth(100);
+        this.selecaoDesistir = this.add.image(0, 0, 'selecaoDesistir').setVisible(false).setDepth(100);
+
+        this.botaoProximo.on('pointerover', () => {
+            this.selecao.setPosition(660, 555).setVisible(true);
+        });
+        this.botaoProximo.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoAnterior.on('pointerover', () => {
+            this.selecao.setPosition(300, 555).setVisible(true);
+        });
+        this.botaoAnterior.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoDesistir.on('pointerover', () => {
+            this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+        });
+        this.botaoDesistir.on('pointerout', () => {
+            this.selecaoDesistir.setPosition(0, 0).setVisible(false);
         });
 
         console.log(this.diaAtual)

@@ -54,7 +54,7 @@ class miniGame1 extends Phaser.Scene {
         this.cards = cards;
 
         // Fundo
-        this.add.rectangle(400, 300, 800, 600, 0x9999ff).setDepth(-10);
+        this.add.rectangle(400, 300, 800, 600, 0x243572).setDepth(-10);
 
         // Criação do primeiro card e feedback
         miniGame1.card1 = this.add.image(400, -500, cards[miniGame1.cardIndex].nome).setScale(1).setDepth(0);

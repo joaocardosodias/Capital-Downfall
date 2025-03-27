@@ -135,12 +135,14 @@ Boa sorte!`
 
     preload() {
         // Carrega os assets necessários
-        this.load.image("imailFundo", "src/assets/materiais_apoio/imailFundo.png");
-        this.load.image("imailFundoCelebracao", "src/assets/materiais_apoio/imailFundoCelebracao.png");
+        this.load.image("imailFundo", "src/assets/materiais_apoio/Slick.png");
+        this.load.image("imailFundoCelebracao", "src/assets/materiais_apoio/SlickCelebracao.png");
         this.load.image("botaoProximo", "src/assets/materiais_apoio/botaoProximo.png");
         this.load.image("botaoAnterior", "src/assets/materiais_apoio/botaoAnterior.png");
         this.load.image("botaoDesistir", "src/assets/materiais_apoio/botaoDesistir.png");
         this.load.image("botaoComecar", "src/assets/materiais_apoio/botaoComecar.png");
+        this.load.image("selecao", "src/assets/materiais_apoio/selecao.png");
+        this.load.image("selecaoDesistir", "src/assets/materiais_apoio/selecaoDesistir.png");
         
         // Carrega o som de clique
         this.load.audio('clique', 'src/assets/dia2/miniGame4/sons/clique.mp3');
@@ -157,7 +159,7 @@ Boa sorte!`
         // Adiciona o texto do tutorial
         this.textoTutorial = this.add.text(185, 95, this['tutoriaisMinigame' + this.minigameAtual][this.paginaAtiva], {
             fontFamily: "pixelArt",
-            color: 0x324891
+            color: '#324891'
         }).setWordWrapWidth(600);
 
         // Configura os botões
@@ -206,6 +208,31 @@ Boa sorte!`
             game.scene.wake("hub");
             game.scene.stop("apoioDia1");
         });
+
+        // Adição do efeito de pointer over nos botões
+        this.selecao = this.add.image(0, 0, 'selecao').setVisible(false).setDepth(100);
+        this.selecaoDesistir = this.add.image(0, 0, 'selecaoDesistir').setVisible(false).setDepth(100);
+
+        this.botaoProximo.on('pointerover', () => {
+            this.selecao.setPosition(660, 555).setVisible(true);
+        });
+        this.botaoProximo.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoAnterior.on('pointerover', () => {
+            this.selecao.setPosition(300, 555).setVisible(true);
+        });
+        this.botaoAnterior.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoDesistir.on('pointerover', () => {
+            this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+        });
+        this.botaoDesistir.on('pointerout', () => {
+            this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+        });
     }
 
     // Atualiza o texto do tutorial e os botões
@@ -242,7 +269,7 @@ Boa sorte!`
     // Animação de fade-out
     fadeOut(callback) {
         this.tweens.add({
-            targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior],
+            targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior, this.selecao, this.selecaoDesistir],
             alpha: 0,
             duration: 500,
             onComplete: callback
@@ -252,7 +279,7 @@ Boa sorte!`
     // Animação de fade-in
     fadeIn() {
         this.tweens.add({
-            targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior],
+            targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior, this.selecao, this.selecaoDesistir],
             alpha: 1,
             duration: 500,
             onComplete: () => {

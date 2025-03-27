@@ -36,14 +36,14 @@ class miniGame3 extends Phaser.Scene {
 
         // Configurações manuais dos espaços inferiores
         const espacosInferiores = [
-            { nome: 'espacoInferior1', x: 78, y: 420 }, // Posição do espaço 1
-            { nome: 'espacoInferior2', x: 239, y: 420 }, // Posição do espaço 2
-            { nome: 'espacoInferior3', x: 400, y: 420 }, // Posição do espaço 3
-            { nome: 'espacoInferior4', x: 561, y: 420 }, // Posição do espaço 4
-            { nome: 'espacoInferior5', x: 720, y: 420 }  // Posição do espaço 5
+            { nome: 'espacoInferior1', x: 100, y: 460 }, // Posição do espaço 1
+            { nome: 'espacoInferior2', x: 250, y: 460 }, // Posição do espaço 2
+            { nome: 'espacoInferior3', x: 400, y: 460 }, // Posição do espaço 3
+            { nome: 'espacoInferior4', x: 550, y: 460 }, // Posição do espaço 4
+            { nome: 'espacoInferior5', x: 700, y: 460 }  // Posição do espaço 5
         ];
 
-        let tamanhoCard = 100; // Tamanho dos espaços
+        let tamanhoCard = 140; // Tamanho dos espaços
         let yTopo = 250; // Posição vertical dos cards superiores
 
         this.input.setTopOnly(false);
@@ -62,11 +62,11 @@ class miniGame3 extends Phaser.Scene {
 
         // Criar os cards superiores
         for (let i = 0; i < 5; i++) {
-            let card = this.add.image((i + 1) * (this.larguraJogo / 6), yTopo, this.imagensCards[i])
+            let card = this.add.image((i + 1) * (this.larguraJogo / 6) + Phaser.Math.Between(-30, 30), yTopo + Phaser.Math.Between(-30, 30), this.imagensCards[i])
                 .setOrigin(0.5)
                 .setInteractive()
                 .setDepth(2) // Cards superiores com depth maior (ficam por cima)
-                .setScale(0.6);
+                .setScale(1);
 
             // Salva a posição original do card
             card.setData('posicaoOriginal', { x: card.x, y: card.y });
@@ -89,8 +89,8 @@ class miniGame3 extends Phaser.Scene {
         });
 
         // Adicionar o background (timeline)
-        let timeline = this.add.image(this.larguraJogo / 2, this.alturaJogo * 0.7, 'timeline')
-            .setScale(1.06, 1.4)
+        let timeline = this.add.image(this.larguraJogo / 2, this.alturaJogo / 2, 'timeline')
+            .setScale(1)
             .setDepth(1); // Timeline com depth intermediário
 
         // Botão de verificação (inicialmente invisível)
@@ -146,8 +146,6 @@ class miniGame3 extends Phaser.Scene {
                             targets: gameObject,
                             x: espacoEncontrado.x,
                             y: espacoEncontrado.y,
-                            scaleX: 1.1, // Aumenta a escala horizontal
-                            scaleY: 1.4, // Aumenta a escala vertical
                             duration: 200,
                             ease: 'Power2',
                             onComplete: () => {
@@ -171,8 +169,6 @@ class miniGame3 extends Phaser.Scene {
                             targets: gameObject,
                             x: gameObject.getData('posicaoOriginal').x,
                             y: gameObject.getData('posicaoOriginal').y,
-                            scaleX: 0.6, // Restaura a escala original
-                            scaleY: 0.6,
                             duration: 200,
                             ease: 'Power2',
                             onComplete: () => {
@@ -192,10 +188,6 @@ class miniGame3 extends Phaser.Scene {
                     // Se o card não foi solto em um espaço válido, retorna para a posição original (diminui a escala)
                     this.tweens.add({
                         targets: gameObject,
-                        x: gameObject.getData('posicaoOriginal').x,
-                        y: gameObject.getData('posicaoOriginal').y,
-                        scaleX: 0.6, // Restaura a escala original
-                        scaleY: 0.6,
                         duration: 200,
                         ease: 'Power2',
                         onComplete: () => {
@@ -270,7 +262,7 @@ class fimDoMinigame3 extends Phaser.Scene {
     }
 
     create() {
-        this.cameras.main.setBackgroundColor('#195A4B');
+        this.cameras.main.setBackgroundColor('#324891');
 
         // Exibe o texto de resultado
         this.add.text(400, 200, 'Resultado', { fontSize: '40px', fill: '#fff' }).setOrigin(0.5);
