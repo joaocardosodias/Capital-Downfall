@@ -1,6 +1,5 @@
 let cardsDisponiveis = [true, true, true, true]; // true = disponível, false = indisponível
 let lousaDesligada = false;
-let musicaMinigame4;
 
 // Classe principal da cena inicial do jogo
 class miniGame4 extends Phaser.Scene {
@@ -46,17 +45,6 @@ class miniGame4 extends Phaser.Scene {
 
     // Adiciona a imagem do enunciado na cena
     this.add.image(400, 100, "enunciadoMinigame4").setScale(2);
-
-    musicaMinigame4 = this.sound.add("somFundo", { volume: 1 });
-    musicaMinigame4.setLoop(true);
-
-    // NOTA: A música de fundo do minigame 4 não está funcionando corretamente. Uma solução seria colocar a música para tocar, por meio de uma variável global, logo antes do material de apoio abrir a cena.
-    // Não implementei essa solução pois o material de apoio do dia 2 ainda será alterado.
-
-    //if (!musicaTocadaMinigame4) {
-    // musicaMinigame4.play();
-    // musicaTocadaMinigame4 = true;
-    //}
 
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacao}`, {

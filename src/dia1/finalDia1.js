@@ -8,6 +8,7 @@ class finalDia1 extends Phaser.Scene {
     this.botaoGameOver;
     this.somAcerto;
     this.somErro;
+    this.clique;
   }
   preload() {
     this.load.image(
@@ -27,10 +28,12 @@ class finalDia1 extends Phaser.Scene {
 
     this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
     this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
+    this.load.audio("clique", "src/assets/sounds/clique.mp3");
   }
   create() {
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
     this.somErro = this.sound.add("somErro", { volume: 2 });
+    this.clique = this.sound.add("clique");
 
     // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
     // Futuramente, essa seção também redirecionará para o gameOver, além do dia 2
@@ -66,6 +69,7 @@ class finalDia1 extends Phaser.Scene {
         .image(100, 75, "continuar")
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
+        this.clique.start();
         this.scene.stop("finalDia1");
         this.scene.start("introDia2");
       });
