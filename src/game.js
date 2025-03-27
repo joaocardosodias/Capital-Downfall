@@ -38,7 +38,7 @@ const config = {
     tributacaoScene3,
     tributacaoScene4,
     fimMinigame4,
-    miniGame5,  
+    miniGame5,
     fimMinigame5,
     miniGame6,
     apoioMinigame4,
@@ -50,12 +50,18 @@ const config = {
   ],
 };
 //Adicionando a fonte customizada que será utilizada ao redor do jogo
-const fontePixelArt = new FontFace('pixelArt', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArt.load()
+const fontePixelArt = new FontFace(
+  "pixelArt",
+  "url(src/assets/fontes/fontePixelArt.ttf)"
+);
+fontePixelArt.load();
 document.fonts.add(fontePixelArt);
 
-const fontePixelArtNegrito = new FontFace('pixelArtNegrito', 'url(src/assets/fontes/fontePixelArt.ttf)');
-fontePixelArtNegrito.load()
+const fontePixelArtNegrito = new FontFace(
+  "pixelArtNegrito",
+  "url(src/assets/fontes/fontePixelArt.ttf)"
+);
+fontePixelArtNegrito.load();
 document.fonts.add(fontePixelArtNegrito);
 
 const game = new Phaser.Game(config);

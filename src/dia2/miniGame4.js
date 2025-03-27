@@ -48,8 +48,15 @@ class miniGame4 extends Phaser.Scene {
     this.add.image(400, 100, "enunciadoMinigame4").setScale(2);
 
     musicaMinigame4 = this.sound.add("somFundo", { volume: 1 });
-    musicaMinigame4.setLoop(true); 
-    musicaMinigame4.play();
+    musicaMinigame4.setLoop(true);
+
+    // NOTA: A música de fundo do minigame 4 não está funcionando corretamente. Uma solução seria colocar a música para tocar, por meio de uma variável global, logo antes do material de apoio abrir a cena.
+    // Não implementei essa solução pois o material de apoio do dia 2 ainda será alterado.
+
+    //if (!musicaTocadaMinigame4) {
+    // musicaMinigame4.play();
+    // musicaTocadaMinigame4 = true;
+    //}
 
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacao}`, {
@@ -369,17 +376,15 @@ class BaseTributacaoScene extends Phaser.Scene {
     this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
     this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("canetaEscrevendo", "src/assets/sounds/scratchPencil.mp3")
+    this.load.audio("canetaEscrevendo", "src/assets/sounds/scratchPencil.mp3");
   }
 
   // Método para criar e configurar a cena
   create() {
     lousaDesligada = false;
 
-
     this.canetaEscrevendo = this.sound.add("canetaEscrevendo");
     this.canetaEscrevendo.setLoop(true);
-
 
     // Adiciona o fundo da cena
     const bg = this.add.image(0, 0, "backgroundMinigame4").setOrigin(0, 0);
@@ -437,8 +442,8 @@ class BaseTributacaoScene extends Phaser.Scene {
         novaLinha.lineStyle(this.espessuraDesenho, this.corDesenho);
         novaLinha.moveTo(pointer.x, pointer.y);
         this.linhasDesenhadas.push(novaLinha);
-        if(!lousaDesligada){
-        this.canetaEscrevendo.play();
+        if (!lousaDesligada) {
+          this.canetaEscrevendo.play();
         }
       }
     });
@@ -685,10 +690,10 @@ class BaseTributacaoScene extends Phaser.Scene {
         this.sound.play("clique"); // Toca o som de clique
         if (index + 1 === respostaCorreta) {
           pontuacao += 100;
-          this.sound.play("somAcerto", { volume: 2});
+          this.sound.play("somAcerto", { volume: 2 });
         } else {
           pontuacao -= 50;
-          this.sound.play("somErro", {volume: 2});
+          this.sound.play("somErro", { volume: 2 });
         }
         // Indisponibiliza o card correspondente
         cardsDisponiveis[cardIndex] = false;
@@ -743,7 +748,7 @@ class fimMinigame4 extends Phaser.Scene {
     super({ key: "fimMinigame4" });
   }
 
-  preload(){
+  preload() {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
   }
 

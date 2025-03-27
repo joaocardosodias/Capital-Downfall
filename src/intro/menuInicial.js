@@ -14,12 +14,14 @@ let minigame5Jogado;
 
 let minigame6Jogado;
 
+let musicaIntro;
+
 //Cria a cena do menu inicial do jogo
 
 class menuInicial extends Phaser.Scene {
   constructor() {
     super("menuInicial");
-    this.musicaHub;
+    this.clique;
   }
 
   // Preload dos assets
@@ -30,10 +32,18 @@ class menuInicial extends Phaser.Scene {
     });
 
     this.load.image("botaoIniciar", "src/assets/intro/botaoIniciar.png");
+    this.load.audio("musicaIntro", "src/assets/sounds/rockMusicaHub.mp3");
+    this.load.audio("clique", "src/assets/sounds/clique.mp3");
   }
 
   create() {
     // Cria o sprite da tela inicial
+
+    musicaIntro = this.sound.add("musicaIntro", { volume: 0.5 });
+    musicaIntro.setLoop(true);
+    musicaIntro.play();
+
+    this.clique = this.sound.add("clique");
 
     const iniciar = this.add.sprite(400, 300, "menu");
 
@@ -76,9 +86,10 @@ class menuInicial extends Phaser.Scene {
 
     // Verifica se o botão de iniciar foi clicado
 
-    botaoIniciar.on("pointerdown", function (pointer) {
+    botaoIniciar.on("pointerdown", () => {
       // Caso ele seja, o jogo para a cena atual e passa para a próxima
 
+      this.clique.play();
       game.scene.stop("menuInicial");
       game.scene.start("contratoInicial");
     });

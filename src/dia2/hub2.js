@@ -1,16 +1,16 @@
 let musicaHub2;
+let musicaTocadaMinigame4 = false;
 
 //Cria a cena da Hub
 
-class hub2 extends Phaser.Scene 
-{
+class hub2 extends Phaser.Scene {
   constructor() {
-    super('hub2');
+    super("hub2");
     this.diaAtual = 2;
     this.tiles;
     this.player;
-    this.playerDirecao = 'baixo';
-    this.personagens = ['Mary', 'Mark', 'Margaret', 'Steve'];
+    this.playerDirecao = "baixo";
+    this.personagens = ["Mary", "Mark", "Margaret", "Steve"];
     this.personagemSelecionado = 3;
     this.colisaoApoioGeral;
     this.colisaoMinigame4;
@@ -25,20 +25,38 @@ class hub2 extends Phaser.Scene
     this.layerDecoracoes;
     this.interacaoMinigame;
     this.andando = false;
-    }
+  }
 
   preload() {
-
     //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
-    this.load.image('tiles', 'src/assets/hub/tileset.png');
-    this.load.image('player', 'src/assets/players/player.png');
-    this.load.tilemapTiledJSON('hub2', 'src/assets/hub/tilemap.json');
-    this.load.image('colisao', 'src/assets/hub/colisao.png');
-    this.load.spritesheet('avisoMinigame', 'src/assets/hub/aviso.png', { frameWidth: 32, frameHeight: 64 });
-    this.load.spritesheet('playerSpritesheetMary', 'src/assets/players/marySpritesheet.png', { frameWidth: 32, frameHeight: 64 });
-    this.load.spritesheet('playerSpritesheetMark', 'src/assets/players/markSpritesheet.png', { frameWidth: 32, frameHeight: 64 });
-    this.load.spritesheet('playerSpritesheetMargaret', 'src/assets/players/margaretSpritesheet.png', { frameWidth: 32, frameHeight: 64 });
-    this.load.spritesheet('playerSpritesheetSteve', 'src/assets/players/steveSpritesheet.png', { frameWidth: 32, frameHeight: 64 });
+    this.load.image("tiles", "src/assets/hub/tileset.png");
+    this.load.image("player", "src/assets/players/player.png");
+    this.load.tilemapTiledJSON("hub2", "src/assets/hub/tilemap.json");
+    this.load.image("colisao", "src/assets/hub/colisao.png");
+    this.load.spritesheet("avisoMinigame", "src/assets/hub/aviso.png", {
+      frameWidth: 32,
+      frameHeight: 64,
+    });
+    this.load.spritesheet(
+      "playerSpritesheetMary",
+      "src/assets/players/marySpritesheet.png",
+      { frameWidth: 32, frameHeight: 64 }
+    );
+    this.load.spritesheet(
+      "playerSpritesheetMark",
+      "src/assets/players/markSpritesheet.png",
+      { frameWidth: 32, frameHeight: 64 }
+    );
+    this.load.spritesheet(
+      "playerSpritesheetMargaret",
+      "src/assets/players/margaretSpritesheet.png",
+      { frameWidth: 32, frameHeight: 64 }
+    );
+    this.load.spritesheet(
+      "playerSpritesheetSteve",
+      "src/assets/players/steveSpritesheet.png",
+      { frameWidth: 32, frameHeight: 64 }
+    );
 
     //Armazena na variável teclado o input das setinhas
     this.teclado = this.input.keyboard.createCursorKeys();
@@ -49,20 +67,21 @@ class hub2 extends Phaser.Scene
   }
 
   create() {
-
     // Antes do código a seguir, importante esclarecer: tileset(são as imagens utilizadas na criação do mapa)  tilemap(posição que as imagens assumirão)
 
     //Armazena na variável spacebar a tecla espaço
-    this.spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    this.spacebar = this.input.keyboard.addKey(
+      Phaser.Input.Keyboard.KeyCodes.SPACE
+    );
 
     //Armazena na variável map o tilemap utilizado
-    const map = this.make.tilemap({ key: 'hub' })
+    const map = this.make.tilemap({ key: "hub" });
 
     //Armazena na variável tileset  o tileset utilizado
-    const tileset = map.addTilesetImage('tileset', 'tiles')
+    const tileset = map.addTilesetImage("tileset", "tiles");
 
     // Aplica o filtro NEAREST para evitar o efeito de suavização no pixel art
-    this.textures.get('tiles').setFilter(Phaser.Textures.FilterMode.NEAREST);
+    this.textures.get("tiles").setFilter(Phaser.Textures.FilterMode.NEAREST);
 
     //Cria as layers do tilemap
     map.createLayer("ground", tileset, 0, 0);
@@ -87,24 +106,46 @@ class hub2 extends Phaser.Scene
     this.interacaoMinigame = this.sound.add("interacaoMinigame", { volume: 1 }); // Adiciona o som de interação com o minigame
 
     //Criação do objeto de detecção da interação do jogador com o apoio geral
-    this.colisaoApoioGeral = this.physics.add.sprite(1300, 850, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
+    this.colisaoApoioGeral = this.physics.add
+      .sprite(1300, 850, "colisao")
+      .setScale(3.5)
+      .setVisible(false)
+      .setImmovable(true);
 
     //Criação dos objetos de detecção da interação do jogador com os terminais
-    this.colisaoMinigame4 = this.physics.add.sprite(345, 1650, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
-    this.colisaoMinigame5 = this.physics.add.sprite(1822, 915, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
-    this.colisaoMinigame6 = this.physics.add.sprite(336, 450, 'colisao').setScale(3.5).setVisible(false).setImmovable(true);
+    this.colisaoMinigame4 = this.physics.add
+      .sprite(345, 1650, "colisao")
+      .setScale(3.5)
+      .setVisible(false)
+      .setImmovable(true);
+    this.colisaoMinigame5 = this.physics.add
+      .sprite(1822, 915, "colisao")
+      .setScale(3.5)
+      .setVisible(false)
+      .setImmovable(true);
+    this.colisaoMinigame6 = this.physics.add
+      .sprite(336, 450, "colisao")
+      .setScale(3.5)
+      .setVisible(false)
+      .setImmovable(true);
 
     //Adiciona os indicadores e inicia suas animações
-    this.avisoMinigame4 = this.add.sprite(339, 1536, 'avisoMinigame').setScale(1.5);
-    this.avisoMinigame5 = this.add.sprite(1822, 825, 'avisoMinigame').setScale(1.5);
-    this.avisoMinigame6 = this.add.sprite(336, 345, 'avisoMinigame').setScale(1.5);
-    this.avisoMinigame4.anims.play('movimentoAviso');
-    this.avisoMinigame5.anims.play('movimentoAviso');
-    this.avisoMinigame6.anims.play('movimentoAviso');
+    this.avisoMinigame4 = this.add
+      .sprite(339, 1536, "avisoMinigame")
+      .setScale(1.5);
+    this.avisoMinigame5 = this.add
+      .sprite(1822, 825, "avisoMinigame")
+      .setScale(1.5);
+    this.avisoMinigame6 = this.add
+      .sprite(336, 345, "avisoMinigame")
+      .setScale(1.5);
+    this.avisoMinigame4.anims.play("movimentoAviso");
+    this.avisoMinigame5.anims.play("movimentoAviso");
+    this.avisoMinigame6.anims.play("movimentoAviso");
 
     //Criação do objeto do player
     this.player = this.physics.add.sprite(1176, 1230).setScale(1.5);
-    this.player.anims.play('movimentoParadoBaixo');
+    this.player.anims.play("movimentoParadoBaixo");
     this.player.body.setSize(28, 28).setOffset(2, 40);
     this.player.refreshBody();
 
@@ -116,8 +157,8 @@ class hub2 extends Phaser.Scene
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
         this.interacaoMinigame.play();
-        game.scene.start('apoioGeral', { diaAtual: this.diaAtual });
-        game.scene.sleep('hub2');
+        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
+        game.scene.sleep("hub2");
       }
     });
 
@@ -130,8 +171,8 @@ class hub2 extends Phaser.Scene
           this.passos.stop();
           this.interacaoMinigame.play();
           this.avisoMinigame4.setVisible(false);
-          game.scene.start('apoioMinigame4');
-          game.scene.sleep('hub2');
+          game.scene.start("apoioMinigame4");
+          game.scene.sleep("hub2");
         }
       }
     });
@@ -144,8 +185,8 @@ class hub2 extends Phaser.Scene
           this.passos.stop();
           this.interacaoMinigame.play();
           this.avisoMinigame5.setVisible(false);
-          game.scene.start('apoioMinigame5');
-          game.scene.sleep('hub2');
+          game.scene.start("apoioMinigame5");
+          game.scene.sleep("hub2");
         }
       }
     });
@@ -158,8 +199,8 @@ class hub2 extends Phaser.Scene
           this.passos.stop();
           this.interacaoMinigame.play();
           this.avisoMinigame6.setVisible(false);
-          game.scene.start('apoioMinigame6');
-          this.scene.sleep('hub2');
+          game.scene.start("apoioMinigame6");
+          this.scene.sleep("hub2");
         }
       }
     });
@@ -170,11 +211,14 @@ class hub2 extends Phaser.Scene
   }
 
   update() {
-
-   if (minigame4Jogado === true && minigame5Jogado === true && minigame6Jogado === true) {
+    if (
+      minigame4Jogado === true &&
+      minigame5Jogado === true &&
+      minigame6Jogado === true
+    ) {
       this.passos.stop();
-      this.scene.stop('hub2');
-      this.scene.start('finalDia2'); 
+      this.scene.stop("hub2");
+      this.scene.start("finalDia2");
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento

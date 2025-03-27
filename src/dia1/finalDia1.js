@@ -6,6 +6,8 @@ class finalDia1 extends Phaser.Scene {
     this.Crescimento = false;
     this.botaoContinuar;
     this.botaoGameOver;
+    this.somAcerto;
+    this.somErro;
   }
   preload() {
     this.load.image(
@@ -22,11 +24,18 @@ class finalDia1 extends Phaser.Scene {
     );
     this.load.image("continuar", "src/assets/telas_pontuacao/continuar.png");
     this.load.image("gameOver", "src/assets/telas_pontuacao/gameOver.png");
+
+    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
+    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
   }
   create() {
+    this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
+    this.somErro = this.sound.add("somErro", { volume: 2 });
+
     // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
     // Futuramente, essa seção também redirecionará para o gameOver, além do dia 2
     if (pontuacao < -100) {
+      this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
       this.botaoGameOver = this.add.image(100, 75, "gameOver").setInteractive();
@@ -37,6 +46,7 @@ class finalDia1 extends Phaser.Scene {
     }
 
     if (100 > pontuacao && pontuacao >= -100) {
+      this.somAcerto.play();
       this.add.image(400, 300, "jornalSemCrescimento");
       this.semCrescimento = true;
       this.botaoContinuar = this.add
@@ -49,6 +59,7 @@ class finalDia1 extends Phaser.Scene {
     }
 
     if (pontuacao >= 100) {
+      this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;
       this.botaoContinuar = this.add
