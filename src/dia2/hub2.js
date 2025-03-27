@@ -171,8 +171,9 @@ class hub2 extends Phaser.Scene {
           this.passos.stop();
           this.interacaoMinigame.play();
           this.avisoMinigame4.setVisible(false);
-          game.scene.start("apoioMinigame4");
-          game.scene.sleep("hub2");
+          this.minigameAtual = 4;
+          game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
+          game.scene.sleep('hub2');
         }
       }
     });
@@ -185,8 +186,10 @@ class hub2 extends Phaser.Scene {
           this.passos.stop();
           this.interacaoMinigame.play();
           this.avisoMinigame5.setVisible(false);
-          game.scene.start("apoioMinigame5");
-          game.scene.sleep("hub2");
+          this.minigameAtual = 5;
+          game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
+          game.scene.sleep('hub2');
+
         }
       }
     });
@@ -199,8 +202,9 @@ class hub2 extends Phaser.Scene {
           this.passos.stop();
           this.interacaoMinigame.play();
           this.avisoMinigame6.setVisible(false);
-          game.scene.start("apoioMinigame6");
-          this.scene.sleep("hub2");
+          this.minigameAtual = 6;
+          game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
+          this.scene.sleep('hub2');
         }
       }
     });

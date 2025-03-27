@@ -130,184 +130,166 @@ Boa sorte!`,
     if (data.minigameAtual) {
       this.minigameAtual = data.minigameAtual;
     }
-  }
 
-  preload() {
-    // Carrega os assets necessários
-    this.load.image("imailFundo", "src/assets/materiais_apoio/imailFundo.png");
-    this.load.image(
-      "imailFundoCelebracao",
-      "src/assets/materiais_apoio/imailFundoCelebracao.png"
-    );
-    this.load.image(
-      "botaoProximo",
-      "src/assets/materiais_apoio/botaoProximo.png"
-    );
-    this.load.image(
-      "botaoAnterior",
-      "src/assets/materiais_apoio/botaoAnterior.png"
-    );
-    this.load.image(
-      "botaoDesistir",
-      "src/assets/materiais_apoio/botaoDesistir.png"
-    );
-    this.load.image(
-      "botaoComecar",
-      "src/assets/materiais_apoio/botaoComecar.png"
-    );
-
-    // Carrega o som de clique
-    this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3");
-    // Carrega o som de transição para os minigames
-    this.load.audio("abrirMinigame", "src/assets/sounds/openMinigame.mp3");
-    // Carrega o som de sair do apoio
-    this.load.audio("sairApoio", "src/assets/sounds/closeMinigame.mp3");
+    preload() {
+        // Carrega os assets necessários
+        this.load.image("imailFundo", "src/assets/materiais_apoio/Slick.png");
+        this.load.image("imailFundoCelebracao", "src/assets/materiais_apoio/SlickCelebracao.png");
+        this.load.image("botaoProximo", "src/assets/materiais_apoio/botaoProximo.png");
+        this.load.image("botaoAnterior", "src/assets/materiais_apoio/botaoAnterior.png");
+        this.load.image("botaoDesistir", "src/assets/materiais_apoio/botaoDesistir.png");
+        this.load.image("botaoComecar", "src/assets/materiais_apoio/botaoComecar.png");
+        this.load.image("selecao", "src/assets/materiais_apoio/selecao.png");
+        this.load.image("selecaoDesistir", "src/assets/materiais_apoio/selecaoDesistir.png");
+        
+        // Carrega o som de clique
+        this.load.audio('clique', 'src/assets/dia2/miniGame4/sons/clique.mp3');
+        // Carrega o som de transição para os minigames
+        this.load.audio("abrirMinigame", "src/assets/sounds/openMinigame.mp3");
+        // Carrega o som de sair do apoio
+        this.load.audio("sairApoio", "src/assets/sounds/closeMinigame.mp3");
   }
 
   create() {
-    // Configura o fundo e os botões
-    if (this.minigameAtual < 10) {
-      this.imailFundo = this.add.image(400, 300, "imailFundo");
-    } else {
-      this.imailFundo = this.add.image(400, 300, "imailFundoCelebracao");
-    }
-
-    // Adiciona o texto do tutorial
-    this.textoTutorial = this.add
-      .text(
-        185,
-        95,
-        this["tutoriaisMinigame" + this.minigameAtual][this.paginaAtiva],
-        {
-          fontFamily: "pixelArt",
-          color: 0x324891,
+        // Configura o fundo e os botões
+        if (this.minigameAtual < 10) {
+            this.imailFundo = this.add.image(400, 300, "imailFundo");
+        } else {
+            this.imailFundo = this.add.image(400, 300, "imailFundoCelebracao");
         }
-      )
-      .setWordWrapWidth(600);
 
-    // Configura os botões
-    this.botaoProximo = this.add
-      .image(
-        660,
-        555,
-        this.paginaAtiva ===
-          this["tutoriaisMinigame" + this.minigameAtual].length - 1
-          ? "botaoComecar"
-          : "botaoProximo"
-      )
-      .setInteractive();
-    this.botaoAnterior = this.add
-      .image(300, 555, "botaoAnterior")
-      .setVisible(false)
-      .setInteractive();
-    this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
-      .setInteractive();
+        // Adiciona o texto do tutorial
+        this.textoTutorial = this.add.text(185, 95, this['tutoriaisMinigame' + this.minigameAtual][this.paginaAtiva], {
+            fontFamily: "pixelArt",
+            color: '#324891'
+        }).setWordWrapWidth(600);
 
-    // Variável para controlar cliques repetidos
-    this.atrasoClick = false;
+        // Configura os botões
+        this.botaoProximo = this.add.image(660, 555, this.paginaAtiva === this['tutoriaisMinigame' + this.minigameAtual].length - 1 ? "botaoComecar" : "botaoProximo")
+            .setInteractive();
+        this.botaoAnterior = this.add.image(300, 555, "botaoAnterior")
+            .setVisible(false)
+            .setInteractive();
+        this.botaoDesistir = this.add.image(750, 40, "botaoDesistir")
+            .setInteractive();
 
-    // Evento do botão "próximo"
-    this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
-        this.atrasoClick = true;
-        this.sound.play("clique"); // Toca o som de clique
-        this.fadeOut(() => {
-          this.paginaAtiva++;
-          this.updateTutorialText();
-          this.fadeIn();
-        });
-      }
-    });
-
-    // Evento do botão "anterior"
-    this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
-        this.atrasoClick = true;
-        this.sound.play("clique"); // Toca o som de clique
-        this.fadeOut(() => {
-          this.paginaAtiva--;
-          this.updateTutorialText();
-          this.fadeIn();
-        });
-      }
-    });
-
-    // Evento do botão "desistir"
-    this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.sound.play("sairApoio"); //Toca o som de sair do material de apoio
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
-      game.scene.wake("hub");
-      game.scene.stop("apoioDia1");
-    });
-  }
-
-  // Atualiza o texto do tutorial e os botões
-  updateTutorialText() {
-    this.textoTutorial.setText(
-      this["tutoriaisMinigame" + this.minigameAtual][this.paginaAtiva]
-    );
-
-    // Mostra ou esconde o botão "anterior"
-    if (this.paginaAtiva > 0) {
-      this.botaoAnterior.setVisible(true).setInteractive(true);
-    } else {
-      this.botaoAnterior.setVisible(false).setInteractive(false);
-    }
-
-    // Altera o botão "próximo" para "começar" na última página
-    if (
-      this.paginaAtiva ===
-      this["tutoriaisMinigame" + this.minigameAtual].length - 1
-    ) {
-      this.botaoProximo.setTexture("botaoComecar");
-    } else {
-      this.botaoProximo.setTexture("botaoProximo");
-    }
-
-    // Inicia o minigame ao clicar em "começar"
-    if (
-      this.paginaAtiva === this["tutoriaisMinigame" + this.minigameAtual].length
-    ) {
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
-      if (this.minigameAtual < 10) {
-        this.sound.play("abrirMinigame");
-        musicaHub.pause();
-        game.scene.start("miniGame" + this.minigameAtual);
-      } else {
-        musicaHub.stop();
-        game.scene.stop("hub");
-        game.scene.start("miniBossDia" + this.minigameAtual / 10);
-      }
-      game.scene.stop("apoioDia1");
-    }
-  }
-
-  // Animação de fade-out
-  fadeOut(callback) {
-    this.tweens.add({
-      targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior],
-      alpha: 0,
-      duration: 500,
-      onComplete: callback,
-    });
-  }
-
-  // Animação de fade-in
-  fadeIn() {
-    this.tweens.add({
-      targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior],
-      alpha: 1,
-      duration: 500,
-      onComplete: () => {
+        // Variável para controlar cliques repetidos
         this.atrasoClick = false;
-      },
-    });
-  }
+
+        // Evento do botão "próximo"
+        this.botaoProximo.on("pointerdown", (pointer) => {
+            if (!this.atrasoClick) {
+                this.atrasoClick = true;
+                this.sound.play('clique'); // Toca o som de clique
+                this.fadeOut(() => {
+                    this.paginaAtiva++;
+                    this.updateTutorialText();
+                    this.fadeIn();
+                });
+            }
+        });
+
+        // Evento do botão "anterior"
+        this.botaoAnterior.on("pointerdown", (pointer) => {
+            if (!this.atrasoClick && this.paginaAtiva > 0) {
+                this.atrasoClick = true;
+                this.sound.play('clique'); // Toca o som de clique
+                this.fadeOut(() => {
+                    this.paginaAtiva--;
+                    this.updateTutorialText();
+                    this.fadeIn();
+                });
+            }
+        });
+
+        // Evento do botão "desistir"
+        this.botaoDesistir.on("pointerdown", (pointer) => {
+            this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
+            this.paginaAtiva = 0;
+            this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][0]);
+            game.scene.wake("hub");
+            game.scene.stop("apoioDia1");
+        });
+
+        // Adição do efeito de pointer over nos botões
+        this.selecao = this.add.image(0, 0, 'selecao').setVisible(false).setDepth(100);
+        this.selecaoDesistir = this.add.image(0, 0, 'selecaoDesistir').setVisible(false).setDepth(100);
+
+        this.botaoProximo.on('pointerover', () => {
+            this.selecao.setPosition(660, 555).setVisible(true);
+        });
+        this.botaoProximo.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoAnterior.on('pointerover', () => {
+            this.selecao.setPosition(300, 555).setVisible(true);
+        });
+        this.botaoAnterior.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoDesistir.on('pointerover', () => {
+            this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+        });
+        this.botaoDesistir.on('pointerout', () => {
+            this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+        });
+    }
+
+    // Atualiza o texto do tutorial e os botões
+    updateTutorialText() {
+        this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][this.paginaAtiva]);
+
+        // Mostra ou esconde o botão "anterior"
+        if (this.paginaAtiva > 0) {
+            this.botaoAnterior.setVisible(true).setInteractive(true);
+        } else {
+            this.botaoAnterior.setVisible(false).setInteractive(false);
+        }
+
+        // Altera o botão "próximo" para "começar" na última página
+        if (this.paginaAtiva === this['tutoriaisMinigame' + this.minigameAtual].length - 1) {
+            this.botaoProximo.setTexture('botaoComecar');
+        } else {
+            this.botaoProximo.setTexture('botaoProximo');
+        }
+
+        // Inicia o minigame ao clicar em "começar"
+        if (this.paginaAtiva === this['tutoriaisMinigame' + this.minigameAtual].length) {
+            this.paginaAtiva = 0;
+            this.textoTutorial.setText(this['tutoriaisMinigame' + this.minigameAtual][0]);
+            if (this.minigameAtual < 10) {
+                musicaHub.pause();
+                game.scene.start("miniGame" + this.minigameAtual);
+            } else {
+                 musicaHub.stop();
+                game.scene.stop("hub");
+                game.scene.start("miniBossDia" + (this.minigameAtual) / 10);
+            }
+            game.scene.stop("apoioDia1");
+        }
+    }
+
+    // Animação de fade-out
+    fadeOut(callback) {
+        this.tweens.add({
+            targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior, this.selecao, this.selecaoDesistir],
+            alpha: 0,
+            duration: 500,
+            onComplete: callback
+        });
+    }
+
+    // Animação de fade-in
+    fadeIn() {
+        this.tweens.add({
+            targets: [this.textoTutorial, this.botaoProximo, this.botaoAnterior, this.selecao, this.selecaoDesistir],
+            alpha: 1,
+            duration: 500,
+            onComplete: () => {
+                this.atrasoClick = false;
+            }
+        });
+    }
 }

@@ -201,6 +201,9 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
 
     //Adiciona os sons utilizados
 
+
+    this.load.image("imailFundoGeral", "src/assets/materiais_apoio/SlickGeral.png");
+
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
 
     this.load.audio("sairApoio", "src/assets/sounds/closeMinigame.mp3");
@@ -209,166 +212,163 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
   create() {
     //Carrega o fundo e os botões utilizados
 
-    this.imailFundoGeral = this.add.image(400, 300, "imailFundoGeral");
+        this.imailFundoGeral = this.add.image(400, 300, "imailFundoGeral");
+  
+        this.sairApoio = this.sound.add("sairApoio", { volume: 2 });
 
-    this.sairApoio = this.sound.add("sairApoio", { volume: 2 });
+        this.textoApoio = this.add.text(185, 95, this['apoioMinigame' + this.apoioEscolhido][this.paginaAtiva], {
+            fontFamily: "pixelArt",
+            color: '#324891'
+        }).setWordWrapWidth(600);
 
-    this.textoApoio = this.add
-      .text(
-        185,
-        95,
-        this["apoioMinigame" + this.apoioEscolhido][this.paginaAtiva],
-        {
-          fontFamily: "pixelArt",
-          color: 0x324891,
+        // Caso haja apenas um tutorial, começar com botaoComecar
+        if (this.paginaAtiva === this['apoioMinigame' + this.apoioEscolhido].length - 1) {
+            this.botaoProximo = this.add.image(660, 555, "botaoProximo")
+                .setInteractive().setVisible(false);
+        } else {
+            this.botaoProximo = this.add.image(660, 555, "botaoProximo")
+                .setInteractive();
         }
-      )
-      .setWordWrapWidth(600);
 
-    // Caso haja apenas um tutorial, começar com botaoComecar
-    if (
-      this.paginaAtiva ===
-      this["apoioMinigame" + this.apoioEscolhido].length - 1
-    ) {
-      this.botaoProximo = this.add
-        .image(660, 555, "botaoProximo")
-        .setInteractive()
-        .setVisible(false);
-    } else {
-      this.botaoProximo = this.add
-        .image(660, 555, "botaoProximo")
-        .setInteractive();
+        this.botaoAnterior = this.add.image(300, 555, "botaoAnterior")
+            .setVisible(false)
+            .setInteractive();
+
+        this.botaoDesistir = this.add.image(750, 40, "botaoDesistir")
+            .setInteractive();
+
+        // Ainda não funciona, pois não temos uma lista pronta.
+        this.botaoListaTermos = this.add.image(82, 492, "botaoListaTermos")
+            .setInteractive();
+
+        // Para economizar código
+        this.minigames = [
+            { botao: this.botaoMinigame1, posicaoX: 69, apoio: this.apoioMinigame1 },
+            { botao: this.botaoMinigame2, posicaoX: 174, apoio: this.apoioMinigame2 },
+            { botao: this.botaoMinigame3, posicaoX: 290, apoio: this.apoioMinigame3 },
+            { botao: this.botaoMinigame4, posicaoX: 413, apoio: this.apoioMinigame4 },
+            { botao: this.botaoMinigame5, posicaoX: 522, apoio: this.apoioMinigame5 },
+            { botao: this.botaoMinigame6, posicaoX: 630, apoio: this.apoioMinigame6 },
+        ];
+
+        //Laço for que cria os botoes superiores e suas funcionalidades
+        for (let i = 0; i < 6; i++) {
+            this.minigames[i].botao = this.add.image(this.minigames[i].posicaoX, 46, "botaoMinigame" + (i + 1))
+                .setInteractive();
+
+            this.minigames[i].botao.on("pointerdown", (pointer) => {
+                this.apoioEscolhido = (i + 1);
+                this.paginaAtiva = 0;
+                this.sound.play("clique");
+                this.textoApoio.setText(this['apoioMinigame' + (i + 1)][0]);
+
+                // Reset das texturas de todos os botões superiores
+                for (let j = 0; j < 6; j++) {
+                    this.minigames[j].botao.setTexture('botaoMinigame' + (j + 1))
+                };
+                // Apenas o botão selecionado fica com sua textura diferente
+                this.minigames[i].botao.setTexture('botaoMinigame' + (i + 1) + 'Selecionado');
+
+                // Retornando ao estado normal
+                this.botaoAnterior.setVisible(false);
+                this.botaoProximo.setVisible(true);
+
+                if (this.minigames[i].apoio.length === 1) {
+                    this.botaoProximo.setVisible(false);
+                }
+            });
+        }
+
+        this.minigames[0].botao.setTexture('botaoMinigame1Selecionado') //Minigame 1 inicia selecionado
+
+
+        this.atrasoClick = false;
+        //Verifica se botão próximo foi pressionado
+
+        this.botaoProximo.on("pointerdown", (pointer) => {
+            if (!this.atrasoClick) {
+                this.sound.play("clique");
+                this.paginaAtiva++;
+                this.textoApoio.setText(this['apoioMinigame' + this.apoioEscolhido][this.paginaAtiva]);
+
+                this.atrasoClick = true; // Impede cliques repetidos
+
+                setTimeout(() => {
+                    this.atrasoClick = false; // Libera cliques após 0,1 segundo
+                }, 100); // Atraso é menor aqui no geral, pois nenhuma página é necessária para a progressão
+
+                this.botaoAnterior.setVisible(true).setInteractive(true);
+
+                // Caso não haja mais apoios após o atual, ocultar botão próximo
+                if (this.paginaAtiva === this['apoioMinigame' + this.apoioEscolhido].length - 1) {
+                    this.botaoProximo.setVisible(false)
+                }
+            }
+        });
+
+        this.botaoAnterior.on("pointerdown", (pointer) => {
+            if (!this.atrasoClick && this.paginaAtiva > 0) {
+                this.sound.play("clique");
+                this.paginaAtiva--;
+                this.textoApoio.setText(this['apoioMinigame' + this.apoioEscolhido][this.paginaAtiva]);
+                this.atrasoClick = true; // Impede cliques repetidos
+
+                setTimeout(() => {
+                    this.atrasoClick = false; // Libera cliques após 0,1 segundo
+                }, 100);
+
+                // Caso não haja apoios anteriores, botão anterior é oculto
+                if (this.paginaAtiva === 0) {
+                    this.botaoAnterior.setVisible(false).setInteractive(false);
+                }
+
+                // Reabilita o botão próximo caso o player vá até o final e volte
+                if (this.paginaAtiva < this['apoioMinigame' + this.apoioEscolhido].length - 1) {
+                    this.botaoProximo.setVisible(true).setInteractive(true);
+                }
+            }
+        });
+
+        this.botaoDesistir.on("pointerdown", (pointer) => {
+            this.paginaAtiva = 0;
+            this.apoioEscolhido = 1; //minigame 1 como default
+            this.sairApoio.play();
+            this.textoApoio.setText(this['apoioMinigame' + this.apoioEscolhido][0]);
+            if (this.diaAtual === 1) {
+                game.scene.wake("hub");
+            } else if (this.diaAtual === 2) {
+                game.scene.wake("hub2");
+            } else if (this.diaAtual === 3) {
+                game.scene.wake("hubFinal");
+            }
+            game.scene.stop("apoioGeral");
+        });
+
+        // Adição do efeito de pointer over nos botões
+        this.selecao = this.add.image(0, 0, 'selecao').setVisible(false).setDepth(100);
+        this.selecaoDesistir = this.add.image(0, 0, 'selecaoDesistir').setVisible(false).setDepth(100);
+
+        this.botaoProximo.on('pointerover', () => {
+            this.selecao.setPosition(660, 555).setVisible(true);
+        });
+        this.botaoProximo.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoAnterior.on('pointerover', () => {
+            this.selecao.setPosition(300, 555).setVisible(true);
+        });
+        this.botaoAnterior.on('pointerout', () => {
+            this.selecao.setPosition(0, 0).setVisible(false);
+        });
+
+        this.botaoDesistir.on('pointerover', () => {
+            this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+        });
+        this.botaoDesistir.on('pointerout', () => {
+            this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+        });
+
+        console.log(this.diaAtual)
     }
-
-    this.botaoAnterior = this.add
-      .image(300, 555, "botaoAnterior")
-      .setVisible(false)
-      .setInteractive();
-
-    this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
-      .setInteractive();
-
-    // Ainda não funciona, pois não temos uma lista pronta.
-    this.botaoListaTermos = this.add
-      .image(82, 492, "botaoListaTermos")
-      .setInteractive();
-
-    // Para economizar código
-    this.minigames = [
-      { botao: this.botaoMinigame1, posicaoX: 69, apoio: this.apoioMinigame1 },
-      { botao: this.botaoMinigame2, posicaoX: 174, apoio: this.apoioMinigame2 },
-      { botao: this.botaoMinigame3, posicaoX: 290, apoio: this.apoioMinigame3 },
-      { botao: this.botaoMinigame4, posicaoX: 413, apoio: this.apoioMinigame4 },
-      { botao: this.botaoMinigame5, posicaoX: 522, apoio: this.apoioMinigame5 },
-      { botao: this.botaoMinigame6, posicaoX: 630, apoio: this.apoioMinigame6 },
-    ];
-
-    //Laço for que cria os botoes superiores e suas funcionalidades
-    for (let i = 0; i < 6; i++) {
-      this.minigames[i].botao = this.add
-        .image(this.minigames[i].posicaoX, 46, "botaoMinigame" + (i + 1))
-        .setInteractive();
-
-      this.minigames[i].botao.on("pointerdown", (pointer) => {
-        this.apoioEscolhido = i + 1;
-        this.paginaAtiva = 0;
-        this.sound.play("clique");
-        this.textoApoio.setText(this["apoioMinigame" + (i + 1)][0]);
-
-        // Reset das texturas de todos os botões superiores
-        for (let j = 0; j < 6; j++) {
-          this.minigames[j].botao.setTexture("botaoMinigame" + (j + 1));
-        }
-        // Apenas o botão selecionado fica com sua textura diferente
-        this.minigames[i].botao.setTexture(
-          "botaoMinigame" + (i + 1) + "Selecionado"
-        );
-
-        // Retornando ao estado normal
-        this.botaoAnterior.setVisible(false);
-        this.botaoProximo.setVisible(true);
-
-        if (this.minigames[i].apoio.length === 1) {
-          this.botaoProximo.setVisible(false);
-        }
-      });
-    }
-
-    this.minigames[0].botao.setTexture("botaoMinigame1Selecionado"); //Minigame 1 inicia selecionado
-
-    this.atrasoClick = false;
-    //Verifica se botão próximo foi pressionado
-
-    this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
-        this.paginaAtiva++;
-        this.sound.play("clique");
-        this.textoApoio.setText(
-          this["apoioMinigame" + this.apoioEscolhido][this.paginaAtiva]
-        );
-
-        this.atrasoClick = true; // Impede cliques repetidos
-
-        setTimeout(() => {
-          this.atrasoClick = false; // Libera cliques após 0,1 segundo
-        }, 100); // Atraso é menor aqui no geral, pois nenhuma página é necessária para a progressão
-
-        this.botaoAnterior.setVisible(true).setInteractive(true);
-
-        // Caso não haja mais apoios após o atual, ocultar botão próximo
-        if (
-          this.paginaAtiva ===
-          this["apoioMinigame" + this.apoioEscolhido].length - 1
-        ) {
-          this.botaoProximo.setVisible(false);
-        }
-      }
-    });
-
-    this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
-        this.paginaAtiva--;
-        this.sound.play("clique");
-        this.textoApoio.setText(
-          this["apoioMinigame" + this.apoioEscolhido][this.paginaAtiva]
-        );
-        this.atrasoClick = true; // Impede cliques repetidos
-
-        setTimeout(() => {
-          this.atrasoClick = false; // Libera cliques após 0,1 segundo
-        }, 100);
-
-        // Caso não haja apoios anteriores, botão anterior é oculto
-        if (this.paginaAtiva === 0) {
-          this.botaoAnterior.setVisible(false).setInteractive(false);
-        }
-
-        // Reabilita o botão próximo caso o player vá até o final e volte
-        if (
-          this.paginaAtiva <
-          this["apoioMinigame" + this.apoioEscolhido].length - 1
-        ) {
-          this.botaoProximo.setVisible(true).setInteractive(true);
-        }
-      }
-    });
-
-    this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.paginaAtiva = 0;
-      this.apoioEscolhido = 1; //minigame 1 como default
-      this.sairApoio.play();
-      this.textoApoio.setText(this["apoioMinigame" + this.apoioEscolhido][0]);
-      if (this.diaAtual === 1) {
-        game.scene.wake("hub");
-      } else if (this.diaAtual === 2) {
-        game.scene.wake("hub2");
-      } else if (this.diaAtual === 3) {
-        game.scene.wake("hubFinal");
-      }
-      game.scene.stop("apoioGeral");
-    });
-
-    console.log(this.diaAtual);
-  }
 }

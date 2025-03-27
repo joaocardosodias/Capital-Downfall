@@ -93,90 +93,107 @@ class miniGame1 extends Phaser.Scene {
       miniGame1.cardsRestantes.push(card);
     }
 
-    // Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
-    miniGame1.textoPontuacao = this.add
-      .text(20, 40, "Pontuação: " + pontuacao, {
-        font: "30px Arial",
-        fill: "#ffffff",
-      })
-      .setDepth(15);
 
-    miniGame1.botaoIniciar = this.add
-      .image(400, 300, "botaoIniciar")
-      .setInteractive()
-      .setDepth(0)
-      .setVisible(true)
-      .setScale(1);
+    create() {
+        let cards = [
+            { nome: 'card1', resposta: true },
+            { nome: 'card2', resposta: true },
+            { nome: 'card3', resposta: true },
+            { nome: 'card4', resposta: true },
+            { nome: 'card5', resposta: true },
+            { nome: 'card6', resposta: false },
+            { nome: 'card7', resposta: false },
+            { nome: 'card8', resposta: false },
+            { nome: 'card9', resposta: false },
+            { nome: 'card10', resposta: false },
+        ];
 
-    miniGame1.gavetas = this.add
-      .image(400, 300, "gavetas")
-      .setDepth(-1)
-      .setVisible(false)
-      .setScale(1);
+        // Embaralha os cards e pega 5 aleatórios
+        Phaser.Utils.Array.Shuffle(cards);
+        cards = cards.slice(0, 5);
 
-    let zonaRespostaAberto = this.add
-      .zone(100, 300, 200, 800)
-      .setRectangleDropZone(200, 800);
-    zonaRespostaAberto.name = "zonaAberto";
+        this.cards = cards;
 
-    let zonaRespostaFechado = this.add
-      .zone(700, 300, 200, 800)
-      .setRectangleDropZone(200, 800);
-    zonaRespostaFechado.name = "zonaFechado";
+        // Fundo
+        this.add.rectangle(400, 300, 800, 600, 0x243572).setDepth(-10);
 
-    this.input.addPointer(10);
+        // Criação do primeiro card e feedback
+        miniGame1.card1 = this.add.image(400, -500, cards[miniGame1.cardIndex].nome).setScale(1).setDepth(0);
 
-    // Cria os sons utilizados
-    this.cliqueSom = this.sound.add("clique");
-    this.somMovimento = this.sound.add("somMovimento");
-    this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
-    this.somErro = this.sound.add("somErro", { volume: 2 });
-    this.musicaFundo = this.sound.add("somFundo");
-    this.musicaFundo.loop = true;
-    this.musicaFundo.play();
+        // Armazena os cards restantes no array cardsRestantes com um laço for
+        for (let i = 1; i < cards.length; i++) {
+            let card = this.add.image(400, -500, cards[i].nome).setScale(1).setDepth(0);
+            miniGame1.cardsRestantes.push(card);
+        }
 
-    // Verifica se o botão foi pressionado
-    miniGame1.botaoIniciar.setInteractive().on("pointerdown", (pointer) => {
-      this.cliqueSom.play(); // Reproduz o som de clique
-      miniGame1.botaoIniciar.setVisible(false);
-      miniGame1.gavetas.setVisible(true);
-      this.animaCardDescendo();
-    });
+        // Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
+        miniGame1.textoPontuacao = this.add.text(20, 40, 'Pontuação: ' + pontuacao, {
+            font: '30px Arial',
+            fill: '#ffffff'
+        }).setDepth(15);
 
-    this.input.on("drop", (pointer, gameObject, dropZone) => {
-      if (dropZone.name === "zonaAberto") {
-        this.responder(true, cards);
-      } else if (dropZone.name === "zonaFechado") {
-        this.responder(false, cards);
+        miniGame1.botaoIniciar = this.add.image(400, 300, 'botaoIniciar').setInteractive().setDepth(0).setVisible(true).setScale(1);
+
+        miniGame1.gavetas = this.add.image(400, 300, 'gavetas').setDepth(-1).setVisible(false).setScale(1);
+
+        let zonaRespostaAberto = this.add.zone(100, 300, 200, 800).setRectangleDropZone(200, 800);
+        zonaRespostaAberto.name = "zonaAberto";
+
+        let zonaRespostaFechado = this.add.zone(700, 300, 200, 800).setRectangleDropZone(200, 800);
+        zonaRespostaFechado.name = "zonaFechado";
+
+        this.input.addPointer(10);
+
+        // Cria os sons utilizados
+        this.cliqueSom = this.sound.add("clique");
+        this.somMovimento = this.sound.add("somMovimento");
+        this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
+        this.somErro = this.sound.add("somErro", { volume: 2 });
+        this.musicaFundo = this.sound.add("somFundo");
+        this.musicaFundo.loop = true;
+        this.musicaFundo.play();
+
+        // Verifica se o botão foi pressionado
+        miniGame1.botaoIniciar.setInteractive().on('pointerdown', (pointer) => {
+            this.cliqueSom.play(); // Reproduz o som de clique
+            miniGame1.botaoIniciar.setVisible(false);
+            miniGame1.gavetas.setVisible(true);
+            this.animaCardDescendo();
+        });
+
+        this.input.on("drop", (pointer, gameObject, dropZone) => {
+            if (dropZone.name === "zonaAberto") {
+                this.responder(true, cards);
+            } else if (dropZone.name === "zonaFechado") {
+                this.responder(false, cards);
+            }
+            miniGame1.card1.setInteractive({ draggable: false });
+        });
+
+    responder(respostaJogador, cards) {
+      let respostaCerta = cards[miniGame1.cardIndex].resposta;
+
+      if (respostaJogador === respostaCerta) {
+        this.somAcerto.play(); // Reproduz o som de acerto
+        pontuacao += 100;
+        miniGame1.textoMudancaPontuacao = this.add
+          .text(20, 40, "+100 pontos", {
+            font: "20px Arial",
+            fill: "#00cc00",
+          })
+          .setDepth(10);
+      } else {
+        this.somErro.play(); // Reproduz o som de erro
+        pontuacao -= 50;
+        miniGame1.textoMudancaPontuacao = this.add
+          .text(20, 40, "-50 pontos", {
+            font: "20px Arial",
+            fill: "#cc0000",
+          })
+          .setDepth(10);
       }
-      miniGame1.card1.setInteractive({ draggable: false });
-    });
-  }
 
-  responder(respostaJogador, cards) {
-    let respostaCerta = cards[miniGame1.cardIndex].resposta;
-
-    if (respostaJogador === respostaCerta) {
-      this.somAcerto.play(); // Reproduz o som de acerto
-      pontuacao += 100;
-      miniGame1.textoMudancaPontuacao = this.add
-        .text(20, 40, "+100 pontos", {
-          font: "20px Arial",
-          fill: "#00cc00",
-        })
-        .setDepth(10);
-    } else {
-      this.somErro.play(); // Reproduz o som de erro
-      pontuacao -= 50;
-      miniGame1.textoMudancaPontuacao = this.add
-        .text(20, 40, "-50 pontos", {
-          font: "20px Arial",
-          fill: "#cc0000",
-        })
-        .setDepth(10);
-    }
-
-    this.tweens.add({
+      this.tweens.add({
       targets: miniGame1.textoMudancaPontuacao,
       y: 20,
       alpha: 0,
