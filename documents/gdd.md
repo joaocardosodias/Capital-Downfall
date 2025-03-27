@@ -1200,7 +1200,7 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 
 <div align="center">
 <p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/telainicial.png">
+<img src="../assets/menuinicial55_360.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
