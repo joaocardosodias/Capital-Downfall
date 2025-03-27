@@ -68,7 +68,7 @@ class finalDia2 extends Phaser.Scene {
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
         this.scene.stop("finalDia2");
-        this.scene.start("hubFinal");
+        this.scene.start("movimento");
       });
     }
   }

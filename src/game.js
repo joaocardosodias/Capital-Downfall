@@ -66,14 +66,18 @@ const fontePixelArtNegrito = new FontFace(
 fontePixelArtNegrito.load();
 document.fonts.add(fontePixelArtNegrito);
 
-
-const fontePixelArtP = new FontFace('pixelArtP', 'url(src/assets/fontes/fontePixelArtP.ttf)');
-fontePixelArtP.load()
+const fontePixelArtP = new FontFace(
+  "pixelArtP",
+  "url(src/assets/fontes/fontePixelArtP.ttf)"
+);
+fontePixelArtP.load();
 document.fonts.add(fontePixelArtP);
 
-const fontePixelArtNumeros = new FontFace('pixelArtNumeros', 'url(src/assets/fontes/fontePixelArtNumeros.ttf)');
-fontePixelArtNumeros.load()
+const fontePixelArtNumeros = new FontFace(
+  "pixelArtNumeros",
+  "url(src/assets/fontes/fontePixelArtNumeros.ttf)"
+);
+fontePixelArtNumeros.load();
 document.fonts.add(fontePixelArtNumeros);
 
 const game = new Phaser.Game(config);
-

@@ -37,7 +37,6 @@ class menuInicial extends Phaser.Scene {
   }
 
   create() {
-    game.scene.start('movimento');
     // Cria o sprite da tela inicial
 
     musicaIntro = this.sound.add("musicaIntro", { volume: 0.5 });

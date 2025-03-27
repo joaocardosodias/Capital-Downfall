@@ -69,7 +69,7 @@ class finalDia1 extends Phaser.Scene {
         .image(100, 75, "continuar")
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
-        this.clique.start();
+        this.clique.play();
         this.scene.stop("finalDia1");
         this.scene.start("introDia2");
       });
