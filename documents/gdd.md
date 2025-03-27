@@ -508,23 +508,51 @@ Durante as três primeiras fases, não há limite de tempo para a conclusão dos
 
 ### 3.3.5. Trilha sonora (sprint 4)
 
-_Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no mundo e nas fases. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes._
+| #  | **Título**         | **Ocorrência**                                | **Autoria**  |
+|----|--------------------|-----------------------------------------------|--------------|
+| 1  | BeepAcerto         | Após o jogador clicar em uma alternativa correta | PixaBay      |
+| 2  | BeepErro           | Após o jogador clicar em uma alternativa errada| PixaBay      |
+| 3  | Carimbo            | Quando o jogador selecionar uma alternativa no minigame 2 | PixaBay |
+| 4  | Clique             | Ao clicar nos "botões" dos minigames          | PixaBay      |
+| 5  | CloseMinigame      | Quando o jogador finalizar o minigame         | PixaBay      |
+| 6  | EscritorioFlow     | Enquanto o jogador não estiver realizando um minigame | PixaBay |
+| 7  | MovePostIt         | Quando o jogador arrastar o "post-it" do minigame 1 | PixaBay |
+| 8  | MusicaHub          | Enquanto o jogador não estiver realizando um minigame | PixaBay |
+| 9  | NewspaperPutDown   | Quando o jornal encosta na mesa no fim da animação | Freesound    |
+| 10 | PaperLoose         | Durante a queda do jornal na animação         | Freesound    |
+| 11 | Passos             | Quando o personagem se mover                  | PixaBay      |
+| 12 | ScrathPencil       | Enquanto o jogador estiver desenhando na lousa do minigame 4 | PixaBay |
+| 13 | TaskSucess         | Após a finalização da Task                    | PixaBay      |
+| 14 | OpenMinigame       | Quando o jogador iniciar um minigame          | PixaBay      |
 
-_Exemplo de tabela_
-\# | titulo | ocorrência | autoria
---- | --- | --- | ---
-1 | TaskSucess | Após a finalização da Task |PixaBay 
-2 | Passos | Quando o personagem se mover  | PixaBay
-3 | Clique|Ao  clicar nos "botões" dos minigames|PixaBay
-4|Carimbo|Quando o jogador selecionar uma alternativa no minigame 2|PixaBay
-5|BeepErro|Após o o jogador clicar em uma alternativa errada|PixaBay
-6|OpenMinigame|Quando o jogador iniciar um minigame|PixaBay
-7|EscritorioFlow|Enquanto o jogador não estiver realizando um minigame|PixaBay
-8|CloseMinigame|Quando o jogador finalizar o minigame|PixaBay
-9|ScrathPencil|Enquanto o jogador estiver desenhando na lousa  do minigame 4|PixaBay
-10|MovePostIt|Quando o jogador arrastar o "post it" do minigame 1|PixaBay
-11|BeepAcerto|Após o jogador clicar em uma alternativa correta|PixaBay
-12|MusicaHub|Enquanto o jogador não estiver realizando um minigame|PixaBay
+\
+Os áudios utilizados no jogo foram extraídos do **PixaBay**, um site gratuito que disponibiliza imagens, vídeos, ilustrações, gráficos vetoriais, músicas e efeitos sonoros. Você pode acessá-lo em: [PixaBay Sound Effects](https://pixabay.com/pt/sound-effects/).
+
+Além disso, alguns sons foram retirados do **Freesound**, uma plataforma colaborativa onde os usuários podem compartilhar e baixar áudios. O site pode ser acessado em: [Freesound](https://freesound.org/).
+
+A seguir, apresentamos como som visa impactar na experiência do usuário:
+
+| #  | **Som**              | **Descrição**                                                                                  |
+|----|----------------------|-----------------------------------------------------------------------------------------------|
+| 1  | BeepAcerto.mp3       | Fornece um feedback positivo ao usuário, demonstrando que ele acertou o minigame.              |
+| 2  | BeepErro.mp3         | Ajuda o jogador a entender que errou alguma parte do minigame movendo o “post-it”.             |
+| 3  | Carimbo.mp3          | Cria um efeito sonoro baseado na animação do carimbo estampando o “card”.                       |
+| 4  | Clique.mp3           | Fornece um feedback imediato ao jogador de que um botão foi pressionado, tornando a navegação pelo menu mais responsiva e intuitiva. |
+| 5  | CloseMinigame.mp3    | Ajuda o jogador a compreender que ele finalizou o minigame.                                    |
+| 6  | EscritorioFlow.mp3   | Cria uma atmosfera imersiva, simulando um ambiente real de trabalho e evitando que o jogo pareça "vazio" quando não há interações diretas. |
+| 7  | MovePostIt.mp3       | Cria a sensação de estar organizando documentos, tornando a experiência mais realista e conectada ao tema fiscal. |
+| 8  | MusicaHub.mp3        | Simula o ambiente de um banco real, ajudando o jogador a se sentir dentro do jogo.              |
+| 9  | NewspaperPutDown.mp3 | Simula o impacto entre dois objetos no mundo real, tornando a experiência mais fiel à realidade. |
+| 10 | PaperLoose.mp3       | Simula a queda real de um objeto, tornando a experiência do jogo mais realista.                |
+| 11 | Passos.mp3           | Dá uma sensação de presença física no ambiente, tornando a movimentação do personagem mais realista e envolvente. |
+| 12 | ScrathPencil.mp3     | Cria uma imersão interativa ao desenhar na lousa digital do minigame 4.                        |
+| 13 | TaskSucess.mp3       | Cria um sentimento de progresso, reforçando a conclusão bem-sucedida de uma atividade.          |
+| 14 | OpenMinigame.mp3     | Reforça a transição fluida entre telas, melhorando a experiência do usuário ao abrir menus ou consultar tarefas. |
+
+\
+O link abaixo leva a um drive do grupo, onde todos os sons utilizados no jogo estão disponíveis:
+[Sons Capital Downfall](https://drive.google.com/drive/u/0/folders/17yBORjCD1kmkHqtc_jtOFSGNY5rt7wF0)
+
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
@@ -726,6 +754,7 @@ $$
 
 Assim, a aceleração no eixo y é aproximadamente **368.89 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
 
+
 ### 3.8.4. Função matemática que representa a velocidade no eixo y
 
 Ainda segundo Halliday, Resnick e Walker (2023), para se determinar a velocidade em um instante $t$ em um eixo com **Movimento Uniformemente Variado (MUV)**, basta utilizar a equação:
@@ -766,6 +795,88 @@ $$y(t) = 100 + 0 \cdot t + \frac{1}{2} \cdot 368.89 \cdot t^2$$
 $$y(t) = 100 + 184,445 \cdot t^2$$
 
 Dessa forma, a posição do elemento gráfico no eixo y segue uma curva parabólica ao longo do tempo, caracterizando um **Movimento Uniformemente Variado (MUV)**.
+
+No código do jogo, a lógica de movimentação do jornal foi implementada no arquivo animacao.js, utilizando as equações mencionadas anteriormente, com a adaptação necessária para o ambiente de desenvolvimento. Essa adaptação envolveu o tempo da animação, pois o Phaser trabalha com milissegundos. Assim, a variável tempoTotal armazena o valor de 1500 milissegundos, e não de 1,5 segundos.  Com base nisso, para imprimir as informações de movimento no console em função dos segundos, foi necessário converter os valores, multiplicando ou dividindo por mil. O código com os devidos comentários segue abaixo:
+
+```javascript
+class movimento extends Phaser.Scene {
+    constructor() {
+        super('movimento'); // Nome da cena
+        // Declaração dos parâmetros usados para a animação
+        this.tempoTotal = 1500; 
+        this.posicaoInicialX = -32;
+        this.posicaoInicialY = 100;
+        this.posicaoFinalX = 500;
+        this.posicaoFinalY = 515;
+        // Cálculos para o movimento do jornal
+        this.deslocamentoX = this.posicaoFinalX - this.posicaoInicialX;
+        this.deslocamentoY = this.posicaoFinalY - this.posicaoInicialY;
+        this.velocidadeX = this.deslocamentoX / this.tempoTotal;
+        this.aceleracaoY = ((2 * this.deslocamentoY)) / (Math.pow(this.tempoTotal, 2));
+    }
+
+    preload() { // Carrega os arquivos necessários para a cena
+        this.load.image('jornal', 'src/assets/dia2/animacao/jornal.png');
+        this.load.image('mesa', 'src/assets/dia2/animacao/mesa.png');
+        this.load.image('fundo', 'src/assets/dia2/animacao/fundo.png');
+        this.load.audio('voando', 'src/assets/dia2/animacao/voando.wav');
+        this.load.audio('caiu', 'src/assets/dia2/animacao/caiu.wav');
+    }
+
+    create() {
+        // Adiciona o fundo na cena
+        this.add.image(400, 300, 'fundo');
+        
+        // Adiciona a mesa na cena
+        this.mesa = this.add.image(500, 540, 'mesa').setScale(2.5);
+        
+        // Adiciona o jornal na cena, inicialmente na posição X e Y definidas
+        this.jornal = this.add.image(this.posicaoInicialX, this.posicaoInicialY, 'jornal').setScale(0.6);
+    
+        // Carrega os efeitos sonoros
+        this.somVoando = this.sound.add('voando');
+        this.somCaiu = this.sound.add('caiu');
+    
+        // Toca o som "voando"
+        this.somVoando.play();
+    
+        // Criação da animação do movimento do jornal
+        this.tweens.add({
+            targets: this.jornal,
+            x: this.posicaoFinalX, // Posição final em X
+            y: this.posicaoFinalY, // Posição final em Y
+            duration: this.tempoTotal, // Tempo total da animação
+            ease: t => 0.5 * this.aceleracaoY * Math.pow(t, 2), // Função de easing para a aceleração
+            onUpdate: (tween, target) => {
+                let t = tween.progress; // Percentual de progresso da animação
+    
+                target.rotation += (17 * Math.PI) / this.tempoTotal; // Rotação do jornal
+                target.x = this.posicaoInicialX + this.velocidadeX * t * this.tempoTotal; // Atualiza a posição X
+                target.y = this.posicaoInicialY + 0.5 * this.aceleracaoY * Math.pow(t * this.tempoTotal, 2); // Atualiza a posição Y
+
+                // Imprime no console as informações solicitadas no artefato 8
+                console.log(`Tempo: ${((t * this.tempoTotal)/1000).toFixed(2)}s`);
+                console.log(`X -> Posição: ${target.x.toFixed(2)} px, Velocidade: ${(this.velocidadeX*1000).toFixed(2)} px/s`);
+                console.log(`Y -> Posição: ${target.y.toFixed(2)} px, Velocidade: ${((this.aceleracaoY * t * this.tempoTotal)*1000).toFixed(2)} px/s, Aceleração: ${(this.aceleracaoY*1000*1000).toFixed(2)} px/s²`);
+                console.log('------------------------------------------------------------------------------------------------');
+            },
+
+            // Quando a animação terminar, executa o seguinte:
+            onComplete: () => {
+                // Para o som "voando" e toca o som "caiu"
+                this.somVoando.stop();
+                this.somCaiu.play();
+    
+                // A animação da câmera após o jornal cair
+                this.cameras.main.zoomTo(4, 1000); // Aumenta o zoom
+                this.cameras.main.pan(this.jornal.x, this.jornal.y, 1500, 'Sine.easeInOut'); // Movimenta a câmera até a posição do jornal
+            }
+        });
+    }
+}  
+
+```
+
 
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
