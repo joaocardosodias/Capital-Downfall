@@ -17,11 +17,7 @@ const config = {
   },
 
   scene: [
-    miniGame4,
-    tributacaoScene1,
-    tributacaoScene2,
-    tributacaoScene3,
-    tributacaoScene4,
+    miniGame3,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,
@@ -29,7 +25,7 @@ const config = {
     apoioGeral,
     miniGame1,
     miniGame2,
-    miniGame3,
+    
     fimDoMinigame3,
     apoioDia1,
     apoioMiniboss1,
@@ -37,7 +33,11 @@ const config = {
     finalDia1,
     introDia2,
     hub2,
-    
+    miniGame4,
+    tributacaoScene1,
+    tributacaoScene2,
+    tributacaoScene3,
+    tributacaoScene4,
     fimMinigame4,
     miniGame5,
     fimMinigame5,
