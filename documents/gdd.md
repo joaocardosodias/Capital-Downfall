@@ -189,91 +189,92 @@ Em contrapartida, para cada risco existe um plano de ação para ser feito dentr
 
 Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada para avaliar os riscos identificados ao longo do desenvolvimento do jogo, considerando tanto aspectos internos, como as expectativas da equipe, quanto os relacionados à entrega do produto e ao feedback do parceiro.
 
-<p align="center">
-<p>Matriz de Risco: Ameaças</p>
+<p align = "center">
+<p>Figura 4: _Ameaças_ Matriz de Risco</p>
 <img src="../assets/matrizrisco.png">
 <p>Produção autoral</p>
 </p>
 
-Descrição
+**Descrição:**
 
-1. Falta de testes com usuários reais
+1. **Falta de testes com usuários reais.**
 Impacto: Moderado
 Probabilidade: 90%
 Descrição: Impossibilidade de fazer com que os analistas de fundos de investimento joguem e validem o jogo e o conteúdo abordado.
 Plano de Ação: Planejar e executar testes de usabilidade com usuários-alvo antes da implementação no processo de onboarding, além de incorporar os feedbacks nas sprints de desenvolvimento para melhorias contínuas.
-.
-2. Abordar conteúdo insuficiente para o onboarding.
+
+2. **Abordar conteúdo insuficiente para o onboarding.**
 Impacto: Alto
 Probabilidade: 30%
 Descrição: O jogo não aborda tudo aquilo que precisa ser passado para que o estagiário complete o aprendizado requisitado no onboarding.
 Plano de Ação: Levantar as informações essenciais junto ao parceiro e criar um roteiro de conteúdo claro, baseado na documentação disponibilizada pelo banco BTG, revisando com base em testes nas sprints de validações.
-.
-3. Expectativas do parceiro desalinhadas com a realidade do produto.
+
+3. **Expectativas do parceiro desalinhadas com a realidade do produto.**
 Impacto: Muito Alto
 Probabilidade: 30%
 Descrição: O produto final torna-se algo diferente daquilo que será aplicado e as validações não são suficientes para um alinhamento contínuo. 
 Plano de Ação:  Definir escopo, entregas e critérios de sucesso de forma clara e documentada, além de realizar reuniões periódicas de alinhamento com o parceiro para revisar expectativas.
-.
-4. Falta de experiência técnica
+
+4. **Falta de experiência técnica.**
 Impacto: Alto
 Probabilidade: 70%
 Descrição: O grupo pode enfrentar dificuldades técnicas ao lidar pela primeira vez com linguagens de programação e tecnologias de desenvolvimento de projeto.
 Plano de Ação: Identificar os níveis de conhecimento e promover treinamentos adicionais por meio de cursos e professores.
-.
-5. Prazos não cumpridos
+
+5. **Prazos não cumpridos.**
 Impacto: Alto
 Probabilidade: 50%
 Descrição: Dificuldade na organização de tarefas e consequentemente atraso na entrega, uma vez que na equipe, uma tarefa depende diretamente da finalização de outra.
 Plano de Ação: Definir as metas semanais no Trello e seguir a linha de tempo determinada, acompanhando o progresso com métodos ágeis e ajustando o cronograma sempre que necessário.
-.
-6. Falta de comunicação interna na equipe
+
+6. **Falta de comunicação interna na equipe.**
 Impacto: Muito Alto
 Probabilidade: 50%
 Descrição: Desalinhamento entre membros pode afetar o desempenho geral, uma vez que as tarefas e o grupo é dependente entre si para o sucesso do projeto.
 Plano de Ação: Adotar rituais ágeis como o Scrum, realizando constantemente dailys e retrospectivas.
-.
-7. Má distribuição de tarefas
+
+7. **Má distribuição de tarefas.**
 Impacto: Moderado
 Probabilidade: 70%
 Descrição: Manter os alunos que possuem algum conhecimento prévio fixos em determinada área, desequilibrando o bom andamento das atividades, sobrecarregando o grupo como um todo e impossibilitando a troca de saberes.
 Plano de Ação: Reavaliar o planejamento e dividir as tarefas de forma mais equilibrada, realizar reuniões diárias de alinhamento para redistribuir atividades quando necessário e respeitar as atividades definidas no Kanban.
-.
+
+
 O setor de oportunidades na matriz de riscos representa os riscos positivos, ou seja, eventos incertos que, se ocorrerem, podem trazer benefícios ao projeto. Assim como as ameaças, as oportunidades são avaliadas com base na probabilidade de ocorrência e no impacto, mas com foco em resultados favoráveis. Baseado nisso, o nosso grupo pontuou as principais oportunidades que obtivemos como equipe no decorrer do projeto.
 
 
 <p align="center">
-<p>Matriz de Risco: Oportunidades</p>
+<p>Figura 5:_Oportunidades_Matriz de Risco</p>
 <img src="../assets/matrizrisco2.png">
 <p>Produção autoral</p>
 </p>
 
-Descrição:
-1. Aprendizado constante e proatividade.
+**Descrição:**
+1. **Aprendizado constante e proatividade.**
 Impacto: Muito alto
 Probabilidade: 90%
 Descrição: Aprendizados novos todos os dias sobre metodologias ágeis por meio de uma metodologia ágil que garante proatividade, o método PBL.
-.
-2. Compartilhamento de conhecimento na equipe.
+
+2. **Compartilhamento de conhecimento na equipe.**
 Impacto: Alto
 Probabilidade: 90%
 Descrição: A equipe durante as 10 semanas de desenvolvimento, troca seus conhecimentos e explora novas áreas de saberes a partir de outros integrantes do grupo.
-.
-3. Validação antecipada de funcionalidades com o parceiro.
+
+3. **Validação antecipada de funcionalidades com o parceiro.**
 Impacto: Muito alto
 Probabilidade: 70%
 Descrição: A oportunidade de validar o projeto com o parceiro a cada duas semanas permite o alinhamento contínuo com o cliente.
-.
-4. Desenvolvimento de Hard Skills
+
+4. **Desenvolvimento de Hard Skills**
 Impacto: Alto
 Probabilidade: 70%
 Descrição: Aprender novas habilidades técnicas para utilizar no projeto e consequentemente, em outros projetos futuros.
-.
-6. Desenvolvimento de Soft Skills
+
+6. **Desenvolvimento de Soft Skills**
 Impacto: Muito alto
 Probabilidade: 50%
 Descrição: O trabalho e o desenvolvimento em grupo, permite a formação de habilidades socioemocionais novas, como a colaboração, a empatia e o trabalho em equipe.
-.
+
 Portanto, baseado na matriz de riscos apresentada, é possível concluir que a análise estruturada dos riscos, considerando tanto ameaças quanto oportunidades, permite uma visão mais clara das prioridades do projeto, contribuindo para o bom desenvolvimento como um todo.
 
 ### 1.1.7. Objetivos, Metas e Indicadores (sprint 4)
@@ -289,7 +290,7 @@ As metas SMART são uma metodologia eficaz para definir objetivos de forma clara
 Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revista Management Review, e desde então tem sido amplamente utilizado na gestão de projetos, planejamento estratégico e desenvolvimento pessoal por facilitar o foco, o comprometimento e o acompanhamento dos resultados.
 
 <p align="center">
-<p>Metas SMART:</p>
+<p>Figura 6:_Metas_SMART</p>
 <img src="../assets/smart.png">
 <p>Produção autoral</p>
 </p>
@@ -1198,32 +1199,101 @@ Portanto, a revisão de conteúdos contribui significativamente para a eficiênc
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
 <div align="center">
-<p> Tela Inicial do Jogo:</p>
+<p> Figura 12: Tela Inicial do Jogo</p>
 <img src="../assets/telainicial.png">
-<p>Produção autoral / Desinger: Lucas Michel - O MVP da tela inicial contribui visuamente para a construção do contexto do jogo e oferece coerência ao jogo a partir de elementos relacionados ao mercado de fundos de investimentos. </p>
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
 
-Portanto, como consolidação inicial do MVP, nessa sprint aprimoramos o desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer instruções do jogo de tela de e-mail. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo e incorporamos todos os nossos sistemas de feedback. 
+ Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
-Tela de e-mail antiga
-Tela de e-mail nova.
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
 
-Telas de feedback
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos minigames que já haviam sido consolidados na Sprint 3.
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
 
 Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
 
-FOTO e feedbacks
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
 
-Durante a última sprint, concentramos nossos esforços na validação dos jogos da Fase Dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, conseguimos integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
+Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da narrativa, utilizando telas de jornais e respostas com resolução para contribuir com o processo de aprendizado.
 
-jogo e explicação 
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div> 
 
-Para a última fase do jogo e para consolidar a experiência do jogador, abordamos uma experiência imersiva em uma Sala de Guerra. Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações.
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
 
- O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
+
+Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais de acordo com a validação dos jogos da fase dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, foi possível integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
+
+Para o MVP, não foi idealizado nenhum sistema revisional de Miniboss, pois a terceira e última fase do jogo, feita para consolidar a experiência do jogador, aborda uma experiência imersiva em uma Sala de Guerra. 
+
+Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações. O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
 
 Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
+
+<div align="center">
+<p> Figura 12: Tela Inicial do Jogo</p>
+<img src="../assets/telainicial.png">
+<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+</div>
 
 Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
 
