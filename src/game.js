@@ -17,6 +17,11 @@ const config = {
   },
 
   scene: [
+    miniGame4,
+    tributacaoScene1,
+    tributacaoScene2,
+    tributacaoScene3,
+    tributacaoScene4,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,
@@ -32,11 +37,7 @@ const config = {
     finalDia1,
     introDia2,
     hub2,
-    miniGame4,
-    tributacaoScene1,
-    tributacaoScene2,
-    tributacaoScene3,
-    tributacaoScene4,
+    
     fimMinigame4,
     miniGame5,
     fimMinigame5,
