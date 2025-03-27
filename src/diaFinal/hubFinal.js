@@ -1,4 +1,6 @@
 //Cria a cena da Hub
+let musicaHubFinal;
+
 class hubFinal extends Phaser.Scene {
   constructor() {
     super("hubFinal");
@@ -17,12 +19,13 @@ class hubFinal extends Phaser.Scene {
     this.spacebar;
     this.layerParede;
     this.layerObjetos;
+    this.interacaoMinigame;
+    this.andando = false;
   }
 
   init(data) {
     // Se tivermos uma posição salva, usamos ela
     if (data.personagemSelecionado) {
-
       this.personagemSelecionado = data.personagemSelecionado.numero;
     }
   }
@@ -60,6 +63,10 @@ class hubFinal extends Phaser.Scene {
 
     //Armazena na variável teclado o input das setinhas
     this.teclado = this.input.keyboard.createCursorKeys();
+
+    this.load.audio("musicaHubFinal", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música de fundo
+    this.load.audio("passos", "src/assets/sounds/passos.mp3"); // Carrega o som dos passos
+    this.load.audio("interacaoMinigame", "src/assets/sounds/openMinigame.mp3"); // Carrega o som de interação com o minigame
   }
 
   create() {
@@ -77,7 +84,16 @@ class hubFinal extends Phaser.Scene {
     this.tileset = this.map.addTilesetImage("tileset", "tiles");
 
     // Aplica o filtro NEAREST para evitar o efeito de suavização no pixel art
-    this.textures.get('tiles').setFilter(Phaser.Textures.FilterMode.NEAREST);
+    this.textures.get("tiles").setFilter(Phaser.Textures.FilterMode.NEAREST);
+
+    musicaHubFinal = this.sound.add("musicaHubFinal", { volume: 0.25 }); // Adiciona o som da música de fundo
+    musicaHubFinal.setLoop(true); // Define que a música de fundo deve ser repetida
+    musicaHubFinal.play(); // Inicia a música de fundo
+
+    this.passos = this.sound.add("passos", { volume: 2 }); // Adiciona o som dos passos
+    this.passos.setLoop(true); // Define que o som dos passos deve ser repetido
+
+    this.interacaoMinigame = this.sound.add("interacaoMinigame", { volume: 1 }); // Adiciona o som de interação com o minigame
 
     //Cria as layers do tilemap
     this.map.createLayer("ground", this.tileset, 0, 0);
@@ -93,7 +109,11 @@ class hubFinal extends Phaser.Scene {
     this.layerObjetos.setCollisionByExclusion([-1]);
 
     //Criação do objeto de detecção da interação do jogador com o apoio geral
-    this.colisaoApoioGeral = this.physics.add.sprite(496, 550, 'colisao').setScale(2.5).setVisible(true).setImmovable(true);
+    this.colisaoApoioGeral = this.physics.add
+      .sprite(496, 550, "colisao")
+      .setScale(2.5)
+      .setVisible(true)
+      .setImmovable(true);
 
     //Criação dos objetos de detecção da interação do jogador com os terminais
     this.colisaoBossFinal = this.physics.add
@@ -108,7 +128,7 @@ class hubFinal extends Phaser.Scene {
 
     //Criação do objeto do player
     this.player = this.physics.add.sprite(408, 1200).setScale(1.5);
-    this.player.anims.play('movimentoParadoBaixo');
+    this.player.anims.play("movimentoParadoBaixo");
     this.player.body.setSize(28, 22).setOffset(2, 40);
     this.player.refreshBody();
 
@@ -119,8 +139,9 @@ class hubFinal extends Phaser.Scene {
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
-        game.scene.start('apoioGeral', { diaAtual: this.diaAtual });
-        game.scene.sleep('hubFinal');
+        this.interacaoMinigame.play();
+        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
+        game.scene.sleep("hubFinal");
       }
     });
 
@@ -129,7 +150,8 @@ class hubFinal extends Phaser.Scene {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
         this.avisoBossFinal.setVisible(false);
-        game.scene.start("miniGame4");// MUDAR DEPOIS
+        this.interacaoMinigame.play();
+        game.scene.start("salaDeGuerra"); // MUDAR DEPOIS
         game.scene.sleep("hubFinal");
       }
     });
@@ -144,115 +166,99 @@ class hubFinal extends Phaser.Scene {
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
 
     if (this.teclado.left.isDown && this.teclado.up.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(-210);
-
       this.player.setVelocityY(-210);
-
-      this.player.anims.play('movimentoEsquerda', true);
-
-      this.playerDirecao = 'esquerda';
-    }
-
-    else if (this.teclado.left.isDown && this.teclado.down.isDown) {
+      this.player.anims.play("movimentoEsquerda", true);
+      this.playerDirecao = "esquerda";
+    } else if (this.teclado.left.isDown && this.teclado.down.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(-210);
-
       this.player.setVelocityY(210);
-
-      this.player.anims.play('movimentoEsquerda', true);
-
-      this.playerDirecao = 'esquerda';
-    }
-
-    else if (this.teclado.right.isDown && this.teclado.up.isDown) {
+      this.player.anims.play("movimentoEsquerda", true);
+      this.playerDirecao = "esquerda";
+    } else if (this.teclado.right.isDown && this.teclado.up.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(210);
-
       this.player.setVelocityY(-210);
-
-      this.player.anims.play('movimentoDireita', true);
-
-      this.playerDirecao = 'direita';
-    }
-
-    else if (this.teclado.right.isDown && this.teclado.down.isDown) {
+      this.player.anims.play("movimentoDireita", true);
+      this.playerDirecao = "direita";
+    } else if (this.teclado.right.isDown && this.teclado.down.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(210);
-
       this.player.setVelocityY(210);
-
-      this.player.anims.play('movimentoDireita', true);
-
-      this.playerDirecao = 'direita';
-    }
-
-
-    else if (this.teclado.left.isDown) {
+      this.player.anims.play("movimentoDireita", true);
+      this.playerDirecao = "direita";
+    } else if (this.teclado.left.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(-300);
-
       this.player.setVelocityY(0);
-
-      this.player.anims.play('movimentoEsquerda', true);
-
-      this.playerDirecao = 'esquerda';
-    }
-
-    else if (this.teclado.right.isDown) {
+      this.player.anims.play("movimentoEsquerda", true);
+      this.playerDirecao = "esquerda";
+    } else if (this.teclado.right.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(300);
-
       this.player.setVelocityY(0);
-
-      this.player.anims.play('movimentoDireita', true);
-
-      this.playerDirecao = 'direita';
-    }
-
-
-    else if (this.teclado.up.isDown) {
+      this.player.anims.play("movimentoDireita", true);
+      this.playerDirecao = "direita";
+    } else if (this.teclado.up.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(0);
-
       this.player.setVelocityY(-300);
-
-      this.player.anims.play('movimentoCima', true);
-
-      this.playerDirecao = 'cima';
-    }
-
-    else if (this.teclado.down.isDown) {
+      this.player.anims.play("movimentoCima", true);
+      this.playerDirecao = "cima";
+    } else if (this.teclado.down.isDown) {
+      if (!this.andando) {
+        this.passos.play();
+      }
+      this.andando = true;
       this.player.setVelocityX(0);
-
       this.player.setVelocityY(300);
-
-      this.player.anims.play('movimentoBaixo', true);
-
-      this.playerDirecao = 'baixo';
+      this.player.anims.play("movimentoBaixo", true);
+      this.playerDirecao = "baixo";
     }
-
     //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
-
     else {
       this.player.setVelocityX(0);
-
       this.player.setVelocityY(0);
+      if (this.andando) {
+        this.passos.stop();
+      }
+      this.andando = false;
 
       //vê a direção que o player estava virado e toca a animação parado correspondente
-      if (this.playerDirecao === 'cima') {
-
-        this.player.anims.play('movimentoParadoCima', true);
-
-      } else if (this.playerDirecao === 'baixo') {
-
-        this.player.anims.play('movimentoParadoBaixo', true);
-
-      } else if (this.playerDirecao === 'direita') {
-
-        this.player.anims.play('movimentoParadoDireita', true);
-
-      } else if (this.playerDirecao === 'esquerda') {
-
-        this.player.anims.play('movimentoParadoEsquerda', true);
-
+      if (this.playerDirecao === "cima") {
+        this.player.anims.play("movimentoParadoCima", true);
+      } else if (this.playerDirecao === "baixo") {
+        this.player.anims.play("movimentoParadoBaixo", true);
+      } else if (this.playerDirecao === "direita") {
+        this.player.anims.play("movimentoParadoDireita", true);
+      } else if (this.playerDirecao === "esquerda") {
+        this.player.anims.play("movimentoParadoEsquerda", true);
       } else {
         // define a animação parado default como a para baixo
-        this.player.anims.play('movimentoParadoBaixo', true);
-
+        this.player.anims.play("movimentoParadoBaixo", true);
       }
     }
   }

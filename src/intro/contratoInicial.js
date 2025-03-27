@@ -1,36 +1,44 @@
-class contratoInicial extends Phaser.Scene 
-{
-    constructor ()
-    {
-        super('contratoInicial');
-    }
+class contratoInicial extends Phaser.Scene {
+  constructor() {
+    super("contratoInicial");
+    this.somAdiante;
+  }
 
-    preload()
-    {   
-        //Preload dos assets
-        this.load.image('tutorialControles', 'src/assets/intro/tutorialControles.png');
+  preload() {
+    //Preload dos assets
+    this.load.image(
+      "tutorialControles",
+      "src/assets/intro/tutorialControles.png"
+    );
 
-        this.load.image('botaoSeguirAdiante', 'src/assets/botoes/botaoSeguirAdiante.png');
-  
-    }
-    
-    create() 
-    {  
+    this.load.image(
+      "botaoSeguirAdiante",
+      "src/assets/botoes/botaoSeguirAdiante.png"
+    );
 
-        //Carrega as imagens
+    this.load.audio("somAdiante", "src/assets/sounds/clique.mp3");
+  }
 
-        let tutorialControles = this.add.image(400,300, 'tutorialControles');
+  create() {
+    this.somAdiante = this.sound.add("somAdiante");
 
-        let botaoSeguirAdiante = this.add.image(615,560, 'botaoSeguirAdiante').setInteractive().setScale(0.50);
+    //Carrega as imagens
 
-        //Verifica se o botão foi pressionado
+    let tutorialControles = this.add.image(400, 300, "tutorialControles");
 
-        botaoSeguirAdiante.on('pointerdown', function (pointer)
-        {
-            game.scene.start('selecaoPersonagens');
+    let botaoSeguirAdiante = this.add
+      .image(615, 560, "botaoSeguirAdiante")
+      .setInteractive()
+      .setScale(0.5);
 
-            game.scene.stop('contratoInicial');
-        });
-    }
+    //Verifica se o botão foi pressionado
+
+    botaoSeguirAdiante.on("pointerdown", () => {
+      this.somAdiante.play();
+      musicaIntro.stop();
+      game.scene.start("selecaoPersonagens");
+
+      game.scene.stop("contratoInicial");
+    });
+  }
 }
-

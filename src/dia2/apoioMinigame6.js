@@ -26,6 +26,9 @@ class apoioMinigame6 extends Phaser.Scene {
   }
 
   create() {
+
+    musicaHub2.pause();
+
     // Carrega as telas e os botões utilizados
     this.tutorialCtrlMinigame6 = this.add.image(400, 300, "tutorialCtrlMinigame6");
 
