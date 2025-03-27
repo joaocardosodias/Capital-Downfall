@@ -1198,9 +1198,7 @@ Portanto, a revisão de conteúdos contribui significativamente para a eficiênc
 
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
-<div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
-<img src="../assets/menuinicial55_360.png">
+
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
