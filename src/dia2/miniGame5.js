@@ -1,49 +1,41 @@
 class miniGame5 extends Phaser.Scene {
   constructor() {
     super("miniGame5");
-    // Array para armazenar os cartões do jogo
-    this.cards = [];
-    // Array para armazenar as definições
-    this.definitions = [];
-    // Array para armazenar as linhas de conexão
-    this.lines = [];
-    // Referência para a linha que está sendo arrastada
-    this.draggingLine = null;
-    // Referência para o cartão de onde começa o arrasto
-    this.draggingStart = null;
-    // Texto que mostra a pontuação
-    this.scoreText = null;
-    // Seta que aparece quando o jogo termina
-    this.arrow = null;
-    // Contador de conexões feitas
-    this.connectionsMade = 0;
-    // Conjunto de definições já conectadas
-    this.connectedDefinitions = new Set();
-    // Imagem do enunciado do jogo
-    this.enunciadoImage = null;
-    // Som de clique
-    this.clickSound = null;
-    // Flag para controlar se animações estão em progresso
-    this.animationInProgress = true;
-    // Contador para animações completas
-    this.animationCompleteCount = 0;
-    // Flag para controlar animação de conexão
-    this.connectionAnimationInProgress = false;
-    this.somFundo;
-    this.somAcerto;
-    this.somErro;
+    
+    // Arrays para armazenar elementos do jogo
+    this.cards = [];          // Cartões com siglas (lado esquerdo)
+    this.definitions = [];    // Definições (lado direito)
+    this.lines = [];          // Linhas de conexão entre cartões e definições
+    
+    // Variáveis de estado do jogo
+    this.draggingLine = null; // Linha sendo arrastada no momento
+    this.draggingStart = null; // Cartão de origem do arrasto
+    this.scoreText = null;    // Elemento de texto da pontuação
+    this.arrow = null;        // Seta para avançar ao completar
+    
+    // Contadores e flags
+    this.connectionsMade = 0; // Número de conexões feitas
+    this.connectedDefinitions = new Set(); // Definições já conectadas
+    this.animationInProgress = true; // Flag para animações iniciais
+    this.animationCompleteCount = 0; // Contador de animações completas
+    this.connectionAnimationInProgress = false; // Flag para animação de conexão
+    
+    // Elementos de áudio
+    this.somFundo = null;     // Música de fundo
+    this.somAcerto = null;    // Som de acerto
+    this.somErro = null;      // Som de erro
   }
 
-  // Pré-carrega todos os assets do jogo
+  // Pré-carrega todos os assets (imagens, sons)
   preload() {
-    // Carrega imagens dos cartões
+    // Carrega imagens dos cartões (lado esquerdo)
     this.load.image("imobiliarioCard", "src/assets/dia2/miniGame5/imobiliariosCard.png");
     this.load.image("multimercadoCard", "src/assets/dia2/miniGame5/multimercadoCard.png");
     this.load.image("privatyequityCard", "src/assets/dia2/miniGame5/privatyequityCard.png");
     this.load.image("rendafixaCard", "src/assets/dia2/miniGame5/rendafixaCard.png");
     this.load.image("acoesCard", "src/assets/dia2/miniGame5/acoesCard.png");
 
-    // Carrega imagens das definições
+    // Carrega imagens das definições (lado direito)
     this.load.image("imobiliarioDefinition", "src/assets/dia2/miniGame5/imobiliario_def.png");
     this.load.image("multimercadoDefinition", "src/assets/dia2/miniGame5/multimercado_def.png");
     this.load.image("privatyequityDefinition", "src/assets/dia2/miniGame5/privatyequity_def.png");
@@ -60,75 +52,89 @@ class miniGame5 extends Phaser.Scene {
     this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
   }
 
-  // Cria todos os elementos do jogo
+  // Cria a cena e configura os elementos iniciais
   create() {
-    // Adiciona o background centralizado e escalado
-    this.add.image(400, 300, "background").setOrigin(0.5, 0.5).setScale(8);
+    // Configura o background (centralizado e redimensionado)
+    this.add.image(400, 300, "background")
+      .setOrigin(0.5, 0.5)
+      .setScale(8);
+    
+    // Inicializa e toca a música de fundo
     this.somFundo = this.sound.add("somFundo", { loop: true });
     this.somFundo.play();
 
+    // Configura os efeitos sonoros
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
     this.somErro = this.sound.add("somErro", { volume: 2 });
 
-
-    // Adiciona o enunciado na parte superior
+    // Adiciona o enunciado no topo da tela
     this.enunciadoImage = this.add.image(400, 50, "enunciado")
       .setOrigin(0.5, 0)
       .setScale(0.8);
 
-    // Cria o texto de pontuação
+    // Cria o texto de pontuação (topo esquerdo)
     this.scoreText = this.add.text(80, 1, `Pontuação: ${pontuacao}`, {
       font: "24px Arial",
       fill: "#ffffff",
       padding: { x: 20, y: 10 },
     }).setOrigin(0.5, 0);
 
-    // Configura o som de clique
+    // Configura som de clique para interações
     this.clickSound = this.sound.add("click");
 
     // Dados dos pares cartão-definição
+    // Cada objeto contém:
+    // - imgSigla: imagem do cartão
+    // - imgDef: imagem da definição
+    // - sigla: identificador único para correspondência
     let data = [
-      { imgSigla: "acoesCard", imgDef: "acoesDefinition" },
-      { imgSigla: "imobiliarioCard", imgDef: "imobiliarioDefinition" },
-      { imgSigla: "multimercadoCard", imgDef: "multimercadoDefinition" },
-      { imgSigla: "rendafixaCard", imgDef: "rendafixaDefinition" },
-      { imgSigla: "privatyequityCard", imgDef: "privatyequityDefinition" },
+      { imgSigla: "acoesCard", imgDef: "acoesDefinition", sigla: "acoes" },
+      { imgSigla: "imobiliarioCard", imgDef: "imobiliarioDefinition", sigla: "imobiliario" },
+      { imgSigla: "multimercadoCard", imgDef: "multimercadoDefinition", sigla: "multimercado" },
+      { imgSigla: "rendafixaCard", imgDef: "rendafixaDefinition", sigla: "rendafixa" },
+      { imgSigla: "privatyequityCard", imgDef: "privatyequityDefinition", sigla: "privatyequity" },
     ];
 
-    // Embaralha os cartões
+    // Embaralha os cartões e definições para variar a cada jogo
     this.shuffleArray(data);
     let shuffledDefinitions = [...data];
-    // Embaralha as definições
     this.shuffleArray(shuffledDefinitions);
 
-    // Posições Y para os elementos
+    // Posições Y para os elementos (5 cartões + 5 definições)
     let yPositions = [160, 260, 360, 460, 560];
 
     // Cria os cartões com animação de entrada
     data.forEach((item, index) => {
+      // Cria o cartão começando acima da tela (y = -100)
       let card = this.add.image(100, -100, item.imgSigla);
       card.setScale(0.9);
-      // Armazena dados no objeto
-      card.setData("sigla", item.sigla);
-      card.setData("connected", false);
+      
+      // Armazena dados importantes no objeto do cartão
+      card.setData("sigla", item.sigla); // Sigla para correspondência
+      card.setData("connected", false);   // Status de conexão
+      
+      // Inicialmente desativa interação durante animação
       card.disableInteractive();
       
-      // Configura interatividade
+      // Configura interatividade do cartão
       card.setInteractive({ useHandCursor: true });
-      // Evento de clique - inicia arrasto
+      
+      // Evento quando clica no cartão (inicia arrasto)
       card.on("pointerdown", () => {
+        // Só permite interação se não houver animação em andamento
         if (!this.animationInProgress && !this.connectionAnimationInProgress) {
-          this.clickSound.play();
-          this.startDragging(card, this);
+          this.clickSound.play(); // Toca som de clique
+          this.startDragging(card, this); // Inicia arrasto
         }
       });
       
-      // Efeito hover - aumenta ligeiramente
+      // Efeito visual quando mouse passa sobre o cartão
       card.on("pointerover", () => {
+        // Só aplica efeito se o cartão não estiver conectado
         if (!card.getData("connected") && !this.animationInProgress && !this.connectionAnimationInProgress) {
           this.tweens.add({
             targets: card,
-            scaleX: 0.8,
+            scaleX: 0.8, // Aumenta ligeiramente
             scaleY: 0.8,
             duration: 100,
             ease: "Power2",
@@ -136,12 +142,12 @@ class miniGame5 extends Phaser.Scene {
         }
       });
       
-      // Efeito quando mouse sai - volta ao normal
+      // Efeito quando mouse sai do cartão
       card.on("pointerout", () => {
         if (!card.getData("connected") && !this.animationInProgress && !this.connectionAnimationInProgress) {
           this.tweens.add({
             targets: card,
-            scaleX: 0.9,
+            scaleX: 0.9, // Volta ao tamanho normal
             scaleY: 0.9,
             duration: 100,
             ease: "Power2",
@@ -149,12 +155,12 @@ class miniGame5 extends Phaser.Scene {
         }
       });
 
-      // Animação de entrada - cartão desce para posição final
+      // Animação de entrada - cartão "cai" para sua posição final
       this.tweens.add({
         targets: card,
-        y: yPositions[index],
-        duration: 1500,
-        ease: "Sine.out",
+        y: yPositions[index], // Posição Y final
+        duration: 1500,       // Duração da animação (1.5s)
+        ease: "Sine.out",     // Tipo de easing (suavização)
         onComplete: () => {
           this.animationCompleteCount++;
           // Quando todas animações terminam, ativa interações
@@ -163,21 +169,22 @@ class miniGame5 extends Phaser.Scene {
           }
         }
       });
-      this.cards.push(card);
+      this.cards.push(card); // Adiciona ao array de cartões
     });
 
     // Cria as definições com animação de entrada
     shuffledDefinitions.forEach((item, index) => {
+      // Cria definição começando acima da tela (y = -100)
       let definition = this.add.image(600, -100, item.imgDef);
       definition.setScale(0.9);
-      definition.setData("sigla", item.sigla);
+      definition.setData("sigla", item.sigla); // Armazena sigla para correspondência
       
-      // Animação de entrada - definição desce para posição final
+      // Animação de entrada - definição "cai" para posição final
       this.tweens.add({
         targets: definition,
-        y: yPositions[index],
-        duration: 1500,
-        ease: "Sine.out",
+        y: yPositions[index], // Posição Y final
+        duration: 1500,       // Duração da animação (1.5s)
+        ease: "Sine.out",     // Tipo de easing
         onComplete: () => {
           this.animationCompleteCount++;
           // Quando todas animações terminam, ativa interações
@@ -186,21 +193,23 @@ class miniGame5 extends Phaser.Scene {
           }
         }
       });
-      this.definitions.push(definition);
+      this.definitions.push(definition); // Adiciona ao array de definições
     });
   }
 
-  // Ativa as interações após as animações iniciais
+  // Ativa as interações após as animações iniciais terminarem
   enableInteractions() {
-    this.animationInProgress = false;
+    this.animationInProgress = false; // Marca animações como concluídas
+    
+    // Ativa interação para todos os cartões
     this.cards.forEach(card => card.setInteractive());
   }
 
-  // Função para embaralhar um array (Fisher-Yates algorithm)
+  // Função para embaralhar arrays (algoritmo Fisher-Yates)
   shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+      [array[i], array[j]] = [array[j], array[i]]; // Troca elementos
     }
   }
 
@@ -211,16 +220,23 @@ class miniGame5 extends Phaser.Scene {
       return;
     }
 
-    this.draggingStart = card;
+    this.draggingStart = card; // Armazena cartão de origem
+    
     // Calcula ponto de início (borda direita do cartão)
     const startX = card.x + card.displayWidth / 2;
     const startY = card.y;
 
     // Cria a linha que será arrastada
-    this.draggingLine = scene.add.line(startX, startY, 0, 0, 0, 0, 0xffffff);
-    this.draggingLine.setLineWidth(8);
-    this.draggingLine.setAlpha(1);
-    // Configura listeners para movimento do mouse
+    this.draggingLine = scene.add.line(
+      startX, startY, // Posição inicial
+      0, 0,           // Ponto inicial (relativo)
+      0, 0,           // Ponto final (será atualizado)
+      0xffffff         // Cor branca
+    );
+    this.draggingLine.setLineWidth(8); // Espessura da linha
+    this.draggingLine.setAlpha(1);     // Opacidade
+    
+    // Configura listeners para movimento e soltura do mouse
     this.input.on("pointermove", (pointer) => this.updateLine(pointer, scene));
     this.input.on("pointerup", () => this.endDragging(scene));
   }
@@ -230,6 +246,7 @@ class miniGame5 extends Phaser.Scene {
     if (this.draggingLine && this.draggingStart) {
       const startX = this.draggingStart.x + this.draggingStart.displayWidth / 2;
       const startY = this.draggingStart.y;
+      
       // Atualiza o ponto final da linha para seguir o mouse
       this.draggingLine.setTo(0, 0, pointer.x - startX, pointer.y - startY);
     }
@@ -237,7 +254,7 @@ class miniGame5 extends Phaser.Scene {
 
   // Finaliza o arrasto quando solta o mouse
   endDragging(scene) {
-    // Verifica se pode finalizar arrasto
+    // Verifica se pode processar o fim do arrasto
     if (!this.draggingStart || this.animationInProgress || this.connectionAnimationInProgress) {
       if (this.draggingLine) this.draggingLine.destroy();
       this.draggingStart = null;
@@ -246,6 +263,7 @@ class miniGame5 extends Phaser.Scene {
     }
 
     let pointer = scene.input.activePointer;
+    
     // Verifica se soltou sobre alguma definição
     let matchedDefinition = this.definitions.find((def) =>
       def.getBounds().contains(pointer.x, pointer.y)
@@ -263,21 +281,23 @@ class miniGame5 extends Phaser.Scene {
       // Marca que está em animação de conexão
       this.connectionAnimationInProgress = true;
 
-      // Lógica de pontuação
-      if (matchedDefinition.getData("sigla") === this.draggingStart.getData("sigla")) {
-        pontuacao += 100;
-        this.somAcerto.play();
-        this.scoreText.setText(`Pontuação: ${pontuacao}`);
+      // Verifica se a correspondência está correta
+      const isCorrect = matchedDefinition.getData("sigla") === this.draggingStart.getData("sigla");
+      
+      // Atualiza pontuação conforme acerto/erro
+      if (isCorrect) {
+        pontuacao += 100; // Acerto: +100 pontos
+        this.somAcerto.play(); // Toca som de acerto
+        this.scoreText.setText(`Pontuação: ${pontuacao}`); // Atualiza texto
         this.showScoreAnimation(scene, "+100", 0x00ff00); // Feedback verde
-      } 
-      else {
-        pontuacao -= 50;
-        this.somErro.play();
+      } else {
+        pontuacao = Math.max(0, pontuacao - 50); // Erro: -50 pontos (mínimo 0)
+        this.somErro.play(); // Toca som de erro
         this.scoreText.setText(`Pontuação: ${pontuacao}`);
         this.showScoreAnimation(scene, "-50", 0xff0000); // Feedback vermelho
       }
 
-      // Marca como conectado
+      // Marca elementos como conectados
       this.draggingStart.setData("connected", true);
       this.connectedDefinitions.add(matchedDefinition);
       this.connectionsMade++;
@@ -320,11 +340,12 @@ class miniGame5 extends Phaser.Scene {
     // Animação de "pulo" quando conecta
     scene.tweens.add({
       targets: [card, definition],
-      scaleX: 0.85,
+      scaleX: 0.85, // Aumenta um pouco
       scaleY: 0.85,
-      duration: 450,
-      ease: "Power2",
+      duration: 450, // Duração da animação
+      ease: "Power2", // Tipo de easing
       onComplete: () => {
+        // Animação de volta ao tamanho normal
         scene.tweens.add({
           targets: [card, definition],
           scaleX: 0.8,
@@ -332,7 +353,7 @@ class miniGame5 extends Phaser.Scene {
           alpha: 1,
           duration: 400,
           ease: "Power2",
-          onComplete: onComplete
+          onComplete: onComplete // Chama callback ao terminar
         });
       }
     });
@@ -354,20 +375,21 @@ class miniGame5 extends Phaser.Scene {
 
   // Mostra animação de feedback de pontuação
   showScoreAnimation(scene, text, color) {
+    // Cria texto com estilo destacado
     let scoreAnimation = scene.add.text(400, 300, text, {
       font: "32px Arial",
-      fill: color,
-      stroke: "#000000",
-      strokeThickness: 4,
+      fill: color,         // Cor recebida como parâmetro
+      stroke: "#000000",   // Contorno preto
+      strokeThickness: 4,  // Espessura do contorno
     }).setOrigin(0.5, 0.5);
 
     // Animação de texto subindo e desaparecendo
     scene.tweens.add({
       targets: scoreAnimation,
-      y: 250,
-      alpha: 0,
-      duration: 1000,
-      onComplete: () => scoreAnimation.destroy()
+      y: 250,       // Move para cima
+      alpha: 0,     // Desaparece gradualmente
+      duration: 1000, // 1 segundo de duração
+      onComplete: () => scoreAnimation.destroy() // Remove ao terminar
     });
   }
 
@@ -375,38 +397,38 @@ class miniGame5 extends Phaser.Scene {
   showArrow(scene) {
     this.arrow = scene.add.image(400, 300, "arrow").setInteractive();
     this.arrow.setScale(0.3);
-    // Configura clique na seta para avançar
+    
+    // Configura clique na seta
     this.arrow.on("pointerdown", () => {
-      this.somFundo.stop();
-      this.clickSound.play();
-      scene.scene.start("fimMinigame5");
+      this.somFundo.stop(); // Para música de fundo
+      this.clickSound.play(); // Toca som de clique
+      scene.scene.start("fimMinigame5"); // Vai para cena final
     });
 
     // Animação de pulsação da seta
     scene.tweens.add({
       targets: this.arrow,
-      scaleX: 0.35,
+      scaleX: 0.35, // Aumenta um pouco
       scaleY: 0.35,
-      duration: 500,
-      yoyo: true,
-      repeat: -1,
+      duration: 500, // 0.5 segundos
+      yoyo: true,    // Volta ao tamanho original
+      repeat: -1,    // Repete infinitamente
     });
   }
 
-  update() {
-
-  }
+  // Método update vazio (não usado neste jogo)
+  update() {}
 }
 
 // Cena que mostra a pontuação final
 class fimMinigame5 extends Phaser.Scene {
   constructor() {
     super("fimMinigame5");
-    this.clickSound = null;
-    this.somCorrect;
+    this.clickSound = null; // Som de clique
+    this.somCorrect;        // Som de conclusão
   }
   
-  // Pré-carrega assets
+  // Pré-carrega assets necessários
   preload() {
     this.load.audio("click", "src/assets/dia2/miniGame5/click.mp3");
     this.load.audio("correct", "src/assets/sounds/taskSucess.mp3");
@@ -415,32 +437,39 @@ class fimMinigame5 extends Phaser.Scene {
   // Cria elementos da cena final
   create() {
     // Configura background
-    this.add.image(400, 300, "background").setOrigin(0.5, 0.5).setScale(8);
+    this.add.image(400, 300, "background")
+      .setOrigin(0.5, 0.5)
+      .setScale(8);
+    
+    // Configura sons
     this.clickSound = this.sound.add("click");
     this.somCorrect = this.sound.add("correct");
-    this.somCorrect.play();
+    this.somCorrect.play(); // Toca som de conclusão
 
-    // Mostra pontuação final
+    // Mostra pontuação final centralizada
     this.add.text(400, 300, `Pontuação Final: ${pontuacao}`, {
       font: "32px Arial",
       fill: "#ffffff",
       padding: { x: 20, y: 10 },
     }).setOrigin(0.5, 0.5);
     
-    // Botão para voltar ao hub
+    // Cria botão para voltar ao hub
     let botaoVoltar = this.add.text(400, 400, "Voltar", {
       fontSize: "30px",
       fill: "#fff",
       backgroundColor: "#333",
-    }).setOrigin(0.5).setPadding(10).setInteractive();
+    })
+    .setOrigin(0.5)
+    .setPadding(10)
+    .setInteractive();
 
     // Configura clique no botão
     botaoVoltar.on("pointerdown", () => {
-      this.clickSound.play();
-      musicaHub2.resume();
-      minigame5Jogado = true;
-      this.scene.wake("hub2");
-      this.scene.stop("fimMinigame5");
+      this.clickSound.play(); // Toca som de clique
+      musicaHub2.resume();    // Retoma música do hub
+      minigame5Jogado = true; // Marca minigame como concluído
+      this.scene.wake("hub2"); // Retorna ao hub
+      this.scene.stop("fimMinigame5"); // Encerra esta cena
     });
   }
 }
