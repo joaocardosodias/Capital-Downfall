@@ -1,3 +1,4 @@
+let pontuacaoM4 = 0;
 let cardsDisponiveis = [true, true, true, true]; // true = disponível, false = indisponível
 let lousaDesligada = false;
 
@@ -5,6 +6,7 @@ let lousaDesligada = false;
 class miniGame4 extends Phaser.Scene {
   constructor() {
     super({ key: "miniGame4" });
+    pontuacaoM4 = 0;
     // Variável para controlar se a animação dos cards já foi executada
     this.animacaoCardsExecutada = false;
     this.musicaFundo;
@@ -47,7 +49,7 @@ class miniGame4 extends Phaser.Scene {
     this.add.image(400, 100, "enunciadoMinigame4").setScale(2);
 
     // Exibe a pontuação no canto superior esquerdo
-    this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacao}`, {
+    this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacaoM4}`, {
       fontSize: "24px",
       fill: "#000",
     });
@@ -165,7 +167,10 @@ class miniGame4 extends Phaser.Scene {
       botaoFinalizar.on("pointerdown", () => {
         this.sound.play("clique"); // Toca o som de clique
 
-        this.transicaoParaCena("fimMinigame4");
+        this.transicaoParaCena('fimMinigame4', {
+          pontuacaoM4: pontuacaoM4,
+          pontuacao: pontuacao
+        });
       });
     }
 
@@ -677,17 +682,20 @@ class BaseTributacaoScene extends Phaser.Scene {
       img.on("pointerdown", () => {
         this.sound.play("clique"); // Toca o som de clique
         if (index + 1 === respostaCorreta) {
-          pontuacao += 100;
+          pontuacaoM4 += 100;
           this.sound.play("somAcerto", { volume: 2 });
         } else {
-          pontuacao -= 50;
+          pontuacaoM4 -= 50;
           this.sound.play("somErro", { volume: 2 });
         }
         // Indisponibiliza o card correspondente
         cardsDisponiveis[cardIndex] = false;
 
         // Volta para a cena principal e passa o índice do card finalizado
-        this.transicaoParaCena("miniGame4", { cardFinalizado: cardIndex });
+        this.transicaoParaCena("miniGame4", {
+          cardFinalizado: cardIndex,
+          pontuacaoM4: pontuacaoM4
+        });
       });
     });
   }
@@ -738,41 +746,71 @@ class fimMinigame4 extends Phaser.Scene {
 
   preload() {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
+    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
+    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+
+    this.load.audio("clique", "src/assets/sounds/clique.mp3");
+    this.load.audio("somConclusao", "src/assets/sounds/taskSucess.mp3");
+    this.load.audio("musicaFundo", "src/assets/sounds/escritorioFlow.mp3");
   }
 
   // Método para criar a cena de finalização
   create() {
     this.sound.play("conclusao");
     musicaMinigame4.stop();
-    this.cameras.main.setBackgroundColor("#195A4B");
-    this.add
-      .text(400, 250, "Você finalizou o minigame!", {
-        fontSize: "32px",
-        fill: "#000",
-        fontStyle: "bold",
-      })
-      .setOrigin(0.5);
+    this.cliqueSom = this.sound.add("clique");
+    this.musicaFundo = this.sound.add("musicaFundo"); // Adiciona o som da música de fundo
+    this.musicaFundo.setLoop(true); // Define que a música de fundo deve ser repetida
+    this.musicaFundo.play(); // Inicia a música de fundo
 
+    this.sound.play("conclusao");
+    this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+    miniGame4.fim = this.add.image(400, 300, "fim").setDepth(31);
+
+    pontuacao += pontuacaoM4
+
+    // Criação da tela de pontuação
     this.add
-      .text(400, 300, `Pontuação total: ${pontuacao}`, {
-        fontSize: "24px",
-        fill: "#000",
-      })
-      .setOrigin(0.5);
-    let botaoVoltar = this.add
-      .text(400, 400, "Voltar", {
-        fontSize: "30px",
-        fill: "#fff",
-        backgroundColor: "#333",
+      .text(402, 311, pontuacaoM4, {
+        fontFamily: "pixelArtNumeros",
+        fill: "#ffffff",
+        fontSize: '32px',
       })
       .setOrigin(0.5)
-      .setPadding(10)
-      .setInteractive();
+      .setDepth(32);
 
-    botaoVoltar.on("pointerdown", () => {
+    this.add
+      .text(402, 409, pontuacao, {
+        fontFamily: "pixelArtNumeros",
+        fill: "#ffffff",
+        fontSize: '48px',
+      })
+      .setOrigin(0.5)
+      .setDepth(32);
+
+    this.anims.create({
+      key: "voltarAoMapaM4",
+      frames: this.anims.generateFrameNumbers(
+        "voltarAoMapa",
+        { start: 0, end: 11 }
+      ),
+      frameRate: 6,
+      repeat: -1,
+    });
+
+    this.voltarAoMapaM4 = this.add
+      .sprite(695, 530, "voltarAoMapa")
+      .setInteractive()
+      .setDepth(32);
+
+    this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true)
+
+    this.voltarAoMapaM4.on("pointerdown", () => {
+      this.musicaFundo.stop();
+      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
       minigame4Jogado = true;
-      this.scene.wake("hub2"); //Se você clicar no botão Voltar, você volta pra hub do jogo
-      musicaHub2.resume(); // A música da hub volta a tocar
+      this.scene.wake("hub2");
+      musicaHub2.resume();
       this.scene.stop("fimMinigame4");
     });
   }
