@@ -18,7 +18,7 @@ class salaDeGuerra extends Phaser.Scene {
       9: "C",
       10: "A",
       11: "A",
-      12: "B"
+      12: "B",
     };
 
     this.questions = [
@@ -28,8 +28,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) O investidor só pode resgatar \no dinheiro ao final de um prazo fixo.",
           "B) O investidor pode comprar e \nvender cotas a qualquer momento.",
           "C) As aplicações são restritas e \nnão permitem novos aportes.",
-          "D) A liquidez é garantida apenas ao \nfinal do período de investimento."
-        ]
+          "D) A liquidez é garantida apenas ao \nfinal do período de investimento.",
+        ],
       },
       {
         text: "Qual tipo de fundo é mais adequado \npara quem busca flexibilidade?",
@@ -37,8 +37,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) Fundo Imobiliário",
           "B) Fundo Fechado",
           "C) Fundo Aberto",
-          "D) Fundo de Private Equity"
-        ]
+          "D) Fundo de Private Equity",
+        ],
       },
       // Mini game 1 - Questão 2 (original)
       {
@@ -47,8 +47,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) Fundo Imobiliário",
           "B) Fundo Fechado",
           "C) Fundo Aberto",
-          "D) Fundo de Private Equity"
-        ]
+          "D) Fundo de Private Equity",
+        ],
       },
       // Mini game 2
       {
@@ -57,8 +57,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) R$ 2.600,00",
           "B) R$ 2.632,00",
           "C) R$ 2.650,00",
-          "D) R$ 2.700,00"
-        ]
+          "D) R$ 2.700,00",
+        ],
       },
       {
         text: "Um investidor aplicou R$ 30.000,00 em um fundo. \nNo primeiro ano, houve uma depreciação de \n6%, no segundo uma recuperação de 4% e no \nterceiro uma queda de 3%. Qual o valor final?",
@@ -66,8 +66,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) R$ 29.474,40",
           "B) R$ 28.972,00",
           "C) R$ 29.152,20",
-          "D) R$ 29.640,00"
-        ]
+          "D) R$ 29.640,00",
+        ],
       },
       // Mini game 3
       {
@@ -76,8 +76,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) O tempo que o cliente leva \npara solicitar o resgate do fundo.",
           "B) O período necessário para \nque a ordem de venda de \ncota seja registrada \ne comece a render.",
           "C) O prazo para que o valor \ndo fundo seja reinvestido \nem outra aplicação.",
-          "D) O tempo que o banco \nleva para liberar o dinheiro \nna conta do cliente."
-        ]
+          "D) O tempo que o banco \nleva para liberar o dinheiro \nna conta do cliente.",
+        ],
       },
       {
         text: "O que acontece após o prazo de cotização \nno processo de resgate de um fundo?",
@@ -85,8 +85,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) O cliente pode receber \nimediatamente o valor resgatado.",
           "B) O valor começa a ser investido \nnovamente com novas cotas.",
           "C) Ocorre o prazo de liquidação, \nque corresponde ao tempo \nnecessário para concluir a \ntransação e liberar o dinheiro.",
-          "D) O fundo passa a ser bloqueado \npor um período de carência."
-        ]
+          "D) O fundo passa a ser bloqueado \npor um período de carência.",
+        ],
       },
       // Mini game 4
       {
@@ -95,17 +95,12 @@ class salaDeGuerra extends Phaser.Scene {
           "A) R$ 10.650,00",
           "B) R$ 10.500,00",
           "C) R$ 10.700,00",
-          "D) R$ 11.000,00"
-        ]
+          "D) R$ 11.000,00",
+        ],
       },
       {
         text: "Qual é o imposto de renda aplicado sobre o \nlucro de um fundo de ações no momento \ndo resgate?",
-        options: [
-          "A) 20%",
-          "B) 5%",
-          "C) 15%",
-          "D) 10%"
-        ]
+        options: ["A) 20%", "B) 5%", "C) 15%", "D) 10%"],
       },
       // Mini game 5
       {
@@ -114,8 +109,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) Indicador que mede a \nvariação do índice Bovespa \nao longo do tempo.",
           "B) Estratégia de proteção \ncontra riscos financeiros \nusando derivativos.",
           "C) Taxa que iguala as entradas\ne saídas de caixa de um investimento,\nindicando sua rentabilidade.",
-          "D) Prazo de liquidação financeira\n de um ativo após a venda."
-        ]
+          "D) Prazo de liquidação financeira\n de um ativo após a venda.",
+        ],
       },
       {
         text: "O que é um Swap no mercado financeiro?",
@@ -123,8 +118,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) Um contrato derivativo em \nque duas partes trocam fluxos \nfinanceiros baseados em \ndiferentes índices.",
           "B) Um fundo que investe \nexclusivamente em \nações da B3.",
           "C) Uma estratégia de hedge \npara garantir rentabilidade \nfixa em ativos.",
-          "D) Um fundo de private equity \nque adquire participação \nacionária em empresas privadas."
-        ]
+          "D) Um fundo de private equity \nque adquire participação \nacionária em empresas privadas.",
+        ],
       },
       // Mini game 6
       {
@@ -133,8 +128,8 @@ class salaDeGuerra extends Phaser.Scene {
           "A) Empreendedorismo e Inovação",
           "B) Responsabilidade Social",
           "C) Eficiência Operacional",
-          "D) Foco no Cliente"
-        ]
+          "D) Foco no Cliente",
+        ],
       },
       {
         text: "Qual das características abaixo melhor representa a cultura organizacional que valoriza o trabalho em equipe?",
@@ -142,9 +137,9 @@ class salaDeGuerra extends Phaser.Scene {
           "A) Buscar constantemente soluções ágeis e novos aprendizados.",
           "B) Compartilhar conhecimento e respeitar as diferenças entre os colaboradores.",
           "C) Tomar decisões assertivas que motivem a equipe e inspirem confiança.",
-          "D) Agir com responsabilidade e intensidade, antecipando problemas e propondo soluções."
-        ]
-      }
+          "D) Agir com responsabilidade e intensidade, antecipando problemas e propondo soluções.",
+        ],
+      },
     ];
     this.timer = 1800;
     this.timerText = null;
@@ -153,8 +148,14 @@ class salaDeGuerra extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("fundoPerguntas", "src/assets/dia2/salaDeGuerra/fundoFinal.png");
-    this.load.image('botao', "src/assets/dia2/salaDeGuerra/botaoFinalSelecionado.png")
+    this.load.image(
+      "fundoPerguntas",
+      "src/assets/dia2/salaDeGuerra/fundoFinal.png"
+    );
+    this.load.image(
+      "botao",
+      "src/assets/dia2/salaDeGuerra/botaoFinalSelecionado.png"
+    );
 
     // Carrega os sons utilizados
     this.load.audio("click", ["src/assets/dia2/miniGame4/sons/clique.mp3"]);
@@ -178,10 +179,10 @@ class salaDeGuerra extends Phaser.Scene {
     this.botaoD = this.criarBotao(600, 510, "D");
 
     // Exibe a pontuação no canto superior direito
-    this.pontuacaoText = this.add.text(380, 37, `Pontuação: ${this.pontuacao}`, {
-      fontSize: '18px',
-      fill: '#fff',
-      fontFamily: 'pixelArt',
+    this.pontuacaoText = this.add.text(380, 37, `Pontuação: ${pontuacao}`, {
+      fontSize: "18px",
+      fill: "#fff",
+      fontFamily: "pixelArt",
     });
 
     // Cria um array pra armazenar a imagem dos botões
@@ -191,24 +192,28 @@ class salaDeGuerra extends Phaser.Scene {
     this.criarCenaQuiz();
 
     // Criar e exibir o timer
-    this.timerText = this.add.text(650, 18, this.formatarTempo(this.timer), {
-      fontSize: '40px',
-      fill: '#fff',
-      fontFamily: 'pixelArt',
-    }).setDepth(10);
+    this.timerText = this.add
+      .text(650, 18, this.formatarTempo(this.timer), {
+        fontSize: "40px",
+        fill: "#fff",
+        fontFamily: "pixelArt",
+      })
+      .setDepth(10);
 
     this.time.addEvent({
       delay: 1000, // A cada 1 segundo
       callback: this.atualizarTimer,
       callbackScope: this,
-      loop: true // Continuar executando a cada 1 segundo
+      loop: true, // Continuar executando a cada 1 segundo
     });
   }
 
   formatarTempo(segundos) {
     const minutos = Math.floor(segundos / 60);
     const segundosRestantes = segundos % 60;
-    return `${minutos}:${segundosRestantes < 10 ? '0' + segundosRestantes : segundosRestantes}`;
+    return `${minutos}:${
+      segundosRestantes < 10 ? "0" + segundosRestantes : segundosRestantes
+    }`;
   }
 
   atualizarTimer() {
@@ -219,8 +224,6 @@ class salaDeGuerra extends Phaser.Scene {
       this.finalizarQuiz(); // Finaliza o quiz quando o tempo acabar
     }
   }
-  
-
 
   criarBotao(x, y, letra) {
     let botao = this.add
@@ -254,9 +257,15 @@ class salaDeGuerra extends Phaser.Scene {
     const numPergunta = this.selectedQuestions[this.perguntaAtual];
 
     // Exibe a pergunta
-    this.questionText = this.add.text(80, 100, this.questions[this.perguntaAtual].text, {
-      font: '24px pixelArtNegrito', fill: '#fff'
-    });
+    this.questionText = this.add.text(
+      80,
+      100,
+      this.questions[this.perguntaAtual].text,
+      {
+        font: "24px pixelArtNegrito",
+        fill: "#fff",
+      }
+    );
 
     // Exibe as opções de resposta
     const options = this.questions[this.perguntaAtual].options;
@@ -265,16 +274,18 @@ class salaDeGuerra extends Phaser.Scene {
     // Laço para adicionar o texto sobre os botões
     for (let i = 0; i < this.botoes.length; i++) {
       // Adiciona o texto sobre o botão
-      const text = this.add.text(this.botoes[i].botao.x, this.botoes[i].botao.y, options[i], {
-        font: '13px pixelArtNegrito',
-        fill: '#fff'
-      }).setOrigin(0.5); // Alinha o texto no centro do botão
+      const text = this.add
+        .text(this.botoes[i].botao.x, this.botoes[i].botao.y, options[i], {
+          font: "13px pixelArtNegrito",
+          fill: "#fff",
+        })
+        .setOrigin(0.5); // Alinha o texto no centro do botão
 
       // Adiciona o texto ao array para poder destruir depois
       this.optionTexts.push(text);
     }
 
-    this.botoes.forEach(b => {
+    this.botoes.forEach((b) => {
       b.botao.setVisible(true).setInteractive();
     });
 
@@ -283,32 +294,33 @@ class salaDeGuerra extends Phaser.Scene {
 
   verificarResposta(letraResposta) {
     // Confirma se a pergunta atual é válida
-    const correta = this.correctAnswers[this.perguntaAtual + 1];  // Verifica a resposta correta
+    const correta = this.correctAnswers[this.perguntaAtual + 1]; // Verifica a resposta correta
     const acertou = letraResposta === correta; // Verifica se a resposta está correta
 
-    this.botoes.forEach(b => b.botao.disableInteractive());
+    this.botoes.forEach((b) => b.botao.disableInteractive());
 
     // Se o jogador acertou, a pontuação aumenta em 100, se errou diminui 50
     pontuacao += acertou ? 100 : -50;
 
     // Adiciona o texto de feedback (verde para acerto, vermelho para erro)
-    const feedbackText = this.add.text(500, 90, acertou ? "+ 100" : "- 50", {
-      fontSize: "32px",
-      fill: acertou ? "#00FF00" : "#FF0000", // Verde para acerto e Vermelho para erro
-      fontFamily: "Arial",
-    })
-    .setOrigin(0.5);
+    const feedbackText = this.add
+      .text(500, 90, acertou ? "+ 100" : "- 50", {
+        fontSize: "32px",
+        fill: acertou ? "#00FF00" : "#FF0000", // Verde para acerto e Vermelho para erro
+        fontFamily: "Arial",
+      })
+      .setOrigin(0.5);
 
     // Anima o texto para subir na tela
     this.tweens.add({
       targets: feedbackText,
-      y: 60,  // Muda a posição Y para que o texto suba
-      alpha: 0,  // Fará o texto desaparecer lentamente
-      duration: 1000,  // Tempo da animação
-      ease: "Power1",  // Tipo de animação
+      y: 60, // Muda a posição Y para que o texto suba
+      alpha: 0, // Fará o texto desaparecer lentamente
+      duration: 1000, // Tempo da animação
+      ease: "Power1", // Tipo de animação
       onComplete: () => {
         feedbackText.destroy(); // Destrói o texto depois da animação
-      }
+      },
     });
 
     if (acertou) {
@@ -318,14 +330,17 @@ class salaDeGuerra extends Phaser.Scene {
     }
 
     // Atualiza o texto da pontuação
-    this.pontuacaoText.setText(`Pontuação: ${this.pontuacao}`);
+    this.pontuacaoText.setText(`Pontuação: ${pontuacao}`);
 
     // Log para verificar a pergunta e resposta
-    console.log(`Pergunta: ${this.perguntaAtual + 1}, Resposta Escolhida: ${letraResposta}, Resposta Correta: ${correta}`);
+    console.log(
+      `Pergunta: ${
+        this.perguntaAtual + 1
+      }, Resposta Escolhida: ${letraResposta}, Resposta Correta: ${correta}`
+    );
 
     this.proximaPergunta();
   }
-
 
   proximaPergunta() {
     // Aumenta em uma unidade o valor da variável this.perguntaAtual
@@ -342,7 +357,7 @@ class salaDeGuerra extends Phaser.Scene {
     });
 
     // Remove os textos das alternativas anteriores
-    this.optionTexts.forEach(text => text.destroy());
+    this.optionTexts.forEach((text) => text.destroy());
     this.optionTexts = []; // Limpa o array que armazena os textos das opções
 
     // Remove o texto da pergunta anterior
@@ -384,6 +399,5 @@ class salaDeGuerra extends Phaser.Scene {
         fontFamily: "Arial",
       })
       .setOrigin(0.5);
-   
   }
 }
