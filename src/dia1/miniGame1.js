@@ -1,5 +1,6 @@
 class miniGame1 extends Phaser.Scene {
   constructor(
+    pontuacaoM1,
     botaoVoltar,
     fim,
     gavetas,
@@ -12,6 +13,7 @@ class miniGame1 extends Phaser.Scene {
   ) {
     super("miniGame1");
 
+    this.pontuacaoM1 = 0;
     this.botaoVoltar = botaoVoltar;
     this.fim = fim;
     this.gavetas = gavetas;
@@ -43,8 +45,8 @@ class miniGame1 extends Phaser.Scene {
       );
     }
 
-    this.load.image("fim", "src/assets/dia1/miniGame1/fim.png");
-    this.load.image("botaoVoltar", "src/assets/dia1/miniGame1/botaoVoltar.png");
+    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
+    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
 
     // Carrega os sons utilizados
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
@@ -76,7 +78,7 @@ class miniGame1 extends Phaser.Scene {
     this.cards = cards;
 
     // Fundo
-    this.add.rectangle(400, 300, 800, 600, 0x243572).setDepth(-10);
+    this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(-10);
 
     // Criação do primeiro card e feedback
     miniGame1.card1 = this.add
@@ -95,23 +97,15 @@ class miniGame1 extends Phaser.Scene {
 
     // Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
     miniGame1.textoPontuacao = this.add
-      .text(20, 40, "Pontuação: " + pontuacao, {
-        font: "30px Arial",
+      .text(20, 40, "Pontuação: " + this.pontuacaoM1, {
+        fontFamily: "pixelArt",
         fill: "#ffffff",
       })
       .setDepth(15);
 
-    miniGame1.botaoIniciar = this.add
-      .image(400, 300, "botaoIniciar")
-      .setInteractive()
-      .setDepth(0)
-      .setVisible(true)
-      .setScale(1);
-
     miniGame1.gavetas = this.add
       .image(400, 300, "gavetas")
       .setDepth(-1)
-      .setVisible(false)
       .setScale(1);
 
     let zonaRespostaAberto = this.add
@@ -134,14 +128,7 @@ class miniGame1 extends Phaser.Scene {
     this.musicaFundo = this.sound.add("somFundo");
     this.musicaFundo.loop = true;
     this.musicaFundo.play();
-
-    // Verifica se o botão foi pressionado
-    miniGame1.botaoIniciar.setInteractive().on("pointerdown", (pointer) => {
-      this.cliqueSom.play(); // Reproduz o som de clique
-      miniGame1.botaoIniciar.setVisible(false);
-      miniGame1.gavetas.setVisible(true);
-      this.animaCardDescendo();
-    });
+  
 
     this.input.on("drop", (pointer, gameObject, dropZone) => {
       if (dropZone.name === "zonaAberto") {
@@ -151,26 +138,28 @@ class miniGame1 extends Phaser.Scene {
       }
       miniGame1.card1.setInteractive({ draggable: false });
     });
+
+    this.animaCardDescendo();
   }
 
   responder(respostaJogador, cards) {
     let respostaCerta = cards[miniGame1.cardIndex].resposta;
 
     if (respostaJogador === respostaCerta) {
-      pontuacao += 100;
+      this.pontuacaoM1 += 100;
       this.somAcerto.play(); //  Reproduz o som de acerto
       miniGame1.textoMudancaPontuacao = this.add
         .text(20, 40, "+100 pontos", {
-          font: "20px Arial",
+          fontFamily: "pixelArt",
           fill: "#00cc00",
         })
         .setDepth(10);
     } else {
-      pontuacao -= 50;
+      this.pontuacaoM1 -= 50;
       this.somErro.play(); // Reproduz o som de erro
       miniGame1.textoMudancaPontuacao = this.add
         .text(20, 40, "-50 pontos", {
-          font: "20px Arial",
+          fontFamily: "pixelArt",
           fill: "#cc0000",
         })
         .setDepth(10);
@@ -187,7 +176,7 @@ class miniGame1 extends Phaser.Scene {
       },
     });
 
-    miniGame1.textoPontuacao.setText("Pontuação: " + pontuacao);
+    miniGame1.textoPontuacao.setText("Pontuação: " + this.pontuacaoM1);
 
     this.animaCardSumindo(cards);
   }
@@ -212,24 +201,48 @@ class miniGame1 extends Phaser.Scene {
           this.animaCardDescendo();
         } else {
           this.sound.play("conclusao");
-          this.add.rectangle(400, 300, 800, 600, 0x000000).setDepth(30);
+          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
           miniGame1.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-          let textoFinal = this.add
-            .text(520, 275, pontuacao, {
-              font: "40px Lexend",
+          pontuacao += this.pontuacaoM1
+
+          // Criação da tela de pontuação
+          this.add
+            .text(402, 311, this.pontuacaoM1, {
+              fontFamily: "pixelArtNumeros",
               fill: "#ffffff",
+              fontSize: '32px',
             })
             .setOrigin(0.5)
-            .setDepth(31);
+            .setDepth(32);
 
-          miniGame1.botaoVoltar = this.add
-            .image(400, 400, "botaoVoltar")
+          this.add
+            .text(402, 409, pontuacao, {
+              fontFamily: "pixelArtNumeros",
+              fill: "#ffffff",
+              fontSize: '48px',
+            })
+            .setOrigin(0.5)
+            .setDepth(32);
+
+          this.anims.create({
+            key: "voltarAoMapaM1",
+            frames: this.anims.generateFrameNumbers(
+              "voltarAoMapa",
+              { start: 0, end: 11 }
+            ),
+            frameRate: 6,
+            repeat: -1,
+          });
+
+          this.voltarAoMapaM1 = this.add
+            .sprite(695, 530, "voltarAoMapa")
             .setInteractive()
-            .setDepth(32)
-            .setScale(0.9);
+            .setDepth(32);
 
-          miniGame1.botaoVoltar.on("pointerdown", () => {
+          this.voltarAoMapaM1.anims.play("voltarAoMapaM1", true)
+          
+          this.voltarAoMapaM1.on("pointerdown", () => {
             this.musicaFundo.stop();
             this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
             minigame1Jogado = true;

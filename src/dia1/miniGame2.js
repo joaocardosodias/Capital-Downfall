@@ -16,6 +16,7 @@ class miniGame2 extends Phaser.Scene {
   ) {
     super("miniGame2");
 
+    this.pontuacaoM2 = 0;
     this.perfil1 = perfil1;
     this.botao1 = botao1;
     this.botao2 = botao2;
@@ -71,11 +72,11 @@ class miniGame2 extends Phaser.Scene {
       );
     }
 
-    this.load.image("fim", "src/assets/dia1/miniGame2/fim.png");
-    this.load.image("botaoVoltar", "src/assets/dia1/miniGame2/botaoVoltar.png");
+    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
+    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
 
     // Carrega o som de clique
-    this.load.audio("clique", "src/assets/dia2/minigame4/sons/clique.mp3");
+    this.load.audio("clique", "src/assets/sounds/clique.mp3");
     // Carrega o som de carimbo
     this.load.audio("carimbo", "src/assets/sounds/carimbo.mp3");
     // Carrega a música de fundo
@@ -107,6 +108,7 @@ class miniGame2 extends Phaser.Scene {
     Phaser.Utils.Array.Shuffle(perfis);
     perfis = perfis.slice(0, 4);
 
+    this.cliqueSom = this.sound.add("clique");
     this.musicaFundo = this.sound.add("musicaFundo"); // Adiciona o som da música de fundo
     this.musicaFundo.setLoop(true); // Define que a música de fundo deve ser repetida
     this.musicaFundo.play(); // Inicia a música de fundo
@@ -136,8 +138,8 @@ class miniGame2 extends Phaser.Scene {
 
     // Adiciona no canto superior esquerdo um texto com a pontuação atual do jogador
     miniGame2.textoPontuacao = this.add
-      .text(20, 40, "Pontuação: " + pontuacao, {
-        font: "30px Arial",
+      .text(20, 40, "Pontuação: " + this.pontuacaoM2, {
+        fontFamily: "pixelArt",
         fill: "#ffffff",
       })
       .setDepth(15);
@@ -262,7 +264,7 @@ class miniGame2 extends Phaser.Scene {
 
     // Verifica se a resposta do jogador está correta
     if (respostaJogador === respostaCerta) {
-      pontuacao += 100; // Aumenta a pontuação
+      this.pontuacaoM2 += 100; // Aumenta a pontuação
       this.sound.play("somAcerto", { volume: 2 }); // Reproduz o som de acerto
       // Adiciona uma imagem de certo na tela
       miniGame2.carimbo = this.add
@@ -273,13 +275,13 @@ class miniGame2 extends Phaser.Scene {
       // Adiciona um texto ao lado que mostra que o jogador ganhou 100 pontos
       miniGame2.textoMudancaPontuacao = this.add
         .text(20, 400, "+100 pontos", {
-          font: "50px Arial",
+          fontFamily: "pixelArt",
           fill: "#00cc00", // Cor do texto: verde
         })
         .setDepth(15);
     } else {
       // Se o jogador errou
-      pontuacao -= 50; // Ele perde 50 pontos]
+      this.pontuacaoM2 -= 50; // Ele perde 50 pontos]
       this.sound.play("somErro", { volume: 2 }); // Reproduz o som de erro
       // Uma imagem de 'errado'(X) é adicionada a tela
       miniGame2.carimbo = this.add
@@ -290,7 +292,7 @@ class miniGame2 extends Phaser.Scene {
       // Adiciona um texto ao lado que mostra que o jogador perdeu 50 pontos
       miniGame2.textoMudancaPontuacao = this.add
         .text(20, 400, "-50 pontos", {
-          font: "50px Arial",
+          fontFamily: "pixelArt",
           fill: "#cc0000", // Cor do texto: vermelha
         })
         .setDepth(15);
@@ -310,7 +312,7 @@ class miniGame2 extends Phaser.Scene {
     });
 
     // Atualiza o placar
-    miniGame2.textoPontuacao.setText("Pontuação: " + pontuacao);
+    miniGame2.textoPontuacao.setText("Pontuação: " + this.pontuacaoM2);
 
     // Anima a exibição do carimbo
     this.tweens.add({
@@ -364,32 +366,53 @@ class miniGame2 extends Phaser.Scene {
           this.animaPerfisEsquerda(perfis);
         } else {
           // Se não houver mais perfis, vai para a próxima cena
-          this.add.rectangle(400, 300, 800, 600, 0x000000).setDepth(20); // Fundo preto
-          miniGame2.fim = this.add.image(400, 300, "fim").setDepth(21); // Exibe a tela final
+          this.sound.play("conclusao");
+          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+          miniGame2.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-          // Mostra a pontuação final do jogador na tela
-          let textoFinal = this.add
-            .text(520, 275, pontuacao, {
-              font: "40px Lexend",
-              fill: "#ffffff", // Cor branca
+          pontuacao += this.pontuacaoM2
+
+          // Criação da tela de pontuação
+          this.add
+            .text(402, 311, this.pontuacaoM2, {
+              fontFamily: "pixelArtNumeros",
+              fill: "#ffffff",
+              fontSize: '32px',
             })
             .setOrigin(0.5)
-            .setDepth(31);
+            .setDepth(32);
 
-          this.sound.play("conclusao"); // Reproduz o som de conclusão
+          this.add
+            .text(402, 409, pontuacao, {
+              fontFamily: "pixelArtNumeros",
+              fill: "#ffffff",
+              fontSize: '48px',
+            })
+            .setOrigin(0.5)
+            .setDepth(32);
 
-          // Criação do botão para voltar ao jogo
-          miniGame2.botaoVoltar = this.add
-            .image(400, 400, "botaoVoltar")
+          this.anims.create({
+            key: "voltarAoMapaM2",
+            frames: this.anims.generateFrameNumbers(
+              "voltarAoMapa",
+              { start: 0, end: 11 }
+            ),
+            frameRate: 6,
+            repeat: -1,
+          });
+
+          this.voltarAoMapaM2 = this.add
+            .sprite(695, 530, "voltarAoMapa")
             .setInteractive()
-            .setDepth(22)
-            .setScale(0.9);
+            .setDepth(32);
 
-          miniGame2.botaoVoltar.on("pointerdown", () => {
-            this.sound.play("clique"); // Reproduz o som de clique
-            this.musicaFundo.stop(); // Para a música de fundo
+          this.voltarAoMapaM2.anims.play("voltarAoMapaM2", true)
+          
+          this.voltarAoMapaM2.on("pointerdown", () => {
+            this.musicaFundo.stop();
+            this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
             minigame2Jogado = true;
-            this.scene.wake("hub"); // Se você clicar no botão Voltar, você volta pra hub do jogo
+            this.scene.wake("hub");
             musicaHub.resume();
             this.scene.stop("miniGame2");
           });

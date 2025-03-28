@@ -1,6 +1,7 @@
 class miniBossDia1 extends Phaser.Scene {
   constructor() {
     super("miniBossDia1"); // Nome da cena
+    this.pontuacaoB1 = 0;
     // Declaração de algumas das variáveis que serão usadas no código
     this.perguntaAtual = 0;
     // Lista que vai armazenar as perguntas selecionadas
@@ -17,7 +18,7 @@ class miniBossDia1 extends Phaser.Scene {
       8: "B",
       9: "B",
     };
-    this.clickSound = null; // Variável para o som de clique
+    this.cliqueSom = null; // Variável para o som de clique
     this.somFundo;
   }
 
@@ -51,6 +52,9 @@ class miniBossDia1 extends Phaser.Scene {
     this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
     this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
+
+    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
+    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
   }
 
   create() {
@@ -65,7 +69,7 @@ class miniBossDia1 extends Phaser.Scene {
     this.selectedQuestions = topicos.map((t) => Phaser.Math.RND.pick(t));
 
     // Carrega os sons
-    this.clickSound = this.sound.add("click");
+    this.cliqueSom = this.sound.add("click");
     this.somFundo = this.sound.add("somFundo");
     this.somFundo.play(); // Reproduz o som de fundo
 
@@ -89,7 +93,7 @@ class miniBossDia1 extends Phaser.Scene {
       .setInteractive() // Permite que o botão detecte clique
       .setDepth(-1) // Define a profundidade do botão como -1 para garantir que o texto da pergunta apareça na tela
       .on("pointerdown", () => {
-        this.clickSound.play(); // Reproduz o som de clique
+        this.cliqueSom.play(); // Reproduz o som de clique
         this.desabilitarBotoes(); // Método que desabilita os botões para impedir múltiplos cliques
         this.verificarResposta(letra); // Passa a letra como parâmetro para verificação
       });
@@ -133,7 +137,7 @@ class miniBossDia1 extends Phaser.Scene {
     const acertou = letraResposta === correta; // Verifica se a resposta está correta
 
     // Se o jogador tiver acertado, a pontuação dele aumenta em 100 pontos e se ele tiver errado a pontuação dele diminui em 50 pontos
-    pontuacao += acertou ? 100 : -50;
+    this.pontuacaoB1 += acertou ? 100 : -50;
 
     if (letraResposta === correta) {
       this.sound.play("somAcerto");
@@ -158,8 +162,8 @@ class miniBossDia1 extends Phaser.Scene {
     this.add.image(400, 300, `${tipo}${this.numPerguntaAtual}`);
 
     // Adiciona um texto que mostra a pontuação do jogador na tela
-    this.add.text(60, 570, `Pontuação: ${pontuacao}`, {
-      fontSize: "24px", // Tamanho da fonte
+    this.add.text(60, 570, `Pontuação: ${this.pontuacaoB1}`, {
+      fontFamily: "pixelArt",
       fill: "#FFF", // Cor da fonte é branco
       backgroundColor: "#000000", // Cor do fundo é preto
     });
@@ -171,7 +175,7 @@ class miniBossDia1 extends Phaser.Scene {
         .image(670, 570, "pular")
         .setInteractive() // Torna o botão interativo
         .on("pointerdown", () => {
-          this.clickSound.play(); // Reproduz o som de clique
+          this.cliqueSom.play(); // Reproduz o som de clique
           this.proximaPergunta(); // Quando o jogador clicar no botão, a função que mostra a próxima pergunta será chamada
         });
     });
@@ -213,38 +217,53 @@ class miniBossDia1 extends Phaser.Scene {
     // Chama a função que elimina todos os elementos da tela
     this.limparCena();
 
-    // Adiciona um fundo azul escuro a tela
-    this.add.rectangle(400, 300, 800, 600, 0x00014b).setOrigin(0.5);
-
-    this.somFundo.stop(); // Para a música de fundo
     this.sound.play("conclusao");
-    // Adiciona um texto escrito "Desafio Concluído!"
-    this.add
-      .text(400, 220, "Desafio Concluído!", {
-        fontSize: "48px",
-        fill: "#FFFFFF",
-        fontFamily: "Arial",
-      })
-      .setOrigin(0.5);
+          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+          miniBossDia1.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-    // Adiciona um texto que mostra a pontuação final
-    this.add
-      .text(400, 300, `Pontuação Final: ${pontuacao}`, {
-        fontSize: "32px",
-        fill: "#FFFFFF",
-        fontFamily: "Arial",
-      })
-      .setOrigin(0.5);
+          pontuacao += this.pontuacaoB1
 
-    // Botão para voltar ao hub
-    this.add
-      .image(400, 420, "botaoVoltar")
-      .setInteractive()
-      .setScale(0.8)
-      .on("pointerdown", () => {
-        this.clickSound.play(); // Reproduz o som de clique
-        this.scene.stop("miniBossDia1");
-        this.scene.start("finalDia1");
-      });
+          // Criação da tela de pontuação
+          this.add
+            .text(402, 311, this.pontuacaoB1, {
+              fontFamily: "pixelArtNumeros",
+              fill: "#ffffff",
+              fontSize: '32px',
+            })
+            .setOrigin(0.5)
+            .setDepth(32);
+
+          this.add
+            .text(402, 409, pontuacao, {
+              fontFamily: "pixelArtNumeros",
+              fill: "#ffffff",
+              fontSize: '48px',
+            })
+            .setOrigin(0.5)
+            .setDepth(32);
+
+          this.anims.create({
+            key: "voltarAoMapaB1",
+            frames: this.anims.generateFrameNumbers(
+              "voltarAoMapa",
+              { start: 0, end: 11 }
+            ),
+            frameRate: 6,
+            repeat: -1,
+          });
+
+          this.voltarAoMapaB1 = this.add
+            .sprite(695, 530, "voltarAoMapa")
+            .setInteractive()
+            .setDepth(32);
+
+          this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true)
+          
+          this.voltarAoMapaB1.on("pointerdown", () => {
+            this.somFundo.stop();
+            this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+            this.scene.start("finalDia1");
+            this.scene.stop("miniBossDia1");
+          });
   }
 }
