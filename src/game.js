@@ -17,7 +17,6 @@ const config = {
   },
 
   scene: [
-    miniGame3,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,
@@ -25,7 +24,7 @@ const config = {
     apoioGeral,
     miniGame1,
     miniGame2,
-    
+    miniGame3,
     fimDoMinigame3,
     apoioDia1,
     apoioMiniboss1,
