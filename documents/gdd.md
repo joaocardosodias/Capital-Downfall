@@ -191,7 +191,7 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 
 <p align = "center">
 <p>Figura 4: Ameaças - Matriz de Risco</p>
-<img src="../assets/matrizrisco.png">
+<img src="../assets/matrizderisco1.png">
 <p>Produção autoral</p>
 </p>
 
@@ -1402,7 +1402,13 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 <div align="center">
 <p> Figura 13: Sala de guerra - Hub</p>
-<img src="../assets/gdd_4.4/saladg.png">
+<img src="../assets/gdd_4.4/saladg1.png">
+<p>Produção autoral - fase em desenvolvimento </p>
+</div>
+
+<div align="center">
+<p> Figura 14: Sala de guerra - Hub</p>
+<img src="../assets/gdd_4.4/saladg2.png">
 <p>Produção autoral - fase em desenvolvimento </p>
 </div>
 
@@ -1411,19 +1417,19 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A adição de sons em um jogo é importante porque enriquece a experiência do jogador, tornando-a mais imersiva e envolvente. Sons ajudam a criar atmosfera, guiar a atenção, indicar interações, reforçar emoções e fornecer feedback imediato sobre as ações do jogador. Além disso, contribuem para a narrativa e ajudam na construção da identidade do jogo, tornando-o mais memorável e impactante.
 
 <div align="center">
-<p> Figura 14: Adiciona música na Sala de Guerra</p>
+<p> Figura 15: Adiciona música na Sala de Guerra</p>
 <img src="../assets/gdd_4.4/code3.png">
 <p> Fonte do som: Pixabay </p>
 </div>
 
 <div align="center">
-<p> Figura 15: Carregamento de música</p>
+<p> Figura 16: Carregamento de música</p>
 <img src="../assets/gdd_4.4/code4.png">
 <p> Fonte do som: Pixabay </p>
 </div>
 
 <div align="center">
-<p> Figura 16: Adição de efeitos sonoros</p>
+<p> Figura 17: Adição de efeitos sonoros</p>
 <img src="../assets/gdd_4.4/code1.png">
 <p> Produção autoral</p>
 </div>
