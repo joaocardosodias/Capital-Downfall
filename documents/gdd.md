@@ -191,7 +191,7 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 
 <p align = "center">
 <p>Figura 4: Ameaças - Matriz de Risco</p>
-<img src="../assets/matrizrisco.png">
+<img src="../assets/matrizrisco1.png">
 <p>Produção autoral</p>
 </p>
 
