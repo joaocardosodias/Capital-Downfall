@@ -808,10 +808,11 @@ class fimMinigame4 extends Phaser.Scene {
     this.voltarAoMapaM4.on("pointerdown", () => {
       this.musicaFundo.stop();
       this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+      this.scene.stop("fimMinigame4")
       minigame4Jogado = true;
       this.scene.wake("hub2");
       musicaHub2.resume();
-      this.scene.stop("fimMinigame4");
+      ;
     });
   }
 }

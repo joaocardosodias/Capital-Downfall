@@ -502,9 +502,11 @@ class fimMinigame5 extends Phaser.Scene {
     this.voltarAoMapaM5.anims.play("voltarAoMapaM5", true)
 
     this.voltarAoMapaM5.on("pointerdown", () => {
+      
       this.musicaFundo.stop();
       this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
       minigame5Jogado = true;
+      this.scene.stop("fimMinigame5");
       this.scene.wake("hub2");
       musicaHub2.resume();
     });
