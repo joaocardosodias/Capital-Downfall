@@ -14,6 +14,15 @@ class miniGame3 extends Phaser.Scene {
         this.cardsInferiores = [];
         this.imagensCards = ['3card1', '3card2', '3card3', '3card4', '3card5']; // Ordem original dos cards
         this.somFundo;
+        
+        // Configurações manuais das posições iniciais dos cards superiores
+        this.posicoesIniciaisCards = [
+            { x: 100, y: 300 }, // Posição inicial do card 1
+            { x: 250, y: 300 }, // Posição inicial do card 2
+            { x: 400, y: 300 }, // Posição inicial do card 3
+            { x: 550, y: 300 }, // Posição inicial do card 4
+            { x: 700, y: 300 }  // Posição inicial do card 5
+        ];
     }
 
     preload() {
@@ -51,7 +60,6 @@ class miniGame3 extends Phaser.Scene {
         ];
 
         let tamanhoCard = 140; // Tamanho dos espaços
-        let yTopo = 250; // Posição vertical dos cards superiores
 
         this.input.setTopOnly(false);
 
@@ -67,9 +75,14 @@ class miniGame3 extends Phaser.Scene {
             padding: { left: 10, right: 10, top: 5, bottom: 5 }
         }).setOrigin(0.5);
 
-        // Criar os cards superiores
+        // Criar os cards superiores com posições iniciais personalizadas
         for (let i = 0; i < 5; i++) {
-            let card = this.add.image((i + 1) * (this.larguraJogo / 6) + Phaser.Math.Between(-30, 30), yTopo + Phaser.Math.Between(-30, 30), this.imagensCards[i])
+            let posicaoInicial = this.posicoesIniciaisCards[i];
+            let card = this.add.image(
+                posicaoInicial.x, 
+                posicaoInicial.y, 
+                this.imagensCards[i]
+            )
                 .setOrigin(0.5)
                 .setInteractive()
                 .setDepth(2) // Cards superiores com depth maior (ficam por cima)
@@ -200,6 +213,8 @@ class miniGame3 extends Phaser.Scene {
                     // Se o card não foi solto em um espaço válido, retorna para a posição original (diminui a escala)
                     this.tweens.add({
                         targets: gameObject,
+                        x: gameObject.getData('posicaoOriginal').x,
+                        y: gameObject.getData('posicaoOriginal').y,
                         duration: 200,
                         ease: 'Power2',
                         onComplete: () => {

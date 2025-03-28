@@ -265,20 +265,86 @@ class hub extends Phaser.Scene {
       }
     });
 
-    //Verifica se o player está na mesma área que o detector de colisão do minigame 1
-    this.physics.add.overlap(this.player, this.colisaoMinigame1, () => {
-      //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
-      if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
+    // Criando o aviso "Aperte espaço para interagir"
+    this.avisoInteracao1 = this.add.text(this.player.x, this.player.y + 80, 'Aperte ESPAÇO \npara interagir', {
+      fontSize: '16px',
+      fontFamily: 'pixelArtNegrito',
+      fill: '#fff',
+      backgroundColor: '#8493CC',
+      padding: { left: 5, right: 5, top: 2, bottom: 2 }
+    }).setOrigin(0.5).setVisible(false).setDepth(11);
 
-        //O player não pode jogar o minigame mais de 1 vez
+    // Variável de controle para saber se o player está na área
+    this.naAreaMinigame1 = false;   
+    this.naAreaMinigame2 = false;
+    this.naAreaMinigame3 = false;
+
+    // Atualiza a posição do aviso a cada quadro
+    this.events.on('update', () => {
+      if (this.avisoInteracao1.visible) {
+        this.avisoInteracao1.setPosition(this.player.x, this.player.y + 80);  // Atualiza a posição do aviso
+      }
+    });
+
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame1, () => {
+      if (!minigame1Jogado) {
+        this.avisoInteracao1.setPosition(this.player.x, this.player.y - 50).setVisible(true);
+        this.naAreaMinigame1 = true;
+      }
+    });
+
+    // Verifica se o player pressionou espaço para iniciar o minigame
+    this.physics.add.overlap(this.player, this.colisaoMinigame1, () => {
+      if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
+        // O player não pode jogar o minigame mais de 1 vez
         if (minigame1Jogado == false) {
           this.avisoMinigame1.setVisible(false);
+          this.minigameAtual = 1;
           this.interacaoMinigame.play();
           this.passos.stop();
-          this.minigameAtual = 1;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
+          game.scene.sleep('hub');
         }
+      }
+    });
+
+    // Verifica se o jogador saiu da área no update() e esconde o aviso
+    this.events.on('update', () => {
+      if (!this.physics.overlap(this.player, this.colisaoMinigame1)) {
+        this.avisoInteracao1.setVisible(false);
+        this.naAreaMinigame1 = false;
+      }
+    });
+
+    // Garantir que o aviso desapareça ao retornar à hub
+    this.events.on('wake', () => {
+      if (this.avisoInteracao1) {
+        this.avisoInteracao1.setVisible(false);  // Esconde o aviso quando retorna à hub
+      }
+    });
+
+    // Criando o aviso "Aperte espaço para interagir"
+    this.avisoInteracao2 = this.add.text(this.player.x, this.player.y + 80, 'Aperte ESPAÇO \npara interagir', {
+      fontSize: '16px',
+      fontFamily: 'pixelArtNegrito',
+      fill: '#fff',
+      backgroundColor: '#8493CC',
+      padding: { left: 5, right: 5, top: 2, bottom: 2 }
+    }).setOrigin(0.5).setVisible(false).setDepth(11);
+
+    // Atualiza a posição do aviso a cada quadro
+    this.events.on('update', () => {
+      if (this.avisoInteracao2.visible) {
+        this.avisoInteracao2.setPosition(this.player.x, this.player.y + 80);  // Atualiza a posição do aviso
+      }
+    });
+
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 2
+    this.physics.add.overlap(this.player, this.colisaoMinigame2, () => {
+      if (!minigame2Jogado) {
+        this.avisoInteracao2.setPosition(this.player.x, this.player.y - 50).setVisible(true);
+        this.naAreaMinigame2 = true;
       }
     });
 
@@ -288,12 +354,51 @@ class hub extends Phaser.Scene {
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame2Jogado == false) {
           this.avisoMinigame2.setVisible(false);
+          this.minigameAtual = 2;
           this.interacaoMinigame.play();
           this.passos.stop();
-          this.minigameAtual = 2;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
+          game.scene.sleep('hub');
         }
+      }
+    });
+
+    // Verifica se o jogador saiu da área no update() e esconde o aviso
+    this.events.on('update', () => {
+      if (!this.physics.overlap(this.player, this.colisaoMinigame2)) {
+        this.avisoInteracao2.setVisible(false);
+        this.naAreaMinigame2 = false;
+      }
+    });
+
+    // Garantir que o aviso desapareça ao retornar à hub
+    this.events.on('wake', () => {
+      if (this.avisoInteracao2) {
+        this.avisoInteracao2.setVisible(false);  // Esconde o aviso quando retorna à hub
+      }
+    });
+
+    // Criando o aviso "Aperte espaço para interagir"
+    this.avisoInteracao3 = this.add.text(this.player.x, this.player.y + 80, 'Aperte ESPAÇO \npara interagir', {
+      fontSize: '16px',
+      fontFamily: 'pixelArtNegrito',
+      fill: '#fff',
+      backgroundColor: '#8493CC',
+      padding: { left: 5, right: 5, top: 2, bottom: 2 }
+    }).setOrigin(0.5).setVisible(false).setDepth(11);
+
+    // Atualiza a posição do aviso a cada quadro
+    this.events.on('update', () => {
+      if (this.avisoInteracao3.visible) {
+        this.avisoInteracao3.setPosition(this.player.x, this.player.y + 80);  // Atualiza a posição do aviso
+      }
+    });
+
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 3
+    this.physics.add.overlap(this.player, this.colisaoMinigame3, () => {
+      if (!minigame3Jogado) {
+        this.avisoInteracao3.setPosition(this.player.x, this.player.y - 50).setVisible(true);
+        this.naAreaMinigame3 = true;
       }
     });
 
@@ -303,21 +408,50 @@ class hub extends Phaser.Scene {
         //O player não pode jogar o minigame mais de 1 vez
         if (minigame3Jogado == false) {
           this.avisoMinigame3.setVisible(false);
+
+          this.minigameAtual = 3;
           this.interacaoMinigame.play();
           this.passos.stop();
-          this.minigameAtual = 3;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          this.scene.sleep("hub");
+          game.scene.start('apoioDia1', { minigameAtual: this.minigameAtual });
+          this.scene.sleep('hub');
         }
+      }
+    });
+
+    // Verifica se o jogador saiu da área no update() e esconde o aviso
+    this.events.on('update', () => {
+      if (!this.physics.overlap(this.player, this.colisaoMinigame3)) {
+        this.avisoInteracao3.setVisible(false);
+        this.naAreaMinigame3 = false;
+      }
+    });
+
+    // Garantir que o aviso desapareça ao retornar à hub
+    this.events.on('wake', () => {
+      if (this.avisoInteracao3) {
+        this.avisoInteracao3.setVisible(false);  // Esconde o aviso quando retorna à hub
       }
     });
 
     //Configura a câmera para seguir o jogador, além do zoom
     this.cameras.main.startFollow(this.player, true, 0.2, 0.2);
     this.cameras.main.setZoom(1).setRoundPixels(true);
+
+    // Adiciona o texto da pontuação
+    this.textoPontuacao = this.add.text(570, 10, `Pontuação: ${pontuacao}`, { 
+      fontFamily: 'pixelArt',  // Nome da fonte personalizada
+      fontSize: '20px', 
+      color: '#ffffff' 
+    }).setScrollFactor(0).setDepth(10);  // Define a profundidade do texto para que ele fique visível 
+
+    // Adiciona um efeito de sombra ao redor do texto
+    this.textoPontuacao.setShadow(2, 2, '#000000', 2);
   }
 
   update() {
+    // Atualiza o texto com o valor atual da variável 'pontuacao' a cada frame
+    this.textoPontuacao.setText(`Pontuação: ${pontuacao}`);
+    
     if (
       minigame1Jogado === true &&
       minigame2Jogado === true &&
@@ -326,6 +460,7 @@ class hub extends Phaser.Scene {
       this.passos.stop();
       this.scene.stop("hub");
       this.minigameAtual = 10;
+      this.interacaoMinigame.play();
       game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
     }
 
