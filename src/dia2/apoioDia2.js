@@ -37,8 +37,32 @@ Valor Final = Valor Investido × (1 + r)¥ => para juros compostos.
             `,
     ];
     this.tutoriaisMinigame5 = [
-      `texto temporário aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            `,
+      `Nessa tarefa você precisará aprender sobre diferentes tipos de fundos.
+Seu objetivo é simples:  relacionar o fundo com a sua respectiva definição.
+Para isso, basta clicar em um card que contenha um tipo de fundo e arrastar o mouse até a sua definição para ligar esses conceitos.
+Segue em anexo os materiais necessários para a tarefa.`,
+      `Existem diversos tipos de fundos de investimento, cada um com suas características e objetivos. 
+Esses fundos são uma forma prática de investir em diferentes mercados sem precisar de conhecimento aprofundado sobre cada um deles.
+ Em cada fundo, o gestor aplica os recursos dos investidores em diferentes ativos, como ações, imóveis, ou títulos de renda fixa, com o objetivo de gerar retornos. 
+ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição de como funcionam:`,
+      ` Ações:
+ Fundos de ações investem principalmente em ações de empresas listadas na bolsa de valores. São mais voláteis e arriscados, mas oferecem um potencial de retorno maior no longo prazo. Eles são ideais para investidores que buscam crescimento de capital e estão dispostos a lidar com as flutuações do mercado.
+Imobiliário:
+ Os fundos imobiliários (FII) aplicam recursos em imóveis ou em títulos ligados ao mercado imobiliário, como os CRIs (Certificados de Recebíveis Imobiliários). 
+ Esse tipo de fundo permite ao investidor ganhar com a valorização dos imóveis ou com a renda gerada por aluguéis. 
+ São considerados investimentos de médio a longo prazo e tendem a ser mais estáveis.`,
+      `Multimercado:
+ Os fundos multimercado têm flexibilidade para investir em diferentes ativos, como ações, títulos de renda fixa, moedas e até commodities. 
+ Eles buscam estratégias diversificadas para proteger o capital e gerar rentabilidade, oferecendo um equilíbrio entre risco e retorno.
+ Esses fundos são ideais para quem busca uma carteira diversificada.`,
+      `Renda Fixa:
+ Fundos de renda fixa são aqueles que investem em ativos com rentabilidade previsível, como títulos públicos, CDBs e debêntures. 
+ Eles são mais conservadores e seguros, proporcionando um retorno mais estável e baixo risco em relação aos fundos de ações. 
+ São ideais para quem busca segurança e estabilidade no retorno.`,
+      `Private Equity:
+ Os fundos de private equity investem em empresas privadas com potencial de crescimento. 
+ O objetivo é aumentar o valor das empresas ao longo do tempo para, eventualmente, vendê-las com lucro. 
+ Esses fundos geralmente exigem uma maior tolerância ao risco, pois envolvem empresas com maior potencial de crescimento, mas também mais instabilidade.`,
     ];
     this.tutoriaisMinigame6 = [
       `Nessa tarefa, você precisará aprender um pouco sobre os valores de nossa empresa.
