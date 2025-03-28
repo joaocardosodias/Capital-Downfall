@@ -190,7 +190,7 @@ Em contrapartida, para cada risco existe um plano de ação para ser feito dentr
 Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada para avaliar os riscos identificados ao longo do desenvolvimento do jogo, considerando tanto aspectos internos, como as expectativas da equipe, quanto os relacionados à entrega do produto e ao feedback do parceiro.
 
 <p align = "center">
-<p>Figura 4: _Ameaças_ Matriz de Risco</p>
+<p>Figura 4: Ameaças - Matriz de Risco</p>
 <img src="../assets/matrizrisco.png">
 <p>Produção autoral</p>
 </p>
@@ -244,7 +244,7 @@ O setor de oportunidades na matriz de riscos representa os riscos positivos, ou 
 
 
 <p align="center">
-<p>Figura 5:_Oportunidades_Matriz de Risco</p>
+<p>Figura 5: Oportunidades - Matriz de Risco</p>
 <img src="../assets/matrizrisco2.png">
 <p>Produção autoral</p>
 </p>
@@ -290,7 +290,7 @@ As metas SMART são uma metodologia eficaz para definir objetivos de forma clara
 Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revista Management Review, e desde então tem sido amplamente utilizado na gestão de projetos, planejamento estratégico e desenvolvimento pessoal por facilitar o foco, o comprometimento e o acompanhamento dos resultados.
 
 <p align="center">
-<p>Figura 6:_Metas_SMART</p>
+<p>Figura 6: Metas SMART</p>
 <img src="../assets/smart.png">
 <p>Produção autoral</p>
 </p>
@@ -1201,7 +1201,7 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 <div align="center">
 <p> Figura 1: Tela Inicial do Jogo</p>
 <img src="../assets/gdd_4.4/menuinicial55_360.gif">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Produção autoral - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
 
@@ -1267,7 +1267,7 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div align="center">
 <p> Figura 10: Minigame 4</p>
-<img src="../assets/gdd_4.4/jogo4.png">
+<img src="../assets/gdd_4.4/jogo4.jpg">
 <p>Produção autoral  </p>
 </div>
 
@@ -1302,19 +1302,19 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 <div align="center">
 <p> Figura 14: Adiciona música na Sala de Guerra</p>
 <img src="../assets/gdd_4.4/code3.png">
-<p> </p>
+<p> Fonte do som: Pixabay </p>
 </div>
 
 <div align="center">
 <p> Figura 15: Carregamento de música</p>
 <img src="../assets/gdd_4.4/code4.png">
-<p> </p>
+<p> Fonte do som: Pixabay </p>
 </div>
 
 <div align="center">
 <p> Figura 16: Adição de efeitos sonoros</p>
 <img src="../assets/gdd_4.4/code1.png">
-<p> </p>
+<p> Produção autoral</p>
 </div>
 
 
