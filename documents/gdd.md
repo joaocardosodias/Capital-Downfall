@@ -1215,7 +1215,7 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 
 <div align="center">
 <p> Figura 3: Tela antiga de comunicação</p>
-<img src="../assets/gdd_4.4/telavelha.png">
+<img src="../assets/gdd_4.4/telhavelha.png">
 <p>Produção autoral  </p>
 </div>
 
@@ -1253,34 +1253,34 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 <div align="center">
 <p> Figura 8: Feedback das fases</p>
 <img src="../assets/gdd_4.4/feedback1.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Produção autoral </p>
 </div> 
 
 <div align="center">
 <p> Figura 9: Feedback do Miniboss</p>
 <img src="../assets/gdd_4.4/feedback2.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Produção autoral </p>
 </div>
 
 
 Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais de acordo com a validação dos jogos da fase dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, foi possível integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
 
 <div align="center">
-<p> Figura 10: Tela Inicial do Jogo</p>
+<p> Figura 10: Minigame 4</p>
 <img src="../assets/gdd_4.4/jogo4.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Produção autoral  </p>
 </div>
 
 <div align="center">
-<p> Figura 11: Tela Inicial do Jogo</p>
+<p> Figura 11: Minigame 5</p>
 <img src="../assets/gdd_4.4/jogo5.png">
 <p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
 </div>
 
 <div align="center">
-<p> Figura 12: Tela Inicial do Jogo</p>
+<p> Figura 12: Minigame 6</p>
 <img src="../assets/gdd_4.4/jogo6.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Produção autoral - em desenvolvimento </p>
 </div>
 
 Para o MVP, não foi idealizado nenhum sistema revisional de Miniboss, pois a terceira e última fase do jogo, feita para consolidar a experiência do jogador, aborda uma experiência imersiva em uma Sala de Guerra. 
@@ -1290,11 +1290,32 @@ Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esfo
 Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
 
 <div align="center">
-<p> Figura 13: Tela Inicial do Jogo</p>
+<p> Figura 13: Sala de guerra - Hub</p>
 <img src="../assets/gdd_4.4/saladg.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Produção autoral - fase em desenvolvimento </p>
 </div>
 
+**Adição de sons**
+
+Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A adição de sons em um jogo é importante porque enriquece a experiência do jogador, tornando-a mais imersiva e envolvente. Sons ajudam a criar atmosfera, guiar a atenção, indicar interações, reforçar emoções e fornecer feedback imediato sobre as ações do jogador. Além disso, contribuem para a narrativa e ajudam na construção da identidade do jogo, tornando-o mais memorável e impactante.
+
+<div align="center">
+<p> Figura 14: Adiciona música na Sala de Guerra</p>
+<img src="../assets/gdd_4.4/code3.png">
+<p> </p>
+</div>
+
+<div align="center">
+<p> Figura 15: Carregamento de música</p>
+<img src="../assets/gdd_4.4/code4.png">
+<p> </p>
+</div>
+
+<div align="center">
+<p> Figura 16: Adição de efeitos sonoros</p>
+<img src="../assets/gdd_4.4/code1.png">
+<p> </p>
+</div>
 
 
 Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
