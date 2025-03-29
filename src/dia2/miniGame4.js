@@ -290,7 +290,7 @@ class BaseTributacaoScene extends Phaser.Scene {
     ); // Carrega o botão de aumentar espessura
     this.load.image(
       "botaoDiminuir",
-      "src/assets/dia2/miniGame4/botaoDiminuir.png"
+      "src/assets/dia2/miniGame4/botaoDIminuir.png"
     ); // Carrega o botão de diminuir espessura
     this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3"); // Carrega o som de clique
 
