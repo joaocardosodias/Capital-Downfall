@@ -2,11 +2,11 @@
 
 # GDD - Game Design Document - Módulo 1 - Inteli
 
-## Nome do Grupo: Level Zero
+## Nome do Grupo: Level Zero  
 
 #### Nomes dos integrantes do grupo
 
-Ana Cristina Alves Jardim <br>
+Ana Cristina Alves Jardim <br>  
 Henrique de Lima da Rós <br>
 Lucas Garcia Rodrigues Lopes <br>
 Lucas Michel Pereira <br>
@@ -40,99 +40,102 @@ Teodoro Borges de Carvalho Neira <br>
 
 ### 1.1.1. Contexto da indústria (sprint 2)
 
-Os fundos de investimento tiveram aportes líquidos de R$ 40,1 bilhões em abril de 2024, de acordo com a ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais). O valor representa a segunda maior captação líquida do ano, atrás apenas de janeiro, que fechou com R$ 52,1 bilhões. O acumulado de 2024 é positivo em R$ 150,8 bilhões. O BTG Pactual é um banco de investimentos que fornece uma grande gama de serviços, como mercado de capitais, prestação de serviço de consultoria financeira para empresas e etc. Fornecem serviços de corretagem, compensação e custódia de vários produtos no mercado latino-americano para uma base de clientes diversificada(ANBIMA, s.d.).
+Os fundos de investimento tiveram aportes líquidos de R$ 40,1 bilhões em abril de 2024, de acordo com a ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais). O valor representa a segunda maior captação líquida do ano, atrás apenas de janeiro, que fechou com R$ 52,1 bilhões. O acumulado de 2024 é positivo em R$ 150,8 bilhões. O BTG Pactual é um banco de investimentos que fornece uma grande gama de serviços, como mercado de capitais, prestação de serviço de consultoria financeira para empresas e etc. Fornecem serviços de corretagem, compensação e custódia de vários produtos no mercado latino-americano para uma base de clientes diversificada (ANBIMA, 2024).
 
 #### 1.1.1.1. Modelo de 5 Forças de Porter (sprint 2)
 
-O BTG Pactual é considerado um dos líderes no cenário dos investimentos, operando em um mercado caracterizado por uma concorrência acirrada. Logo, para uma análise aprofundada do contexto desse setor, é preciso recorrer a uma ferramenta de análise estratégica reconhecida, como o modelo das 5 Forças de Porter. Conforme apresentado por Magretta (2019), para que uma empresa/organização avalie ou formule uma estratégia de mercado é preciso utilizar a estrutura das cinco forças, essa estrutura foi formulada por Michael Porter e fornece parâmetros para medir o desempenho superior e foca na competição a ser enfrentada. Além disso, essa ferramenta busca entender o que acontece em determinado setor, fornecendo uma visão clara e direta que está relacionada com a lucratividade do mercado. Para obter uma análise completa, as cinco forças de Porter se dividem em ameaça de entrada de novos concorrentes, ameaça de produtos substitutos, poder de negociação dos clientes, poder de negociação dos fornecedores e rivalidade entre os concorrentes (PORTER, 1896). Elas são:
+O BTG Pactual é considerado um dos líderes no cenário dos investimentos, operando em um mercado caracterizado por uma concorrência acirrada. Logo, para uma análise aprofundada do contexto desse setor, é preciso recorrer a uma ferramenta de análise estratégica reconhecida, como o modelo das 5 Forças de Porter. Conforme apresentado por Magretta (2019), para que uma empresa/organização avalie ou formule uma estratégia de mercado é preciso utilizar a estrutura das cinco forças, essa estrutura foi formulada por Michael Porter e fornece parâmetros para medir o desempenho superior e foca na competição a ser enfrentada. Além disso, essa ferramenta busca entender o que acontece em determinado setor, fornecendo uma visão clara e direta que está relacionada com a lucratividade do mercado. Para obter uma análise completa, as cinco forças de Porter se dividem em ameaça de entrada de novos concorrentes, ameaça de produtos substitutos, poder de negociação dos clientes, poder de negociação dos fornecedores e rivalidade entre os concorrentes (PORTER, 1980). Elas são:
 
-**Ameaça de entrada de novos concorrentes:** consiste nas métricas de entrada no setor. Quanto mais difícil for a entrada, menor é a concorrência e maior a probabilidade de lucros a longo prazo. Segundo Porter (1896), as barreiras que dificultam a entrada de novos concorrentes são: economias de escala, diferenciação de produto, exigências de capital, custo de troca, acesso aos canais de distribuição, desvantagem de custos e políticas governamentais(NAKAGAWA, s.d.).
+**Ameaça de entrada de novos concorrentes:** consiste nas métricas de entrada no setor. Quanto mais difícil for a entrada, menor é a concorrência e maior a probabilidade de lucros a longo prazo. Segundo Porter (1980), as barreiras que dificultam a entrada de novos concorrentes são: economias de escala, diferenciação de produto, exigências de capital, custo de troca, acesso aos canais de distribuição, desvantagem de custos e políticas governamentais.
 
-**Ameaça de Produtos Substitutos:** refere-se à facilidade com que o comprador pode substituir um tipo de produto ou serviço por outro(NAKAGAWA, s.d.).
+**Ameaça de Produtos Substitutos:** refere-se à facilidade com que o comprador pode substituir um tipo de produto ou serviço por outro (PORTER, 1980).
 
-**Poder de Barganha dos Compradores:** refere-se à influência dos clientes em relação ao preço de aquisição do produto. É considerado alto quando os clientes compram em grandes volumes, têm interesse em economias e estão preocupados com a qualidade do produto adquirido(NAKAGAWA, s.d.).
+**Poder de Barganha dos Compradores:** refere-se à influência dos clientes em relação ao preço de aquisição do produto. É considerado alto quando os clientes compram em grandes volumes, têm interesse em economias e estão preocupados com a qualidade do produto adquirido (PORTER, 1980).
 
-**Poder de Barganha dos Fornecedores:** é definido pelo poder de negociação em insumos de produção e disponibilidade de materiais. Os fornecedores são considerados poderosos quando não têm que lutar contra outros produtos substitutos, não dependem dos compradores e possuem produtos únicos e insubstituíveis para os compradores(NAKAGAWA, s.d.).
+**Poder de Barganha dos Fornecedores:** é definido pelo poder de negociação em insumos de produção e disponibilidade de materiais. Os fornecedores são considerados poderosos quando não têm que lutar contra outros produtos substitutos, não dependem dos compradores e possuem produtos únicos e insubstituíveis para os compradores(PORTER, 1980).
 
-**Rivalidade entre os Concorrentes Existentes:** define o nível de competição em um setor. É mais intenso quando o número de empresas competindo é grande e quando as empresas sofrem restrições de tempo para venda do produtohttps (NAKAGAWA, s.d.).
+**Rivalidade entre os Concorrentes Existentes:** define o nível de competição em um setor. É mais intenso quando o número de empresas competindo é grande e quando as empresas sofrem restrições de tempo para venda do produtohttps (PORTER, 1980).
 
 Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forças de Porter ao BTG Pactual para avaliar sua posição competitiva e identificar os principais impulsionadores de lucratividade e os desafios enfrentados pela empresa.
 
 #
-                                                               Figura xx
 
-<p align="center">
-<img src="../assets/5forcasdeporter.png">
-</p>
-Autores: Grupo Level Zero
+<div style="text-align: center;">
+    <p>Figura x: 5 Forças de Porter</p>
+    <img src="../assets/5forcasdeporter.png">
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
 
 #
 
-**Ameaça de produtos substitutos:** o nível de ameaça de produtos substitutos para o BTG Pactual varia conforme seus segmentos de atuação, mas é alto em algumas áreas estratégicas. No mercado de investimentos, fintechs e corretoras independentes oferecem alternativas acessíveis e automatizadas, desafiando os serviços tradicionais de wealth management e asset management. No corporate banking e mercado de crédito, bancos digitais e plataformas de financiamento descentralizado (DeFi) criam novas formas de captação de recursos, reduzindo a dependência de grandes instituições(DCF MODELING, s.d.).
+**Ameaça de produtos substitutos:** o nível de ameaça de produtos substitutos para o BTG Pactual varia conforme seus segmentos de atuação, mas é alto em algumas áreas estratégicas. No mercado de investimentos, fintechs e corretoras independentes oferecem alternativas acessíveis e automatizadas, desafiando os serviços tradicionais de wealth management e asset management. No corporate banking e mercado de crédito, bancos digitais e plataformas de financiamento descentralizado (DeFi) criam novas formas de captação de recursos, reduzindo a dependência de grandes instituições(BERWIG, 2023).
 
-**Poder de negociação dos compradores:** o poder de negociação dos compradores do BTG Pactual pode ser considerado moderado, variando conforme o perfil do cliente. Grandes investidores, clientes institucionais e grandes fundos de investimento exercem uma influência significativa, pois movimentam altos volumes de capital e têm maior poder de barganha. Eles podem negociar taxas mais competitivas, acesso a produtos exclusivos, serviços personalizados e condições diferenciadas para otimizar seus investimentos(DCF MODELING, s.d.)
+**Poder de negociação dos compradores:** o poder de negociação dos compradores do BTG Pactual pode ser considerado moderado, variando conforme o perfil do cliente. Grandes investidores, clientes institucionais e grandes fundos de investimento exercem uma influência significativa, pois movimentam altos volumes de capital e têm maior poder de barganha. Eles podem negociar taxas mais competitivas, acesso a produtos exclusivos, serviços personalizados e condições diferenciadas para otimizar seus investimentos (BERWIG, 2023).
 
-**Rivalidade entre os concorrentes:** a rivalidade entre os concorrentes do BTG Pactual é alta, especialmente no setor de investimentos e serviços financeiros. O mercado é altamente competitivo, com a presença de grandes bancos tradicionais, corretoras independentes e fintechs inovadoras, todos disputando a preferência de investidores institucionais e clientes de varejo. Os bancos tradicionais, como Itaú, Bradesco e Santander, possuem grande capilaridade e uma base consolidada de clientes, o que os torna concorrentes diretos em diversas frentes. Já as corretoras independentes, como XP Investimentos e Genial, se destacam pela oferta de plataformas digitais ágeis e produtos financeiros personalizados, atraindo investidores que buscam maior autonomia e diversificação(DCF MODELING, s.d.).
+**Rivalidade entre os concorrentes:** a rivalidade entre os concorrentes do BTG Pactual é alta, especialmente no setor de investimentos e serviços financeiros. O mercado é altamente competitivo, com a presença de grandes bancos tradicionais, corretoras independentes e fintechs inovadoras, todos disputando a preferência de investidores institucionais e clientes de varejo. Os bancos tradicionais, como Itaú, Bradesco e Santander, possuem grande capilaridade e uma base consolidada de clientes, o que os torna concorrentes diretos em diversas frentes. Já as corretoras independentes, como XP Investimentos e Genial, se destacam pela oferta de plataformas digitais ágeis e produtos financeiros personalizados, atraindo investidores que buscam maior autonomia e diversificação (BERWIG, 2023).
 
-**Poder de negociação dos fornecedores:** o poder de barganha dos fornecedores do BTG Pactual varia de moderado a alto, especialmente em setores estratégicos como tecnologia, dados financeiros e consultoria especializada. Fornecedores de soluções tecnológicas, plataformas de análise de mercado e serviços de infraestrutura digital desempenham um papel essencial no suporte às operações do banco, tornando-se parceiros-chave na execução de suas atividades. A dependência de dados precisos e atualizados, bem como de sistemas robustos e seguros, confere a esses fornecedores uma influência significativa. No entanto, o BTG Pactual, por ser uma das maiores instituições financeiras da América Latina, possui um forte poder de negociação. Sua relevância no setor e seu volume de operações permitem que o banco exerça influência sobre os contratos, buscando sempre as melhores condições comerciais, alinhamento estratégico e inovação contínua. Além disso, a diversificação de fornecedores e investimentos em tecnologia própria ajudam a reduzir a dependência excessiva de qualquer parceiro específico, equilibrando essa dinâmica de poder(DCF MODELING, s.d.).
+**Poder de negociação dos fornecedores:** o poder de barganha dos fornecedores do BTG Pactual varia de moderado a alto, especialmente em setores estratégicos como tecnologia, dados financeiros e consultoria especializada. Fornecedores de soluções tecnológicas, plataformas de análise de mercado e serviços de infraestrutura digital desempenham um papel essencial no suporte às operações do banco, tornando-se parceiros-chave na execução de suas atividades. A dependência de dados precisos e atualizados, bem como de sistemas robustos e seguros, confere a esses fornecedores uma influência significativa. No entanto, o BTG Pactual, por ser uma das maiores instituições financeiras da América Latina, possui um forte poder de negociação. Sua relevância no setor e seu volume de operações permitem que o banco exerça influência sobre os contratos, buscando sempre as melhores condições comerciais, alinhamento estratégico e inovação contínua. Além disso, a diversificação de fornecedores e investimentos em tecnologia própria ajudam a reduzir a dependência excessiva de qualquer parceiro específico, equilibrando essa dinâmica de poder (BERWIG, 2023).
 
-**Ameaça de entrada de novos concorrentes:** a ameaça de entrada de novos concorrentes no mercado financeiro, especialmente no setor de investimentos, varia de moderada a alta. A indústria financeira é caracterizada por barreiras de entrada significativas, como a necessidade de grandes investimentos iniciais, conformidade regulatória rigorosa e a construção de uma infraestrutura robusta para atender a clientes de alta complexidade. No entanto, a transformação digital e o crescimento das fintechs têm diminuído algumas dessas barreiras, permitindo a entrada de novos players com modelos de negócios mais ágeis e custos mais baixos. As fintechs, em particular, têm se mostrado uma ameaça crescente, oferecendo soluções inovadoras, como plataformas de investimentos automatizados (robo-advisors), serviços bancários digitais e investimentos de impacto, que atraem, principalmente, os consumidores mais jovens e aqueles em busca de maior flexibilidade e custos reduzidos. Empresas de tecnologia também estão cada vez mais entrando no setor financeiro, trazendo expertise em dados, inteligência artificial e blockchain, o que pode representar uma disrupção no mercado(DCF MODELING, s.d.).
+**Ameaça de entrada de novos concorrentes:** a ameaça de entrada de novos concorrentes no mercado financeiro, especialmente no setor de investimentos, varia de moderada a alta. A indústria financeira é caracterizada por barreiras de entrada significativas, como a necessidade de grandes investimentos iniciais, conformidade regulatória rigorosa e a construção de uma infraestrutura robusta para atender a clientes de alta complexidade. No entanto, a transformação digital e o crescimento das fintechs têm diminuído algumas dessas barreiras, permitindo a entrada de novos players com modelos de negócios mais ágeis e custos mais baixos. As fintechs, em particular, têm se mostrado uma ameaça crescente, oferecendo soluções inovadoras, como plataformas de investimentos automatizados (robo-advisors), serviços bancários digitais e investimentos de impacto, que atraem, principalmente, os consumidores mais jovens e aqueles em busca de maior flexibilidade e custos reduzidos. Empresas de tecnologia também estão cada vez mais entrando no setor financeiro, trazendo expertise em dados, inteligência artificial e blockchain, o que pode representar uma disrupção no mercado (BERWIG, 2023).
 
-Um exemplo prático da importância das Cinco Forças de Porter em relação ao BTG Pactual pode ser visto na crescente competição com fintechs e corretoras independentes, especialmente no segmento de investimentos. A ameaça de produtos substitutos tem se intensificado com o surgimento de plataformas digitais que oferecem produtos de investimento de forma simplificada, com baixas taxas e experiência 100% digital. Diante disso, a estratégia do BTG foi fortalecer sua presença digital por meio de iniciativas como a plataforma BTG Pactual digital, que oferece acesso a investimentos com taxas competitivas, interface intuitiva e serviços personalizados. Essa resposta estratégica mostra como a análise das Cinco Forças permitiu ao banco identificar riscos e oportunidades, adaptando-se às mudanças do mercado para manter sua posição competitiva(DCF MODELING, s.d.).
+Um exemplo prático da importância das Cinco Forças de Porter em relação ao BTG Pactual pode ser visto na crescente competição com fintechs e corretoras independentes, especialmente no segmento de investimentos. A ameaça de produtos substitutos tem se intensificado com o surgimento de plataformas digitais que oferecem produtos de investimento de forma simplificada, com baixas taxas e experiência 100% digital. Diante disso, a estratégia do BTG foi fortalecer sua presença digital por meio de iniciativas como a plataforma BTG Pactual digital, que oferece acesso a investimentos com taxas competitivas, interface intuitiva e serviços personalizados. Essa resposta estratégica mostra como a análise das Cinco Forças permitiu ao banco identificar riscos e oportunidades, adaptando-se às mudanças do mercado para manter sua posição competitiva (BERWIG, 2023).
 
-Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferramenta extremamente abrangente para avaliar o ambiente competitivo de uma indústria e ajudar as empresas a desenvolver estratégias eficazes para superar dilemas e aproveitar oportunidades. Ao entender tais forças, o BTG Pactual pode posicionar-se de forma mais competitiva e realista em seu mercado-alvo(DCF MODELING, s.d.).
+Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferramenta extremamente abrangente para avaliar o ambiente competitivo de uma indústria e ajudar as empresas a desenvolver estratégias eficazes para superar dilemas e aproveitar oportunidades. Ao entender tais forças, o BTG Pactual pode posicionar-se de forma mais competitiva e realista em seu mercado-alvo (BERWIG, 2023).
 
 ### 1.1.2. Análise SWOT (sprint 2)
 
-A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA - 2025).
+A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA, 2025).
 
-<p align="center">
-<p>Figura 2: Análise SWOT</p>
-<img src="../assets/analiseswot.png">
-</p>
-Autores: Grupo Level Zero
+#
+<div style="text-align: center;">
+    <p>Figura x: Análise SWOT</p>
+    <img src="../assets/analiseswot.png" alt="Análise SWOT">
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
 
+#
 
 **Forças:**
 
-- **Liderança no mercado financeiro:** o BTG Pactual é o maior banco de investimentos da América Latina, com alta presença no setor financeiro(GLOBALDATA).
+- **Liderança no mercado financeiro:** o BTG Pactual é o maior banco de investimentos da América Latina, com alta presença no setor financeiro (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Inovação e tecnologia:** forte investimento em soluções digitais e plataformas tecnológicas, como o BTG Pactual Digital, permitindo o crescimento no varejo financeiro(GLOBALDATA).
+- **Inovação e tecnologia:** forte investimento em soluções digitais e plataformas tecnológicas, como o BTG Pactual Digital, permitindo o crescimento no varejo financeiro  (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Rede de clientes e relacionamento:** possui uma base sólida de clientes institucionais e de alta renda, além de um forte relacionamento com empresas e investidores(GLOBALDATA).
+- **Rede de clientes e relacionamento:** possui uma base sólida de clientes institucionais e de alta renda, além de um forte relacionamento com empresas e investidores (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Atuação em diversos segmentos:** mercado de capitais, crédito corporativo e gestão de fortunas, reduzindo riscos de dependência em um único setor(GLOBALDATA).
+- **Atuação em diversos segmentos:** mercado de capitais, crédito corporativo e gestão de fortunas, reduzindo riscos de dependência em um único setor (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
 **Fraquezas:**
 
-- **Concorrência agressiva no digital:** no segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes(GLOBALDATA).
+- **Concorrência agressiva no digital:** no segmento de varejo digital, enfrenta concorrentes como Nubank, XP Investimentos e bancos tradicionais,que possuem forte base de clientes (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022)
 
-- **Exposição a riscos de mercado:** como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras(GLOBALDATA).
+- **Exposição a riscos de mercado:** como banco de investimentos, está altamente exposto a oscilações macroeconômicas e crises financeiras (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Dependência de grandes clientes e investidores institucionais:** a maior parte das receitas vem de clientes de alta renda e grandes empresas, tornando-o vulnerável a mudanças de comportamento desse público(GLOBALDATA).
+- **Dependência de grandes clientes e investidores institucionais:** a maior parte das receitas vem de clientes de alta renda e grandes empresas, tornando-o vulnerável a mudanças de comportamento desse público (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
 **Ameaças:**
 
-- **Concorrência forte:** disputa acirrada com bancos tradicionais e fintechs, que oferecem serviços mais acessíveis e taxas reduzidas(GLOBALDATA).
+- **Concorrência forte:** disputa acirrada com bancos tradicionais e fintechs, que oferecem serviços mais acessíveis e taxas reduzidas (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Mudanças no perfil dos investidores:** novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis(GLOBALDATA).
+- **Mudanças no perfil dos investidores:** novas gerações de investidores buscam alternativas mais simples e acessíveis, podendo migrar para concorrentes que ofereçam plataformas mais amigáveis (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Regulação rigorosa:** o setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco(GLOBALDATA).
-- **Cibersegurança e Fraudes:** como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados(GLOBALDATA).
+- **Regulação rigorosa:** o setor financeiro está sujeito a regulações constantes, o que pode limitar algumas operações do banco (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
+
+- **Cibersegurança e Fraudes:** como banco digital e de investimentos, enfrenta riscos de ataques cibernéticos e vazamento de dados (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
 **Oportunidades:**
 
-- **Crescimento no mercado de investimentos digitais:** com a popularização do investimento online, o BTG pode ampliar sua base de clientes via BTG Pactual Digital(GLOBALDATA).
+- **Crescimento no mercado de investimentos digitais:** com a popularização do investimento online, o BTG pode ampliar sua base de clientes via BTG Pactual Digital (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Cenário favorável para ativos alternativos:** o aumento do interesse por ativos como fundos estruturados, private equity e crédito privado pode impulsionar o banco(GLOBALDATA).
+- **Cenário favorável para ativos alternativos:** o aumento do interesse por ativos como fundos estruturados, private equity e crédito privado pode impulsionar o banco (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Atuação internacional:** o BTG Pactual tem expandido sua atuação internacionalmente, podendo capturar mais oportunidades fora do Brasil(GLOBALDATA).
+- **Atuação internacional:** o BTG Pactual tem expandido sua atuação internacionalmente, podendo capturar mais oportunidades fora do Brasil (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Expansão para o varejo financeiro:** o banco tem ampliado sua atuação para o público de alta renda e varejo, competindo com fintechs e bancos tradicionais(GLOBALDATA).
+- **Expansão para o varejo financeiro:** o banco tem ampliado sua atuação para o público de alta renda e varejo, competindo com fintechs e bancos tradicionais (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
 ### 1.1.3. Missão / Visão / Valores (sprint 2)
 
-O BTG Pactual tem como missão prover soluções financeiras inovadoras e eficientes, combinando expertise e tecnologia para gerar valor sustentável a clientes, investidores e à sociedade. O banco busca transformar o mercado por meio de um atendimento consultivo, focado em resultados, sempre priorizando a excelência e a inovação. Sua visão é consolidar-se como a principal instituição financeira independente da América Latina, sendo reconhecido pela sua capacidade de adaptação, impacto positivo e liderança no setor de investimentos e serviços financeiros. Seus valores são pautados pela meritocracia, parceria e foco no cliente, promovendo um ambiente dinâmico e colaborativo. Além disso, o compromisso com a integridade, a excelência e a visão de longo prazo fortalece sua cultura empreendedora, impulsionando o crescimento sustentável e a criação de soluções diferenciadas para o mercado(BTG PACTUAL).
+O BTG Pactual tem como missão prover soluções financeiras inovadoras e eficientes, combinando expertise e tecnologia para gerar valor sustentável a clientes, investidores e à sociedade. O banco busca transformar o mercado por meio de um atendimento consultivo, focado em resultados, sempre priorizando a excelência e a inovação. Sua visão é consolidar-se como a principal instituição financeira independente da América Latina, sendo reconhecido pela sua capacidade de adaptação, impacto positivo e liderança no setor de investimentos e serviços financeiros. Seus valores são pautados pela meritocracia, parceria e foco no cliente, promovendo um ambiente dinâmico e colaborativo. Além disso, o compromisso com a integridade, a excelência e a visão de longo prazo fortalece sua cultura empreendedora, impulsionando o crescimento sustentável e a criação de soluções diferenciadas para o mercado(BTG PACTUAL, s.d.).
 
 Da mesma forma, nosso projeto visa transformar o onboarding de novos analistas de tecnologia do BTG Pactual, oferecendo uma experiência gamificada, imersiva e alinhada aos desafios reais da empresa. Nossa missão é tornar o aprendizado dinâmico e estratégico, refletindo o dinamismo do mercado financeiro. Assim como o banco se guia por valores como meritocracia, parceria e foco no cliente, nosso projeto também se baseia na excelência e inovação, garantindo uma experiência envolvente e eficiente. Além disso, buscamos incentivar a autonomia e o protagonismo, promovendo um aprendizado ativo e contínuo que vai além do onboarding. Valorizamos o impacto e a responsabilidade, demonstrando como cada decisão afeta os resultados do banco, e promovemos a colaboração e o engajamento, fortalecendo a integração entre os profissionais.
 
@@ -159,11 +162,11 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 
 #
 
-<p align="center">
-<p>Figura 3: _Canvas_ de Proposta de Valor</p>
-<img src="../assets/gdd_1.1/canvasPropostaValor.png">
-<p>Produção autoral</p>
-</p>
+<div style="text-align: center;">
+    <p>Figura x: _Canvas_ de Proposta de Valor</p>
+    <img src="../assets/gdd_1.1/canvasPropostaValor.png" />
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
 
 #
 
@@ -181,7 +184,7 @@ O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em 
 
 A Matriz de Riscos, também conhecida como Matriz de Probabilidade e Impacto, é uma ferramenta visual amplamente utilizada na gestão de riscos com o objetivo de priorizar os riscos identificados em um projeto. Sua principal função é apoiar a tomada de decisões e a definição de medidas preventivas, além de promover o engajamento da equipe no processo de identificação, análise e controle dos riscos envolvidos.
 
-A estrutura da matriz é baseada em duas dimensões principais. A primeira é a probabilidade, que mede a chance de um risco ocorrer, sendo normalmente classificada em níveis como muito baixo, baixo, moderado, alto e muito alto, podendo também ser expressa por porcentagens. A segunda dimensão é o impacto, que representa as consequências da ocorrência do risco. Assim como a probabilidade, o impacto também é classificado em níveis que variam de muito baixo a muito alto. (A GUIDE TO THE PROJECT MANAGEMENT BODY OF KNOWLEDGE – 6ª EDIÇÃO. PMI, 2017.)
+A estrutura da matriz é baseada em duas dimensões principais. A primeira é a probabilidade, que mede a chance de um risco ocorrer, sendo normalmente classificada em níveis como muito baixo, baixo, moderado, alto e muito alto, podendo também ser expressa por porcentagens. A segunda dimensão é o impacto, que representa as consequências da ocorrência do risco. Assim como a probabilidade, o impacto também é classificado em níveis que variam de muito baixo a muito alto (PROJECT MANAGEMENT INSTITUTE, 2017).
 
 A combinação entre probabilidade e impacto resulta na classificação do risco, que é geralmente representada por cores em uma matriz visual, permitindo identificar facilmente o nível de criticidade de cada risco: alta, média ou baixa. Essa visualização facilita o foco da equipe nos riscos mais relevantes e permite que um plano de ações eficaz seja elaborado. 
 
@@ -189,11 +192,15 @@ Em contrapartida, para cada risco existe um plano de ação para ser feito dentr
 
 Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada para avaliar os riscos identificados ao longo do desenvolvimento do jogo, considerando tanto aspectos internos, como as expectativas da equipe, quanto os relacionados à entrega do produto e ao feedback do parceiro.
 
-<p align = "center">
-<p>Figura 4: Ameaças - Matriz de Risco</p>
-<img src="../assets/matrizderisco1.png">
-<p>Produção autoral</p>
-</p>
+#
+
+<div style="text-align: center;">
+    <p>Figura x: Ameaças - Matriz de Risco</p>
+    <img src="../assets/matrizderisco1.png" />
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
+
+#
 
 **Descrição:**
 
@@ -242,12 +249,15 @@ Plano de Ação: Reavaliar o planejamento e dividir as tarefas de forma mais equ
 
 O setor de oportunidades na matriz de riscos representa os riscos positivos, ou seja, eventos incertos que, se ocorrerem, podem trazer benefícios ao projeto. Assim como as ameaças, as oportunidades são avaliadas com base na probabilidade de ocorrência e no impacto, mas com foco em resultados favoráveis. Baseado nisso, o nosso grupo pontuou as principais oportunidades que obtivemos como equipe no decorrer do projeto.
 
+#
 
-<p align="center">
-<p>Figura 5: Oportunidades - Matriz de Risco</p>
-<img src="../assets/matrizrisco2.png">
-<p>Produção autoral</p>
-</p>
+<div style="text-align: center;">
+    <p>Figura x: Oportunidades - Matriz de Risco</p>
+    <img src="../assets/matrizrisco2.png" />
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
+
+#
 
 **Descrição:**
 1. **Aprendizado constante e proatividade.**
@@ -289,11 +299,15 @@ As metas SMART são uma metodologia eficaz para definir objetivos de forma clara
 
 Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revista Management Review, e desde então tem sido amplamente utilizado na gestão de projetos, planejamento estratégico e desenvolvimento pessoal por facilitar o foco, o comprometimento e o acompanhamento dos resultados.
 
-<p align="center">
-<p>Figura 6: Metas SMART</p>
-<img src="../assets/smart.png">
-<p>Produção autoral</p>
-</p>
+#
+
+<div style="text-align: center;">
+    <p>Figura x: Metas SMART</p>
+    <img src="../assets/smart.png" />
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
+
+#
 
 Ao conhecer as metas SMART, é nítido a importância de planejar objetivos de forma estratégica e estruturada. Essa abordagem não só aumenta as chances de sucesso, mas facilita a organização e a motivação ao longo do projeto.
 
@@ -328,15 +342,15 @@ Durante a reunião com o parceiro do projeto foi possível definir uma série de
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
-O público-alvo consiste em um grupo de indivíduos com características em comum, tornando-os mais inclinados a consumir determinados produtos ou serviços oferecidos por uma empresa que os tem como foco (SEBRAE, [20--]).
+O público-alvo consiste em um grupo de indivíduos com características em comum, tornando-os mais inclinados a consumir determinados produtos ou serviços oferecidos por uma empresa que os tem como foco (SEBRAE, 2023).
 
-Definir um público-alvo de forma estratégica garante uma vantagem competitiva, permitindo uma comunicação e um marketing mais eficazes, além de impulsionar as vendas. No entanto, uma definição muito ampla ou imprecisa pode gerar inconsistências, reforçando a importância de considerar aspectos como gênero, idade, localização, profissão e escolaridade ao traçar esse perfil (SEBRAE).
+Definir um público-alvo de forma estratégica garante uma vantagem competitiva, permitindo uma comunicação e um marketing mais eficazes, além de impulsionar as vendas. No entanto, uma definição muito ampla ou imprecisa pode gerar inconsistências, reforçando a importância de considerar aspectos como gênero, idade, localização, profissão e escolaridade ao traçar esse perfil (SEBRAE, 2023).
 
 Para alinhar o projeto de forma assertiva, foi estabelecido um público-alvo específico. O jogo Capital Downfall é voltado para pessoas de qualquer gênero, raça e etnia, com idade acima de 18 anos, que trabalham como analistas de fundos de investimentos no banco BTG. São indivíduos que buscam compreender melhor os processos internos da empresa, mas que podem enfrentar dificuldades devido à sua complexidade.
 
 Além disso, o jogo se destina a profissionais responsáveis, comprometidos com a diversidade e representatividade no ambiente corporativo, bem como engajados na busca por conchecimento.
 
-Outro fator importante relacionado ao público-alvo é o conceito de **personas**, que representam perfis detalhados e humanizados do público ideal. Essas personas levam em conta não apenas informações objetivas, mas também aspectos subjetivos, como medos, desafios, motivações e aspirações que impulsionam o interesse por um produto ou serviço (SEBRAE).
+Outro fator importante relacionado ao público-alvo é o conceito de **personas**, que representam perfis detalhados e humanizados do público ideal. Essas personas levam em conta não apenas informações objetivas, mas também aspectos subjetivos, como medos, desafios, motivações e aspirações que impulsionam o interesse por um produto ou serviço (SEBRAE, 2023).
 
 Para garantir um jogo mais personalizado e voltado para experiências reais, foi definida uma persona que orientará o desenvolvimento da experiência oferecida.
 
@@ -371,13 +385,11 @@ Tiago Mendes é um analista de fundos de investimento recém-contratado para o B
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-Para concluir o jogo, o jogador deve avançar por quatro dias, cada um representando desafios progressivos dentro do ambiente corporativo do banco. No primeiro dia, ele inicia na hub principal do escritório e pode escolher a ordem das tarefas introdutórias, que abordam conceitos básicos e operações fundamentais do banco. Ao concluir todas as tarefas, um relatório em formato de jornal apresenta o impacto de suas decisões, determinando se pode prosseguir para o dia seguinte.
+Para concluir o jogo, o jogador deve avançar por três dias, cada um representando desafios progressivos dentro do ambiente corporativo do banco. No primeiro dia, ele inicia na hub principal do escritório e pode escolher a ordem das tarefas introdutórias, que abordam conceitos básicos e operações fundamentais do banco. Ao concluir todas as tarefas, um relatório em formato de jornal apresenta o impacto de suas decisões, determinando se pode prosseguir para o dia seguinte.
 
 No segundo dia, as tarefas se tornam mais complexas, exigindo maior atenção aos detalhes e tomada de decisão estratégica. O jogador precisa lidar com desafios mais técnicos e gerenciar riscos operacionais. Ao final, novamente, o jornal avalia seu desempenho, e, caso tenha obtido um resultado satisfatório, ele avança para o próximo dia.
 
-No terceiro dia, a crise financeira se intensifica e as tarefas ganham um nível de urgência maior. O jogador precisa gerenciar múltiplos problemas simultaneamente, tomando decisões que podem impactar diretamente o desempenho do banco. O relatório do jornal pode indicar estabilidade, recuperação parcial ou um cenário crítico, influenciando o desfecho da jornada.
-
-No quarto e último dia, o jogador é levado a um ambiente de alta tensão, simulando uma verdadeira "sala de guerra", onde precisa tomar decisões rápidas e coordenar soluções para estabilizar o banco. As tarefas são ainda mais desafiadoras e exigem precisão para evitar o colapso financeiro. No final, o jornal apresenta o desfecho do jogo, que pode variar entre a recuperação total do banco, uma situação instável ou a falência definitiva.
+No terceiro e último dia, o jogador é levado a um ambiente de alta tensão, simulando uma verdadeira "sala de guerra", onde precisa tomar decisões rápidas e coordenar soluções para estabilizar o banco. As tarefas são ainda mais desafiadoras e exigem precisão para evitar o colapso financeiro. No final, o jornal apresenta o desfecho do jogo, que pode variar entre a recuperação total do banco ou a falência definitiva que obriga o jogador a reiniciar o jogo.
 
 ## 2.2. Características do Jogo (sprint 2)
 
@@ -399,7 +411,7 @@ Foram selecionados dois jogos como referência. O primeiro é Among Us, do qual 
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
-O jogo pode ser concluído entre 15 e 20 minutos passando por todas as fases.
+O jogo pode ser concluído entre 15 e 30 minutos passando por todas as fases.
 
 # <a name="c3"></a>3. Game Design (sprints 2 e 3)
 
@@ -423,34 +435,34 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 #
 
 <div align="center">
-  <p>Figura 1: Mark</p>
+  <p>Figura x: Mark</p>
   <img src="../assets/personagens/personagemMasculino2.png"><br>
-  <p>Produção autoral</p>
+  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
   
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 2: Margaret</p>
+  <p>Figura x: Margaret</p>
   <img src="../assets/personagens/personagemFeminino2.png"<br>
-  <p>Produção autoral</p>
+  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 3: Steve</p>
+  <p>Figura x: Steve</p>
   <img src="../assets/personagens/personagemMasculino1.png"<br>
-  <p>Produção autoral</p>
+  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 4: Mary</p>
+  <p>Figura x: Mary</p>
   <img src="../assets/personagens/personagemFeminino1.png"<br>
-  <p>Produção autoral</p>
+  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
@@ -475,14 +487,14 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais dez salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
+O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais três salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
 
 #
 
 <div align="center">
-    <p>Figura 1: Mapa do jogo</p>
+    <p>Figura x: Mapa do jogo</p>
     <img src="../assets/gdd_3.3/hub.png" width="500"><br>
-    <p>Produção autoral</p>
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
@@ -492,21 +504,21 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 #
 
 <div align="center">
-    <p>Figura 2: Exemplo de objeto interativo, marcado pela exclamação</p>
-    <img src="../assets/conceptArt/mapa2.png" width="500"><br>
-    <p>Produção autoral</p>
+    <p>Figura x: Exemplo de objeto interativo, marcado pela exclamação</p>
+    <img src="../assets/gdd_3.3/mapa2.png" width="500"><br>
+    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
 
-O jogo possuirá três fases, e cada fase terá três minigames que abordarão algum dos assuntos solicitados pelo BTG Pactual, além de um quiz ao final, que contemplará todo o conteúdo da fase. Também haverá uma fase 4, que simulará o contexto de pressão de uma sala de guerra, em que todos os conteúdos serão abordados de uma só vez e haverá um limite de tempo. A tabela a seguir ilustra e explica os três minigames implementados na primeira fase do jogo:
+O jogo possuirá duas fases, e cada fase terá três minigames que abordarão algum dos assuntos solicitados pelo BTG Pactual, além de um quiz ao final, que contemplará todo o conteúdo da fase. Também haverá uma fase 3, que simulará o contexto de pressão de uma sala de guerra, em que todos os conteúdos serão abordados de uma só vez e haverá um limite de tempo. A tabela a seguir ilustra e explica os seis minigames implementados no do jogo:
 
 | Imagem do minigame                                      | Resumo                                                                                                                                                                        |
 | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="../assets/gdd_3.3/minigame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
 | <img src="../assets/gdd_3.3/minigame2.png" width="800"> | O jogador deve realizar cálculos financeiros.                                                                                                                                 |
 | <img src="../assets/gdd_3.3/minigame3.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento.                                                                                         |
-| <img src="../assets/gdd_3.3/minigame4.png" width="800"> | O jogador deve ordenar responder questões sobre impostos diversos                                                                                                             |
+| <img src="../assets/gdd_3.3/minigame4.png" width="800"> | O jogador deve efetuar operações matemáticas relacionadas a fundos de investimento.                                                                                     |
 | <img src="../assets/gdd_3.3/minigame5.png" width="800"> | O jogador deve ligar termos e definições de conceitos financeiros.                                                                                                            |
 | <img src="../assets/gdd_3.3/minigame6.png" width="800"> | O jogador deve avaliar perfis de candidatos.                                                                                                                                  |
 
@@ -530,11 +542,11 @@ A navegação no jogo é simples e intuitiva, permitindo que o jogador explore o
 - Dentro dos minigames, o jogador utilizará o **mouse** para realizar as ações necessárias.
 
   - **Minigame 1:** O jogador deve arrastar cards para as gavetas corretas.
-  - **Minigame 2:** O jogador deve realizar cálculos financeiros.
-  - **Minigame 3:** O jogador deve ordenar corretamente as etapas do resgate.
-  - **Minigame 4:** O jogador deve responder questões sobre impostos.
-  - **Minigame 5:** O jogador deve ligar nomes e definições de conceitos financeiros.
-  - **Minigame 6:** O jogador deve ordenar avaliar perfis de candidatos.
+  - **Minigame 2:** O jogador deve clicar na opção com o valor correto.
+  - **Minigame 3:** O jogador deve arrastar os cards e posicioná-los na ordem correta.
+  - **Minigame 4:** O jogador deve clicar na opção com o valor correto.
+  - **Minigame 5:** O jogador deve clicar e arrastar para ligar os conceitos às suas respectivas definições.
+  - **Minigame 6:** O jogador deve clicar na opção aprovar ou reprovar.
 
 Ao concluir cada minigame, o jogador pode retornar ao escritório e escolher um novo desafio.
 
@@ -542,80 +554,64 @@ Ao concluir cada minigame, o jogador pode retornar ao escritório e escolher um 
 
 O jogo utiliza uma progressão baseada em dias, onde cada fase representa um dia de trabalho no escritório do banco. O jogador pode completar os desafios no seu próprio ritmo dentro de cada fase. Ao concluir todos os 3 minigames e o quiz final de cada fase, o jogador receberá um relatório de desempenho, que destaca seu progresso e acertos.
 
-Durante as três primeiras fases, não há limite de tempo para a conclusão dos minigames e quizzes. Entretanto, na fase 4, que irá simular uma sala de guerra, todos os conteúdos das fases anteriores serão abordados de forma combinada. Nessa fase final, haverá um limite de tempo, desafiando o jogador a aplicar rapidamente seus conhecimentos sob pressão.
+Durante as duas primeiras fases, não há limite de tempo para a conclusão dos minigames e quizzes. Entretanto, na fase 3, que irá simular uma sala de guerra, todos os conteúdos das fases anteriores serão abordados de forma combinada. Nessa fase final, haverá um limite de tempo, desafiando o jogador a aplicar rapidamente seus conhecimentos sob pressão.
 
 ### 3.3.4. Concept Art (sprint 2)
 
 #
 
 <div align="center">
-    <p>Figura 1: Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
+    <p>Figura x: Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
     <img src="../assets/conceptArt/telaInicial.png" width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 2: Visão do mapa inicial do jogo, destacando o ambiente do escritório. No canto superior direito, um computador com um ícone de exclamação indica que o jogador pode interagir com ele.</p>
+  <p>Figura x: Visão do mapa inicial do jogo, destacando o ambiente do escritório. </p>
   <img src="../assets/conceptArt/mapa1.png" width="500"><br>
-  <p>Produção autoral</p>
+  <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 3: Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
+  <p>Figura x: Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
   <img src="../assets/conceptArt/materialDeApoio1.png" width="500"><br>
-  <p>Produção autoral</p>
+  <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-    <p>Figura 4: Minijogo sobre diferenciação de fundos de investimento.</p>
+    <p>Figura x: Minijogo sobre diferenciação de fundos de investimento.</p>
     <img src="../assets/conceptArt/miniGame1.png" width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-    <p>Figura 5: Minijogo sobre resgate em fundos de investimento.</p>
+    <p>Figura x: Minijogo sobre matemática financeira.</p>
     <img src="../assets/conceptArt/miniGame2.png" width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-    <p>Figura 6: Minijogo sobre monitoramento de transações bancárias.</p>
+    <p>Figura x: Minijogo sobre o processo de resgate em fundos de investimento.</p>
     <img src="../assets/conceptArt/miniGame3.png" width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 7: Tela exibida ao final de um minijogo, apresentando a pontuação final do jogador.</p>
+  <p>Figura x: Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.</p>
   <img src="../assets/conceptArt/pontuacao.png" width="500"><br>
-  <p>Produção autoral</p>
-</div>
-
-#
-
-<div align="center">
-    <p>Figura 8: Concept art dos personagens Steve e Mary.</p>
-    <img src="../assets/conceptArt/personagens.jpeg" width="500"><br>
-    <p>Produção autoral</p>
-</div>
-
-#
-
-<div align="center">
-    <p>Figura 9: Concept art do menu inicial.</p>
-    <img src="../assets/conceptArt/menuInicial.gif" width="500"><br>
-    <p>Produção autoral</p>
+  <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -629,42 +625,46 @@ Durante as três primeiras fases, não há limite de tempo para a conclusão dos
 | 3  | Carimbo            | Quando o jogador selecionar uma alternativa no minigame 2 | PixaBay |
 | 4  | Clique             | Ao clicar nos "botões" dos minigames          | PixaBay      |
 | 5  | CloseMinigame      | Quando o jogador finalizar o minigame         | PixaBay      |
-| 6  | EscritorioFlow     | Enquanto o jogador não estiver realizando um minigame | PixaBay |
+| 6  | EscritorioFlow     | Enquanto o jogador estiver realizando um minigame | PixaBay |
 | 7  | MovePostIt         | Quando o jogador arrastar o "post-it" do minigame 1 | PixaBay |
-| 8  | MusicaHub          | Enquanto o jogador não estiver realizando um minigame | PixaBay |
-| 9  | NewspaperPutDown   | Quando o jornal encosta na mesa no fim da animação | Freesound    |
-| 10 | PaperLoose         | Durante a queda do jornal na animação         | Freesound    |
-| 11 | Passos             | Quando o personagem se mover                  | PixaBay      |
-| 12 | ScrathPencil       | Enquanto o jogador estiver desenhando na lousa do minigame 4 | PixaBay |
-| 13 | TaskSucess         | Após a finalização da Task                    | PixaBay      |
-| 14 | OpenMinigame       | Quando o jogador iniciar um minigame          | PixaBay      |
+| 8  | MusicaHub          | Quando o jogador se deslocar pelo mapa do dia 1 | PixaBay |
+| 9  | MusicaHub2         | Quando o jogador se deslocar pelo mapa do dia 2 | PixBay  |
+| 10 | RockMenu           | Enquanto o jogador estiver no menu inicial  | PixBay |
+| 11  | NewspaperPutDown   | Quando o jornal cai sobre a mesa no fim da animação | Freesound    |
+| 12 | PaperLoose         | Durante a queda do jornal na animação         | Freesound    |
+| 13 | Passos             | Quando o personagem se mover                  | PixaBay      |
+| 14 | ScrathPencil       | Enquanto o jogador estiver desenhando na lousa do minigame 4 | PixaBay |
+| 15 | TaskSucess         | Após a finalização da Task                    | PixaBay      |
+| 16 | OpenMinigame       | Quando o jogador iniciar um minigame          | PixaBay      |
 
 \
 Os áudios utilizados no jogo foram extraídos do **PixaBay**, um site gratuito que disponibiliza imagens, vídeos, ilustrações, gráficos vetoriais, músicas e efeitos sonoros. Você pode acessá-lo em: [PixaBay Sound Effects](https://pixabay.com/pt/sound-effects/).
 
 Além disso, alguns sons foram retirados do **Freesound**, uma plataforma colaborativa onde os usuários podem compartilhar e baixar áudios. O site pode ser acessado em: [Freesound](https://freesound.org/).
 
-A seguir, apresentamos como som visa impactar na experiência do usuário:
+A seguir, apresentamos como cada som visa impactar na experiência do usuário:
 
-| #  | **Som**              | **Descrição**                                                                                  |
+| #  | **Som**              | **Função**                                                                                  |
 |----|----------------------|-----------------------------------------------------------------------------------------------|
 | 1  | BeepAcerto.mp3       | Fornece um feedback positivo ao usuário, demonstrando que ele acertou o minigame.              |
 | 2  | BeepErro.mp3         | Ajuda o jogador a entender que errou alguma parte do minigame movendo o “post-it”.             |
-| 3  | Carimbo.mp3          | Cria um efeito sonoro baseado na animação do carimbo estampando o “card”.                       |
+| 3  | Carimbo.mp3          | Simula um som de um objeto do mundo real, ajudando a tornar a experiência mais realista.             |
 | 4  | Clique.mp3           | Fornece um feedback imediato ao jogador de que um botão foi pressionado, tornando a navegação pelo menu mais responsiva e intuitiva. |
 | 5  | CloseMinigame.mp3    | Ajuda o jogador a compreender que ele finalizou o minigame.                                    |
 | 6  | EscritorioFlow.mp3   | Cria uma atmosfera imersiva, simulando um ambiente real de trabalho e evitando que o jogo pareça "vazio" quando não há interações diretas. |
 | 7  | MovePostIt.mp3       | Cria a sensação de estar organizando documentos, tornando a experiência mais realista e conectada ao tema fiscal. |
-| 8  | MusicaHub.mp3        | Simula o ambiente de um banco real, ajudando o jogador a se sentir dentro do jogo.              |
-| 9  | NewspaperPutDown.mp3 | Simula o impacto entre dois objetos no mundo real, tornando a experiência mais fiel à realidade. |
-| 10 | PaperLoose.mp3       | Simula a queda real de um objeto, tornando a experiência do jogo mais realista.                |
-| 11 | Passos.mp3           | Dá uma sensação de presença física no ambiente, tornando a movimentação do personagem mais realista e envolvente. |
-| 12 | ScrathPencil.mp3     | Cria uma imersão interativa ao desenhar na lousa digital do minigame 4.                        |
-| 13 | TaskSucess.mp3       | Cria um sentimento de progresso, reforçando a conclusão bem-sucedida de uma atividade.          |
-| 14 | OpenMinigame.mp3     | Reforça a transição fluida entre telas, melhorando a experiência do usuário ao abrir menus ou consultar tarefas. |
+| 8  | MusicaHub.mp3        | Cria uma ambientação relaxante e envolvente.    |
+| 9  | MusicaHub2.mp3       | Cria uma ambientação relaxante e envolvente.  |
+| 10 | RockMenu.mp3         | Estimula o jogador a querer iniciar o jogo.  |
+| 11  | NewspaperPutDown.mp3 | Simula o impacto entre dois objetos do mundo real, tornando a experiência mais fiel à realidade. |
+| 12 | PaperLoose.mp3       | Simula a queda real de um objeto, tornando a experiência do jogo mais imersiva.                |
+| 13 | Passos.mp3           | Dá uma sensação de presença física no ambiente, tornando a movimentação do personagem mais realista e envolvente. |
+| 14 | ScrathPencil.mp3     | Cria uma imersão interativa ao desenhar na lousa digital do minigame 4.                        |
+| 15 | TaskSucess.mp3       | Cria um sentimento de progresso, reforçando a conclusão bem-sucedida de uma atividade.          |
+| 16 | OpenMinigame.mp3     | Reforça a transição fluida entre telas, melhorando a experiência do usuário ao abrir menus ou consultar tarefas. |
 
 \
-O link abaixo leva a um drive do grupo, onde todos os sons utilizados no jogo estão disponíveis:
+O link abaixo leva a um drive do grupo, onde estão disponíveis todos os sons utilizados no jogo, além de um vídeo que demonstra a implementação dos sons e o funcionamento geral do jogo:
 [Sons Capital Downfall](https://drive.google.com/drive/u/0/folders/17yBORjCD1kmkHqtc_jtOFSGNY5rt7wF0)
 
 
@@ -676,7 +676,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 #
 
 <div align="center">
-  <p>Figura 1: Quadro 1</p>
+  <p>Figura x: Quadro 1</p>
     <img src="../assets/gdd_3.5/quadro_1.png"width="500"><br>
     <p>Produção autoral</p>
 </div>
@@ -684,49 +684,49 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 #
 
 <div align="center">
-  <p>Figura 2: Quadro 2</p>
+  <p>Figura x: Quadro 2</p>
     <img src="../assets/gdd_3.5/quadro_2.png"width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 3: Quadro 3</p>
+  <p>Figura x: Quadro 3</p>
     <img src="../assets/gdd_3.5/quadro_3.png"width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 4: Quadro 4</p>
+  <p>Figura x: Quadro 4</p>
     <img src="../assets/gdd_3.5/quadro_4.png"width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 5: Quadro 5</p>
+  <p>Figura x: Quadro 5</p>
     <img src="../assets/gdd_3.5/quadro_5.png"width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 6: Quadro 6</p>
+  <p>Figura x: Quadro 6</p>
     <img src="../assets/gdd_3.5/quadro_6.png"width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura 7: Quadro 7</p>
+  <p>Figura x: Quadro 7</p>
     <img src="../assets/gdd_3.5/quadro_7.png"width="500"><br>
-    <p>Produção autoral</p>
+    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1006,17 +1006,17 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 #
 
 <div align="center">
-<p>Figura 1: Cena da interface do computador:</p>
-<img src="../assets/conceptArt/imailInicial.png">
-<p>Produção autoral</p>
+<p>Figura x: Cena da interface do computador</p>
+<img src="../assets/conceptArt/materialDeApoio1.png">
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-<p>Figura 2: Parte do código referente à cena:</p>
+<p>Figura x: Parte do código referente à cena</p>
 <img src="../assets/gdd_4.2/printCodigoDia1.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1028,17 +1028,17 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 #
 
 <div align="center">
-<p>Figura 3: Exemplo do _Tileset_ utilizado:</p>
+<p>Figura x: Exemplo do _Tileset_ utilizado</p>
 <img src="../assets/gdd_4.2/tilesetInicial.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-<p>Figura 4: Parte do código referente à cena:</p>
+<p>Figura x: Parte do código referente à cena</p>
 <img src="../assets/gdd_4.2/printCodigoHub.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1058,9 +1058,9 @@ O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classi
 #
 
 <div align="center">
-<p>Figura 1: _Gameplay_ do _minigame 1:</p>
+<p>Figura x: <i>Gameplay</i> do <i>minigame 1</i></p>
 <img src="../assets/gdd_4.2/gameplay1.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1070,9 +1070,9 @@ O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao us
 #
 
 <div align="center">
-<p>Figura 2: _Gameplay_ do _minigame 2:</p>
+<p>Figura x: <i>Gameplay</i> do <i>minigame 2</i></p>
 <img src="../assets/gdd_4.2/gameplay2.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1082,9 +1082,9 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 #
 
 <div align="center">
-<p>Figura 3: _Gameplay_ do _minigame 3:</p>
+<p>Figura x: <i>Gameplay</i> do <i>minigame 3</i></p>
 <img src="../assets/gdd_4.2/gameplay3.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1094,9 +1094,9 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 #
 
 <div align="center">
-<p>Figura 4: Exemplo do material de apoio do _minigame_ 1:</p>
+<p>Figura x: Exemplo do material de apoio do <i>minigame</i> 1</p>
 <img src="../assets/gdd_4.2/apoioMinigame1.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1106,9 +1106,9 @@ A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve 
 #
 
 <div align="center">
-<p>Figura 5: Exemplo do código do _minigame_ 2:</p>
+<p>Figura x: Exemplo do código do <i>minigame</i> 2</p>
 <img src="../assets/gdd_4.2/codigo2.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1118,17 +1118,17 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 #
 
 <div align="center">
-<p>Figura 6: Layout da _hub_:</p>
+<p>Figura x: Layout da <i>hub</i></p>
 <img src="../assets/gdd_4.2/hubJogo.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-<p>Figura 7: Exemplo de objeto interativo na _hub_:</p>
+<p>Figura x: Exemplo de objeto interativo na <i>hub</i></p>
 <img src="../assets/gdd_4.2/objeto.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1138,9 +1138,9 @@ Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas
 #
 
 <div align="center">
-<p>Figura 8: _Spritesheet_ do personagem:</p>
+<p>Figura x: <i>Spritesheet</i> do personagem</p>
 <img src="../assets/gdd_4.2/markSpritesheet.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1150,9 +1150,9 @@ Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fund
 #
 
 <div align="center">
-<p>Figura 9: Menu Inicial:</p>
-<img src="../assets/gdd_4.2/menuInicial.gif">
-<p>Produção autoral</p>
+<p>Figura x: Menu Inicial</p>
+<img src="../assets/gdd_4.2/menuInicial.png">
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1172,9 +1172,9 @@ Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo
 #
 
 <div align="center">
-<p>Figura 1: Novo _layout_ da _hub_:</p>
+<p>Figura x: Novo <i>layout</i> da <i>hub</i></p>
 <img src="../assets/gdd_4.3/hub.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1186,9 +1186,9 @@ O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o 
 #
 
 <div align="center">
-<p>Figura 2: Novo _minigame 2:</p>
+<p>Figura x: Novo <i>minigame</i> 2</p>
 <img src="../assets/gdd_4.3/minigame2.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1198,9 +1198,9 @@ Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ 
 #
 
 <div align="center">
-<p>Figura 3: Exemplo de parte do material de apoio do _minigame_ 2:</p>
+<p>Figura x: Exemplo de parte do material de apoio do <i>minigame</i> 2</p>
 <img src="../assets/gdd_4.3/minigame2Apoio.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1210,9 +1210,9 @@ Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltam
 #
 
 <div align="center">
-<p>Figura 4: Exemplo de questão do _miniboss_:</p>
+<p>Figura x: Exemplo de questão do <i>miniboss</i></p>
 <img src="../assets/gdd_4.3/miniboss.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1222,9 +1222,9 @@ Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de
 #
 
 <div align="center">
-<p>Figura 5: Exemplo de _feedback_:</p>
+<p>Figura x: Exemplo de <i>feedback</i></p>
 <img src="../assets/gdd_4.3/minibossFeedback.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1234,9 +1234,9 @@ Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em ad
 #
 
 <div align="center">
-<p>Figura 6: _Gameplay_ do _minigame_ 4:</p>
+<p>Figura x: <i>Gameplay</i> do <i>minigame</i> 4</p>
 <img src="../assets/gdd_4.3/minigame4.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1246,9 +1246,9 @@ O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precis
 #
 
 <div align="center">
-<p>Figura 7: _Gameplay_ do _minigame_ 5:</p>
+<p>Figura x: <i>Gameplay</i> do <i>minigame</i> 5</p>
 <img src="../assets/gdd_4.3/minigame5.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1258,9 +1258,9 @@ O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura e
 #
 
 <div align="center">
-<p>Figura 8: _Gameplay_ do _minigame_ 6:</p>
+<p>Figura x: <i>Gameplay</i> do <i>minigame</i> 6</p>
 <img src="../assets/gdd_4.3/minigame6.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1270,17 +1270,17 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 #
 
 <div align="center">
-<p>Figura 9: Tela de seleção de personagens:</p>
+<p>Figura x: Tela de seleção de personagens</p>
 <img src="../assets/gdd_4.3/selecaoPersonagem.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
 
 <div align="center">
-<p>Figura 10: Exemplo do código da seleção de personagens:</p>
+<p>Figura x: Exemplo do código da seleção de personagens</p>
 <img src="../assets/gdd_4.3/codigoPersonagem.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 #
@@ -1290,9 +1290,9 @@ Por fim, também adicionamos telas de _feedback_ após a realização do _minibo
 #
 
 <div align="center">
-<p>Figura 11: Exemplo da tela de _feedback_:</p>
+<p>Figura x: Exemplo da tela de <i>feedback</i></p>
 <img src="../assets/gdd_4.3/telaPontuacao.png">
-<p>Produção autoral</p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025l</p>
 </div>
 
 #
@@ -1305,94 +1305,120 @@ A construção de um MVP (Produto Mínimo Viável) é essencial para validar, de
 
 Por esse motivo, nossa prioridade nesta sprint foi finalizar e viabilizar o jogo em sua totalidade. Considerando que já abordamos conteúdos mais densos nas primeiras duas fases e, alinhando esse fator à limitação de tempo disponível, validamos com o parceiro, ao final da sprint 3, a não necessidade de uma terceira fase com novos conteúdos. Em vez disso, optamos por uma abordagem focada em uma nova fase apenas destinada à revisão e consolidação dos conteúdos já trabalhados.
 
-Portanto, a revisão de conteúdos contribui significativamente para a eficiência do aprendizado, pois reforça conhecimentos previamente adquiridos, corrige possíveis lacunas e promove uma compreensão mais sólida. Esse processo facilita a fixação das informações e prepara melhor os participantes para a aplicação prática dos conceitos. (DUNLOSKY ET AL. 2013)
+Portanto, a revisão de conteúdos contribui significativamente para a eficiência do aprendizado, pois reforça conhecimentos previamente adquiridos, corrige possíveis lacunas e promove uma compreensão mais sólida. Esse processo facilita a fixação das informações e prepara melhor os participantes para a aplicação prática dos conceitos. (DUNLOSKY ET AL., 2013)
 
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
 <div align="center">
-<p> Figura 1: Tela Inicial do Jogo</p>
+<p> Figura x: Tela Inicial do Jogo</p>
 <img src="../assets/gdd_4.4/menuinicial55_360.gif">
-<p>Produção autoral - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025 </p>
 </div>
 
 
  Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
-<div align="center">
-<p> Figura 2: Tela nova de comunicação</p>
-<img src="../assets/gdd_4.4/slick1.png">
-<p>Produção autoral </p>
-</div>
+ #
 
 <div align="center">
-<p> Figura 3: Tela antiga de comunicação</p>
-<img src="../assets/gdd_4.4/telhavelha.png">
-<p>Produção autoral  </p>
+<p> Figura x: Tela nova de comunicação</p>
+<img src="../assets/gdd_4.4/slick1.png">
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
+
+#
+
+<div align="center">
+<p> Figura x: Tela antiga de comunicação</p>
+<img src="../assets/gdd_4.4/telhavelha.png">
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+</div>
+
+#
 
 Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos minigames que já haviam sido consolidados na Sprint 3.
 
+#
+
 <div align="center">
-<p> Figura 4: Minigame 1</p>
+<p> Figura x: Minigame 1</p>
 <img src="../assets/gdd_4.4/jogo1.png">
-<p>Produção autoral  </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
+#
+
 <div align="center">
-<p> Figura 5: Minigame 2</p>
+<p> Figura x: Minigame 2</p>
 <img src="../assets/gdd_4.4/jogo2.png">
-<p>Produção autoral  </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
+
+#
 
 <div align="center">
-<p> Figura 6: Tela Inicial do Jogo</p>
+<p> Figura x: Tela Inicial do Jogo</p>
 <img src="../assets/gdd_4.4/jogo3.png">
-<p>Produção autoral  </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
+#
 
 Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
 
 <div align="center">
-<p> Figura 7: Miniboss da Fase 1</p>
+<p> Figura x: Miniboss da Fase 1</p>
 <img src="../assets/gdd_4.4/miniboss.png">
-<p>Produção autoral - Exemplo de uma das perguntas revisionais </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
 Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da narrativa, utilizando telas de jornais e respostas com resolução para contribuir com o processo de aprendizado.
 
+#
+
 <div align="center">
-<p> Figura 8: Feedback das fases</p>
+<p> Figura x: Feedback das fases</p>
 <img src="../assets/gdd_4.4/feedback1.png">
-<p>Produção autoral </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div> 
 
+#
+
 <div align="center">
-<p> Figura 9: Feedback do Miniboss</p>
+<p> Figura x: Feedback do Miniboss</p>
 <img src="../assets/gdd_4.4/feedback2.png">
-<p>Produção autoral </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
+#
 
 Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais de acordo com a validação dos jogos da fase dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, foi possível integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
 
+#
+
 <div align="center">
-<p> Figura 10: Minigame 4</p>
+<p> Figura x: Minigame 4</p>
 <img src="../assets/gdd_4.4/jogo4.jpg">
-<p>Produção autoral  </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
+#
+
 <div align="center">
-<p> Figura 11: Minigame 5</p>
+<p> Figura x: Minigame 5</p>
 <img src="../assets/gdd_4.4/jogo5.png">
-<p>Produção autoral / Desinger: Lucas Michel - Na Sprint 4 a tela foi aprimorada e finalizada com características do mercado financeiro e de investimentos. </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
+#
+
 <div align="center">
-<p> Figura 12: Minigame 6</p>
+<p> Figura x: Minigame 6</p>
 <img src="../assets/gdd_4.4/jogo6.png">
-<p>Produção autoral - em desenvolvimento </p>
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
+
+#
 
 Para o MVP, não foi idealizado nenhum sistema revisional de Miniboss, pois a terceira e última fase do jogo, feita para consolidar a experiência do jogador, aborda uma experiência imersiva em uma Sala de Guerra. 
 
@@ -1400,36 +1426,42 @@ Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esfo
 
 Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra como conclusão e encerramento, a fim de que todos os conteúdos sejam abordados novamente, porém com um limite de tempo e com uma outra dinâmica, aproximando o jogador do contexto real da empresa e consolidando um processo de onboarding eficaz.
 
-<div align="center">
-<p> Figura 13: Sala de guerra - Hub</p>
-<img src="../assets/gdd_4.4/saladg1.png">
-<p>Produção autoral - fase em desenvolvimento </p>
-</div>
+#
 
 <div align="center">
-<p> Figura 14: Sala de guerra - Hub</p>
-<img src="../assets/gdd_4.4/saladg2.png">
-<p>Produção autoral - fase em desenvolvimento </p>
+<p> Figura x: Sala de guerra - Hub</p>
+<img src="../assets/gdd_4.4/saladg1.png">
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
+
+#
+
+<div align="center">
+<p> Figura x: Sala de guerra - Hub</p>
+<img src="../assets/gdd_4.4/saladg2.png">
+<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+</div>
+
+#
 
 **Adição de sons**
 
 Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A adição de sons em um jogo é importante porque enriquece a experiência do jogador, tornando-a mais imersiva e envolvente. Sons ajudam a criar atmosfera, guiar a atenção, indicar interações, reforçar emoções e fornecer feedback imediato sobre as ações do jogador. Além disso, contribuem para a narrativa e ajudam na construção da identidade do jogo, tornando-o mais memorável e impactante.
 
 <div align="center">
-<p> Figura 15: Adiciona música na Sala de Guerra</p>
+<p> Figura x: Adiciona música na Sala de Guerra</p>
 <img src="../assets/gdd_4.4/code3.png">
 <p> Fonte do som: Pixabay </p>
 </div>
 
 <div align="center">
-<p> Figura 16: Carregamento de música</p>
+<p> Figura x: Carregamento de música</p>
 <img src="../assets/gdd_4.4/code4.png">
 <p> Fonte do som: Pixabay </p>
 </div>
 
 <div align="center">
-<p> Figura 17: Adição de efeitos sonoros</p>
+<p> Figura x: Adição de efeitos sonoros</p>
 <img src="../assets/gdd_4.4/code1.png">
 <p> Produção autoral</p>
 </div>
@@ -1496,36 +1528,39 @@ _Relacione também quaisquer ideias que o grupo tenha para melhorias futuras_
 
 # <a name="c7"></a>7. Referências (sprint 5)
 
-OSTERWALDER, Alexander et al. Value proposition design: How to create products and services customers want. John Wiley & Sons, 2015.
-
-MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 23 fev. 2025.<br>
-
-MOBA, RPG, MMORPG, FPS e mais: entenda significado dos gêneros de games. Disponível em: https://www.techtudo.com.br/noticias/2021/03/moba-rpg-mmorpg-fps-e-mais-entenda-significado-dos-generos-de-games.ghtml. Acesso em : 23 fev. 2025.<br>
-
-NAKAGAWA, Marcelo. Ferramenta: 5 Forças de Porter. [S. l.: s. n.], [20--]. Disponível em: https://sebrae.com.br/Sebrae/Portal%20Sebrae/Anexos/ME_5-Forcas-Porter.PDF?ref=productoversee.com. Acesso em: 23 fev. 2025.<br>
-
-BTG PACTUAL.Negócio e Histórico,2025.Disponível em: https://ri.btgpactual.com/sobre-o-banco/negocio-e-historico/#:~:text=O%20Banco%20BTG%20Pactual%20%C3%A9,internacional%20de%20investimentos%20e%20distribui%C3%A7%C3%A3o. Acesso em : 23 fev. 2025.<br>
-
-SEBRAE.Público Alvo,2025.Disponível em : https://sebrae.com.br/sites/PortalSebrae/artigos/como-determinar-o-publico-alvo-da-sua-empresa,fa1c7553c86c6810VgnVCM1000001b00320aRCRD. Acesso em : 23 fev. 2025.<br>
-
-POLTERGEISTERS. Slightly Cuter Character Sprites. Nexus Mods, 2017. Disponível em: https://www.nexusmods.com/stardewvalley/mods/1437. Acesso em: 27 fev. 2025.
-
 ALIYACH. Portrait Accurate NPC Sprites. Nexus Mods, 2023. Disponível em: https://www.nexusmods.com/stardewvalley/mods/17289. Acesso em: 27 fev. 2025.
 
-DEEP-FOLD. PixelSpace. GitHub, 2021. Disponível em: https://github.com/Deep-Fold/PixelSpace. Acesso em: 27 fev. 2025.
+ANBIMA. Fundos de investimento registram captação líquida positiva de R$ 40,1 bilhões em abril. ANBIMA, 2024. Disponível em: https://www.anbima.com.br/pt_br/informar/relatorios/fundos-de-investimento/boletim-de-fundos-de-investimentos/fundos-de-investimento-registram-captacao-liquida-positiva-de-r-40-1-bilhoes-em-abril-8A2AB28B8F54B5C5018F59D76D9666C9-00.htm. Acesso em: 28 mar. 2025.
 
-GLOBALDATA. Banco BTG Pactual S.A.: SWOT Analysis. Disponível em: https://www.globaldata.com/company-profile/banco-btg-pactual-sa/swot-analysis/. Acesso em: 28 fev. 2025.
+ASANA. Análise SWOT/FOFA: o que é e como usá-la (com exemplos). 24 fev. 2025. Disponível em: https://asana.com/pt/resources/swot-analysis. Acesso em: 29 fev. 2025.
 
-DCF MODELING. BTG Pactual: Porter’s Five Forces Analysis. Disponível em: https://dcfmodeling.com/pt/products/btg-porters-five-forces-analysis. Acesso em: 28 fev. 2025.
+BERWIG, Daniel. Valuation: análise de caso do Banco BTG Pactual S.A. 2023. Disponível em: https://lume.ufrgs.br/handle/10183/273883. Acesso em: 28 mar. 2025.
 
-ASANA. Análise SWOT: o que é, importância e como fazer. Disponível em: https://asana.com/pt/resources/swot-analysis. Acesso em: 28 fev. 2025.
+BTG PACTUAL. Negócio e Histórico, 2025. Disponível em: https://ri.btgpactual.com/sobre-o-banco/negocio-e-historico/#:~:text=O%20Banco%20BTG%20Pactual%20%C3%A9,internacional%20de%20investimentos%20e%20distribui%C3%A7%C3%A3o. Acesso em: 23 fev. 2025.
 
-BTG PACTUAL. Nosso DNA: Valores. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
+BTG PACTUAL. Nosso DNA: Valores, [s.d.]. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
 
 BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
 
+DEEP-FOLD. PixelSpace. GitHub, 2021. Disponível em: https://github.com/Deep-Fold/PixelSpace. Acesso em: 27 fev. 2025.
+
 HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física: Mecânica – Volume 1. 12. ed. Rio de Janeiro: LTC, 2023.
 
+MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 23 fev. 2025.
+
+MOBA, RPG, MMORPG, FPS e mais: entenda significado dos gêneros de games. Disponível em: https://www.techtudo.com.br/noticias/2021/03/moba-rpg-mmorpg-fps-e-mais-entenda-significado-dos-generos-de-games.ghtml. Acesso em: 23 fev. 2025.
+
+OSTERWALDER, Alexander et al. Value proposition design: How to create products and services customers want. John Wiley & Sons, 2015.
+
+POLTERGEISTERS. Slightly Cuter Character Sprites. Nexus Mods, 2017. Disponível em: https://www.nexusmods.com/stardewvalley/mods/1437. Acesso em: 27 fev. 2025.
+
+PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva*. Rio de Janeiro: Campus, 1998.
+
+PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledge (PMBOK® Guide). 6. ed. Newtown Square, PA: Project Management Institute, 2017.
+
+RIBEIRO, Luis Henrique de Oliveira; SODRÉ, Marina Fernandes; ALBUQUERQUE JUNIOR, Carlos Roberto Falcão de. A ascenção dos bancos digitais na era moderna: uma análise qualitativa através de ferramentas do planejamento estratégico. Brazilian Journal of Development, Curitiba, v. 8, n. 1, p. 4213-4226, jan. 2022.
+
+SEBRAE. Como determinar o público-alvo da sua empresa. Portal Sebrae, 8 maio 2023. Disponível em: https://sebrae.com.br/sites/PortalSebrae/artigos/como-determinar-o-publico-alvo-da-sua-empresa,fa1c7553c86c6810VgnVCM1000001b00320aRCRD. Acesso em: 28 mar. 2025.
 
 # <a name="c8"></a>Anexos
 
