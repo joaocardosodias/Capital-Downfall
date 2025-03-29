@@ -2,7 +2,7 @@
 
 # GDD - Game Design Document - Módulo 1 - Inteli
 
-## Nome do Grupo: Level Zero  
+## Nome do Grupo: Level Zero
 
 #### Nomes dos integrantes do grupo
 
@@ -62,7 +62,7 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
 
 <div style="text-align: center;">
     <p>Figura x: 5 Forças de Porter</p>
-    <img src="../assets/5forcasdeporter.png">
+    <img src="../assets/negocios/5forcasdeporter.png">
     <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
@@ -87,9 +87,10 @@ Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferr
 A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA, 2025).
 
 #
+
 <div style="text-align: center;">
     <p>Figura x: Análise SWOT</p>
-    <img src="../assets/analiseswot.png" alt="Análise SWOT">
+    <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT">
     <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
@@ -99,7 +100,7 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 
 - **Liderança no mercado financeiro:** o BTG Pactual é o maior banco de investimentos da América Latina, com alta presença no setor financeiro (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
-- **Inovação e tecnologia:** forte investimento em soluções digitais e plataformas tecnológicas, como o BTG Pactual Digital, permitindo o crescimento no varejo financeiro  (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
+- **Inovação e tecnologia:** forte investimento em soluções digitais e plataformas tecnológicas, como o BTG Pactual Digital, permitindo o crescimento no varejo financeiro (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
 - **Rede de clientes e relacionamento:** possui uma base sólida de clientes institucionais e de alta renda, além de um forte relacionamento com empresas e investidores (RIBEIRO; SODRÉ; ALBUQUERQUE JUNIOR, 2022).
 
@@ -141,7 +142,7 @@ Da mesma forma, nosso projeto visa transformar o onboarding de novos analistas d
 
 ### 1.1.4. Proposta de Valor (sprint 4)
 
-O conceito do _Canvas_ da Proposta de Valor foi criado por Alex Osterwalder, no livro _Value Proposition Design: How to Create Products and Services Customers want_. Na obra, Osterwalder (2014) apresenta um modelo com dois lados: o perfil do consumidor e o mapa de valor. 
+O conceito do _Canvas_ da Proposta de Valor foi criado por Alex Osterwalder, no livro _Value Proposition Design: How to Create Products and Services Customers want_. Na obra, Osterwalder (2014) apresenta um modelo com dois lados: o perfil do consumidor e o mapa de valor.
 
 No perfil do consumidor, destacam-se três elementos principais:
 
@@ -152,6 +153,7 @@ No perfil do consumidor, destacam-se três elementos principais:
 O principal objetivo dessa parte da ferramenta é verificar o conhecimento sobre o consumidor.
 
 Já o mapa de valor contém os seguintes elementos:
+
 - **Analgésicos**: soluções que eliminam ou minimizam as dores do cliente.
 - **Criadores de ganho**: tudo o que pode melhorar a experiência do consumidor, agregando mais valor ao produto ou serviço.
 - **Produtos e serviços**: produtos ou seviços que sirvam como solução para os problemas apresentados
@@ -172,13 +174,11 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 
 Destacamos alguns aspectos do canvas, principalmente quanto às dores do cliente e os criadores de ganho da solução. O principal desafio apresentado pelo BTG Pactual envolve o atual processo de onboarding, que se mostra pouco dinâmico e atrativo. Dessa forma, os criadores de ganho que definimos buscam proporcionar uma experiência que, aliada aos analgésicos propostos, seja capaz de atender às expectativas do parceiro de projeto e esteja alinhada com a nossa solução.
 
-
 Como temos 10 semanas de trabalho, a priorização das tarefas, dores e ganhos, conceito apresentado anteriormente, demonstra a sua importância. No caso de nosso projeto, o foco desejado pela empresa parceira está nas informações passadas para novos funcionários. Ou seja, o aspecto principal de nossa solução precisa estar alinhada com a transmissão de conteúdos. Por esse caminho, definimos a seção "Criadores de ganho", visto na figura 3, trazendo a nossa proposta de gamificação do processo de onboarding junto com a validação da performance do jogador, visando garantir que o mesmo compreendeu os conteúdos necessários, principal ponto desejado pelo parceiro.
-
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
-O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em relação à falta de engajamento dos novos funcionários com o _onboarding_, à burocracia desse processo e à falta de dinamização na aprendizagem.  Diante disso, a solução proposta oferece uma experiência gamificada que transforma o _onboarding_ tradicional em um processo mais ágil, interativo e envolvente. Para agregar ainda mais valor à experiência do usuário, o jogo conta com um sistema de pontuação que permite que os jogadores acompanhem seu progresso e se mantenham motivados, materiais de apoio integrados que possibilitam o acesso rápido e fácil a conteúdos essenciais, sem a necessidade de sair da tela do jogo, e minigames interativos que reforçam o aprendizado de forma criativa e envolvente, tornando a assimilação do conteúdo mais eficiente.
+O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em relação à falta de engajamento dos novos funcionários com o _onboarding_, à burocracia desse processo e à falta de dinamização na aprendizagem. Diante disso, a solução proposta oferece uma experiência gamificada que transforma o _onboarding_ tradicional em um processo mais ágil, interativo e envolvente. Para agregar ainda mais valor à experiência do usuário, o jogo conta com um sistema de pontuação que permite que os jogadores acompanhem seu progresso e se mantenham motivados, materiais de apoio integrados que possibilitam o acesso rápido e fácil a conteúdos essenciais, sem a necessidade de sair da tela do jogo, e minigames interativos que reforçam o aprendizado de forma criativa e envolvente, tornando a assimilação do conteúdo mais eficiente.
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
@@ -186,9 +186,9 @@ A Matriz de Riscos, também conhecida como Matriz de Probabilidade e Impacto, é
 
 A estrutura da matriz é baseada em duas dimensões principais. A primeira é a probabilidade, que mede a chance de um risco ocorrer, sendo normalmente classificada em níveis como muito baixo, baixo, moderado, alto e muito alto, podendo também ser expressa por porcentagens. A segunda dimensão é o impacto, que representa as consequências da ocorrência do risco. Assim como a probabilidade, o impacto também é classificado em níveis que variam de muito baixo a muito alto (PROJECT MANAGEMENT INSTITUTE, 2017).
 
-A combinação entre probabilidade e impacto resulta na classificação do risco, que é geralmente representada por cores em uma matriz visual, permitindo identificar facilmente o nível de criticidade de cada risco: alta, média ou baixa. Essa visualização facilita o foco da equipe nos riscos mais relevantes e permite que um plano de ações eficaz seja elaborado. 
+A combinação entre probabilidade e impacto resulta na classificação do risco, que é geralmente representada por cores em uma matriz visual, permitindo identificar facilmente o nível de criticidade de cada risco: alta, média ou baixa. Essa visualização facilita o foco da equipe nos riscos mais relevantes e permite que um plano de ações eficaz seja elaborado.
 
-Em contrapartida, para cada risco existe um plano de ação para ser feito dentro da equipe. O plano de ação na matriz de risco consiste em medidas estratégicas definidas para prevenir, minimizar ou responder aos riscos identificados, com o objetivo de reduzir seus impactos no projeto. Ele orienta as ações da equipe diante de cada risco, promovendo uma gestão mais eficiente e proativa. 
+Em contrapartida, para cada risco existe um plano de ação para ser feito dentro da equipe. O plano de ação na matriz de risco consiste em medidas estratégicas definidas para prevenir, minimizar ou responder aos riscos identificados, com o objetivo de reduzir seus impactos no projeto. Ele orienta as ações da equipe diante de cada risco, promovendo uma gestão mais eficiente e proativa.
 
 Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada para avaliar os riscos identificados ao longo do desenvolvimento do jogo, considerando tanto aspectos internos, como as expectativas da equipe, quanto os relacionados à entrega do produto e ao feedback do parceiro.
 
@@ -196,7 +196,7 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 
 <div style="text-align: center;">
     <p>Figura x: Ameaças - Matriz de Risco</p>
-    <img src="../assets/matrizderisco1.png" />
+    <img src="../assets/negocios/matrizderisco1.png" />
     <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
@@ -205,47 +205,46 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 **Descrição:**
 
 1. **Falta de testes com usuários reais.**
-Impacto: Moderado
-Probabilidade: 90%
-Descrição: Impossibilidade de fazer com que os analistas de fundos de investimento joguem e validem o jogo e o conteúdo abordado.
-Plano de Ação: Planejar e executar testes de usabilidade com usuários-alvo antes da implementação no processo de onboarding, além de incorporar os feedbacks nas sprints de desenvolvimento para melhorias contínuas.
+   Impacto: Moderado
+   Probabilidade: 90%
+   Descrição: Impossibilidade de fazer com que os analistas de fundos de investimento joguem e validem o jogo e o conteúdo abordado.
+   Plano de Ação: Planejar e executar testes de usabilidade com usuários-alvo antes da implementação no processo de onboarding, além de incorporar os feedbacks nas sprints de desenvolvimento para melhorias contínuas.
 
 2. **Abordar conteúdo insuficiente para o onboarding.**
-Impacto: Alto
-Probabilidade: 30%
-Descrição: O jogo não aborda tudo aquilo que precisa ser passado para que o estagiário complete o aprendizado requisitado no onboarding.
-Plano de Ação: Levantar as informações essenciais junto ao parceiro e criar um roteiro de conteúdo claro, baseado na documentação disponibilizada pelo banco BTG, revisando com base em testes nas sprints de validações.
+   Impacto: Alto
+   Probabilidade: 30%
+   Descrição: O jogo não aborda tudo aquilo que precisa ser passado para que o estagiário complete o aprendizado requisitado no onboarding.
+   Plano de Ação: Levantar as informações essenciais junto ao parceiro e criar um roteiro de conteúdo claro, baseado na documentação disponibilizada pelo banco BTG, revisando com base em testes nas sprints de validações.
 
 3. **Expectativas do parceiro desalinhadas com a realidade do produto.**
-Impacto: Muito Alto
-Probabilidade: 30%
-Descrição: O produto final torna-se algo diferente daquilo que será aplicado e as validações não são suficientes para um alinhamento contínuo. 
-Plano de Ação:  Definir escopo, entregas e critérios de sucesso de forma clara e documentada, além de realizar reuniões periódicas de alinhamento com o parceiro para revisar expectativas.
+   Impacto: Muito Alto
+   Probabilidade: 30%
+   Descrição: O produto final torna-se algo diferente daquilo que será aplicado e as validações não são suficientes para um alinhamento contínuo.
+   Plano de Ação: Definir escopo, entregas e critérios de sucesso de forma clara e documentada, além de realizar reuniões periódicas de alinhamento com o parceiro para revisar expectativas.
 
 4. **Falta de experiência técnica.**
-Impacto: Alto
-Probabilidade: 70%
-Descrição: O grupo pode enfrentar dificuldades técnicas ao lidar pela primeira vez com linguagens de programação e tecnologias de desenvolvimento de projeto.
-Plano de Ação: Identificar os níveis de conhecimento e promover treinamentos adicionais por meio de cursos e professores.
+   Impacto: Alto
+   Probabilidade: 70%
+   Descrição: O grupo pode enfrentar dificuldades técnicas ao lidar pela primeira vez com linguagens de programação e tecnologias de desenvolvimento de projeto.
+   Plano de Ação: Identificar os níveis de conhecimento e promover treinamentos adicionais por meio de cursos e professores.
 
 5. **Prazos não cumpridos.**
-Impacto: Alto
-Probabilidade: 50%
-Descrição: Dificuldade na organização de tarefas e consequentemente atraso na entrega, uma vez que na equipe, uma tarefa depende diretamente da finalização de outra.
-Plano de Ação: Definir as metas semanais no Trello e seguir a linha de tempo determinada, acompanhando o progresso com métodos ágeis e ajustando o cronograma sempre que necessário.
+   Impacto: Alto
+   Probabilidade: 50%
+   Descrição: Dificuldade na organização de tarefas e consequentemente atraso na entrega, uma vez que na equipe, uma tarefa depende diretamente da finalização de outra.
+   Plano de Ação: Definir as metas semanais no Trello e seguir a linha de tempo determinada, acompanhando o progresso com métodos ágeis e ajustando o cronograma sempre que necessário.
 
 6. **Falta de comunicação interna na equipe.**
-Impacto: Muito Alto
-Probabilidade: 50%
-Descrição: Desalinhamento entre membros pode afetar o desempenho geral, uma vez que as tarefas e o grupo é dependente entre si para o sucesso do projeto.
-Plano de Ação: Adotar rituais ágeis como o Scrum, realizando constantemente dailys e retrospectivas.
+   Impacto: Muito Alto
+   Probabilidade: 50%
+   Descrição: Desalinhamento entre membros pode afetar o desempenho geral, uma vez que as tarefas e o grupo é dependente entre si para o sucesso do projeto.
+   Plano de Ação: Adotar rituais ágeis como o Scrum, realizando constantemente dailys e retrospectivas.
 
 7. **Má distribuição de tarefas.**
-Impacto: Moderado
-Probabilidade: 70%
-Descrição: Manter os alunos que possuem algum conhecimento prévio fixos em determinada área, desequilibrando o bom andamento das atividades, sobrecarregando o grupo como um todo e impossibilitando a troca de saberes.
-Plano de Ação: Reavaliar o planejamento e dividir as tarefas de forma mais equilibrada, realizar reuniões diárias de alinhamento para redistribuir atividades quando necessário e respeitar as atividades definidas no Kanban.
-
+   Impacto: Moderado
+   Probabilidade: 70%
+   Descrição: Manter os alunos que possuem algum conhecimento prévio fixos em determinada área, desequilibrando o bom andamento das atividades, sobrecarregando o grupo como um todo e impossibilitando a troca de saberes.
+   Plano de Ação: Reavaliar o planejamento e dividir as tarefas de forma mais equilibrada, realizar reuniões diárias de alinhamento para redistribuir atividades quando necessário e respeitar as atividades definidas no Kanban.
 
 O setor de oportunidades na matriz de riscos representa os riscos positivos, ou seja, eventos incertos que, se ocorrerem, podem trazer benefícios ao projeto. Assim como as ameaças, as oportunidades são avaliadas com base na probabilidade de ocorrência e no impacto, mas com foco em resultados favoráveis. Baseado nisso, o nosso grupo pontuou as principais oportunidades que obtivemos como equipe no decorrer do projeto.
 
@@ -253,37 +252,38 @@ O setor de oportunidades na matriz de riscos representa os riscos positivos, ou 
 
 <div style="text-align: center;">
     <p>Figura x: Oportunidades - Matriz de Risco</p>
-    <img src="../assets/matrizrisco2.png" />
+    <img src="../assets/negocios/matrizrisco2.png" />
     <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
 
 **Descrição:**
+
 1. **Aprendizado constante e proatividade.**
-Impacto: Muito alto
-Probabilidade: 90%
-Descrição: Aprendizados novos todos os dias sobre metodologias ágeis por meio de uma metodologia ágil que garante proatividade, o método PBL.
+   Impacto: Muito alto
+   Probabilidade: 90%
+   Descrição: Aprendizados novos todos os dias sobre metodologias ágeis por meio de uma metodologia ágil que garante proatividade, o método PBL.
 
 2. **Compartilhamento de conhecimento na equipe.**
-Impacto: Alto
-Probabilidade: 90%
-Descrição: A equipe durante as 10 semanas de desenvolvimento, troca seus conhecimentos e explora novas áreas de saberes a partir de outros integrantes do grupo.
+   Impacto: Alto
+   Probabilidade: 90%
+   Descrição: A equipe durante as 10 semanas de desenvolvimento, troca seus conhecimentos e explora novas áreas de saberes a partir de outros integrantes do grupo.
 
 3. **Validação antecipada de funcionalidades com o parceiro.**
-Impacto: Muito alto
-Probabilidade: 70%
-Descrição: A oportunidade de validar o projeto com o parceiro a cada duas semanas permite o alinhamento contínuo com o cliente.
+   Impacto: Muito alto
+   Probabilidade: 70%
+   Descrição: A oportunidade de validar o projeto com o parceiro a cada duas semanas permite o alinhamento contínuo com o cliente.
 
 4. **Desenvolvimento de Hard Skills**
-Impacto: Alto
-Probabilidade: 70%
-Descrição: Aprender novas habilidades técnicas para utilizar no projeto e consequentemente, em outros projetos futuros.
+   Impacto: Alto
+   Probabilidade: 70%
+   Descrição: Aprender novas habilidades técnicas para utilizar no projeto e consequentemente, em outros projetos futuros.
 
-6. **Desenvolvimento de Soft Skills**
-Impacto: Muito alto
-Probabilidade: 50%
-Descrição: O trabalho e o desenvolvimento em grupo, permite a formação de habilidades socioemocionais novas, como a colaboração, a empatia e o trabalho em equipe.
+5. **Desenvolvimento de Soft Skills**
+   Impacto: Muito alto
+   Probabilidade: 50%
+   Descrição: O trabalho e o desenvolvimento em grupo, permite a formação de habilidades socioemocionais novas, como a colaboração, a empatia e o trabalho em equipe.
 
 Portanto, baseado na matriz de riscos apresentada, é possível concluir que a análise estruturada dos riscos, considerando tanto ameaças quanto oportunidades, permite uma visão mais clara das prioridades do projeto, contribuindo para o bom desenvolvimento como um todo.
 
@@ -291,11 +291,11 @@ Portanto, baseado na matriz de riscos apresentada, é possível concluir que a a
 
 As metas SMART são uma metodologia eficaz para definir objetivos de forma clara e alcançável, tanto no contexto pessoal quanto profissional. A sigla SMART representa cinco critérios que uma meta bem formulada deve atender. Desse modo, ela deve ser:
 
-- Específica, ou seja, claramente definida e focada em um resultado concreto. 
-- Mensurável, permitindo avaliar o progresso por meio de indicadores ou resultados observáveis. 
+- Específica, ou seja, claramente definida e focada em um resultado concreto.
+- Mensurável, permitindo avaliar o progresso por meio de indicadores ou resultados observáveis.
 - Atingível, ou seja, realista dentro das possibilidades e recursos disponíveis.
 - Relevante, estando alinhada com objetivos maiores ou com algo que realmente faça sentido para quem a define.
-- Temporal, com um prazo definido para ser cumprida. 
+- Temporal, com um prazo definido para ser cumprida.
 
 Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revista Management Review, e desde então tem sido amplamente utilizado na gestão de projetos, planejamento estratégico e desenvolvimento pessoal por facilitar o foco, o comprometimento e o acompanhamento dos resultados.
 
@@ -303,15 +303,13 @@ Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revis
 
 <div style="text-align: center;">
     <p>Figura x: Metas SMART</p>
-    <img src="../assets/smart.png" />
+    <img src="../assets/negocios/smart.png" />
     <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
 
 #
 
 Ao conhecer as metas SMART, é nítido a importância de planejar objetivos de forma estratégica e estruturada. Essa abordagem não só aumenta as chances de sucesso, mas facilita a organização e a motivação ao longo do projeto.
-
-
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 
@@ -518,7 +516,7 @@ O jogo possuirá duas fases, e cada fase terá três minigames que abordarão al
 | <img src="../assets/gdd_3.3/minigame1.png" width="800"> | O jogador deve analisar um card contendo informações sobre um fundo e arrastá-lo, com o mouse, para a gaveta correta — "Aberto" ou "Fechado" — com base em sua interpretação. |
 | <img src="../assets/gdd_3.3/minigame2.png" width="800"> | O jogador deve realizar cálculos financeiros.                                                                                                                                 |
 | <img src="../assets/gdd_3.3/minigame3.png" width="800"> | O jogador deve ordenar corretamente as etapas do resgate em um fundo de investimento.                                                                                         |
-| <img src="../assets/gdd_3.3/minigame4.png" width="800"> | O jogador deve efetuar operações matemáticas relacionadas a fundos de investimento.                                                                                     |
+| <img src="../assets/gdd_3.3/minigame4.png" width="800"> | O jogador deve efetuar operações matemáticas relacionadas a fundos de investimento.                                                                                           |
 | <img src="../assets/gdd_3.3/minigame5.png" width="800"> | O jogador deve ligar termos e definições de conceitos financeiros.                                                                                                            |
 | <img src="../assets/gdd_3.3/minigame6.png" width="800"> | O jogador deve avaliar perfis de candidatos.                                                                                                                                  |
 
@@ -618,24 +616,24 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 ### 3.3.5. Trilha sonora (sprint 4)
 
-| #  | **Título**         | **Ocorrência**                                | **Autoria**  |
-|----|--------------------|-----------------------------------------------|--------------|
-| 1  | BeepAcerto         | Após o jogador clicar em uma alternativa correta | PixaBay      |
-| 2  | BeepErro           | Após o jogador clicar em uma alternativa errada| PixaBay      |
-| 3  | Carimbo            | Quando o jogador selecionar uma alternativa no minigame 2 | PixaBay |
-| 4  | Clique             | Ao clicar nos "botões" dos minigames          | PixaBay      |
-| 5  | CloseMinigame      | Quando o jogador finalizar o minigame         | PixaBay      |
-| 6  | EscritorioFlow     | Enquanto o jogador estiver realizando um minigame | PixaBay |
-| 7  | MovePostIt         | Quando o jogador arrastar o "post-it" do minigame 1 | PixaBay |
-| 8  | MusicaHub          | Quando o jogador se deslocar pelo mapa do dia 1 | PixaBay |
-| 9  | MusicaHub2         | Quando o jogador se deslocar pelo mapa do dia 2 | PixBay  |
-| 10 | RockMenu           | Enquanto o jogador estiver no menu inicial  | PixBay |
-| 11  | NewspaperPutDown   | Quando o jornal cai sobre a mesa no fim da animação | Freesound    |
-| 12 | PaperLoose         | Durante a queda do jornal na animação         | Freesound    |
-| 13 | Passos             | Quando o personagem se mover                  | PixaBay      |
-| 14 | ScrathPencil       | Enquanto o jogador estiver desenhando na lousa do minigame 4 | PixaBay |
-| 15 | TaskSucess         | Após a finalização da Task                    | PixaBay      |
-| 16 | OpenMinigame       | Quando o jogador iniciar um minigame          | PixaBay      |
+| #   | **Título**       | **Ocorrência**                                               | **Autoria** |
+| --- | ---------------- | ------------------------------------------------------------ | ----------- |
+| 1   | BeepAcerto       | Após o jogador clicar em uma alternativa correta             | PixaBay     |
+| 2   | BeepErro         | Após o jogador clicar em uma alternativa errada              | PixaBay     |
+| 3   | Carimbo          | Quando o jogador selecionar uma alternativa no minigame 2    | PixaBay     |
+| 4   | Clique           | Ao clicar nos "botões" dos minigames                         | PixaBay     |
+| 5   | CloseMinigame    | Quando o jogador finalizar o minigame                        | PixaBay     |
+| 6   | EscritorioFlow   | Enquanto o jogador estiver realizando um minigame            | PixaBay     |
+| 7   | MovePostIt       | Quando o jogador arrastar o "post-it" do minigame 1          | PixaBay     |
+| 8   | MusicaHub        | Quando o jogador se deslocar pelo mapa do dia 1              | PixaBay     |
+| 9   | MusicaHub2       | Quando o jogador se deslocar pelo mapa do dia 2              | PixBay      |
+| 10  | RockMenu         | Enquanto o jogador estiver no menu inicial                   | PixBay      |
+| 11  | NewspaperPutDown | Quando o jornal cai sobre a mesa no fim da animação          | Freesound   |
+| 12  | PaperLoose       | Durante a queda do jornal na animação                        | Freesound   |
+| 13  | Passos           | Quando o personagem se mover                                 | PixaBay     |
+| 14  | ScrathPencil     | Enquanto o jogador estiver desenhando na lousa do minigame 4 | PixaBay     |
+| 15  | TaskSucess       | Após a finalização da Task                                   | PixaBay     |
+| 16  | OpenMinigame     | Quando o jogador iniciar um minigame                         | PixaBay     |
 
 \
 Os áudios utilizados no jogo foram extraídos do **PixaBay**, um site gratuito que disponibiliza imagens, vídeos, ilustrações, gráficos vetoriais, músicas e efeitos sonoros. Você pode acessá-lo em: [PixaBay Sound Effects](https://pixabay.com/pt/sound-effects/).
@@ -644,32 +642,30 @@ Além disso, alguns sons foram retirados do **Freesound**, uma plataforma colabo
 
 A seguir, apresentamos como cada som visa impactar na experiência do usuário:
 
-| #  | **Som**              | **Função**                                                                                  |
-|----|----------------------|-----------------------------------------------------------------------------------------------|
-| 1  | BeepAcerto.mp3       | Fornece um feedback positivo ao usuário, demonstrando que ele acertou o minigame.              |
-| 2  | BeepErro.mp3         | Ajuda o jogador a entender que errou alguma parte do minigame movendo o “post-it”.             |
-| 3  | Carimbo.mp3          | Simula um som de um objeto do mundo real, ajudando a tornar a experiência mais realista.             |
-| 4  | Clique.mp3           | Fornece um feedback imediato ao jogador de que um botão foi pressionado, tornando a navegação pelo menu mais responsiva e intuitiva. |
-| 5  | CloseMinigame.mp3    | Ajuda o jogador a compreender que ele finalizou o minigame.                                    |
-| 6  | EscritorioFlow.mp3   | Cria uma atmosfera imersiva, simulando um ambiente real de trabalho e evitando que o jogo pareça "vazio" quando não há interações diretas. |
-| 7  | MovePostIt.mp3       | Cria a sensação de estar organizando documentos, tornando a experiência mais realista e conectada ao tema fiscal. |
-| 8  | MusicaHub.mp3        | Cria uma ambientação relaxante e envolvente.    |
-| 9  | MusicaHub2.mp3       | Cria uma ambientação relaxante e envolvente.  |
-| 10 | RockMenu.mp3         | Estimula o jogador a querer iniciar o jogo.  |
-| 11  | NewspaperPutDown.mp3 | Simula o impacto entre dois objetos do mundo real, tornando a experiência mais fiel à realidade. |
-| 12 | PaperLoose.mp3       | Simula a queda real de um objeto, tornando a experiência do jogo mais imersiva.                |
-| 13 | Passos.mp3           | Dá uma sensação de presença física no ambiente, tornando a movimentação do personagem mais realista e envolvente. |
-| 14 | ScrathPencil.mp3     | Cria uma imersão interativa ao desenhar na lousa digital do minigame 4.                        |
-| 15 | TaskSucess.mp3       | Cria um sentimento de progresso, reforçando a conclusão bem-sucedida de uma atividade.          |
-| 16 | OpenMinigame.mp3     | Reforça a transição fluida entre telas, melhorando a experiência do usuário ao abrir menus ou consultar tarefas. |
+| #   | **Som**              | **Função**                                                                                                                                 |
+| --- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | BeepAcerto.mp3       | Fornece um feedback positivo ao usuário, demonstrando que ele acertou o minigame.                                                          |
+| 2   | BeepErro.mp3         | Ajuda o jogador a entender que errou alguma parte do minigame movendo o “post-it”.                                                         |
+| 3   | Carimbo.mp3          | Simula um som de um objeto do mundo real, ajudando a tornar a experiência mais realista.                                                   |
+| 4   | Clique.mp3           | Fornece um feedback imediato ao jogador de que um botão foi pressionado, tornando a navegação pelo menu mais responsiva e intuitiva.       |
+| 5   | CloseMinigame.mp3    | Ajuda o jogador a compreender que ele finalizou o minigame.                                                                                |
+| 6   | EscritorioFlow.mp3   | Cria uma atmosfera imersiva, simulando um ambiente real de trabalho e evitando que o jogo pareça "vazio" quando não há interações diretas. |
+| 7   | MovePostIt.mp3       | Cria a sensação de estar organizando documentos, tornando a experiência mais realista e conectada ao tema fiscal.                          |
+| 8   | MusicaHub.mp3        | Cria uma ambientação relaxante e envolvente.                                                                                               |
+| 9   | MusicaHub2.mp3       | Cria uma ambientação relaxante e envolvente.                                                                                               |
+| 10  | RockMenu.mp3         | Estimula o jogador a querer iniciar o jogo.                                                                                                |
+| 11  | NewspaperPutDown.mp3 | Simula o impacto entre dois objetos do mundo real, tornando a experiência mais fiel à realidade.                                           |
+| 12  | PaperLoose.mp3       | Simula a queda real de um objeto, tornando a experiência do jogo mais imersiva.                                                            |
+| 13  | Passos.mp3           | Dá uma sensação de presença física no ambiente, tornando a movimentação do personagem mais realista e envolvente.                          |
+| 14  | ScrathPencil.mp3     | Cria uma imersão interativa ao desenhar na lousa digital do minigame 4.                                                                    |
+| 15  | TaskSucess.mp3       | Cria um sentimento de progresso, reforçando a conclusão bem-sucedida de uma atividade.                                                     |
+| 16  | OpenMinigame.mp3     | Reforça a transição fluida entre telas, melhorando a experiência do usuário ao abrir menus ou consultar tarefas.                           |
 
 \
 O link abaixo leva a um drive do grupo, onde estão disponíveis todos os sons utilizados no jogo, além de um vídeo que demonstra a implementação dos sons e o funcionamento geral do jogo:
 [Sons Capital Downfall](https://drive.google.com/drive/u/0/folders/17yBORjCD1kmkHqtc_jtOFSGNY5rt7wF0)
 
-
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
-
 
 A trajetória do usuário em nosso jogo pode ser representada por meio do diagrama a seguir, dividido em seções. As setas indicam as conexões entre as cenas, enquanto as linhas tracejadas buscam explicar essas conexões. Cada quadro representa uma cena, contendo sua classe, atributos e métodos, além de uma pequena explicação e imagem representativa.
 
@@ -800,6 +796,7 @@ Conforme Halliday, Resnick e Walker (2023) para se determinar a velocidade em um
 $$V_x = \frac{\Delta S}{\Delta t} = \frac{X_f - X_i}{\Delta t}$$
 
 Onde:
+
 - $V_x$ é a velocidade do elemento gráfico no eixo x;
 - $\Delta S_x$ representa a variação da posição no eixo x, ou seja, $X_f - X_i$;
 - $\Delta t$ corresponde a variação do tempo;
@@ -820,11 +817,12 @@ $$
 x(t) = x_0 + v_x \cdot t
 $$
 
-Onde:  
-- $x(t)$ representa a posição do elemento gráfico no eixo x no instante $t$;  
-- $x_0$ é a posição inicial do elemento gráfico no eixo x;  
-- $v_x$ é a velocidade no eixo x (constante no MU);  
-- $t$ é o tempo decorrido desde o início do movimento.  
+Onde:
+
+- $x(t)$ representa a posição do elemento gráfico no eixo x no instante $t$;
+- $x_0$ é a posição inicial do elemento gráfico no eixo x;
+- $v_x$ é a velocidade no eixo x (constante no MU);
+- $t$ é o tempo decorrido desde o início do movimento.
 
 Substituindo os valores definidos anteriormente:
 
@@ -841,12 +839,13 @@ S = S_0 + V_0 t + \frac{1}{2} a t^2
 $$
 
 Onde:
+
 - $S$ é a posição final no eixo y;
 - $S_0$ é a posição inicial no eixo y;
 - $V_0$ representa a velocidade inicial do elemento gráfico no eixo y;
 - $a$ é a aceleração no eixo y;
 - $t$ é o tempo decorrido desde o início do movimento.
-  
+
 Nosso objetivo é isolar a aceleração $a$. Como o movimento começa do repouso ($V_0$ = 0), a equação simplifica para:
 
 $$
@@ -857,17 +856,17 @@ $$
  a = \frac{2(S - S_{0})}{t^{2}}
 $$
 
-Agora, substituímos os valores previamente definidos:  
+Agora, substituímos os valores previamente definidos:
+
 - $S = 515 \text{ px/s}$;
 - $S_0 = 100 \text{ px/s}$;
-- $t = 1,5 \text{ segundos}$. 
+- $t = 1,5 \text{ segundos}$.
 
 $$
 a = \frac{2(515 - 100)}{1,5^{2}} \approx 368.89 \text{px/s²}
 $$
 
 Assim, a aceleração no eixo y é aproximadamente **368.89 px/s²** (pixels por segundo ao quadrado) considerando os valores escolhidos para os parâmetros.
-
 
 ### 3.8.4. Função matemática que representa a velocidade no eixo y
 
@@ -876,6 +875,7 @@ Ainda segundo Halliday, Resnick e Walker (2023), para se determinar a velocidade
 $$V_y = V_0 + a_y \cdot t$$
 
 Onde:
+
 - $V_y$ representa a velocidade do elemento gráfico no eixo y no instante $t$;
 - $V_0$ é a velocidade inicial no eixo y;
 - $a_y$ é a aceleração no eixo y;
@@ -889,13 +889,14 @@ $$V_y = 368.89 \cdot t$$
 
 Dessa forma, a velocidade do elemento gráfico no eixo y aumenta linearmente ao longo do tempo, conforme esperado para um **Movimento Uniformemente Variado (MUV)**.
 
-### 3.8.5. Função matemática que representa a coordenada no eixo y 
+### 3.8.5. Função matemática que representa a coordenada no eixo y
 
 Conforme Halliday, Resnick e Walker (2023), para se determinar a coordenada em um eixo com **Movimento Uniformemente Variado (MUV)** em um instante $t$, usa-se a equação:
 
 $$y(t) = y_0 + v_{0y} \cdot t + \frac{1}{2} a_y \cdot t^2$$
 
 Onde:
+
 - $y(t)$ representa a posição do elemento gráfico no eixo y no instante $t$;
 - $y_0$ é a posição inicial no eixo y;
 - $v_{0y}$ é a velocidade inicial no eixo y (nula neste caso);
@@ -910,88 +911,113 @@ $$y(t) = 100 + 184,445 \cdot t^2$$
 
 Dessa forma, a posição do elemento gráfico no eixo y segue uma curva parabólica ao longo do tempo, caracterizando um **Movimento Uniformemente Variado (MUV)**.
 
-No código do jogo, a lógica de movimentação do jornal foi implementada no arquivo animacao.js, utilizando as equações mencionadas anteriormente, com a adaptação necessária para o ambiente de desenvolvimento. Essa adaptação envolveu o tempo da animação, pois o Phaser trabalha com milissegundos. Assim, a variável tempoTotal armazena o valor de 1500 milissegundos, e não de 1,5 segundos.  Com base nisso, para imprimir as informações de movimento no console em função dos segundos, foi necessário converter os valores, multiplicando ou dividindo por mil. O código com os devidos comentários segue abaixo:
+No código do jogo, a lógica de movimentação do jornal foi implementada no arquivo animacao.js, utilizando as equações mencionadas anteriormente, com a adaptação necessária para o ambiente de desenvolvimento. Essa adaptação envolveu o tempo da animação, pois o Phaser trabalha com milissegundos. Assim, a variável tempoTotal armazena o valor de 1500 milissegundos, e não de 1,5 segundos. Com base nisso, para imprimir as informações de movimento no console em função dos segundos, foi necessário converter os valores, multiplicando ou dividindo por mil. O código com os devidos comentários segue abaixo:
 
 ```javascript
 class movimento extends Phaser.Scene {
-    constructor() {
-        super('movimento'); // Nome da cena
-        // Declaração dos parâmetros usados para a animação
-        this.tempoTotal = 1500; 
-        this.posicaoInicialX = -32;
-        this.posicaoInicialY = 100;
-        this.posicaoFinalX = 500;
-        this.posicaoFinalY = 515;
-        // Cálculos para o movimento do jornal
-        this.deslocamentoX = this.posicaoFinalX - this.posicaoInicialX;
-        this.deslocamentoY = this.posicaoFinalY - this.posicaoInicialY;
-        this.velocidadeX = this.deslocamentoX / this.tempoTotal;
-        this.aceleracaoY = ((2 * this.deslocamentoY)) / (Math.pow(this.tempoTotal, 2));
-    }
+  constructor() {
+    super("movimento"); // Nome da cena
+    // Declaração dos parâmetros usados para a animação
+    this.tempoTotal = 1500;
+    this.posicaoInicialX = -32;
+    this.posicaoInicialY = 100;
+    this.posicaoFinalX = 500;
+    this.posicaoFinalY = 515;
+    // Cálculos para o movimento do jornal
+    this.deslocamentoX = this.posicaoFinalX - this.posicaoInicialX;
+    this.deslocamentoY = this.posicaoFinalY - this.posicaoInicialY;
+    this.velocidadeX = this.deslocamentoX / this.tempoTotal;
+    this.aceleracaoY = (2 * this.deslocamentoY) / Math.pow(this.tempoTotal, 2);
+  }
 
-    preload() { // Carrega os arquivos necessários para a cena
-        this.load.image('jornal', 'src/assets/dia2/animacao/jornal.png');
-        this.load.image('mesa', 'src/assets/dia2/animacao/mesa.png');
-        this.load.image('fundo', 'src/assets/dia2/animacao/fundo.png');
-        this.load.audio('voando', 'src/assets/dia2/animacao/voando.wav');
-        this.load.audio('caiu', 'src/assets/dia2/animacao/caiu.wav');
-    }
+  preload() {
+    // Carrega os arquivos necessários para a cena
+    this.load.image("jornal", "src/assets/dia2/animacao/jornal.png");
+    this.load.image("mesa", "src/assets/dia2/animacao/mesa.png");
+    this.load.image("fundo", "src/assets/dia2/animacao/fundo.png");
+    this.load.audio("voando", "src/assets/dia2/animacao/voando.wav");
+    this.load.audio("caiu", "src/assets/dia2/animacao/caiu.wav");
+  }
 
-    create() {
-        // Adiciona o fundo na cena
-        this.add.image(400, 300, 'fundo');
-        
-        // Adiciona a mesa na cena
-        this.mesa = this.add.image(500, 540, 'mesa').setScale(2.5);
-        
-        // Adiciona o jornal na cena, inicialmente na posição X e Y definidas
-        this.jornal = this.add.image(this.posicaoInicialX, this.posicaoInicialY, 'jornal').setScale(0.6);
-    
-        // Carrega os efeitos sonoros
-        this.somVoando = this.sound.add('voando');
-        this.somCaiu = this.sound.add('caiu');
-    
-        // Toca o som "voando"
-        this.somVoando.play();
-    
-        // Criação da animação do movimento do jornal
-        this.tweens.add({
-            targets: this.jornal,
-            x: this.posicaoFinalX, // Posição final em X
-            y: this.posicaoFinalY, // Posição final em Y
-            duration: this.tempoTotal, // Tempo total da animação
-            ease: t => 0.5 * this.aceleracaoY * Math.pow(t, 2), // Função de easing para a aceleração
-            onUpdate: (tween, target) => {
-                let t = tween.progress; // Percentual de progresso da animação
-    
-                target.rotation += (17 * Math.PI) / this.tempoTotal; // Rotação do jornal
-                target.x = this.posicaoInicialX + this.velocidadeX * t * this.tempoTotal; // Atualiza a posição X
-                target.y = this.posicaoInicialY + 0.5 * this.aceleracaoY * Math.pow(t * this.tempoTotal, 2); // Atualiza a posição Y
+  create() {
+    // Adiciona o fundo na cena
+    this.add.image(400, 300, "fundo");
 
-                // Imprime no console as informações solicitadas no artefato 8
-                console.log(`Tempo: ${((t * this.tempoTotal)/1000).toFixed(2)}s`);
-                console.log(`X -> Posição: ${target.x.toFixed(2)} px, Velocidade: ${(this.velocidadeX*1000).toFixed(2)} px/s`);
-                console.log(`Y -> Posição: ${target.y.toFixed(2)} px, Velocidade: ${((this.aceleracaoY * t * this.tempoTotal)*1000).toFixed(2)} px/s, Aceleração: ${(this.aceleracaoY*1000*1000).toFixed(2)} px/s²`);
-                console.log('------------------------------------------------------------------------------------------------');
-            },
+    // Adiciona a mesa na cena
+    this.mesa = this.add.image(500, 540, "mesa").setScale(2.5);
 
-            // Quando a animação terminar, executa o seguinte:
-            onComplete: () => {
-                // Para o som "voando" e toca o som "caiu"
-                this.somVoando.stop();
-                this.somCaiu.play();
-    
-                // A animação da câmera após o jornal cair
-                this.cameras.main.zoomTo(4, 1000); // Aumenta o zoom
-                this.cameras.main.pan(this.jornal.x, this.jornal.y, 1500, 'Sine.easeInOut'); // Movimenta a câmera até a posição do jornal
-            }
-        });
-    }
-}  
+    // Adiciona o jornal na cena, inicialmente na posição X e Y definidas
+    this.jornal = this.add
+      .image(this.posicaoInicialX, this.posicaoInicialY, "jornal")
+      .setScale(0.6);
 
+    // Carrega os efeitos sonoros
+    this.somVoando = this.sound.add("voando");
+    this.somCaiu = this.sound.add("caiu");
+
+    // Toca o som "voando"
+    this.somVoando.play();
+
+    // Criação da animação do movimento do jornal
+    this.tweens.add({
+      targets: this.jornal,
+      x: this.posicaoFinalX, // Posição final em X
+      y: this.posicaoFinalY, // Posição final em Y
+      duration: this.tempoTotal, // Tempo total da animação
+      ease: (t) => 0.5 * this.aceleracaoY * Math.pow(t, 2), // Função de easing para a aceleração
+      onUpdate: (tween, target) => {
+        let t = tween.progress; // Percentual de progresso da animação
+
+        target.rotation += (17 * Math.PI) / this.tempoTotal; // Rotação do jornal
+        target.x =
+          this.posicaoInicialX + this.velocidadeX * t * this.tempoTotal; // Atualiza a posição X
+        target.y =
+          this.posicaoInicialY +
+          0.5 * this.aceleracaoY * Math.pow(t * this.tempoTotal, 2); // Atualiza a posição Y
+
+        // Imprime no console as informações solicitadas no artefato 8
+        console.log(`Tempo: ${((t * this.tempoTotal) / 1000).toFixed(2)}s`);
+        console.log(
+          `X -> Posição: ${target.x.toFixed(2)} px, Velocidade: ${(
+            this.velocidadeX * 1000
+          ).toFixed(2)} px/s`
+        );
+        console.log(
+          `Y -> Posição: ${target.y.toFixed(2)} px, Velocidade: ${(
+            this.aceleracaoY *
+            t *
+            this.tempoTotal *
+            1000
+          ).toFixed(2)} px/s, Aceleração: ${(
+            this.aceleracaoY *
+            1000 *
+            1000
+          ).toFixed(2)} px/s²`
+        );
+        console.log(
+          "------------------------------------------------------------------------------------------------"
+        );
+      },
+
+      // Quando a animação terminar, executa o seguinte:
+      onComplete: () => {
+        // Para o som "voando" e toca o som "caiu"
+        this.somVoando.stop();
+        this.somCaiu.play();
+
+        // A animação da câmera após o jornal cair
+        this.cameras.main.zoomTo(4, 1000); // Aumenta o zoom
+        this.cameras.main.pan(
+          this.jornal.x,
+          this.jornal.y,
+          1500,
+          "Sine.easeInOut"
+        ); // Movimenta a câmera até a posição do jornal
+      },
+    });
+  }
+}
 ```
-
-
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
@@ -1315,10 +1341,9 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 <p>Grupo Level Zero, turma 16, Inteli, 2025 </p>
 </div>
 
+Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
- Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
-
- #
+#
 
 <div align="center">
 <p> Figura x: Tela nova de comunicação</p>
@@ -1380,7 +1405,7 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 <p> Figura x: Feedback das fases</p>
 <img src="../assets/gdd_4.4/feedback1.png">
 <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
-</div> 
+</div>
 
 #
 
@@ -1392,7 +1417,7 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 
 #
 
-Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais de acordo com a validação dos jogos da fase dois,  ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, foi possível integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro. 
+Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais de acordo com a validação dos jogos da fase dois, ajustando funcionalidades e refinando a experiência do usuário. Com base nesses resultados, foi possível integrar e consolidar todos os aprimoramentos realizados ao longo do ciclo de desenvolvimento, chegando a versões finais mais estáveis e coerentes com a proposta do parceiro.
 
 #
 
@@ -1420,7 +1445,7 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 #
 
-Para o MVP, não foi idealizado nenhum sistema revisional de Miniboss, pois a terceira e última fase do jogo, feita para consolidar a experiência do jogador, aborda uma experiência imersiva em uma Sala de Guerra. 
+Para o MVP, não foi idealizado nenhum sistema revisional de Miniboss, pois a terceira e última fase do jogo, feita para consolidar a experiência do jogador, aborda uma experiência imersiva em uma Sala de Guerra.
 
 Diferentemente do fluxo tradicional de trabalho, a sala de guerra concentra esforços de forma intensiva e coordenada. As decisões são tomadas em tempo real, com comunicação direta entre todos os envolvidos, sem a necessidade de passar por longas cadeias hierárquicas. Isso acelera a identificação de causas, a definição de soluções e a execução de ações. O ambiente da sala de guerra também promove um senso de urgência e colaboração constante, criando condições para que o grupo atue com máxima eficiência. Ademais, a sala de guerra tem um início e um fim bem definidos. Ela é montada com um propósito claro e, ao alcançar seu objetivo, seja corrigir uma falha, lançar um produto ou restabelecer um serviço, é desativada.
 
@@ -1466,7 +1491,6 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 <p> Produção autoral</p>
 </div>
 
-
 Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
 
 ## 4.5. Revisão do MVP (sprint 5)
@@ -1479,23 +1503,28 @@ _Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da vers�
 
 Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ referentes ao dia 1 do jogo, além do funcionamento do menu inicial.
 
-| número | pré-condição                                                                  | descrição do teste                                                                                             | pós-condição                                                                                                                                                      |
-| ------ | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1      | entrar no _link_ do jogo                                                      | apertar o botão: jogar                                                                                         | o jogo deve passar para uma cena explicando os controles básicos                                                                                                  |
-| 2      | posicionar o personagem em em frente a um objeto que ainda não foi interagido | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                | a explicação do _minigame_ deverá aparecer                                                                                                                        |
-| 3      | iniciar o _minigame_ 1 (fundos de investimento)                               | arrastar o _card_ para uma das gavetas                                                                         | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                             |
-| 4      | iniciar o _minigame_ 2 (transações suspeitas)                                 | clicar no botão de verdadeiro ou falso                                                                         | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo |
-| 5      | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em outro _card_ ao lado                         | o jogo deverá impedir a seleção de outro _card_, mantendo o original selecionado                                                                                  |
-| 6      | iniciar o _minigame_ 3 (processo de resgate)                                  | clicar em um _card_ na parte superior da tela, e depois clicar em uma posição na linha do tempo                | o _card_ deverá se deslocar até a posição designada                                                                                                               |
-| 7      | realizar o teste número 6                                                     | clicar em um _card_ que já está na linha do tempo, e depois clicar em outro local na linha do tempo            | o jogo deverá impedir que essa mudança ocorra, para evitar erros                                                                                                  |
-| 8      | iniciar algum dos _minigames_                                                 | finalizar o _minigame_                                                                                         | o jogo deverá voltar até a _hub_, e o ponto de exclamação azul ao lado do terminal do _minigame_ escolhido deverá sumir                                           |
-| 9      | posicionar o personagem em em frente a um objeto que já foi interagido        | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                | o jogo deverá impedir que o _minigame_ ocorra novamente                                                                                                           |
-| 10     | passar pelas duas primeiras cenas do jogo                                     | selecionar uma das opções de personagem jogáveis                                                               | o personagem selecionado deverá aparecer na próxima cena                                                                                                          |
-| 11     | iniciar o _minigame_ 4 e escolher um dos _cards_                              | selecionar uma cor do lado esquerdo, e clicar e arrastar com o botão esquerdo na área branca da tela           | o rastro do mouse deverá aparecer na cor escolhida                                                                                                                |
-| 12     | iniciar o _minigame_ 5                                                        | arrastar a linha de um _card_ vazio para outro _card_ que já foi conectado                                     | o jogo deverá impedir que os _cards_ se conectem                                                                                                                  |
-| 13     | iniciar o _minigame_ 6                                                        | apertar o botão verde ou vermelho                                                                              | o jogo deverá atualizar a pontuação no canto superior da tela, conforme a precisão da resposta                                                                    |
-| 14     | iniciar o material de apoio do _minigame_ 2                                   | clicar no botão de seguir adiante, e depois clicar no botão de voltar atrás, para todas as páginas do material | o jogo deverá transicionar as cenas conforme o esperado                                                                                                           |
-| 15     | terminar os três _minigames_ do dia 1                                         | responder as questões do _miniboss_                                                                            | o jogo deverá apresentar uma de três telas de jornal de acordo com a sua performance                                                                              |
+| número | pré-condição                                                                                                                                                                                                                                                                  | descrição do teste                                                                                                        | pós-condição                                                                                                                                                                                                                                    |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1      | entrar no _link_ do jogo                                                                                                                                                                                                                                                      | apertar o botão: jogar                                                                                                    | o jogo deve passar para uma cena explicando os controles básicos                                                                                                                                                                                |
+| 2      | posicionar o personagem em em frente a um objeto que ainda não foi interagido, demarcado por um ponto de exclamação                                                                                                                                                           | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                           | a explicação do _minigame_ deverá aparecer                                                                                                                                                                                                      |
+| 3      | clicar no botão "começar" do material de apoio do minigame 1, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar o _card_ que aparecer na parte central da tela para uma das gavetas, localizadas na esquerda e na direita        | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                                                                                                           |
+| 4      | clicar no botão "começar" do material de apoio do minigame 2, acessado conforme o caso de teste #2                                                                                                                                                                            | clicar em uma das quatro opções de resposta, localizadas na parte inferior do _card_ na tela                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo                                                                               |
+| 5      | clicar no botão "começar" do material de apoio do minigame 3, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar qualquer um dos _cards_ presentes na parte superior da tela para a linha do tempo, localizada na parte inferior  | o _card_ deverá assumir a posição na linha do tempo, não permitindo que outro _card_ seja arrastado para a mesma posição                                                                                                                        |
+| 6      | clicar no botão "começar" do material de apoio do minigame 3, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar cada um dos _cards_ presentes na parte superior para uma posição na linha do tempo, localizada na parte inferior | o botão "finalizar" deverá aparecer na tela. Ao ser clicado, apresentará a pontuação do jogador na tela                                                                                                                                         |
+| 7      | clicar no botão "começar" do material de apoio do minigame 3, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar um _card_ presente na parte superior da tela para cima de outro _card_ presente na parte superior, sobrepondo-o  | o jogo deverá impedir que os _cards_ se sobreponham, movimentando o _card_ lateralmente                                                                                                                                                         |
+| 8      | executar todas as tarefas de um _minigame_, chegando na tela de pontuação. A tela de pontuação apresenta a pontuação do jogador no _minigame_, a pontuação acumulada e um botão de voltar ao mapa                                                                             | clicar no botão: "Voltar ao mapa"                                                                                         | o jogo deverá retornar para a _hub_, mantendo a progressão da música, além do posicionamento anterior do jogador                                                                                                                                |
+| 9      | o caso de teste #2 e #8 já foram realizados                                                                                                                                                                                                                                   | quando o jogador chegar no objeto que foi interagido no caso de teste #2, apertar a barra de espaço                       | o jogo deverá impedir que o _minigame_ ocorra novamente, e o pop-up explicando o botão para apertar não deverá aparecer                                                                                                                         |
+| 10     | O botão "Novo Jogo" da cena do menu inicial foi clicado, e o botão "Começar" da cena seguinte foi clicado                                                                                                                                                                     | clicar e uma das quatro das opções de personagem jogáveis, e depois apertar o botão "Selecionar"                          | o personagem selecionado deverá aparecer nas cenas da hub do jogo, com as animações correspondentes a seleção do jogador                                                                                                                        |
+| 11     | clicar no botão "começar" do material de apoio do minigame 4, acessado conforme o caso de teste #2, e clicar em uma das quatro opções presentes na tela                                                                                                                       | selecionar uma cor do lado esquerdo, e clicar e arrastar com o botão esquerdo na área branca da tela                      | o rastro do mouse deverá aparecer na cor escolhida                                                                                                                                                                                              |
+| 12     | clicar no botão "começar" do material de apoio do minigame 5, acessado conforme o caso de teste #2. Depois disso, conectar um _card_ do lado direito com uma definição presente no lado direito. A conexão é realizada ao clicar no _card_ e arrastar a linha até a definição | arrastar a linha de um _card_ vazio para a definição que já foi conectada                                                 | o jogo deverá impedir que a linha se conecte                                                                                                                                                                                                    |
+| 13     | clicar no botão "começar" do material de apoio do minigame 6, acessado conforme o caso de teste #2                                                                                                                                                                            | apertar o botão verde ou vermelho, presente na parte inferior da tela                                                     | o jogo deverá atualizar a pontuação no canto superior da tela, conforme a precisão da resposta                                                                                                                                                  |
+| 14     | iniciar o material de apoio de algum minigame, conforme o caso de teste #2                                                                                                                                                                                                    | clicar no botão de seguir adiante, e depois clicar no botão de voltar atrás, para todas as páginas do material            | o jogo deverá transicionar as cenas avançando e retornando na explicação dos conceitos                                                                                                                                                          |
+| 15     | terminar os três _minigames_ presentes na _hub_ do dia 1, e clicar no botão "Começar" na tela que aparece em seguida                                                                                                                                                          | responder uma questão do _miniboss_, clicando em uma das alternativas apresentadas                                        | o jogo deverá apresentar uma tela de _feedback_ da resposta, conforme a precisão da seleção                                                                                                                                                     |
+| 16     | responder todas as perguntas do _miniboss_ do dia 1                                                                                                                                                                                                                           | clicar no botão "Voltar ao mapa"                                                                                          | a capa de um jornal deverá aparecer na tela, conforme a pontuação do jogador. Se ele tiver uma pontuação total inferior a -100 pontos, o botão de Game Over deverá aparecer. Caso tenha uma pontuação maior, o botão de Avançar deverá aparecer |
+| 17     | terminar o _miniboss_ com uma pontuação inferior a -100 pontos                                                                                                                                                                                                                | clicar no botão de Game Over na tela do jornal                                                                            | o jogo deverá reiniciar a aba do navegador, trazendo o jogador de volta para o início                                                                                                                                                           |
+| 18     | terminar o _miniboss_ com uma pontuação superior a -100 pontos                                                                                                                                                                                                                | clicar no botão de Continuar na tela do jornal, e clicar no botão "começar" na tela de apoio seguinte                     | o jogo deverá transicionar para a _hub_ do dia 2, e a música de fundo deverá ser diferente da _hub_ do dia 1                                                                                                                                    |
+| 19     | o jogador estar localizado em uma das hubs do jogo                                                                                                                                                                                                                            | apertar as setinhas do teclado para movimentar o personagem                                                               | sons de passos deverão ser tocados, parando quando o jogador também parar de se movimentar                                                                                                                                                      |
+| 20     | o jogador acessar a Sala de Guerra, ao apertar a barra de espaço ao lado do objeto com o ponto de exclamação na hub da Sala de Guerra                                                                                                                                         | responder as perguntas presentes na tela, clicando em uma das respostas na parte inferior                                 | o jogo deverá validar a resposta, atualizando o placar de pontuação. Além disso, o _timer_ também deverá continuar, diminuindo o tempo                                                                                                          |
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
@@ -1554,7 +1583,7 @@ OSTERWALDER, Alexander et al. Value proposition design: How to create products a
 
 POLTERGEISTERS. Slightly Cuter Character Sprites. Nexus Mods, 2017. Disponível em: https://www.nexusmods.com/stardewvalley/mods/1437. Acesso em: 27 fev. 2025.
 
-PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva*. Rio de Janeiro: Campus, 1998.
+PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva\*. Rio de Janeiro: Campus, 1998.
 
 PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledge (PMBOK® Guide). 6. ed. Newtown Square, PA: Project Management Institute, 2017.
 
