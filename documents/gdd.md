@@ -584,7 +584,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div align="center">
     <p>Figura x: Minijogo sobre diferenciação de fundos de investimento.</p>
-    <img src="../assets/conceptArt/miniGame1.png" width="500"><br>
+    <img src="../assets/gdd_3.3/minigame1.png" width="500"><br>
     <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
@@ -592,7 +592,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div align="center">
     <p>Figura x: Minijogo sobre matemática financeira.</p>
-    <img src="../assets/conceptArt/miniGame2.png" width="500"><br>
+    <img src="../assets/gdd_3.3/minigame2.png" width="500"><br>
     <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
 
