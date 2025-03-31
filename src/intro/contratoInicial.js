@@ -10,7 +10,7 @@ class contratoInicial extends Phaser.Scene {
             
 Ao redor do nosso escritório estão 3 tarefas para você realizar. Elas estão demarcadas por pontos de exclamação.
 
-Movimente-se com as setinhas do teclado e interaja com essas tarefas utilizando a barra de espaço. 
+Movimente-se com as setinhas do teclado ou WASD e interaja com essas tarefas utilizando a barra de espaço ou clicando E! 
 
 Confiamos em você...`,
     ];
