@@ -165,7 +165,7 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 #
 
 <div style="text-align: center;">
-    <p>Figura x: _Canvas_ de Proposta de Valor</p>
+    <p>Figura x: Canvas: Proposta de Valor</p>
     <img src="../assets/gdd_1.1/canvasPropostaValor.png" />
     <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
 </div>
@@ -178,7 +178,7 @@ Como temos 10 semanas de trabalho, a priorização das tarefas, dores e ganhos, 
 
 ### 1.1.5. Descrição da Solução Desenvolvida (sprint 4)
 
-O jogo _Capital Downfall_ visa solucionar os problemas expostos pelo cliente em relação à falta de engajamento dos novos funcionários com o _onboarding_, à burocracia desse processo e à falta de dinamização na aprendizagem. Diante disso, a solução proposta oferece uma experiência gamificada que transforma o _onboarding_ tradicional em um processo mais ágil, interativo e envolvente. Para agregar ainda mais valor à experiência do usuário, o jogo conta com um sistema de pontuação que permite que os jogadores acompanhem seu progresso e se mantenham motivados, materiais de apoio integrados que possibilitam o acesso rápido e fácil a conteúdos essenciais, sem a necessidade de sair da tela do jogo, e minigames interativos que reforçam o aprendizado de forma criativa e envolvente, tornando a assimilação do conteúdo mais eficiente.
+O jogo Capital Downfall visa solucionar os problemas expostos pelo cliente em relação à falta de engajamento dos novos funcionários com o onboarding, à burocracia desse processo e à falta de dinamização na aprendizagem. Diante disso, a solução proposta oferece uma experiência gamificada que transforma o onboarding tradicional em um processo mais ágil, interativo e envolvente. Para agregar ainda mais valor à experiência do usuário, o jogo conta com um sistema de pontuação que permite que os jogadores acompanhem seu progresso e se mantenham motivados, materiais de apoio integrados que possibilitam o acesso rápido e fácil a conteúdos essenciais, sem a necessidade de sair da tela do jogo, e minigames interativos que reforçam o aprendizado de forma criativa e envolvente, tornando a assimilação do conteúdo mais eficiente.
 
 ### 1.1.6. Matriz de Riscos (sprint 4)
 
@@ -383,11 +383,11 @@ Tiago Mendes é um analista de fundos de investimento recém-contratado para o B
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-Para concluir o jogo, o jogador deve avançar por três dias, cada um representando desafios progressivos dentro do ambiente corporativo do banco. No primeiro dia, ele inicia na hub principal do escritório e pode escolher a ordem das tarefas introdutórias, que abordam conceitos básicos e operações fundamentais do banco. Ao concluir todas as tarefas, um relatório em formato de jornal apresenta o impacto de suas decisões, determinando se pode prosseguir para o dia seguinte.
+Para concluir o jogo, o jogador deve avançar por dois dias, cada um representando desafios progressivos dentro do ambiente corporativo do banco. No primeiro dia, ele inicia na hub principal do escritório e pode escolher a ordem das tarefas introdutórias, que abordam conceitos básicos e operações fundamentais do banco. Ao concluir todas as tarefas, um relatório em formato de jornal apresenta o impacto de suas decisões, determinando se pode prosseguir para o dia seguinte.
 
 No segundo dia, as tarefas se tornam mais complexas, exigindo maior atenção aos detalhes e tomada de decisão estratégica. O jogador precisa lidar com desafios mais técnicos e gerenciar riscos operacionais. Ao final, novamente, o jornal avalia seu desempenho, e, caso tenha obtido um resultado satisfatório, ele avança para o próximo dia.
 
-No terceiro e último dia, o jogador é levado a um ambiente de alta tensão, simulando uma verdadeira "sala de guerra", onde precisa tomar decisões rápidas e coordenar soluções para estabilizar o banco. As tarefas são ainda mais desafiadoras e exigem precisão para evitar o colapso financeiro. No final, o jornal apresenta o desfecho do jogo, que pode variar entre a recuperação total do banco ou a falência definitiva que obriga o jogador a reiniciar o jogo.
+Após a conclusão dos dois dias, o jogador é levado a um ambiente de alta tensão, simulando uma verdadeira "sala de guerra", onde precisa tomar decisões rápidas e coordenar soluções para estabilizar o banco. As tarefas são ainda mais desafiadoras e exigem precisão para evitar o colapso financeiro. No final, o jornal apresenta o desfecho do jogo, que pode variar entre a recuperação total do banco ou a falência definitiva que obriga o jogador a reiniciar o jogo.
 
 ## 2.2. Características do Jogo (sprint 2)
 
@@ -550,7 +550,7 @@ Ao concluir cada minigame, o jogador pode retornar ao escritório e escolher um 
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-O jogo utiliza uma progressão baseada em dias, onde cada fase representa um dia de trabalho no escritório do banco. O jogador pode completar os desafios no seu próprio ritmo dentro de cada fase. Ao concluir todos os 3 minigames e o quiz final de cada fase, o jogador receberá um relatório de desempenho, que destaca seu progresso e acertos.
+O jogo utiliza uma progressão baseada em dias, onde cada fase representa um dia de trabalho no escritório do banco. O jogador pode completar os desafios no seu próprio ritmo dentro de cada fase. Ao concluir todos os 3 minigames o jogador receberá um relatório de desempenho, que destaca seu progresso e acertos.
 
 Durante as duas primeiras fases, não há limite de tempo para a conclusão dos minigames e quizzes. Entretanto, na fase 3, que irá simular uma sala de guerra, todos os conteúdos das fases anteriores serão abordados de forma combinada. Nessa fase final, haverá um limite de tempo, desafiando o jogador a aplicar rapidamente seus conhecimentos sob pressão.
 
