@@ -67,6 +67,25 @@ class hubFinal extends Phaser.Scene {
     this.load.audio("musicaHubFinal", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música de fundo
     this.load.audio("passos", "src/assets/sounds/passos.mp3"); // Carrega o som dos passos
     this.load.audio("interacaoMinigame", "src/assets/sounds/openMinigame.mp3"); // Carrega o som de interação com o minigame
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {

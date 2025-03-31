@@ -64,6 +64,25 @@ class hub2 extends Phaser.Scene {
     this.load.audio("musicaHub2", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música de fundo
     this.load.audio("passos", "src/assets/sounds/passos.mp3"); // Carrega o som dos passos
     this.load.audio("interacaoMinigame", "src/assets/sounds/openMinigame.mp3"); // Carrega o som de interação com o minigame
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {
@@ -163,101 +182,132 @@ class hub2 extends Phaser.Scene {
       }
     });
 
-   // Criando o aviso "Aperte espaço para interagir"
-   this.fundoInteracao = this.add.rectangle(0, 0, 170, 56, 0x90a2e0, 0.5).setOrigin(0.5).setVisible(false).setDepth(10.5);
-   this.textoInteracao = this.add.text(0, 0, 'Aperte ESPAÇO\npara interagir', {
-     fontSize: '16px',
-     fontFamily: 'pixelArtNegrito',
-     fill: '#fff',
-     align: 'center',
-   }).setOrigin(0.5).setVisible(false).setDepth(11);
+    // Criando o aviso "Aperte espaço para interagir"
+    this.fundoInteracao = this.add
+      .rectangle(0, 0, 170, 56, 0x90a2e0, 0.5)
+      .setOrigin(0.5)
+      .setVisible(false)
+      .setDepth(10.5);
+    this.textoInteracao = this.add
+      .text(0, 0, "Aperte ESPAÇO\npara interagir", {
+        fontSize: "16px",
+        fontFamily: "pixelArtNegrito",
+        fill: "#fff",
+        align: "center",
+      })
+      .setOrigin(0.5)
+      .setVisible(false)
+      .setDepth(11);
 
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame4, () => {
+      // O player não pode jogar o minigame mais de 1 vez
+      if (!minigame4Jogado) {
+        // Atualiza a posição do aviso para ficar em baixo do player
+        this.fundoInteracao
+          .setPosition(this.player.x, this.player.y + 80)
+          .setVisible(true);
+        this.textoInteracao
+          .setPosition(this.player.x + 2, this.player.y + 80)
+          .setVisible(true);
+        // Verifica se o player pressionou espaço para iniciar o minigame
+        if (
+          (this.spacebar || this.E) &&
+          (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+            Phaser.Input.Keyboard.JustDown(this.E))
+        ) {
+          this.textoInteracao.setVisible(false);
+          this.fundoInteracao.setVisible(false);
+          this.avisoMinigame4.setVisible(false);
+          this.interacaoMinigame.play();
+          this.passos.stop();
+          this.minigameAtual = 4;
+          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
+          game.scene.sleep("hub2");
+        }
+      }
+    });
 
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame5, () => {
+      // O player não pode jogar o minigame mais de 1 vez
+      if (!minigame5Jogado) {
+        // Atualiza a posição do aviso para ficar em baixo do player
+        this.fundoInteracao
+          .setPosition(this.player.x, this.player.y + 80)
+          .setVisible(true);
+        this.textoInteracao
+          .setPosition(this.player.x + 2, this.player.y + 80)
+          .setVisible(true);
+        // Verifica se o player pressionou espaço para iniciar o minigame
+        if (
+          (this.spacebar || this.E) &&
+          (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+            Phaser.Input.Keyboard.JustDown(this.E))
+        ) {
+          this.textoInteracao.setVisible(false);
+          this.fundoInteracao.setVisible(false);
+          this.avisoMinigame5.setVisible(false);
+          this.interacaoMinigame.play();
+          this.passos.stop();
+          this.minigameAtual = 5;
+          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
+          game.scene.sleep("hub2");
+        }
+      }
+    });
 
-   // Verifica se o player está na mesma área que o detector de colisão do minigame 1
-   this.physics.add.overlap(this.player, this.colisaoMinigame4, () => {
-     // O player não pode jogar o minigame mais de 1 vez
-     if (!minigame4Jogado) {
-       // Atualiza a posição do aviso para ficar em baixo do player
-       this.fundoInteracao.setPosition(this.player.x, this.player.y + 80).setVisible(true);
-       this.textoInteracao.setPosition(this.player.x + 2, this.player.y + 80).setVisible(true);
-       // Verifica se o player pressionou espaço para iniciar o minigame
-       if ((this.spacebar || this.E) && (Phaser.Input.Keyboard.JustDown(this.spacebar) || Phaser.Input.Keyboard.JustDown(this.E))) {
-         this.textoInteracao.setVisible(false);
-         this.fundoInteracao.setVisible(false);
-         this.avisoMinigame4.setVisible(false);
-         this.interacaoMinigame.play();
-         this.passos.stop();
-         this.minigameAtual = 4;
-         game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
-         game.scene.sleep('hub2');
-       }
-     }
-   });
-
-
-   // Verifica se o player está na mesma área que o detector de colisão do minigame 1
-   this.physics.add.overlap(this.player, this.colisaoMinigame5, () => {
-     // O player não pode jogar o minigame mais de 1 vez
-     if (!minigame5Jogado) {
-       // Atualiza a posição do aviso para ficar em baixo do player
-       this.fundoInteracao.setPosition(this.player.x, this.player.y + 80).setVisible(true);
-       this.textoInteracao.setPosition(this.player.x + 2, this.player.y + 80).setVisible(true);
-       // Verifica se o player pressionou espaço para iniciar o minigame
-       if ((this.spacebar || this.E) && (Phaser.Input.Keyboard.JustDown(this.spacebar) || Phaser.Input.Keyboard.JustDown(this.E))) {
-         this.textoInteracao.setVisible(false);
-         this.fundoInteracao.setVisible(false);
-         this.avisoMinigame5.setVisible(false);
-         this.interacaoMinigame.play();
-         this.passos.stop();
-         this.minigameAtual = 5;
-         game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
-         game.scene.sleep('hub2');
-       }
-     }
-   });
-
-
-   // Verifica se o player está na mesma área que o detector de colisão do minigame 1
-   this.physics.add.overlap(this.player, this.colisaoMinigame6, () => {
-     // O player não pode jogar o minigame mais de 1 vez
-     if (!minigame6Jogado) {
-       // Atualiza a posição do aviso para ficar em baixo do player
-       this.fundoInteracao.setPosition(this.player.x, this.player.y + 80).setVisible(true);
-       this.textoInteracao.setPosition(this.player.x + 2, this.player.y + 80).setVisible(true);
-       // Verifica se o player pressionou espaço para iniciar o minigame
-       if ((this.spacebar || this.E) && (Phaser.Input.Keyboard.JustDown(this.spacebar) || Phaser.Input.Keyboard.JustDown(this.E))) {
-         this.textoInteracao.setVisible(false);
-         this.fundoInteracao.setVisible(false);
-         this.avisoMinigame6.setVisible(false);
-         this.interacaoMinigame.play();
-         this.passos.stop();
-         this.minigameAtual = 6;
-         game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
-         game.scene.sleep('hub2');
-       }
-     }
-   });
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame6, () => {
+      // O player não pode jogar o minigame mais de 1 vez
+      if (!minigame6Jogado) {
+        // Atualiza a posição do aviso para ficar em baixo do player
+        this.fundoInteracao
+          .setPosition(this.player.x, this.player.y + 80)
+          .setVisible(true);
+        this.textoInteracao
+          .setPosition(this.player.x + 2, this.player.y + 80)
+          .setVisible(true);
+        // Verifica se o player pressionou espaço para iniciar o minigame
+        if (
+          (this.spacebar || this.E) &&
+          (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+            Phaser.Input.Keyboard.JustDown(this.E))
+        ) {
+          this.textoInteracao.setVisible(false);
+          this.fundoInteracao.setVisible(false);
+          this.avisoMinigame6.setVisible(false);
+          this.interacaoMinigame.play();
+          this.passos.stop();
+          this.minigameAtual = 6;
+          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
+          game.scene.sleep("hub2");
+        }
+      }
+    });
 
     //Configura a câmera para seguir o jogador, além do zoom
     this.cameras.main.startFollow(this.player, true, 0.2, 0.2);
     this.cameras.main.setZoom(1).setRoundPixels(true);
 
     // Adiciona o texto da pontuação
-    this.textoPontuacao = this.add.text(570, 10, `Pontuação: ${pontuacao}`, { 
-      fontFamily: 'pixelArt',  // Nome da fonte personalizada
-      fontSize: '20px', 
-      color: '#ffffff' 
-    }).setScrollFactor(0).setDepth(10);  // Define a profundidade do texto para que ele fique visível 
+    this.textoPontuacao = this.add
+      .text(570, 10, `Pontuação: ${pontuacao}`, {
+        fontFamily: "pixelArt", // Nome da fonte personalizada
+        fontSize: "20px",
+        color: "#ffffff",
+      })
+      .setScrollFactor(0)
+      .setDepth(10); // Define a profundidade do texto para que ele fique visível
 
     // Adiciona um efeito de sombra ao redor do texto
-    this.textoPontuacao.setShadow(2, 2, '#000000', 2);
+    this.textoPontuacao.setShadow(2, 2, "#000000", 2);
   }
 
   update() {
     // Atualiza o texto com o valor atual da variável 'pontuacao' a cada frame
     this.textoPontuacao.setText(`Pontuação: ${pontuacao}`);
-    
+
     if (
       minigame4Jogado === true &&
       minigame5Jogado === true &&

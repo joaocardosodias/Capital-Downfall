@@ -167,9 +167,9 @@ class miniGame4 extends Phaser.Scene {
       botaoFinalizar.on("pointerdown", () => {
         this.sound.play("clique"); // Toca o som de clique
 
-        this.transicaoParaCena('fimMinigame4', {
+        this.transicaoParaCena("fimMinigame4", {
           pontuacaoM4: pontuacaoM4,
-          pontuacao: pontuacao
+          pontuacao: pontuacao,
         });
       });
     }
@@ -180,8 +180,6 @@ class miniGame4 extends Phaser.Scene {
       this.animarFinalizacaoCard(cardFinalizado);
     }
   }
-
-
 
   // Método para adicionar animação de hover aos cards
   adicionarAnimacaoHoverCard(objeto) {
@@ -393,6 +391,25 @@ class BaseTributacaoScene extends Phaser.Scene {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
     this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
     this.load.audio("canetaEscrevendo", "src/assets/sounds/scratchPencil.mp3");
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   // Método para criar e configurar a cena
@@ -738,7 +755,7 @@ class BaseTributacaoScene extends Phaser.Scene {
         // Volta para a cena principal e passa o índice do card finalizado
         this.transicaoParaCena("miniGame4", {
           cardFinalizado: cardIndex,
-          pontuacaoM4: pontuacaoM4
+          pontuacaoM4: pontuacaoM4,
         });
       });
     });
@@ -791,7 +808,11 @@ class fimMinigame4 extends Phaser.Scene {
   preload() {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
     this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
+    );
 
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
     this.load.audio("somConclusao", "src/assets/sounds/taskSucess.mp3");
@@ -811,14 +832,14 @@ class fimMinigame4 extends Phaser.Scene {
     this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
     miniGame4.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-    pontuacao += pontuacaoM4
+    pontuacao += pontuacaoM4;
 
     // Criação da tela de pontuação
     this.add
       .text(402, 311, pontuacaoM4, {
         fontFamily: "pixelArtNumeros",
         fill: "#ffffff",
-        fontSize: '32px',
+        fontSize: "32px",
       })
       .setOrigin(0.5)
       .setDepth(32);
@@ -827,17 +848,17 @@ class fimMinigame4 extends Phaser.Scene {
       .text(402, 409, pontuacao, {
         fontFamily: "pixelArtNumeros",
         fill: "#ffffff",
-        fontSize: '48px',
+        fontSize: "48px",
       })
       .setOrigin(0.5)
       .setDepth(32);
 
     this.anims.create({
       key: "voltarAoMapaM4",
-      frames: this.anims.generateFrameNumbers(
-        "voltarAoMapa",
-        { start: 0, end: 11 }
-      ),
+      frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+        start: 0,
+        end: 11,
+      }),
       frameRate: 6,
       repeat: -1,
     });
@@ -847,16 +868,15 @@ class fimMinigame4 extends Phaser.Scene {
       .setInteractive()
       .setDepth(32);
 
-    this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true)
+    this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true);
 
     this.voltarAoMapaM4.on("pointerdown", () => {
       this.musicaFundo.stop();
       this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      this.scene.stop("fimMinigame4")
+      this.scene.stop("fimMinigame4");
       minigame4Jogado = true;
       this.scene.wake("hub2");
       musicaHub2.resume();
-      ;
     });
   }
 }

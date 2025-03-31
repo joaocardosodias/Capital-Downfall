@@ -54,7 +54,30 @@ class miniBossDia1 extends Phaser.Scene {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
 
     this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
+    );
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {
@@ -218,52 +241,52 @@ class miniBossDia1 extends Phaser.Scene {
     this.limparCena();
 
     this.sound.play("conclusao");
-          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
-          miniBossDia1.fim = this.add.image(400, 300, "fim").setDepth(31);
+    this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+    miniBossDia1.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-          pontuacao += this.pontuacaoB1
+    pontuacao += this.pontuacaoB1;
 
-          // Criação da tela de pontuação
-          this.add
-            .text(402, 311, this.pontuacaoB1, {
-              fontFamily: "pixelArtNumeros",
-              fill: "#ffffff",
-              fontSize: '32px',
-            })
-            .setOrigin(0.5)
-            .setDepth(32);
+    // Criação da tela de pontuação
+    this.add
+      .text(402, 311, this.pontuacaoB1, {
+        fontFamily: "pixelArtNumeros",
+        fill: "#ffffff",
+        fontSize: "32px",
+      })
+      .setOrigin(0.5)
+      .setDepth(32);
 
-          this.add
-            .text(402, 409, pontuacao, {
-              fontFamily: "pixelArtNumeros",
-              fill: "#ffffff",
-              fontSize: '48px',
-            })
-            .setOrigin(0.5)
-            .setDepth(32);
+    this.add
+      .text(402, 409, pontuacao, {
+        fontFamily: "pixelArtNumeros",
+        fill: "#ffffff",
+        fontSize: "48px",
+      })
+      .setOrigin(0.5)
+      .setDepth(32);
 
-          this.anims.create({
-            key: "voltarAoMapaB1",
-            frames: this.anims.generateFrameNumbers(
-              "voltarAoMapa",
-              { start: 0, end: 11 }
-            ),
-            frameRate: 6,
-            repeat: -1,
-          });
+    this.anims.create({
+      key: "voltarAoMapaB1",
+      frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+        start: 0,
+        end: 11,
+      }),
+      frameRate: 6,
+      repeat: -1,
+    });
 
-          this.voltarAoMapaB1 = this.add
-            .sprite(695, 530, "voltarAoMapa")
-            .setInteractive()
-            .setDepth(32);
+    this.voltarAoMapaB1 = this.add
+      .sprite(695, 530, "voltarAoMapa")
+      .setInteractive()
+      .setDepth(32);
 
-          this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true)
-          
-          this.voltarAoMapaB1.on("pointerdown", () => {
-            this.somFundo.stop();
-            this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-            this.scene.start("finalDia1");
-            this.scene.stop("miniBossDia1");
-          });
+    this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true);
+
+    this.voltarAoMapaB1.on("pointerdown", () => {
+      this.somFundo.stop();
+      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+      this.scene.start("finalDia1");
+      this.scene.stop("miniBossDia1");
+    });
   }
 }

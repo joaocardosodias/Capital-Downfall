@@ -9,7 +9,6 @@ class miniGame6 extends Phaser.Scene {
     this.placarTexto = null;
     this.cliqueSom = null; // Som de clique
     this.somFundo;
-
   }
 
   preload() {
@@ -39,11 +38,33 @@ class miniGame6 extends Phaser.Scene {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
 
     this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
+    );
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {
-
     this.somFundo = this.sound.add("somFundo", { loop: true });
     this.somFundo.play();
 
@@ -52,24 +73,39 @@ class miniGame6 extends Phaser.Scene {
     //Coloca as imagens em um array, definindo uma key para cada um dos cards. Além disso, define a pontuação de cada resposta
     this.imagens = [
       {
-        key: "bruna", pontosAprovado: 100, pontosReprovado: -50,
-        texto: "Bruna é uma jovem empreendedora sempre em busca de soluções ágeis e oportunidades para expandir seus conhecimentos. Com uma liderança natural, ela toma decisões assertivas e inspira sua equipe, criando um ambiente motivador e colaborativo, no qual todos se sentem valorizados e impulsionados a alcançar os melhores resultados."
+        key: "bruna",
+        pontosAprovado: 100,
+        pontosReprovado: -50,
+        texto:
+          "Bruna é uma jovem empreendedora sempre em busca de soluções ágeis e oportunidades para expandir seus conhecimentos. Com uma liderança natural, ela toma decisões assertivas e inspira sua equipe, criando um ambiente motivador e colaborativo, no qual todos se sentem valorizados e impulsionados a alcançar os melhores resultados.",
       },
       {
-        key: "amanda", pontosAprovado: 100, pontosReprovado: -50,
-        texto: "Amanda é uma profissional altamente proativa, atuando com responsabilidade. Ela não se destaca pela sua liderança, mas se dispõe a aprender a ser líder. Além disso, Amanda busca constantemente superar as expectativas e entregar resultados de qualidade."
+        key: "amanda",
+        pontosAprovado: 100,
+        pontosReprovado: -50,
+        texto:
+          "Amanda é uma profissional altamente proativa, atuando com responsabilidade. Ela não se destaca pela sua liderança, mas se dispõe a aprender a ser líder. Além disso, Amanda busca constantemente superar as expectativas e entregar resultados de qualidade.",
       },
       {
-        key: "vagner", pontosAprovado: 100, pontosReprovado: -50,
-        texto: "Vagner é um empreendedor inovador, sempre buscando soluções otimizadas e novos aprendizados. Quanto a sua liderança, é capaz de motivar toda sua equipe, promovendo colaboração e respeito às diferenças. Além disso, constantemente supera desafios com excelência, sempre buscando a melhor solução para um problema."
+        key: "vagner",
+        pontosAprovado: 100,
+        pontosReprovado: -50,
+        texto:
+          "Vagner é um empreendedor inovador, sempre buscando soluções otimizadas e novos aprendizados. Quanto a sua liderança, é capaz de motivar toda sua equipe, promovendo colaboração e respeito às diferenças. Além disso, constantemente supera desafios com excelência, sempre buscando a melhor solução para um problema.",
       },
       {
-        key: "ana", pontosAprovado: -50, pontosReprovado: 100,
-        texto: "Ana é uma profissional conservadora, optando utilizar as mesmas ferramentas que sempre usou. Também, não se dá bem como líder, pois não consegue motivar a equipe e evita tomar decisões próprias, preferindo seguir ordens dos outros. Além disso, não se comunica bem com seus colegas, guardando informações para si."
+        key: "ana",
+        pontosAprovado: -50,
+        pontosReprovado: 100,
+        texto:
+          "Ana é uma profissional conservadora, optando utilizar as mesmas ferramentas que sempre usou. Também, não se dá bem como líder, pois não consegue motivar a equipe e evita tomar decisões próprias, preferindo seguir ordens dos outros. Além disso, não se comunica bem com seus colegas, guardando informações para si.",
       },
       {
-        key: "pedro", pontosAprovado: -50, pontosReprovado: 100,
-        texto: "Pedro é um jovem extrovertido, gostando de liderar e interagir com seus colégas. No entanto, sua liderança não é ideal, pois não consegue dar ordens de modo organizado e falha em motivar sua equipe, agindo mais como um 'mascote' do que um líder. Ele sempre compartilha conhecimento, mas apenas quando solicitado. Em outras palavras, não é proativo."
+        key: "pedro",
+        pontosAprovado: -50,
+        pontosReprovado: 100,
+        texto:
+          "Pedro é um jovem extrovertido, gostando de liderar e interagir com seus colégas. No entanto, sua liderança não é ideal, pois não consegue dar ordens de modo organizado e falha em motivar sua equipe, agindo mais como um 'mascote' do que um líder. Ele sempre compartilha conhecimento, mas apenas quando solicitado. Em outras palavras, não é proativo.",
       },
     ];
 
@@ -112,21 +148,25 @@ class miniGame6 extends Phaser.Scene {
       this.imagemAtual = this.add
         .image(
           this.sys.game.config.width / 2,
-          -30 + (this.sys.game.config.height / 2),
+          -30 + this.sys.game.config.height / 2,
           proximaImagem.key
         )
         .setScale(0.5);
 
-      this.texto = this.add.text(this.sys.game.config.width / 2, 200, proximaImagem.texto, {
-        fontFamily: "pixelArtP",
-        color: '#324891'
-      }).setOrigin(0.5, 0).setWordWrapWidth(320).setScale(1);
+      this.texto = this.add
+        .text(this.sys.game.config.width / 2, 200, proximaImagem.texto, {
+          fontFamily: "pixelArtP",
+          color: "#324891",
+        })
+        .setOrigin(0.5, 0)
+        .setWordWrapWidth(320)
+        .setScale(1);
 
       //Adiciona o botão de aprovado e reprovado, de acordo com os valores de pontuação definidos
       //Eles também são configurados para serem interativos, executando o método avaliarImagem() ao serem clicados
 
       this.botaoAprovado = this.add
-        .image(250, (this.sys.game.config.height) - 30, "botaoaprovado")
+        .image(250, this.sys.game.config.height - 30, "botaoaprovado")
         .setInteractive()
         .setScale(1.2)
         .setOrigin(0.5, 1)
@@ -136,11 +176,7 @@ class miniGame6 extends Phaser.Scene {
         });
 
       this.botaoReprovado = this.add
-        .image(
-          550,
-          (this.sys.game.config.height) - 30,
-          "botaoreprovado"
-        )
+        .image(550, this.sys.game.config.height - 30, "botaoreprovado")
         .setInteractive()
         .setScale(1.2)
         .setOrigin(0.5, 1)
@@ -160,8 +196,7 @@ class miniGame6 extends Phaser.Scene {
 
     if (pontos < 0) {
       this.sound.play("somErro");
-    }
-    else {
+    } else {
       this.sound.play("somAcerto");
     }
 
@@ -181,7 +216,7 @@ class miniGame6 extends Phaser.Scene {
       .text(402, 311, this.pontuacaoM6, {
         fontFamily: "pixelArtNumeros",
         fill: "#ffffff",
-        fontSize: '32px',
+        fontSize: "32px",
       })
       .setOrigin(0.5)
       .setDepth(32);
@@ -190,17 +225,17 @@ class miniGame6 extends Phaser.Scene {
       .text(402, 409, pontuacao, {
         fontFamily: "pixelArtNumeros",
         fill: "#ffffff",
-        fontSize: '48px',
+        fontSize: "48px",
       })
       .setOrigin(0.5)
       .setDepth(32);
 
     this.anims.create({
       key: "voltarAoMapaM6",
-      frames: this.anims.generateFrameNumbers(
-        "voltarAoMapa",
-        { start: 0, end: 11 }
-      ),
+      frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+        start: 0,
+        end: 11,
+      }),
       frameRate: 6,
       repeat: -1,
     });
@@ -210,7 +245,7 @@ class miniGame6 extends Phaser.Scene {
       .setInteractive()
       .setDepth(32);
 
-    this.voltarAoMapaM6.anims.play("voltarAoMapaM6", true)
+    this.voltarAoMapaM6.anims.play("voltarAoMapaM6", true);
 
     this.voltarAoMapaM6.on("pointerdown", () => {
       this.somFundo.stop();

@@ -46,7 +46,11 @@ class miniGame1 extends Phaser.Scene {
     }
 
     this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
+    );
 
     // Carrega os sons utilizados
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
@@ -55,6 +59,25 @@ class miniGame1 extends Phaser.Scene {
     this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
     this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {
@@ -128,7 +151,6 @@ class miniGame1 extends Phaser.Scene {
     this.musicaFundo = this.sound.add("somFundo");
     this.musicaFundo.loop = true;
     this.musicaFundo.play();
-  
 
     this.input.on("drop", (pointer, gameObject, dropZone) => {
       if (dropZone.name === "zonaAberto") {
@@ -201,17 +223,20 @@ class miniGame1 extends Phaser.Scene {
           this.animaCardDescendo();
         } else {
           this.sound.play("conclusao");
-          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+          this.add
+            .rectangle(400, 300, 800, 600, 0x324891)
+            .setDepth(30)
+            .setAlpha(1);
           miniGame1.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-          pontuacao += this.pontuacaoM1
+          pontuacao += this.pontuacaoM1;
 
           // Criação da tela de pontuação
           this.add
             .text(402, 311, this.pontuacaoM1, {
               fontFamily: "pixelArtNumeros",
               fill: "#ffffff",
-              fontSize: '32px',
+              fontSize: "32px",
             })
             .setOrigin(0.5)
             .setDepth(32);
@@ -220,17 +245,17 @@ class miniGame1 extends Phaser.Scene {
             .text(402, 409, pontuacao, {
               fontFamily: "pixelArtNumeros",
               fill: "#ffffff",
-              fontSize: '48px',
+              fontSize: "48px",
             })
             .setOrigin(0.5)
             .setDepth(32);
 
           this.anims.create({
             key: "voltarAoMapaM1",
-            frames: this.anims.generateFrameNumbers(
-              "voltarAoMapa",
-              { start: 0, end: 11 }
-            ),
+            frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+              start: 0,
+              end: 11,
+            }),
             frameRate: 6,
             repeat: -1,
           });
@@ -240,8 +265,8 @@ class miniGame1 extends Phaser.Scene {
             .setInteractive()
             .setDepth(32);
 
-          this.voltarAoMapaM1.anims.play("voltarAoMapaM1", true)
-          
+          this.voltarAoMapaM1.anims.play("voltarAoMapaM1", true);
+
           this.voltarAoMapaM1.on("pointerdown", () => {
             this.musicaFundo.stop();
             this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar

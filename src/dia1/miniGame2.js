@@ -59,7 +59,7 @@ class miniGame2 extends Phaser.Scene {
       }
     }
 
-    this.load.image("selecaoM2", "src/assets/dia1/miniGame2/selecao.png")
+    this.load.image("selecaoM2", "src/assets/dia1/miniGame2/selecao.png");
 
     this.load.image("carimboV", "src/assets/dia1/miniGame2/carimboV.png");
     this.load.image("carimboF", "src/assets/dia1/miniGame2/carimboF.png");
@@ -73,7 +73,11 @@ class miniGame2 extends Phaser.Scene {
     }
 
     this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
+    );
 
     // Carrega o som de clique
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
@@ -89,6 +93,25 @@ class miniGame2 extends Phaser.Scene {
     this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
     // Carrega o som de acerto
     this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {
@@ -144,7 +167,10 @@ class miniGame2 extends Phaser.Scene {
       })
       .setDepth(15);
 
-    this.selecaoM2 = this.add.image(0, 0, "selecaoM2").setDepth(10).setVisible(false);
+    this.selecaoM2 = this.add
+      .image(0, 0, "selecaoM2")
+      .setDepth(10)
+      .setVisible(false);
 
     // Criação dos botões
     miniGame2.botao1 = this.add
@@ -178,37 +204,36 @@ class miniGame2 extends Phaser.Scene {
     // Animação de aumento ao passar o mouse sobre os botões
 
     if (!miniGame2.respostaEmAndamento) {
-    miniGame2.botao1.on('pointerover', () => {
-      this.selecaoM2.setPosition(332, 453).setVisible(true).setDepth(100);
-    });
-    miniGame2.botao1.on('pointerout', () => {
-      this.selecaoM2.setPosition(0, 0).setVisible(false);
-    });
+      miniGame2.botao1.on("pointerover", () => {
+        this.selecaoM2.setPosition(332, 453).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao1.on("pointerout", () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
 
-    miniGame2.botao2.on('pointerover', () => {
-      this.selecaoM2.setPosition(468, 453).setVisible(true).setDepth(100);
-    });
-    miniGame2.botao2.on('pointerout', () => {
-      this.selecaoM2.setPosition(0, 0).setVisible(false);
-    });
+      miniGame2.botao2.on("pointerover", () => {
+        this.selecaoM2.setPosition(468, 453).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao2.on("pointerout", () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
 
-    miniGame2.botao3.on('pointerover', () => {
-      this.selecaoM2.setPosition(332, 539).setVisible(true).setDepth(100);
-    });
-    miniGame2.botao3.on('pointerout', () => {
-      this.selecaoM2.setPosition(0, 0).setVisible(false);
-    });
+      miniGame2.botao3.on("pointerover", () => {
+        this.selecaoM2.setPosition(332, 539).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao3.on("pointerout", () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
 
-    miniGame2.botao4.on('pointerover', () => {
-      this.selecaoM2.setPosition(468, 539).setVisible(true).setDepth(100);
-    });
-    miniGame2.botao4.on('pointerout', () => {
-      this.selecaoM2.setPosition(0, 0).setVisible(false);
-
-    });
-   } else {
-    this.selecaoM2.setVisible(false);
-   }
+      miniGame2.botao4.on("pointerover", () => {
+        this.selecaoM2.setPosition(468, 539).setVisible(true).setDepth(100);
+      });
+      miniGame2.botao4.on("pointerout", () => {
+        this.selecaoM2.setPosition(0, 0).setVisible(false);
+      });
+    } else {
+      this.selecaoM2.setVisible(false);
+    }
 
     // Eventos de clique nos botões
     miniGame2.botao1.on("pointerdown", () => {
@@ -367,17 +392,20 @@ class miniGame2 extends Phaser.Scene {
         } else {
           // Se não houver mais perfis, vai para a próxima cena
           this.sound.play("conclusao");
-          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+          this.add
+            .rectangle(400, 300, 800, 600, 0x324891)
+            .setDepth(30)
+            .setAlpha(1);
           miniGame2.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-          pontuacao += this.pontuacaoM2
+          pontuacao += this.pontuacaoM2;
 
           // Criação da tela de pontuação
           this.add
             .text(402, 311, this.pontuacaoM2, {
               fontFamily: "pixelArtNumeros",
               fill: "#ffffff",
-              fontSize: '32px',
+              fontSize: "32px",
             })
             .setOrigin(0.5)
             .setDepth(32);
@@ -386,17 +414,17 @@ class miniGame2 extends Phaser.Scene {
             .text(402, 409, pontuacao, {
               fontFamily: "pixelArtNumeros",
               fill: "#ffffff",
-              fontSize: '48px',
+              fontSize: "48px",
             })
             .setOrigin(0.5)
             .setDepth(32);
 
           this.anims.create({
             key: "voltarAoMapaM2",
-            frames: this.anims.generateFrameNumbers(
-              "voltarAoMapa",
-              { start: 0, end: 11 }
-            ),
+            frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+              start: 0,
+              end: 11,
+            }),
             frameRate: 6,
             repeat: -1,
           });
@@ -406,8 +434,8 @@ class miniGame2 extends Phaser.Scene {
             .setInteractive()
             .setDepth(32);
 
-          this.voltarAoMapaM2.anims.play("voltarAoMapaM2", true)
-          
+          this.voltarAoMapaM2.anims.play("voltarAoMapaM2", true);
+
           this.voltarAoMapaM2.on("pointerdown", () => {
             this.musicaFundo.stop();
             this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
@@ -444,36 +472,35 @@ class miniGame2 extends Phaser.Scene {
   update() {
     // Animação ao passar o mouse sobre os botões
     if (!miniGame2.respostaEmAndamento) {
-      miniGame2.botao1.on('pointerover', () => {
+      miniGame2.botao1.on("pointerover", () => {
         this.selecaoM2.setPosition(332, 453).setVisible(true).setDepth(100);
       });
-      miniGame2.botao1.on('pointerout', () => {
+      miniGame2.botao1.on("pointerout", () => {
         this.selecaoM2.setPosition(0, 0).setVisible(false);
       });
-  
-      miniGame2.botao2.on('pointerover', () => {
+
+      miniGame2.botao2.on("pointerover", () => {
         this.selecaoM2.setPosition(468, 453).setVisible(true).setDepth(100);
       });
-      miniGame2.botao2.on('pointerout', () => {
+      miniGame2.botao2.on("pointerout", () => {
         this.selecaoM2.setPosition(0, 0).setVisible(false);
       });
-  
-      miniGame2.botao3.on('pointerover', () => {
+
+      miniGame2.botao3.on("pointerover", () => {
         this.selecaoM2.setPosition(332, 539).setVisible(true).setDepth(100);
       });
-      miniGame2.botao3.on('pointerout', () => {
+      miniGame2.botao3.on("pointerout", () => {
         this.selecaoM2.setPosition(0, 0).setVisible(false);
       });
-  
-      miniGame2.botao4.on('pointerover', () => {
+
+      miniGame2.botao4.on("pointerover", () => {
         this.selecaoM2.setPosition(468, 539).setVisible(true).setDepth(100);
       });
-      miniGame2.botao4.on('pointerout', () => {
+      miniGame2.botao4.on("pointerout", () => {
         this.selecaoM2.setPosition(0, 0).setVisible(false);
       });
-     } else {
+    } else {
       this.selecaoM2.setVisible(false);
-     }
+    }
   }
 }
-
