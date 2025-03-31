@@ -67,10 +67,10 @@ class miniGame4 extends Phaser.Scene {
     this.cartao4.setScale(0.8);
 
     // Adiciona animação de hover aos cards
-    this.adicionarAnimacaoHover(this.cartao1);
-    this.adicionarAnimacaoHover(this.cartao2);
-    this.adicionarAnimacaoHover(this.cartao3);
-    this.adicionarAnimacaoHover(this.cartao4);
+    this.adicionarAnimacaoHoverCard(this.cartao1);
+    this.adicionarAnimacaoHoverCard(this.cartao2);
+    this.adicionarAnimacaoHoverCard(this.cartao3);
+    this.adicionarAnimacaoHoverCard(this.cartao4);
 
     // Verifica se os cards estão disponíveis e aplica transparência aos já finalizados
     if (!cardsDisponiveis[0]) {
@@ -154,7 +154,7 @@ class miniGame4 extends Phaser.Scene {
         .setInteractive()
         .setScale(0.5);
       // Adiciona animação de hover ao botão de finalizar
-      this.adicionarAnimacaoHover(botaoFinalizar);
+      this.adicionarAnimacaoHoverFinalizar(botaoFinalizar);
       // Animação de leve pulsação no botão de finalizar
       this.tweens.add({
         targets: botaoFinalizar,
@@ -181,12 +181,14 @@ class miniGame4 extends Phaser.Scene {
     }
   }
 
-  // Método para adicionar animação de hover a um objeto
-  adicionarAnimacaoHover(objeto) {
+
+
+  // Método para adicionar animação de hover aos cards
+  adicionarAnimacaoHoverCard(objeto) {
     objeto.on("pointerover", () => {
       this.tweens.add({
         targets: objeto,
-        scale: objeto.scale * 1.1, // Aumenta 10% do tamanho original
+        scale: 0.88, // Aumenta 10% do tamanho original
         duration: 200,
         ease: "Sine.easeInOut",
       });
@@ -195,7 +197,28 @@ class miniGame4 extends Phaser.Scene {
     objeto.on("pointerout", () => {
       this.tweens.add({
         targets: objeto,
-        scale: objeto.scale / 1.1, // Volta ao tamanho original
+        scale: 0.8, // Volta ao tamanho original
+        duration: 200,
+        ease: "Sine.easeInOut",
+      });
+    });
+  }
+
+  // Método para adicionar animação de hover ao botao finalizar
+  adicionarAnimacaoHoverFinalizar(objeto) {
+    objeto.on("pointerover", () => {
+      this.tweens.add({
+        targets: objeto,
+        scale: 0.55, // Aumenta 10% do tamanho original
+        duration: 200,
+        ease: "Sine.easeInOut",
+      });
+    });
+
+    objeto.on("pointerout", () => {
+      this.tweens.add({
+        targets: objeto,
+        scale: 0.5, // Volta ao tamanho original
         duration: 200,
         ease: "Sine.easeInOut",
       });
@@ -386,13 +409,13 @@ class BaseTributacaoScene extends Phaser.Scene {
 
     // Adiciona a imagem da pergunta correspondente ao card
     if (this.scene.key === "tributacaoScene1") {
-      this.add.image(400, 100, "pergunta1Minigame4").setScale(1.2);
+      this.add.image(400, 100, "pergunta1Minigame4").setScale(1);
     } else if (this.scene.key === "tributacaoScene2") {
-      this.add.image(400, 100, "pergunta2Minigame4").setScale(1.2);
+      this.add.image(400, 100, "pergunta2Minigame4").setScale(1);
     } else if (this.scene.key === "tributacaoScene3") {
-      this.add.image(400, 100, "pergunta3Minigame4").setScale(1.2);
+      this.add.image(400, 100, "pergunta3Minigame4").setScale(1);
     } else if (this.scene.key === "tributacaoScene4") {
-      this.add.image(400, 100, "pergunta4Minigame4").setScale(1.2);
+      this.add.image(400, 100, "pergunta4Minigame4").setScale(1);
     }
 
     // Animação de entrada da cena (fade-in)
@@ -401,7 +424,7 @@ class BaseTributacaoScene extends Phaser.Scene {
     // Configuração da lousa (área de desenho)
     const lousaConfig = {
       x: 400,
-      y: 350,
+      y: 327,
       width: 600,
       height: 300,
       fillColor: 0xffffff,
@@ -464,7 +487,7 @@ class BaseTributacaoScene extends Phaser.Scene {
       .image(40, 40, "botaoVoltarMinigame4")
       .setInteractive()
       .setScale(1);
-    this.adicionarAnimacaoHover(backButton);
+    this.adicionarAnimacaoHoverBotao(backButton);
     backButton.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.tweens.add({
@@ -481,7 +504,7 @@ class BaseTributacaoScene extends Phaser.Scene {
       .image(40, 550, "botaoLimpar")
       .setInteractive()
       .setScale(1);
-    this.adicionarAnimacaoHover(clearButton);
+    this.adicionarAnimacaoHoverBotao(clearButton);
     clearButton.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.tweens.add({
@@ -498,50 +521,50 @@ class BaseTributacaoScene extends Phaser.Scene {
 
     // Botões de cor e borracha com animação de hover
     const botaoVermelho = this.add
-      .image(83, 215, "botaoVermelho")
+      .image(80, 195, "botaoVermelho")
       .setInteractive()
-      .setScale(0.9);
-    this.adicionarAnimacaoHover(botaoVermelho);
+      .setScale(1);
+    this.adicionarAnimacaoHoverBotao(botaoVermelho);
     botaoVermelho.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.corDesenho = 0xff0000;
     });
 
     const botaoAzul = this.add
-      .image(83, 248, "botaoAzul")
+      .image(80, 232, "botaoAzul")
       .setInteractive()
-      .setScale(0.9);
-    this.adicionarAnimacaoHover(botaoAzul);
+      .setScale(1);
+    this.adicionarAnimacaoHoverBotao(botaoAzul);
     botaoAzul.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.corDesenho = 0x0000ff;
     });
 
     const botaoVerde = this.add
-      .image(83, 281, "botaoVerde")
+      .image(80, 269, "botaoVerde")
       .setInteractive()
-      .setScale(0.9);
-    this.adicionarAnimacaoHover(botaoVerde);
+      .setScale(1);
+    this.adicionarAnimacaoHoverBotao(botaoVerde);
     botaoVerde.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.corDesenho = 0x00ff00;
     });
 
     const botaoPreto = this.add
-      .image(83, 314, "botaoPreto")
+      .image(80, 306, "botaoPreto")
       .setInteractive()
-      .setScale(0.9);
-    this.adicionarAnimacaoHover(botaoPreto);
+      .setScale(1);
+    this.adicionarAnimacaoHoverBotao(botaoPreto);
     botaoPreto.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.corDesenho = 0x000000;
     });
 
     const borracha = this.add
-      .image(83, 345, "borracha")
+      .image(80, 341, "borracha")
       .setInteractive()
-      .setScale(0.9);
-    this.adicionarAnimacaoHover(borracha);
+      .setScale(1);
+    this.adicionarAnimacaoHoverBotao(borracha);
     borracha.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.corDesenho = 0xffffff;
@@ -549,30 +572,28 @@ class BaseTributacaoScene extends Phaser.Scene {
 
     // Botão de aumentar espessura com animação de clique e hover
     const aumentarEspessura = this.add
-      .image(720, 210, "botaoAumentar")
+      .image(720, 190, "botaoAumentar")
       .setInteractive()
       .setScale(1);
-    this.adicionarAnimacaoHover(aumentarEspessura);
+    this.adicionarAnimacaoHoverBotao(aumentarEspessura);
     aumentarEspessura.on("pointerdown", () => {
+      this.espessuraDesenho += 2;
+      if (this.espessuraDesenho > 20) this.espessuraDesenho = 20;
       this.sound.play("clique"); // Toca o som de clique
       this.tweens.add({
         targets: aumentarEspessura,
         scale: 0.9,
         duration: 100,
         yoyo: true,
-        onComplete: () => {
-          this.espessuraDesenho += 2;
-          if (this.espessuraDesenho > 20) this.espessuraDesenho = 20;
-        },
       });
     });
 
     // Botão de diminuir espessura com animação de clique e hover
     const diminuirEspessura = this.add
-      .image(770, 210, "botaoDiminuir")
+      .image(770, 190, "botaoDiminuir")
       .setInteractive()
       .setScale(1);
-    this.adicionarAnimacaoHover(diminuirEspessura);
+    this.adicionarAnimacaoHoverBotao(diminuirEspessura);
     diminuirEspessura.on("pointerdown", () => {
       this.sound.play("clique"); // Toca o som de clique
       this.tweens.add({
@@ -636,11 +657,11 @@ class BaseTributacaoScene extends Phaser.Scene {
   }
 
   // Método para adicionar animação de hover a um objeto
-  adicionarAnimacaoHover(objeto) {
+  adicionarAnimacaoHoverBloco(objeto) {
     objeto.on("pointerover", () => {
       this.tweens.add({
         targets: objeto,
-        scale: objeto.scale * 1.1, // Aumenta 10% do tamanho original
+        scale: 1.1, // Aumenta 10% do tamanho original
         duration: 200,
         ease: "Sine.easeInOut",
       });
@@ -649,7 +670,30 @@ class BaseTributacaoScene extends Phaser.Scene {
     objeto.on("pointerout", () => {
       this.tweens.add({
         targets: objeto,
-        scale: objeto.scale / 1.1, // Volta ao tamanho original
+        scale: 1, // Volta ao tamanho original
+        duration: 200,
+        ease: "Sine.easeInOut",
+      });
+    });
+  }
+
+  // Método para adicionar animação de hover a um objeto
+  adicionarAnimacaoHoverBotao(objeto) {
+    objeto.on("pointerover", () => {
+      this.tweens.add({
+        targets: objeto,
+        scale: 1.1, // Aumenta 10% do tamanho original
+        depth: 2,
+        duration: 200,
+        ease: "Sine.easeInOut",
+      });
+    });
+
+    objeto.on("pointerout", () => {
+      this.tweens.add({
+        targets: objeto,
+        scale: 1, // Volta ao tamanho original
+        depth: 1,
         duration: 200,
         ease: "Sine.easeInOut",
       });
@@ -658,9 +702,9 @@ class BaseTributacaoScene extends Phaser.Scene {
 
   // Método para adicionar os bloquinhos com animação e interação
   adicionarBloquinhos(bloquinhos, respostaCorreta, cardIndex) {
-    const posicoes = [170, 330, 480, 640]; // Posições X dos bloquinhos
-    const posicaoY = 550; // Posição Y dos bloquinhos
-    const escala = 0.8; // Escala dos bloquinhos
+    const posicoes = [165, 325, 485, 645]; // Posições X dos bloquinhos
+    const posicaoY = 530; // Posição Y dos bloquinhos
+    const escala = 1; // Escala dos bloquinhos
 
     bloquinhos.forEach((bloquinho, index) => {
       const img = this.add
@@ -668,7 +712,7 @@ class BaseTributacaoScene extends Phaser.Scene {
         .setInteractive()
         .setScale(escala);
       // Adiciona animação de hover aos bloquinhos
-      this.adicionarAnimacaoHover(img);
+      this.adicionarAnimacaoHoverBloco(img);
 
       // Animação de entrada suave dos bloquinhos
       this.tweens.add({

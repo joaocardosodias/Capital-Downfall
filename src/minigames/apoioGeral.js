@@ -127,19 +127,41 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
             `,
     ];
     this.apoioMinigame5 = [
-      `Aqui está o que cada um desses termos representa no contexto financeiro:
+      `Existem diversos tipos de fundos de investimento, cada um com suas características e objetivos.
 
-- Hedge:     Estratégia de proteção contra riscos financeiros, reduzindo perdas com derivativos como contratos futuros e opções.
+Esses fundos são uma forma prática de investir em diferentes mercados sem precisar de conhecimento aprofundado sobre cada um deles.
 
-- TIR (Taxa Interna de Retorno):     Indicador que mede a rentabilidade de um investimento, calculando a taxa que iguala entradas e saídas de caixa.
+Em cada fundo, o gestor aplica os recursos dos investidores em diferentes ativos, como ações, imóveis, ou títulos de renda fixa, com o objetivo de gerar retornos. 
 
-- IBOV (Índice Bovespa):     Principal índice da B3, composto pelas ações mais negociadas, servindo como referência para o mercado acionário brasileiro.
-            `,
-      `- FIP (Fundo de Investimento em Participações):     Fundo de private equity que investe em empresas privadas, adquirindo participação acionária e influência na gestão.
+A seguir estão alguns dos principais tipos de fundos, com uma breve descrição de como funcionam:`,
+      `Ações:
 
-- D+H:     Prazo de liquidação financeira de um ativo, indicando em quantos dias úteis o dinheiro ou ativo estará disponível.
+- Fundos de ações investem principalmente em ações de empresas listadas na bolsa de valores. São mais voláteis e arriscados, mas oferecem um potencial de retorno maior no longo prazo.
+- Eles são ideais para investidores que buscam crescimento de capital e estão dispostos a lidar com as flutuações do mercado.
+`,
+      `Imobiliário:
 
-- Swap:     Contrato derivativo onde duas partes trocam fluxos financeiros baseados em diferentes índices, como juros, câmbio ou inflação.
+- Os fundos imobiliários (FII) aplicam recursos em imóveis ou em títulos ligados ao mercado imobiliário, como os CRIs (Certificados de Recebíveis Imobiliários). 
+- Esse tipo de fundo permite ao investidor ganhar com a valorização dos imóveis ou com a renda gerada por aluguéis. 
+- São considerados investimentos de médio a longo prazo e tendem a ser mais estáveis.
+`,
+      `Multimercado:
+
+- Os fundos multimercado têm flexibilidade para investir em diferentes ativos, como ações, títulos de renda fixa, moedas e até commodities. 
+- Eles buscam estratégias diversificadas para proteger o capital e gerar rentabilidade, oferecendo um equilíbrio entre risco e retorno.
+- Esses fundos são ideais para quem busca uma carteira diversificada.
+`,
+      `Renda Fixa:
+
+- Fundos de renda fixa são aqueles que investem em ativos com rentabilidade previsível, como títulos públicos, CDBs e debêntures. 
+- Eles são mais conservadores e seguros, proporcionando um retorno mais estável e baixo risco em relação aos fundos de ações. 
+- São ideais para quem busca segurança e estabilidade no retorno.
+`,
+      `Private Equity:
+
+- Os fundos de private equity investem em empresas privadas com potencial de crescimento. 
+- O objetivo é aumentar o valor das empresas ao longo do tempo para, eventualmente, vendê-las com lucro. 
+- Esses fundos geralmente exigem uma maior tolerância ao risco, pois envolvem empresas com maior potencial de crescimento, mas também mais instabilidade.
 `,
     ];
     this.apoioMinigame6 = [
@@ -148,7 +170,7 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
 - Empreendedorismo e inovação: busca por soluções ágeis e novos aprendizados;
 - Liderança: possui uma boa tomada de decisões e motiva a equipe;
 - Trabalho em equipe: compartilha conhecimento e respeita as diferenças;
-- Proatividade: trabalha com responsabilidade e intensidade.
+- Proatividade: trabalha com responsabilidade, dedicação e comprometimento.
             `,
     ];
   }
@@ -165,7 +187,7 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
 
     this.load.image(
       "imailFundoGeral",
-      "src/assets/materiais_apoio/imailFundoGeral.png"
+      "src/assets/materiais_apoio/SlickGeral.png"
     );
 
     for (let i = 1; i <= 6; i++) {
@@ -247,8 +269,8 @@ Valor Final =Valor Investido × (1 + r)¥ => para juros compostos.
             { botao: this.botaoMinigame2, posicaoX: 174, apoio: this.apoioMinigame2 },
             { botao: this.botaoMinigame3, posicaoX: 290, apoio: this.apoioMinigame3 },
             { botao: this.botaoMinigame4, posicaoX: 413, apoio: this.apoioMinigame4 },
-            { botao: this.botaoMinigame5, posicaoX: 522, apoio: this.apoioMinigame5 },
-            { botao: this.botaoMinigame6, posicaoX: 630, apoio: this.apoioMinigame6 },
+            { botao: this.botaoMinigame5, posicaoX: 519, apoio: this.apoioMinigame5 },
+            { botao: this.botaoMinigame6, posicaoX: 624, apoio: this.apoioMinigame6 },
         ];
 
         //Laço for que cria os botoes superiores e suas funcionalidades

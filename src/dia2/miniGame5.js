@@ -102,13 +102,13 @@ class miniGame5 extends Phaser.Scene {
     this.shuffleArray(shuffledDefinitions);
 
     // Posições Y para os elementos (5 cartões + 5 definições)
-    let yPositions = [160, 260, 360, 460, 560];
+    let yPositions = [150, 250, 350, 450, 550];
 
     // Cria os cartões com animação de entrada
     data.forEach((item, index) => {
       // Cria o cartão começando acima da tela (y = -100)
       let card = this.add.image(100, -100, item.imgSigla);
-      card.setScale(0.9);
+      card.setScale(1);
       
       // Armazena dados importantes no objeto do cartão
       card.setData("sigla", item.sigla); // Sigla para correspondência
@@ -148,8 +148,8 @@ class miniGame5 extends Phaser.Scene {
         if (!card.getData("connected") && !this.animationInProgress && !this.connectionAnimationInProgress) {
           this.tweens.add({
             targets: card,
-            scaleX: 0.9, // Volta ao tamanho normal
-            scaleY: 0.9,
+            scaleX: 1, // Volta ao tamanho normal
+            scaleY: 1,
             duration: 100,
             ease: "Power2",
           });
@@ -177,7 +177,7 @@ class miniGame5 extends Phaser.Scene {
     shuffledDefinitions.forEach((item, index) => {
       // Cria definição começando acima da tela (y = -100)
       let definition = this.add.image(600, -100, item.imgDef);
-      definition.setScale(0.9);
+      definition.setScale(1);
       definition.setData("sigla", item.sigla); // Armazena sigla para correspondência
       
       // Animação de entrada - definição "cai" para posição final
@@ -288,12 +288,12 @@ class miniGame5 extends Phaser.Scene {
       
       // Atualiza pontuação conforme acerto/erro
       if (isCorrect) {
-        pontuacao += 100; // Acerto: +100 pontos
+        this.pontuacaoM5 += 100; // Acerto: +100 pontos
         this.somAcerto.play(); // Toca som de acerto
         this.scoreText.setText(`Pontuação: ${this.pontuacaoM5}`); // Atualiza texto
         this.showScoreAnimation(scene, "+100", 0x00ff00); // Feedback verde
       } else {
-        pontuacao = Math.max(0, pontuacao - 50); // Erro: -50 pontos (mínimo 0)
+        this.pontuacaoM5 -= 50 // Erro: -50 pontos
         this.somErro.play(); // Toca som de erro
         this.scoreText.setText(`Pontuação: ${this.pontuacaoM5}`);
 
@@ -460,7 +460,7 @@ class fimMinigame5 extends Phaser.Scene {
     this.musicaFundo.setLoop(true); // Define que a música de fundo deve ser repetida
     this.musicaFundo.play(); // Inicia a música de fundo
 
-    this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(0.5);
+    this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
     miniGame5.fim = this.add.image(400, 300, "fim").setDepth(31);
 
     pontuacao += this.pontuacaoM5
