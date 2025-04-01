@@ -4,35 +4,13 @@ class apoioMinigame1 extends Phaser.Scene {
     this.clickSound = null; // Som de clique
   }
 
-  preload() {
-    // Preload dos assets
-    this.load.image(
-      "tutorialCtrlMinigame1",
-      "src/assets/dia1/tutorialControlesMinigame1.png"
-    );
-
-    this.load.image(
-      "tutorialFundoAberto",
-      "src/assets/dia1/tutorialFundoAberto.png"
-    );
-
-    this.load.image(
-      "tutorialFundoFechado",
-      "src/assets/dia1/tutorialFundoFechado.png"
-    );
-
-    this.load.image(
-      "botaoSeguirAdiante",
-      "src/assets/botoes/botaoSeguirAdiante.png"
-    );
-
-    // Carrega o som de clique
-    this.load.audio("click", ["src/assets/dia2/miniGame4/sons/clique.mp3"]);
-  }
-
   create() {
     // Carrega as telas e botões utilizados
-    this.tutorialCtrlMinigame1 = this.add.image(400, 300, "tutorialCtrlMinigame1");
+    this.tutorialCtrlMinigame1 = this.add.image(
+      400,
+      300,
+      "tutorialCtrlMinigame1"
+    );
 
     this.tutorialFundoAberto = this.add
       .image(400, 300, "tutorialFundoAberto")
@@ -63,7 +41,10 @@ class apoioMinigame1 extends Phaser.Scene {
     // Verifica se o primeiro botão foi pressionado
     this.botaoTutorialMinigame1.on("pointerdown", (pointer) => {
       this.clickSound.play(); // Reproduz o som de clique
-      this.transitionToScreen(this.tutorialCtrlMinigame1, this.tutorialFundoAberto); // Troca de tela com animação
+      this.transitionToScreen(
+        this.tutorialCtrlMinigame1,
+        this.tutorialFundoAberto
+      ); // Troca de tela com animação
       this.botaoTutorialMinigame2.setInteractive().setVisible(true);
       this.botaoTutorialMinigame1.setVisible(false);
     });
@@ -71,7 +52,10 @@ class apoioMinigame1 extends Phaser.Scene {
     // Verifica se o segundo botão foi pressionado
     this.botaoTutorialMinigame2.on("pointerdown", (pointer) => {
       this.clickSound.play(); // Reproduz o som de clique
-      this.transitionToScreen(this.tutorialFundoAberto, this.tutorialFundoFechado); // Troca de tela com animação
+      this.transitionToScreen(
+        this.tutorialFundoAberto,
+        this.tutorialFundoFechado
+      ); // Troca de tela com animação
       this.botaoTutorialMinigame3.setInteractive().setVisible(true);
       this.botaoTutorialMinigame2.setVisible(false);
     });
@@ -112,9 +96,12 @@ class apoioMinigame1 extends Phaser.Scene {
     this.cameras.main.fadeOut(500, 0, 0, 0); // Fade-out de 500ms
 
     // Aguarda o fade-out ser concluído
-    this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, () => {
-      this.scene.start(nextScene); // Inicia a próxima cena
-      this.scene.stop(); // Encerra a cena atual
-    });
+    this.cameras.main.once(
+      Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE,
+      () => {
+        this.scene.start(nextScene); // Inicia a próxima cena
+        this.scene.stop(); // Encerra a cena atual
+      }
+    );
   }
 }

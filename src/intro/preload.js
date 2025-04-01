@@ -39,7 +39,7 @@ class preload extends Phaser.Scene {
     this.load.audio("musicaIntro", "src/assets/sounds/rockMusicaHub.mp3"); // Carrega a música da Tela Inicial
     this.load.audio("musicaHub", "src/assets/sounds/jazzyMusicaHub1.mp3"); // Carrega a música da Hub 1
     this.load.audio("musicaHub2", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música da Hub 2
-    this.load.audio("musicaHubFinal", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música da Sala de Guerra
+    this.load.audio("musicaHubFinal", "src/assets/sounds/musicaSalaGuerra.mp3"); // Carrega a música da Sala de Guerra
     this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3"); // Carrega os sons de fundo dos minigames
 
     //Sons da hub/ material de apoio

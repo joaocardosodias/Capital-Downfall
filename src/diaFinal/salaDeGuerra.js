@@ -152,7 +152,7 @@ class salaDeGuerra extends Phaser.Scene {
 
     // Carrega os sons
     this.clickSound = this.sound.add("click");
-    this.somFundo = this.sound.add("somFundo");
+    this.somFundo = this.sound.add("musicaHubFinal");
     this.somFundo.play(); // Reproduz o som de fundo
 
     // Cria os botões de resposta (A, B, C e D) com suas respectivas letras

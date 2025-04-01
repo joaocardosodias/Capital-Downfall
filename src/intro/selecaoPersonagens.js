@@ -9,56 +9,6 @@ class selecaoPersonagens extends Phaser.Scene {
     this.somFinalizar;
   }
 
-  preload() {
-    for (let i = 0; i < this.personagens.length; i++) {
-      for (let u = 0; u < 4; u++) {
-        this.load.image(
-          "botao" + this.personagens[i] + this.estadosBotoes[u],
-          "src/assets/intro/selecaoPersonagens/botao" +
-            this.personagens[i] +
-            this.estadosBotoes[u] +
-            ".png"
-        );
-      }
-    }
-    this.load.image(
-      "botaoSelecionarAtivado",
-      "src/assets/intro/selecaoPersonagens/botaoSelecionarAtivado.png"
-    );
-    this.load.image(
-      "botaoSelecionarDesativado",
-      "src/assets/intro/selecaoPersonagens/botaoSelecionarDesativado.png"
-    );
-
-    this.load.image(
-      "fundo",
-      "src/assets/intro/selecaoPersonagens/background.png"
-    );
-
-    this.load.audio("musicaFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somFinalizar", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("clique", "src/assets/sounds/clique.mp3");
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
   create() {
     this.musicaFundo = this.sound.add("musicaFundo", { loop: true });
     this.musicaFundo.play();
