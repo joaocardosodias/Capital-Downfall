@@ -255,26 +255,45 @@ class preload extends Phaser.Scene {
 
     //Assets do Miniboss 1
 
+    // Carrega os elementos da cena
     // Estrutura de repetição para carregar as 9 perguntas, as 9 imagens de feedback correto e as 9 imagens de feedback negativo
     for (let i = 1; i <= 9; i++) {
       this.load.image(
         `pergunta${i}`,
         `src/assets/dia1/miniBossDia1/pergunta${i}.png`
       );
-      this.load.image(
-        `acertou${i}`,
-        `src/assets/dia1/miniBossDia1/acertou${i}.png`
-      );
-      this.load.image(
-        `errou${i}`,
-        `src/assets/dia1/miniBossDia1/errou${i}.png`
-      );
     }
     this.load.image("botao", "src/assets/dia1/miniBossDia1/botao.png");
-    this.load.image("pular", "src/assets/dia1/miniBossDia1/pular.png");
     this.load.image(
       "botaoVoltar",
       "src/assets/dia1/miniBossDia1/botaoVoltar.png"
+    );
+
+    this.load.image(
+      "fundoMiniboss",
+      "src/assets/dia1/miniBossDia1/fundoMiniboss.png"
+    );
+    this.load.image(
+      "botaoResposta",
+      "src/assets/dia1/miniBossDia1/botaoResposta.png"
+    );
+    this.load.image(
+      "telaFeedback",
+      "src/assets/dia1/miniBossDia1/telaFeedbackMiniboss.png"
+    );
+    this.load.spritesheet(
+      "proximaPergunta",
+      "src/assets/dia1/miniBossDia1/proximaPergunta.png",
+      { frameWidth: 394, frameHeight: 120 }
+    );
+    this.load.image("correto", "src/assets/dia1/miniBossDia1/correto.png");
+    this.load.image("errado", "src/assets/dia1/miniBossDia1/errado.png");
+
+    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
     );
 
     //Assets do Final do Dia 1
