@@ -17,8 +17,8 @@ class finalDia1 extends Phaser.Scene {
     this.clique = this.sound.add("clique");
 
     // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
-    // Futuramente, essa seção também redirecionará para o gameOver, além do dia 2
-    if (pontuacao < -100) {
+    //Para avançar para o dia 2 o jogador deve ter um aproveitamento de pelo menos 75%, ou seja, 1275 pontos
+    if (pontuacao < 1275) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
@@ -29,20 +29,7 @@ class finalDia1 extends Phaser.Scene {
       });
     }
 
-    if (100 > pontuacao && pontuacao >= -100) {
-      this.somAcerto.play();
-      this.add.image(400, 300, "jornalSemCrescimento");
-      this.semCrescimento = true;
-      this.botaoContinuar = this.add
-        .image(100, 75, "continuar")
-        .setInteractive();
-      this.botaoContinuar.on("pointerdown", () => {
-        this.scene.stop("finalDia1");
-        this.scene.start("introDia2");
-      });
-    }
-
-    if (pontuacao >= 100) {
+    if (pontuacao >= 1275) {
       this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;
@@ -52,6 +39,8 @@ class finalDia1 extends Phaser.Scene {
       this.botaoContinuar.on("pointerdown", () => {
         this.clique.play();
         this.scene.stop("finalDia1");
+        //Reinicia a pontuação antes de começar o dia 2;
+        pontuacao = 0;
         this.scene.start("introDia2");
       });
     }
