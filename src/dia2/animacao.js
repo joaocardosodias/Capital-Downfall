@@ -14,15 +14,6 @@ class movimento extends Phaser.Scene {
     this.aceleracaoY = (2 * this.deslocamentoY) / Math.pow(this.tempoTotal, 2);
   }
 
-  preload() {
-    // Carrega os arquivos necessários para a cena
-    this.load.image("jornal", "src/assets/dia2/animacao/jornal.png");
-    this.load.image("mesa", "src/assets/dia2/animacao/mesa.png");
-    this.load.image("fundoAnimacao", "src/assets/dia2/animacao/fundo.png");
-    this.load.audio("voando", "src/assets/dia2/animacao/voando.wav");
-    this.load.audio("caiu", "src/assets/dia2/animacao/caiu.wav");
-  }
-
   create() {
     // Adiciona o fundo na cena
     this.add.image(400, 300, "fundoAnimacao");

@@ -9,25 +9,7 @@ class finalDia2 extends Phaser.Scene {
     this.somAcerto;
     this.somErro;
   }
-  preload() {
-    this.load.image(
-      "jornalCrescimento",
-      "src/assets/telas_pontuacao/jornalCrescimento.png"
-    );
-    this.load.image(
-      "jornalFalido",
-      "src/assets/telas_pontuacao/jornalFalido.png"
-    );
-    this.load.image(
-      "jornalSemCrescimento",
-      "src/assets/telas_pontuacao/jornalSemCrescimento.png"
-    );
-    this.load.image("continuar", "src/assets/telas_pontuacao/continuar.png");
-    this.load.image("gameOver", "src/assets/telas_pontuacao/gameOver.png");
 
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-  }
   create() {
     musicaHub2.stop();
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });

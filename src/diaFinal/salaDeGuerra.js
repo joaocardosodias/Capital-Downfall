@@ -147,29 +147,12 @@ class salaDeGuerra extends Phaser.Scene {
     this.optionTexts = [];
   }
 
-  preload() {
-    this.load.image(
-      "fundoPerguntas",
-      "src/assets/dia2/salaDeGuerra/fundoFinal.png"
-    );
-    this.load.image(
-      "botao",
-      "src/assets/dia2/salaDeGuerra/botaoFinalSelecionado.png"
-    );
-
-    // Carrega os sons utilizados
-    this.load.audio("click", ["src/assets/dia2/miniGame4/sons/clique.mp3"]);
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-  }
-
   create() {
     this.add.image(400, 300, "fundoPerguntas");
 
     // Carrega os sons
     this.clickSound = this.sound.add("click");
-    this.somFundo = this.sound.add("somFundo");
+    this.somFundo = this.sound.add("musicaHubFinal");
     this.somFundo.play(); // Reproduz o som de fundo
 
     // Cria os botões de resposta (A, B, C e D) com suas respectivas letras

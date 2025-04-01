@@ -12,32 +12,6 @@ class miniGame4 extends Phaser.Scene {
     this.musicaFundo;
   }
 
-  // Método para carregar recursos (imagens, sons, etc.)
-  preload() {
-    this.load.image(
-      "backgroundMinigame4",
-      "src/assets/dia2/miniGame4/background.png"
-    ); // Carrega o fundo da cena
-    this.load.image(
-      "enunciadoMinigame4",
-      "src/assets/dia2/miniGame4/enunciado.png"
-    ); // Carrega a imagem do enunciado
-    this.load.image("cartao1", "src/assets/dia2/miniGame4/botaoICMS.png"); // Carrega a imagem do card 1
-    this.load.image("cartao2", "src/assets/dia2/miniGame4/botaoIPI.png"); // Carrega a imagem do card 2
-    this.load.image("cartao3", "src/assets/dia2/miniGame4/botaoIOF.png"); // Carrega a imagem do card 3
-    this.load.image("cartao4", "src/assets/dia2/miniGame4/botaoISS.png"); // Carrega a imagem do card 4
-    this.load.image(
-      "botaoFinalizar",
-      "src/assets/dia2/miniGame4/botaoVerificar.png"
-    ); // Carrega a imagem do botão de finalizar
-    this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3"); // Carrega o som de clique
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-  }
-
   // Método para criar e configurar a cena
   create(data) {
     // Adiciona o fundo da cena
@@ -167,9 +141,9 @@ class miniGame4 extends Phaser.Scene {
       botaoFinalizar.on("pointerdown", () => {
         this.sound.play("clique"); // Toca o som de clique
 
-        this.transicaoParaCena('fimMinigame4', {
+        this.transicaoParaCena("fimMinigame4", {
           pontuacaoM4: pontuacaoM4,
-          pontuacao: pontuacao
+          pontuacao: pontuacao,
         });
       });
     }
@@ -180,8 +154,6 @@ class miniGame4 extends Phaser.Scene {
       this.animarFinalizacaoCard(cardFinalizado);
     }
   }
-
-
 
   // Método para adicionar animação de hover aos cards
   adicionarAnimacaoHoverCard(objeto) {
@@ -272,51 +244,7 @@ class BaseTributacaoScene extends Phaser.Scene {
     this.canetaEscrevendo;
   }
 
-  // Método para carregar recursos específicos de cada cena
   preload() {
-    this.load.image(
-      "backgroundMinigame4",
-      "src/assets/dia2/miniGame4/background.jpg"
-    ); // Carrega o fundo da cena
-    this.load.image(
-      "pergunta1Minigame4",
-      "src/assets/dia2/miniGame4/pergunta1.png"
-    ); // Carrega a imagem da pergunta do card 1
-    this.load.image(
-      "pergunta2Minigame4",
-      "src/assets/dia2/miniGame4/pergunta2.png"
-    ); // Carrega a imagem da pergunta do card 2
-    this.load.image(
-      "pergunta3Minigame4",
-      "src/assets/dia2/miniGame4/pergunta3.png"
-    ); // Carrega a imagem da pergunta do card 3
-    this.load.image(
-      "pergunta4Minigame4",
-      "src/assets/dia2/miniGame4/pergunta4.png"
-    ); // Carrega a imagem da pergunta do card 4
-    this.load.image(
-      "botaoVermelho",
-      "src/assets/dia2/miniGame4/botaoVermelho.png"
-    ); // Carrega o botão vermelho
-    this.load.image("botaoAzul", "src/assets/dia2/miniGame4/botaoAzul.png"); // Carrega o botão azul
-    this.load.image("botaoVerde", "src/assets/dia2/miniGame4/botaoVerde.png"); // Carrega o botão verde
-    this.load.image("botaoPreto", "src/assets/dia2/miniGame4/botaoPreto.png"); // Carrega o botão preto
-    this.load.image("borracha", "src/assets/dia2/miniGame4/borracha.png"); // Carrega a borracha
-    this.load.image(
-      "botaoVoltarMinigame4",
-      "src/assets/dia2/miniGame4/botaoVoltar.png"
-    ); // Carrega o botão de voltar
-    this.load.image("botaoLimpar", "src/assets/dia2/miniGame4/botaoLimpar.png"); // Carrega o botão de limpar
-    this.load.image(
-      "botaoAumentar",
-      "src/assets/dia2/miniGame4/botaoAumentar.png"
-    ); // Carrega o botão de aumentar espessura
-    this.load.image(
-      "botaoDiminuir",
-      "src/assets/dia2/miniGame4/botaoDIminuir.png"
-    ); // Carrega o botão de diminuir espessura
-    this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3"); // Carrega o som de clique
-
     // Carrega as imagens dos bloquinhos para cada card
     if (this.scene.key === "tributacaoScene1") {
       this.load.image(
@@ -387,12 +315,6 @@ class BaseTributacaoScene extends Phaser.Scene {
         "src/assets/dia2/miniGame4/bloquinho4Card4.png"
       );
     }
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("canetaEscrevendo", "src/assets/sounds/scratchPencil.mp3");
   }
 
   // Método para criar e configurar a cena
@@ -738,7 +660,7 @@ class BaseTributacaoScene extends Phaser.Scene {
         // Volta para a cena principal e passa o índice do card finalizado
         this.transicaoParaCena("miniGame4", {
           cardFinalizado: cardIndex,
-          pontuacaoM4: pontuacaoM4
+          pontuacaoM4: pontuacaoM4,
         });
       });
     });
@@ -791,7 +713,11 @@ class fimMinigame4 extends Phaser.Scene {
   preload() {
     this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
     this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
+    );
 
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
     this.load.audio("somConclusao", "src/assets/sounds/taskSucess.mp3");
@@ -811,14 +737,14 @@ class fimMinigame4 extends Phaser.Scene {
     this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
     miniGame4.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-    pontuacao += pontuacaoM4
+    pontuacao += pontuacaoM4;
 
     // Criação da tela de pontuação
     this.add
       .text(402, 311, pontuacaoM4, {
         fontFamily: "pixelArtNumeros",
         fill: "#ffffff",
-        fontSize: '32px',
+        fontSize: "32px",
       })
       .setOrigin(0.5)
       .setDepth(32);
@@ -827,17 +753,17 @@ class fimMinigame4 extends Phaser.Scene {
       .text(402, 409, pontuacao, {
         fontFamily: "pixelArtNumeros",
         fill: "#ffffff",
-        fontSize: '48px',
+        fontSize: "48px",
       })
       .setOrigin(0.5)
       .setDepth(32);
 
     this.anims.create({
       key: "voltarAoMapaM4",
-      frames: this.anims.generateFrameNumbers(
-        "voltarAoMapa",
-        { start: 0, end: 11 }
-      ),
+      frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+        start: 0,
+        end: 11,
+      }),
       frameRate: 6,
       repeat: -1,
     });
@@ -847,16 +773,15 @@ class fimMinigame4 extends Phaser.Scene {
       .setInteractive()
       .setDepth(32);
 
-    this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true)
+    this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true);
 
     this.voltarAoMapaM4.on("pointerdown", () => {
       this.musicaFundo.stop();
       this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      this.scene.stop("fimMinigame4")
+      this.scene.stop("fimMinigame4");
       minigame4Jogado = true;
       this.scene.wake("hub2");
       musicaHub2.resume();
-      ;
     });
   }
 }
