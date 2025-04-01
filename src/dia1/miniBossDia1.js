@@ -22,64 +22,6 @@ class miniBossDia1 extends Phaser.Scene {
     this.somFundo;
   }
 
-  preload() {
-    // Carrega os elementos da cena
-    // Estrutura de repetição para carregar as 9 perguntas, as 9 imagens de feedback correto e as 9 imagens de feedback negativo
-    for (let i = 1; i <= 9; i++) {
-      this.load.image(
-        `pergunta${i}`,
-        `src/assets/dia1/miniBossDia1/pergunta${i}.png`
-      );
-      this.load.image(
-        `acertou${i}`,
-        `src/assets/dia1/miniBossDia1/acertou${i}.png`
-      );
-      this.load.image(
-        `errou${i}`,
-        `src/assets/dia1/miniBossDia1/errou${i}.png`
-      );
-    }
-    this.load.image("botao", "src/assets/dia1/miniBossDia1/botao.png");
-    this.load.image("pular", "src/assets/dia1/miniBossDia1/pular.png");
-    this.load.image(
-      "botaoVoltar",
-      "src/assets/dia1/miniBossDia1/botaoVoltar.png"
-    );
-
-    // Carrega os sons utilizados
-    this.load.audio("click", ["src/assets/dia2/miniGame4/sons/clique.mp3"]);
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-
-    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet(
-      "voltarAoMapa",
-      "src/assets/telas_pontuacao/voltarAoMapa.png",
-      { frameWidth: 400, frameHeight: 110 }
-    );
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
   create() {
     // Adiciona os elementos carregados anteriormente a tela
     // Variável que divide as perguntas em tópicos, assim toda vez que o jogador jogar essa fase ele terá obrigatoriamente que passar por uma pergunta de cada tópico

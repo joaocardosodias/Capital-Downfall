@@ -33,88 +33,11 @@ class miniGame2 extends Phaser.Scene {
     this.musicaFundo;
   }
 
-  preload() {
-    // Carrega as imagens
+  create() {
     miniGame2.perfisRestantes = [];
     miniGame2.perfilIndex = 0;
     miniGame2.respostaEmAndamento = false;
 
-    this.load.image("fundoMinigame2", "src/assets/dia1/miniGame2/fundo.png");
-
-    for (let i = 1; i <= 4; i++) {
-      for (let u = 1; u <= 8; u++) {
-        this.load.image(
-          "botao" + i + "-" + u,
-          "src/assets/dia1/miniGame2/botao" + i + "-" + u + ".png"
-        );
-      }
-    }
-
-    for (let i = 1; i <= 4; i++) {
-      for (let u = 1; u <= 8; u++) {
-        this.load.image(
-          "botao" + i + "Pressionado-" + u,
-          "src/assets/dia1/miniGame2/botao" + i + "Apertado-" + u + ".png"
-        );
-      }
-    }
-
-    this.load.image("selecaoM2", "src/assets/dia1/miniGame2/selecao.png");
-
-    this.load.image("carimboV", "src/assets/dia1/miniGame2/carimboV.png");
-    this.load.image("carimboF", "src/assets/dia1/miniGame2/carimboF.png");
-
-    // Carrega as imagens dos perfis
-    for (let i = 1; i <= 8; i++) {
-      this.load.image(
-        "perfil" + i,
-        "src/assets/dia1/miniGame2/perfil" + i + ".png"
-      );
-    }
-
-    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet(
-      "voltarAoMapa",
-      "src/assets/telas_pontuacao/voltarAoMapa.png",
-      { frameWidth: 400, frameHeight: 110 }
-    );
-
-    // Carrega o som de clique
-    this.load.audio("clique", "src/assets/sounds/clique.mp3");
-    // Carrega o som de carimbo
-    this.load.audio("carimbo", "src/assets/sounds/carimbo.mp3");
-    // Carrega a música de fundo
-    this.load.audio("musicaFundo", "src/assets/sounds/escritorioFlow.mp3");
-    // Carrega o som de conclusão
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-    // Carrega o som de movimento
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    // Carrga o som de erro
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    // Carrega o som de acerto
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
-  create() {
     // Cria uma array de objetos chamados perfis, cada perfil tem um nome e uma resposta
     let perfis = [
       { nome: "perfil1", resposta: 1, pergunta: 1 },

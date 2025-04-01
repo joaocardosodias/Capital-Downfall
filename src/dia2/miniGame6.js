@@ -11,59 +11,6 @@ class miniGame6 extends Phaser.Scene {
     this.somFundo;
   }
 
-  preload() {
-    //Preload das imagens
-    this.load.image("imagem1", "src/assets/dia2/miniGame6/imagemgame6.png");
-    this.load.image("imagem3", "src/assets/dia2/miniGame6/imagem3game6.png");
-    this.load.image("botao", "src/assets/dia2/miniGame6/imagem2game6.png");
-    this.load.image("pedro", "src/assets/dia2/miniGame6/perfil1M6.png");
-    this.load.image("ana", "src/assets/dia2/miniGame6/perfil2M6.png");
-    this.load.image(
-      "botaoaprovado",
-      "src/assets/dia2/miniGame6/botaoAprovar.png"
-    );
-    this.load.image(
-      "botaoreprovado",
-      "src/assets/dia2/miniGame6/botaoReprovar.png"
-    );
-    this.load.image("vagner", "src/assets/dia2/miniGame6/perfil3M6.png");
-    this.load.image("amanda", "src/assets/dia2/miniGame6/perfil4M6.png");
-    this.load.image("bruna", "src/assets/dia2/miniGame6/perfil5M6.png");
-
-    // Carrega o som de clique
-    this.load.audio("click", "src/assets/sounds/clique.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-
-    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet(
-      "voltarAoMapa",
-      "src/assets/telas_pontuacao/voltarAoMapa.png",
-      { frameWidth: 400, frameHeight: 110 }
-    );
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
   create() {
     this.somFundo = this.sound.add("somFundo", { loop: true });
     this.somFundo.play();

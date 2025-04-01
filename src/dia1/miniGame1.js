@@ -30,57 +30,10 @@ class miniGame1 extends Phaser.Scene {
     this.somFimMinigame;
   }
 
-  preload() {
-    // Preload das imagens guardadas em assets
+  create() {
     miniGame1.cardIndex = 0;
     miniGame1.cardsRestantes = [];
 
-    this.load.image("botaoIniciar", "src/assets/botao/botaoIniciar.png");
-    this.load.image("gavetas", "src/assets/dia1/miniGame1/gavetas.png");
-
-    for (let i = 1; i <= 10; i++) {
-      this.load.image(
-        "card" + i,
-        "src/assets/dia1/miniGame1/card" + i + ".png"
-      );
-    }
-
-    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet(
-      "voltarAoMapa",
-      "src/assets/telas_pontuacao/voltarAoMapa.png",
-      { frameWidth: 400, frameHeight: 110 }
-    );
-
-    // Carrega os sons utilizados
-    this.load.audio("clique", "src/assets/sounds/clique.mp3");
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
-  create() {
     let cards = [
       { nome: "card1", resposta: true },
       { nome: "card2", resposta: true },

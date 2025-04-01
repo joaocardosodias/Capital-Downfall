@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- O que essa parte faz? Codifica os caracteres -->
+    <meta charset="UTF-8" />
 
-<head>
-  <!-- O que essa parte faz? Codifica os caracteres -->
-  <meta charset="UTF-8" />
+    <!-- O que essa parte faz? Define a exibição da página (Altura e Largura) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- O que essa parte faz? Define a exibição da página (Altura e Largura) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- O que essa parte faz? Define o título da página -->
+    <title>Capital Downfall</title>
 
-  <!-- O que essa parte faz? Define o título da página -->
-  <title>Capital Downfall</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
 
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+      #game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
 
-    #game-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
+      @font-face {
+        font-family: "pixelArt";
+        src: url("src/assets/fontes/fontePixelArt.ttf") format("truetype");
+      }
 
+      @font-face {
+        font-family: "pixelArtNegrito";
+        src: url("src/assets/fontes/fontePixelArtNegrito.ttf")
+          format("truetype");
+      }
+    </style>
 
-    @font-face {
-      font-family: 'pixelArt';
-      src: url('src/assets/fontes/fontePixelArt.ttf') format('truetype');
-    }
+    <script src="src/phaser.js"></script>
+  </head>
 
-    @font-face {
-      font-family: 'pixelArtNegrito';
-      src: url('src/assets/fontes/fontePixelArtNegrito.ttf') format('truetype');
-    }
-  </style>
-
-  <script src="src/phaser.js"></script>
-</head>
-
-<body>
-
-  <script src="src/intro/menuInicial.js"></script>
-  <script src="src/intro/contratoInicial.js"></script>
-  <script src="src/intro/selecaoPersonagens.js"></script>
-  <script src="src/dia1/hub.js"></script>
-  <script src="src/dia1/apoioDia1.js"></script>
-  <script src="src/dia1/miniGame1.js"></script>
-  <script src="src/dia1/miniGame2.js"></script>
-  <script src="src/dia1/miniGame3.js"></script>
-  <script src="src/dia1/apoioMiniboss1.js"></script>
-  <script src="src/dia1/miniBossDia1.js"></script>
-  <script src="src/dia1/finalDia1.js"></script>
-  <script src="src/dia2/introDia2.js"></script>
-  <script src="src/dia2/hub2.js"></script>
-  <script src="src/dia2/apoioMinigame4.js"></script>
-  <script src="src/dia2/apoioMinigame5.js"></script>
-  <script src="src/dia2/apoioMinigame6.js"></script>
-  <script src="src/dia2/apoioDia2.js"></script>
-  <script src="src/dia2/miniGame4.js"></script>
-  <script src="src/dia2/miniGame5.js"></script>
-  <script src="src/dia2/miniGame6.js"></script>
-  <script src="src/dia2/finalDia2.js"></script>
-  <script src="src/diaFinal/hubFinal.js"></script>
-  <script src="src/diaFinal/salaDeGuerra.js"></script>
-  <script src="src/minigames/apoioGeral.js"></script>
-  <script src="src/dia2/animacao.js"></script>
-  <script src="src/game.js"></script>
-</body>
-
+  <body>
+    <script src="src/intro/preload.js"></script>
+    <script src="src/intro/menuInicial.js"></script>
+    <script src="src/intro/contratoInicial.js"></script>
+    <script src="src/intro/selecaoPersonagens.js"></script>
+    <script src="src/dia1/hub.js"></script>
+    <script src="src/dia1/apoioDia1.js"></script>
+    <script src="src/dia1/miniGame1.js"></script>
+    <script src="src/dia1/miniGame2.js"></script>
+    <script src="src/dia1/miniGame3.js"></script>
+    <script src="src/dia1/apoioMiniboss1.js"></script>
+    <script src="src/dia1/miniBossDia1.js"></script>
+    <script src="src/dia1/finalDia1.js"></script>
+    <script src="src/dia2/introDia2.js"></script>
+    <script src="src/dia2/hub2.js"></script>
+    <script src="src/dia2/apoioMinigame4.js"></script>
+    <script src="src/dia2/apoioMinigame5.js"></script>
+    <script src="src/dia2/apoioMinigame6.js"></script>
+    <script src="src/dia2/apoioDia2.js"></script>
+    <script src="src/dia2/miniGame4.js"></script>
+    <script src="src/dia2/miniGame5.js"></script>
+    <script src="src/dia2/miniGame6.js"></script>
+    <script src="src/dia2/finalDia2.js"></script>
+    <script src="src/diaFinal/hubFinal.js"></script>
+    <script src="src/diaFinal/salaDeGuerra.js"></script>
+    <script src="src/minigames/apoioGeral.js"></script>
+    <script src="src/dia2/animacao.js"></script>
+    <script src="src/game.js"></script>
+  </body>
 </html>

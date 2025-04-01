@@ -25,44 +25,6 @@ class miniGame3 extends Phaser.Scene {
     ];
   }
 
-  preload() {
-    this.load.image("timeline", "src/assets/dia1/miniGame3/Timeline.png");
-    this.load.image(
-      "botaoVerificar",
-      "src/assets/dia1/miniGame3/botaoVerificar.png"
-    ); // Imagem do botão de verificação
-    this.load.image("3card1", "src/assets/dia1/miniGame3/card1.png");
-    this.load.image("3card2", "src/assets/dia1/miniGame3/card2.png");
-    this.load.image("3card3", "src/assets/dia1/miniGame3/card3.png");
-    this.load.image("3card4", "src/assets/dia1/miniGame3/card4.png");
-    this.load.image("3card5", "src/assets/dia1/miniGame3/card5.png");
-
-    // Carrega os sons utilizados
-    this.load.audio("clique", "src/assets//dia2/miniGame4/sons/clique.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
   create() {
     this.cameras.main.setBackgroundColor("#195AB4");
 

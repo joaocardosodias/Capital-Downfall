@@ -12,32 +12,6 @@ class miniGame4 extends Phaser.Scene {
     this.musicaFundo;
   }
 
-  // Método para carregar recursos (imagens, sons, etc.)
-  preload() {
-    this.load.image(
-      "backgroundMinigame4",
-      "src/assets/dia2/miniGame4/background.png"
-    ); // Carrega o fundo da cena
-    this.load.image(
-      "enunciadoMinigame4",
-      "src/assets/dia2/miniGame4/enunciado.png"
-    ); // Carrega a imagem do enunciado
-    this.load.image("cartao1", "src/assets/dia2/miniGame4/botaoICMS.png"); // Carrega a imagem do card 1
-    this.load.image("cartao2", "src/assets/dia2/miniGame4/botaoIPI.png"); // Carrega a imagem do card 2
-    this.load.image("cartao3", "src/assets/dia2/miniGame4/botaoIOF.png"); // Carrega a imagem do card 3
-    this.load.image("cartao4", "src/assets/dia2/miniGame4/botaoISS.png"); // Carrega a imagem do card 4
-    this.load.image(
-      "botaoFinalizar",
-      "src/assets/dia2/miniGame4/botaoVerificar.png"
-    ); // Carrega a imagem do botão de finalizar
-    this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3"); // Carrega o som de clique
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-  }
-
   // Método para criar e configurar a cena
   create(data) {
     // Adiciona o fundo da cena
@@ -270,51 +244,7 @@ class BaseTributacaoScene extends Phaser.Scene {
     this.canetaEscrevendo;
   }
 
-  // Método para carregar recursos específicos de cada cena
   preload() {
-    this.load.image(
-      "backgroundMinigame4",
-      "src/assets/dia2/miniGame4/background.jpg"
-    ); // Carrega o fundo da cena
-    this.load.image(
-      "pergunta1Minigame4",
-      "src/assets/dia2/miniGame4/pergunta1.png"
-    ); // Carrega a imagem da pergunta do card 1
-    this.load.image(
-      "pergunta2Minigame4",
-      "src/assets/dia2/miniGame4/pergunta2.png"
-    ); // Carrega a imagem da pergunta do card 2
-    this.load.image(
-      "pergunta3Minigame4",
-      "src/assets/dia2/miniGame4/pergunta3.png"
-    ); // Carrega a imagem da pergunta do card 3
-    this.load.image(
-      "pergunta4Minigame4",
-      "src/assets/dia2/miniGame4/pergunta4.png"
-    ); // Carrega a imagem da pergunta do card 4
-    this.load.image(
-      "botaoVermelho",
-      "src/assets/dia2/miniGame4/botaoVermelho.png"
-    ); // Carrega o botão vermelho
-    this.load.image("botaoAzul", "src/assets/dia2/miniGame4/botaoAzul.png"); // Carrega o botão azul
-    this.load.image("botaoVerde", "src/assets/dia2/miniGame4/botaoVerde.png"); // Carrega o botão verde
-    this.load.image("botaoPreto", "src/assets/dia2/miniGame4/botaoPreto.png"); // Carrega o botão preto
-    this.load.image("borracha", "src/assets/dia2/miniGame4/borracha.png"); // Carrega a borracha
-    this.load.image(
-      "botaoVoltarMinigame4",
-      "src/assets/dia2/miniGame4/botaoVoltar.png"
-    ); // Carrega o botão de voltar
-    this.load.image("botaoLimpar", "src/assets/dia2/miniGame4/botaoLimpar.png"); // Carrega o botão de limpar
-    this.load.image(
-      "botaoAumentar",
-      "src/assets/dia2/miniGame4/botaoAumentar.png"
-    ); // Carrega o botão de aumentar espessura
-    this.load.image(
-      "botaoDiminuir",
-      "src/assets/dia2/miniGame4/botaoDIminuir.png"
-    ); // Carrega o botão de diminuir espessura
-    this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3"); // Carrega o som de clique
-
     // Carrega as imagens dos bloquinhos para cada card
     if (this.scene.key === "tributacaoScene1") {
       this.load.image(
@@ -385,31 +315,6 @@ class BaseTributacaoScene extends Phaser.Scene {
         "src/assets/dia2/miniGame4/bloquinho4Card4.png"
       );
     }
-    this.load.audio("somMovimento", "src/assets/sounds/movePostIt.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("canetaEscrevendo", "src/assets/sounds/scratchPencil.mp3");
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
   }
 
   // Método para criar e configurar a cena

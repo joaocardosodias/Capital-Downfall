@@ -44,61 +44,10 @@ class hub extends Phaser.Scene {
     }
   }
 
-  preload() {
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-
-    //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
-    this.load.image("tiles", "src/assets/hub/tileset.png");
-    this.load.image("player", "src/assets/players/player.png");
-    this.load.tilemapTiledJSON("hub", "src/assets/hub/tilemap.json");
-    this.load.image("colisao", "src/assets/hub/colisao.png");
-    this.load.spritesheet("avisoMinigame", "src/assets/hub/aviso.png", {
-      frameWidth: 32,
-      frameHeight: 64,
-    });
-    this.load.spritesheet(
-      "playerSpritesheetMary",
-      "src/assets/players/marySpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetMark",
-      "src/assets/players/markSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetMargaret",
-      "src/assets/players/margaretSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetSteve",
-      "src/assets/players/steveSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-
-    this.load.audio("musicaHub", "src/assets/sounds/jazzyMusicaHub1.mp3"); // Carrega a música de fundo
-    this.load.audio("passos", "src/assets/sounds/passos.mp3"); // Carrega o som dos passos
-    this.load.audio("interacaoMinigame", "src/assets/sounds/openMinigame.mp3"); // Carrega o som de interação com o minigame
-
+  create() {
     //Armazena na variável teclado o input das setinhas
     this.teclado = this.input.keyboard.createCursorKeys();
-  }
 
-  create() {
     // Antes do código a seguir, importante esclarecer: tileset(são as imagens utilizadas na criação do mapa)  tilemap(posição que as imagens assumirão)
 
     //Armazena na variável spacebar a tecla espaço
@@ -291,6 +240,7 @@ class hub extends Phaser.Scene {
           Phaser.Input.Keyboard.JustDown(this.E))
       ) {
         this.interacaoMinigame.play();
+        this.passos.stop();
         game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
         game.scene.sleep("hub");
       }
