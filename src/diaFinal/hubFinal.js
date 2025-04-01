@@ -15,10 +15,17 @@ class hubFinal extends Phaser.Scene {
     this.colisaoApoioGeral;
     this.colisaoBossFinal;
     this.avisoBossFinal;
+    this.sobreposto = false;
     this.teclado;
     this.spacebar;
+    this.E;
+    this.W;
+    this.A;
+    this.S;
+    this.D;
     this.layerParede;
     this.layerObjetos;
+    this.passos;
     this.interacaoMinigame;
     this.andando = false;
   }
@@ -30,52 +37,22 @@ class hubFinal extends Phaser.Scene {
     }
   }
 
-  preload() {
-    //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
-    this.load.image("tiles", "src/assets/hub/tileset.png");
-    this.load.image("player", "src/assets/players/player.png");
-    this.load.tilemapTiledJSON("hubFinal", "src/assets/hub/tilemap2.json");
-    this.load.image("colisao", "src/assets/hub/colisao.png");
-    this.load.spritesheet("avisoMinigame", "src/assets/hub/aviso.png", {
-      frameWidth: 32,
-      frameHeight: 64,
-    });
-    this.load.spritesheet(
-      "playerSpritesheetMary",
-      "src/assets/players/marySpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetMark",
-      "src/assets/players/markSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetMargaret",
-      "src/assets/players/margaretSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetSteve",
-      "src/assets/players/steveSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-
+  create() {
     //Armazena na variável teclado o input das setinhas
     this.teclado = this.input.keyboard.createCursorKeys();
 
-    this.load.audio("musicaHubFinal", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música de fundo
-    this.load.audio("passos", "src/assets/sounds/passos.mp3"); // Carrega o som dos passos
-    this.load.audio("interacaoMinigame", "src/assets/sounds/openMinigame.mp3"); // Carrega o som de interação com o minigame
-  }
-
-  create() {
     // Antes do código a seguir, importante esclarecer: tileset(são as imagens utilizadas na criação do mapa)  tilemap(posição que as imagens assumirão)
 
     //Armazena na variável spacebar a tecla espaço
     this.spacebar = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.SPACE
     );
+
+    this.E = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
+    this.W = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+    this.A = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+    this.S = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
+    this.D = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
 
     //Armazena na variável map o tilemap utilizado
     this.map = this.make.tilemap({ key: "hubFinal" });
@@ -138,8 +115,13 @@ class hubFinal extends Phaser.Scene {
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
-      if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
+      if (
+        (this.spacebar || this.E) &&
+        (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+          Phaser.Input.Keyboard.JustDown(this.E))
+      ) {
         this.interacaoMinigame.play();
+        this.passos.stop();
         game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
         game.scene.sleep("hubFinal");
       }
@@ -148,10 +130,15 @@ class hubFinal extends Phaser.Scene {
     //Verifica se o player está na mesma área que o detector de colisão do boss final
     this.physics.add.overlap(this.player, this.colisaoBossFinal, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
-      if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
+      if (
+        (this.spacebar || this.E) &&
+        (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+          Phaser.Input.Keyboard.JustDown(this.E))
+      ) {
         this.avisoBossFinal.setVisible(false);
+        this.passos.stop();
         this.interacaoMinigame.play();
-        game.scene.start("salaDeGuerra"); // MUDAR DEPOIS
+        game.scene.start("salaDeGuerra");
         game.scene.sleep("hubFinal");
       }
     });
@@ -165,7 +152,10 @@ class hubFinal extends Phaser.Scene {
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
 
-    if (this.teclado.left.isDown && this.teclado.up.isDown) {
+    if (
+      (this.teclado.left.isDown || this.A.isDown) &&
+      (this.teclado.up.isDown || this.W.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -174,7 +164,10 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(-210);
       this.player.anims.play("movimentoEsquerda", true);
       this.playerDirecao = "esquerda";
-    } else if (this.teclado.left.isDown && this.teclado.down.isDown) {
+    } else if (
+      (this.teclado.left.isDown || this.A.isDown) &&
+      (this.teclado.down.isDown || this.S.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -183,7 +176,10 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(210);
       this.player.anims.play("movimentoEsquerda", true);
       this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown && this.teclado.up.isDown) {
+    } else if (
+      (this.teclado.right.isDown || this.D.isDown) &&
+      (this.teclado.up.isDown || this.W.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -192,7 +188,10 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(-210);
       this.player.anims.play("movimentoDireita", true);
       this.playerDirecao = "direita";
-    } else if (this.teclado.right.isDown && this.teclado.down.isDown) {
+    } else if (
+      (this.teclado.right.isDown || this.D.isDown) &&
+      (this.teclado.down.isDown || this.S.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -201,7 +200,7 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(210);
       this.player.anims.play("movimentoDireita", true);
       this.playerDirecao = "direita";
-    } else if (this.teclado.left.isDown) {
+    } else if (this.teclado.left.isDown || this.A.isDown) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -210,7 +209,7 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(0);
       this.player.anims.play("movimentoEsquerda", true);
       this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown) {
+    } else if (this.teclado.right.isDown || this.D.isDown) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -219,7 +218,7 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(0);
       this.player.anims.play("movimentoDireita", true);
       this.playerDirecao = "direita";
-    } else if (this.teclado.up.isDown) {
+    } else if (this.teclado.up.isDown || this.W.isDown) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -228,7 +227,7 @@ class hubFinal extends Phaser.Scene {
       this.player.setVelocityY(-300);
       this.player.anims.play("movimentoCima", true);
       this.playerDirecao = "cima";
-    } else if (this.teclado.down.isDown) {
+    } else if (this.teclado.down.isDown || this.S.isDown) {
       if (!this.andando) {
         this.passos.play();
       }

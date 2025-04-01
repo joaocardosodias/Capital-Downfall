@@ -19,60 +19,38 @@ class hub2 extends Phaser.Scene {
     this.avisoMinigame4;
     this.avisoMinigame5;
     this.avisoMinigame6;
+    this.minigameAtual;
+    this.sobreposto = false;
     this.teclado;
     this.spacebar;
+    this.E;
+    this.W;
+    this.A;
+    this.S;
+    this.D;
     this.layerParede;
     this.layerDecoracoes;
-    this.interacaoMinigame;
+    this.passos;
     this.andando = false;
-  }
-
-  preload() {
-    //Preload das imagens, incluindo o tilemap/set utilizado e os itens que serão interativos
-    this.load.image("tiles", "src/assets/hub/tileset.png");
-    this.load.image("player", "src/assets/players/player.png");
-    this.load.tilemapTiledJSON("hub2", "src/assets/hub/tilemap.json");
-    this.load.image("colisao", "src/assets/hub/colisao.png");
-    this.load.spritesheet("avisoMinigame", "src/assets/hub/aviso.png", {
-      frameWidth: 32,
-      frameHeight: 64,
-    });
-    this.load.spritesheet(
-      "playerSpritesheetMary",
-      "src/assets/players/marySpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetMark",
-      "src/assets/players/markSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetMargaret",
-      "src/assets/players/margaretSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-    this.load.spritesheet(
-      "playerSpritesheetSteve",
-      "src/assets/players/steveSpritesheet.png",
-      { frameWidth: 32, frameHeight: 64 }
-    );
-
-    //Armazena na variável teclado o input das setinhas
-    this.teclado = this.input.keyboard.createCursorKeys();
-
-    this.load.audio("musicaHub2", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música de fundo
-    this.load.audio("passos", "src/assets/sounds/passos.mp3"); // Carrega o som dos passos
-    this.load.audio("interacaoMinigame", "src/assets/sounds/openMinigame.mp3"); // Carrega o som de interação com o minigame
+    this.interacaoMinigame;
   }
 
   create() {
+    //Armazena na variável teclado o input das setinhas
+    this.teclado = this.input.keyboard.createCursorKeys();
+
     // Antes do código a seguir, importante esclarecer: tileset(são as imagens utilizadas na criação do mapa)  tilemap(posição que as imagens assumirão)
 
     //Armazena na variável spacebar a tecla espaço
     this.spacebar = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.SPACE
     );
+
+    this.E = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
+    this.W = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+    this.A = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+    this.S = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
+    this.D = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
 
     //Armazena na variável map o tilemap utilizado
     const map = this.make.tilemap({ key: "hub" });
@@ -155,7 +133,11 @@ class hub2 extends Phaser.Scene {
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
-      if (this.spacebar && Phaser.Input.Keyboard.JustDown(this.spacebar)) {
+      if (
+        (this.spacebar || this.E) &&
+        (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+          Phaser.Input.Keyboard.JustDown(this.E))
+      ) {
         this.interacaoMinigame.play();
         this.passos.stop();
         game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
@@ -163,101 +145,141 @@ class hub2 extends Phaser.Scene {
       }
     });
 
-   // Criando o aviso "Aperte espaço para interagir"
-   this.fundoInteracao = this.add.rectangle(0, 0, 170, 56, 0x90a2e0, 0.5).setOrigin(0.5).setVisible(false).setDepth(10.5);
-   this.textoInteracao = this.add.text(0, 0, 'Aperte ESPAÇO\npara interagir', {
-     fontSize: '16px',
-     fontFamily: 'pixelArtNegrito',
-     fill: '#fff',
-     align: 'center',
-   }).setOrigin(0.5).setVisible(false).setDepth(11);
+    // Criando o aviso "Aperte espaço para interagir"
+    this.fundoInteracao = this.add
+      .rectangle(0, 0, 170, 56, 0x90a2e0, 0.5)
+      .setOrigin(0.5)
+      .setVisible(false)
+      .setDepth(10.5);
+    this.textoInteracao = this.add
+      .text(0, 0, "Aperte ESPAÇO\npara interagir", {
+        fontSize: "16px",
+        fontFamily: "pixelArtNegrito",
+        fill: "#fff",
+        align: "center",
+      })
+      .setOrigin(0.5)
+      .setVisible(false)
+      .setDepth(11);
 
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame4, () => {
+      // O player não pode jogar o minigame mais de 1 vez
+      if (!minigame4Jogado) {
+        // Atualiza a posição do aviso para ficar em baixo do player
+        this.fundoInteracao
+          .setPosition(this.player.x, this.player.y + 80)
+          .setVisible(true);
+        this.textoInteracao
+          .setPosition(this.player.x + 2, this.player.y + 80)
+          .setVisible(true);
+        // Verifica se o player pressionou espaço para iniciar o minigame
+        if (
+          (this.spacebar || this.E) &&
+          (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+            Phaser.Input.Keyboard.JustDown(this.E))
+        ) {
+          this.textoInteracao.setVisible(false);
+          this.fundoInteracao.setVisible(false);
+          this.avisoMinigame4.setVisible(false);
+          this.interacaoMinigame.play();
+          this.passos.stop();
+          this.minigameAtual = 4;
+          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
+          game.scene.sleep("hub2");
+        }
+      }
+    });
 
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame5, () => {
+      // O player não pode jogar o minigame mais de 1 vez
+      if (!minigame5Jogado) {
+        // Atualiza a posição do aviso para ficar em baixo do player
+        this.fundoInteracao
+          .setPosition(this.player.x, this.player.y + 80)
+          .setVisible(true);
+        this.textoInteracao
+          .setPosition(this.player.x + 2, this.player.y + 80)
+          .setVisible(true);
+        // Verifica se o player pressionou espaço para iniciar o minigame
+        if (
+          (this.spacebar || this.E) &&
+          (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+            Phaser.Input.Keyboard.JustDown(this.E))
+        ) {
+          this.textoInteracao.setVisible(false);
+          this.fundoInteracao.setVisible(false);
+          this.avisoMinigame5.setVisible(false);
+          this.interacaoMinigame.play();
+          this.passos.stop();
+          this.minigameAtual = 5;
+          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
+          game.scene.sleep("hub2");
+        }
+      }
+    });
 
-   // Verifica se o player está na mesma área que o detector de colisão do minigame 1
-   this.physics.add.overlap(this.player, this.colisaoMinigame4, () => {
-     // O player não pode jogar o minigame mais de 1 vez
-     if (!minigame4Jogado) {
-       // Atualiza a posição do aviso para ficar em baixo do player
-       this.fundoInteracao.setPosition(this.player.x, this.player.y + 80).setVisible(true);
-       this.textoInteracao.setPosition(this.player.x + 2, this.player.y + 80).setVisible(true);
-       // Verifica se o player pressionou espaço para iniciar o minigame
-       if ((this.spacebar || this.E) && (Phaser.Input.Keyboard.JustDown(this.spacebar) || Phaser.Input.Keyboard.JustDown(this.E))) {
-         this.textoInteracao.setVisible(false);
-         this.fundoInteracao.setVisible(false);
-         this.avisoMinigame4.setVisible(false);
-         this.interacaoMinigame.play();
-         this.passos.stop();
-         this.minigameAtual = 4;
-         game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
-         game.scene.sleep('hub2');
-       }
-     }
-   });
-
-
-   // Verifica se o player está na mesma área que o detector de colisão do minigame 1
-   this.physics.add.overlap(this.player, this.colisaoMinigame5, () => {
-     // O player não pode jogar o minigame mais de 1 vez
-     if (!minigame5Jogado) {
-       // Atualiza a posição do aviso para ficar em baixo do player
-       this.fundoInteracao.setPosition(this.player.x, this.player.y + 80).setVisible(true);
-       this.textoInteracao.setPosition(this.player.x + 2, this.player.y + 80).setVisible(true);
-       // Verifica se o player pressionou espaço para iniciar o minigame
-       if ((this.spacebar || this.E) && (Phaser.Input.Keyboard.JustDown(this.spacebar) || Phaser.Input.Keyboard.JustDown(this.E))) {
-         this.textoInteracao.setVisible(false);
-         this.fundoInteracao.setVisible(false);
-         this.avisoMinigame5.setVisible(false);
-         this.interacaoMinigame.play();
-         this.passos.stop();
-         this.minigameAtual = 5;
-         game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
-         game.scene.sleep('hub2');
-       }
-     }
-   });
-
-
-   // Verifica se o player está na mesma área que o detector de colisão do minigame 1
-   this.physics.add.overlap(this.player, this.colisaoMinigame6, () => {
-     // O player não pode jogar o minigame mais de 1 vez
-     if (!minigame6Jogado) {
-       // Atualiza a posição do aviso para ficar em baixo do player
-       this.fundoInteracao.setPosition(this.player.x, this.player.y + 80).setVisible(true);
-       this.textoInteracao.setPosition(this.player.x + 2, this.player.y + 80).setVisible(true);
-       // Verifica se o player pressionou espaço para iniciar o minigame
-       if ((this.spacebar || this.E) && (Phaser.Input.Keyboard.JustDown(this.spacebar) || Phaser.Input.Keyboard.JustDown(this.E))) {
-         this.textoInteracao.setVisible(false);
-         this.fundoInteracao.setVisible(false);
-         this.avisoMinigame6.setVisible(false);
-         this.interacaoMinigame.play();
-         this.passos.stop();
-         this.minigameAtual = 6;
-         game.scene.start('apoioDia2', { minigameAtual: this.minigameAtual });
-         game.scene.sleep('hub2');
-       }
-     }
-   });
+    // Verifica se o player está na mesma área que o detector de colisão do minigame 1
+    this.physics.add.overlap(this.player, this.colisaoMinigame6, () => {
+      // O player não pode jogar o minigame mais de 1 vez
+      if (!minigame6Jogado) {
+        // Atualiza a posição do aviso para ficar em baixo do player
+        this.fundoInteracao
+          .setPosition(this.player.x, this.player.y + 80)
+          .setVisible(true);
+        this.textoInteracao
+          .setPosition(this.player.x + 2, this.player.y + 80)
+          .setVisible(true);
+        // Verifica se o player pressionou espaço para iniciar o minigame
+        if (
+          (this.spacebar || this.E) &&
+          (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+            Phaser.Input.Keyboard.JustDown(this.E))
+        ) {
+          this.textoInteracao.setVisible(false);
+          this.fundoInteracao.setVisible(false);
+          this.avisoMinigame6.setVisible(false);
+          this.interacaoMinigame.play();
+          this.passos.stop();
+          this.minigameAtual = 6;
+          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
+          game.scene.sleep("hub2");
+        }
+      }
+    });
 
     //Configura a câmera para seguir o jogador, além do zoom
     this.cameras.main.startFollow(this.player, true, 0.2, 0.2);
     this.cameras.main.setZoom(1).setRoundPixels(true);
 
     // Adiciona o texto da pontuação
-    this.textoPontuacao = this.add.text(570, 10, `Pontuação: ${pontuacao}`, { 
-      fontFamily: 'pixelArt',  // Nome da fonte personalizada
-      fontSize: '20px', 
-      color: '#ffffff' 
-    }).setScrollFactor(0).setDepth(10);  // Define a profundidade do texto para que ele fique visível 
+    this.textoPontuacao = this.add
+      .text(570, 10, `Pontuação: ${pontuacao}`, {
+        fontFamily: "pixelArt", // Nome da fonte personalizada
+        fontSize: "20px",
+        color: "#ffffff",
+      })
+      .setScrollFactor(0)
+      .setDepth(10); // Define a profundidade do texto para que ele fique visível
 
     // Adiciona um efeito de sombra ao redor do texto
-    this.textoPontuacao.setShadow(2, 2, '#000000', 2);
+    this.textoPontuacao.setShadow(2, 2, "#000000", 2);
   }
 
   update() {
     // Atualiza o texto com o valor atual da variável 'pontuacao' a cada frame
     this.textoPontuacao.setText(`Pontuação: ${pontuacao}`);
-    
+
+    if (
+      !this.physics.overlap(this.player, this.colisaoMinigame4) &&
+      !this.physics.overlap(this.player, this.colisaoMinigame5) &&
+      !this.physics.overlap(this.player, this.colisaoMinigame6)
+    ) {
+      this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
+      this.fundoInteracao.setVisible(false);
+    }
+
     if (
       minigame4Jogado === true &&
       minigame5Jogado === true &&
@@ -272,7 +294,10 @@ class hub2 extends Phaser.Scene {
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
 
-    if (this.teclado.left.isDown && this.teclado.up.isDown) {
+    if (
+      (this.teclado.left.isDown || this.A.isDown) &&
+      (this.teclado.up.isDown || this.W.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -281,7 +306,10 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(-210);
       this.player.anims.play("movimentoEsquerda", true);
       this.playerDirecao = "esquerda";
-    } else if (this.teclado.left.isDown && this.teclado.down.isDown) {
+    } else if (
+      (this.teclado.left.isDown || this.A.isDown) &&
+      (this.teclado.down.isDown || this.S.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -290,7 +318,10 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(210);
       this.player.anims.play("movimentoEsquerda", true);
       this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown && this.teclado.up.isDown) {
+    } else if (
+      (this.teclado.right.isDown || this.D.isDown) &&
+      (this.teclado.up.isDown || this.W.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -299,7 +330,10 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(-210);
       this.player.anims.play("movimentoDireita", true);
       this.playerDirecao = "direita";
-    } else if (this.teclado.right.isDown && this.teclado.down.isDown) {
+    } else if (
+      (this.teclado.right.isDown || this.D.isDown) &&
+      (this.teclado.down.isDown || this.S.isDown)
+    ) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -308,7 +342,7 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(210);
       this.player.anims.play("movimentoDireita", true);
       this.playerDirecao = "direita";
-    } else if (this.teclado.left.isDown) {
+    } else if (this.teclado.left.isDown || this.A.isDown) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -317,7 +351,7 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(0);
       this.player.anims.play("movimentoEsquerda", true);
       this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown) {
+    } else if (this.teclado.right.isDown || this.D.isDown) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -326,7 +360,7 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(0);
       this.player.anims.play("movimentoDireita", true);
       this.playerDirecao = "direita";
-    } else if (this.teclado.up.isDown) {
+    } else if (this.teclado.up.isDown || this.W.isDown) {
       if (!this.andando) {
         this.passos.play();
       }
@@ -335,7 +369,7 @@ class hub2 extends Phaser.Scene {
       this.player.setVelocityY(-300);
       this.player.anims.play("movimentoCima", true);
       this.playerDirecao = "cima";
-    } else if (this.teclado.down.isDown) {
+    } else if (this.teclado.down.isDown || this.S.isDown) {
       if (!this.andando) {
         this.passos.play();
       }

@@ -22,41 +22,6 @@ class miniBossDia1 extends Phaser.Scene {
     this.somFundo;
   }
 
-  preload() {
-    // Carrega os elementos da cena
-    // Estrutura de repetição para carregar as 9 perguntas, as 9 imagens de feedback correto e as 9 imagens de feedback negativo
-    for (let i = 1; i <= 9; i++) {
-      this.load.image(
-        `pergunta${i}`,
-        `src/assets/dia1/miniBossDia1/pergunta${i}.png`
-      );
-      this.load.image(
-        `acertou${i}`,
-        `src/assets/dia1/miniBossDia1/acertou${i}.png`
-      );
-      this.load.image(
-        `errou${i}`,
-        `src/assets/dia1/miniBossDia1/errou${i}.png`
-      );
-    }
-    this.load.image("botao", "src/assets/dia1/miniBossDia1/botao.png");
-    this.load.image("pular", "src/assets/dia1/miniBossDia1/pular.png");
-    this.load.image(
-      "botaoVoltar",
-      "src/assets/dia1/miniBossDia1/botaoVoltar.png"
-    );
-
-    // Carrega os sons utilizados
-    this.load.audio("click", ["src/assets/dia2/miniGame4/sons/clique.mp3"]);
-    this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
-    this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
-    this.load.audio("conclusao", "src/assets/sounds/taskSucess.mp3");
-
-    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
-    this.load.spritesheet("voltarAoMapa", "src/assets/telas_pontuacao/voltarAoMapa.png", { frameWidth: 400, frameHeight: 110 });
-  }
-
   create() {
     // Adiciona os elementos carregados anteriormente a tela
     // Variável que divide as perguntas em tópicos, assim toda vez que o jogador jogar essa fase ele terá obrigatoriamente que passar por uma pergunta de cada tópico
@@ -218,52 +183,52 @@ class miniBossDia1 extends Phaser.Scene {
     this.limparCena();
 
     this.sound.play("conclusao");
-          this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
-          miniBossDia1.fim = this.add.image(400, 300, "fim").setDepth(31);
+    this.add.rectangle(400, 300, 800, 600, 0x324891).setDepth(30).setAlpha(1);
+    miniBossDia1.fim = this.add.image(400, 300, "fim").setDepth(31);
 
-          pontuacao += this.pontuacaoB1
+    pontuacao += this.pontuacaoB1;
 
-          // Criação da tela de pontuação
-          this.add
-            .text(402, 311, this.pontuacaoB1, {
-              fontFamily: "pixelArtNumeros",
-              fill: "#ffffff",
-              fontSize: '32px',
-            })
-            .setOrigin(0.5)
-            .setDepth(32);
+    // Criação da tela de pontuação
+    this.add
+      .text(402, 311, this.pontuacaoB1, {
+        fontFamily: "pixelArtNumeros",
+        fill: "#ffffff",
+        fontSize: "32px",
+      })
+      .setOrigin(0.5)
+      .setDepth(32);
 
-          this.add
-            .text(402, 409, pontuacao, {
-              fontFamily: "pixelArtNumeros",
-              fill: "#ffffff",
-              fontSize: '48px',
-            })
-            .setOrigin(0.5)
-            .setDepth(32);
+    this.add
+      .text(402, 409, pontuacao, {
+        fontFamily: "pixelArtNumeros",
+        fill: "#ffffff",
+        fontSize: "48px",
+      })
+      .setOrigin(0.5)
+      .setDepth(32);
 
-          this.anims.create({
-            key: "voltarAoMapaB1",
-            frames: this.anims.generateFrameNumbers(
-              "voltarAoMapa",
-              { start: 0, end: 11 }
-            ),
-            frameRate: 6,
-            repeat: -1,
-          });
+    this.anims.create({
+      key: "voltarAoMapaB1",
+      frames: this.anims.generateFrameNumbers("voltarAoMapa", {
+        start: 0,
+        end: 11,
+      }),
+      frameRate: 6,
+      repeat: -1,
+    });
 
-          this.voltarAoMapaB1 = this.add
-            .sprite(695, 530, "voltarAoMapa")
-            .setInteractive()
-            .setDepth(32);
+    this.voltarAoMapaB1 = this.add
+      .sprite(695, 530, "voltarAoMapa")
+      .setInteractive()
+      .setDepth(32);
 
-          this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true)
-          
-          this.voltarAoMapaB1.on("pointerdown", () => {
-            this.somFundo.stop();
-            this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-            this.scene.start("finalDia1");
-            this.scene.stop("miniBossDia1");
-          });
+    this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true);
+
+    this.voltarAoMapaB1.on("pointerdown", () => {
+      this.somFundo.stop();
+      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+      this.scene.start("finalDia1");
+      this.scene.stop("miniBossDia1");
+    });
   }
 }

@@ -16,32 +16,6 @@ Confiamos em você...`,
     ];
   }
 
-  preload() {
-    // Carrega os assets necessários
-    this.load.image("imailFundo", "src/assets/materiais_apoio/Slick.png");
-    this.load.image(
-      "botaoProximo",
-      "src/assets/materiais_apoio/botaoProximo.png"
-    );
-    this.load.image(
-      "botaoAnterior",
-      "src/assets/materiais_apoio/botaoAnterior.png"
-    );
-    this.load.image(
-      "botaoComecar",
-      "src/assets/materiais_apoio/botaoComecar.png"
-    );
-    this.load.image("selecao", "src/assets/materiais_apoio/selecao.png");
-    this.load.image(
-      "selecaoDesistir",
-      "src/assets/materiais_apoio/selecaoDesistir.png"
-    );
-
-    // Carrega o som de clique
-    this.load.audio("clique", "src/assets/dia2/miniGame4/sons/clique.mp3");
-    this.load.audio("somAdiante", "src/assets/sounds/clique.mp3");
-  }
-
   create() {
     // Configura o som de troca de cenas
     this.somAdiante = this.sound.add("somAdiante");

@@ -24,18 +24,6 @@ class menuInicial extends Phaser.Scene {
     this.clique;
   }
 
-  // Preload dos assets
-  preload() {
-    this.load.spritesheet("menu", "src/assets/intro/menuInicial.png", {
-      frameWidth: 800,
-      frameHeight: 600,
-    });
-
-    this.load.image("botaoIniciar", "src/assets/intro/botaoIniciar.png");
-    this.load.audio("musicaIntro", "src/assets/sounds/rockMusicaHub.mp3");
-    this.load.audio("clique", "src/assets/sounds/clique.mp3");
-  }
-
   create() {
     // Cria o sprite da tela inicial
 

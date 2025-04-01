@@ -38,6 +38,25 @@ class selecaoPersonagens extends Phaser.Scene {
     this.load.audio("musicaFundo", "src/assets/sounds/escritorioFlow.mp3");
     this.load.audio("somFinalizar", "src/assets/sounds/taskSucess.mp3");
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
+
+    //  Cria as variáveis da tela de loading
+    let barraProgresso = this.add.graphics();
+    let caixaProgresso = this.add.graphics();
+    caixaProgresso.fillStyle(0x222222, 0.8);
+    caixaProgresso.fillRect(240, 270, 320, 50);
+
+    //  Atualiza ao vivo a barra de progresso
+    this.load.on("progress", function (value) {
+      barraProgresso.clear();
+      barraProgresso.fillStyle(0xffffff, 1);
+      barraProgresso.fillRect(250, 280, 300 * value, 30);
+    });
+
+    //  Quando o jogo termina de carregar, a barra é destruída
+    this.load.on("complete", function () {
+      barraProgresso.destroy();
+      caixaProgresso.destroy();
+    });
   }
 
   create() {
@@ -48,57 +67,56 @@ class selecaoPersonagens extends Phaser.Scene {
 
     this.clique = this.sound.add("clique");
 
-        this.add.image(400, 300, 'fundo').setDepth(-1);
+    this.add.image(400, 300, "fundo").setDepth(-1);
 
-        this.texto = this.add.text(100, 90, 'confiamos em você, ...uhh', {
-            fontFamily: "pixelArt",
-            color: '#ffffff',
-            fontSize: '24px',
-        });
+    this.texto = this.add.text(100, 90, "confiamos em você, ...uhh", {
+      fontFamily: "pixelArt",
+      color: "#ffffff",
+      fontSize: "24px",
+    });
 
-        for (let i=1; i<5; i++){
-        this.add.rectangle(160*i, 300, 140, 300, 0xffffff).setAlpha(0.25)
-        }
-        
-          
-      this.botao0 = this.add
-        .image(160, 300, "botaoMary")
-        .setInteractive()
-        .setDepth(10)
-        .setOrigin(0.5, 0.5);
-      this.botao1 = this.add
-        .image(320, 300, "botaoMark")
-        .setInteractive()
-        .setDepth(10)
-        .setOrigin(0.5, 0.5);
-      this.botao2 = this.add
-        .image(480, 300, "botaoMargaret")
-        .setInteractive()
-        .setDepth(10)
-        .setOrigin(0.5, 0.5);
-      this.botao3 = this.add
-        .image(640, 300, "botaoSteve")
-        .setInteractive()
-        .setDepth(10)
-        .setOrigin(0.5, 0.5);
+    for (let i = 1; i < 5; i++) {
+      this.add.rectangle(160 * i, 300, 140, 300, 0xffffff).setAlpha(0.25);
+    }
 
-      this.botaoSelecionar = this.add
-        .image(400, 520, "botaoSelecionarDesativado")
-        .setInteractive()
-        .setDepth(11)
-        .setOrigin(0.5, 0.5)
-        .setAlpha(0.5);
+    this.botao0 = this.add
+      .image(160, 300, "botaoMary")
+      .setInteractive()
+      .setDepth(10)
+      .setOrigin(0.5, 0.5);
+    this.botao1 = this.add
+      .image(320, 300, "botaoMark")
+      .setInteractive()
+      .setDepth(10)
+      .setOrigin(0.5, 0.5);
+    this.botao2 = this.add
+      .image(480, 300, "botaoMargaret")
+      .setInteractive()
+      .setDepth(10)
+      .setOrigin(0.5, 0.5);
+    this.botao3 = this.add
+      .image(640, 300, "botaoSteve")
+      .setInteractive()
+      .setDepth(10)
+      .setOrigin(0.5, 0.5);
 
-      for (let i = 0; i < 4; i++) {
-        let botao = this[`botao${i}`];
+    this.botaoSelecionar = this.add
+      .image(400, 520, "botaoSelecionarDesativado")
+      .setInteractive()
+      .setDepth(11)
+      .setOrigin(0.5, 0.5)
+      .setAlpha(0.5);
 
-        botao.on("pointerover", () => {
-          if (this.personagemSelecionado.numero === i) {
-            botao.setTexture(
-              "botao" + this.personagens[i] + "SelecionadoSelecao"
-            );
-          } else {
-            botao.setTexture("botao" + this.personagens[i] + "Selecao");
+    for (let i = 0; i < 4; i++) {
+      let botao = this[`botao${i}`];
+
+      botao.on("pointerover", () => {
+        if (this.personagemSelecionado.numero === i) {
+          botao.setTexture(
+            "botao" + this.personagens[i] + "SelecionadoSelecao"
+          );
+        } else {
+          botao.setTexture("botao" + this.personagens[i] + "Selecao");
         }
       });
       botao.on("pointerout", () => {
