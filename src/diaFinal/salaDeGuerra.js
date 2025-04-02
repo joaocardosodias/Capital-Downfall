@@ -141,7 +141,7 @@ class salaDeGuerra extends Phaser.Scene {
         ],
       },
     ];
-    this.tempoInicial = 300;
+    this.tempoInicial = 600;
     this.timer = this.tempoInicial; // Variável que irá conter o tempo restante atual
     this.timerText = null;
     this.questionText = null;
@@ -248,11 +248,11 @@ class salaDeGuerra extends Phaser.Scene {
     // Cria todos os fogos que aparecerão na tela assim como sua posição, textura, profundidade, escala e tempo de aparição
     this.incendio = [
       { fogo: this.fogoA = this.add.sprite(50, 600, "fogo1").setDepth(-8).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 1 },
-      { fogo: this.fogoB = this.add.sprite(450, 600, "fogo1").setDepth(-6).setScale(5).setOrigin(0.5, 0), tempoDeAparicao: 4 / 12 },
-      { fogo: this.fogoC = this.add.sprite(150, 600, "fogo2").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 2 / 12 },
-      { fogo: this.fogoD = this.add.sprite(300, 600, "fogo2").setDepth(-9).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 8 / 12 },
-      { fogo: this.fogoE = this.add.sprite(750, 600, "fogo3").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 7 / 12 },
-      { fogo: this.fogoF = this.add.sprite(600, 600, "fogo4").setDepth(-7).setScale(4).setOrigin(0.5, 0), tempoDeAparicao: 6 / 12 },
+      { fogo: this.fogoB = this.add.sprite(450, 600, "fogo1").setDepth(-6).setScale(5).setOrigin(0.5, 0), tempoDeAparicao: 2 / 12 },
+      { fogo: this.fogoC = this.add.sprite(150, 600, "fogo2").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 1 / 12 },
+      { fogo: this.fogoD = this.add.sprite(300, 600, "fogo2").setDepth(-9).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 4 / 12 },
+      { fogo: this.fogoE = this.add.sprite(750, 600, "fogo3").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 3 / 12 },
+      { fogo: this.fogoF = this.add.sprite(600, 600, "fogo4").setDepth(-7).setScale(4).setOrigin(0.5, 0), tempoDeAparicao: 5 / 12 },
       { fogo: this.fogoG = this.add.sprite(720, 600, "fogo5").setDepth(0).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 10 / 12 },
     ];
 
