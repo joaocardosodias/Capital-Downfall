@@ -23,16 +23,16 @@ class salaDeGuerra extends Phaser.Scene {
 
     this.questions = [
       {
-        text: "Qual é a principal característica \nde um fundo aberto em relação à liquidez?",
+        text: "Qual é a principal característica de um fundo aberto em relação à liquidez?",
         options: [
-          "A) O investidor só pode resgatar \no dinheiro ao final de um prazo fixo.",
-          "B) O investidor pode comprar e \nvender cotas a qualquer momento.",
-          "C) As aplicações são restritas e \nnão permitem novos aportes.",
-          "D) A liquidez é garantida apenas ao \nfinal do período de investimento.",
+          "A) O investidor só pode resgatar o dinheiro ao final de um prazo fixo.",
+          "B) O investidor pode comprar e vender cotas a qualquer momento.",
+          "C) As aplicações são restritas e não permitem novos aportes.",
+          "D) A liquidez é garantida apenas ao final do período de investimento.",
         ],
       },
       {
-        text: "Qual tipo de fundo é mais adequado \npara quem busca flexibilidade?",
+        text: "Qual tipo de fundo é mais adequado para quem busca flexibilidade?",
         options: [
           "A) Fundo Imobiliário",
           "B) Fundo Fechado",
@@ -42,7 +42,7 @@ class salaDeGuerra extends Phaser.Scene {
       },
       // Mini game 1 - Questão 2 (original)
       {
-        text: "Qual tipo de fundo é mais adequado para \nquem busca flexibilidade e acesso rápido \nao dinheiro?",
+        text: "Qual tipo de fundo é mais adequado para quem busca flexibilidade e acesso rápido ao dinheiro?",
         options: [
           "A) Fundo Imobiliário",
           "B) Fundo Fechado",
@@ -52,7 +52,7 @@ class salaDeGuerra extends Phaser.Scene {
       },
       // Mini game 2
       {
-        text: "Se um valor de R$ 2.350,00 é investido \ncom uma taxa de 12% ao ano, qual \nserá o montante após 1 ano?",
+        text: "Se um valor de R$ 2.350,00 é investido com uma taxa de 12% ao ano, qual será o montante após 1 ano?",
         options: [
           "A) R$ 2.600,00",
           "B) R$ 2.632,00",
@@ -61,7 +61,7 @@ class salaDeGuerra extends Phaser.Scene {
         ],
       },
       {
-        text: "Um investidor aplicou R$ 30.000,00 em um fundo. \nNo primeiro ano, houve uma depreciação de \n6%, no segundo uma recuperação de 4% e no \nterceiro uma queda de 3%. Qual o valor final?",
+        text: "Um investidor aplicou R$ 30.000,00 em um fundo. No primeiro ano, houve uma depreciação de 6%, no segundo uma recuperação de 4% e no terceiro uma queda de 3%. Qual o valor final?",
         options: [
           "A) R$ 29.474,40",
           "B) R$ 28.972,00",
@@ -71,26 +71,26 @@ class salaDeGuerra extends Phaser.Scene {
       },
       // Mini game 3
       {
-        text: "O que é o prazo de cotização em \num processo de resgate de fundos?",
+        text: "O que é o prazo de cotização em um processo de resgate de fundos?",
         options: [
-          "A) O tempo que o cliente leva \npara solicitar o resgate do fundo.",
-          "B) O período necessário para \nque a ordem de venda de \ncota seja registrada \ne comece a render.",
-          "C) O prazo para que o valor \ndo fundo seja reinvestido \nem outra aplicação.",
-          "D) O tempo que o banco \nleva para liberar o dinheiro \nna conta do cliente.",
+          "A) O tempo que o cliente leva para solicitar o resgate do fundo.",
+          "B) O período necessário para que a ordem de venda de cota seja registrada e comece a render.",
+          "C) O prazo para que o valor do fundo seja reinvestido em outra aplicação.",
+          "D) O tempo que o banco leva para liberar o dinheiro na conta do cliente.",
         ],
       },
       {
-        text: "O que acontece após o prazo de cotização \nno processo de resgate de um fundo?",
+        text: "O que acontece após o prazo de cotização no processo de resgate de um fundo?",
         options: [
-          "A) O cliente pode receber \nimediatamente o valor resgatado.",
-          "B) O valor começa a ser investido \nnovamente com novas cotas.",
-          "C) Ocorre o prazo de liquidação, \nque corresponde ao tempo \nnecessário para concluir a \ntransação e liberar o dinheiro.",
-          "D) O fundo passa a ser bloqueado \npor um período de carência.",
+          "A) O cliente pode receber imediatamente o valor resgatado.",
+          "B) O valor começa a ser investido novamente com novas cotas.",
+          "C) Ocorre o prazo de liquidação, que corresponde ao tempo necessário para concluir a transação e liberar o dinheiro.",
+          "D) O fundo passa a ser bloqueado por um período de carência.",
         ],
       },
       // Mini game 4
       {
-        text: "Um fundo de renda fixa tem Come-Cotas \nde 15%. Se um investidor aplicou R$ 10.000,00, \nqual será o valor após 1 ano?",
+        text: "Um fundo de renda fixa tem Come-Cotas de 15%. Se um investidor aplicou R$ 10.000,00, qual será o valor após 1 ano?",
         options: [
           "A) R$ 10.650,00",
           "B) R$ 10.500,00",
@@ -99,31 +99,31 @@ class salaDeGuerra extends Phaser.Scene {
         ],
       },
       {
-        text: "Qual é o imposto de renda aplicado sobre o \nlucro de um fundo de ações no momento \ndo resgate?",
+        text: "Qual é o imposto de renda aplicado sobre o lucro de um fundo de ações no momento do resgate?",
         options: ["A) 20%", "B) 5%", "C) 15%", "D) 10%"],
       },
       // Mini game 5
       {
-        text: "O que é a Taxa Interna de Retorno (TIR) \nem um contexto financeiro?",
+        text: "O que é a Taxa Interna de Retorno (TIR) em um contexto financeiro?",
         options: [
-          "A) Indicador que mede a \nvariação do índice Bovespa \nao longo do tempo.",
-          "B) Estratégia de proteção \ncontra riscos financeiros \nusando derivativos.",
-          "C) Taxa que iguala as entradas\ne saídas de caixa de um investimento,\nindicando sua rentabilidade.",
-          "D) Prazo de liquidação financeira\n de um ativo após a venda.",
+          "A) Indicador que mede a variação do índice Bovespa ao longo do tempo.",
+          "B) Estratégia de proteção contra riscos financeiros usando derivativos.",
+          "C) Taxa que iguala as entradas e saídas de caixa de um investimento, indicando sua rentabilidade.",
+          "D) Prazo de liquidação financeira de um ativo após a venda.",
         ],
       },
       {
         text: "O que é um Swap no mercado financeiro?",
         options: [
-          "A) Um contrato derivativo em \nque duas partes trocam fluxos \nfinanceiros baseados em \ndiferentes índices.",
-          "B) Um fundo que investe \nexclusivamente em \nações da B3.",
-          "C) Uma estratégia de hedge \npara garantir rentabilidade \nfixa em ativos.",
-          "D) Um fundo de private equity \nque adquire participação \nacionária em empresas privadas.",
+          "A) Um contrato derivativo em que duas partes trocam fluxos financeiros baseados em diferentes índices.",
+          "B) Um fundo que investe exclusivamente em ações da B3.",
+          "C) Uma estratégia de hedge para garantir rentabilidade fixa em ativos.",
+          "D) Um fundo de private equity que adquire participação acionária em empresas privadas.",
         ],
       },
       // Mini game 6
       {
-        text: "Qual dos princípios abaixo está \nmais conectado com nossa empresa?",
+        text: "Qual dos princípios abaixo está mais conectado com nossa empresa?",
         options: [
           "A) Empreendedorismo e Inovação",
           "B) Responsabilidade Social",
@@ -141,14 +141,22 @@ class salaDeGuerra extends Phaser.Scene {
         ],
       },
     ];
-    this.timer = 1800;
+    this.tempoInicial = 300;
+    this.timer = this.tempoInicial; // Variável que irá conter o tempo restante atual
     this.timerText = null;
     this.questionText = null;
     this.optionTexts = [];
   }
 
   create() {
-    this.add.image(400, 300, "fundoPerguntas");
+    this.add.rectangle(400, 300, 800, 600, 0x243572).setDepth(-10);
+
+    this.add.image(0, 0, "fundoPerguntas").setOrigin(0).setDepth(-5);
+
+    this.add.image(780, 20, "fundoTimer").setOrigin(1, 0).setDepth(10);
+
+    this.alarme = this.add.rectangle(400, 300, 800, 600, 0xdd0000).setDepth(100).setVisible(false);
+
 
     // Carrega os sons
     this.clickSound = this.sound.add("click");
@@ -156,13 +164,13 @@ class salaDeGuerra extends Phaser.Scene {
     this.somFundo.play(); // Reproduz o som de fundo
 
     // Cria os botões de resposta (A, B, C e D) com suas respectivas letras
-    this.botaoA = this.criarBotao(210, 355, "A");
-    this.botaoB = this.criarBotao(210, 510, "B");
-    this.botaoC = this.criarBotao(600, 355, "C");
-    this.botaoD = this.criarBotao(600, 510, "D");
+    this.botaoA = this.criarBotao(240, 355, "A");
+    this.botaoB = this.criarBotao(240, 510, "B");
+    this.botaoC = this.criarBotao(560, 355, "C");
+    this.botaoD = this.criarBotao(560, 510, "D");
 
     // Exibe a pontuação no canto superior direito
-    this.pontuacaoText = this.add.text(380, 37, `Pontuação: ${pontuacao}`, {
+    this.pontuacaoText = this.add.text(30, 30, `Pontuação: ${pontuacao}`, {
       fontSize: "18px",
       fill: "#fff",
       fontFamily: "pixelArt",
@@ -181,7 +189,7 @@ class salaDeGuerra extends Phaser.Scene {
         fill: "#fff",
         fontFamily: "pixelArt",
       })
-      .setDepth(10);
+      .setDepth(21);
 
     this.time.addEvent({
       delay: 1000, // A cada 1 segundo
@@ -189,20 +197,111 @@ class salaDeGuerra extends Phaser.Scene {
       callbackScope: this,
       loop: true, // Continuar executando a cada 1 segundo
     });
+
+
+    this.anims.create({
+      key: "fogo1",
+      frames: this.anims.generateFrameNumbers("fogo1", {
+        start: 0,
+        end: 7,
+      }),
+      frameRate: 8,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fogo2",
+      frames: this.anims.generateFrameNumbers("fogo2", {
+        start: 0,
+        end: 7,
+      }),
+      frameRate: 8,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fogo3",
+      frames: this.anims.generateFrameNumbers("fogo3", {
+        start: 0,
+        end: 5,
+      }),
+      frameRate: 8,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fogo4",
+      frames: this.anims.generateFrameNumbers("fogo4", {
+        start: 0,
+        end: 5,
+      }),
+      frameRate: 8,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fogo5",
+      frames: this.anims.generateFrameNumbers("fogo5", {
+        start: 0,
+        end: 3,
+      }),
+      frameRate: 8,
+      repeat: -1,
+    });
+
+    // Cria todos os fogos que aparecerão na tela assim como sua posição, textura, profundidade, escala e tempo de aparição
+    this.incendio = [
+      { fogo: this.fogoA = this.add.sprite(50, 600, "fogo1").setDepth(-8).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 1 },
+      { fogo: this.fogoB = this.add.sprite(450, 600, "fogo1").setDepth(-6).setScale(5).setOrigin(0.5, 0), tempoDeAparicao: 4 / 12 },
+      { fogo: this.fogoC = this.add.sprite(150, 600, "fogo2").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 2 / 12 },
+      { fogo: this.fogoD = this.add.sprite(300, 600, "fogo2").setDepth(-9).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 8 / 12 },
+      { fogo: this.fogoE = this.add.sprite(750, 600, "fogo3").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 7 / 12 },
+      { fogo: this.fogoF = this.add.sprite(600, 600, "fogo4").setDepth(-7).setScale(4).setOrigin(0.5, 0), tempoDeAparicao: 6 / 12 },
+      { fogo: this.fogoG = this.add.sprite(720, 600, "fogo5").setDepth(0).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 10 / 12 },
+    ];
+
+    this.fogoA.anims.play("fogo1");
+    this.fogoB.anims.play("fogo1");
+    this.fogoC.anims.play("fogo2");
+    this.fogoD.anims.play("fogo2");
+    this.fogoE.anims.play("fogo3");
+    this.fogoF.anims.play("fogo4");
+    this.fogoG.anims.play("fogo5");
+
   }
 
   formatarTempo(segundos) {
     const minutos = Math.floor(segundos / 60);
     const segundosRestantes = segundos % 60;
-    return `${minutos}:${
-      segundosRestantes < 10 ? "0" + segundosRestantes : segundosRestantes
-    }`;
+    return `${minutos}:${segundosRestantes < 10 ? "0" + segundosRestantes : segundosRestantes
+      }`;
   }
 
   atualizarTimer() {
     if (this.timer > 0) {
       this.timer--; // Diminui o tempo restante
       this.timerText.setText(this.formatarTempo(this.timer)); // Atualiza o timer na tela
+
+      // Cria a animação do alarme de incendio, com uma luz vermelha por cima da tela de vez em quando
+      if (this.timer > this.tempoInicial / 4) {
+        if (this.timer % 4 === 1) {
+          this.alarme.setVisible(true).setAlpha(0.4 * (this.tempoInicial - this.timer) / this.tempoInicial);
+        } else {
+          this.alarme.setVisible(false);
+        }
+      } else { // Quando o tempo estiver quase acabando, o alarme fica mais rápido
+        if (this.timer % 2 === 1) {
+          this.alarme.setVisible(true).setAlpha(0.4 * (this.tempoInicial - this.timer) / this.tempoInicial);
+        } else {
+          this.alarme.setVisible(false);
+        }
+      }
+
+      // Cria a animação de todos os fogos, que sobem em diferentes momentos ao longo do tempo
+      this.incendio.forEach((f) => {
+        if (f.fogo.y > 600 - f.fogo.height * f.fogo.scale) { // Se a base do fogo ainda não estiver no canto inferior da tela...
+          f.fogo.y = 600 * this.timer / (this.tempoInicial * f.tempoDeAparicao) // Equação que define quando o fogo irá começar a aparecer com base no tempo inicial
+          if (f.fogo.y < 600 - f.fogo.height * f.fogo.scale) { // Evita que o fogo passe do canto inferior da tela. Sem isso, ele passa e volta no próximo segundo
+            f.fogo.y = 600 - f.fogo.height * f.fogo.scale
+          }
+        } else { f.fogo.y = 600 - f.fogo.height * f.fogo.scale } // Fogo fica exatamente no canto inferior quando sua animação termina
+      });
     } else {
       this.finalizarQuiz(); // Finaliza o quiz quando o tempo acabar
     }
@@ -210,9 +309,9 @@ class salaDeGuerra extends Phaser.Scene {
 
   criarBotao(x, y, letra) {
     let botao = this.add
-      .image(x, y, "botao")
+      .image(x, y, "botaoFinal")
       .setInteractive() // Permite que o botão detecte clique
-      .setDepth(-10) // Define a profundidade do botão como -1 para garantir que o texto da pergunta apareça na tela
+      .setDepth(-1) // Define a profundidade do botão como -1 para garantir que o texto da pergunta apareça na tela
       .on("pointerdown", () => {
         this.clickSound.play(); // Reproduz o som de clique
         this.desabilitarBotoes(); // Método que desabilita os botões para impedir múltiplos cliques
@@ -241,14 +340,15 @@ class salaDeGuerra extends Phaser.Scene {
 
     // Exibe a pergunta
     this.questionText = this.add.text(
-      80,
-      100,
+      400,
+      150,
       this.questions[this.perguntaAtual].text,
       {
         font: "24px pixelArtNegrito",
         fill: "#fff",
+        align: "center",
       }
-    );
+    ).setDepth(11).setWordWrapWidth(650).setOrigin(0.5);
 
     // Exibe as opções de resposta
     const options = this.questions[this.perguntaAtual].options;
@@ -261,8 +361,9 @@ class salaDeGuerra extends Phaser.Scene {
         .text(this.botoes[i].botao.x, this.botoes[i].botao.y, options[i], {
           font: "13px pixelArtNegrito",
           fill: "#fff",
+          align: "center",
         })
-        .setOrigin(0.5); // Alinha o texto no centro do botão
+        .setOrigin(0.5).setWordWrapWidth(250); // Alinha o texto no centro do botão
 
       // Adiciona o texto ao array para poder destruir depois
       this.optionTexts.push(text);
@@ -317,8 +418,7 @@ class salaDeGuerra extends Phaser.Scene {
 
     // Log para verificar a pergunta e resposta
     console.log(
-      `Pergunta: ${
-        this.perguntaAtual + 1
+      `Pergunta: ${this.perguntaAtual + 1
       }, Resposta Escolhida: ${letraResposta}, Resposta Correta: ${correta}`
     );
 

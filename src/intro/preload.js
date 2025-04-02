@@ -106,9 +106,9 @@ class preload extends Phaser.Scene {
         this.load.image(
           "botao" + this.personagens[i] + this.estadosBotoes[u],
           "src/assets/intro/selecaoPersonagens/botao" +
-            this.personagens[i] +
-            this.estadosBotoes[u] +
-            ".png"
+          this.personagens[i] +
+          this.estadosBotoes[u] +
+          ".png"
         );
       }
     }
@@ -439,11 +439,21 @@ class preload extends Phaser.Scene {
 
     this.load.image(
       "fundoPerguntas",
-      "src/assets/dia2/salaDeGuerra/fundoFinal.png"
+      "src/assets/dia2/salaDeGuerra/fundoPergunta.png"
     );
     this.load.image(
-      "botao",
-      "src/assets/dia2/salaDeGuerra/botaoFinalSelecionado.png"
+      "fundoTimer",
+      "src/assets/dia2/salaDeGuerra/fundoTimer.png"
     );
+    this.load.image(
+      "botaoFinal",
+      "src/assets/dia2/salaDeGuerra/botaoFinal.png"
+    );
+    // Assets criados por brullov, disponível em: https://brullov.itch.io/fire-animation
+    this.load.spritesheet("fogo1", "src/assets/dia2/salaDeGuerra/burning_loop_1.png", { frameWidth: 64, frameHeight: 92 });
+    this.load.spritesheet("fogo2", "src/assets/dia2/salaDeGuerra/burning_loop_2.png", { frameWidth: 48, frameHeight: 72 });
+    this.load.spritesheet("fogo3", "src/assets/dia2/salaDeGuerra/burning_loop_3.png", { frameWidth: 32, frameHeight: 96 });
+    this.load.spritesheet("fogo4", "src/assets/dia2/salaDeGuerra/burning_loop_4.png", { frameWidth: 20, frameHeight: 80 });
+    this.load.spritesheet("fogo5", "src/assets/dia2/salaDeGuerra/burning_loop_5.png", { frameWidth: 16, frameHeight: 32 });
   }
 }
