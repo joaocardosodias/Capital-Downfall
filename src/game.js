@@ -48,6 +48,7 @@ const config = {
     apoioMinigame6,
     hubFinal,
     finalDia2,
+    finalSalaDeGuerra,
     salaDeGuerra,
     movimento,
   ],

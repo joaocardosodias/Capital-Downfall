@@ -382,5 +382,7 @@ class salaDeGuerra extends Phaser.Scene {
         fontFamily: "Arial",
       })
       .setOrigin(0.5);
+      this.scene.stop("salaDeGuerra");
+      this.scene.start("finalSalaDeGuerra");
   }
 }
