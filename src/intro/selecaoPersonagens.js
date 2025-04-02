@@ -10,11 +10,12 @@ class selecaoPersonagens extends Phaser.Scene {
   }
 
   create() {
+    //Adição da música de fundo, colocando ela em loop
     this.musicaFundo = this.sound.add("musicaFundo", { loop: true });
     this.musicaFundo.play();
 
+    //Adição de outros sons
     this.somFinalizar = this.sound.add("somFinalizar", { volume: 2 });
-
     this.clique = this.sound.add("clique");
 
     this.add.image(400, 300, "fundo").setDepth(-1);
@@ -29,6 +30,7 @@ class selecaoPersonagens extends Phaser.Scene {
       this.add.rectangle(160 * i, 300, 140, 300, 0xffffff).setAlpha(0.25);
     }
 
+    //Adiciona os botões de seleção dos personagens
     this.botao0 = this.add
       .image(160, 300, "botaoMary")
       .setInteractive()
@@ -57,6 +59,7 @@ class selecaoPersonagens extends Phaser.Scene {
       .setOrigin(0.5, 0.5)
       .setAlpha(0.5);
 
+    //Permite a interação com os botões, mudando o visual quando o cursor está em cima e quando é clicado
     for (let i = 0; i < 4; i++) {
       let botao = this[`botao${i}`];
 
@@ -97,6 +100,7 @@ class selecaoPersonagens extends Phaser.Scene {
       });
     }
 
+    //Quando o botão de seleção é pressionado, a cena da hub é iniciada, passando o valor do personagem selecionado
     this.botaoSelecionar.on("pointerdown", () => {
       if (this.personagemSelecionado.numero > -1) {
         this.musicaFundo.stop();

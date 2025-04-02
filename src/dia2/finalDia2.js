@@ -11,12 +11,13 @@ class finalDia2 extends Phaser.Scene {
   }
 
   create() {
+    //Para a música da hub, e cria os sons utilizados
     musicaHub2.stop();
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
     this.somErro = this.sound.add("somErro", { volume: 2 });
 
-    // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
-    // Futuramente, essa seção também redirecionará para o gameOver, além do dia 2
+    // O código a seguir verifica a pontuação do jogador durante o dia 2, e define um final de acordo com sua performance
+
     if (pontuacao < 1050) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
