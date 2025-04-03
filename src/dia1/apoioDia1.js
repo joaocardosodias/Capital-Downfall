@@ -9,7 +9,7 @@ class apoioDia1 extends Phaser.Scene {
     this.tutoriaisMinigame1 = [
       `Nessa tarefa, você precisará aprender um pouco de fundos abertos e fechados.
 
-Seu objetivo é simples:  ---> definir se a descrição apresentada é de um fundo aberto ou de um fundo fechado. <---
+Seu objetivo é simples: definir se a descrição apresentada é de um fundo aberto ou de um fundo fechado.
 
 Para isso, você deve arrastar o card que aparecerá na sua tela para o lado correto. Na esquerda estará a gaveta dos cards abertos e na direita a dos fechados.
 
@@ -39,7 +39,7 @@ Fundo Fechado:     Compromisso a longo prazo (não pode acessar o dinheiro até 
     this.tutoriaisMinigame2 = [
       `Nessa tarefa, você precisará aprender um pouco de matemática financeira.
 
-Seu objetivo é simples:  ---> descobrir o saldo final das contas bancárias apresentadas. <---
+Seu objetivo é simples: descobrir o saldo final das contas bancárias apresentadas.
 
 Para isso, basta usar a legenda no lado esquerdo da tela para analisar as atividades da conta, fazer os cálculos necessários e escolher a alternativa que corresponde ao saldo final da conta clicando nela com o mouse. 
 
@@ -98,7 +98,7 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
     this.tutoriaisMinigame3 = [
       `Nessa tarefa você precisará aprender sobre o processo de resgate de fundos.
 
-Seu objetivo é:  ---> organizar a linha do tempo de acontecimentos sobre o processo. <---
+Seu objetivo é: organizar a linha do tempo de acontecimentos sobre o processo. 
 Para isso, clique e arraste um card para sua posição na linha do tempo. Atenção! Após ser solto em qualquer posição, o card não poderá ser movido novamente.
 
 Segue em anexo os materiais necessários para a tarefa.

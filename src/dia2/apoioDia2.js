@@ -43,7 +43,7 @@ Valor Final = Valor Investido × (1 + r)¥ => para juros compostos.
     this.tutoriaisMinigame5 = [
       `Nessa tarefa você precisará aprender sobre diferentes tipos de fundos.
 
-Seu objetivo é simples: ---> relacionar o fundo com a sua respectiva definição. <---
+Seu objetivo é simples: relacionar o fundo com a sua respectiva definição.
 
 Para isso, basta clicar em um card que contenha um tipo de fundo e arrastar o mouse até a sua definição para ligar esses conceitos.
 
@@ -88,7 +88,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     this.tutoriaisMinigame6 = [
       `Nessa tarefa, você precisará aprender um pouco sobre os valores de nossa empresa.
 
-Seu objetivo é simples: ---> descobrir qual candidato deve ou não ser aprovado na nossa empresa. <---
+Seu objetivo é simples: descobrir qual candidato deve ou não ser aprovado na nossa empresa.
 
 Para isso, basta analisar os candidatos e marcar a alternativa de aprovar ou não aprovar eles
 
