@@ -46,6 +46,7 @@ class hub2 extends Phaser.Scene {
       Phaser.Input.Keyboard.KeyCodes.SPACE
     );
 
+    //Cria as teclas E e WASD para movimento e interação
     this.E = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
     this.W = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
     this.A = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);

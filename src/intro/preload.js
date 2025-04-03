@@ -39,7 +39,7 @@ class preload extends Phaser.Scene {
     this.load.audio("musicaIntro", "src/assets/sounds/rockMusicaHub.mp3"); // Carrega a música da Tela Inicial
     this.load.audio("musicaHub", "src/assets/sounds/jazzyMusicaHub1.mp3"); // Carrega a música da Hub 1
     this.load.audio("musicaHub2", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música da Hub 2
-    this.load.audio("musicaHubFinal", "src/assets/sounds/jazzyMusicaHub2.mp3"); // Carrega a música da Sala de Guerra
+    this.load.audio("musicaHubFinal", "src/assets/sounds/musicaSalaGuerra.mp3"); // Carrega a música da Sala de Guerra
     this.load.audio("somFundo", "src/assets/sounds/escritorioFlow.mp3"); // Carrega os sons de fundo dos minigames
 
     //Sons da hub/ material de apoio
@@ -106,9 +106,9 @@ class preload extends Phaser.Scene {
         this.load.image(
           "botao" + this.personagens[i] + this.estadosBotoes[u],
           "src/assets/intro/selecaoPersonagens/botao" +
-            this.personagens[i] +
-            this.estadosBotoes[u] +
-            ".png"
+          this.personagens[i] +
+          this.estadosBotoes[u] +
+          ".png"
         );
       }
     }
@@ -255,26 +255,45 @@ class preload extends Phaser.Scene {
 
     //Assets do Miniboss 1
 
+    // Carrega os elementos da cena
     // Estrutura de repetição para carregar as 9 perguntas, as 9 imagens de feedback correto e as 9 imagens de feedback negativo
     for (let i = 1; i <= 9; i++) {
       this.load.image(
         `pergunta${i}`,
         `src/assets/dia1/miniBossDia1/pergunta${i}.png`
       );
-      this.load.image(
-        `acertou${i}`,
-        `src/assets/dia1/miniBossDia1/acertou${i}.png`
-      );
-      this.load.image(
-        `errou${i}`,
-        `src/assets/dia1/miniBossDia1/errou${i}.png`
-      );
     }
     this.load.image("botao", "src/assets/dia1/miniBossDia1/botao.png");
-    this.load.image("pular", "src/assets/dia1/miniBossDia1/pular.png");
     this.load.image(
       "botaoVoltar",
       "src/assets/dia1/miniBossDia1/botaoVoltar.png"
+    );
+
+    this.load.image(
+      "fundoMiniboss",
+      "src/assets/dia1/miniBossDia1/fundoMiniboss.png"
+    );
+    this.load.image(
+      "botaoResposta",
+      "src/assets/dia1/miniBossDia1/botaoResposta.png"
+    );
+    this.load.image(
+      "telaFeedback",
+      "src/assets/dia1/miniBossDia1/telaFeedbackMiniboss.png"
+    );
+    this.load.spritesheet(
+      "proximaPergunta",
+      "src/assets/dia1/miniBossDia1/proximaPergunta.png",
+      { frameWidth: 394, frameHeight: 120 }
+    );
+    this.load.image("correto", "src/assets/dia1/miniBossDia1/correto.png");
+    this.load.image("errado", "src/assets/dia1/miniBossDia1/errado.png");
+
+    this.load.image("fim", "src/assets/telas_pontuacao/telaPontuacao.png");
+    this.load.spritesheet(
+      "voltarAoMapa",
+      "src/assets/telas_pontuacao/voltarAoMapa.png",
+      { frameWidth: 400, frameHeight: 110 }
     );
 
     //Assets do Final do Dia 1
@@ -439,11 +458,21 @@ class preload extends Phaser.Scene {
 
     this.load.image(
       "fundoPerguntas",
-      "src/assets/dia2/salaDeGuerra/fundoFinal.png"
+      "src/assets/dia2/salaDeGuerra/fundoPergunta.png"
     );
     this.load.image(
-      "botao",
-      "src/assets/dia2/salaDeGuerra/botaoFinalSelecionado.png"
+      "fundoTimer",
+      "src/assets/dia2/salaDeGuerra/fundoTimer.png"
     );
+    this.load.image(
+      "botaoFinal",
+      "src/assets/dia2/salaDeGuerra/botaoFinal.png"
+    );
+    // Assets criados por brullov, disponível em: https://brullov.itch.io/fire-animation
+    this.load.spritesheet("fogo1", "src/assets/dia2/salaDeGuerra/burning_loop_1.png", { frameWidth: 64, frameHeight: 92 });
+    this.load.spritesheet("fogo2", "src/assets/dia2/salaDeGuerra/burning_loop_2.png", { frameWidth: 48, frameHeight: 72 });
+    this.load.spritesheet("fogo3", "src/assets/dia2/salaDeGuerra/burning_loop_3.png", { frameWidth: 32, frameHeight: 96 });
+    this.load.spritesheet("fogo4", "src/assets/dia2/salaDeGuerra/burning_loop_4.png", { frameWidth: 20, frameHeight: 80 });
+    this.load.spritesheet("fogo5", "src/assets/dia2/salaDeGuerra/burning_loop_5.png", { frameWidth: 16, frameHeight: 32 });
   }
 }

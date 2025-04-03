@@ -63,7 +63,7 @@ class hubFinal extends Phaser.Scene {
     // Aplica o filtro NEAREST para evitar o efeito de suavização no pixel art
     this.textures.get("tiles").setFilter(Phaser.Textures.FilterMode.NEAREST);
 
-    musicaHubFinal = this.sound.add("musicaHubFinal", { volume: 0.25 }); // Adiciona o som da música de fundo
+    musicaHubFinal = this.sound.add("somFundo", { volume: 0.25 }); // Adiciona o som da música de fundo
     musicaHubFinal.setLoop(true); // Define que a música de fundo deve ser repetida
     musicaHubFinal.play(); // Inicia a música de fundo
 
@@ -138,6 +138,7 @@ class hubFinal extends Phaser.Scene {
         this.avisoBossFinal.setVisible(false);
         this.passos.stop();
         this.interacaoMinigame.play();
+        musicaHubFinal.stop();
         game.scene.start("salaDeGuerra");
         game.scene.sleep("hubFinal");
       }

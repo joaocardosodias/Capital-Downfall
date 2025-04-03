@@ -11,13 +11,15 @@ class finalDia2 extends Phaser.Scene {
   }
 
   create() {
+    //Para a música da hub, e cria os sons utilizados
     musicaHub2.stop();
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
     this.somErro = this.sound.add("somErro", { volume: 2 });
 
-    // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
-    // Futuramente, essa seção também redirecionará para o gameOver, além do dia 2
-    if (pontuacao < 200) {
+    // O código a seguir verifica a pontuação do jogador durante o dia 2, e define um final de acordo com sua performance
+    //Valor mínimo: 1050
+
+    if (pontuacao < 500) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
@@ -28,20 +30,7 @@ class finalDia2 extends Phaser.Scene {
       });
     }
 
-    if (400 > pontuacao && pontuacao >= 200) {
-      this.somAcerto.play();
-      this.add.image(400, 300, "jornalSemCrescimento");
-      this.semCrescimento = true;
-      this.botaoContinuar = this.add
-        .image(100, 75, "continuar")
-        .setInteractive();
-      this.botaoContinuar.on("pointerdown", () => {
-        this.scene.stop("finalDia2");
-        this.scene.start("salaDeGuerra");
-      });
-    }
-
-    if (pontuacao >= 400) {
+    if (pontuacao >= 500) {
       this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;

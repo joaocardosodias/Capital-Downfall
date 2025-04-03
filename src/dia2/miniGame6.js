@@ -12,6 +12,7 @@ class miniGame6 extends Phaser.Scene {
   }
 
   create() {
+    //Cria o som de fundo utilizado
     this.somFundo = this.sound.add("somFundo", { loop: true });
     this.somFundo.play();
 
