@@ -1,6 +1,6 @@
 let minigameAtual;
 
-class apoioDia1 extends Phaser.Scene {
+class apoioDia1 extends baseCena {
   constructor() {
     super("apoioDia1");
     // Armazena a página atual do tutorial
@@ -208,8 +208,7 @@ Boa sorte!`,
       this.textoTutorial.setText(
         this["tutoriaisMinigame" + this.minigameAtual][0]
       );
-      game.scene.wake("hub");
-      game.scene.stop("apoioDia1");
+      this.transicao('hub', false, false, true, 200,);
     });
 
     // Adição do efeito de pointer over nos botões

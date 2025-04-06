@@ -5,7 +5,7 @@ let personagemSelecionado;
 let musicaHub;
 //Cria a cena da Hub
 
-class hub extends Phaser.Scene {
+class hub extends baseCena {
   constructor() {
     super("hub");
     this.diaAtual = 1;
@@ -241,8 +241,7 @@ class hub extends Phaser.Scene {
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
-        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
-        game.scene.sleep("hub");
+        this.transicao("apoioGeral", true, true, true)
       }
     });
 
@@ -286,8 +285,7 @@ class hub extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 1;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          this.transicao("apoioDia1", true, true, true)
         }
       }
     });
@@ -315,8 +313,7 @@ class hub extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 2;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          this.transicao("apoioDia1", true, true, true)
         }
       }
     });
@@ -344,8 +341,7 @@ class hub extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 3;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          this.transicao("apoioDia1", true, true, true,)
         }
       }
     });
@@ -385,10 +381,9 @@ class hub extends Phaser.Scene {
       minigame3Jogado === true
     ) {
       this.passos.stop();
-      this.scene.stop("hub");
       this.minigameAtual = 10;
       this.interacaoMinigame.play();
-      game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
+      this.transicao("apoioDia1", true, true, false)
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento

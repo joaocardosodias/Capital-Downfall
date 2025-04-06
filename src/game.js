@@ -18,6 +18,7 @@ const config = {
 
   scene: [
     preload,
+    baseCena,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,

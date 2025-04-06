@@ -1,4 +1,4 @@
-class contratoInicial extends Phaser.Scene {
+class contratoInicial extends baseCena {
   constructor() {
     super("contratoInicial");
     this.somAdiante;
@@ -17,6 +17,7 @@ Confiamos em você...`,
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o som de troca de cenas
     this.somAdiante = this.sound.add("somAdiante");
 

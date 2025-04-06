@@ -1,4 +1,4 @@
-class selecaoPersonagens extends Phaser.Scene {
+class selecaoPersonagens extends baseCena {
   constructor() {
     super("selecaoPersonagens");
     this.personagemSelecionado = { numero: -1 };
@@ -151,10 +151,7 @@ class selecaoPersonagens extends Phaser.Scene {
       if (this.personagemSelecionado.numero > -1) {
         this.musicaFundo.stop();
         this.somFinalizar.play();
-        this.scene.stop("selecaoPersonagens");
-        this.scene.start("hub", {
-          personagemSelecionado: this.personagemSelecionado,
-        });
+        this.transicao('hub', false, false, false, 200);
       }
     });
   }
