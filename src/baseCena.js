@@ -1,3 +1,5 @@
+let transicionando = false;
+
 class baseCena extends Phaser.Scene {
 
     constructor(config) {
@@ -9,6 +11,8 @@ class baseCena extends Phaser.Scene {
     }
 
     transicao(keyCena, paraTablet, playerExiste = false, dormirOuAcordarCena = false, tempoParaTablet = 1200, x = 400, y = 300) {
+
+        transicionando = true; // Variável que servirá para impossibilitar a interação do jogador enquanto a transição ocorre
 
         if (paraTablet === true) { // paraTablet ser true indica que a animação transicionarParaTablet() tocará> Caso contrário, a outra tocará
             // Caso o player exista, a notificação aparecerá logo em cima dele
@@ -69,11 +73,8 @@ class baseCena extends Phaser.Scene {
 
     transicionarParaTablet(keyCena, dormirOuAcordarCena) {
 
-        if (this.transicionando) return;
-        this.transicionando = true; // Variável que servirá para impossibilitar a interação do jogador enquanto a transição ocorre
-
         this.scene.stop(keyCena); // Apenas precaução
-        this.scene.launch(keyCena, { diaAtual: this.diaAtual, minigameAtual: this.minigameAtual, transicionando: true }); // Não há casos em que essa animação precise acordar a cena
+        this.scene.launch(keyCena, { diaAtual: this.diaAtual, minigameAtual: this.minigameAtual }); // Não há casos em que essa animação precise acordar a cena
 
         this.proximaCena = this.scene.get(keyCena);
 
@@ -124,7 +125,7 @@ class baseCena extends Phaser.Scene {
                         ease: 'Power2',
                         onComplete: () => {
                             this.tablet.destroy();
-                            this.transicionando = false;
+                            transicionando = false;
 
                             if (dormirOuAcordarCena) {
                                 this.scene.sleep();
@@ -142,9 +143,6 @@ class baseCena extends Phaser.Scene {
 
     transicionarDeTablet(keyCena, dormirOuAcordarCena) {
 
-        if (this.transicionando) return;
-        this.transicionando = true;
-
         // Cria uma snapshot da cena anterior, para que esta possa ser animada
         this.cenaAnterior = this.add.renderTexture(0, 0, this.scale.width, this.scale.height).setOrigin(0).setDepth(999);
 
@@ -158,9 +156,9 @@ class baseCena extends Phaser.Scene {
 
         this.tablet = this.add.image(0, 0, "tablet").setOrigin(74 / 950, 34 / 668).setScale(1).setDepth(1000); // Tem uma origem fracionária para ficar mais fácil alinhar com a cena perfeitamente
         if (dormirOuAcordarCena) {
-            this.scene.wake(keyCena, { personagemSelecionado: this.personagemSelecionado, transicionando: true }).sendToBack(keyCena);
+            this.scene.wake(keyCena, { personagemSelecionado: this.personagemSelecionado }).sendToBack(keyCena);
         } else {
-            this.scene.launch(keyCena, { personagemSelecionado: this.personagemSelecionado, transicionando: true }).sendToBack(keyCena);
+            this.scene.launch(keyCena, { personagemSelecionado: this.personagemSelecionado }).sendToBack(keyCena);
         } // sendToBack() evita que a cena fique na frente da animação
 
         this.tweens.add({ // Cena e tablet diminuem e ficam no centro da tela
@@ -178,7 +176,7 @@ class baseCena extends Phaser.Scene {
                     ease: 'Power2',
                     onComplete: () => {
                         this.limparTransicao();
-                        this.transicionando = false;
+                        transicionando = false;
                         this.scene.stop(); // Não há casos em que essa animação precise por a ceda para dormir
                     }
                 });

@@ -75,22 +75,25 @@ class menuInicial extends baseCena {
     // Verifica se o botão de iniciar foi clicado
 
     botaoIniciar.on("pointerdown", () => {
+      if (!transicionando) {
+        transicionando = true;
+        this.clique.play();
 
-      this.clique.play();
+        // Caso ele seja, o jogo para a cena atual e passa para a próxima
+        this.telaPreta = this.add.rectangle(400, 300, 800, 600, 0x000000).setAlpha(0)
 
-      // Caso ele seja, o jogo para a cena atual e passa para a próxima
-      this.telaPreta = this.add.rectangle(400, 300, 800, 600, 0x000000).setAlpha(0)
-
-      this.tweens.add({
-        targets: this.telaPreta,
-        alpha: 1,
-        duration: 2000,
-        onComplete: () => {
-          this.time.delayedCall(500, () => {
-            this.transicao("contratoInicial", true, false)
-          });
-        }
-      });
+        this.tweens.add({
+          targets: this.telaPreta,
+          alpha: 1,
+          duration: 2000,
+          onComplete: () => {
+            this.time.delayedCall(500, () => {
+              this.transicao("contratoInicial", true, false)
+            });
+          }
+        });
+      }
     });
+
   }
 }

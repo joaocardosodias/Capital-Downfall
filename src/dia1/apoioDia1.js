@@ -130,6 +130,9 @@ Boa sorte!`,
     if (data.minigameAtual) {
       this.minigameAtual = data.minigameAtual;
     }
+    if (data.transicionando) {
+      transicionando = data.transicionando;
+    }
   }
 
   create() {
@@ -152,6 +155,12 @@ Boa sorte!`,
         }
       )
       .setWordWrapWidth(600);
+
+      // Garantia que sempre irá iniciar na página 1
+      this.paginaAtiva = 0;
+      this.textoTutorial.setText(
+        this["tutoriaisMinigame" + this.minigameAtual][0]
+      );
 
     // Configura os botões
     this.botaoProximo = this.add
@@ -177,7 +186,7 @@ Boa sorte!`,
 
     // Evento do botão "próximo"
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -190,7 +199,7 @@ Boa sorte!`,
 
     // Evento do botão "anterior"
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -203,12 +212,10 @@ Boa sorte!`,
 
     // Evento do botão "desistir"
     this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
-      this.transicao('hub', false, false, true, 200,);
+      if (!transicionando) {
+        this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
+        this.transicao('hub', false, false, true, 200,);
+      }
     });
 
     // Adição do efeito de pointer over nos botões

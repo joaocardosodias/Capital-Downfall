@@ -16,6 +16,12 @@ Confiamos em você...`,
     ];
   }
 
+  init(data) {
+    if (data.transicionando) {
+      transicionando = data.transicionando;
+    }
+  }
+
   create() {
     this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o som de troca de cenas
@@ -52,7 +58,7 @@ Confiamos em você...`,
 
     // Evento do botão "próximo"
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.atrasoClick = true;
         this.fadeOut(() => {
           this.paginaAtiva++;
@@ -64,7 +70,7 @@ Confiamos em você...`,
 
     // Evento do botão "anterior"
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.atrasoClick = true;
         this.fadeOut(() => {
           this.paginaAtiva--;
