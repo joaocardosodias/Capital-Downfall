@@ -87,9 +87,9 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
             `,
     ];
     this.apoioMinigame3 = [
-      `O processo de resgate se inicia com uma solicitação do cliente.
+      `O processo de resgate se inicia com uma solicitação do cliente, após um período de rendimento da aplicação.
 
-Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e começe a render.
+Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e o valor de resgate seja definido.
 
 Após isso, ocorre o prazo de liquidação, que se trata do tempo que leva para a conclusão da transação, disponibilizando o dinheiro para o cliente.
 

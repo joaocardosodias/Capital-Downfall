@@ -104,9 +104,9 @@ Para isso, clique e arraste um card para sua posição na linha do tempo. Atenç
 Segue em anexo os materiais necessários para a tarefa.
 
 Boa sorte!`,
-      `O processo de resgate se inicia com uma solicitação do cliente.
+      `O processo de resgate se inicia com uma solicitação do cliente, após um período de rendimento da aplicação.
 
-Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e começe a render.
+Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e o valor de resgate seja definido.
 
 Após isso, ocorre o prazo de liquidação, que se trata do tempo que leva para a conclusão da transação, disponibilizando o dinheiro para o cliente.
 
@@ -156,11 +156,11 @@ Boa sorte!`,
       )
       .setWordWrapWidth(600);
 
-      // Garantia que sempre irá iniciar na página 1
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
+    // Garantia que sempre irá iniciar na página 1
+    this.paginaAtiva = 0;
+    this.textoTutorial.setText(
+      this["tutoriaisMinigame" + this.minigameAtual][0]
+    );
 
     // Configura os botões
     this.botaoProximo = this.add
@@ -214,7 +214,7 @@ Boa sorte!`,
     this.botaoDesistir.on("pointerdown", (pointer) => {
       if (!transicionando) {
         this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
-        this.transicao('hub', false, false, true, 200,);
+        this.transicao("hub", false, false, true, 200);
       }
     });
 
