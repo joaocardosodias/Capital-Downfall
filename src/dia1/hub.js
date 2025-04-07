@@ -35,6 +35,7 @@ class hub extends baseCena {
     this.passos;
     this.andando = false;
     this.interacaoMinigame;
+    this.fimDoDia = false; // Evita que a transição do fim do dia ocorra mais de uma vez
   }
 
   init(data) {
@@ -239,7 +240,8 @@ class hub extends baseCena {
       if (
         (this.spacebar || this.E) &&
         (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-          Phaser.Input.Keyboard.JustDown(this.E))
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
@@ -279,7 +281,8 @@ class hub extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -307,7 +310,8 @@ class hub extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -335,7 +339,8 @@ class hub extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -382,10 +387,16 @@ class hub extends baseCena {
       minigame2Jogado === true &&
       minigame3Jogado === true
     ) {
-      this.passos.stop();
-      this.minigameAtual = 10;
-      this.interacaoMinigame.play();
-      this.transicao("apoioDia1", true, true, false)
+      
+      if (!transicionando && !this.fimDoDia) {
+        this.fimDoDia = true
+        this.time.delayedCall(1500, () => {
+          this.passos.stop();
+          this.minigameAtual = 10;
+          this.interacaoMinigame.play();
+          this.transicao("apoioDia1", true, true, true)
+        });
+      }
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
@@ -501,42 +512,42 @@ class hub extends baseCena {
       }
     } else { // código repetido por que ocorre em situações diferentes mas fazem a mesma coisa
       this.player.setVelocityX(0);
-        this.player.setVelocityY(0);
-        if (this.andando) {
-          this.passos.stop();
-        }
-        this.andando = false;
+      this.player.setVelocityY(0);
+      if (this.andando) {
+        this.passos.stop();
+      }
+      this.andando = false;
 
-        //vê a direção que o player estava virado e toca a animação parado correspondente
-        if (this.playerDirecao === "cima") {
-          this.player.anims.play("movimentoParadoCima", true);
-        } else if (this.playerDirecao === "baixo") {
-          this.player.anims.play("movimentoParadoBaixo", true);
-        } else if (this.playerDirecao === "direita") {
-          this.player.anims.play("movimentoParadoDireita", true);
-        } else if (this.playerDirecao === "esquerda") {
-          this.player.anims.play("movimentoParadoEsquerda", true);
-        } else {
-          // define a animação parado default como a para baixo
-          this.player.anims.play("movimentoParadoBaixo", true);
-        }
+      //vê a direção que o player estava virado e toca a animação parado correspondente
+      if (this.playerDirecao === "cima") {
+        this.player.anims.play("movimentoParadoCima", true);
+      } else if (this.playerDirecao === "baixo") {
+        this.player.anims.play("movimentoParadoBaixo", true);
+      } else if (this.playerDirecao === "direita") {
+        this.player.anims.play("movimentoParadoDireita", true);
+      } else if (this.playerDirecao === "esquerda") {
+        this.player.anims.play("movimentoParadoEsquerda", true);
+      } else {
+        // define a animação parado default como a para baixo
+        this.player.anims.play("movimentoParadoBaixo", true);
+      }
     }
 
-      // Faz com que o aviso não suma caso o player entre e saia de um tutorial
-      if (!minigame1Jogado) {
-        this.avisoMinigame1.setVisible(true);
-      } else {
-        this.avisoMinigame1.setVisible(false);
-      }
-      if (!minigame2Jogado) {
-        this.avisoMinigame2.setVisible(true);
-      } else {
-        this.avisoMinigame2.setVisible(false);
-      }
-      if (!minigame3Jogado) {
-        this.avisoMinigame3.setVisible(true);
-      } else {
-        this.avisoMinigame3.setVisible(false);
-      }
+    // Faz com que o aviso não suma caso o player entre e saia de um tutorial
+    if (!minigame1Jogado) {
+      this.avisoMinigame1.setVisible(true);
+    } else {
+      this.avisoMinigame1.setVisible(false);
+    }
+    if (!minigame2Jogado) {
+      this.avisoMinigame2.setVisible(true);
+    } else {
+      this.avisoMinigame2.setVisible(false);
+    }
+    if (!minigame3Jogado) {
+      this.avisoMinigame3.setVisible(true);
+    } else {
+      this.avisoMinigame3.setVisible(false);
     }
   }
+}

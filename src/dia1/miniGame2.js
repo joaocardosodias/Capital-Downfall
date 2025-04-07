@@ -1,4 +1,4 @@
-class miniGame2 extends Phaser.Scene {
+class miniGame2 extends baseCena {
   constructor(
     perfil1,
     botao1,
@@ -360,12 +360,13 @@ class miniGame2 extends Phaser.Scene {
           this.voltarAoMapaM2.anims.play("voltarAoMapaM2", true);
 
           this.voltarAoMapaM2.on("pointerdown", () => {
-            this.musicaFundo.stop();
-            this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-            minigame2Jogado = true;
-            this.scene.wake("hub");
-            musicaHub.resume();
-            this.scene.stop("miniGame2");
+            if (!transicionando) {
+              this.musicaFundo.stop();
+              this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+              minigame2Jogado = true;
+              this.transicao('hub', false, false, true, 200,);
+              musicaHub.resume();
+            }
           });
         }
       },

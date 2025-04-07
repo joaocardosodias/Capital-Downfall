@@ -136,6 +136,7 @@ Boa sorte!`,
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o fundo e os botões
     if (this.minigameAtual < 10) {
       this.imailFundo = this.add.image(400, 300, "imailFundo");
@@ -156,11 +157,11 @@ Boa sorte!`,
       )
       .setWordWrapWidth(600);
 
-      // Garantia que sempre irá iniciar na página 1
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
+    // Garantia que sempre irá iniciar na página 1
+    this.paginaAtiva = 0;
+    this.textoTutorial.setText(
+      this["tutoriaisMinigame" + this.minigameAtual][0]
+    );
 
     // Configura os botões
     this.botaoProximo = this.add
@@ -177,9 +178,11 @@ Boa sorte!`,
       .image(300, 555, "botaoAnterior")
       .setVisible(false)
       .setInteractive();
-    this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
-      .setInteractive();
+    if (this.minigameAtual % 10 !== 0) {
+      this.botaoDesistir = this.add
+        .image(750, 40, "botaoDesistir")
+        .setInteractive();
+    }
 
     // Variável para controlar cliques repetidos
     this.atrasoClick = false;

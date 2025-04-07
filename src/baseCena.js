@@ -4,10 +4,6 @@ class baseCena extends Phaser.Scene {
 
     constructor(config) {
         super(config);
-
-        // Transition properties
-        this._transitionSnapshot = null;
-        this._transitioning = false;
     }
 
     transicao(keyCena, paraTablet, playerExiste = false, dormirOuAcordarCena = false, tempoParaTablet = 1200, x = 400, y = 300) {
@@ -81,8 +77,8 @@ class baseCena extends Phaser.Scene {
         this.proximaCena.events.once('create', () => { // Essa linha evita que o acesso da câmera da proxima cena aconteca antes dela ter sido criada
 
             this.proximaCena.cameras.main.setZoom(0.75);
-            this.proximaCena.cameras.main.x = 1500;
-            this.proximaCena.cameras.main.y = dormirOuAcordarCena ? 0 : 75;
+            this.proximaCena.cameras.main.x = 1500; 
+            this.proximaCena.cameras.main.y = 75;
 
             // Obs: dormirOuAcordarCena aqui é usado como sinônimo de uma transição do hub para alguma outra ou para ele, já que isso só ocorre nesses casos
             this.tablet = this.add.image(dormirOuAcordarCena ? this.cameras.main.scrollX + 1500 : 1500, dormirOuAcordarCena ? this.cameras.main.scrollY + 75 : 75, "tablet").setOrigin(74 / 950, 34 / 668).setScale(0.75).setDepth(999); // Tem uma origem fracionária para ficar mais fácil alinhar com a cena perfeitamente
@@ -108,8 +104,8 @@ class baseCena extends Phaser.Scene {
             //Animações separadas por motivos diversos: 1) Usam medidas diferentes para sua posição. 2) Usam nomes diferentes para escala (scale e zoom)
             this.tweens.add({ // Câmera da proxima cena vai para o centro da tela
                 targets: this.proximaCena.cameras.main,
-                x: dormirOuAcordarCena ? 0 : 100,
-                y: dormirOuAcordarCena ? 0 : 75,
+                x: 100,
+                y: 75,
                 duration: 1000,
                 ease: 'Power2',
                 onComplete: () => {
