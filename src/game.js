@@ -19,6 +19,7 @@ const config = {
   //Cenas do jogo
   scene: [
     preload,
+    baseCena,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,
