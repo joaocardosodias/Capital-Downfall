@@ -1,4 +1,4 @@
-class finalSalaDeGuerra extends Phaser.Scene {
+class finalSalaDeGuerra extends baseCena {
   constructor() {
     super("finalSalaDeGuerra");
 

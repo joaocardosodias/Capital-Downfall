@@ -1,7 +1,7 @@
 let minigameAtual2;
 let musicaMinigame4;
 
-class apoioDia2 extends Phaser.Scene {
+class apoioDia2 extends baseCena {
   constructor() {
     super("apoioDia2");
     // Armazena a página atual do tutorial
@@ -114,6 +114,7 @@ Boa sorte!
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     //  Configura o som do minigame 4
     musicaMinigame4 = this.sound.add("somFundo", { volume: 1 });
     musicaMinigame4.setLoop(true);
@@ -190,8 +191,7 @@ Boa sorte!
       this.textoTutorial.setText(
         this["tutoriaisMinigame" + this.minigameAtual2][0]
       );
-      game.scene.wake("hub2");
-      game.scene.stop("apoioDia2");
+      this.transicao('hub2', false, false, true, 200,);
     });
 
     // Adição do efeito de pointer over nos botões

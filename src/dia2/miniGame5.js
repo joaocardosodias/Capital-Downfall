@@ -1,4 +1,4 @@
-class miniGame5 extends Phaser.Scene {
+class miniGame5 extends baseCena {
   constructor() {
     super("miniGame5");
     this.pontuacaoM5 = 0;
@@ -459,7 +459,7 @@ class miniGame5 extends Phaser.Scene {
 }
 
 // Cena que mostra a pontuação final
-class fimMinigame5 extends Phaser.Scene {
+class fimMinigame5 extends baseCena {
   constructor() {
     super("fimMinigame5");
     this.clickSound = null; // Som de clique
@@ -538,8 +538,7 @@ class fimMinigame5 extends Phaser.Scene {
       this.musicaFundo.stop();
       this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
       minigame5Jogado = true;
-      this.scene.stop("fimMinigame5");
-      this.scene.wake("hub2");
+      this.transicao('hub2', false, false, true, 200,);
       musicaHub2.resume();
     });
   }

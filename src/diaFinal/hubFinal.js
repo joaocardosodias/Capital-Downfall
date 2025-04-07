@@ -1,7 +1,7 @@
 //Cria a cena da Hub
 let musicaHubFinal;
 
-class hubFinal extends Phaser.Scene {
+class hubFinal extends baseCena {
   constructor() {
     super("hubFinal");
     this.map;
@@ -160,8 +160,7 @@ class hubFinal extends Phaser.Scene {
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
-        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
-        game.scene.sleep("hubFinal");
+        this.transicao('apoioGeral', true, true, true);
       }
     });
 
@@ -183,8 +182,7 @@ class hubFinal extends Phaser.Scene {
         this.passos.stop();
         this.interacaoMinigame.play();
         musicaHubFinal.stop();
-        game.scene.start("salaDeGuerra");
-        game.scene.sleep("hubFinal");
+        this.transicao('salaDeGuerra', true, true, true,);
       }
     });
 

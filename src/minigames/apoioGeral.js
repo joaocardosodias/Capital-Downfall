@@ -183,6 +183,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
 
     this.paginaAtiva = 0;
     this.apoioEscolhido = 1; //minigame 1 como default

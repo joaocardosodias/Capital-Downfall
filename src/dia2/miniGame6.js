@@ -1,4 +1,4 @@
-class miniGame6 extends Phaser.Scene {
+class miniGame6 extends baseCena {
   constructor() {
     super("miniGame6");
     this.pontuacaoM6 = 0;
@@ -199,9 +199,8 @@ class miniGame6 extends Phaser.Scene {
       this.somFundo.stop();
       this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
       minigame6Jogado = true;
-      this.scene.wake("hub2");
+      this.transicao('hub2', false, false, true, 200,);
       musicaHub2.resume();
-      this.scene.stop("miniGame6");
     });
   }
 }
