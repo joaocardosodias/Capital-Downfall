@@ -11,6 +11,7 @@ class hub2 extends Phaser.Scene {
     this.player;
     this.playerDirecao = "baixo";
     this.personagens = ["Mary", "Mark", "Margaret", "Steve"];
+    this.chefe;
     this.personagemSelecionado = 3;
     this.colisaoApoioGeral;
     this.colisaoMinigame4;
@@ -84,9 +85,16 @@ class hub2 extends Phaser.Scene {
 
     this.interacaoMinigame = this.sound.add("interacaoMinigame", { volume: 1 }); // Adiciona o som de interação com o minigame
 
+    //Adiciona o sprite da chefe, com colisões
+    this.chefe = this.physics.add
+      .sprite(1180, 860, "chefe")
+      .setImmovable(true)
+      .setDepth()
+      .setScale(1.5);
+
     //Criação do objeto de detecção da interação do jogador com o apoio geral
     this.colisaoApoioGeral = this.physics.add
-      .sprite(1300, 850, "colisao")
+      .sprite(1178, 870, "colisao")
       .setScale(3.5)
       .setVisible(false)
       .setImmovable(true);
@@ -118,6 +126,11 @@ class hub2 extends Phaser.Scene {
     this.avisoMinigame6 = this.add
       .sprite(336, 345, "avisoMinigame")
       .setScale(1.5);
+    this.avisoApoioGeral = this.add
+      .sprite(1240, 740, "balaoFala")
+      .setScale(0.23)
+      .setDepth(2);
+
     this.avisoMinigame4.anims.play("movimentoAviso");
     this.avisoMinigame5.anims.play("movimentoAviso");
     this.avisoMinigame6.anims.play("movimentoAviso");
@@ -131,8 +144,15 @@ class hub2 extends Phaser.Scene {
     //Adiciona a colisão entre os objetos
     this.physics.add.collider(this.player, this.layerParede);
     this.physics.add.collider(this.player, this.layerObjetos);
+    this.physics.add.collider(this.player, this.chefe);
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
+      this.fundoInteracao
+        .setPosition(this.player.x, this.player.y + 80)
+        .setVisible(true);
+      this.textoInteracao
+        .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
         (this.spacebar || this.E) &&
@@ -275,7 +295,8 @@ class hub2 extends Phaser.Scene {
     if (
       !this.physics.overlap(this.player, this.colisaoMinigame4) &&
       !this.physics.overlap(this.player, this.colisaoMinigame5) &&
-      !this.physics.overlap(this.player, this.colisaoMinigame6)
+      !this.physics.overlap(this.player, this.colisaoMinigame6) &&
+      !this.physics.overlap(this.player, this.colisaoApoioGeral)
     ) {
       this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
       this.fundoInteracao.setVisible(false);

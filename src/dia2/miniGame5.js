@@ -413,7 +413,7 @@ class miniGame5 extends Phaser.Scene {
       .text(400, 300, text, {
         fontFamily: "pixelArt",
         fill: color,
-        stroke: "#000000",
+        stroke: "#FFFFFF",
         strokeThickness: 4,
       })
       .setOrigin(0.5, 0.5);

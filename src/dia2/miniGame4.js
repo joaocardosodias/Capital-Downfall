@@ -25,7 +25,7 @@ class miniGame4 extends Phaser.Scene {
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacaoM4}`, {
       fontSize: "24px",
-      fill: "#000",
+      fill: "#FFFFFF",
     });
 
     // Cria os cards interativos
