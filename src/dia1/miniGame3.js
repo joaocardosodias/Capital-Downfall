@@ -28,6 +28,7 @@ class miniGame3 extends Phaser.Scene {
   create() {
     this.cameras.main.setBackgroundColor("#195AB4");
 
+    //Cria o som de fundo utilizado
     this.somFundo = this.sound.add("somFundo", { loop: true });
     this.somFundo.play();
 

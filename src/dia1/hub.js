@@ -54,6 +54,8 @@ class hub extends baseCena {
     this.spacebar = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.SPACE
     );
+
+    //Cria as teclas E e WASD para serem utilizáveis
     this.E = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
     this.W = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
     this.A = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
@@ -82,11 +84,11 @@ class hub extends baseCena {
     //Traz colisões para a layer das decorações
     this.layerObjetos.setCollisionByExclusion([-1]);
 
-    musicaHub = this.sound.add("musicaHub", { volume: 0.25 }); // Adiciona o som da música de fundo
+    musicaHub = this.sound.add("musicaHub", { volume: 0.2 }); // Adiciona o som da música de fundo
     musicaHub.setLoop(true); // Define que a música de fundo deve ser repetida
     musicaHub.play(); // Inicia a música de fundo
 
-    this.passos = this.sound.add("passos", { volume: 2 }); // Adiciona o som dos passos
+    this.passos = this.sound.add("passos", { volume: 3 }); // Adiciona o som dos passos
     this.passos.setLoop(true); // Define que o som dos passos deve ser repetido
 
     this.interacaoMinigame = this.sound.add("interacaoMinigame", { volume: 1 }); // Adiciona o som de interação com o minigame

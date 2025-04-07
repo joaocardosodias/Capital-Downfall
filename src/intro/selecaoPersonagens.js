@@ -9,62 +9,13 @@ class selecaoPersonagens extends baseCena {
     this.somFinalizar;
   }
 
-  preload() {
-    for (let i = 0; i < this.personagens.length; i++) {
-      for (let u = 0; u < 4; u++) {
-        this.load.image(
-          "botao" + this.personagens[i] + this.estadosBotoes[u],
-          "src/assets/intro/selecaoPersonagens/botao" +
-          this.personagens[i] +
-          this.estadosBotoes[u] +
-          ".png"
-        );
-      }
-    }
-    this.load.image(
-      "botaoSelecionarAtivado",
-      "src/assets/intro/selecaoPersonagens/botaoSelecionarAtivado.png"
-    );
-    this.load.image(
-      "botaoSelecionarDesativado",
-      "src/assets/intro/selecaoPersonagens/botaoSelecionarDesativado.png"
-    );
-
-    this.load.image(
-      "fundo",
-      "src/assets/intro/selecaoPersonagens/background.png"
-    );
-
-    this.load.audio("musicaFundo", "src/assets/sounds/escritorioFlow.mp3");
-    this.load.audio("somFinalizar", "src/assets/sounds/taskSucess.mp3");
-    this.load.audio("clique", "src/assets/sounds/clique.mp3");
-
-    //  Cria as variáveis da tela de loading
-    let barraProgresso = this.add.graphics();
-    let caixaProgresso = this.add.graphics();
-    caixaProgresso.fillStyle(0x222222, 0.8);
-    caixaProgresso.fillRect(240, 270, 320, 50);
-
-    //  Atualiza ao vivo a barra de progresso
-    this.load.on("progress", function (value) {
-      barraProgresso.clear();
-      barraProgresso.fillStyle(0xffffff, 1);
-      barraProgresso.fillRect(250, 280, 300 * value, 30);
-    });
-
-    //  Quando o jogo termina de carregar, a barra é destruída
-    this.load.on("complete", function () {
-      barraProgresso.destroy();
-      caixaProgresso.destroy();
-    });
-  }
-
   create() {
+    //Adição da música de fundo, colocando ela em loop
     this.musicaFundo = this.sound.add("musicaFundo", { loop: true });
     this.musicaFundo.play();
 
+    //Adição de outros sons
     this.somFinalizar = this.sound.add("somFinalizar", { volume: 2 });
-
     this.clique = this.sound.add("clique");
 
     this.add.image(400, 300, "fundo").setDepth(-1);
@@ -79,6 +30,7 @@ class selecaoPersonagens extends baseCena {
       this.add.rectangle(160 * i, 300, 140, 300, 0xffffff).setAlpha(0.25);
     }
 
+    //Adiciona os botões de seleção dos personagens
     this.botao0 = this.add
       .image(160, 300, "botaoMary")
       .setInteractive()
@@ -107,6 +59,7 @@ class selecaoPersonagens extends baseCena {
       .setOrigin(0.5, 0.5)
       .setAlpha(0.5);
 
+    //Permite a interação com os botões, mudando o visual quando o cursor está em cima e quando é clicado
     for (let i = 0; i < 4; i++) {
       let botao = this[`botao${i}`];
 
@@ -149,6 +102,7 @@ class selecaoPersonagens extends baseCena {
       });
     }
 
+    //Quando o botão de seleção é pressionado, a cena da hub é iniciada, passando o valor do personagem selecionado
     this.botaoSelecionar.on("pointerdown", () => {
       if (this.personagemSelecionado.numero > -1 && !transicionando) {
         this.musicaFundo.stop();

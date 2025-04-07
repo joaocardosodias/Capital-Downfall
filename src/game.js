@@ -16,6 +16,7 @@ const config = {
     },
   },
 
+  //Cenas do jogo
   scene: [
     preload,
     baseCena,
@@ -44,16 +45,14 @@ const config = {
     fimMinigame5,
     miniGame6,
     apoioDia2,
-    apoioMinigame4,
-    apoioMinigame5,
-    apoioMinigame6,
     hubFinal,
     finalDia2,
+    finalSalaDeGuerra,
     salaDeGuerra,
     movimento,
   ],
 };
-//Adicionando a fonte customizada que será utilizada ao redor do jogo
+//Adição das fontes customizadas que serão utilizadas ao redor do jogo
 const fontePixelArt = new FontFace(
   "pixelArt",
   "url(src/assets/fontes/fontePixelArt.ttf)"
@@ -82,4 +81,5 @@ const fontePixelArtNumeros = new FontFace(
 fontePixelArtNumeros.load();
 document.fonts.add(fontePixelArtNumeros);
 
+//Criação de um novo jogo no Phaser
 const game = new Phaser.Game(config);
