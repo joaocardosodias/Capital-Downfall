@@ -20,7 +20,8 @@ class finalDia1 extends baseCena {
 
     // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
     //Para avançar para o dia 2 o jogador deve ter um aproveitamento de pelo menos 75%, ou seja, 1275 pontos
-    if (pontuacao < 500) {
+
+    if (pontuacao < 700) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
@@ -31,7 +32,8 @@ class finalDia1 extends baseCena {
       });
     }
 
-    if (pontuacao >= 500) {
+
+    if (pontuacao >= 700) {
       this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;

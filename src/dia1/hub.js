@@ -11,6 +11,7 @@ class hub extends baseCena {
     this.diaAtual = 1;
     this.tiles;
     this.player;
+    this.chefe;
     this.playerDirecao = "baixo";
     this.personagens = ["Mary", "Mark", "Margaret", "Steve"];
     this.personagemSelecionado = 3;
@@ -94,10 +95,17 @@ class hub extends baseCena {
 
     this.interacaoMinigame = this.sound.add("interacaoMinigame", { volume: 1 }); // Adiciona o som de interação com o minigame
 
+    //Adiciona o sprite da chefe, com colisões
+    this.chefe = this.physics.add
+      .sprite(1180, 860, "chefe")
+      .setImmovable(true)
+      .setDepth()
+      .setScale(1.5);
+
     //Criação do objeto de detecção da interação do jogador com o apoio geral
     this.colisaoApoioGeral = this.physics.add
-      .sprite(1300, 850, "colisao")
-      .setScale(3.5)
+      .sprite(1178, 870, "colisao")
+      .setScale(5)
       .setVisible(false)
       .setImmovable(true);
 
@@ -126,6 +134,15 @@ class hub extends baseCena {
         end: 8,
       }),
       frameRate: 15,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fala",
+      frames: this.anims.generateFrameNumbers("balaoFala", {
+        start: 0,
+        end: 1,
+      }),
+      frameRate: 2,
       repeat: -1,
     });
 
@@ -220,10 +237,16 @@ class hub extends baseCena {
     this.avisoMinigame3 = this.add
       .sprite(336, 345, "avisoMinigame")
       .setScale(1.5);
+    this.avisoApoioGeral = this.add
+      .sprite(1240, 740, "balaoFala")
+      .setScale(2)
+      .setDepth(2)
+      .setVisible(false);
 
     this.avisoMinigame1.anims.play("movimentoAviso");
     this.avisoMinigame2.anims.play("movimentoAviso");
     this.avisoMinigame3.anims.play("movimentoAviso");
+    this.avisoApoioGeral.anims.play("fala");
 
     //Criação do objeto do player
     this.player = this.physics.add.sprite(1176, 1230).setScale(1.5);
@@ -234,6 +257,7 @@ class hub extends baseCena {
     //Adiciona a colisão entre os objetos
     this.physics.add.collider(this.player, this.layerParede);
     this.physics.add.collider(this.player, this.layerObjetos);
+    this.physics.add.collider(this.player, this.chefe);
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
@@ -265,6 +289,28 @@ class hub extends baseCena {
       .setOrigin(0.5)
       .setVisible(false)
       .setDepth(11);
+
+    this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
+      this.fundoInteracao
+        .setPosition(this.player.x, this.player.y + 80)
+        .setVisible(true);
+      this.textoInteracao
+        .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
+      this.avisoApoioGeral
+        .setVisible(true);
+      //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
+      if (
+        (this.spacebar || this.E) &&
+        (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+          Phaser.Input.Keyboard.JustDown(this.E))
+      ) {
+        this.interacaoMinigame.play();
+        this.passos.stop();
+        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
+        game.scene.sleep("hub");
+      }
+    });
 
     // Verifica se o player está na mesma área que o detector de colisão do minigame 1
     this.physics.add.overlap(this.player, this.colisaoMinigame1, () => {
@@ -376,10 +422,15 @@ class hub extends baseCena {
     if (
       !this.physics.overlap(this.player, this.colisaoMinigame1) &&
       !this.physics.overlap(this.player, this.colisaoMinigame2) &&
-      !this.physics.overlap(this.player, this.colisaoMinigame3)
+      !this.physics.overlap(this.player, this.colisaoMinigame3) &&
+      !this.physics.overlap(this.player, this.colisaoApoioGeral)
     ) {
       this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
       this.fundoInteracao.setVisible(false);
+    }
+
+    if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
+      this.avisoApoioGeral.setVisible(false);
     }
 
     if (

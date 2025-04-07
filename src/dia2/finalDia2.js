@@ -17,9 +17,8 @@ class finalDia2 extends Phaser.Scene {
     this.somErro = this.sound.add("somErro", { volume: 2 });
 
     // O código a seguir verifica a pontuação do jogador durante o dia 2, e define um final de acordo com sua performance
-    //Valor mínimo: 1050
 
-    if (pontuacao < 500) {
+    if (pontuacao < 700) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
@@ -30,7 +29,7 @@ class finalDia2 extends Phaser.Scene {
       });
     }
 
-    if (pontuacao >= 500) {
+    if (pontuacao >= 700) {
       this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;
@@ -39,6 +38,8 @@ class finalDia2 extends Phaser.Scene {
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
         this.scene.stop("finalDia2");
+        //Reinicia a pontuação antes de começar a Sala de Guerra
+        pontuacao = 0;
         this.scene.start("movimento");
       });
     }
