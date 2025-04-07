@@ -95,7 +95,7 @@ class hub2 extends Phaser.Scene {
     //Criação do objeto de detecção da interação do jogador com o apoio geral
     this.colisaoApoioGeral = this.physics.add
       .sprite(1178, 870, "colisao")
-      .setScale(3.5)
+      .setScale(5)
       .setVisible(false)
       .setImmovable(true);
 
@@ -128,12 +128,14 @@ class hub2 extends Phaser.Scene {
       .setScale(1.5);
     this.avisoApoioGeral = this.add
       .sprite(1240, 740, "balaoFala")
-      .setScale(0.23)
-      .setDepth(2);
+      .setScale(2)
+      .setDepth(2)
+      .setVisible(false);
 
     this.avisoMinigame4.anims.play("movimentoAviso");
     this.avisoMinigame5.anims.play("movimentoAviso");
     this.avisoMinigame6.anims.play("movimentoAviso");
+    this.avisoApoioGeral.anims.play("fala");
 
     //Criação do objeto do player
     this.player = this.physics.add.sprite(1176, 1230).setScale(1.5);
@@ -152,6 +154,8 @@ class hub2 extends Phaser.Scene {
         .setVisible(true);
       this.textoInteracao
         .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
+      this.avisoApoioGeral
         .setVisible(true);
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
@@ -300,6 +304,10 @@ class hub2 extends Phaser.Scene {
     ) {
       this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
       this.fundoInteracao.setVisible(false);
+    }
+
+    if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
+      this.avisoApoioGeral.setVisible(false);
     }
 
     if (

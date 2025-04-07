@@ -104,7 +104,7 @@ class hub extends baseCena {
     //Criação do objeto de detecção da interação do jogador com o apoio geral
     this.colisaoApoioGeral = this.physics.add
       .sprite(1178, 870, "colisao")
-      .setScale(3.5)
+      .setScale(5)
       .setVisible(false)
       .setImmovable(true);
 
@@ -133,6 +133,15 @@ class hub extends baseCena {
         end: 8,
       }),
       frameRate: 15,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fala",
+      frames: this.anims.generateFrameNumbers("balaoFala", {
+        start: 0,
+        end: 1,
+      }),
+      frameRate: 2,
       repeat: -1,
     });
 
@@ -229,12 +238,14 @@ class hub extends baseCena {
       .setScale(1.5);
     this.avisoApoioGeral = this.add
       .sprite(1240, 740, "balaoFala")
-      .setScale(0.23)
-      .setDepth(2);
+      .setScale(2)
+      .setDepth(2)
+      .setVisible(false);
 
     this.avisoMinigame1.anims.play("movimentoAviso");
     this.avisoMinigame2.anims.play("movimentoAviso");
     this.avisoMinigame3.anims.play("movimentoAviso");
+    this.avisoApoioGeral.anims.play("fala");
 
     //Criação do objeto do player
     this.player = this.physics.add.sprite(1176, 1230).setScale(1.5);
@@ -270,6 +281,8 @@ class hub extends baseCena {
         .setVisible(true);
       this.textoInteracao
         .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
+      this.avisoApoioGeral
         .setVisible(true);
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
@@ -398,6 +411,10 @@ class hub extends baseCena {
       this.fundoInteracao.setVisible(false);
     }
 
+    if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
+      this.avisoApoioGeral.setVisible(false);
+    }
+
     if (
       minigame1Jogado === true &&
       minigame2Jogado === true &&
@@ -522,42 +539,42 @@ class hub extends baseCena {
       }
     } else { // código repetido por que ocorre em situações diferentes mas fazem a mesma coisa
       this.player.setVelocityX(0);
-        this.player.setVelocityY(0);
-        if (this.andando) {
-          this.passos.stop();
-        }
-        this.andando = false;
+      this.player.setVelocityY(0);
+      if (this.andando) {
+        this.passos.stop();
+      }
+      this.andando = false;
 
-        //vê a direção que o player estava virado e toca a animação parado correspondente
-        if (this.playerDirecao === "cima") {
-          this.player.anims.play("movimentoParadoCima", true);
-        } else if (this.playerDirecao === "baixo") {
-          this.player.anims.play("movimentoParadoBaixo", true);
-        } else if (this.playerDirecao === "direita") {
-          this.player.anims.play("movimentoParadoDireita", true);
-        } else if (this.playerDirecao === "esquerda") {
-          this.player.anims.play("movimentoParadoEsquerda", true);
-        } else {
-          // define a animação parado default como a para baixo
-          this.player.anims.play("movimentoParadoBaixo", true);
-        }
+      //vê a direção que o player estava virado e toca a animação parado correspondente
+      if (this.playerDirecao === "cima") {
+        this.player.anims.play("movimentoParadoCima", true);
+      } else if (this.playerDirecao === "baixo") {
+        this.player.anims.play("movimentoParadoBaixo", true);
+      } else if (this.playerDirecao === "direita") {
+        this.player.anims.play("movimentoParadoDireita", true);
+      } else if (this.playerDirecao === "esquerda") {
+        this.player.anims.play("movimentoParadoEsquerda", true);
+      } else {
+        // define a animação parado default como a para baixo
+        this.player.anims.play("movimentoParadoBaixo", true);
+      }
     }
 
-      // Faz com que o aviso não suma caso o player entre e saia de um tutorial
-      if (!minigame1Jogado) {
-        this.avisoMinigame1.setVisible(true);
-      } else {
-        this.avisoMinigame1.setVisible(false);
-      }
-      if (!minigame2Jogado) {
-        this.avisoMinigame2.setVisible(true);
-      } else {
-        this.avisoMinigame2.setVisible(false);
-      }
-      if (!minigame3Jogado) {
-        this.avisoMinigame3.setVisible(true);
-      } else {
-        this.avisoMinigame3.setVisible(false);
-      }
+    // Faz com que o aviso não suma caso o player entre e saia de um tutorial
+    if (!minigame1Jogado) {
+      this.avisoMinigame1.setVisible(true);
+    } else {
+      this.avisoMinigame1.setVisible(false);
+    }
+    if (!minigame2Jogado) {
+      this.avisoMinigame2.setVisible(true);
+    } else {
+      this.avisoMinigame2.setVisible(false);
+    }
+    if (!minigame3Jogado) {
+      this.avisoMinigame3.setVisible(true);
+    } else {
+      this.avisoMinigame3.setVisible(false);
     }
   }
+}

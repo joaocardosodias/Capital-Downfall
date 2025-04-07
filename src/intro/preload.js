@@ -135,7 +135,10 @@ class preload extends Phaser.Scene {
     //Assets da Hub 1
 
     this.load.image("chefe", "src/assets/hub/chefe.png");
-    this.load.image("balaoFala", "src/assets/hub/balaoFala.png");
+    this.load.spritesheet("balaoFala", "src/assets/hub/balaoFala.png", {
+      frameWidth: 149,
+      frameHeight: 60,
+    });
     this.load.image("tiles", "src/assets/hub/tileset.png");
     this.load.image("player", "src/assets/players/player.png");
     this.load.tilemapTiledJSON("hub", "src/assets/hub/tilemap.json");
