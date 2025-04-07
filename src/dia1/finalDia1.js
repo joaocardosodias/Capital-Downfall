@@ -1,4 +1,4 @@
-class finalDia1 extends Phaser.Scene {
+class finalDia1 extends baseCena {
   constructor() {
     super("finalDia1");
     this.falido = false;
@@ -12,6 +12,8 @@ class finalDia1 extends Phaser.Scene {
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
+
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
     this.somErro = this.sound.add("somErro", { volume: 2 });
     this.clique = this.sound.add("clique");
@@ -40,10 +42,9 @@ class finalDia1 extends Phaser.Scene {
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
         this.clique.play();
-        this.scene.stop("finalDia1");
         //Reinicia a pontuação antes de começar o dia 2;
         pontuacao = 0;
-        this.scene.start("introDia2");
+        this.transicao('introDia2', true, false, false)
       });
     }
   }

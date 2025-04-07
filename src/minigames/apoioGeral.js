@@ -1,4 +1,4 @@
-class apoioGeral extends Phaser.Scene {
+class apoioGeral extends baseCena {
   constructor() {
     super("apoioGeral");
     this.diaAtual;
@@ -183,6 +183,10 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
   }
 
   create() {
+
+    this.paginaAtiva = 0;
+    this.apoioEscolhido = 1; //minigame 1 como default
+
     //Carrega o fundo e os botões utilizados
 
     this.imailFundoGeral = this.add.image(400, 300, "imailFundoGeral");
@@ -200,6 +204,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
         }
       )
       .setWordWrapWidth(600);
+      this.textoApoio.setText(this["apoioMinigame" + this.apoioEscolhido][0]); // Texto default
 
     // Caso haja apenas um tutorial, começar com botaoComecar
     if (
@@ -331,18 +336,16 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     });
 
     this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.paginaAtiva = 0;
-      this.apoioEscolhido = 1; //minigame 1 como default
-      this.sairApoio.play();
-      this.textoApoio.setText(this["apoioMinigame" + this.apoioEscolhido][0]);
-      if (this.diaAtual === 1) {
-        game.scene.wake("hub");
-      } else if (this.diaAtual === 2) {
-        game.scene.wake("hub2");
-      } else if (this.diaAtual === 3) {
-        game.scene.wake("hubFinal");
+      if (!transicionando) {
+        this.sairApoio.play();
+        if (this.diaAtual === 1) {
+          this.transicao('hub', false, false, true, 200,);
+        } else if (this.diaAtual === 2) {
+          this.transicao('hub2', false, false, true, 200,);
+        } else if (this.diaAtual === 3) {
+          this.transicao('hubFinal', false, false, true, 200,);
+        }
       }
-      game.scene.stop("apoioGeral");
     });
 
     // Adição do efeito de pointer over nos botões

@@ -36,6 +36,7 @@ class hub extends baseCena {
     this.passos;
     this.andando = false;
     this.interacaoMinigame;
+    this.fimDoDia = false; // Evita que a transição do fim do dia ocorra mais de uma vez
   }
 
   init(data) {
@@ -258,6 +259,20 @@ class hub extends baseCena {
     this.physics.add.collider(this.player, this.layerObjetos);
     this.physics.add.collider(this.player, this.chefe);
 
+    this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
+      //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
+      if (
+        (this.spacebar || this.E) &&
+        (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
+      ) {
+        this.interacaoMinigame.play();
+        this.passos.stop();
+        this.transicao("apoioGeral", true, true, true)
+      }
+    });
+
     // Criando o aviso "Aperte espaço para interagir"
     this.fundoInteracao = this.add
       .rectangle(0, 0, 170, 56, 0x90a2e0, 0.5)
@@ -312,7 +327,8 @@ class hub extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -340,7 +356,8 @@ class hub extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -368,7 +385,8 @@ class hub extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -420,10 +438,16 @@ class hub extends baseCena {
       minigame2Jogado === true &&
       minigame3Jogado === true
     ) {
-      this.passos.stop();
-      this.minigameAtual = 10;
-      this.interacaoMinigame.play();
-      this.transicao("apoioDia1", true, true, false)
+      
+      if (!transicionando && !this.fimDoDia) {
+        this.fimDoDia = true
+        this.time.delayedCall(1500, () => {
+          this.passos.stop();
+          this.minigameAtual = 10;
+          this.interacaoMinigame.play();
+          this.transicao("apoioDia1", true, true, true)
+        });
+      }
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento

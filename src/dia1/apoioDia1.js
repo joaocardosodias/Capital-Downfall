@@ -9,7 +9,7 @@ class apoioDia1 extends baseCena {
     this.tutoriaisMinigame1 = [
       `Nessa tarefa, você precisará aprender um pouco de fundos abertos e fechados.
 
-Seu objetivo é simples:  ---> definir se a descrição apresentada é de um fundo aberto ou de um fundo fechado. <---
+Seu objetivo é simples: definir se a descrição apresentada é de um fundo aberto ou de um fundo fechado.
 
 Para isso, você deve arrastar o card que aparecerá na sua tela para o lado correto. Na esquerda estará a gaveta dos cards abertos e na direita a dos fechados.
 
@@ -39,7 +39,7 @@ Fundo Fechado:     Compromisso a longo prazo (não pode acessar o dinheiro até 
     this.tutoriaisMinigame2 = [
       `Nessa tarefa, você precisará aprender um pouco de matemática financeira.
 
-Seu objetivo é simples:  ---> descobrir o saldo final das contas bancárias apresentadas. <---
+Seu objetivo é simples: descobrir o saldo final das contas bancárias apresentadas.
 
 Para isso, basta usar a legenda no lado esquerdo da tela para analisar as atividades da conta, fazer os cálculos necessários e escolher a alternativa que corresponde ao saldo final da conta clicando nela com o mouse. 
 
@@ -98,7 +98,7 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
     this.tutoriaisMinigame3 = [
       `Nessa tarefa você precisará aprender sobre o processo de resgate de fundos.
 
-Seu objetivo é:  ---> organizar a linha do tempo de acontecimentos sobre o processo. <---
+Seu objetivo é: organizar a linha do tempo de acontecimentos sobre o processo. 
 Para isso, clique e arraste um card para sua posição na linha do tempo. Atenção! Após ser solto em qualquer posição, o card não poderá ser movido novamente.
 
 Segue em anexo os materiais necessários para a tarefa.
@@ -136,6 +136,7 @@ Boa sorte!`,
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o fundo e os botões
     if (this.minigameAtual < 10) {
       this.imailFundo = this.add.image(400, 300, "imailFundo");
@@ -156,11 +157,11 @@ Boa sorte!`,
       )
       .setWordWrapWidth(600);
 
-      // Garantia que sempre irá iniciar na página 1
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
+    // Garantia que sempre irá iniciar na página 1
+    this.paginaAtiva = 0;
+    this.textoTutorial.setText(
+      this["tutoriaisMinigame" + this.minigameAtual][0]
+    );
 
     // Configura os botões
     this.botaoProximo = this.add
@@ -177,9 +178,11 @@ Boa sorte!`,
       .image(300, 555, "botaoAnterior")
       .setVisible(false)
       .setInteractive();
-    this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
-      .setInteractive();
+    if (this.minigameAtual % 10 !== 0) {
+      this.botaoDesistir = this.add
+        .image(750, 40, "botaoDesistir")
+        .setInteractive();
+    }
 
     // Variável para controlar cliques repetidos
     this.atrasoClick = false;

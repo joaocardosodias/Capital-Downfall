@@ -89,7 +89,7 @@ class movimento extends Phaser.Scene {
           "Sine.easeInOut"
         ); // Movimenta a câmera até a posição do jornal
         this.time.delayedCall(3000, () => this.scene.stop("movimento"));
-        this.time.delayedCall(3000, () => this.scene.start("hubFinal"));
+        this.time.delayedCall(3000, () => this.scene.start("apoioSalaDeGuerra"));
       },
     });
   }

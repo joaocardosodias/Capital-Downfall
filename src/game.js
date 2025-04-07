@@ -48,6 +48,7 @@ const config = {
     hubFinal,
     finalDia2,
     finalSalaDeGuerra,
+    apoioSalaDeGuerra,
     salaDeGuerra,
     movimento,
   ],
