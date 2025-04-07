@@ -18,6 +18,7 @@ class finalDia1 extends Phaser.Scene {
 
     // O código a seguir verifica a pontuação do jogador durante o dia 1, e define um final de acordo com sua performance
     //Para avançar para o dia 2 o jogador deve ter um aproveitamento de pelo menos 75%, ou seja, 1275 pontos
+
     if (pontuacao < 700) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
@@ -28,6 +29,7 @@ class finalDia1 extends Phaser.Scene {
         window.location.reload();
       });
     }
+
 
     if (pontuacao >= 700) {
       this.somAcerto.play();

@@ -1,4 +1,4 @@
-class selecaoPersonagens extends Phaser.Scene {
+class selecaoPersonagens extends baseCena {
   constructor() {
     super("selecaoPersonagens");
     this.personagemSelecionado = { numero: -1 };
@@ -81,34 +81,33 @@ class selecaoPersonagens extends Phaser.Scene {
       });
 
       botao.on("pointerdown", () => {
-        this.personagemSelecionado.numero = i;
-        this.clique.play();
-        this.botao0.setTexture("botao" + this.personagens[0]);
-        this.botao1.setTexture("botao" + this.personagens[1]);
-        this.botao2.setTexture("botao" + this.personagens[2]);
-        this.botao3.setTexture("botao" + this.personagens[3]);
+        if (!transicionando) {
+          this.personagemSelecionado.numero = i;
+          this.clique.play();
+          this.botao0.setTexture("botao" + this.personagens[0]);
+          this.botao1.setTexture("botao" + this.personagens[1]);
+          this.botao2.setTexture("botao" + this.personagens[2]);
+          this.botao3.setTexture("botao" + this.personagens[3]);
 
-        botao.setTexture("botao" + this.personagens[i] + "SelecionadoSelecao");
+          botao.setTexture("botao" + this.personagens[i] + "SelecionadoSelecao");
 
-        this.botaoSelecionar.setTexture("botaoSelecionarAtivado").setAlpha(1);
+          this.botaoSelecionar.setTexture("botaoSelecionarAtivado").setAlpha(1);
 
-        this.texto.setText(
-          "confiamos em você, " +
+          this.texto.setText(
+            "confiamos em você, " +
             this.personagens[this.personagemSelecionado.numero] +
             "!"
-        );
+          );
+        }
       });
     }
 
     //Quando o botão de seleção é pressionado, a cena da hub é iniciada, passando o valor do personagem selecionado
     this.botaoSelecionar.on("pointerdown", () => {
-      if (this.personagemSelecionado.numero > -1) {
+      if (this.personagemSelecionado.numero > -1 && !transicionando) {
         this.musicaFundo.stop();
         this.somFinalizar.play();
-        this.scene.stop("selecaoPersonagens");
-        this.scene.start("hub", {
-          personagemSelecionado: this.personagemSelecionado,
-        });
+        this.transicao('hub', false, false, false, 200);
       }
     });
   }

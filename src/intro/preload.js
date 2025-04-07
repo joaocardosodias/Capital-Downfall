@@ -69,6 +69,12 @@ class preload extends Phaser.Scene {
 
     //Preload das imagens utilizadas:
 
+    //Assets da cena base
+
+    this.load.spritesheet("notificacao", "src/assets/materiais_apoio/notificacao.png",
+      { frameWidth: 32, frameHeight: 64 });
+    this.load.image("tablet", "src/assets/materiais_apoio/tablet.png");
+
     //Assets da Tela Inicial
 
     this.load.spritesheet("menu", "src/assets/intro/menuInicial.png", {
