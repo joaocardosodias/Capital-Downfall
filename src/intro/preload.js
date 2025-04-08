@@ -245,6 +245,10 @@ class preload extends Phaser.Scene {
       "src/assets/materiais_apoio/botaoDesistir.png"
     );
     this.load.image(
+      "botaoDesistirApoioGeral",
+      "src/assets/materiais_apoio/botaoDesistirApoioGeral.png"
+    );
+    this.load.image(
       "botaoComecar",
       "src/assets/materiais_apoio/botaoComecar.png"
     );

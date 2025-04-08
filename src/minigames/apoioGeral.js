@@ -225,8 +225,8 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       .setVisible(false)
       .setInteractive();
 
-    this.botaoDesistir = this.add
-      .image(740, 40, "botaoDesistir")
+    this.botaoDesistirApoioGeral = this.add
+      .image(740, 40, "botaoDesistirApoioGeral")
       .setInteractive()
       .setScale(0.5);
 
@@ -335,7 +335,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       }
     });
 
-    this.botaoDesistir.on("pointerdown", (pointer) => {
+    this.botaoDesistirApoioGeral.on("pointerdown", (pointer) => {
       if (!transicionando) {
         this.sairApoio.play();
         if (this.diaAtual === 1) {
@@ -356,6 +356,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     this.selecaoDesistir = this.add
       .image(0, 0, "selecaoDesistir")
       .setVisible(false)
+      .setScale(0.5)
       .setDepth(100);
 
     this.botaoProximo.on("pointerover", () => {
@@ -372,10 +373,10 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       this.selecao.setPosition(0, 0).setVisible(false);
     });
 
-    this.botaoDesistir.on("pointerover", () => {
-      this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+    this.botaoDesistirApoioGeral.on("pointerover", () => {
+      this.selecaoDesistir.setPosition(740, 40).setVisible(true);
     });
-    this.botaoDesistir.on("pointerout", () => {
+    this.botaoDesistirApoioGeral.on("pointerout", () => {
       this.selecaoDesistir.setPosition(0, 0).setVisible(false);
     });
 
