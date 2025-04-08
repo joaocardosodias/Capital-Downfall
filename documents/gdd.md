@@ -63,11 +63,14 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
 
 #
 
-<div style="text-align: center;">
-    <sub>Figura x: 5 Forças de Porter</sub>
-    <img src="../assets/negocios/5forcasdeporter.png">
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1em;">
+    <p style="margin-bottom: 0.3em; font-style: italic;"><strong>Figura X</strong> – Representação das 5 Forças de Porter</p>
+    <img src="../assets/negocios/5forcasdeporter.png" style="max-width: 100%; height: auto; margin: 0.5em 0;">
+    <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
+        Fonte: Elaborado pelo Grupo Level Zero, Turma 16 – Inteli, 2025.
+    </p>
 </div>
+
 
 #
 
@@ -90,11 +93,14 @@ Portanto,após a análise das Cinco Forças de Porter percebe-se que é uma ferr
 A análise SWOT é uma ferramenta utilizada para identificar as forças, oportunidades, fraquezas e ameaças de uma empresa. Dessa forma, serve como uma forma de identificar oportunidades de melhoria frente à concorrência e à própria equipe, promovendo uma visão do atual cenário da empresa. No contexto da análise SWOT, há os fatores internos e externos. Entre os fatores internos, destacam-se as forças, que representam os aspectos positivos da empresa, como recursos, competências e ações estratégicas que proporcionam uma vantagem competitiva. Enquanto as fraquezas são o oposto, são as iniciativas internas que estão abaixo do esperado e indicam o que precisa ser feito para melhorar na empresa. Quanto aos fatores externos há as oportunidades e as ameaças. As oportunidades são as iniciativas externas às empresas, mas que promovem uma melhor posição competitiva. Em relação às ameaças, são os fatores externos que estão fora do controle da empresa e podem impactar negativamente o cenário competitivo. Desse modo, considerando as concepções da Análise SWOT foi possível identificar as forças, fraquezas, oportunidades e ameaças que contemplam o BTG Pactual, conforme consta abaixo(ASANA, 2025).
 
 #
-
-<div style="text-align: center;">
-    <sub>Figura x: Análise SWOT</sub>
-    <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT">
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1em;">
+    <p style="margin-bottom: 0.3em; font-style: italic;">
+        <strong>Figura X</strong> – Estrutura de Análise SWOT aplicada ao projeto
+    </p>
+    <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT" style="max-width: 100%; height: auto; margin: 0.5em 0;">
+    <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
+        Fonte: Elaborado pelo Grupo Level Zero, Turma 16 – Inteli, 2025.
+    </p>
 </div>
 
 #
@@ -167,11 +173,16 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 
 #
 
-<div style="text-align: center;">
-    <sub>Figura x: Canvas: Proposta de Valor</sub>
-    <img src="../assets/gdd_1.1/canvasPropostaValor.png" />
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1em;">
+    <p style="margin-bottom: 0.3em; font-style: italic;">
+        <strong>Figura X</strong> – Canvas da Proposta de Valor do projeto *Capital Downfall*
+    </p>
+    <img src="../assets/gdd_1.1/canvasPropostaValor.png" alt="Canvas: Proposta de Valor" style="max-width: 100%; height: auto; margin: 0.5em 0;">
+    <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
+        Fonte: Elaborado pelo Grupo Level Zero, Turma 16 – Inteli, 2025.
+    </p>
 </div>
+
 
 #
 
@@ -197,11 +208,17 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 
 #
 
-<div style="text-align: center;">
-    <sub>Figura x: Ameaças - Matriz de Risco</sub>
-    <img src="../assets/negocios/matrizderisco1.png" />
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+    <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+        <strong>Figura X:</strong> Ameaças – Matriz de Risco
+    </p>
+    <img src="../assets/negocios/matrizderisco1.png" alt="Matriz de Risco" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
+    <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+        Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+    </p>
 </div>
+
+
 
 #
 
@@ -253,11 +270,16 @@ O setor de oportunidades na matriz de riscos representa os riscos positivos, ou 
 
 #
 
-<div style="text-align: center;">
-    <sub>Figura x: Oportunidades - Matriz de Risco</sub>
-    <img src="../assets/negocios/matrizrisco2.png" />
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+    <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+        <strong>Figura X:</strong> Oportunidades – Matriz de Risco
+    </p>
+    <img src="../assets/negocios/matrizrisco2.png" alt="Oportunidades - Matriz de Risco" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
+    <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+        Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+    </p>
 </div>
+
 
 #
 
@@ -304,11 +326,16 @@ Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revis
 
 #
 
-<div style="text-align: center;">
-    <sub>Figura x: Metas SMART</sub>
-    <img src="../assets/negocios/smart.png" />
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+    <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+        <strong>Figura X:</strong> Metas SMART
+    </p>
+    <img src="../assets/negocios/smart.png" alt="Metas SMART" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
+    <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+        Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+    </p>
 </div>
+
 
 #
 
@@ -435,36 +462,55 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 #
 
-<div align="center">
-  <p>Figura x: Mark</p>
-  <img src="../assets/personagens/personagemMasculino2.png"><br>
-  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
-  
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Mark
+  </p>
+  <img src="../assets/personagens/personagemMasculino2.png" alt="Personagem Mark" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-  <p>Figura x: Margaret</p>
-  <img src="../assets/personagens/personagemFeminino2.png"<br>
-  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Margaret
+  </p>
+  <img src="../assets/personagens/personagemFeminino2.png" alt="Personagem Margaret" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-  <p>Figura x: Steve</p>
-  <img src="../assets/personagens/personagemMasculino1.png"<br>
-  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Steve
+  </p>
+  <img src="../assets/personagens/personagemMasculino1.png" alt="Personagem Steve" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-  <p>Figura x: Mary</p>
-  <img src="../assets/personagens/personagemFeminino1.png"<br>
-  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Mary
+  </p>
+  <img src="../assets/personagens/personagemFeminino1.png" alt="Personagem Mary" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -492,11 +538,16 @@ O jogo será ambientado no escritório de um grande banco. O mapa consiste em um
 
 #
 
-<div align="center">
-    <sub>Figura x: Mapa do jogo</sub>
-    <img src="../assets/gdd_3.3/hub.png" width="500"><br>
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Mapa do jogo
+  </p>
+  <img src="../assets/gdd_3.3/hub.png" alt="Mapa do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -504,11 +555,16 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 
 #
 
-<div align="center">
-    <sub>Figura x: Exemplo de objeto interativo, marcado pela exclamação</sub>
-    <img src="../assets/gdd_3.3/mapa2.png" width="500"><br>
-    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Exemplo de objeto interativo, marcado pela exclamação
+  </p>
+  <img src="../assets/gdd_3.3/mapa2.png" alt="Objeto Interativo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -561,58 +617,90 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 #
 
-<div align="center">
-    <sub>Figura x: Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</sub>
-    <img src="../assets/conceptArt/telaInicial.png" width="500"><br>
-    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
+  </p>
+  <img src="../assets/conceptArt/telaInicial.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Visão do mapa inicial do jogo, destacando o ambiente do escritório.
+  </p>
+  <img src="../assets/conceptArt/mapa1.png" alt="Mapa Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
+  </p>
+  <img src="../assets/conceptArt/materialDeApoio1.png" alt="Material de Apoio - Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-  <sub>Figura x: Visão do mapa inicial do jogo, destacando o ambiente do escritório. </sub>
-  <img src="../assets/conceptArt/mapa1.png" width="500"><br>
-  <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Minijogo sobre diferenciação de fundos de investimento.
+  </p>
+  <img src="../assets/gdd_3.3/minigame1.png" alt="Minijogo de Fundos de Investimento" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Minijogo sobre matemática financeira.
+  </p>
+  <img src="../assets/gdd_3.3/minigame2.png" alt="Minijogo de Matemática Financeira" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Minijogo sobre o processo de resgate em fundos de investimento.
+  </p>
+  <img src="../assets/conceptArt/miniGame3.png" alt="Minijogo sobre processo de resgate" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-  <sub>Figura x: Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</sub>
-  <img src="../assets/conceptArt/materialDeApoio1.png" width="500"><br>
-  <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
-</div>
-
-#
-
-<div align="center">
-    <sub>Figura x: Minijogo sobre diferenciação de fundos de investimento.</sub>
-    <img src="../assets/gdd_3.3/minigame1.png" width="500"><br>
-    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
-</div>
-
-#
-
-<div align="center">
-    <sub>Figura x: Minijogo sobre matemática financeira.</sub>
-    <img src="../assets/gdd_3.3/minigame2.png" width="500"><br>
-    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
-</div>
-
-#
-
-<div align="center">
-    <sub>Figura x: Minijogo sobre o processo de resgate em fundos de investimento.</sub>
-    <img src="../assets/conceptArt/miniGame3.png" width="500"><br>
-    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
-</div>
-
-#
-
-<div align="center">
-  <sub>Figura x: Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.</sub>
-  <img src="../assets/conceptArt/pontuacao.png" width="500"><br>
-  <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.
+  </p>
+  <img src="../assets/conceptArt/pontuacao.png" alt="Tela de pontuação final do minijogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -674,58 +762,90 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 #
 
-<div align="center">
-  <p>Figura x: Quadro 1</p>
-    <img src="../assets/gdd_3.5/quadro_1.png"width="500"><br>
-    <p>Produção autoral</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 1
+  </p>
+  <img src="../assets/gdd_3.5/quadro_1.png" alt="Quadro 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 2
+  </p>
+  <img src="../assets/gdd_3.5/quadro_2.png" alt="Quadro 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 3
+  </p>
+  <img src="../assets/gdd_3.5/quadro_3.png" alt="Quadro 3" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-  <p>Figura x: Quadro 2</p>
-    <img src="../assets/gdd_3.5/quadro_2.png"width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 4
+  </p>
+  <img src="../assets/gdd_3.5/quadro_4.png" alt="Quadro 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-  <p>Figura x: Quadro 3</p>
-    <img src="../assets/gdd_3.5/quadro_3.png"width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 5
+  </p>
+  <img src="../assets/gdd_3.5/quadro_5.png" alt="Quadro 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-  <p>Figura x: Quadro 4</p>
-    <img src="../assets/gdd_3.5/quadro_4.png"width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 6
+  </p>
+  <img src="../assets/gdd_3.5/quadro_6.png" alt="Quadro 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
-#
-
-<div align="center">
-  <p>Figura x: Quadro 5</p>
-    <img src="../assets/gdd_3.5/quadro_5.png"width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
-</div>
 
 #
-
-<div align="center">
-  <p>Figura x: Quadro 6</p>
-    <img src="../assets/gdd_3.5/quadro_6.png"width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
-</div>
-
-#
-
-<div align="center">
-  <p>Figura x: Quadro 7</p>
-    <img src="../assets/gdd_3.5/quadro_7.png"width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Quadro 7
+  </p>
+  <img src="../assets/gdd_3.5/quadro_7.png" alt="Quadro 7" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1034,19 +1154,29 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 
 #
 
-<div align="center">
-<sub>Figura x: Cena da interface do computador</sub>
-<img src="../assets/conceptArt/materialDeApoio1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Cena da interface do computador
+  </p>
+  <img src="../assets/conceptArt/materialDeApoio1.png" alt="Cena da interface do computador" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-<sub>Figura x: Parte do código referente à cena</sub>
-<img src="../assets/gdd_4.2/printCodigoDia1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Parte do código referente à cena
+  </p>
+  <img src="../assets/gdd_4.2/printCodigoDia1.png" alt="Parte do código referente à cena" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1056,19 +1186,28 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo do _Tileset_ utilizado</p>
-<img src="../assets/gdd_4.2/tilesetInicial.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Exemplo do <em>Tileset</em> utilizado
+  </p>
+  <img src="../assets/gdd_4.2/tilesetInicial.png" alt="Tileset utilizado" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-<sub>Figura x: Parte do código referente à cena</sub>
-<img src="../assets/gdd_4.2/printCodigoHub.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> Parte do código referente à cena
+  </p>
+  <img src="../assets/gdd_4.2/printCodigoHub.png" alt="Código da cena" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1086,11 +1225,16 @@ O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classi
 
 #
 
-<div align="center">
-<sub>Figura x: <i>Gameplay</i> do <i>minigame 1</i></sub>
-<img src="../assets/gdd_4.2/gameplay1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 1</i>
+  </p>
+  <img src="../assets/gdd_4.2/gameplay1.png" alt="Gameplay do minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1098,11 +1242,16 @@ O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao us
 
 #
 
-<div align="center">
-<sub>Figura x: <i>Gameplay</i> do <i>minigame 2</i></sub>
-<img src="../assets/gdd_4.2/gameplay2.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 2</i>
+  </p>
+  <img src="../assets/gdd_4.2/gameplay2.png" alt="Gameplay do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1110,10 +1259,14 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 
 #
 
-<div align="center">
-<sub>Figura x: <i>Gameplay</i> do <i>minigame 3</i></sub>
-<img src="../assets/gdd_4.2/gameplay3.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
+    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 3</i>
+  </p>
+  <img src="../assets/gdd_4.2/gameplay3.png" alt="Gameplay do minigame 3" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1122,11 +1275,16 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo do material de apoio do <i>minigame</i> 1</sub>
-<img src="../assets/gdd_4.2/apoioMinigame1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo do material de apoio do <i>minigame</i> 1
+  </p>
+  <img src="../assets/gdd_4.2/apoioMinigame1.png" alt="Material de apoio do minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1134,11 +1292,16 @@ A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve 
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo do código do <i>minigame</i> 2</sub>
-<img src="../assets/gdd_4.2/codigo2.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo do código do <i>minigame</i> 2
+  </p>
+  <img src="../assets/gdd_4.2/codigo2.png" alt="Código do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1146,20 +1309,29 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 #
 
-<div align="center">
-<sub>Figura x: Layout da <i>hub</i></sub>
-<img src="../assets/gdd_4.2/hubJogo.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Layout da <i>hub</i>
+  </p>
+  <img src="../assets/gdd_4.2/hubJogo.png" alt="Layout da hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+>
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo de objeto interativo na <i>hub</i></sub>
-<img src="../assets/gdd_4.2/objeto.png">
-
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo de objeto interativo na <i>hub</i>
+  </p>
+  <img src="../assets/gdd_4.2/objeto.png" alt="Exemplo de objeto interativo na hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1167,11 +1339,16 @@ Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas
 
 #
 
-<div align="center">
-<sob>Figura x: <i>Spritesheet</i> do personagem</p>
-<img src="../assets/gdd_4.2/markSpritesheet.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> <i>Spritesheet</i> do personagem
+  </p>
+  <img src="../assets/gdd_4.2/markSpritesheet.png" alt="Spritesheet do personagem" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1179,11 +1356,16 @@ Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fund
 
 #
 
-<div align="center">
-<sub>Figura x: Menu Inicial</sub>
-<img src="../assets/gdd_4.2/menuInicial.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Menu Inicial
+  </p>
+  <img src="../assets/gdd_4.2/menuInicial.png" alt="Menu Inicial do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1201,10 +1383,14 @@ Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo
 
 #
 
-<div align="center">
-<sub>Figura x: Novo <i>layout</i> da <i>hub</i></sub>
-<img src="../assets/gdd_4.3/hub.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Novo <i>layout</i> da <i>hub</i>
+  </p>
+  <img src="../assets/gdd_4.3/hub.png" alt="Novo layout da hub do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1215,10 +1401,14 @@ O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o 
 
 #
 
-<div align="center">
-<sob>Figura x: Novo <i>minigame</i> 2</sob>
-<img src="../assets/gdd_4.3/minigame2.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Novo <i>minigame</i> 2
+  </p>
+  <img src="../assets/gdd_4.3/minigame2.png" alt="Novo minigame 2 do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1227,10 +1417,14 @@ Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ 
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo de parte do material de apoio do <i>minigame</i> 2</sub>
-<img src="../assets/gdd_4.3/minigame2Apoio.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo de parte do material de apoio do <i>minigame</i> 2
+  </p>
+  <img src="../assets/gdd_4.3/minigame2Apoio.png" alt="Material de apoio do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1239,11 +1433,16 @@ Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltam
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo de questão do <i>miniboss</i></sub>
-<img src="../assets/gdd_4.3/miniboss.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo de questão do <i>miniboss</i>
+  </p>
+  <img src="../assets/gdd_4.3/miniboss.png" alt="Exemplo de questão do miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1251,11 +1450,16 @@ Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo de <i>feedback</i></sub>
-<img src="../assets/gdd_4.3/minibossFeedback.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo de <i>feedback</i>
+  </p>
+  <img src="../assets/gdd_4.3/minibossFeedback.png" alt="Exemplo de feedback" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1263,11 +1467,12 @@ Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em ad
 
 #
 
-<div align="center">
-<sub>Figura x: <i>Gameplay</i> do <i>minigame</i> 4</sub>
-<img src="../assets/gdd_4.3/minigame4.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div align="center" style="margin: 30px 0; font-family: Arial, sans-serif;">
+  <sub style="display: block; margin-bottom: 10px;">Figura x: <i>Gameplay</i> do <i>minigame</i> 4</i></sub>
+  <img src="../assets/gdd_4.3/minigame4.png" width="500" style="border: 1px solid #ccc; border-radius: 8px;"><br>
+  <sup style="display: block; margin-top: 5px;">Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
+
 
 #
 
@@ -1275,11 +1480,12 @@ O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precis
 
 #
 
-<div align="center">
-<sub>Figura x: <i>Gameplay</i> do <i>minigame</i> 5</sub>
-<img src="../assets/gdd_4.3/minigame5.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div align="center" style="margin: 30px 0; font-family: Arial, sans-serif;">
+  <sub style="display: block; margin-bottom: 10px;">Figura x: <i>Gameplay</i> do <i>minigame</i> 5</sub>
+  <img src="../assets/gdd_4.3/minigame5.png" width="500" style="border: 1px solid #ccc; border-radius: 8px;"><br>
+  <sup style="display: block; margin-top: 5px;">Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
+
 
 #
 
