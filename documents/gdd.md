@@ -1759,19 +1759,19 @@ Os botões da interface estão claros?|Sim
 
 Com base no feedback dos testadores, implementamos as seguintes melhorias:
 
-#### 1. Clareza da Tela de Carregamento
+##### 1. Clareza da Tela de Carregamento
 - Adicionamos indicadores visuais mais explícitos
 - Incluímos mensagens textuais explicativas
 - Implementamos uma barra de progresso animada
 - *Objetivo*: Deixar claro o status do carregamento e evitar a impressão de que o jogo terminou
 
-#### 2. Melhorias no Botão de Iniciar
+##### 2. Melhorias no Botão de Iniciar
 - Redesenhamos o botão "Novo Jogo" para maior destaque
 - Adicionamos efeitos de hover e animações sutis
 - Ajustamos o contraste de cores para melhor legibilidade
 - *Resultado*: Tornar o início do jogo mais intuitivo
 
-#### 3. Aprimoramentos no Botão de Voltar
+##### 3. Aprimoramentos no Botão de Voltar
 - Implementamos um novo design consistente para o botão de voltar
 - Aumentamos a área clicável para melhor usabilidade
 - Adicionamos dicas textuais contextuais
