@@ -1554,11 +1554,12 @@ _Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resulta
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-_Escreva de que formas a solução do jogo atingiu os objetivos descritos na seção 1 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral._
+A solução desenvolvida por meio do jogo Capital Downfall atinge os objetivos propostos ao transformar o processo de onboarding dos novos analistas de tecnologia do BTG Pactual em uma experiência mais dinâmica, estratégica e envolvente. O jogo reflete o dinamismo do mercado financeiro ao incorporar mecânicas interativas, como minigames, sistema de pontuação, conquistas e feedback visual, que estimulam o engajamento contínuo dos jogadores. A abordagem do jogo promove um aprendizado mais eficiente, incentivando a autonomia e o protagonismo dos participantes, já que cada decisão tomada impacta diretamente o desempenho no jogo, simulando o ambiente corporativo real. Além disso, o conteúdo sobre o funcionamento do BTG e dos fundos de investimento é transmitido de forma didática e acessível, alinhando-se à missão do projeto de tornar o onboarding mais atrativo. 
 
-_Relacione os pontos de melhorias evidenciados nos testes com plano de ações para serem implementadas no jogo. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para futuros desenvolvimentos._
+Durante os testes, identificamos um problema de design relacionado ao botão de voltar, cuja estética estava confusa. Isso gerou certo incômodo, pois alguns jogadores tiveram dificuldade tanto para identificá-lo com clareza quanto para interagir com ele corretamente.
 
-_Relacione também quaisquer ideias que o grupo tenha para melhorias futuras_
+Nosso grupo pretende implementar novos dias no jogo, consequentemente a criação de minigames adicionais, ampliando o conteúdo e a dinâmica do onboarding. Além disso, temos o desejo de incluir a funcionalidade de customização de personagens, tornando o jogo mais interativo, personalizado e envolvente para os usuários.
+
 
 # <a name="c7"></a>7. Referências (sprint 5)
 
