@@ -67,7 +67,7 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
     <p style="margin-bottom: 0.3em; font-style: italic;"><strong>Figura X</strong> – Representação das 5 Forças de Porter</p>
     <img src="../assets/negocios/5forcasdeporter.png" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
-        Fonte: Elaborado pelo Grupo Level Zero, Turma 16 – Inteli, 2025.
+        Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
     </p>
 </div>
 
@@ -99,7 +99,7 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
     </p>
     <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
-        Fonte: Elaborado pelo Grupo Level Zero, Turma 16 – Inteli, 2025.
+        Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
     </p>
 </div>
 
@@ -179,7 +179,7 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
     </p>
     <img src="../assets/gdd_1.1/canvasPropostaValor.png" alt="Canvas: Proposta de Valor" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
-        Fonte: Elaborado pelo Grupo Level Zero, Turma 16 – Inteli, 2025.
+        Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
     </p>
 </div>
 
@@ -1467,11 +1467,18 @@ Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em ad
 
 #
 
-<div align="center" style="margin: 30px 0; font-family: Arial, sans-serif;">
-  <sub style="display: block; margin-bottom: 10px;">Figura x: <i>Gameplay</i> do <i>minigame</i> 4</i></sub>
-  <img src="../assets/gdd_4.3/minigame4.png" width="500" style="border: 1px solid #ccc; border-radius: 8px;"><br>
-  <sup style="display: block; margin-top: 5px;">Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Minigame 5
+  </p>
+  <img src="../assets/gdd_4.4/jogo5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
+
 
 
 #
@@ -1480,10 +1487,14 @@ O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precis
 
 #
 
-<div align="center" style="margin: 30px 0; font-family: Arial, sans-serif;">
-  <sub style="display: block; margin-bottom: 10px;">Figura x: <i>Gameplay</i> do <i>minigame</i> 5</sub>
-  <img src="../assets/gdd_4.3/minigame5.png" width="500" style="border: 1px solid #ccc; border-radius: 8px;"><br>
-  <sup style="display: block; margin-top: 5px;">Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame</i> 5
+  </p>
+  <img src="../assets/gdd_4.3/minigame5.png" alt="Gameplay do minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 
@@ -1493,11 +1504,17 @@ O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura e
 
 #
 
-<div align="center">
-<sub>Figura x: <i>Gameplay</i> do <i>minigame</i> 6</sub>
-<img src="../assets/gdd_4.3/minigame6.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame</i> 6
+  </p>
+  <img src="../assets/gdd_4.3/minigame6.png" alt="Gameplay do minigame 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
 
 #
 
@@ -1505,19 +1522,29 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 
 #
 
-<div align="center">
-<sub>Figura x: Tela de seleção de personagens</sub>
-<img src="../assets/gdd_4.3/selecaoPersonagem.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Tela de seleção de personagens
+  </p>
+  <img src="../assets/gdd_4.3/selecaoPersonagem.png" alt="Tela de seleção de personagens" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo do código da seleção de personagens</sub>
-<img src="../assets/gdd_4.3/codigoPersonagem.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo do código da seleção de personagens
+  </p>
+  <img src="../assets/gdd_4.3/codigoPersonagem.png" alt="Exemplo do código da seleção de personagens" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
 
 #
 
@@ -1525,11 +1552,18 @@ Por fim, também adicionamos telas de _feedback_ após a realização do _minibo
 
 #
 
-<div align="center">
-<sub>Figura x: Exemplo da tela de <i>feedback</i></sub>
-<img src="../assets/gdd_4.3/telaPontuacao.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025l</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Exemplo da tela de <i>feedback</i>
+  </p>
+  <img src="../assets/gdd_4.3/telaPontuacao.png" alt="Exemplo da tela de feedback" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
+
 
 #
 
@@ -1545,30 +1579,50 @@ Portanto, a revisão de conteúdos contribui significativamente para a eficiênc
 
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
-<div align="center">
-<sub> Figura x: Tela Inicial do Jogo</sub>
-<img src="../assets/gdd_4.4/menuinicial55_360.gif">
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Tela Inicial do Jogo
+  </p>
+  <img src="../assets/gdd_4.4/menuinicial55_360.gif" alt="Tela Inicial do Jogo" style="width: 600px; max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
 
-<sup>Grupo Level Zero, turma 16, Inteli, 2025 </sup>
+
+
+
 </div>
 
 Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
 #
 
-<div align="center">
-<sub> Figura x: Tela nova de comunicação</sub>
-<img src="../assets/gdd_4.4/slick1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sub>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Tela nova de comunicação
+  </p>
+  <img src="../assets/gdd_4.4/slick1.png" alt="Tela nova de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-<sub> Figura x: Tela antiga de comunicação</sub>
-<img src="../assets/gdd_4.4/telhavelha.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Tela antiga de comunicação
+  </p>
+  <img src="../assets/gdd_4.4/telhavelha.png" alt="Tela antiga de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
+
 
 #
 
@@ -1576,55 +1630,88 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 #
 
-<div align="center">
-<sub> Figura x: Minigame 1</sub>
-<img src="../assets/gdd_4.4/jogo1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Minigame 1
+  </p>
+  <img src="../assets/gdd_4.4/jogo1.png" alt="Minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+
+#
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Minigame 2
+  </p>
+  <img src="../assets/gdd_4.4/jogo2.png" alt="Minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
 
-<div align="center">
-<sub> Figura x: Minigame 2</sub>
-<img src="../assets/gdd_4.4/jogo2.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Tela Inicial do Jogo
+  </p>
+  <img src="../assets/gdd_4.4/jogo3.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
-#
-
-<div align="center">
-<sub> Figura x: Tela Inicial do Jogo</sub>
-<img src="../assets/gdd_4.4/jogo3.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
-</div>
 
 #
 
 Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
 
-<div align="center">
-<sub> Figura x: Miniboss da Fase 1</sub>
-<img src="../assets/gdd_4.4/miniboss.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Miniboss da Fase 1
+  </p>
+  <img src="../assets/gdd_4.4/miniboss.png" alt="Miniboss da Fase 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
+
 
 Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da narrativa, utilizando telas de jornais e respostas com resolução para contribuir com o processo de aprendizado.
 
 #
 
-<div align="center">
-<sub> Figura x: Feedback das fases</sub>
-<img src="../assets/gdd_4.4/feedback1.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Feedback das fases
+  </p>
+  <img src="../assets/gdd_4.4/feedback1.png" alt="Feedback das fases" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
 
 #
 
-<div align="center">
-<sub> Figura x: Feedback do Miniboss</sub>
-<img src="../assets/gdd_4.4/feedback2.png">
-<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Feedback do Miniboss
+  </p>
+  <img src="../assets/gdd_4.4/feedback2.png" alt="Feedback do Miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
 
 #
 
@@ -1632,26 +1719,42 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 #
 
-<div align="center">
-<p> Figura x: Minigame 4</p>
-<img src="../assets/gdd_4.4/jogo4.jpg">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Minigame 4
+  </p>
+  <img src="../assets/gdd_4.4/jogo4.jpg" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
 
 #
 
-<div align="center">
-<p> Figura x: Minigame 5</p>
-<img src="../assets/gdd_4.4/jogo5.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Minigame 5
+  </p>
+  <img src="../assets/gdd_4.4/jogo5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
+
 
 #
 
-<div align="center">
-<p> Figura x: Minigame 6</p>
-<img src="../assets/gdd_4.4/jogo6.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Minigame 6
+  </p>
+  <img src="../assets/gdd_4.4/jogo6.png" alt="Minigame 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1664,19 +1767,29 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 #
 
-<div align="center">
-<p> Figura x: Sala de guerra - Hub</p>
-<img src="../assets/gdd_4.4/saladg1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Sala de guerra - Hub
+  </p>
+  <img src="../assets/gdd_4.4/saladg1.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
-<div align="center">
-<p> Figura x: Sala de guerra - Hub</p>
-<img src="../assets/gdd_4.4/saladg2.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Sala de guerra - Hub
+  </p>
+  <img src="../assets/gdd_4.4/saladg2.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
+
 
 #
 
@@ -1684,22 +1797,37 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A adição de sons em um jogo é importante porque enriquece a experiência do jogador, tornando-a mais imersiva e envolvente. Sons ajudam a criar atmosfera, guiar a atenção, indicar interações, reforçar emoções e fornecer feedback imediato sobre as ações do jogador. Além disso, contribuem para a narrativa e ajudam na construção da identidade do jogo, tornando-o mais memorável e impactante.
 
-<div align="center">
-<p> Figura x: Adiciona música na Sala de Guerra</p>
-<img src="../assets/gdd_4.4/code3.png">
-<p> Fonte do som: Pixabay </p>
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Adiciona música na Sala de Guerra
+  </p>
+  <img src="../assets/gdd_4.4/code3.png" alt="Adiciona música na Sala de Guerra" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte do som: Pixabay
+  </p>
 </div>
 
-<div align="center">
-<p> Figura x: Carregamento de música</p>
-<img src="../assets/gdd_4.4/code4.png">
-<p> Fonte do som: Pixabay </p>
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Carregamento de música
+  </p>
+  <img src="../assets/gdd_4.4/code4.png" alt="Carregamento de música" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte do som: Pixabay
+  </p>
 </div>
 
-<div align="center">
-<p> Figura x: Adição de efeitos sonoros</p>
-<img src="../assets/gdd_4.4/code1.png">
-<p> Produção autoral</p>
+
+
+<div style="text-align: center; margin-bottom: 1.5em;">
+  <p style="margin-bottom: 0.3em; font-size: 0.95em;">
+    <strong>Figura X:</strong> Adição de efeitos sonoros
+  </p>
+  <img src="../assets/gdd_4.4/code1.png" alt="Adição de efeitos sonoros" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic; color: #555;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi cuidadosamente estruturada, iniciando pela Fase Um, que introduz os elementos fundamentais do enredo e da mecânica, passando pela Fase Dois, que aprofunda os desafios e amplia a complexidade da narrativa, até alcançar a Fase de Guerra, etapa final e decisiva do jogo. Essa trajetória progressiva assegura uma evolução consistente na jogabilidade e no envolvimento do jogador, proporcionando uma experiência completa, desafiadora e alinhada aos objetivos centrais do projeto.
