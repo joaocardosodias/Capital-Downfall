@@ -68,9 +68,19 @@ class menuInicial extends baseCena {
     // Cria as imagens na tela
 
     botaoIniciar = this.add
-      .image(900, 400, "botaoIniciar")
+      .image(670, 400, "botaoIniciar")
       .setInteractive()
       .setScale(1);
+
+    // Adiciona a animação de pulsação do botão de iniciar
+
+      this.tweens.add({
+        targets: botaoIniciar,
+        scale: 1.2,
+        duration: 1000,
+        yoyo: true,
+        repeat: -1,
+      });
 
     // Verifica se o botão de iniciar foi clicado
 
@@ -96,10 +106,5 @@ class menuInicial extends baseCena {
         });
       }
     });
-  }
-  update() {
-    if (botaoIniciar.x >= 670) {
-      botaoIniciar.x = botaoIniciar.x - 2;
-    }
   }
 }

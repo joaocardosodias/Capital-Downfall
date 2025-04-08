@@ -35,6 +35,7 @@ class preload extends Phaser.Scene {
 
     //  Quando o jogo termina de carregar, a barra é destruída
     this.load.on("complete", () => {
+      textoLoading.setText("Carregado!")
       let iniciar = this.add.image(400, 380, "botaoComecar").setInteractive();
       iniciar.on("pointerdown", () => {
         barraProgresso.destroy();
@@ -42,6 +43,14 @@ class preload extends Phaser.Scene {
         textoLoading.destroy();
         this.scene.stop("preload");
         this.scene.start("menuInicial");
+      });
+
+      this.selecao = this.add.image(400, 380, "selecao").setVisible(false).setDepth(100);
+      iniciar.on("pointerover", () => {
+        this.selecao.setVisible(true);
+      });
+      iniciar.on("pointerout", () => {
+        this.selecao.setVisible(false);
       });
     });
 
