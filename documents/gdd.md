@@ -6,13 +6,16 @@
 
 #### Nomes dos integrantes do grupo
 
-Ana Cristina Alves Jardim <br>  
-Henrique de Lima da Rós <br>
-Lucas Garcia Rodrigues Lopes <br>
-Lucas Michel Pereira <br>
-Nicole Zanin Silva <br>
-João Cardoso Dias <br>
-Teodoro Borges de Carvalho Neira <br>
+<ul>
+    <li><a href="https://www.linkedin.com/in/ana-cristina-jardim-568004348-/" target="_blank">Ana Cristina Alves Jardim</a></li>
+    <li><a href="https://www.linkedin.com/in/henrique-da-r%C3%B3s/" target="_blank">Henrique de Lima da Rós</a></li>
+    <li><a href="https://www.linkedin.com/in/lucas-lopes-8072b235a/" target="_blank">Lucas Garcia Rodrigues Lopes</a></li>
+    <li><a href="https://www.linkedin.com/in/lucas-michel-pereira-1a338734b/" target="_blank">Lucas Michel Pereira</a></li>
+    <li><a href="https://www.linkedin.com/in/nicole-zanin-0a0361356/" target="_blank">Nicole Zanin Silva</a></li>
+    <li><a href="https://www.linkedin.com/in/jo%C3%A3ocardosodias/" target="_blank">João Cardoso Dias</a></li>
+    <li><a href="https://www.linkedin.com/in/teodoroneira/" target="_blank">Teodoro Borges de Carvalho Neira</a></li>
+</ul>
+
 
 ## Sumário
 
@@ -61,9 +64,9 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
 #
 
 <div style="text-align: center;">
-    <p>Figura x: 5 Forças de Porter</p>
+    <sub>Figura x: 5 Forças de Porter</sub>
     <img src="../assets/negocios/5forcasdeporter.png">
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -89,9 +92,9 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 #
 
 <div style="text-align: center;">
-    <p>Figura x: Análise SWOT</p>
+    <sub>Figura x: Análise SWOT</sub>
     <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT">
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -165,9 +168,9 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 #
 
 <div style="text-align: center;">
-    <p>Figura x: Canvas: Proposta de Valor</p>
+    <sub>Figura x: Canvas: Proposta de Valor</sub>
     <img src="../assets/gdd_1.1/canvasPropostaValor.png" />
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -195,9 +198,9 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 #
 
 <div style="text-align: center;">
-    <p>Figura x: Ameaças - Matriz de Risco</p>
+    <sub>Figura x: Ameaças - Matriz de Risco</sub>
     <img src="../assets/negocios/matrizderisco1.png" />
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -251,9 +254,9 @@ O setor de oportunidades na matriz de riscos representa os riscos positivos, ou 
 #
 
 <div style="text-align: center;">
-    <p>Figura x: Oportunidades - Matriz de Risco</p>
+    <sub>Figura x: Oportunidades - Matriz de Risco</sub>
     <img src="../assets/negocios/matrizrisco2.png" />
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -302,9 +305,9 @@ Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revis
 #
 
 <div style="text-align: center;">
-    <p>Figura x: Metas SMART</p>
+    <sub>Figura x: Metas SMART</sub>
     <img src="../assets/negocios/smart.png" />
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -490,9 +493,9 @@ O jogo será ambientado no escritório de um grande banco. O mapa consiste em um
 #
 
 <div align="center">
-    <p>Figura x: Mapa do jogo</p>
+    <sub>Figura x: Mapa do jogo</sub>
     <img src="../assets/gdd_3.3/hub.png" width="500"><br>
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -502,9 +505,9 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 #
 
 <div align="center">
-    <p>Figura x: Exemplo de objeto interativo, marcado pela exclamação</p>
+    <sub>Figura x: Exemplo de objeto interativo, marcado pela exclamação</sub>
     <img src="../assets/gdd_3.3/mapa2.png" width="500"><br>
-    <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+    <sup>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</sup>
 </div>
 
 #
@@ -559,57 +562,57 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 #
 
 <div align="center">
-    <p>Figura x: Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</p>
+    <sub>Figura x: Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.</sub>
     <img src="../assets/conceptArt/telaInicial.png" width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura x: Visão do mapa inicial do jogo, destacando o ambiente do escritório. </p>
+  <sub>Figura x: Visão do mapa inicial do jogo, destacando o ambiente do escritório. </sub>
   <img src="../assets/conceptArt/mapa1.png" width="500"><br>
-  <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+  <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura x: Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</p>
+  <sub>Figura x: Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.</sub>
   <img src="../assets/conceptArt/materialDeApoio1.png" width="500"><br>
-  <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+  <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-    <p>Figura x: Minijogo sobre diferenciação de fundos de investimento.</p>
+    <sub>Figura x: Minijogo sobre diferenciação de fundos de investimento.</sub>
     <img src="../assets/gdd_3.3/minigame1.png" width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-    <p>Figura x: Minijogo sobre matemática financeira.</p>
+    <sub>Figura x: Minijogo sobre matemática financeira.</sub>
     <img src="../assets/gdd_3.3/minigame2.png" width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-    <p>Figura x: Minijogo sobre o processo de resgate em fundos de investimento.</p>
+    <sub>Figura x: Minijogo sobre o processo de resgate em fundos de investimento.</sub>
     <img src="../assets/conceptArt/miniGame3.png" width="500"><br>
-    <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+    <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-  <p>Figura x: Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.</p>
+  <sub>Figura x: Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.</sub>
   <img src="../assets/conceptArt/pontuacao.png" width="500"><br>
-  <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+  <sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1032,17 +1035,17 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 #
 
 <div align="center">
-<p>Figura x: Cena da interface do computador</p>
+<sub>Figura x: Cena da interface do computador</sub>
 <img src="../assets/conceptArt/materialDeApoio1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-<p>Figura x: Parte do código referente à cena</p>
+<sub>Figura x: Parte do código referente à cena</sub>
 <img src="../assets/gdd_4.2/printCodigoDia1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1054,7 +1057,7 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 #
 
 <div align="center">
-<p>Figura x: Exemplo do _Tileset_ utilizado</p>
+<sub>Figura x: Exemplo do _Tileset_ utilizado</p>
 <img src="../assets/gdd_4.2/tilesetInicial.png">
 <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
@@ -1062,9 +1065,9 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 #
 
 <div align="center">
-<p>Figura x: Parte do código referente à cena</p>
+<sub>Figura x: Parte do código referente à cena</sub>
 <img src="../assets/gdd_4.2/printCodigoHub.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1084,9 +1087,9 @@ O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classi
 #
 
 <div align="center">
-<p>Figura x: <i>Gameplay</i> do <i>minigame 1</i></p>
+<sub>Figura x: <i>Gameplay</i> do <i>minigame 1</i></sub>
 <img src="../assets/gdd_4.2/gameplay1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1096,9 +1099,9 @@ O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao us
 #
 
 <div align="center">
-<p>Figura x: <i>Gameplay</i> do <i>minigame 2</i></p>
+<sub>Figura x: <i>Gameplay</i> do <i>minigame 2</i></sub>
 <img src="../assets/gdd_4.2/gameplay2.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1108,9 +1111,9 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 #
 
 <div align="center">
-<p>Figura x: <i>Gameplay</i> do <i>minigame 3</i></p>
+<sub>Figura x: <i>Gameplay</i> do <i>minigame 3</i></sub>
 <img src="../assets/gdd_4.2/gameplay3.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1120,9 +1123,9 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 #
 
 <div align="center">
-<p>Figura x: Exemplo do material de apoio do <i>minigame</i> 1</p>
+<sub>Figura x: Exemplo do material de apoio do <i>minigame</i> 1</sub>
 <img src="../assets/gdd_4.2/apoioMinigame1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1132,9 +1135,9 @@ A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve 
 #
 
 <div align="center">
-<p>Figura x: Exemplo do código do <i>minigame</i> 2</p>
+<sub>Figura x: Exemplo do código do <i>minigame</i> 2</sub>
 <img src="../assets/gdd_4.2/codigo2.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1144,17 +1147,18 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 #
 
 <div align="center">
-<p>Figura x: Layout da <i>hub</i></p>
+<sub>Figura x: Layout da <i>hub</i></sub>
 <img src="../assets/gdd_4.2/hubJogo.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-<p>Figura x: Exemplo de objeto interativo na <i>hub</i></p>
+<sub>Figura x: Exemplo de objeto interativo na <i>hub</i></sub>
 <img src="../assets/gdd_4.2/objeto.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1164,7 +1168,7 @@ Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas
 #
 
 <div align="center">
-<p>Figura x: <i>Spritesheet</i> do personagem</p>
+<sob>Figura x: <i>Spritesheet</i> do personagem</p>
 <img src="../assets/gdd_4.2/markSpritesheet.png">
 <p>Grupo Level Zero, turma 16, Inteli, 2025</p>
 </div>
@@ -1176,9 +1180,9 @@ Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fund
 #
 
 <div align="center">
-<p>Figura x: Menu Inicial</p>
+<sub>Figura x: Menu Inicial</sub>
 <img src="../assets/gdd_4.2/menuInicial.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1198,9 +1202,9 @@ Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo
 #
 
 <div align="center">
-<p>Figura x: Novo <i>layout</i> da <i>hub</i></p>
+<sub>Figura x: Novo <i>layout</i> da <i>hub</i></sub>
 <img src="../assets/gdd_4.3/hub.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1212,9 +1216,9 @@ O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o 
 #
 
 <div align="center">
-<p>Figura x: Novo <i>minigame</i> 2</p>
+<sob>Figura x: Novo <i>minigame</i> 2</sob>
 <img src="../assets/gdd_4.3/minigame2.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1224,9 +1228,9 @@ Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ 
 #
 
 <div align="center">
-<p>Figura x: Exemplo de parte do material de apoio do <i>minigame</i> 2</p>
+<sub>Figura x: Exemplo de parte do material de apoio do <i>minigame</i> 2</sub>
 <img src="../assets/gdd_4.3/minigame2Apoio.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1236,9 +1240,9 @@ Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltam
 #
 
 <div align="center">
-<p>Figura x: Exemplo de questão do <i>miniboss</i></p>
+<sub>Figura x: Exemplo de questão do <i>miniboss</i></sub>
 <img src="../assets/gdd_4.3/miniboss.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1248,9 +1252,9 @@ Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de
 #
 
 <div align="center">
-<p>Figura x: Exemplo de <i>feedback</i></p>
+<sub>Figura x: Exemplo de <i>feedback</i></sub>
 <img src="../assets/gdd_4.3/minibossFeedback.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1260,9 +1264,9 @@ Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em ad
 #
 
 <div align="center">
-<p>Figura x: <i>Gameplay</i> do <i>minigame</i> 4</p>
+<sub>Figura x: <i>Gameplay</i> do <i>minigame</i> 4</sub>
 <img src="../assets/gdd_4.3/minigame4.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1272,9 +1276,9 @@ O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precis
 #
 
 <div align="center">
-<p>Figura x: <i>Gameplay</i> do <i>minigame</i> 5</p>
+<sub>Figura x: <i>Gameplay</i> do <i>minigame</i> 5</sub>
 <img src="../assets/gdd_4.3/minigame5.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1284,9 +1288,9 @@ O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura e
 #
 
 <div align="center">
-<p>Figura x: <i>Gameplay</i> do <i>minigame</i> 6</p>
+<sub>Figura x: <i>Gameplay</i> do <i>minigame</i> 6</sub>
 <img src="../assets/gdd_4.3/minigame6.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1296,17 +1300,17 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 #
 
 <div align="center">
-<p>Figura x: Tela de seleção de personagens</p>
+<sub>Figura x: Tela de seleção de personagens</sub>
 <img src="../assets/gdd_4.3/selecaoPersonagem.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-<p>Figura x: Exemplo do código da seleção de personagens</p>
+<sub>Figura x: Exemplo do código da seleção de personagens</sub>
 <img src="../assets/gdd_4.3/codigoPersonagem.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1316,9 +1320,9 @@ Por fim, também adicionamos telas de _feedback_ após a realização do _minibo
 #
 
 <div align="center">
-<p>Figura x: Exemplo da tela de <i>feedback</i></p>
+<sub>Figura x: Exemplo da tela de <i>feedback</i></sub>
 <img src="../assets/gdd_4.3/telaPontuacao.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025l</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025l</sup>
 </div>
 
 #
@@ -1336,9 +1340,10 @@ Portanto, a revisão de conteúdos contribui significativamente para a eficiênc
 Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais, cada uma contendo três Miniboss, e um “Boss Level” como fase revisional, intitulada "Sala de Guerra". O jogo tem início em um mapa que simula o ambiente de um escritório bancário e, logo no início, o jogador é impactado por uma notícia de crise global, recebida por meio de um e-mail exibido na tela.
 
 <div align="center">
-<p> Figura x: Tela Inicial do Jogo</p>
+<sub> Figura x: Tela Inicial do Jogo</sub>
 <img src="../assets/gdd_4.4/menuinicial55_360.gif">
-<p>Grupo Level Zero, turma 16, Inteli, 2025 </p>
+
+<sup>Grupo Level Zero, turma 16, Inteli, 2025 </sup>
 </div>
 
 Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
@@ -1346,17 +1351,17 @@ Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior
 #
 
 <div align="center">
-<p> Figura x: Tela nova de comunicação</p>
+<sub> Figura x: Tela nova de comunicação</sub>
 <img src="../assets/gdd_4.4/slick1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sub>
 </div>
 
 #
 
 <div align="center">
-<p> Figura x: Tela antiga de comunicação</p>
+<sub> Figura x: Tela antiga de comunicação</sub>
 <img src="../assets/gdd_4.4/telhavelha.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1366,25 +1371,25 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 #
 
 <div align="center">
-<p> Figura x: Minigame 1</p>
+<sub> Figura x: Minigame 1</sub>
 <img src="../assets/gdd_4.4/jogo1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-<p> Figura x: Minigame 2</p>
+<sub> Figura x: Minigame 2</sub>
 <img src="../assets/gdd_4.4/jogo2.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-<p> Figura x: Tela Inicial do Jogo</p>
+<sub> Figura x: Tela Inicial do Jogo</sub>
 <img src="../assets/gdd_4.4/jogo3.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
@@ -1392,9 +1397,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
 
 <div align="center">
-<p> Figura x: Miniboss da Fase 1</p>
+<sub> Figura x: Miniboss da Fase 1</sub>
 <img src="../assets/gdd_4.4/miniboss.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da narrativa, utilizando telas de jornais e respostas com resolução para contribuir com o processo de aprendizado.
@@ -1402,17 +1407,17 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 #
 
 <div align="center">
-<p> Figura x: Feedback das fases</p>
+<sub> Figura x: Feedback das fases</sub>
 <img src="../assets/gdd_4.4/feedback1.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
 
 <div align="center">
-<p> Figura x: Feedback do Miniboss</p>
+<sub> Figura x: Feedback do Miniboss</sub>
 <img src="../assets/gdd_4.4/feedback2.png">
-<p>Grupo Level Zero, turma 16, Inteli, 2025</p>
+<sup>Grupo Level Zero, turma 16, Inteli, 2025</sup>
 </div>
 
 #
