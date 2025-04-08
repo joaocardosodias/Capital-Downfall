@@ -15,6 +15,17 @@ class preload extends Phaser.Scene {
     caixaProgresso.fillStyle(0x222222, 0.8);
     caixaProgresso.fillRect(240, 270, 320, 50);
 
+    let textoLoading = this.make.text({
+      x: 400,
+      y: 230,
+      text: "Carregando...",
+      style: {
+        font: "28px pixelArt",
+        fill: "#ffffff",
+      },
+    });
+    textoLoading.setOrigin(0.5, 0.5);
+
     //  Atualiza ao vivo a barra de progresso
     this.load.on("progress", function (value) {
       barraProgresso.clear();
@@ -28,6 +39,7 @@ class preload extends Phaser.Scene {
       iniciar.on("pointerdown", () => {
         barraProgresso.destroy();
         caixaProgresso.destroy();
+        textoLoading.destroy();
         this.scene.stop("preload");
         this.scene.start("menuInicial");
       });
@@ -71,8 +83,11 @@ class preload extends Phaser.Scene {
 
     //Assets da cena base
 
-    this.load.spritesheet("notificacao", "src/assets/materiais_apoio/notificacao.png",
-      { frameWidth: 32, frameHeight: 64 });
+    this.load.spritesheet(
+      "notificacao",
+      "src/assets/materiais_apoio/notificacao.png",
+      { frameWidth: 32, frameHeight: 64 }
+    );
     this.load.image("tablet", "src/assets/materiais_apoio/tablet.png");
 
     //Assets da Tela Inicial
@@ -213,7 +228,10 @@ class preload extends Phaser.Scene {
       "imailFundoCelebracao",
       "src/assets/materiais_apoio/SlickCelebracao.png"
     );
-    this.load.image("imailFundoGeral", "src/assets/materiais_apoio/SlickGeral.png");
+    this.load.image(
+      "imailFundoGeral",
+      "src/assets/materiais_apoio/SlickGeral.png"
+    );
     this.load.image(
       "botaoProximo",
       "src/assets/materiais_apoio/botaoProximo.png"
@@ -230,23 +248,65 @@ class preload extends Phaser.Scene {
       "botaoComecar",
       "src/assets/materiais_apoio/botaoComecar.png"
     );
-    this.load.image("botaoMinigame1", "src/assets/materiais_apoio/botaoMinigame1.png");
-    this.load.image("botaoMinigame1Selecionado", "src/assets/materiais_apoio/botaoMinigame1Selecionado.png");
-    this.load.image("botaoMinigame2", "src/assets/materiais_apoio/botaoMinigame2.png");
-    this.load.image("botaoMinigame2Selecionado", "src/assets/materiais_apoio/botaoMinigame2Selecionado.png");
-    this.load.image("botaoMinigame3", "src/assets/materiais_apoio/botaoMinigame3.png");
-    this.load.image("botaoMinigame3Selecionado", "src/assets/materiais_apoio/botaoMinigame3Selecionado.png");
-    this.load.image("botaoMinigame4", "src/assets/materiais_apoio/botaoMinigame4.png");
-    this.load.image("botaoMinigame4Selecionado", "src/assets/materiais_apoio/botaoMinigame4Selecionado.png");
-    this.load.image("botaoMinigame5", "src/assets/materiais_apoio/botaoMinigame5.png");
-    this.load.image("botaoMinigame5Selecionado", "src/assets/materiais_apoio/botaoMinigame5Selecionado.png");
-    this.load.image("botaoMinigame6", "src/assets/materiais_apoio/botaoMinigame6.png");
-    this.load.image("botaoMinigame6Selecionado", "src/assets/materiais_apoio/botaoMinigame6Selecionado.png");
+    this.load.image(
+      "botaoMinigame1",
+      "src/assets/materiais_apoio/botaoMinigame1.png"
+    );
+    this.load.image(
+      "botaoMinigame1Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame1Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame2",
+      "src/assets/materiais_apoio/botaoMinigame2.png"
+    );
+    this.load.image(
+      "botaoMinigame2Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame2Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame3",
+      "src/assets/materiais_apoio/botaoMinigame3.png"
+    );
+    this.load.image(
+      "botaoMinigame3Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame3Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame4",
+      "src/assets/materiais_apoio/botaoMinigame4.png"
+    );
+    this.load.image(
+      "botaoMinigame4Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame4Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame5",
+      "src/assets/materiais_apoio/botaoMinigame5.png"
+    );
+    this.load.image(
+      "botaoMinigame5Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame5Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame6",
+      "src/assets/materiais_apoio/botaoMinigame6.png"
+    );
+    this.load.image(
+      "botaoMinigame6Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame6Selecionado.png"
+    );
 
-    this.load.image("botaoListaTermos", "src/assets/materiais_apoio/botaoListaTermos.png");
+    this.load.image(
+      "botaoListaTermos",
+      "src/assets/materiais_apoio/botaoListaTermos.png"
+    );
 
     this.load.image("selecao", "src/assets/materiais_apoio/selecao.png");
-    this.load.image("selecaoDesistir", "src/assets/materiais_apoio/selecaoDesistir.png");
+    this.load.image(
+      "selecaoDesistir",
+      "src/assets/materiais_apoio/selecaoDesistir.png"
+    );
 
     //Assets do Minigame 1
 

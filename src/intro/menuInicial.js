@@ -68,7 +68,7 @@ class menuInicial extends baseCena {
     // Cria as imagens na tela
 
     botaoIniciar = this.add
-      .image(670, 400, "botaoIniciar")
+      .image(900, 400, "botaoIniciar")
       .setInteractive()
       .setScale(1);
 
@@ -80,7 +80,9 @@ class menuInicial extends baseCena {
         this.clique.play();
 
         // Caso ele seja, o jogo para a cena atual e passa para a próxima
-        this.telaPreta = this.add.rectangle(400, 300, 800, 600, 0x000000).setAlpha(0)
+        this.telaPreta = this.add
+          .rectangle(400, 300, 800, 600, 0x000000)
+          .setAlpha(0);
 
         this.tweens.add({
           targets: this.telaPreta,
@@ -88,12 +90,16 @@ class menuInicial extends baseCena {
           duration: 2000,
           onComplete: () => {
             this.time.delayedCall(500, () => {
-              this.transicao("contratoInicial", true, false)
+              this.transicao("contratoInicial", true, false);
             });
-          }
+          },
         });
       }
     });
-
+  }
+  update() {
+    if (botaoIniciar.x >= 670) {
+      botaoIniciar.x = botaoIniciar.x - 2;
+    }
   }
 }
