@@ -1532,7 +1532,7 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 #### 5.2.1.1. Teste 1
 Informações  | Resposta
 --- | ---
-Teste realizado por | Luiza
+Teste realizado por | Luisa
 Dia | 03/04/2025
 Já possuía experiência prévia com games? |Não	
 Conseguiu iniciar o jogo?	| Sim
@@ -1557,7 +1557,7 @@ Os botões da interface estão claros?|Sim
 <sup>Quadro 6 - Playtest</sup>
 Informações  | Resposta
 --- | ---
-Teste realizado por | Bene Frigi
+Teste realizado por | Renan
 Dia | 03/04/2025
 Já possuía experiência prévia com games? |Sim
 Conseguiu iniciar o jogo?	| Sim
@@ -1730,7 +1730,7 @@ Os botões da interface estão claros?|Sim
 #### 5.2.1.9. Teste 9
 Informações  | Resposta
 --- | ---
-Teste realizado por | Rafael(flakas)
+Teste realizado por | Rafael
 Dia | 03/04/2025
 Já possuía experiência prévia com games? |Sim,um pouco
 Conseguiu iniciar o jogo?	| Sim
@@ -1750,13 +1750,39 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
+
 <sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
 
 
 
 ### 5.2.2 Melhorias
 
-_Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade_
+Com base no feedback dos testadores, implementamos as seguintes melhorias:
+
+#### 1. Clareza da Tela de Carregamento
+- Adicionamos indicadores visuais mais explícitos
+- Incluímos mensagens textuais explicativas
+- Implementamos uma barra de progresso animada
+- *Objetivo*: Deixar claro o status do carregamento e evitar a impressão de que o jogo terminou
+
+#### 2. Melhorias no Botão de Iniciar
+- Redesenhamos o botão "Novo Jogo" para maior destaque
+- Adicionamos efeitos de hover e animações sutis
+- Ajustamos o contraste de cores para melhor legibilidade
+- *Resultado*: Tornar o início do jogo mais intuitivo
+
+#### 3. Aprimoramentos no Botão de Voltar
+- Implementamos um novo design consistente para o botão de voltar
+- Aumentamos a área clicável para melhor usabilidade
+- Adicionamos dicas textuais contextuais
+- *Benefício*: Melhorar a navegação entre telas do material de apoio
+
+**Impacto Geral**:
+- Experiência mais fluida para novos jogadores
+- Redução de pontos de confusão identificados nos testes
+- Interface mais intuitiva e acessível
+
+> "Todas as alterações foram baseadas no feedback direto dos jogadores durante as sessões de teste" - Grupo Level Zero
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
