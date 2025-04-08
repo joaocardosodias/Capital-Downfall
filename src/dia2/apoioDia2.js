@@ -151,7 +151,7 @@ Boa sorte!
       .setVisible(false)
       .setInteractive();
     this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
+      .image(650, 40, "botaoDesistir")
       .setInteractive();
 
     // Variável para controlar cliques repetidos
@@ -219,10 +219,10 @@ Boa sorte!
     });
 
     this.botaoDesistir.on("pointerover", () => {
-      this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+      this.selecao.setPosition(650, 40).setVisible(true);
     });
     this.botaoDesistir.on("pointerout", () => {
-      this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+      this.selecao.setPosition(0, 0).setVisible(false);
     });
   }
 
