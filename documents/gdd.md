@@ -1573,6 +1573,8 @@ BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográf
 
 DEEP-FOLD. PixelSpace. GitHub, 2021. Disponível em: https://github.com/Deep-Fold/PixelSpace. Acesso em: 27 fev. 2025.
 
+BRULLOV. Fire animation - Pixel Art FX Sprites. Itch.io, 2019. Disponível em: https://brullov.itch.io/fire-animation. Acesso em: 8 abr. 2025.
+
 HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física: Mecânica – Volume 1. 12. ed. Rio de Janeiro: LTC, 2023.
 
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 23 fev. 2025.
