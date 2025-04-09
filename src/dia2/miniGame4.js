@@ -24,7 +24,7 @@ class miniGame4 extends baseCena {
 
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacaoM4}`, {
-      fontSize: "24px",
+      fontFamily: "pixelArt",
       fill: "#FFFFFF",
     });
 
