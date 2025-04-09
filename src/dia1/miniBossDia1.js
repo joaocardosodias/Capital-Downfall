@@ -412,10 +412,12 @@ M = 1815`,
     this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true);
 
     this.voltarAoMapaB1.on("pointerdown", () => {
-      this.somFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      this.transicao("finalDia1", false, false, false, 200);
-      this.scene.stop("dia1");
+      if (!transicionando) {
+        this.somFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        this.transicao("finalDia1", false, false, false, 200);
+        this.scene.stop("dia1");
+      }
     });
   }
 }

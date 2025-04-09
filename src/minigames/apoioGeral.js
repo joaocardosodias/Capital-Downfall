@@ -231,11 +231,6 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       .image(750, 40, "botaoDesistir")
       .setInteractive();
 
-    // Ainda não funciona, pois não temos uma lista pronta.
-    this.botaoListaTermos = this.add
-      .image(82, 492, "botaoListaTermos")
-      .setInteractive();
-
     // Para economizar código
     this.minigames = [
       { botao: this.botaoMinigame1, posicaoX: 69, apoio: this.apoioMinigame1 },
@@ -283,7 +278,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     //Verifica se botão próximo foi pressionado
 
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.sound.play("clique");
         this.paginaAtiva++;
         this.textoApoio.setText(
@@ -309,7 +304,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     });
 
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.sound.play("clique");
         this.paginaAtiva--;
         this.textoApoio.setText(

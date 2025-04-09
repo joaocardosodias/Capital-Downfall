@@ -776,11 +776,13 @@ class fimMinigame4 extends baseCena {
     this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true);
 
     this.voltarAoMapaM4.on("pointerdown", () => {
-      this.musicaFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      minigame4Jogado = true;
-      this.transicao('hub2', false, false, true, 200,);
-      musicaHub2.resume();
+      if (!transicionando) {
+        this.musicaFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        minigame4Jogado = true;
+        this.transicao('hub2', false, false, true, 200,);
+        musicaHub2.resume();
+      }
     });
   }
 }

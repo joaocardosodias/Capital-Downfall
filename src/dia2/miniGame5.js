@@ -455,7 +455,7 @@ class miniGame5 extends baseCena {
   }
 
   // Método update vazio (não usado neste jogo)
-  update() {}
+  update() { }
 }
 
 // Cena que mostra a pontuação final
@@ -535,11 +535,13 @@ class fimMinigame5 extends baseCena {
     this.voltarAoMapaM5.anims.play("voltarAoMapaM5", true);
 
     this.voltarAoMapaM5.on("pointerdown", () => {
-      this.musicaFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      minigame5Jogado = true;
-      this.transicao('hub2', false, false, true, 200,);
-      musicaHub2.resume();
+      if (!transicionando) {
+        this.musicaFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        minigame5Jogado = true;
+        this.transicao('hub2', false, false, true, 200,);
+        musicaHub2.resume();
+      }
     });
   }
 }

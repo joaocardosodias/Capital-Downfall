@@ -202,7 +202,8 @@ class hub2 extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -230,7 +231,8 @@ class hub2 extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -258,7 +260,8 @@ class hub2 extends baseCena {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);

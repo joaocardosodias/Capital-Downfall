@@ -16,7 +16,7 @@ class miniGame6 extends baseCena {
     this.somFundo = this.sound.add("somFundo", { loop: true });
     this.somFundo.play();
 
-    this.cameras.main.setBackgroundColor("#324891"); //Define a cor do plano de fundo
+    this.add.rectangle(400, 300, 800, 600, 0x324891) //Define a cor do plano de fundo
 
     //Coloca as imagens em um array, definindo uma key para cada um dos cards. Além disso, define a pontuação de cada resposta
     this.imagens = [
@@ -196,11 +196,13 @@ class miniGame6 extends baseCena {
     this.voltarAoMapaM6.anims.play("voltarAoMapaM6", true);
 
     this.voltarAoMapaM6.on("pointerdown", () => {
-      this.somFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      minigame6Jogado = true;
-      this.transicao('hub2', false, false, true, 200,);
-      musicaHub2.resume();
+      if (!transicionando) {
+        this.somFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        minigame6Jogado = true;
+        this.transicao('hub2', false, false, true, 200,);
+        musicaHub2.resume();
+      }
     });
   }
 }
