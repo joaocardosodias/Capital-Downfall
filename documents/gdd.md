@@ -516,7 +516,13 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
-_\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção._
+O jogo conta com um NPC. Se trata da chefe do escritório, Alice Brito. Ela pode ser encontrada tanto na Hub quanto no lado esquerdo dos materiais de apoio.
+
+<div align="center">
+  <p>Figura x: Alice</p>
+  <img src="../assets/personagens/chefe.png"<br>
+  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
@@ -534,7 +540,7 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais três salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
+O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais três salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo. Enquanto a grande maioria dos _assets_ foram produzidos pela própria equipe, alguns deles foram criados por LimeZu. Tais assets foram comprados no _marketplace_ Itch.io, sendo licenciados para a utilização no projeto. Os assets em específico são: a impressora, máquina de vendas, pilha de papéis e a lousa de canetas.
 
 #
 
@@ -1831,7 +1837,103 @@ Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi 
 
 ## 4.5. Revisão do MVP (sprint 5)
 
-_Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar._
+
+A última _Sprint_ ficou marcada pela revisão geral do jogo, além de diversos refinamentos em relação ao MVP entregue. Primeiramente, corrigimos dois problemas encontrados durante a validação da _Sprint_ 4. O primeiro deles se trata da demora no carregamento entre as cenas. Na versão anterior, o jogador encontrava uma tela preta durante a transição, podendo durar diversos segundos. Isso trazia confusão para a experiência, dando a entender que era um problema técnico. Como solução, implementamos uma tela de _loading_ no ínicio do jogo, carregando todos os _assets_ utilizados nas cenas. A cena funciona com apenas um método preload(), trazendo o carregamento que antes estava presente em cada uma das cenas. Além disso, essa solução também ajuda a economizar recursos computacionais, já que evita que os mesmos _assets_ sejam carregados múltiplas vezes.
+
+#
+
+<div align="center">
+<p> Figura x: Tela de carregamento</p>
+<img src="../assets/gdd_4.5/telaCarregamento.png">
+<p> Produção autoral</p>
+</div>
+
+#
+
+A segunda alteração se refere ao _Minigame_ 3. O parceiro de projeto demonstrou insatisfação com a ordem dos tópicos abordados. Por esse motivo, alteramos os _assets_ referentes ao _minigame_, além do material de apoio correspondente. Essa mudança não trouxe alterações significativas para o código em si.
+
+Ademais, também trouxemos diversos refinamentos para a experiência do usuário. A primeira delas foi a alteração da pontuação de corte do final de cada dia. Anteriormente, essa pontuação estava baixa demais, tornando o jogo muito fácil. Também adicionamos uma contextualização para a Sala de Guerra, explicando para o jogador sobre o que estava acontecendo no contexto da história.
+
+#
+
+<div align="center">
+<p> Figura x: Contextualização da sala de guerra</p>
+<img src="../assets/gdd_4.5/apoioMiniboss.png">
+<p> Produção autoral</p>
+</div>
+
+#
+
+Inserimos um _NPC_ na _hub_, servindo como um indicador visual do jogador para o acesso ao material de apoio geral. A _NPC_ segue o visual da chefe do escritório, conforme presente no lado esquerdo dos materiais de apoio. Quando o jogador se aproxima dela na _hub_, um balão de fala aperece, esclarecendo para o jogador o que ele ecnontrará ao intergir.
+
+#
+
+<div align="center">
+<p> Figura x: Adição da NPC para a hub</p>
+<img src="../assets/gdd_4.5/telaNPC.png">
+<p> Produção autoral</p>
+</div>
+
+<div align="center">
+<p> Figura x: Código referente à NPC</p>
+<img src="../assets/gdd_4.5/codigoNPC.png">
+<p> Produção autoral</p>
+</div>
+
+#
+
+Além disso, implementamos uma cena ao final da Sala de Guerra, indicando ao jogador que ele finalizou o jogo. Essa cena pode ter duas aparências: uma indicando que o jogador finalizou o jogo com sucesso, e a outra indicando que o mesmo falhou, e que precisa jogar novamente. Outra tela que também colocamos foi a dos créditos, trazendo mais informações quando a produção do produto. Os créditos podem ser acessados no Menu Inicial.
+
+#
+
+<div align="center">
+<p> Figura x: Exemplo da tela de fim de jogo</p>
+<img src="../assets/gdd_4.5/cenaGameWin.png">
+<p> Produção autoral</p>
+</div>
+
+<div align="center">
+<p> Figura x: Tela de créditos</p>
+<img src="../assets/gdd_4.5/telaCréditos.png">
+<p> Produção autoral</p>
+</div>
+
+#
+
+A alteração mais significativa realizada nessa _Sprint_ foi a adição de uma tela de transição entre as cenas da _hub_ e o material de apoio dos _minigames_. Agora, toda vez que o jogador apertar a barra de espaço ou a tecla E, uma animação de um tablet deslizando para a tela é tocada. O principal objetivo dessa adição é trazer uma maior sensação de imersão para o usuário, tornando o cenário mais realista.
+
+#
+
+<div align="center">
+<p> Figura x: Exemplo da animação</p>
+<img src="../assets/gdd_4.5/telaAnimacao.png">
+<p> Produção autoral</p>
+</div>
+
+<div align="center">
+<p> Figura x: Parte do código referente à animação</p>
+<img src="../assets/gdd_4.5/codigoAnimacao.png">
+<p> Produção autoral</p>
+</div>
+
+#
+
+Essas eram a maioria das alterações planejadas para a _Sprint_ de refinamento. Outras pequenas mudanças também foram realizadas, como a alteração de efeitos sonoros e pequenas mudanças de _assets_. Porém, é importante destacar que também realizamos uma rodada de _playtests_. Os _playtests_ buscam receber um _feedback_ real de jogadores, buscando encontrar problemas não vistos por aqueles que trabalham no desenvolvimento. Durante o _playtest_, recebemos diversos _feedbacks_. Alguns deles eram simples, então conseguimos implementar rapidamente. Outros iam além do escopo de tempo que havíamos disponíveis, então foram sinalizados como planos futuros. 
+
+Daqueles que puderam ser implementados, estão: a alteração do botão "Voltar" nos materiais de apoio, trazendo um maior destaque para o mesmo, a adição do texto "Carregando" para a tela de _preload_, indicando para o usuário aquilo que está acontecendo, e a animação do botão "Iniciar Jogo" no Menu Inicial, diferenciado-o do restante da tela.
+
+#
+
+<div align="center">
+<p> Figura x: Exemplo do novo botão: Voltar</p>
+<img src="../assets/gdd_4.5/botaoDesistir.png">
+<p> Produção autoral</p>
+</div>
+
+#
+
+De uma forma geral, a _Sprint_ 5 permitiu que diversos pequenos problemas fossem corrigidos, deixando a experiência mais coesa e completa. Ela também permitiu que outros aspectos fossem adicionados, incrementando sobre o MVP entregue. Por fim, também pudemos registrar possíveis melhorias e planos futuros para o projeto, sinalizando aquilo que consideramos mais importante futuramente.
+
 
 # <a name="c5"></a>5. Testes
 
@@ -2163,6 +2265,8 @@ PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledg
 RIBEIRO, Luis Henrique de Oliveira; SODRÉ, Marina Fernandes; ALBUQUERQUE JUNIOR, Carlos Roberto Falcão de. A ascenção dos bancos digitais na era moderna: uma análise qualitativa através de ferramentas do planejamento estratégico. Brazilian Journal of Development, Curitiba, v. 8, n. 1, p. 4213-4226, jan. 2022.
 
 SEBRAE. Como determinar o público-alvo da sua empresa. Portal Sebrae, 8 maio 2023. Disponível em: https://sebrae.com.br/sites/PortalSebrae/artigos/como-determinar-o-publico-alvo-da-sua-empresa,fa1c7553c86c6810VgnVCM1000001b00320aRCRD. Acesso em: 28 mar. 2025.
+
+LIMEZU. Modern Office. Disponível em: https://limezu.itch.io/. Acesso em: 09 abr. 2025.
 
 # <a name="c8"></a>Anexos
 
