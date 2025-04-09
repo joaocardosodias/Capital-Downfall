@@ -557,7 +557,7 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo de objeto interativo, marcado pela exclamação
+    <strong>Figura X:</strong> Exemplo de objeto interativo, marcado pela seta
   </p>
   <img src="../assets/gdd_3.3/mapa2.png" alt="Objeto Interativo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
