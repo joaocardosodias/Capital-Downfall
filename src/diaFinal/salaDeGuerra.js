@@ -163,6 +163,7 @@ class salaDeGuerra extends baseCena {
     // Carrega os sons
     this.clickSound = this.sound.add("click");
     this.somFundo = this.sound.add("musicaHubFinal");
+    this.somFundo.setLoop(true); // Define a música para tocar em loop
     this.somFundo.play(); // Reproduz o som de fundo
 
     // Cria os botões de resposta (A, B, C e D) com suas respectivas letras
