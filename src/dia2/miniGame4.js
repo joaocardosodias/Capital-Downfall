@@ -24,7 +24,7 @@ class miniGame4 extends baseCena {
 
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacaoM4}`, {
-      fontSize: "24px",
+      fontFamily: "pixelArt",
       fill: "#FFFFFF",
     });
 
@@ -626,7 +626,8 @@ class BaseTributacaoScene extends baseCena {
   adicionarBloquinhos(bloquinhos, respostaCorreta, cardIndex) {
     const posicoes = [165, 325, 485, 645]; // Posições X dos bloquinhos
     const posicaoY = 530; // Posição Y dos bloquinhos
-    const escala = 1; // Escala dos bloquinhos
+    const escala = 1; // Escala dos bloquinho
+    let cliqueBloqueado = false; // Variável para controlar o bloqueio de cliques
 
     bloquinhos.forEach((bloquinho, index) => {
       const img = this.add
@@ -646,7 +647,11 @@ class BaseTributacaoScene extends baseCena {
       });
 
       img.on("pointerdown", () => {
+        if (cliqueBloqueado) return; // Se já houve um clique recente, ignora novos cliques
+        
+        cliqueBloqueado = true; // Bloqueia novos cliques
         this.sound.play("clique"); // Toca o som de clique
+        
         if (index + 1 === respostaCorreta) {
           pontuacaoM4 += 100;
           this.sound.play("somAcerto", { volume: 2 });
@@ -654,8 +659,14 @@ class BaseTributacaoScene extends baseCena {
           pontuacaoM4 -= 50;
           this.sound.play("somErro", { volume: 2 });
         }
+        
         // Indisponibiliza o card correspondente
         cardsDisponiveis[cardIndex] = false;
+
+        // Adiciona um delay antes de permitir outro clique
+        this.time.delayedCall(500, () => {
+          cliqueBloqueado = false;
+        });
 
         // Volta para a cena principal e passa o índice do card finalizado
         this.transicaoParaCena("miniGame4", {
