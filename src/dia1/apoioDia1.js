@@ -104,9 +104,9 @@ Para isso, clique e arraste um card para sua posição na linha do tempo. Atenç
 Segue em anexo os materiais necessários para a tarefa.
 
 Boa sorte!`,
-      `O processo de resgate se inicia com uma solicitação do cliente.
+      `O processo de resgate se inicia com uma solicitação do cliente, após um período de rendimento da aplicação.
 
-Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e começe a render.
+Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e o valor de resgate seja definido.
 
 Após isso, ocorre o prazo de liquidação, que se trata do tempo que leva para a conclusão da transação, disponibilizando o dinheiro para o cliente.
 
@@ -180,7 +180,7 @@ Boa sorte!`,
       .setInteractive();
     if (this.minigameAtual % 10 !== 0) {
       this.botaoDesistir = this.add
-        .image(750, 40, "botaoDesistir")
+        .image(650, 40, "botaoDesistir")
         .setInteractive();
     }
 
@@ -217,7 +217,7 @@ Boa sorte!`,
     this.botaoDesistir.on("pointerdown", (pointer) => {
       if (!transicionando) {
         this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
-        this.transicao('hub', false, false, true, 200,);
+        this.transicao("hub", false, false, true, 200);
       }
     });
 
@@ -246,10 +246,10 @@ Boa sorte!`,
     });
 
     this.botaoDesistir.on("pointerover", () => {
-      this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+      this.selecao.setPosition(650, 40).setVisible(true);
     });
     this.botaoDesistir.on("pointerout", () => {
-      this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+      this.selecao.setPosition(0, 0).setVisible(false);
     });
   }
 

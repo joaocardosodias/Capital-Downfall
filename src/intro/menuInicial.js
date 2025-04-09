@@ -72,6 +72,16 @@ class menuInicial extends baseCena {
       .setInteractive()
       .setScale(1);
 
+    // Adiciona a animação de pulsação do botão de iniciar
+
+      this.tweens.add({
+        targets: botaoIniciar,
+        scale: 1.2,
+        duration: 1000,
+        yoyo: true,
+        repeat: -1,
+      });
+
     // Verifica se o botão de iniciar foi clicado
 
     botaoIniciar.on("pointerdown", () => {
@@ -80,7 +90,9 @@ class menuInicial extends baseCena {
         this.clique.play();
 
         // Caso ele seja, o jogo para a cena atual e passa para a próxima
-        this.telaPreta = this.add.rectangle(400, 300, 800, 600, 0x000000).setAlpha(0)
+        this.telaPreta = this.add
+          .rectangle(400, 300, 800, 600, 0x000000)
+          .setAlpha(0);
 
         this.tweens.add({
           targets: this.telaPreta,
@@ -88,12 +100,11 @@ class menuInicial extends baseCena {
           duration: 2000,
           onComplete: () => {
             this.time.delayedCall(500, () => {
-              this.transicao("contratoInicial", true, false)
+              this.transicao("contratoInicial", true, false);
             });
-          }
+          },
         });
       }
     });
-
   }
 }
