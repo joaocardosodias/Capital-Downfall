@@ -1593,4 +1593,8 @@ SEBRAE. Como determinar o público-alvo da sua empresa. Portal Sebrae, 8 maio 20
 
 # <a name="c8"></a>Anexos
 
-_Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)_
+Este anexo é um link para o quadro Figma da visão do produto:
+https://www.figma.com/design/yjJB5frpiP8MSd0kFoHyzM/Visão-do-Produto?node-id=0-1&p=f&t=uoB02f2cjTzv9KHk-0
+
+Este anexo é um link para o quadro Figma que discute o que o produto É - NÃO É - FAZ - NÃO FAZ:
+https://www.figma.com/design/AiBW3Dacs2Th9kHwqX0qQ2/Untitled?node-id=0-1&p=f&t=dftxa8JW7Z2935j4-0
