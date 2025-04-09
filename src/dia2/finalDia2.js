@@ -23,7 +23,9 @@ class finalDia2 extends baseCena {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
-      this.botaoGameOver = this.add.image(100, 75, "gameOver").setInteractive();
+
+      this.botaoGameOver = this.add.sprite(610, 535, "gameOver").setInteractive().setScale(2);
+      this.botaoGameOver.anims.play("gameOver", true)
       this.botaoGameOver.on("pointerdown", () => {
         this.scene.stop("finalDia2");
         window.location.reload();
@@ -34,9 +36,9 @@ class finalDia2 extends baseCena {
       this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;
-      this.botaoContinuar = this.add
-        .image(100, 75, "continuar")
-        .setInteractive();
+
+      this.botaoContinuar = this.add.sprite(150, 535, "continuar").setInteractive().setScale(2);
+      this.botaoContinuar.anims.play("continuar", true)
       this.botaoContinuar.on("pointerdown", () => {
         this.scene.stop("finalDia2");
         //Reinicia a pontuação antes de começar a Sala de Guerra

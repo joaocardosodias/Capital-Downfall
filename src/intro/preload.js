@@ -136,9 +136,9 @@ class preload extends Phaser.Scene {
         this.load.image(
           "botao" + this.personagens[i] + this.estadosBotoes[u],
           "src/assets/intro/selecaoPersonagens/botao" +
-            this.personagens[i] +
-            this.estadosBotoes[u] +
-            ".png"
+          this.personagens[i] +
+          this.estadosBotoes[u] +
+          ".png"
         );
       }
     }
@@ -445,8 +445,12 @@ class preload extends Phaser.Scene {
       "jornalSemCrescimento",
       "src/assets/telas_pontuacao/jornalSemCrescimento.png"
     );
-    this.load.image("continuar", "src/assets/telas_pontuacao/continuar.png");
-    this.load.image("gameOver", "src/assets/telas_pontuacao/gameOver.png");
+    this.load.spritesheet("continuar", "src/assets/telas_pontuacao/continuarSheet.png",
+      { frameWidth: 172, frameHeight: 60 }
+    );
+    this.load.spritesheet("gameOver", "src/assets/telas_pontuacao/gameOverSheet.png",
+      { frameWidth: 172, frameHeight: 60 }
+    );
 
     //Assets do Minigame 4
 
