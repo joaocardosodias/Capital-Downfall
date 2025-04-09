@@ -1,4 +1,4 @@
-class apoioSalaDeGuerra extends Phaser.Scene {
+class apoioSalaDeGuerra extends baseCena {
     constructor() {
       super("apoioSalaDeGuerra");
       // Armazena a página atual do tutorial
@@ -6,7 +6,8 @@ class apoioSalaDeGuerra extends Phaser.Scene {
       // Arrays com os tutoriais de cada minigame
       this.texto = [
         `Bem-vindo ao caos!
-A crise atingiu seu ponto máximo e todos dependem de você. Agora, é hora de mostrar tudo o que aprendeu até aqui.Você enfrentará um grande desafio: responder 12 perguntas que abrangem todo o seu treinamento, sendo 2 perguntas de cada minigame. Para garantir a vitória, você precisa alcançar uma taxa de acerto de pelo menos 75% – ou seja, acertar no mínimo 9 perguntas. A pressão é real, e você terá apenas 10 minutos.
+        
+A crise atingiu seu ponto máximo e todos dependem de você. Agora, é hora de mostrar tudo o que aprendeu até aqui. Você enfrentará um grande desafio: responder 12 perguntas que abrangem todo o seu treinamento, sendo 2 perguntas de cada minigame. Para garantir a vitória, você precisa alcançar uma taxa de acerto de pelo menos 75% - ou seja, acertar no mínimo 9 perguntas. A pressão é real, e você terá apenas 10 minutos.
 
  Boa sorte! Toda a empresa está contando com você.
 `,
@@ -14,6 +15,7 @@ A crise atingiu seu ponto máximo e todos dependem de você. Agora, é hora de m
     }
   
     create() {
+      this.cameras.main.setBounds(0, 0, 800, 600);
       // Configura o fundo
       this.imailFundo = this.add.image(400, 300, "imailFundo");
   
@@ -121,8 +123,7 @@ A crise atingiu seu ponto máximo e todos dependem de você. Agora, é hora de m
         this.paginaAtiva = 0;
         this.somFundo.stop();
         this.textoTutorial.setText(this.texto[0]);
-        game.scene.start("hubFinal");
-        game.scene.stop("apoioSalaDeGuerra");
+        this.transicao('hubFinal', false, false, false, 200,);
       }
     }
   

@@ -26,7 +26,7 @@ class miniGame3 extends baseCena {
   }
 
   create() {
-    this.cameras.main.setBackgroundColor("#195AB4");
+    this.add.rectangle(400, 300, 800, 600, 0x195AB4)
 
     //Cria o som de fundo utilizado
     this.somFundo = this.sound.add("somFundo", { loop: true });

@@ -3,7 +3,7 @@ let musicaTocadaMinigame4 = false;
 
 //Cria a cena da Hub
 
-class hub2 extends Phaser.Scene {
+class hub2 extends baseCena {
   constructor() {
     super("hub2");
     this.diaAtual = 2;
@@ -34,6 +34,7 @@ class hub2 extends Phaser.Scene {
     this.passos;
     this.andando = false;
     this.interacaoMinigame;
+    this.fimDoDia2 = false;
   }
 
   create() {
@@ -165,8 +166,7 @@ class hub2 extends Phaser.Scene {
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
-        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
-        game.scene.sleep("hub2");
+        this.transicao('apoioGeral', true, true, true)
       }
     });
 
@@ -202,7 +202,8 @@ class hub2 extends Phaser.Scene {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -210,8 +211,7 @@ class hub2 extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 4;
-          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub2");
+          this.transicao('apoioDia2', true, true, true)
         }
       }
     });
@@ -231,7 +231,8 @@ class hub2 extends Phaser.Scene {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -239,8 +240,7 @@ class hub2 extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 5;
-          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub2");
+          this.transicao('apoioDia2', true, true, true)
         }
       }
     });
@@ -260,7 +260,8 @@ class hub2 extends Phaser.Scene {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -268,8 +269,7 @@ class hub2 extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 6;
-          game.scene.start("apoioDia2", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub2");
+          this.transicao('apoioDia2', true, true, true)
         }
       }
     });
@@ -316,101 +316,127 @@ class hub2 extends Phaser.Scene {
       minigame6Jogado === true
     ) {
       musicaMinigame4.stop();
-      this.passos.stop();
-      this.scene.stop("hub2");
-      this.scene.start("finalDia2");
+      if (!transicionando && !this.fimDoDia2) {
+        this.fimDoDia2 = true
+        this.time.delayedCall(1500, () => {
+          this.passos.stop();
+          this.transicao("finalDia2", true, true, true)
+        });
+      }
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
+    if (!transicionando) {
+      if (
+        (this.teclado.left.isDown || this.A.isDown) &&
+        (this.teclado.up.isDown || this.W.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-210);
+        this.player.setVelocityY(-210);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (
+        (this.teclado.left.isDown || this.A.isDown) &&
+        (this.teclado.down.isDown || this.S.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-210);
+        this.player.setVelocityY(210);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (
+        (this.teclado.right.isDown || this.D.isDown) &&
+        (this.teclado.up.isDown || this.W.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(210);
+        this.player.setVelocityY(-210);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (
+        (this.teclado.right.isDown || this.D.isDown) &&
+        (this.teclado.down.isDown || this.S.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(210);
+        this.player.setVelocityY(210);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (this.teclado.left.isDown || this.A.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-300);
+        this.player.setVelocityY(0);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (this.teclado.right.isDown || this.D.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(300);
+        this.player.setVelocityY(0);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (this.teclado.up.isDown || this.W.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(-300);
+        this.player.anims.play("movimentoCima", true);
+        this.playerDirecao = "cima";
+      } else if (this.teclado.down.isDown || this.S.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(300);
+        this.player.anims.play("movimentoBaixo", true);
+        this.playerDirecao = "baixo";
+      }
+      //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
+      else {
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(0);
+        if (this.andando) {
+          this.passos.stop();
+        }
+        this.andando = false;
 
-    if (
-      (this.teclado.left.isDown || this.A.isDown) &&
-      (this.teclado.up.isDown || this.W.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
+        //vê a direção que o player estava virado e toca a animação parado correspondente
+        if (this.playerDirecao === "cima") {
+          this.player.anims.play("movimentoParadoCima", true);
+        } else if (this.playerDirecao === "baixo") {
+          this.player.anims.play("movimentoParadoBaixo", true);
+        } else if (this.playerDirecao === "direita") {
+          this.player.anims.play("movimentoParadoDireita", true);
+        } else if (this.playerDirecao === "esquerda") {
+          this.player.anims.play("movimentoParadoEsquerda", true);
+        } else {
+          // define a animação parado default como a para baixo
+          this.player.anims.play("movimentoParadoBaixo", true);
+        }
       }
-      this.andando = true;
-      this.player.setVelocityX(-210);
-      this.player.setVelocityY(-210);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (
-      (this.teclado.left.isDown || this.A.isDown) &&
-      (this.teclado.down.isDown || this.S.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(-210);
-      this.player.setVelocityY(210);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (
-      (this.teclado.right.isDown || this.D.isDown) &&
-      (this.teclado.up.isDown || this.W.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(210);
-      this.player.setVelocityY(-210);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (
-      (this.teclado.right.isDown || this.D.isDown) &&
-      (this.teclado.down.isDown || this.S.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(210);
-      this.player.setVelocityY(210);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (this.teclado.left.isDown || this.A.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(-300);
-      this.player.setVelocityY(0);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown || this.D.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(300);
-      this.player.setVelocityY(0);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (this.teclado.up.isDown || this.W.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(0);
-      this.player.setVelocityY(-300);
-      this.player.anims.play("movimentoCima", true);
-      this.playerDirecao = "cima";
-    } else if (this.teclado.down.isDown || this.S.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(0);
-      this.player.setVelocityY(300);
-      this.player.anims.play("movimentoBaixo", true);
-      this.playerDirecao = "baixo";
-    }
-    //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
-    else {
+    } else { // código repetido por que ocorre em situações diferentes mas fazem a mesma coisa
       this.player.setVelocityX(0);
       this.player.setVelocityY(0);
       if (this.andando) {

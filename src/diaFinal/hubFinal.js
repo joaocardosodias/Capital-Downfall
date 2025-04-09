@@ -1,7 +1,7 @@
 //Cria a cena da Hub
 let musicaHubFinal;
 
-class hubFinal extends Phaser.Scene {
+class hubFinal extends baseCena {
   constructor() {
     super("hubFinal");
     this.map;
@@ -110,8 +110,11 @@ class hubFinal extends Phaser.Scene {
 
     this.avisoApoioGeral = this.add
       .sprite(700, 1150, "balaoFala")
-      .setScale(0.23)
-      .setDepth(3);
+      .setScale(2)
+      .setDepth(3)
+      .setVisible(false);
+
+      this.avisoApoioGeral.anims.play("fala");
 
     //Adiciona os indicadores e inicia suas animações
     this.avisoBossFinal = this.add.sprite(400, 60, "avisoMinigame");
@@ -152,16 +155,18 @@ class hubFinal extends Phaser.Scene {
       this.textoInteracao
         .setPosition(this.player.x + 2, this.player.y + 80)
         .setVisible(true);
+      this.avisoApoioGeral
+        .setVisible(true);
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
         (this.spacebar || this.E) &&
         (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-          Phaser.Input.Keyboard.JustDown(this.E))
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
-        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
-        game.scene.sleep("hubFinal");
+        this.transicao('apoioGeral', true, true, true);
       }
     });
 
@@ -177,14 +182,14 @@ class hubFinal extends Phaser.Scene {
       if (
         (this.spacebar || this.E) &&
         (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-          Phaser.Input.Keyboard.JustDown(this.E))
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
       ) {
         this.avisoBossFinal.setVisible(false);
         this.passos.stop();
         this.interacaoMinigame.play();
         musicaHubFinal.stop();
-        game.scene.start("salaDeGuerra");
-        game.scene.sleep("hubFinal");
+        this.transicao('salaDeGuerra', true, true, true,);
       }
     });
 
@@ -214,6 +219,11 @@ class hubFinal extends Phaser.Scene {
       this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
       this.fundoInteracao.setVisible(false);
     }
+
+    if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
+      this.avisoApoioGeral.setVisible(false);
+    }
+    
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
 

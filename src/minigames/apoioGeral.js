@@ -183,6 +183,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     this.paginaAtiva = 0;
     this.apoioEscolhido = 1; //minigame 1 como default
 
@@ -229,11 +230,6 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       .image(740, 40, "botaoDesistirApoioGeral")
       .setInteractive()
       .setScale(0.5);
-
-    // Ainda não funciona, pois não temos uma lista pronta.
-    this.botaoListaTermos = this.add
-      .image(82, 492, "botaoListaTermos")
-      .setInteractive();
 
     // Para economizar código
     this.minigames = [
@@ -282,7 +278,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     //Verifica se botão próximo foi pressionado
 
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.sound.play("clique");
         this.paginaAtiva++;
         this.textoApoio.setText(
@@ -308,7 +304,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     });
 
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.sound.play("clique");
         this.paginaAtiva--;
         this.textoApoio.setText(

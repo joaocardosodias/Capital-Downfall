@@ -14,7 +14,7 @@ class baseCena extends Phaser.Scene {
             // Caso o player exista, a notificação aparecerá logo em cima dele
             if (playerExiste) {
                 x = this.player.x;
-                y = this.player.y - 100;
+                y = this.player.y - 90;
             }
 
             // Caso a animação da notificação ainda não exista, cria ela

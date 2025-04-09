@@ -1,7 +1,7 @@
 let minigameAtual2;
 let musicaMinigame4;
 
-class apoioDia2 extends Phaser.Scene {
+class apoioDia2 extends baseCena {
   constructor() {
     super("apoioDia2");
     // Armazena a página atual do tutorial
@@ -114,6 +114,7 @@ Boa sorte!
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     //  Configura o som do minigame 4
     musicaMinigame4 = this.sound.add("somFundo", { volume: 1 });
     musicaMinigame4.setLoop(true);
@@ -159,7 +160,7 @@ Boa sorte!
 
     // Evento do botão "próximo"
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -172,7 +173,7 @@ Boa sorte!
 
     // Evento do botão "anterior"
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -185,13 +186,14 @@ Boa sorte!
 
     // Evento do botão "desistir"
     this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.sound.play("clique"); // Toca o som de clique
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual2][0]
-      );
-      game.scene.wake("hub2");
-      game.scene.stop("apoioDia2");
+      if (!transicionando) {
+        this.sound.play("clique"); // Toca o som de clique
+        this.paginaAtiva = 0;
+        this.textoTutorial.setText(
+          this["tutoriaisMinigame" + this.minigameAtual2][0]
+        );
+        this.transicao('hub2', false, false, true, 200,);
+      }
     });
 
     // Adição do efeito de pointer over nos botões

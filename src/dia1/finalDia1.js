@@ -41,10 +41,12 @@ class finalDia1 extends baseCena {
         .image(100, 75, "continuar")
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
-        this.clique.play();
-        //Reinicia a pontuação antes de começar o dia 2;
-        pontuacao = 0;
-        this.transicao('introDia2', true, false, false)
+        if (!transicionando) {
+          this.clique.play();
+          //Reinicia a pontuação antes de começar o dia 2;
+          pontuacao = 0;
+          this.transicao('introDia2', true, false, false)
+        }
       });
     }
   }

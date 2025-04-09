@@ -1,4 +1,4 @@
-class finalDia2 extends Phaser.Scene {
+class finalDia2 extends baseCena {
   constructor() {
     super("finalDia2");
     this.falido = false;
@@ -11,6 +11,7 @@ class finalDia2 extends Phaser.Scene {
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     //Para a música da hub, e cria os sons utilizados
     musicaHub2.stop();
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
