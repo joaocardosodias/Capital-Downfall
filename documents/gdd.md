@@ -1529,23 +1529,258 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
 ### 5.2.1 Registros de testes
+#### 5.2.1.1. Teste 1
+Informações  | Resposta
+--- | ---
+Teste realizado por | Luisa
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Não	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Sim,mas não absorveu o conteúdo do material de apoio
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Falar que tem mais coisas depois da fase 1, se não parece que o jogo acabou/deixar mais óbvio que a tela de carregamento terminou/falar que pontuação baixa dá game over
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
 
-_Descreva nesta seção as sessões de teste/entrevista com diferentes jogadores. Registre cada teste conforme o template a seguir._
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+#### 5.2.1.2. Teste 2
+<sup>Quadro 6 - Playtest</sup>
+Informações  | Resposta
+--- | ---
+Teste realizado por | Renan
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Explicar melhor o propósito da pontuação
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
 
-| Nome                                     | João Jonas (use nomes fictícios)                                                                                                         |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Já possuía experiência prévia com games? | sim, é um jogador casual                                                                                                                 |
-| Conseguiu iniciar o jogo?                | sim                                                                                                                                      |
-| Entendeu as regras e mecânicas do jogo?  | entendeu as regras, mas sobre as mecânicas, apenas as essenciais, não explorou os comandos complexos                                     |
-| Conseguiu progredir no jogo?             | sim, sem dificuldades                                                                                                                    |
-| Apresentou dificuldades?                 | Não, conseguiu jogar com facilidade e afirmou ser fácil                                                                                  |
-| Que nota deu ao jogo?                    | 9.0                                                                                                                                      |
-| O que gostou no jogo?                    | Gostou de como o jogo vai ficando mais difícil ao longo do tempo sem deixar de ser divertido                                             |
-| O que poderia melhorar no jogo?          | A responsividade do personagem aos controles, disse que havia um pouco de atraso desde o momento do comando até a resposta do personagem |
+<sup>Fonte: Material produzido pelos autores (2024)
+#### 5.2.1.3. Teste 3
+Informações  | Resposta
+--- | ---
+Teste realizado por | Matheus
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Muito pouco	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Apenas no minigame 1
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim,mas ficou em dúvida de arrastar e setinhas no a/f
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|deixar claro que a ordem no miniboss é do MG3/deixar botão voltar mais claro
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+#### 5.2.1.4. Teste 4
+<sup>Quadro 6 - Playtest</sup>
+Informações  | Resposta
+--- | ---
+Teste realizado por | Tatiane
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|10
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Explicação do material de apoio sobre fundos não ficou claro que aquilo eram caracteristícas do fundo/As setinhas podem confundir a pessoa porque como quando ela volta de um minigame é difícil entender/Não perder ponto quando errar/Deixar em cinza o caminho para o qual você já foi
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Material produzido pelos autores (2024)</sup> <br>
+#### 5.2.1.5. Teste 5
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Luana
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Jogos simples
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|letra mais legivel/falar de todos os tipos de fundos antes de definir um por um/botao + e - mais claros do que fazem/mostrar tempo estimado do dia
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+#### 5.2.1.6. Teste 6
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Ryan
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Um pouco	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Sim,Teve dificuldade com a tela de preloading, parece que é pra colocar o nome.
+Que nota deu ao jogo?|10
+O que gostou no jogo?|Trilha Sonora
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Botão de voltar/Tirar as setinhas nos apoios dos minigames
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+#### 5.2.1.7. Teste 7
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Vitor
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim	
+Conseguiu iniciar o jogo?	| Sim,mas não sabia onde estava o botão
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|poucas
+Que nota deu ao jogo?|8
+O que gostou no jogo?|Interações,sons e setes
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|novo jogo mais obvio/não leu os textos, mas talvez por conta da indicacao no minigame 2/todo mundo erra a linha do tempo
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+#### 5.2.1.8. Teste 8
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Lucas
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|10
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|novo jogo mais nítido/drag and drop MG1
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+#### 5.2.1.9. Teste 9
+Informações  | Resposta
+--- | ---
+Teste realizado por | Rafael
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim,um pouco
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|10
+O que gostou no jogo?|dinâmica dos minigames
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+
+<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+
+
 
 ### 5.2.2 Melhorias
 
-_Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade_
+Com base no feedback dos testadores, implementamos as seguintes melhorias:
+
+##### 1. Clareza da Tela de Carregamento
+- Adicionamos indicadores visuais mais explícitos
+- Incluímos mensagens textuais explicativas
+- Implementamos uma barra de progresso animada
+- *Objetivo*: Deixar claro o status do carregamento e evitar a impressão de que o jogo terminou
+
+##### 2. Melhorias no Botão de Iniciar
+-Adicionamos uma animação para o botão de iniciar
+-Adicionamos outros botões no menu inicial
+- *Resultado*: Tornar o início do jogo mais intuitivo
+
+##### 3. Aprimoramentos no Botão de Voltar
+- Implementamos um novo design consistente para o botão de voltar
+- Aumentamos a área clicável para melhor usabilidade
+- *Benefício*: Melhorar a navegação entre telas do material de apoio
+
+**Impacto Geral**:
+- Experiência mais fluida para novos jogadores
+- Redução de pontos de confusão identificados nos testes
+- Interface mais intuitiva e acessível
+
+> "Todas as alterações foram baseadas no feedback direto dos jogadores durante as sessões de teste" - Grupo Level Zero
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
