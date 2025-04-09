@@ -64,7 +64,7 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
 #
 
 <div style="text-align: center; margin-bottom: 1em;">
-    <p style="margin-bottom: 0.3em; font-style: italic;"><strong>Figura X</strong> – Representação das 5 Forças de Porter</p>
+    <p style="margin-bottom: 0.3em; font-style: italic;"><strong>Figura 1</strong> – Representação das 5 Forças de Porter</p>
     <img src="../assets/negocios/5forcasdeporter.png" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
         Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
@@ -95,7 +95,7 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 #
 <div style="text-align: center; margin-bottom: 1em;">
     <p style="margin-bottom: 0.3em; font-style: italic;">
-        <strong>Figura X</strong> – Estrutura de Análise SWOT aplicada ao projeto
+        <strong>Figura 2</strong> – Estrutura de Análise SWOT aplicada ao projeto
     </p>
     <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
@@ -175,7 +175,7 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 
 <div style="text-align: center; margin-bottom: 1em;">
     <p style="margin-bottom: 0.3em; font-style: italic;">
-        <strong>Figura X</strong> – Canvas da Proposta de Valor do projeto *Capital Downfall*
+        <strong>Figura 3</strong> – Canvas da Proposta de Valor do projeto *Capital Downfall*
     </p>
     <img src="../assets/gdd_1.1/canvasPropostaValor.png" alt="Canvas: Proposta de Valor" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
@@ -210,7 +210,7 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 
 <div style="text-align: center; margin-bottom: 1.5em;">
     <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-        <strong>Figura X:</strong> Ameaças – Matriz de Risco
+        <strong>Figura 4:</strong> Ameaças – Matriz de Risco
     </p>
     <img src="../assets/negocios/matrizderisco1.png" alt="Matriz de Risco" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -272,7 +272,7 @@ O setor de oportunidades na matriz de riscos representa os riscos positivos, ou 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
     <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-        <strong>Figura X:</strong> Oportunidades – Matriz de Risco
+        <strong>Figura 5:</strong> Oportunidades – Matriz de Risco
     </p>
     <img src="../assets/negocios/matrizrisco2.png" alt="Oportunidades - Matriz de Risco" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -328,7 +328,7 @@ Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revis
 
 <div style="text-align: center; margin-bottom: 1.5em;">
     <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-        <strong>Figura X:</strong> Metas SMART
+        <strong>Figura 6:</strong> Metas SMART
     </p>
     <img src="../assets/negocios/smart.png" alt="Metas SMART" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -464,7 +464,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Mark
+    <strong>Figura 7:</strong> Mark
   </p>
   <img src="../assets/personagens/personagemMasculino2.png" alt="Personagem Mark" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -477,7 +477,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Margaret
+    <strong>Figura 8:</strong> Margaret
   </p>
   <img src="../assets/personagens/personagemFeminino2.png" alt="Personagem Margaret" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -490,7 +490,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Steve
+    <strong>Figura 9:</strong> Steve
   </p>
   <img src="../assets/personagens/personagemMasculino1.png" alt="Personagem Steve" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -503,7 +503,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Mary
+    <strong>Figura 10:</strong> Mary
   </p>
   <img src="../assets/personagens/personagemFeminino1.png" alt="Personagem Mary" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -540,7 +540,7 @@ O jogo será ambientado no escritório de um grande banco. O mapa consiste em um
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Mapa do jogo
+    <strong>Figura 11:</strong> Mapa do jogo
   </p>
   <img src="../assets/gdd_3.3/hub.png" alt="Mapa do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -557,7 +557,7 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo de objeto interativo, marcado pela seta
+    <strong>Figura 12:</strong> Exemplo de objeto interativo, marcado pela seta
   </p>
   <img src="../assets/gdd_3.3/mapa2.png" alt="Objeto Interativo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -619,7 +619,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
+    <strong>Figura 13:</strong> Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
   </p>
   <img src="../assets/conceptArt/telaInicial.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -632,7 +632,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Visão do mapa inicial do jogo, destacando o ambiente do escritório.
+    <strong>Figura 14:</strong> Visão do mapa inicial do jogo, destacando o ambiente do escritório.
   </p>
   <img src="../assets/conceptArt/mapa1.png" alt="Mapa Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -645,7 +645,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
+    <strong>Figura 15:</strong> Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
   </p>
   <img src="../assets/conceptArt/materialDeApoio1.png" alt="Material de Apoio - Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -657,7 +657,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Minijogo sobre diferenciação de fundos de investimento.
+    <strong>Figura 16:</strong> Minijogo sobre diferenciação de fundos de investimento.
   </p>
   <img src="../assets/gdd_3.3/minigame1.png" alt="Minijogo de Fundos de Investimento" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -670,7 +670,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Minijogo sobre matemática financeira.
+    <strong>Figura 17:</strong> Minijogo sobre matemática financeira.
   </p>
   <img src="../assets/gdd_3.3/minigame2.png" alt="Minijogo de Matemática Financeira" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -683,7 +683,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Minijogo sobre o processo de resgate em fundos de investimento.
+    <strong>Figura 18:</strong> Minijogo sobre o processo de resgate em fundos de investimento.
   </p>
   <img src="../assets/conceptArt/miniGame3.png" alt="Minijogo sobre processo de resgate" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -695,7 +695,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.
+    <strong>Figura 19:</strong> Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.
   </p>
   <img src="../assets/conceptArt/pontuacao.png" alt="Tela de pontuação final do minijogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -764,7 +764,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 1
+    <strong>Figura 20:</strong> Quadro 1
   </p>
   <img src="../assets/gdd_3.5/quadro_1.png" alt="Quadro 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -778,7 +778,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 2
+    <strong>Figura 21:</strong> Quadro 2
   </p>
   <img src="../assets/gdd_3.5/quadro_2.png" alt="Quadro 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -791,7 +791,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 3
+    <strong>Figura 22:</strong> Quadro 3
   </p>
   <img src="../assets/gdd_3.5/quadro_3.png" alt="Quadro 3" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -803,7 +803,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 4
+    <strong>Figura 23:</strong> Quadro 4
   </p>
   <img src="../assets/gdd_3.5/quadro_4.png" alt="Quadro 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -815,7 +815,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 5
+    <strong>Figura 24:</strong> Quadro 5
   </p>
   <img src="../assets/gdd_3.5/quadro_5.png" alt="Quadro 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -828,7 +828,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 6
+    <strong>Figura 25:</strong> Quadro 6
   </p>
   <img src="../assets/gdd_3.5/quadro_6.png" alt="Quadro 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -840,7 +840,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 #
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 7
+    <strong>Figura 26:</strong> Quadro 7
   </p>
   <img src="../assets/gdd_3.5/quadro_7.png" alt="Quadro 7" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1154,9 +1154,9 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Cena da interface do computador
+    <strong>Figura 27:</strong> Cena da interface do computador
   </p>
-  <img src="../assets/conceptArt/materialDeApoio1.png" alt="Cena da interface do computador" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <img src="../assets/gdd_4.2/imailInicial2.png" alt="Cena da interface do computador" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1167,7 +1167,7 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Parte do código referente à cena
+    <strong>Figura 28:</strong> Parte do código referente à cena
   </p>
   <img src="../assets/gdd_4.2/printCodigoDia1.png" alt="Parte do código referente à cena" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1186,7 +1186,7 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo do <em>Tileset</em> utilizado
+    <strong>Figura 29:</strong> Exemplo do <em>Tileset</em> utilizado
   </p>
   <img src="../assets/gdd_4.2/tilesetInicial.png" alt="Tileset utilizado" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1198,7 +1198,7 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Parte do código referente à cena
+    <strong>Figura 30:</strong> Parte do código referente à cena
   </p>
   <img src="../assets/gdd_4.2/printCodigoHub.png" alt="Código da cena" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1225,7 +1225,7 @@ O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 1</i>
+    <strong>Figura 31:</strong> <i>Gameplay</i> do <i>minigame 1</i>
   </p>
   <img src="../assets/gdd_4.2/gameplay1.png" alt="Gameplay do minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1242,7 +1242,7 @@ O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao us
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 2</i>
+    <strong>Figura 32:</strong> <i>Gameplay</i> do <i>minigame 2</i>
   </p>
   <img src="../assets/gdd_4.2/gameplay2.png" alt="Gameplay do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1259,7 +1259,7 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 3</i>
+    <strong>Figura 33:</strong> <i>Gameplay</i> do <i>minigame 3</i>
   </p>
   <img src="../assets/gdd_4.2/gameplay3.png" alt="Gameplay do minigame 3" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1275,7 +1275,7 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo do material de apoio do <i>minigame</i> 1
+    <strong>Figura 34:</strong> Exemplo do material de apoio do <i>minigame</i> 1
   </p>
   <img src="../assets/gdd_4.2/apoioMinigame1.png" alt="Material de apoio do minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1292,7 +1292,7 @@ A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo do código do <i>minigame</i> 2
+    <strong>Figura 35:</strong> Exemplo do código do <i>minigame</i> 2
   </p>
   <img src="../assets/gdd_4.2/codigo2.png" alt="Código do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1309,7 +1309,7 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Layout da <i>hub</i>
+    <strong>Figura 36:</strong> Layout da <i>hub</i>
   </p>
   <img src="../assets/gdd_4.2/hubJogo.png" alt="Layout da hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1321,7 +1321,7 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de objeto interativo na <i>hub</i>
+    <strong>Figura 37:</strong> Exemplo de objeto interativo na <i>hub</i>
   </p>
   <img src="../assets/gdd_4.2/objeto.png" alt="Exemplo de objeto interativo na hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1332,13 +1332,13 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 #
 
-Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spriesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
+Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spritesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
 
 #
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> <i>Spritesheet</i> do personagem
+    <strong>Figura 38:</strong> <i>Spritesheet</i> do personagem
   </p>
   <img src="../assets/gdd_4.2/markSpritesheet.png" alt="Spritesheet do personagem" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1355,7 +1355,7 @@ Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fund
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Menu Inicial
+    <strong>Figura 39:</strong> Menu Inicial
   </p>
   <img src="../assets/gdd_4.2/menuInicial.png" alt="Menu Inicial do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1382,7 +1382,7 @@ Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Novo <i>layout</i> da <i>hub</i>
+    <strong>Figura 40:</strong> Novo <i>layout</i> da <i>hub</i>
   </p>
   <img src="../assets/gdd_4.3/hub.png" alt="Novo layout da hub do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1400,7 +1400,7 @@ O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Novo <i>minigame</i> 2
+    <strong>Figura 41:</strong> Novo <i>minigame</i> 2
   </p>
   <img src="../assets/gdd_4.3/minigame2.png" alt="Novo minigame 2 do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1416,7 +1416,7 @@ Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de parte do material de apoio do <i>minigame</i> 2
+    <strong>Figura 42:</strong> Exemplo de parte do material de apoio do <i>minigame</i> 2
   </p>
   <img src="../assets/gdd_4.3/minigame2Apoio.png" alt="Material de apoio do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1432,7 +1432,7 @@ Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltam
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de questão do <i>miniboss</i>
+    <strong>Figura 43:</strong> Exemplo de questão do <i>miniboss</i>
   </p>
   <img src="../assets/gdd_4.3/miniboss.png" alt="Exemplo de questão do miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1449,7 +1449,7 @@ Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de <i>feedback</i>
+    <strong>Figura 44:</strong> Exemplo de <i>feedback</i>
   </p>
   <img src="../assets/gdd_4.3/minibossFeedback.png" alt="Exemplo de feedback" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1466,9 +1466,9 @@ Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em ad
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 5
+    <strong>Figura 45:</strong> Minigame 4
   </p>
-  <img src="../assets/gdd_4.4/jogo5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <img src="../assets/gdd_4.3/minigame4.png" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1486,7 +1486,7 @@ O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precis
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame</i> 5
+    <strong>Figura 46:</strong> <i>Gameplay</i> do <i>minigame</i> 5
   </p>
   <img src="../assets/gdd_4.3/minigame5.png" alt="Gameplay do minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1503,7 +1503,7 @@ O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura e
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame</i> 6
+    <strong>Figura 47:</strong> <i>Gameplay</i> do <i>minigame</i> 6
   </p>
   <img src="../assets/gdd_4.3/minigame6.png" alt="Gameplay do minigame 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1521,7 +1521,7 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela de seleção de personagens
+    <strong>Figura 48:</strong> Tela de seleção de personagens
   </p>
   <img src="../assets/gdd_4.3/selecaoPersonagem.png" alt="Tela de seleção de personagens" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1533,7 +1533,7 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo do código da seleção de personagens
+    <strong>Figura 49:</strong> Exemplo do código da seleção de personagens
   </p>
   <img src="../assets/gdd_4.3/codigoPersonagem.png" alt="Exemplo do código da seleção de personagens" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1551,7 +1551,7 @@ Por fim, também adicionamos telas de _feedback_ após a realização do _minibo
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo da tela de <i>feedback</i>
+    <strong>Figura 50:</strong> Exemplo da tela de <i>feedback</i>
   </p>
   <img src="../assets/gdd_4.3/telaPontuacao.png" alt="Exemplo da tela de feedback" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1578,7 +1578,7 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela Inicial do Jogo
+    <strong>Figura 51:</strong> Tela Inicial do Jogo
   </p>
   <img src="../assets/gdd_4.4/menuinicial55_360.gif" alt="Tela Inicial do Jogo" style="width: 600px; max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1591,13 +1591,13 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 
 </div>
 
-Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
+Além disso, houve o aprimoramento do design da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
 #
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela nova de comunicação
+    <strong>Figura 52:</strong> Tela nova de comunicação
   </p>
   <img src="../assets/gdd_4.4/slick1.png" alt="Tela nova de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1610,9 +1610,9 @@ Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela antiga de comunicação
+    <strong>Figura 53:</strong> Tela antiga de comunicação
   </p>
-  <img src="../assets/gdd_4.4/telhavelha.png" alt="Tela antiga de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/telavelha.png" alt="Tela antiga de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1629,9 +1629,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 1
+    <strong>Figura 54:</strong> Minigame 1
   </p>
-  <img src="../assets/gdd_4.4/jogo1.png" alt="Minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame1.png" alt="Minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1642,9 +1642,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 2
+    <strong>Figura 55:</strong> Minigame 2
   </p>
-  <img src="../assets/gdd_4.4/jogo2.png" alt="Minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame2.png" alt="Minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1654,9 +1654,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela Inicial do Jogo
+    <strong>Figura 56:</strong> Tela Inicial do Jogo
   </p>
-  <img src="../assets/gdd_4.4/jogo3.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame3.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1665,11 +1665,11 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 #
 
-Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
+Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento. No entanto, seu design foi atualizado, de forma a encaixar com o resto do jogo e proporcionar maior imersão do usuário no universo do jogo.
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Miniboss da Fase 1
+    <strong>Figura 57:</strong> Miniboss da Fase 1
   </p>
   <img src="../assets/gdd_4.4/miniboss.png" alt="Miniboss da Fase 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1686,9 +1686,9 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Feedback das fases
+    <strong>Figura 58:</strong> Feedback das fases
   </p>
-  <img src="../assets/gdd_4.4/feedback1.png" alt="Feedback das fases" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/feedbackDia.png" alt="Feedback das fases" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1700,9 +1700,9 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Feedback do Miniboss
+    <strong>Figura 59:</strong> Feedback do Miniboss
   </p>
-  <img src="../assets/gdd_4.4/feedback2.png" alt="Feedback do Miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/feedbackMiniBoss.png" alt="Feedback do Miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1718,9 +1718,9 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 4
+    <strong>Figura 60:</strong> Minigame 4
   </p>
-  <img src="../assets/gdd_4.4/jogo4.jpg" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame4.png" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1732,9 +1732,9 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 5
+    <strong>Figura 61:</strong> Minigame 5
   </p>
-  <img src="../assets/gdd_4.4/jogo5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1746,7 +1746,7 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 6
+    <strong>Figura 62:</strong> Minigame 6
   </p>
   <img src="../assets/gdd_4.4/jogo6.png" alt="Minigame 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1766,9 +1766,9 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Sala de guerra - Hub
+    <strong>Figura 63:</strong> Sala de guerra - Hub
   </p>
-  <img src="../assets/gdd_4.4/saladg1.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/salaDeGuerra.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1779,9 +1779,9 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Sala de guerra - Hub
+    <strong>Figura 64:</strong> Sala de guerra - Hub
   </p>
-  <img src="../assets/gdd_4.4/saladg2.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/salaDeGuerra1.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1796,7 +1796,7 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Adiciona música na Sala de Guerra
+    <strong>Figura 65:</strong> Adiciona música na Sala de Guerra
   </p>
   <img src="../assets/gdd_4.4/code3.png" alt="Adiciona música na Sala de Guerra" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1807,7 +1807,7 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Carregamento de música
+    <strong>Figura 66:</strong> Carregamento de música
   </p>
   <img src="../assets/gdd_4.4/code4.png" alt="Carregamento de música" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1819,7 +1819,7 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Adição de efeitos sonoros
+    <strong>Figura 67:</strong> Adição de efeitos sonoros
   </p>
   <img src="../assets/gdd_4.4/code1.png" alt="Adição de efeitos sonoros" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
