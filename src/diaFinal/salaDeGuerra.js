@@ -1,4 +1,4 @@
-class salaDeGuerra extends Phaser.Scene {
+class salaDeGuerra extends baseCena {
   constructor() {
     super("salaDeGuerra");
     // Declaração de algumas das variáveis que serão usadas no código
@@ -149,6 +149,8 @@ class salaDeGuerra extends Phaser.Scene {
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
+
     this.add.rectangle(400, 300, 800, 600, 0x243572).setDepth(-10);
 
     this.add.image(0, 0, "fundoPerguntas").setOrigin(0).setDepth(-5);
@@ -161,6 +163,7 @@ class salaDeGuerra extends Phaser.Scene {
     // Carrega os sons
     this.clickSound = this.sound.add("click");
     this.somFundo = this.sound.add("musicaHubFinal");
+    this.somFundo.setLoop(true); // Define a música para tocar em loop
     this.somFundo.play(); // Reproduz o som de fundo
 
     // Cria os botões de resposta (A, B, C e D) com suas respectivas letras

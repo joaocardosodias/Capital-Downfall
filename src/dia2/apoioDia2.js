@@ -1,7 +1,7 @@
 let minigameAtual2;
 let musicaMinigame4;
 
-class apoioDia2 extends Phaser.Scene {
+class apoioDia2 extends baseCena {
   constructor() {
     super("apoioDia2");
     // Armazena a página atual do tutorial
@@ -43,7 +43,7 @@ Valor Final = Valor Investido × (1 + r)¥ => para juros compostos.
     this.tutoriaisMinigame5 = [
       `Nessa tarefa você precisará aprender sobre diferentes tipos de fundos.
 
-Seu objetivo é simples: ---> relacionar o fundo com a sua respectiva definição. <---
+Seu objetivo é simples: relacionar o fundo com a sua respectiva definição.
 
 Para isso, basta clicar em um card que contenha um tipo de fundo e arrastar o mouse até a sua definição para ligar esses conceitos.
 
@@ -88,7 +88,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     this.tutoriaisMinigame6 = [
       `Nessa tarefa, você precisará aprender um pouco sobre os valores de nossa empresa.
 
-Seu objetivo é simples: ---> descobrir qual candidato deve ou não ser aprovado na nossa empresa. <---
+Seu objetivo é simples: descobrir qual candidato deve ou não ser aprovado na nossa empresa.
 
 Para isso, basta analisar os candidatos e marcar a alternativa de aprovar ou não aprovar eles
 
@@ -114,6 +114,7 @@ Boa sorte!
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     //  Configura o som do minigame 4
     musicaMinigame4 = this.sound.add("somFundo", { volume: 1 });
     musicaMinigame4.setLoop(true);
@@ -151,7 +152,7 @@ Boa sorte!
       .setVisible(false)
       .setInteractive();
     this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
+      .image(650, 40, "botaoDesistir")
       .setInteractive();
 
     // Variável para controlar cliques repetidos
@@ -159,7 +160,7 @@ Boa sorte!
 
     // Evento do botão "próximo"
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -172,7 +173,7 @@ Boa sorte!
 
     // Evento do botão "anterior"
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -185,13 +186,14 @@ Boa sorte!
 
     // Evento do botão "desistir"
     this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.sound.play("clique"); // Toca o som de clique
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual2][0]
-      );
-      game.scene.wake("hub2");
-      game.scene.stop("apoioDia2");
+      if (!transicionando) {
+        this.sound.play("clique"); // Toca o som de clique
+        this.paginaAtiva = 0;
+        this.textoTutorial.setText(
+          this["tutoriaisMinigame" + this.minigameAtual2][0]
+        );
+        this.transicao('hub2', false, false, true, 200,);
+      }
     });
 
     // Adição do efeito de pointer over nos botões
@@ -219,10 +221,10 @@ Boa sorte!
     });
 
     this.botaoDesistir.on("pointerover", () => {
-      this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+      this.selecao.setPosition(650, 40).setVisible(true);
     });
     this.botaoDesistir.on("pointerout", () => {
-      this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+      this.selecao.setPosition(0, 0).setVisible(false);
     });
   }
 

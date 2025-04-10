@@ -1,4 +1,4 @@
-class miniGame5 extends Phaser.Scene {
+class miniGame5 extends baseCena {
   constructor() {
     super("miniGame5");
     this.pontuacaoM5 = 0;
@@ -413,7 +413,7 @@ class miniGame5 extends Phaser.Scene {
       .text(400, 300, text, {
         fontFamily: "pixelArt",
         fill: color,
-        stroke: "#000000",
+        stroke: "#FFFFFF",
         strokeThickness: 4,
       })
       .setOrigin(0.5, 0.5);
@@ -455,11 +455,11 @@ class miniGame5 extends Phaser.Scene {
   }
 
   // Método update vazio (não usado neste jogo)
-  update() {}
+  update() { }
 }
 
 // Cena que mostra a pontuação final
-class fimMinigame5 extends Phaser.Scene {
+class fimMinigame5 extends baseCena {
   constructor() {
     super("fimMinigame5");
     this.clickSound = null; // Som de clique
@@ -535,12 +535,13 @@ class fimMinigame5 extends Phaser.Scene {
     this.voltarAoMapaM5.anims.play("voltarAoMapaM5", true);
 
     this.voltarAoMapaM5.on("pointerdown", () => {
-      this.musicaFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      minigame5Jogado = true;
-      this.scene.stop("fimMinigame5");
-      this.scene.wake("hub2");
-      musicaHub2.resume();
+      if (!transicionando) {
+        this.musicaFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        minigame5Jogado = true;
+        this.transicao('hub2', false, false, true, 200,);
+        musicaHub2.resume();
+      }
     });
   }
 }

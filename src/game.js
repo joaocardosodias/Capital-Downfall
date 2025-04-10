@@ -19,6 +19,7 @@ const config = {
   //Cenas do jogo
   scene: [
     preload,
+    baseCena,
     menuInicial,
     contratoInicial,
     selecaoPersonagens,
@@ -47,6 +48,7 @@ const config = {
     hubFinal,
     finalDia2,
     finalSalaDeGuerra,
+    apoioSalaDeGuerra,
     salaDeGuerra,
     movimento,
   ],

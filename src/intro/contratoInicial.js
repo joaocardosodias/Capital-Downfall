@@ -1,4 +1,4 @@
-class contratoInicial extends Phaser.Scene {
+class contratoInicial extends baseCena {
   constructor() {
     super("contratoInicial");
     this.somAdiante;
@@ -8,7 +8,7 @@ class contratoInicial extends Phaser.Scene {
     this.texto = [
       `Seja muito bem-vindo(a)! Na crise atual do mundo financeiro, precisamos de sua ajuda para garantir o crescimento da empresa. 
             
-Ao redor do nosso escritório estão 3 tarefas para você realizar. Elas estão demarcadas por pontos de exclamação.
+Ao redor do nosso escritório estão 3 tarefas para você realizar. Elas estão demarcadas por setas.
 
 Movimente-se com as setinhas do teclado ou WASD e interaja com essas tarefas utilizando a barra de espaço ou clicando E! 
 
@@ -16,7 +16,14 @@ Confiamos em você...`,
     ];
   }
 
+  init(data) {
+    if (data.transicionando) {
+      transicionando = data.transicionando;
+    }
+  }
+
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o som de troca de cenas
     this.somAdiante = this.sound.add("somAdiante");
 
@@ -51,7 +58,7 @@ Confiamos em você...`,
 
     // Evento do botão "próximo"
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.atrasoClick = true;
         this.fadeOut(() => {
           this.paginaAtiva++;
@@ -63,7 +70,7 @@ Confiamos em você...`,
 
     // Evento do botão "anterior"
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.atrasoClick = true;
         this.fadeOut(() => {
           this.paginaAtiva--;

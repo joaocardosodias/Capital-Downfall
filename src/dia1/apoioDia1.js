@@ -1,6 +1,6 @@
 let minigameAtual;
 
-class apoioDia1 extends Phaser.Scene {
+class apoioDia1 extends baseCena {
   constructor() {
     super("apoioDia1");
     // Armazena a página atual do tutorial
@@ -9,7 +9,7 @@ class apoioDia1 extends Phaser.Scene {
     this.tutoriaisMinigame1 = [
       `Nessa tarefa, você precisará aprender um pouco de fundos abertos e fechados.
 
-Seu objetivo é simples:  ---> definir se a descrição apresentada é de um fundo aberto ou de um fundo fechado. <---
+Seu objetivo é simples: definir se a descrição apresentada é de um fundo aberto ou de um fundo fechado.
 
 Para isso, você deve arrastar o card que aparecerá na sua tela para o lado correto. Na esquerda estará a gaveta dos cards abertos e na direita a dos fechados.
 
@@ -39,7 +39,7 @@ Fundo Fechado:     Compromisso a longo prazo (não pode acessar o dinheiro até 
     this.tutoriaisMinigame2 = [
       `Nessa tarefa, você precisará aprender um pouco de matemática financeira.
 
-Seu objetivo é simples:  ---> descobrir o saldo final das contas bancárias apresentadas. <---
+Seu objetivo é simples: descobrir o saldo final das contas bancárias apresentadas.
 
 Para isso, basta usar a legenda no lado esquerdo da tela para analisar as atividades da conta, fazer os cálculos necessários e escolher a alternativa que corresponde ao saldo final da conta clicando nela com o mouse. 
 
@@ -98,15 +98,15 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
     this.tutoriaisMinigame3 = [
       `Nessa tarefa você precisará aprender sobre o processo de resgate de fundos.
 
-Seu objetivo é:  ---> organizar a linha do tempo de acontecimentos sobre o processo. <---
+Seu objetivo é: organizar a linha do tempo de acontecimentos sobre o processo. 
 Para isso, clique e arraste um card para sua posição na linha do tempo. Atenção! Após ser solto em qualquer posição, o card não poderá ser movido novamente.
 
 Segue em anexo os materiais necessários para a tarefa.
 
 Boa sorte!`,
-      `O processo de resgate se inicia com uma solicitação do cliente.
+      `O processo de resgate se inicia com uma solicitação do cliente, após um período de rendimento da aplicação.
 
-Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e começe a render.
+Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e o valor de resgate seja definido.
 
 Após isso, ocorre o prazo de liquidação, que se trata do tempo que leva para a conclusão da transação, disponibilizando o dinheiro para o cliente.
 
@@ -130,9 +130,13 @@ Boa sorte!`,
     if (data.minigameAtual) {
       this.minigameAtual = data.minigameAtual;
     }
+    if (data.transicionando) {
+      transicionando = data.transicionando;
+    }
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o fundo e os botões
     if (this.minigameAtual < 10) {
       this.imailFundo = this.add.image(400, 300, "imailFundo");
@@ -153,6 +157,12 @@ Boa sorte!`,
       )
       .setWordWrapWidth(600);
 
+    // Garantia que sempre irá iniciar na página 1
+    this.paginaAtiva = 0;
+    this.textoTutorial.setText(
+      this["tutoriaisMinigame" + this.minigameAtual][0]
+    );
+
     // Configura os botões
     this.botaoProximo = this.add
       .image(
@@ -168,16 +178,18 @@ Boa sorte!`,
       .image(300, 555, "botaoAnterior")
       .setVisible(false)
       .setInteractive();
-    this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
-      .setInteractive();
+    if (this.minigameAtual % 10 !== 0) {
+      this.botaoDesistir = this.add
+        .image(650, 40, "botaoDesistir")
+        .setInteractive();
+    }
 
     // Variável para controlar cliques repetidos
     this.atrasoClick = false;
 
     // Evento do botão "próximo"
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -190,7 +202,7 @@ Boa sorte!`,
 
     // Evento do botão "anterior"
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.atrasoClick = true;
         this.sound.play("clique"); // Toca o som de clique
         this.fadeOut(() => {
@@ -203,13 +215,10 @@ Boa sorte!`,
 
     // Evento do botão "desistir"
     this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
-      this.paginaAtiva = 0;
-      this.textoTutorial.setText(
-        this["tutoriaisMinigame" + this.minigameAtual][0]
-      );
-      game.scene.wake("hub");
-      game.scene.stop("apoioDia1");
+      if (!transicionando) {
+        this.sound.play("sairApoio"); //Toca o som de sair do material de apoioe
+        this.transicao("hub", false, false, true, 200);
+      }
     });
 
     // Adição do efeito de pointer over nos botões
@@ -237,10 +246,10 @@ Boa sorte!`,
     });
 
     this.botaoDesistir.on("pointerover", () => {
-      this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+      this.selecao.setPosition(650, 40).setVisible(true);
     });
     this.botaoDesistir.on("pointerout", () => {
-      this.selecaoDesistir.setPosition(0, 0).setVisible(false);
+      this.selecao.setPosition(0, 0).setVisible(false);
     });
   }
 

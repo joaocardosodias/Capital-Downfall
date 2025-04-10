@@ -1,4 +1,4 @@
-class introDia2 extends Phaser.Scene {
+class introDia2 extends baseCena {
   constructor() {
     super("introDia2");
     // Armazena a página atual do tutorial
@@ -16,6 +16,7 @@ Boa sorte!`,
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     // Configura o fundo
     this.imailFundo = this.add.image(400, 300, "imailFundo");
 
@@ -123,8 +124,7 @@ Boa sorte!`,
       this.paginaAtiva = 0;
       this.somFundo.stop();
       this.textoTutorial.setText(this.texto[0]);
-      game.scene.start("hub2");
-      game.scene.stop("introDia2");
+      this.transicao('hub2', false, false, false, 200)
     }
   }
 

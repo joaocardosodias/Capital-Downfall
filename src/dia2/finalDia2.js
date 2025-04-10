@@ -1,4 +1,4 @@
-class finalDia2 extends Phaser.Scene {
+class finalDia2 extends baseCena {
   constructor() {
     super("finalDia2");
     this.falido = false;
@@ -11,34 +11,38 @@ class finalDia2 extends Phaser.Scene {
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
     //Para a música da hub, e cria os sons utilizados
     musicaHub2.stop();
     this.somAcerto = this.sound.add("somAcerto", { volume: 2 });
     this.somErro = this.sound.add("somErro", { volume: 2 });
 
     // O código a seguir verifica a pontuação do jogador durante o dia 2, e define um final de acordo com sua performance
-    //Valor mínimo: 1050
 
-    if (pontuacao < 500) {
+    if (pontuacao < 700) {
       this.somErro.play();
       this.add.image(400, 300, "jornalFalido");
       this.falido = true;
-      this.botaoGameOver = this.add.image(100, 75, "gameOver").setInteractive();
+
+      this.botaoGameOver = this.add.sprite(610, 535, "gameOver").setInteractive().setScale(2);
+      this.botaoGameOver.anims.play("gameOver", true)
       this.botaoGameOver.on("pointerdown", () => {
         this.scene.stop("finalDia2");
         window.location.reload();
       });
     }
 
-    if (pontuacao >= 500) {
+    if (pontuacao >= 700) {
       this.somAcerto.play();
       this.add.image(400, 300, "jornalCrescimento");
       this.Crescimento = true;
-      this.botaoContinuar = this.add
-        .image(100, 75, "continuar")
-        .setInteractive();
+
+      this.botaoContinuar = this.add.sprite(150, 535, "continuar").setInteractive().setScale(2);
+      this.botaoContinuar.anims.play("continuar", true)
       this.botaoContinuar.on("pointerdown", () => {
         this.scene.stop("finalDia2");
+        //Reinicia a pontuação antes de começar a Sala de Guerra
+        pontuacao = 0;
         this.scene.start("movimento");
       });
     }

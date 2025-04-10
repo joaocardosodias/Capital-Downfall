@@ -64,7 +64,7 @@ Utilizando os conceitos discutidos, é possível aplicar a estrutura das 5 Forç
 #
 
 <div style="text-align: center; margin-bottom: 1em;">
-    <p style="margin-bottom: 0.3em; font-style: italic;"><strong>Figura X</strong> – Representação das 5 Forças de Porter</p>
+    <p style="margin-bottom: 0.3em; font-style: italic;"><strong>Figura 1</strong> – Representação das 5 Forças de Porter</p>
     <img src="../assets/negocios/5forcasdeporter.png" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
         Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
@@ -95,7 +95,7 @@ A análise SWOT é uma ferramenta utilizada para identificar as forças, oportun
 #
 <div style="text-align: center; margin-bottom: 1em;">
     <p style="margin-bottom: 0.3em; font-style: italic;">
-        <strong>Figura X</strong> – Estrutura de Análise SWOT aplicada ao projeto
+        <strong>Figura 2</strong> – Estrutura de Análise SWOT aplicada ao projeto
     </p>
     <img src="../assets/negocios/analiseswot.png" alt="Análise SWOT" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
@@ -175,7 +175,7 @@ Por esse caminho, consideramos que o _Canvas_ da Proposta de Valor é capaz de e
 
 <div style="text-align: center; margin-bottom: 1em;">
     <p style="margin-bottom: 0.3em; font-style: italic;">
-        <strong>Figura X</strong> – Canvas da Proposta de Valor do projeto *Capital Downfall*
+        <strong>Figura 3</strong> – Canvas da Proposta de Valor do projeto *Capital Downfall*
     </p>
     <img src="../assets/gdd_1.1/canvasPropostaValor.png" alt="Canvas: Proposta de Valor" style="max-width: 100%; height: auto; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.9em; font-style: italic;">
@@ -210,7 +210,7 @@ Transpondo para a realidade do nosso projeto, a matriz de riscos foi utilizada p
 
 <div style="text-align: center; margin-bottom: 1.5em;">
     <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-        <strong>Figura X:</strong> Ameaças – Matriz de Risco
+        <strong>Figura 4:</strong> Ameaças – Matriz de Risco
     </p>
     <img src="../assets/negocios/matrizderisco1.png" alt="Matriz de Risco" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -272,7 +272,7 @@ O setor de oportunidades na matriz de riscos representa os riscos positivos, ou 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
     <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-        <strong>Figura X:</strong> Oportunidades – Matriz de Risco
+        <strong>Figura 5:</strong> Oportunidades – Matriz de Risco
     </p>
     <img src="../assets/negocios/matrizrisco2.png" alt="Oportunidades - Matriz de Risco" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -328,7 +328,7 @@ Esse conceito foi apresentado por George T. Doran em 1981, em um artigo na revis
 
 <div style="text-align: center; margin-bottom: 1.5em;">
     <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-        <strong>Figura X:</strong> Metas SMART
+        <strong>Figura 6:</strong> Metas SMART
     </p>
     <img src="../assets/negocios/smart.png" alt="Metas SMART" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
     <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -464,7 +464,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Mark
+    <strong>Figura 7:</strong> Mark
   </p>
   <img src="../assets/personagens/personagemMasculino2.png" alt="Personagem Mark" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;">
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -477,7 +477,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Margaret
+    <strong>Figura 8:</strong> Margaret
   </p>
   <img src="../assets/personagens/personagemFeminino2.png" alt="Personagem Margaret" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -490,7 +490,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Steve
+    <strong>Figura 9:</strong> Steve
   </p>
   <img src="../assets/personagens/personagemMasculino1.png" alt="Personagem Steve" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -503,7 +503,7 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Mary
+    <strong>Figura 10:</strong> Mary
   </p>
   <img src="../assets/personagens/personagemFeminino1.png" alt="Personagem Mary" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -516,7 +516,13 @@ Todos os personagens do jogo deveriam ser inclusivos para cumprir o objetivo de 
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
-_\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção._
+O jogo conta com um NPC. Se trata da chefe do escritório, Alice Brito. Ela pode ser encontrada tanto na Hub quanto no lado esquerdo dos materiais de apoio.
+
+<div align="center">
+  <p>Figura x: Alice</p>
+  <img src="../assets/personagens/chefe.png"<br>
+  <p>Autores: Grupo Level Zero, turma 16, Inteli, 2025.</p>
+</div>
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
@@ -534,13 +540,13 @@ Esses quatro personagens, com suas diferentes trajetórias e perfis, refletem a 
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais três salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo.
+O jogo será ambientado no escritório de um grande banco. O mapa consiste em uma sala principal maior no centro, mais três salas menores que simulam o ambiente empresarial bancário. No início do jogo, o jogador poderá se movimentar pelo escritório e encontrará alguns computadores com os quais poderá interagir. Nesses dispositivos, estarão localizados os minigames do jogo. Enquanto a grande maioria dos _assets_ foram produzidos pela própria equipe, alguns deles foram criados por LimeZu. Tais assets foram comprados no _marketplace_ Itch.io, sendo licenciados para a utilização no projeto. Os assets em específico são: a impressora, máquina de vendas, pilha de papéis e a lousa de canetas.
 
 #
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Mapa do jogo
+    <strong>Figura 11:</strong> Mapa do jogo
   </p>
   <img src="../assets/gdd_3.3/hub.png" alt="Mapa do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -557,7 +563,7 @@ No início do jogo, o jogador poderá se movimentar pelo escritório e encontrar
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo de objeto interativo, marcado pela exclamação
+    <strong>Figura 12:</strong> Exemplo de objeto interativo, marcado pela seta
   </p>
   <img src="../assets/gdd_3.3/mapa2.png" alt="Objeto Interativo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -619,7 +625,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
+    <strong>Figura 13:</strong> Tela inicial do jogo, apresentando a opção para o jogador iniciar uma nova partida.
   </p>
   <img src="../assets/conceptArt/telaInicial.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -632,7 +638,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Visão do mapa inicial do jogo, destacando o ambiente do escritório.
+    <strong>Figura 14:</strong> Visão do mapa inicial do jogo, destacando o ambiente do escritório.
   </p>
   <img src="../assets/conceptArt/mapa1.png" alt="Mapa Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -645,7 +651,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
+    <strong>Figura 15:</strong> Exemplo de material de apoio disponibilizado para o jogador antes de cada fase.
   </p>
   <img src="../assets/conceptArt/materialDeApoio1.png" alt="Material de Apoio - Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -657,7 +663,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Minijogo sobre diferenciação de fundos de investimento.
+    <strong>Figura 16:</strong> Minijogo sobre diferenciação de fundos de investimento.
   </p>
   <img src="../assets/gdd_3.3/minigame1.png" alt="Minijogo de Fundos de Investimento" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -670,7 +676,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Minijogo sobre matemática financeira.
+    <strong>Figura 17:</strong> Minijogo sobre matemática financeira.
   </p>
   <img src="../assets/gdd_3.3/minigame2.png" alt="Minijogo de Matemática Financeira" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -683,7 +689,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Minijogo sobre o processo de resgate em fundos de investimento.
+    <strong>Figura 18:</strong> Minijogo sobre o processo de resgate em fundos de investimento.
   </p>
   <img src="../assets/conceptArt/miniGame3.png" alt="Minijogo sobre processo de resgate" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -695,7 +701,7 @@ Durante as duas primeiras fases, não há limite de tempo para a conclusão dos 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.
+    <strong>Figura 19:</strong> Tela exibida ao término de um minijogo, mostrando a pontuação obtida pelo jogador naquela tarefa específica, bem como a pontuação geral acumulada.
   </p>
   <img src="../assets/conceptArt/pontuacao.png" alt="Tela de pontuação final do minijogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -764,7 +770,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 1
+    <strong>Figura 20:</strong> Quadro 1
   </p>
   <img src="../assets/gdd_3.5/quadro_1.png" alt="Quadro 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -778,7 +784,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 2
+    <strong>Figura 21:</strong> Quadro 2
   </p>
   <img src="../assets/gdd_3.5/quadro_2.png" alt="Quadro 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -791,7 +797,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 3
+    <strong>Figura 22:</strong> Quadro 3
   </p>
   <img src="../assets/gdd_3.5/quadro_3.png" alt="Quadro 3" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -803,7 +809,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 4
+    <strong>Figura 23:</strong> Quadro 4
   </p>
   <img src="../assets/gdd_3.5/quadro_4.png" alt="Quadro 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -815,7 +821,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 5
+    <strong>Figura 24:</strong> Quadro 5
   </p>
   <img src="../assets/gdd_3.5/quadro_5.png" alt="Quadro 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -828,7 +834,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 6
+    <strong>Figura 25:</strong> Quadro 6
   </p>
   <img src="../assets/gdd_3.5/quadro_6.png" alt="Quadro 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -840,7 +846,7 @@ A trajetória do usuário em nosso jogo pode ser representada por meio do diagra
 #
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Quadro 7
+    <strong>Figura 26:</strong> Quadro 7
   </p>
   <img src="../assets/gdd_3.5/quadro_7.png" alt="Quadro 7" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1154,9 +1160,9 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Cena da interface do computador
+    <strong>Figura 27:</strong> Cena da interface do computador
   </p>
-  <img src="../assets/conceptArt/materialDeApoio1.png" alt="Cena da interface do computador" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <img src="../assets/gdd_4.2/imailInicial2.png" alt="Cena da interface do computador" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1167,7 +1173,7 @@ A criação dessa tela não tem apenas uma importância técnica, mas também te
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Parte do código referente à cena
+    <strong>Figura 28:</strong> Parte do código referente à cena
   </p>
   <img src="../assets/gdd_4.2/printCodigoDia1.png" alt="Parte do código referente à cena" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1186,7 +1192,7 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Exemplo do <em>Tileset</em> utilizado
+    <strong>Figura 29:</strong> Exemplo do <em>Tileset</em> utilizado
   </p>
   <img src="../assets/gdd_4.2/tilesetInicial.png" alt="Tileset utilizado" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1198,7 +1204,7 @@ Além disso, a movimentação simples de um personagem foi implementada, se util
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> Parte do código referente à cena
+    <strong>Figura 30:</strong> Parte do código referente à cena
   </p>
   <img src="../assets/gdd_4.2/printCodigoHub.png" alt="Código da cena" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1225,7 +1231,7 @@ O primeiro deles é sobre fundos de investimento. Nele, o jogador precisa classi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 1</i>
+    <strong>Figura 31:</strong> <i>Gameplay</i> do <i>minigame 1</i>
   </p>
   <img src="../assets/gdd_4.2/gameplay1.png" alt="Gameplay do minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1242,7 +1248,7 @@ O segundo _minigame_ aborda a validação de transações no mercado. Cabe ao us
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 2</i>
+    <strong>Figura 32:</strong> <i>Gameplay</i> do <i>minigame 2</i>
   </p>
   <img src="../assets/gdd_4.2/gameplay2.png" alt="Gameplay do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1259,7 +1265,7 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em; font-style: italic;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame 3</i>
+    <strong>Figura 33:</strong> <i>Gameplay</i> do <i>minigame 3</i>
   </p>
   <img src="../assets/gdd_4.2/gameplay3.png" alt="Gameplay do minigame 3" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1275,7 +1281,7 @@ O terceiro _minigame_ retrata os conteúdos por traz do processo de resgate da c
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo do material de apoio do <i>minigame</i> 1
+    <strong>Figura 34:</strong> Exemplo do material de apoio do <i>minigame</i> 1
   </p>
   <img src="../assets/gdd_4.2/apoioMinigame1.png" alt="Material de apoio do minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1292,7 +1298,7 @@ A escolha desses _minigames_ específicos para a entrega dessa _sprint_ se deve 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo do código do <i>minigame</i> 2
+    <strong>Figura 35:</strong> Exemplo do código do <i>minigame</i> 2
   </p>
   <img src="../assets/gdd_4.2/codigo2.png" alt="Código do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1309,7 +1315,7 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Layout da <i>hub</i>
+    <strong>Figura 36:</strong> Layout da <i>hub</i>
   </p>
   <img src="../assets/gdd_4.2/hubJogo.png" alt="Layout da hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1321,7 +1327,7 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de objeto interativo na <i>hub</i>
+    <strong>Figura 37:</strong> Exemplo de objeto interativo na <i>hub</i>
   </p>
   <img src="../assets/gdd_4.2/objeto.png" alt="Exemplo de objeto interativo na hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1332,13 +1338,13 @@ Também fizemos algumas atualizações para outras telas diversas do jogo, adici
 
 #
 
-Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spriesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
+Além disso, implementamos o primeiro personagem jogável do nosso jogo. As suas animações foram feitas com base em uma _spritesheet_, que representa diferentes _frames_ (quadros) da animação do personagem. Optamos por realizar sua inclusão na segunda _sprint_, como forma de tornar a cena da _hub_ mais completa, melhorando a experiência do usuário.
 
 #
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> <i>Spritesheet</i> do personagem
+    <strong>Figura 38:</strong> <i>Spritesheet</i> do personagem
   </p>
   <img src="../assets/gdd_4.2/markSpritesheet.png" alt="Spritesheet do personagem" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1355,7 +1361,7 @@ Por fim, também atualizamos a tela inicial do jogo, trazendo uma imagem de fund
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Menu Inicial
+    <strong>Figura 39:</strong> Menu Inicial
   </p>
   <img src="../assets/gdd_4.2/menuInicial.png" alt="Menu Inicial do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1382,7 +1388,7 @@ Como solução, optamos por criar uma versão reduzida da _hub_, porém mantendo
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Novo <i>layout</i> da <i>hub</i>
+    <strong>Figura 40:</strong> Novo <i>layout</i> da <i>hub</i>
   </p>
   <img src="../assets/gdd_4.3/hub.png" alt="Novo layout da hub do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1400,7 +1406,7 @@ O novo _minigame_ 2 aborda temas voltados para a matemática financeira, como o 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Novo <i>minigame</i> 2
+    <strong>Figura 41:</strong> Novo <i>minigame</i> 2
   </p>
   <img src="../assets/gdd_4.3/minigame2.png" alt="Novo minigame 2 do jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1416,7 +1422,7 @@ Por se tratar de um assunto mais complexo, o material de apoio desse _minigame_ 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de parte do material de apoio do <i>minigame</i> 2
+    <strong>Figura 42:</strong> Exemplo de parte do material de apoio do <i>minigame</i> 2
   </p>
   <img src="../assets/gdd_4.3/minigame2Apoio.png" alt="Material de apoio do minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1432,7 +1438,7 @@ Com todos os aspectos da _sprint_ 2 de acordo com os desejos do parceiro, voltam
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de questão do <i>miniboss</i>
+    <strong>Figura 43:</strong> Exemplo de questão do <i>miniboss</i>
   </p>
   <img src="../assets/gdd_4.3/miniboss.png" alt="Exemplo de questão do miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1449,7 +1455,7 @@ Após o usuário escolher uma alternativa, ele será apresentado o _feedback_ de
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo de <i>feedback</i>
+    <strong>Figura 44:</strong> Exemplo de <i>feedback</i>
   </p>
   <img src="../assets/gdd_4.3/minibossFeedback.png" alt="Exemplo de feedback" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1466,9 +1472,9 @@ Em seguida, optamos por desenvolver os _minigames_ do segundo dia. Focamos em ad
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 5
+    <strong>Figura 45:</strong> Minigame 4
   </p>
-  <img src="../assets/gdd_4.4/jogo5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
+  <img src="../assets/gdd_4.3/minigame4.png" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1486,7 +1492,7 @@ O quinto _minigame_ aborda termos comuns do mercado financeiro. O jogador precis
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame</i> 5
+    <strong>Figura 46:</strong> <i>Gameplay</i> do <i>minigame</i> 5
   </p>
   <img src="../assets/gdd_4.3/minigame5.png" alt="Gameplay do minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1503,7 +1509,7 @@ O último _minigame_ realizado nessa _sprint_ busca trazer um pouco da cultura e
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> <i>Gameplay</i> do <i>minigame</i> 6
+    <strong>Figura 47:</strong> <i>Gameplay</i> do <i>minigame</i> 6
   </p>
   <img src="../assets/gdd_4.3/minigame6.png" alt="Gameplay do minigame 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1521,7 +1527,7 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela de seleção de personagens
+    <strong>Figura 48:</strong> Tela de seleção de personagens
   </p>
   <img src="../assets/gdd_4.3/selecaoPersonagem.png" alt="Tela de seleção de personagens" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1533,7 +1539,7 @@ Além disso, também introduzimos a opção do jogador selecionar o personagem j
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo do código da seleção de personagens
+    <strong>Figura 49:</strong> Exemplo do código da seleção de personagens
   </p>
   <img src="../assets/gdd_4.3/codigoPersonagem.png" alt="Exemplo do código da seleção de personagens" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1551,7 +1557,7 @@ Por fim, também adicionamos telas de _feedback_ após a realização do _minibo
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Exemplo da tela de <i>feedback</i>
+    <strong>Figura 50:</strong> Exemplo da tela de <i>feedback</i>
   </p>
   <img src="../assets/gdd_4.3/telaPontuacao.png" alt="Exemplo da tela de feedback" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1578,7 +1584,7 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela Inicial do Jogo
+    <strong>Figura 51:</strong> Tela Inicial do Jogo
   </p>
   <img src="../assets/gdd_4.4/menuinicial55_360.gif" alt="Tela Inicial do Jogo" style="width: 600px; max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1591,13 +1597,13 @@ Com base nesse contexto, o MVP do jogo foi estruturado com duas fases principais
 
 </div>
 
-Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
+Além disso, houve o aprimoramento do design da tela de e-mail, garantindo maior imersão e clareza na narrativa. O objetivo da tela de e-mail é abordar e explicar o contexto do nosso jogo, com o objetivo de dinamizar a experiência e trazer as instruções necessárias. Porém, para fazer sentido com o contexto da nossa faculdade, optamos por trocar a plataforma de comunicação para a interface do Slack: aplicativo utilizado por nossa equipe para os contatos profissionais e de projeto. Após essa etapa, o jogador compreenderá que estará inserido em um contexto de crise global, que serve como base para todo o design do nosso MVP. Por isso, realizamos os ajustes necessários no código do jogo.
 
 #
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela nova de comunicação
+    <strong>Figura 52:</strong> Tela nova de comunicação
   </p>
   <img src="../assets/gdd_4.4/slick1.png" alt="Tela nova de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1610,9 +1616,9 @@ Além disso, houve o aprimoramento do desing da tela de e-mail, garantindo maior
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela antiga de comunicação
+    <strong>Figura 53:</strong> Tela antiga de comunicação
   </p>
-  <img src="../assets/gdd_4.4/telhavelha.png" alt="Tela antiga de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/telavelha.png" alt="Tela antiga de comunicação" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1629,9 +1635,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 1
+    <strong>Figura 54:</strong> Minigame 1
   </p>
-  <img src="../assets/gdd_4.4/jogo1.png" alt="Minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame1.png" alt="Minigame 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1642,9 +1648,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 2
+    <strong>Figura 55:</strong> Minigame 2
   </p>
-  <img src="../assets/gdd_4.4/jogo2.png" alt="Minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame2.png" alt="Minigame 2" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1654,9 +1660,9 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Tela Inicial do Jogo
+    <strong>Figura 56:</strong> Tela Inicial do Jogo
   </p>
-  <img src="../assets/gdd_4.4/jogo3.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame3.png" alt="Tela Inicial do Jogo" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1665,11 +1671,11 @@ Ao receber o e-mail, o jogador inicia a primeira fase do jogo, passando pelos mi
 
 #
 
-Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento.
+Ainda consolidando o MVP, optamos por manter o miniboss da fase um, considerando sua relevância dentro da narrativa e seu papel estratégico na progressão do jogo. Sua permanência contribui para a continuidade da experiência do jogador, além de reforçar elementos-chave já validados nas etapas anteriores do desenvolvimento. No entanto, seu design foi atualizado, de forma a encaixar com o resto do jogo e proporcionar maior imersão do usuário no universo do jogo.
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Miniboss da Fase 1
+    <strong>Figura 57:</strong> Miniboss da Fase 1
   </p>
   <img src="../assets/gdd_4.4/miniboss.png" alt="Miniboss da Fase 1" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1686,9 +1692,9 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Feedback das fases
+    <strong>Figura 58:</strong> Feedback das fases
   </p>
-  <img src="../assets/gdd_4.4/feedback1.png" alt="Feedback das fases" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/feedbackDia.png" alt="Feedback das fases" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1700,9 +1706,9 @@ Ademais, o MVP do jogo contempla métricas de desempenho baseadas no contexto da
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Feedback do Miniboss
+    <strong>Figura 59:</strong> Feedback do Miniboss
   </p>
-  <img src="../assets/gdd_4.4/feedback2.png" alt="Feedback do Miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/feedbackMiniBoss.png" alt="Feedback do Miniboss" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1718,9 +1724,9 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 4
+    <strong>Figura 60:</strong> Minigame 4
   </p>
-  <img src="../assets/gdd_4.4/jogo4.jpg" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame4.png" alt="Minigame 4" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1732,9 +1738,9 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 5
+    <strong>Figura 61:</strong> Minigame 5
   </p>
-  <img src="../assets/gdd_4.4/jogo5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/minigame5.png" alt="Minigame 5" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1746,7 +1752,7 @@ Entretanto, durante a última sprint, a equipe adicionou as melhorias essenciais
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Minigame 6
+    <strong>Figura 62:</strong> Minigame 6
   </p>
   <img src="../assets/gdd_4.4/jogo6.png" alt="Minigame 6" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1766,9 +1772,9 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Sala de guerra - Hub
+    <strong>Figura 63:</strong> Sala de guerra - Hub
   </p>
-  <img src="../assets/gdd_4.4/saladg1.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/salaDeGuerra.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1779,9 +1785,9 @@ Por isso, ao abordar um contexto de crise no jogo, propomos a sala de guerra com
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Sala de guerra - Hub
+    <strong>Figura 64:</strong> Sala de guerra - Hub
   </p>
-  <img src="../assets/gdd_4.4/saladg2.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
+  <img src="../assets/gdd_4.4/salaDeGuerra1.png" alt="Sala de guerra - Hub" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
     Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
   </p>
@@ -1796,7 +1802,7 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Adiciona música na Sala de Guerra
+    <strong>Figura 65:</strong> Adiciona música na Sala de Guerra
   </p>
   <img src="../assets/gdd_4.4/code3.png" alt="Adiciona música na Sala de Guerra" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1807,7 +1813,7 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Carregamento de música
+    <strong>Figura 66:</strong> Carregamento de música
   </p>
   <img src="../assets/gdd_4.4/code4.png" alt="Carregamento de música" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1819,7 +1825,7 @@ Para aprimorar o MVP, nessa Sprint adicionamos sons para complementar o jogo. A 
 
 <div style="text-align: center; margin-bottom: 1.5em;">
   <p style="margin-bottom: 0.3em; font-size: 0.95em;">
-    <strong>Figura X:</strong> Adição de efeitos sonoros
+    <strong>Figura 67:</strong> Adição de efeitos sonoros
   </p>
   <img src="../assets/gdd_4.4/code1.png" alt="Adição de efeitos sonoros" style="max-width: 100%; height: auto; border-radius: 6px; margin: 0.5em 0; border: 1px solid #ccc;" />
   <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
@@ -1831,7 +1837,121 @@ Conclui-se, portanto, que a progressão do jogador ao longo da experiência foi 
 
 ## 4.5. Revisão do MVP (sprint 5)
 
-_Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar._
+
+A última _Sprint_ ficou marcada pela revisão geral do jogo, além de diversos refinamentos em relação ao MVP entregue. Primeiramente, corrigimos dois problemas encontrados durante a validação da _Sprint_ 4. O primeiro deles se trata da demora no carregamento entre as cenas. Na versão anterior, o jogador encontrava uma tela preta durante a transição, podendo durar diversos segundos. Isso trazia confusão para a experiência, dando a entender que era um problema técnico. Como solução, implementamos uma tela de _loading_ no ínicio do jogo, carregando todos os _assets_ utilizados nas cenas. A cena funciona com apenas um método preload(), trazendo o carregamento que antes estava presente em cada uma das cenas. Além disso, essa solução também ajuda a economizar recursos computacionais, já que evita que os mesmos _assets_ sejam carregados múltiplas vezes.
+
+#
+
+<div align="center">
+<p> Figura 68: Tela de carregamento</p>
+<img src="../assets/gdd_4.5/telaCarregamento.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+#
+
+A segunda alteração se refere ao _Minigame_ 3. O parceiro de projeto demonstrou insatisfação com a ordem dos tópicos abordados. Por esse motivo, alteramos os _assets_ referentes ao _minigame_, além do material de apoio correspondente. Essa mudança não trouxe alterações significativas para o código em si.
+
+Ademais, também trouxemos diversos refinamentos para a experiência do usuário. A primeira delas foi a alteração da pontuação de corte do final de cada dia. Anteriormente, essa pontuação estava baixa demais, tornando o jogo muito fácil. Também adicionamos uma contextualização para a Sala de Guerra, explicando para o jogador sobre o que estava acontecendo no contexto da história.
+
+#
+
+<div align="center">
+<p> Figura 69: Contextualização da sala de guerra</p>
+<img src="../assets/gdd_4.5/apoioMiniboss.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+#
+
+Inserimos um _NPC_ na _hub_, servindo como um indicador visual do jogador para o acesso ao material de apoio geral. A _NPC_ segue o visual da chefe do escritório, conforme presente no lado esquerdo dos materiais de apoio. Quando o jogador se aproxima dela na _hub_, um balão de fala aperece, esclarecendo para o jogador o que ele ecnontrará ao intergir.
+
+#
+
+<div align="center">
+<p> Figura 70: Adição da NPC para a hub</p>
+<img src="../assets/gdd_4.5/telaNPC.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+<div align="center">
+<p> Figura 71: Código referente à NPC</p>
+<img src="../assets/gdd_4.5/codigoNPC.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+#
+
+Além disso, implementamos uma cena ao final da Sala de Guerra, indicando ao jogador que ele finalizou o jogo. Essa cena pode ter duas aparências: uma indicando que o jogador finalizou o jogo com sucesso, e a outra indicando que o mesmo falhou, e que precisa jogar novamente. Outra tela que também colocamos foi a dos créditos, trazendo mais informações quando a produção do produto. Os créditos podem ser acessados no Menu Inicial.
+
+#
+
+<div align="center">
+<p> Figura 71: Exemplo da tela de fim de jogo</p>
+<img src="../assets/gdd_4.5/cenaGameWin.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+<div align="center">
+<p> Figura 72: Tela de créditos</p>
+<img src="../assets/gdd_4.5/telaCréditos.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+#
+
+A alteração mais significativa realizada nessa _Sprint_ foi a adição de uma tela de transição entre as cenas da _hub_ e o material de apoio dos _minigames_. Agora, toda vez que o jogador apertar a barra de espaço ou a tecla E, uma animação de um tablet deslizando para a tela é tocada. O principal objetivo dessa adição é trazer uma maior sensação de imersão para o usuário, tornando o cenário mais realista.
+
+#
+
+<div align="center">
+<p> Figura 73: Exemplo da animação</p>
+<img src="../assets/gdd_4.5/telaAnimacao.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+<div align="center">
+<p> Figura 74: Parte do código referente à animação</p>
+<img src="../assets/gdd_4.5/codigoAnimacao.png">
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+#
+
+Essas eram a maioria das alterações planejadas para a _Sprint_ de refinamento. Outras pequenas mudanças também foram realizadas, como a alteração de efeitos sonoros e pequenas mudanças de _assets_. Porém, é importante destacar que também realizamos uma rodada de _playtests_. Os _playtests_ buscam receber um _feedback_ real de jogadores, buscando encontrar problemas não vistos por aqueles que trabalham no desenvolvimento. Durante o _playtest_, recebemos diversos _feedbacks_. Alguns deles eram simples, então conseguimos implementar rapidamente. Outros iam além do escopo de tempo que havíamos disponíveis, então foram sinalizados como planos futuros. 
+
+Daqueles que puderam ser implementados, estão: a alteração do botão "Voltar" nos materiais de apoio, trazendo um maior destaque para o mesmo, a adição do texto "Carregando" para a tela de _preload_, indicando para o usuário aquilo que está acontecendo, e a animação do botão "Iniciar Jogo" no Menu Inicial, diferenciado-o do restante da tela.
+
+#
+
+<div align="center">
+<p> Figura 75: Exemplo do novo botão: Voltar</p>
+<img src="../assets/gdd_4.5/botaoDesistir.png">
+ <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
+</div>
+
+#
+
+De uma forma geral, a _Sprint_ 5 permitiu que diversos pequenos problemas fossem corrigidos, deixando a experiência mais coesa e completa. Ela também permitiu que outros aspectos fossem adicionados, incrementando sobre o MVP entregue. Por fim, também pudemos registrar possíveis melhorias e planos futuros para o projeto, sinalizando aquilo que consideramos mais importante futuramente.
+
 
 # <a name="c5"></a>5. Testes
 
@@ -1841,7 +1961,7 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 
 | número | pré-condição                                                                                                                                                                                                                                                                  | descrição do teste                                                                                                        | pós-condição                                                                                                                                                                                                                                    |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1      | entrar no _link_ do jogo                                                                                                                                                                                                                                                      | apertar o botão: começar                                                                                                    | o jogo deve passar para uma cena contendo o menu inicial                                                                                                                                                 |
+| 1      | entrar no _link_ do jogo                                                                                                                                                                                                                                                      | apertar o botão: "Começar!"                                                                                                  | o jogo deve passar para uma cena contendo o menu inicial do jogo                                                                                                                                                   |
 | 2      | posicionar o personagem em frente a um objeto que ainda não foi interagido, demarcado por um ponto de exclamação                                                                                                                                                           | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                           | a explicação do _minigame_ deverá aparecer                                                                                                                                                                                                      |
 | 3      | clicar no botão "começar" do material de apoio do minigame 1, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar o _card_ que aparecer na parte central da tela para uma das gavetas, localizadas na esquerda e na direita        | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                                                                                                           |
 | 4      | clicar no botão "começar" do material de apoio do minigame 2, acessado conforme o caso de teste #2                                                                                                                                                                            | clicar em uma das quatro opções de resposta, localizadas na parte inferior do _card_ na tela                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo                                                                               |
@@ -1850,17 +1970,17 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 | 7      | clicar no botão "começar" do material de apoio do minigame 3, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar um _card_ presente na parte superior da tela para cima de outro _card_ presente na parte superior, sobrepondo-o  | o jogo deverá impedir que os _cards_ se sobreponham, movimentando o _card_ lateralmente                                                                                                                                                         |
 | 8      | executar todas as tarefas de um _minigame_, chegando na tela de pontuação. A tela de pontuação apresenta a pontuação do jogador no _minigame_, a pontuação acumulada e um botão de voltar ao mapa                                                                             | clicar no botão: "Voltar ao mapa"                                                                                         | o jogo deverá retornar para a _hub_, mantendo a progressão da música, além do posicionamento anterior do jogador                                                                                                                                |
 | 9      | o caso de teste #2 e #8 já foram realizados                                                                                                                                                                                                                                   | quando o jogador chegar no objeto que foi interagido no caso de teste #2, apertar a barra de espaço                       | o jogo deverá impedir que o _minigame_ ocorra novamente, e o pop-up explicando o botão para apertar não deverá aparecer                                                                                                                         |
-| 10     | o botão "Novo Jogo" da cena do menu inicial foi clicado, e o botão "Começar" da cena seguinte foi clicado                                                                                                                                                                     | clicar e uma das quatro das opções de personagem jogáveis, e depois apertar o botão "Selecionar"                          | o personagem selecionado deverá aparecer nas cenas da hub do jogo, com as animações correspondentes a seleção do jogador                                                                                                                        |
+| 10     | O botão "Novo Jogo" da cena do menu inicial foi clicado, e o botão "começar" da cena seguinte foi clicado                                                                                                                                                                     | clicar e uma das quatro das opções de personagem jogáveis, e depois apertar o botão "Selecionar"                          | o personagem selecionado deverá aparecer nas cenas da hub do jogo, com as animações correspondentes a seleção do jogador                                                                                                                        |
 | 11     | clicar no botão "começar" do material de apoio do minigame 4, acessado conforme o caso de teste #2, e clicar em uma das quatro opções presentes na tela                                                                                                                       | selecionar uma cor do lado esquerdo, e clicar e arrastar com o botão esquerdo na área branca da tela                      | o rastro do mouse deverá aparecer na cor escolhida                                                                                                                                                                                              |
 | 12     | clicar no botão "começar" do material de apoio do minigame 5, acessado conforme o caso de teste #2. Depois disso, conectar um _card_ do lado direito com uma definição presente no lado direito. A conexão é realizada ao clicar no _card_ e arrastar a linha até a definição | arrastar a linha de um _card_ vazio para a definição que já foi conectada                                                 | o jogo deverá impedir que a linha se conecte                                                                                                                                                                                                    |
 | 13     | clicar no botão "começar" do material de apoio do minigame 6, acessado conforme o caso de teste #2                                                                                                                                                                            | apertar o botão verde ou vermelho, presente na parte inferior da tela                                                     | o jogo deverá atualizar a pontuação no canto superior da tela, conforme a precisão da resposta                                                                                                                                                  |
 | 14     | iniciar o material de apoio de algum minigame, conforme o caso de teste #2                                                                                                                                                                                                    | clicar no botão de seguir adiante, e depois clicar no botão de voltar atrás, para todas as páginas do material            | o jogo deverá transicionar as cenas avançando e retornando na explicação dos conceitos                                                                                                                                                          |
 | 15     | terminar os três _minigames_ presentes na _hub_ do dia 1, e clicar no botão "Começar" na tela que aparece em seguida                                                                                                                                                          | responder uma questão do _miniboss_, clicando em uma das alternativas apresentadas                                        | o jogo deverá apresentar uma tela de _feedback_ da resposta, conforme a precisão da seleção                                                                                                                                                     |
-| 16     | responder todas as perguntas do _miniboss_ do dia 1, conforme caso de teste #15                                                                                                                                                                                                                       | clicar no botão "Voltar ao mapa"                                                                                          | a capa de um jornal deverá aparecer na tela, conforme a pontuação do jogador. Se ele tiver uma pontuação total inferior a 500 pontos, o botão de "Game Over" deverá aparecer. Caso tenha uma pontuação maior, o botão de "Continuar" deverá aparecer |
-| 17     | terminar o _miniboss_ com uma pontuação inferior a 500 pontos                                                                                                                                                                                                                | clicar no botão de "Game Over" na tela do jornal                                                                            | o jogo deverá reiniciar a aba do navegador, trazendo o jogador de volta para o início                                                                                                                                                           |
-| 18     | terminar o _miniboss_ com uma pontuação superior a 500 pontos                                                                                                                                                                                                                | clicar no botão de "Continuar" na tela do jornal, e clicar no botão "Começar" na tela de apoio seguinte                     | o jogo deverá transicionar para a _hub_ do dia 2, e a música de fundo deverá ser diferente da _hub_ do dia 1                                                                                                                                    |
+| 16     | responder todas as perguntas do _miniboss_ do dia 1                                                                                                                                                                                                                           | clicar no botão "Voltar ao mapa"                                                                                          | a capa de um jornal deverá aparecer na tela, conforme a pontuação do jogador. Se ele tiver uma pontuação total inferior a 700 pontos, o botão de Game Over deverá aparecer. Caso tenha uma pontuação maior, o botão de Avançar deverá aparecer |
+| 17     | terminar o _miniboss_ com uma pontuação inferior a 700 pontos                                                                                                                                                                                                                | clicar no botão de Game Over na tela do jornal                                                                            | o jogo deverá reiniciar a aba do navegador, trazendo o jogador de volta para o início                                                                                                                                                           |
+| 18     | terminar o _miniboss_ com uma pontuação superior a 700 pontos                                                                                                                                                                                                                | clicar no botão de Continuar na tela do jornal, e clicar no botão "começar" na tela de apoio seguinte                     | o jogo deverá transicionar para a _hub_ do dia 2, e a música de fundo deverá ser diferente da _hub_ do dia 1                                                                                                                                    |
 | 19     | o jogador estar localizado em uma das hubs do jogo                                                                                                                                                                                                                            | apertar as setinhas do teclado para movimentar o personagem                                                               | sons de passos deverão ser tocados, parando quando o jogador também parar de se movimentar                                                                                                                                                      |
-| 20     | o jogador acessar a Sala de Guerra, ao apertar a barra de espaço ao lado do objeto com o ponto de exclamação na hub da Sala de Guerra                                                                                                                                         | responder as perguntas presentes na tela, clicando em uma das opções na parte inferior                                 | o jogo deverá validar a resposta, atualizando o placar de pontuação. Além disso, o _timer_ também deverá continuar, diminuindo o tempo                                                                                                          |
+| 20     |  o jogador estar localizado próximo ao NPC   |apertar a tecla de espaço    |                     o jogo deverá apresentar todos os conteúdos abordados no jogo em uma nova tela |
 | 21     | o jogador estar localizado próximo ao NPC   |apertar a tecla de espaço    |                              o jogo deverá apresentar todos os conteúdos abordados no jogo em uma nova tela
 | 22     | o jogador terminar o jogo   |clicar na tela no botão continuar , perdendo ou ganhando    |                              o jogo deverá trocar de tela  para uma de novo jogo
 | 23     | o jogador estar na tela de escolha dos personagens  |selecionar com o mouse qual personagem deseja utilizar e clicar na tela em um dos persogens     |                              o jogo deverá deixar o botão de selecionar chamando mais atenção para que o jogador clique nele
@@ -1868,31 +1988,301 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
 ### 5.2.1 Registros de testes
+#### 5.2.1.1. Teste 1
+Informações  | Resposta
+--- | ---
+Teste realizado por | Luisa
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Não	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Sim,mas não absorveu o conteúdo do material de apoio
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Falar que tem mais coisas depois da fase 1, se não parece que o jogo acabou/deixar mais óbvio que a tela de carregamento terminou/falar que pontuação baixa dá game over
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
 
-_Descreva nesta seção as sessões de teste/entrevista com diferentes jogadores. Registre cada teste conforme o template a seguir._
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.2. Teste 2
+Informações  | Resposta
+--- | ---
+Teste realizado por | Renan
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Explicar melhor o propósito da pontuação
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
 
-| Nome                                     | João Jonas (use nomes fictícios)                                                                                                         |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Já possuía experiência prévia com games? | sim, é um jogador casual                                                                                                                 |
-| Conseguiu iniciar o jogo?                | sim                                                                                                                                      |
-| Entendeu as regras e mecânicas do jogo?  | entendeu as regras, mas sobre as mecânicas, apenas as essenciais, não explorou os comandos complexos                                     |
-| Conseguiu progredir no jogo?             | sim, sem dificuldades                                                                                                                    |
-| Apresentou dificuldades?                 | Não, conseguiu jogar com facilidade e afirmou ser fácil                                                                                  |
-| Que nota deu ao jogo?                    | 9.0                                                                                                                                      |
-| O que gostou no jogo?                    | Gostou de como o jogo vai ficando mais difícil ao longo do tempo sem deixar de ser divertido                                             |
-| O que poderia melhorar no jogo?          | A responsividade do personagem aos controles, disse que havia um pouco de atraso desde o momento do comando até a resposta do personagem |
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025. </sup> <br>
+#### 5.2.1.3. Teste 3
+Informações  | Resposta
+--- | ---
+Teste realizado por | Matheus
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Muito pouco	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Apenas no minigame 1
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim,mas ficou em dúvida de arrastar e setinhas no a/f
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|deixar claro que a ordem no miniboss é do MG3/deixar botão voltar mais claro
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.4. Teste 4
+Informações  | Resposta
+--- | ---
+Teste realizado por | Tatiane
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|10
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Explicação do material de apoio sobre fundos não ficou claro que aquilo eram caracteristícas do fundo/As setinhas podem confundir a pessoa porque como quando ela volta de um minigame é difícil entender/Não perder ponto quando errar/Deixar em cinza o caminho para o qual você já foi
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.5. Teste 5
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Luana
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Jogos simples
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|9
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|letra mais legivel/falar de todos os tipos de fundos antes de definir um por um/botao + e - mais claros do que fazem/mostrar tempo estimado do dia
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.6. Teste 6
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Ryan
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Um pouco	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Sim,Teve dificuldade com a tela de preloading, parece que é pra colocar o nome.
+Que nota deu ao jogo?|10
+O que gostou no jogo?|Trilha Sonora
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|Botão de voltar/Tirar as setinhas nos apoios dos minigames
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.7. Teste 7
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Vitor
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim	
+Conseguiu iniciar o jogo?	| Sim,mas não sabia onde estava o botão
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|poucas
+Que nota deu ao jogo?|8
+O que gostou no jogo?|Interações,sons e setes
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|novo jogo mais obvio/não leu os textos, mas talvez por conta da indicacao no minigame 2/todo mundo erra a linha do tempo
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.8. Teste 8
+
+Informações  | Resposta
+--- | ---
+Teste realizado por | Lucas
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim	
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|10
+O que gostou no jogo?|
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?|novo jogo mais nítido/drag and drop MG1
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+#### 5.2.1.9. Teste 9
+Informações  | Resposta
+--- | ---
+Teste realizado por | Rafael
+Dia | 03/04/2025
+Já possuía experiência prévia com games? |Sim,um pouco
+Conseguiu iniciar o jogo?	| Sim
+Entendeu as regras e mecânicas do jogo?|Sim
+Conseguiu progredir no jogo?|Sim
+Apresentou dificuldades?|Não
+Que nota deu ao jogo?|10
+O que gostou no jogo?|dinâmica dos minigames
+O jogo pareceu intuitivo?|Sim
+Teve algum bug ou problema técnico?|Não
+O que poderia melhorar no jogo?
+A interface estava clara para utilizar?|Sim
+As mecânicas dos minigames eram intuitivas?|Sim
+As indicações da hub estavam claras?|Sim
+A movimentação do personagem estava fluida?|Sim
+A trilha sonora estava boa?|Sim
+As animações entre as telas estava fluída?|Sim
+Os botões da interface estão claros?|Sim
+
+
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
+
 
 ### 5.2.2 Melhorias
 
-_Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade_
+Com base no feedback dos testadores, implementamos as seguintes melhorias:
+
+##### 1. Clareza da Tela de Carregamento
+- Adicionamos indicadores visuais mais explícitos
+- Incluímos mensagens textuais explicativas
+- Implementamos uma barra de progresso animada
+- *Objetivo*: Deixar claro o status do carregamento e evitar a impressão de que o jogo terminou
+
+##### 2. Melhorias no Botão de Iniciar
+-Adicionamos uma animação para o botão de iniciar
+-Adicionamos outros botões no menu inicial
+- *Resultado*: Tornar o início do jogo mais intuitivo
+
+##### 3. Aprimoramentos no Botão de Voltar
+- Implementamos um novo design consistente para o botão de voltar
+- Aumentamos a área clicável para melhor usabilidade
+- *Benefício*: Melhorar a navegação entre telas do material de apoio
+
+**Impacto Geral**:
+- Experiência mais fluida para novos jogadores
+- Redução de pontos de confusão identificados nos testes
+- Interface mais intuitiva e acessível
+
+> "Todas as alterações foram baseadas no feedback direto dos jogadores durante as sessões de teste" - Grupo Level Zero
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-A solução desenvolvida por meio do nosso jogo (Capital Downfall) atinge os objetivos propostos ao transformar o processo de onboarding dos novos analistas de tecnologia do BTG Pactual em uma experiência mais dinâmica, estratégica e envolvente. O jogo reflete o dinamismo do mercado financeiro ao incorporar mecânicas interativas, como minigames, sistema de pontuação, conquistas e feedback visual, que estimulam o engajamento contínuo dos jogadores. A abordagem do jogo promove um aprendizado mais eficiente, incentivando a autonomia e o protagonismo dos participantes, já que cada decisão tomada impacta diretamente o desempenho no jogo, simulando o ambiente corporativo real. Além disso, o conteúdo sobre o funcionamento do BTG e dos fundos de investimento é transmitido de forma didática e acessível, alinhando-se à missão do projeto de tornar o onboarding mais atrativo. 
+O jogo desenvolvido atingiu com êxito os objetivos propostos na seção 1 deste documento: apresentar de forma lúdica e acessível os conceitos fundamentais da área de Análise de Fundos e auxiliar no onboarding de novos colaboradores do BTG, promovendo o engajamento com os conteúdos abordados.
 
-Durante os testes, identificamos um problema de design relacionado ao botão de voltar, cuja estética estava confusa. Isso gerou certo incômodo, pois alguns jogadores tiveram dificuldade tanto para identificá-lo com clareza quanto para interagir com ele corretamente.
+A estrutura narrativa, aliada a uma mecânica interativa de minigames e desafios progressivos, proporcionou uma experiência imersiva e educativa. A ambientação do jogo em um contexto de crise global, a presença de personagens fictícios e a construção de fases temáticas contribuíram para reforçar o aprendizado, tornando-o mais leve e memorável.
 
-Nosso grupo pretende implementar novos dias no jogo, consequentemente a criação de minigames adicionais, ampliando o conteúdo e a dinâmica do onboarding. Além disso, temos o desejo de incluir a funcionalidade de customização de personagens, tornando o jogo mais interativo, personalizado e envolvente para os usuários.
+Pontos fortes:
+- Clareza na apresentação dos conteúdos técnicos de forma gamificada;
+
+- Narrativa envolvente e coerente com a proposta do parceiro;
+
+- Variedade de mecânicas que ajudam a reforçar o aprendizado (minigames, explicações de resposta, feedbacks visuais);
+
+- Interface amigável e estética alinhada ao contexto corporativo.
+
+Durante os testes, alguns pontos de melhoria foram identificados:
+ 
+- Incluir um mapa interativo ou barra de progresso para que o jogador saiba em que ponto está e o que falta completar, pois faltou um sistema claro de progresso ao longo do jogo, o que dificultou o acompanhamento da jornada por parte dos usuários.
+
+- Otimizar o jogo para diferentes perfis de usuários, incluindo pessoas com baixa visão ou dificuldades motoras, aumentando a acessibilidade da nossa solução.
+
+## 6.1. Possibilidades de expansão:
+O grupo identificou a oportunidade de expandir o jogo para outras áreas do BTG Pactual além da Análise de Fundos. A estrutura modular do jogo permite a criação de novos mapas, fases e desafios temáticos voltados a diferentes frentes da instituição, como:
+
+- Área de Crédito;
+
+- Private Banking;
+
+- Mesa de Operações;
+
+- Compliance e Riscos;
+
+- Tecnologia (TI e Inovação).
+
+Essa expansão permitiria o uso da mesma plataforma como uma ferramenta de onboarding mais ampla e escalável, adaptada para diferentes perfis e trilhas de carreira dentro da organização. Além disso, ideias futuras incluem:
+
+- Sistema de pontuação com ranking interno entre novos analistas;
+
+- Integração com plataformas corporativas do BTG;
+
+- Versão mobile para acesso mais ágil;
+
+- Modo multiplayer para promover a colaboração entre os novos colaboradores.
+
+Essas melhorias e expansões tornam o jogo não apenas uma ferramenta pontual de integração, mas um recurso contínuo de aprendizado e engajamento institucional.
 
 
 # <a name="c7"></a>7. Referências (sprint 5)
@@ -1905,15 +2295,19 @@ ASANA. Análise SWOT/FOFA: o que é e como usá-la (com exemplos). 24 fev. 2025.
 
 BERWIG, Daniel. Valuation: análise de caso do Banco BTG Pactual S.A. 2023. Disponível em: https://lume.ufrgs.br/handle/10183/273883. Acesso em: 28 mar. 2025.
 
+BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
+
+BRULLOV. Fire animation - Pixel Art FX Sprites. Itch.io, 2019. Disponível em: https://brullov.itch.io/fire-animation. Acesso em: 8 abr. 2025.
+
 BTG PACTUAL. Negócio e Histórico, 2025. Disponível em: https://ri.btgpactual.com/sobre-o-banco/negocio-e-historico/#:~:text=O%20Banco%20BTG%20Pactual%20%C3%A9,internacional%20de%20investimentos%20e%20distribui%C3%A7%C3%A3o. Acesso em: 23 fev. 2025.
 
 BTG PACTUAL. Nosso DNA: Valores, [s.d.]. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
 
-BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
-
 DEEP-FOLD. PixelSpace. GitHub, 2021. Disponível em: https://github.com/Deep-Fold/PixelSpace. Acesso em: 27 fev. 2025.
 
 HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física: Mecânica – Volume 1. 12. ed. Rio de Janeiro: LTC, 2023.
+
+LIMEZU. Modern Office. Disponível em: https://limezu.itch.io/. Acesso em: 09 abr. 2025.
 
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 23 fev. 2025.
 
@@ -1923,7 +2317,7 @@ OSTERWALDER, Alexander et al. Value proposition design: How to create products a
 
 POLTERGEISTERS. Slightly Cuter Character Sprites. Nexus Mods, 2017. Disponível em: https://www.nexusmods.com/stardewvalley/mods/1437. Acesso em: 27 fev. 2025.
 
-PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva\*. Rio de Janeiro: Campus, 1998.
+PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva*. Rio de Janeiro: Campus, 1998.
 
 PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledge (PMBOK® Guide). 6. ed. Newtown Square, PA: Project Management Institute, 2017.
 
@@ -1933,4 +2327,8 @@ SEBRAE. Como determinar o público-alvo da sua empresa. Portal Sebrae, 8 maio 20
 
 # <a name="c8"></a>Anexos
 
-_Inclua aqui quaisquer complementos para seu projeto, como diagramas, imagens, tabelas etc. Organize em sub-tópicos utilizando headings menores (use ## ou ### para isso)_
+Este anexo é um link para o quadro Figma da visão do produto:
+https://www.figma.com/design/yjJB5frpiP8MSd0kFoHyzM/Visão-do-Produto?node-id=0-1&p=f&t=uoB02f2cjTzv9KHk-0
+
+Este anexo é um link para o quadro Figma que discute o que o produto É - NÃO É - FAZ - NÃO FAZ:
+https://www.figma.com/design/AiBW3Dacs2Th9kHwqX0qQ2/Untitled?node-id=0-1&p=f&t=dftxa8JW7Z2935j4-0

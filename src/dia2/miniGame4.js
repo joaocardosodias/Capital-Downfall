@@ -3,7 +3,7 @@ let cardsDisponiveis = [true, true, true, true]; // true = disponível, false = 
 let lousaDesligada = false;
 
 // Classe principal da cena inicial do jogo
-class miniGame4 extends Phaser.Scene {
+class miniGame4 extends baseCena {
   constructor() {
     super({ key: "miniGame4" });
     pontuacaoM4 = 0;
@@ -25,7 +25,7 @@ class miniGame4 extends Phaser.Scene {
     // Exibe a pontuação no canto superior esquerdo
     this.pontuacaoText = this.add.text(20, 20, `Pontuação: ${pontuacaoM4}`, {
       fontSize: "24px",
-      fill: "#000",
+      fill: "#FFFFFF",
     });
 
     // Cria os cards interativos
@@ -238,7 +238,7 @@ class miniGame4 extends Phaser.Scene {
 }
 
 // Classe base para as cenas de tributação
-class BaseTributacaoScene extends Phaser.Scene {
+class BaseTributacaoScene extends baseCena {
   constructor(key) {
     super({ key });
     this.canetaEscrevendo;
@@ -705,7 +705,7 @@ class tributacaoScene4 extends BaseTributacaoScene {
 }
 
 // Classe para a cena de finalização do jogo
-class fimMinigame4 extends Phaser.Scene {
+class fimMinigame4 extends baseCena {
   constructor() {
     super({ key: "fimMinigame4" });
   }
@@ -776,12 +776,13 @@ class fimMinigame4 extends Phaser.Scene {
     this.voltarAoMapaM4.anims.play("voltarAoMapaM4", true);
 
     this.voltarAoMapaM4.on("pointerdown", () => {
-      this.musicaFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      this.scene.stop("fimMinigame4");
-      minigame4Jogado = true;
-      this.scene.wake("hub2");
-      musicaHub2.resume();
+      if (!transicionando) {
+        this.musicaFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        minigame4Jogado = true;
+        this.transicao('hub2', false, false, true, 200,);
+        musicaHub2.resume();
+      }
     });
   }
 }

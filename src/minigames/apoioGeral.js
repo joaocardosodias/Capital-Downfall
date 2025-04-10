@@ -1,4 +1,4 @@
-class apoioGeral extends Phaser.Scene {
+class apoioGeral extends baseCena {
   constructor() {
     super("apoioGeral");
     this.diaAtual;
@@ -87,9 +87,9 @@ Agora, seu investimento vale apenas R$ 900,00, ou seja, perdeu R$ 100,00 de valo
             `,
     ];
     this.apoioMinigame3 = [
-      `O processo de resgate se inicia com uma solicitação do cliente.
+      `O processo de resgate se inicia com uma solicitação do cliente, após um período de rendimento da aplicação.
 
-Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e começe a render.
+Esse pedido chega para o gestor como forma do prazo de cotização, um período necessário para que a ordem de venda de cota seja registrada e o valor de resgate seja definido.
 
 Após isso, ocorre o prazo de liquidação, que se trata do tempo que leva para a conclusão da transação, disponibilizando o dinheiro para o cliente.
 
@@ -183,6 +183,10 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
   }
 
   create() {
+    this.cameras.main.setBounds(0, 0, 800, 600);
+    this.paginaAtiva = 0;
+    this.apoioEscolhido = 1; //minigame 1 como default
+
     //Carrega o fundo e os botões utilizados
 
     this.imailFundoGeral = this.add.image(400, 300, "imailFundoGeral");
@@ -200,6 +204,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
         }
       )
       .setWordWrapWidth(600);
+    this.textoApoio.setText(this["apoioMinigame" + this.apoioEscolhido][0]); // Texto default
 
     // Caso haja apenas um tutorial, começar com botaoComecar
     if (
@@ -221,14 +226,10 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       .setVisible(false)
       .setInteractive();
 
-    this.botaoDesistir = this.add
-      .image(750, 40, "botaoDesistir")
-      .setInteractive();
-
-    // Ainda não funciona, pois não temos uma lista pronta.
-    this.botaoListaTermos = this.add
-      .image(82, 492, "botaoListaTermos")
-      .setInteractive();
+    this.botaoDesistirApoioGeral = this.add
+      .image(740, 40, "botaoDesistirApoioGeral")
+      .setInteractive()
+      .setScale(0.5);
 
     // Para economizar código
     this.minigames = [
@@ -277,7 +278,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     //Verifica se botão próximo foi pressionado
 
     this.botaoProximo.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick) {
+      if (!this.atrasoClick && !transicionando) {
         this.sound.play("clique");
         this.paginaAtiva++;
         this.textoApoio.setText(
@@ -303,7 +304,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     });
 
     this.botaoAnterior.on("pointerdown", (pointer) => {
-      if (!this.atrasoClick && this.paginaAtiva > 0) {
+      if (!this.atrasoClick && this.paginaAtiva > 0 && !transicionando) {
         this.sound.play("clique");
         this.paginaAtiva--;
         this.textoApoio.setText(
@@ -330,19 +331,17 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       }
     });
 
-    this.botaoDesistir.on("pointerdown", (pointer) => {
-      this.paginaAtiva = 0;
-      this.apoioEscolhido = 1; //minigame 1 como default
-      this.sairApoio.play();
-      this.textoApoio.setText(this["apoioMinigame" + this.apoioEscolhido][0]);
-      if (this.diaAtual === 1) {
-        game.scene.wake("hub");
-      } else if (this.diaAtual === 2) {
-        game.scene.wake("hub2");
-      } else if (this.diaAtual === 3) {
-        game.scene.wake("hubFinal");
+    this.botaoDesistirApoioGeral.on("pointerdown", (pointer) => {
+      if (!transicionando) {
+        this.sairApoio.play();
+        if (this.diaAtual === 1) {
+          this.transicao("hub", false, false, true, 200);
+        } else if (this.diaAtual === 2) {
+          this.transicao("hub2", false, false, true, 200);
+        } else if (this.diaAtual === 3) {
+          this.transicao("hubFinal", false, false, true, 200);
+        }
       }
-      game.scene.stop("apoioGeral");
     });
 
     // Adição do efeito de pointer over nos botões
@@ -353,6 +352,7 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
     this.selecaoDesistir = this.add
       .image(0, 0, "selecaoDesistir")
       .setVisible(false)
+      .setScale(0.5)
       .setDepth(100);
 
     this.botaoProximo.on("pointerover", () => {
@@ -369,10 +369,10 @@ A seguir estão alguns dos principais tipos de fundos, com uma breve descrição
       this.selecao.setPosition(0, 0).setVisible(false);
     });
 
-    this.botaoDesistir.on("pointerover", () => {
-      this.selecaoDesistir.setPosition(750, 40).setVisible(true);
+    this.botaoDesistirApoioGeral.on("pointerover", () => {
+      this.selecaoDesistir.setPosition(740, 40).setVisible(true);
     });
-    this.botaoDesistir.on("pointerout", () => {
+    this.botaoDesistirApoioGeral.on("pointerout", () => {
       this.selecaoDesistir.setPosition(0, 0).setVisible(false);
     });
 
