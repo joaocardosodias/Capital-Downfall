@@ -8,7 +8,7 @@ class contratoInicial extends baseCena {
     this.texto = [
       `Seja muito bem-vindo(a)! Na crise atual do mundo financeiro, precisamos de sua ajuda para garantir o crescimento da empresa. 
             
-Ao redor do nosso escritório estão 3 tarefas para você realizar. Elas estão demarcadas por pontos de exclamação.
+Ao redor do nosso escritório estão 3 tarefas para você realizar. Elas estão demarcadas por setas.
 
 Movimente-se com as setinhas do teclado ou WASD e interaja com essas tarefas utilizando a barra de espaço ou clicando E! 
 
