@@ -55,7 +55,7 @@ class salaDeGuerra extends baseCena {
         text: "Um investidor aplicou R$ 30.000,00 em um fundo. No primeiro ano, houve uma depreciação de 6%, no segundo uma recuperação de 4% e no terceiro uma queda de 3%. Qual o valor final?",
         options: [
           "A) R$ 29.474,40",
-          "B) R$ 28.972,00",
+          "B) R$ 28.447,16",
           "C) R$ 29.152,20",
           "D) R$ 29.640,00",
         ],
@@ -81,9 +81,9 @@ class salaDeGuerra extends baseCena {
       },
       // Mini game 4
       {
-        text: "Um fundo de renda fixa tem Come-Cotas de 15%. Se um investidor aplicou R$ 10.000,00, qual será o valor após 1 ano?",
+        text: "Um fundo de renda fixa com rendimento de 10% tem Come-Cotas de 15%. Se um investidor aplicou R$ 10.000,00, qual será o valor após 1 ano?",
         options: [
-          "A) R$ 10.650,00",
+          "A) R$ 10.850,00",
           "B) R$ 10.500,00",
           "C) R$ 10.700,00",
           "D) R$ 11.000,00",
@@ -97,10 +97,10 @@ class salaDeGuerra extends baseCena {
       {
         text: "Qual dos seguintes fundos de investimento é conhecido por investir em empresas privadas, com potencial de crescimento?",
         options: [
-            "A) Renda Fixa",
-            "B) Multimercado",
-            "C) Imobiliário",
-            "D) Private Equity",
+          "A) Renda Fixa",
+          "B) Multimercado",
+          "C) Imobiliário",
+          "D) Private Equity",
         ],
       },
       {
@@ -148,8 +148,10 @@ class salaDeGuerra extends baseCena {
 
     this.add.image(780, 20, "fundoTimer").setOrigin(1, 0).setDepth(10);
 
-    this.alarme = this.add.rectangle(400, 300, 800, 600, 0xdd0000).setDepth(100).setVisible(false);
-
+    this.alarme = this.add
+      .rectangle(400, 300, 800, 600, 0xdd0000)
+      .setDepth(100)
+      .setVisible(false);
 
     // Carrega os sons
     this.clickSound = this.sound.add("click");
@@ -191,7 +193,6 @@ class salaDeGuerra extends baseCena {
       callbackScope: this,
       loop: true, // Continuar executando a cada 1 segundo
     });
-
 
     this.anims.create({
       key: "fogo1",
@@ -241,13 +242,62 @@ class salaDeGuerra extends baseCena {
 
     // Cria todos os fogos que aparecerão na tela assim como sua posição, textura, profundidade, escala e tempo de aparição
     this.incendio = [
-      { fogo: this.fogoA = this.add.sprite(50, 600, "fogo1").setDepth(-8).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 1 },
-      { fogo: this.fogoB = this.add.sprite(450, 600, "fogo1").setDepth(-6).setScale(5).setOrigin(0.5, 0), tempoDeAparicao: 2 / 12 },
-      { fogo: this.fogoC = this.add.sprite(150, 600, "fogo2").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 1 / 12 },
-      { fogo: this.fogoD = this.add.sprite(300, 600, "fogo2").setDepth(-9).setScale(3).setOrigin(0.5, 0), tempoDeAparicao: 4 / 12 },
-      { fogo: this.fogoE = this.add.sprite(750, 600, "fogo3").setDepth(-4).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 3 / 12 },
-      { fogo: this.fogoF = this.add.sprite(600, 600, "fogo4").setDepth(-7).setScale(4).setOrigin(0.5, 0), tempoDeAparicao: 5 / 12 },
-      { fogo: this.fogoG = this.add.sprite(720, 600, "fogo5").setDepth(0).setScale(6).setOrigin(0.5, 0), tempoDeAparicao: 10 / 12 },
+      {
+        fogo: (this.fogoA = this.add
+          .sprite(50, 600, "fogo1")
+          .setDepth(-8)
+          .setScale(3)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 1,
+      },
+      {
+        fogo: (this.fogoB = this.add
+          .sprite(450, 600, "fogo1")
+          .setDepth(-6)
+          .setScale(5)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 2 / 12,
+      },
+      {
+        fogo: (this.fogoC = this.add
+          .sprite(150, 600, "fogo2")
+          .setDepth(-4)
+          .setScale(6)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 1 / 12,
+      },
+      {
+        fogo: (this.fogoD = this.add
+          .sprite(300, 600, "fogo2")
+          .setDepth(-9)
+          .setScale(3)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 4 / 12,
+      },
+      {
+        fogo: (this.fogoE = this.add
+          .sprite(750, 600, "fogo3")
+          .setDepth(-4)
+          .setScale(6)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 3 / 12,
+      },
+      {
+        fogo: (this.fogoF = this.add
+          .sprite(600, 600, "fogo4")
+          .setDepth(-7)
+          .setScale(4)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 5 / 12,
+      },
+      {
+        fogo: (this.fogoG = this.add
+          .sprite(720, 600, "fogo5")
+          .setDepth(0)
+          .setScale(6)
+          .setOrigin(0.5, 0)),
+        tempoDeAparicao: 10 / 12,
+      },
     ];
 
     this.fogoA.anims.play("fogo1");
@@ -257,14 +307,14 @@ class salaDeGuerra extends baseCena {
     this.fogoE.anims.play("fogo3");
     this.fogoF.anims.play("fogo4");
     this.fogoG.anims.play("fogo5");
-
   }
 
   formatarTempo(segundos) {
     const minutos = Math.floor(segundos / 60);
     const segundosRestantes = segundos % 60;
-    return `${minutos}:${segundosRestantes < 10 ? "0" + segundosRestantes : segundosRestantes
-      }`;
+    return `${minutos}:${
+      segundosRestantes < 10 ? "0" + segundosRestantes : segundosRestantes
+    }`;
   }
 
   atualizarTimer() {
@@ -275,13 +325,22 @@ class salaDeGuerra extends baseCena {
       // Cria a animação do alarme de incendio, com uma luz vermelha por cima da tela de vez em quando
       if (this.timer > this.tempoInicial / 4) {
         if (this.timer % 4 === 1) {
-          this.alarme.setVisible(true).setAlpha(0.4 * (this.tempoInicial - this.timer) / this.tempoInicial);
+          this.alarme
+            .setVisible(true)
+            .setAlpha(
+              (0.4 * (this.tempoInicial - this.timer)) / this.tempoInicial
+            );
         } else {
           this.alarme.setVisible(false);
         }
-      } else { // Quando o tempo estiver quase acabando, o alarme fica mais rápido
+      } else {
+        // Quando o tempo estiver quase acabando, o alarme fica mais rápido
         if (this.timer % 2 === 1) {
-          this.alarme.setVisible(true).setAlpha(0.4 * (this.tempoInicial - this.timer) / this.tempoInicial);
+          this.alarme
+            .setVisible(true)
+            .setAlpha(
+              (0.4 * (this.tempoInicial - this.timer)) / this.tempoInicial
+            );
         } else {
           this.alarme.setVisible(false);
         }
@@ -289,12 +348,17 @@ class salaDeGuerra extends baseCena {
 
       // Cria a animação de todos os fogos, que sobem em diferentes momentos ao longo do tempo
       this.incendio.forEach((f) => {
-        if (f.fogo.y > 600 - f.fogo.height * f.fogo.scale) { // Se a base do fogo ainda não estiver no canto inferior da tela...
-          f.fogo.y = 600 * this.timer / (this.tempoInicial * f.tempoDeAparicao) // Equação que define quando o fogo irá começar a aparecer com base no tempo inicial
-          if (f.fogo.y < 600 - f.fogo.height * f.fogo.scale) { // Evita que o fogo passe do canto inferior da tela. Sem isso, ele passa e volta no próximo segundo
-            f.fogo.y = 600 - f.fogo.height * f.fogo.scale
+        if (f.fogo.y > 600 - f.fogo.height * f.fogo.scale) {
+          // Se a base do fogo ainda não estiver no canto inferior da tela...
+          f.fogo.y =
+            (600 * this.timer) / (this.tempoInicial * f.tempoDeAparicao); // Equação que define quando o fogo irá começar a aparecer com base no tempo inicial
+          if (f.fogo.y < 600 - f.fogo.height * f.fogo.scale) {
+            // Evita que o fogo passe do canto inferior da tela. Sem isso, ele passa e volta no próximo segundo
+            f.fogo.y = 600 - f.fogo.height * f.fogo.scale;
           }
-        } else { f.fogo.y = 600 - f.fogo.height * f.fogo.scale } // Fogo fica exatamente no canto inferior quando sua animação termina
+        } else {
+          f.fogo.y = 600 - f.fogo.height * f.fogo.scale;
+        } // Fogo fica exatamente no canto inferior quando sua animação termina
       });
     } else {
       this.finalizarQuiz(); // Finaliza o quiz quando o tempo acabar
@@ -333,16 +397,15 @@ class salaDeGuerra extends baseCena {
     const numPergunta = this.selectedQuestions[this.perguntaAtual];
 
     // Exibe a pergunta
-    this.questionText = this.add.text(
-      400,
-      150,
-      this.questions[this.perguntaAtual].text,
-      {
+    this.questionText = this.add
+      .text(400, 150, this.questions[this.perguntaAtual].text, {
         font: "24px pixelArt",
         fill: "#fff",
         align: "center",
-      }
-    ).setDepth(11).setWordWrapWidth(650).setOrigin(0.5);
+      })
+      .setDepth(11)
+      .setWordWrapWidth(650)
+      .setOrigin(0.5);
 
     // Exibe as opções de resposta
     const options = this.questions[this.perguntaAtual].options;
@@ -357,7 +420,8 @@ class salaDeGuerra extends baseCena {
           fill: "#fff",
           align: "center",
         })
-        .setOrigin(0.5).setWordWrapWidth(250); // Alinha o texto no centro do botão
+        .setOrigin(0.5)
+        .setWordWrapWidth(250); // Alinha o texto no centro do botão
 
       // Adiciona o texto ao array para poder destruir depois
       this.optionTexts.push(text);
@@ -412,7 +476,8 @@ class salaDeGuerra extends baseCena {
 
     // Log para verificar a pergunta e resposta
     console.log(
-      `Pergunta: ${this.perguntaAtual + 1
+      `Pergunta: ${
+        this.perguntaAtual + 1
       }, Resposta Escolhida: ${letraResposta}, Resposta Correta: ${correta}`
     );
 
@@ -476,7 +541,7 @@ class salaDeGuerra extends baseCena {
         fontFamily: "Arial",
       })
       .setOrigin(0.5);
-      this.scene.stop("salaDeGuerra");
-      this.scene.start("finalSalaDeGuerra");
+    this.scene.stop("salaDeGuerra");
+    this.scene.start("finalSalaDeGuerra");
   }
 }
