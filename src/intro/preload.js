@@ -111,6 +111,7 @@ class preload extends Phaser.Scene {
 
     this.load.image("fundoEspaco", "src/assets/creditos_favicon/fundoEspaco.png")
     this.load.image("logoInteli", "src/assets/creditos_favicon/inteli.png")
+    this.load.image("creditos", "src/assets/creditos_favicon/creditos.png")
 
     //Assets do Contrato Inicial
 

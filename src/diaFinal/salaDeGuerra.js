@@ -362,7 +362,7 @@ class salaDeGuerra extends baseCena {
       // Adiciona o texto sobre o botão
       const text = this.add
         .text(this.botoes[i].botao.x, this.botoes[i].botao.y, options[i], {
-          font: "13px pixelArtNegrito",
+          font: "13px pixelArt",
           fill: "#fff",
           align: "center",
         })
