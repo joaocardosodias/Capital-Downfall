@@ -1981,6 +1981,9 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 | 18     | terminar o _miniboss_ com uma pontuação superior a 700 pontos                                                                                                                                                                                                                | clicar no botão de Continuar na tela do jornal, e clicar no botão "começar" na tela de apoio seguinte                     | o jogo deverá transicionar para a _hub_ do dia 2, e a música de fundo deverá ser diferente da _hub_ do dia 1                                                                                                                                    |
 | 19     | o jogador estar localizado em uma das hubs do jogo                                                                                                                                                                                                                            | apertar as setinhas do teclado para movimentar o personagem                                                               | sons de passos deverão ser tocados, parando quando o jogador também parar de se movimentar                                                                                                                                                      |
 | 20     |  o jogador estar localizado próximo ao NPC   |apertar a tecla de espaço    |                     o jogo deverá apresentar todos os conteúdos abordados no jogo em uma nova tela |
+| 21     | o jogador estar localizado próximo ao NPC   |apertar a tecla de espaço    |                              o jogo deverá apresentar todos os conteúdos abordados no jogo em uma nova tela
+| 22     | o jogador terminar o jogo   |clicar na tela no botão continuar , perdendo ou ganhando    |                              o jogo deverá trocar de tela  para uma de novo jogo
+| 23     | o jogador estar na tela de escolha dos personagens  |selecionar com o mouse qual personagem deseja utilizar e clicar na tela em um dos persogens     |                              o jogo deverá deixar o botão de selecionar chamando mais atenção para que o jogador clique nele
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
@@ -2280,6 +2283,7 @@ Essa expansão permitiria o uso da mesma plataforma como uma ferramenta de onboa
 - Modo multiplayer para promover a colaboração entre os novos colaboradores.
 
 Essas melhorias e expansões tornam o jogo não apenas uma ferramenta pontual de integração, mas um recurso contínuo de aprendizado e engajamento institucional.
+
 
 # <a name="c7"></a>7. Referências (sprint 5)
 
