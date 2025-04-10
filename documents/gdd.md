@@ -2315,15 +2315,19 @@ MOBA, RPG, MMORPG, FPS e mais: entenda significado dos gêneros de games. Dispon
 
 OSTERWALDER, Alexander et al. Value proposition design: How to create products and services customers want. John Wiley & Sons, 2015.
 
+PHELAN, Julia. Onboarding new employees — without overwhelming them. Harvard Business Review, 2 abr. 2024. Disponível em: https://hbr.org/2024/04/onboarding-new-employees-without-overwhelming-them. Acesso em: 10 abr. 2025.
+
 POLTERGEISTERS. Slightly Cuter Character Sprites. Nexus Mods, 2017. Disponível em: https://www.nexusmods.com/stardewvalley/mods/1437. Acesso em: 27 fev. 2025.
 
-PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva*. Rio de Janeiro: Campus, 1998.
+PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva. Rio de Janeiro: Campus, 1998.
 
 PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledge (PMBOK® Guide). 6. ed. Newtown Square, PA: Project Management Institute, 2017.
 
 RIBEIRO, Luis Henrique de Oliveira; SODRÉ, Marina Fernandes; ALBUQUERQUE JUNIOR, Carlos Roberto Falcão de. A ascenção dos bancos digitais na era moderna: uma análise qualitativa através de ferramentas do planejamento estratégico. Brazilian Journal of Development, Curitiba, v. 8, n. 1, p. 4213-4226, jan. 2022.
 
 SEBRAE. Como determinar o público-alvo da sua empresa. Portal Sebrae, 8 maio 2023. Disponível em: https://sebrae.com.br/sites/PortalSebrae/artigos/como-determinar-o-publico-alvo-da-sua-empresa,fa1c7553c86c6810VgnVCM1000001b00320aRCRD. Acesso em: 28 mar. 2025.
+
+SITZMANN, Traci. A meta-analytic examination of the instructional effectiveness of computer-based simulation games. Personnel Psychology, v. 64, n. 2, p. 489–528, 2011. Disponível em: https://www.prisim.com/wp-content/uploads/2017/02/Value-of-Simulation-Training-Univ-of-CO.pdf. Acesso em: 10 abr. 2025.
 
 # <a name="c8"></a>Anexos
 
