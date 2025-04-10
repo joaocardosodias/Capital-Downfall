@@ -14,10 +14,10 @@ class salaDeGuerra extends baseCena {
       5: "B",
       6: "C",
       7: "A",
-      8: "A",
-      9: "C",
+      8: "C",
+      9: "D",
       10: "C",
-      11: "C",
+      11: "A",
       12: "B",
     };
 
@@ -29,15 +29,6 @@ class salaDeGuerra extends baseCena {
           "B) O investidor pode comprar e vender cotas a qualquer momento.",
           "C) As aplicações são restritas e não permitem novos aportes.",
           "D) A liquidez é garantida apenas ao final do período de investimento.",
-        ],
-      },
-      {
-        text: "Qual tipo de fundo é mais adequado para quem busca flexibilidade?",
-        options: [
-          "A) Fundo Imobiliário",
-          "B) Fundo Fechado",
-          "C) Fundo Aberto",
-          "D) Fundo de Private Equity",
         ],
       },
       // Mini game 1 - Questão 2 (original)
@@ -74,7 +65,7 @@ class salaDeGuerra extends baseCena {
         text: "O que é o prazo de cotização em um processo de resgate de fundos?",
         options: [
           "A) O tempo que o cliente leva para solicitar o resgate do fundo.",
-          "B) O período necessário para que a ordem de venda de cota seja registrada e comece a render.",
+          "B) O período necessário para que a ordem de venda de cota seja registrada.",
           "C) O prazo para que o valor do fundo seja reinvestido em outra aplicação.",
           "D) O tempo que o banco leva para liberar o dinheiro na conta do cliente.",
         ],
@@ -104,21 +95,21 @@ class salaDeGuerra extends baseCena {
       },
       // Mini game 5
       {
-        text: "O que caracteriza um fundo de investimento como 'fechado'?",
+        text: "Qual dos seguintes fundos de investimento é conhecido por investir em empresas privadas, com potencial de crescimento?",
         options: [
-            "A) Permite resgates diários a qualquer momento.",
-            "B) É exclusivo para investidores estrangeiros.",
-            "C) Não permite resgates antes do prazo estabelecido.",
-            "D) Tem isenção fiscal garantida por lei.",
+            "A) Renda Fixa",
+            "B) Multimercado",
+            "C) Imobiliário",
+            "D) Private Equity",
         ],
       },
       {
-        text: "Um investidor teve um rendimento de R$ 1.200,00 em um fundo de ações. Qual será o imposto de renda devido no resgate (15%)?",
+        text: "Qual dos seguintes fundos de investimento é conhecido por sua segurança e estabilidade?",
         options: [
-          "A) R$ 120,00",
-          "B) R$ 180,00",
-          "C) R$ 150,00",
-          "D) R$ 100,00",
+          "A) Ações",
+          "B) Private Equity",
+          "C) Renda Fixa",
+          "D) Multimercado",
         ],
       },
       // Mini game 6
