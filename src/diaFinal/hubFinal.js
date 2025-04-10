@@ -1,7 +1,7 @@
 //Cria a cena da Hub
 let musicaHubFinal;
 
-class hubFinal extends Phaser.Scene {
+class hubFinal extends baseCena {
   constructor() {
     super("hubFinal");
     this.map;
@@ -16,6 +16,8 @@ class hubFinal extends Phaser.Scene {
     this.colisaoBossFinal;
     this.avisoBossFinal;
     this.sobreposto = false;
+    this.textoPontuacao;
+    this.chefe;
     this.teclado;
     this.spacebar;
     this.E;
@@ -63,6 +65,13 @@ class hubFinal extends Phaser.Scene {
     // Aplica o filtro NEAREST para evitar o efeito de suavização no pixel art
     this.textures.get("tiles").setFilter(Phaser.Textures.FilterMode.NEAREST);
 
+    //Adiciona o sprite da chefe, com colisões
+    this.chefe = this.physics.add
+      .sprite(650, 1270, "chefe")
+      .setImmovable(true)
+      .setDepth(2)
+      .setScale(1.5);
+
     musicaHubFinal = this.sound.add("somFundo", { volume: 0.25 }); // Adiciona o som da música de fundo
     musicaHubFinal.setLoop(true); // Define que a música de fundo deve ser repetida
     musicaHubFinal.play(); // Inicia a música de fundo
@@ -87,8 +96,8 @@ class hubFinal extends Phaser.Scene {
 
     //Criação do objeto de detecção da interação do jogador com o apoio geral
     this.colisaoApoioGeral = this.physics.add
-      .sprite(496, 550, "colisao")
-      .setScale(2.5)
+      .sprite(650, 1270, "colisao")
+      .setScale(3.5)
       .setVisible(true)
       .setImmovable(true);
 
@@ -98,6 +107,14 @@ class hubFinal extends Phaser.Scene {
       .setScale(2.5)
       .setVisible(false)
       .setImmovable(true);
+
+    this.avisoApoioGeral = this.add
+      .sprite(700, 1150, "balaoFala")
+      .setScale(2)
+      .setDepth(3)
+      .setVisible(false);
+
+      this.avisoApoioGeral.anims.play("fala");
 
     //Adiciona os indicadores e inicia suas animações
     this.avisoBossFinal = this.add.sprite(400, 60, "avisoMinigame");
@@ -112,44 +129,101 @@ class hubFinal extends Phaser.Scene {
     //Adiciona a colisão entre os objetos
     this.physics.add.collider(this.player, this.layerParede);
     this.physics.add.collider(this.player, this.layerObjetos);
+    this.physics.add.collider(this.player, this.chefe);
+
+    // Criando o aviso "Aperte espaço para interagir"
+    this.fundoInteracao = this.add
+      .rectangle(0, 0, 170, 56, 0x90a2e0, 0.5)
+      .setOrigin(0.5)
+      .setVisible(false)
+      .setDepth(10.5);
+    this.textoInteracao = this.add
+      .text(0, 0, "Aperte ESPAÇO\npara interagir", {
+        fontSize: "16px",
+        fontFamily: "pixelArtNegrito",
+        fill: "#fff",
+        align: "center",
+      })
+      .setOrigin(0.5)
+      .setVisible(false)
+      .setDepth(11);
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
+      this.fundoInteracao
+        .setPosition(this.player.x, this.player.y + 80)
+        .setVisible(true);
+      this.textoInteracao
+        .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
+      this.avisoApoioGeral
+        .setVisible(true);
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
         (this.spacebar || this.E) &&
         (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-          Phaser.Input.Keyboard.JustDown(this.E))
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
-        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
-        game.scene.sleep("hubFinal");
+        this.transicao('apoioGeral', true, true, true);
       }
     });
 
     //Verifica se o player está na mesma área que o detector de colisão do boss final
     this.physics.add.overlap(this.player, this.colisaoBossFinal, () => {
+      this.fundoInteracao
+        .setPosition(this.player.x, this.player.y + 80)
+        .setVisible(true);
+      this.textoInteracao
+        .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
         (this.spacebar || this.E) &&
         (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-          Phaser.Input.Keyboard.JustDown(this.E))
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
       ) {
         this.avisoBossFinal.setVisible(false);
         this.passos.stop();
         this.interacaoMinigame.play();
         musicaHubFinal.stop();
-        game.scene.start("salaDeGuerra");
-        game.scene.sleep("hubFinal");
+        this.transicao('salaDeGuerra', true, true, true,);
       }
     });
 
     //Configura a câmera para seguir o jogador, além do zoom
     this.cameras.main.startFollow(this.player, true, 0.2, 0.2);
     this.cameras.main.setZoom(1).setRoundPixels(true);
+
+    // Adiciona o texto da pontuação
+    this.textoPontuacao = this.add
+      .text(570, 10, `Pontuação: ${pontuacao}`, {
+        fontFamily: "pixelArt", // Nome da fonte personalizada
+        fontSize: "20px",
+        color: "#ffffff",
+      })
+      .setScrollFactor(0)
+      .setDepth(10); // Define a profundidade do texto para que ele fique visível
+
+    // Adiciona um efeito de sombra ao redor do texto
+    this.textoPontuacao.setShadow(2, 2, "#000000", 2);
   }
 
   update() {
+    if (
+      !this.physics.overlap(this.player, this.colisaoApoioGeral) &&
+      !this.physics.overlap(this.player, this.colisaoBossFinal)
+    ) {
+      this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
+      this.fundoInteracao.setVisible(false);
+    }
+
+    if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
+      this.avisoApoioGeral.setVisible(false);
+    }
+    
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
 

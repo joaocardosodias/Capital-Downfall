@@ -1,4 +1,4 @@
-class miniBossDia1 extends Phaser.Scene {
+class miniBossDia1 extends baseCena {
   constructor() {
     super("miniBossDia1"); // Nome da cena
     this.pontuacaoB1 = 0;
@@ -412,10 +412,12 @@ M = 1815`,
     this.voltarAoMapaB1.anims.play("voltarAoMapaB1", true);
 
     this.voltarAoMapaB1.on("pointerdown", () => {
-      this.somFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      this.scene.start("finalDia1");
-      this.scene.stop("miniBossDia1");
+      if (!transicionando) {
+        this.somFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        this.transicao("finalDia1", false, false, false, 200);
+        this.scene.stop("dia1");
+      }
     });
   }
 }

@@ -1,4 +1,4 @@
-class finalSalaDeGuerra extends Phaser.Scene {
+class finalSalaDeGuerra extends baseCena {
   constructor() {
     super("finalSalaDeGuerra");
 
@@ -29,7 +29,7 @@ class finalSalaDeGuerra extends Phaser.Scene {
     this.somErro = this.sound.add("somErro", { volume: 2 });
     this.clique = this.sound.add("clique");
 
-    if (pontuacao < 100) {
+    if (pontuacao < 750) {
       this.somErro.play();
       this.add.image(400, 300, "cenaGameOver");
       this.cenaGameOverSalaDeGuerra = true;
@@ -39,7 +39,7 @@ class finalSalaDeGuerra extends Phaser.Scene {
       });
     }
 
-    if (pontuacao >= 100) {
+    if (pontuacao >= 750) {
       this.somAcerto.play();
       this.add.image(400, 300, "cenaGameWin");
       this.Crescimento = true;

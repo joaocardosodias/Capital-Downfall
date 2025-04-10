@@ -5,12 +5,13 @@ let personagemSelecionado;
 let musicaHub;
 //Cria a cena da Hub
 
-class hub extends Phaser.Scene {
+class hub extends baseCena {
   constructor() {
     super("hub");
     this.diaAtual = 1;
     this.tiles;
     this.player;
+    this.chefe;
     this.playerDirecao = "baixo";
     this.personagens = ["Mary", "Mark", "Margaret", "Steve"];
     this.personagemSelecionado = 3;
@@ -35,6 +36,7 @@ class hub extends Phaser.Scene {
     this.passos;
     this.andando = false;
     this.interacaoMinigame;
+    this.fimDoDia = false; // Evita que a transição do fim do dia ocorra mais de uma vez
   }
 
   init(data) {
@@ -93,10 +95,17 @@ class hub extends Phaser.Scene {
 
     this.interacaoMinigame = this.sound.add("interacaoMinigame", { volume: 1 }); // Adiciona o som de interação com o minigame
 
+    //Adiciona o sprite da chefe, com colisões
+    this.chefe = this.physics.add
+      .sprite(1180, 860, "chefe")
+      .setImmovable(true)
+      .setDepth()
+      .setScale(1.5);
+
     //Criação do objeto de detecção da interação do jogador com o apoio geral
     this.colisaoApoioGeral = this.physics.add
-      .sprite(1300, 850, "colisao")
-      .setScale(3.5)
+      .sprite(1178, 870, "colisao")
+      .setScale(5)
       .setVisible(false)
       .setImmovable(true);
 
@@ -125,6 +134,15 @@ class hub extends Phaser.Scene {
         end: 8,
       }),
       frameRate: 15,
+      repeat: -1,
+    });
+    this.anims.create({
+      key: "fala",
+      frames: this.anims.generateFrameNumbers("balaoFala", {
+        start: 0,
+        end: 1,
+      }),
+      frameRate: 2,
       repeat: -1,
     });
 
@@ -219,10 +237,16 @@ class hub extends Phaser.Scene {
     this.avisoMinigame3 = this.add
       .sprite(336, 345, "avisoMinigame")
       .setScale(1.5);
+    this.avisoApoioGeral = this.add
+      .sprite(1240, 740, "balaoFala")
+      .setScale(2)
+      .setDepth(2)
+      .setVisible(false);
 
     this.avisoMinigame1.anims.play("movimentoAviso");
     this.avisoMinigame2.anims.play("movimentoAviso");
     this.avisoMinigame3.anims.play("movimentoAviso");
+    this.avisoApoioGeral.anims.play("fala");
 
     //Criação do objeto do player
     this.player = this.physics.add.sprite(1176, 1230).setScale(1.5);
@@ -233,18 +257,19 @@ class hub extends Phaser.Scene {
     //Adiciona a colisão entre os objetos
     this.physics.add.collider(this.player, this.layerParede);
     this.physics.add.collider(this.player, this.layerObjetos);
+    this.physics.add.collider(this.player, this.chefe);
 
     this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
       //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
       if (
         (this.spacebar || this.E) &&
         (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-          Phaser.Input.Keyboard.JustDown(this.E))
+          Phaser.Input.Keyboard.JustDown(this.E)) &&
+        !transicionando
       ) {
         this.interacaoMinigame.play();
         this.passos.stop();
-        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
-        game.scene.sleep("hub");
+        this.transicao("apoioGeral", true, true, true)
       }
     });
 
@@ -265,6 +290,28 @@ class hub extends Phaser.Scene {
       .setVisible(false)
       .setDepth(11);
 
+    this.physics.add.overlap(this.player, this.colisaoApoioGeral, () => {
+      this.fundoInteracao
+        .setPosition(this.player.x, this.player.y + 80)
+        .setVisible(true);
+      this.textoInteracao
+        .setPosition(this.player.x + 2, this.player.y + 80)
+        .setVisible(true);
+      this.avisoApoioGeral
+        .setVisible(true);
+      //Verifica se a tecla espaço está sendo pressionada, equanto o player está dentro da área determinada
+      if (
+        (this.spacebar || this.E) &&
+        (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
+          Phaser.Input.Keyboard.JustDown(this.E))
+      ) {
+        this.interacaoMinigame.play();
+        this.passos.stop();
+        game.scene.start("apoioGeral", { diaAtual: this.diaAtual });
+        game.scene.sleep("hub");
+      }
+    });
+
     // Verifica se o player está na mesma área que o detector de colisão do minigame 1
     this.physics.add.overlap(this.player, this.colisaoMinigame1, () => {
       // O player não pode jogar o minigame mais de 1 vez
@@ -280,7 +327,8 @@ class hub extends Phaser.Scene {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -288,8 +336,7 @@ class hub extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 1;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          this.transicao("apoioDia1", true, true, true)
         }
       }
     });
@@ -309,7 +356,8 @@ class hub extends Phaser.Scene {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -317,8 +365,7 @@ class hub extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 2;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          this.transicao("apoioDia1", true, true, true)
         }
       }
     });
@@ -338,7 +385,8 @@ class hub extends Phaser.Scene {
         if (
           (this.spacebar || this.E) &&
           (Phaser.Input.Keyboard.JustDown(this.spacebar) ||
-            Phaser.Input.Keyboard.JustDown(this.E))
+            Phaser.Input.Keyboard.JustDown(this.E)) &&
+          !transicionando
         ) {
           this.textoInteracao.setVisible(false);
           this.fundoInteracao.setVisible(false);
@@ -346,8 +394,7 @@ class hub extends Phaser.Scene {
           this.interacaoMinigame.play();
           this.passos.stop();
           this.minigameAtual = 3;
-          game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
-          game.scene.sleep("hub");
+          this.transicao("apoioDia1", true, true, true,)
         }
       }
     });
@@ -375,10 +422,15 @@ class hub extends Phaser.Scene {
     if (
       !this.physics.overlap(this.player, this.colisaoMinigame1) &&
       !this.physics.overlap(this.player, this.colisaoMinigame2) &&
-      !this.physics.overlap(this.player, this.colisaoMinigame3)
+      !this.physics.overlap(this.player, this.colisaoMinigame3) &&
+      !this.physics.overlap(this.player, this.colisaoApoioGeral)
     ) {
       this.textoInteracao.setVisible(false); // Deixa o aviso invisível quando o player não estiver próximo a algum minigame
       this.fundoInteracao.setVisible(false);
+    }
+
+    if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
+      this.avisoApoioGeral.setVisible(false);
     }
 
     if (
@@ -386,103 +438,130 @@ class hub extends Phaser.Scene {
       minigame2Jogado === true &&
       minigame3Jogado === true
     ) {
-      this.passos.stop();
-      this.scene.stop("hub");
-      this.minigameAtual = 10;
-      this.interacaoMinigame.play();
-      game.scene.start("apoioDia1", { minigameAtual: this.minigameAtual });
+      
+      if (!transicionando && !this.fimDoDia) {
+        this.fimDoDia = true
+        this.time.delayedCall(1500, () => {
+          this.passos.stop();
+          this.minigameAtual = 10;
+          this.interacaoMinigame.play();
+          this.transicao("apoioDia1", true, true, true)
+        });
+      }
     }
 
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
+    if (!transicionando) {
+      if (
+        (this.teclado.left.isDown || this.A.isDown) &&
+        (this.teclado.up.isDown || this.W.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-210);
+        this.player.setVelocityY(-210);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (
+        (this.teclado.left.isDown || this.A.isDown) &&
+        (this.teclado.down.isDown || this.S.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-210);
+        this.player.setVelocityY(210);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (
+        (this.teclado.right.isDown || this.D.isDown) &&
+        (this.teclado.up.isDown || this.W.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(210);
+        this.player.setVelocityY(-210);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (
+        (this.teclado.right.isDown || this.D.isDown) &&
+        (this.teclado.down.isDown || this.S.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(210);
+        this.player.setVelocityY(210);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (this.teclado.left.isDown || this.A.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-300);
+        this.player.setVelocityY(0);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (this.teclado.right.isDown || this.D.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(300);
+        this.player.setVelocityY(0);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (this.teclado.up.isDown || this.W.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(-300);
+        this.player.anims.play("movimentoCima", true);
+        this.playerDirecao = "cima";
+      } else if (this.teclado.down.isDown || this.S.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(300);
+        this.player.anims.play("movimentoBaixo", true);
+        this.playerDirecao = "baixo";
+      }
+      //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
+      else {
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(0);
+        if (this.andando) {
+          this.passos.stop();
+        }
+        this.andando = false;
 
-    if (
-      (this.teclado.left.isDown || this.A.isDown) &&
-      (this.teclado.up.isDown || this.W.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
+        //vê a direção que o player estava virado e toca a animação parado correspondente
+        if (this.playerDirecao === "cima") {
+          this.player.anims.play("movimentoParadoCima", true);
+        } else if (this.playerDirecao === "baixo") {
+          this.player.anims.play("movimentoParadoBaixo", true);
+        } else if (this.playerDirecao === "direita") {
+          this.player.anims.play("movimentoParadoDireita", true);
+        } else if (this.playerDirecao === "esquerda") {
+          this.player.anims.play("movimentoParadoEsquerda", true);
+        } else {
+          // define a animação parado default como a para baixo
+          this.player.anims.play("movimentoParadoBaixo", true);
+        }
       }
-      this.andando = true;
-      this.player.setVelocityX(-210);
-      this.player.setVelocityY(-210);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (
-      (this.teclado.left.isDown || this.A.isDown) &&
-      (this.teclado.down.isDown || this.S.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(-210);
-      this.player.setVelocityY(210);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (
-      (this.teclado.right.isDown || this.D.isDown) &&
-      (this.teclado.up.isDown || this.W.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(210);
-      this.player.setVelocityY(-210);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (
-      (this.teclado.right.isDown || this.D.isDown) &&
-      (this.teclado.down.isDown || this.S.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(210);
-      this.player.setVelocityY(210);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (this.teclado.left.isDown || this.A.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(-300);
-      this.player.setVelocityY(0);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown || this.D.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(300);
-      this.player.setVelocityY(0);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (this.teclado.up.isDown || this.W.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(0);
-      this.player.setVelocityY(-300);
-      this.player.anims.play("movimentoCima", true);
-      this.playerDirecao = "cima";
-    } else if (this.teclado.down.isDown || this.S.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(0);
-      this.player.setVelocityY(300);
-      this.player.anims.play("movimentoBaixo", true);
-      this.playerDirecao = "baixo";
-    }
-    //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
-    else {
+    } else { // código repetido por que ocorre em situações diferentes mas fazem a mesma coisa
       this.player.setVelocityX(0);
       this.player.setVelocityY(0);
       if (this.andando) {

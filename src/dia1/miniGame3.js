@@ -1,4 +1,4 @@
-class miniGame3 extends Phaser.Scene {
+class miniGame3 extends baseCena {
   constructor() {
     super({ key: "miniGame3" });
 
@@ -26,7 +26,7 @@ class miniGame3 extends Phaser.Scene {
   }
 
   create() {
-    this.cameras.main.setBackgroundColor("#195AB4");
+    this.add.rectangle(400, 300, 800, 600, 0x195AB4)
 
     //Cria o som de fundo utilizado
     this.somFundo = this.sound.add("somFundo", { loop: true });
@@ -277,7 +277,7 @@ class miniGame3 extends Phaser.Scene {
   }
 }
 
-class fimDoMinigame3 extends Phaser.Scene {
+class fimDoMinigame3 extends baseCena {
   constructor() {
     super({ key: "fimDoMinigame3" });
   }
@@ -346,12 +346,13 @@ class fimDoMinigame3 extends Phaser.Scene {
     this.voltarAoMapaM3.anims.play("voltarAoMapaM3", true);
 
     this.voltarAoMapaM3.on("pointerdown", () => {
-      this.musicaFundo.stop();
-      this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
-      minigame3Jogado = true;
-      this.scene.wake("hub");
-      musicaHub.resume();
-      this.scene.stop("fimDoMinigame3");
+      if (!transicionando) {
+        this.musicaFundo.stop();
+        this.cliqueSom.play(); // Reproduz o som de clique ao clicar no botão Voltar
+        minigame3Jogado = true;
+        this.transicao('hub', false, false, true, 200,);
+        musicaHub.resume();
+      }
     });
   }
 }

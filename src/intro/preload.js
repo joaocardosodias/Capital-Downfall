@@ -15,6 +15,17 @@ class preload extends Phaser.Scene {
     caixaProgresso.fillStyle(0x222222, 0.8);
     caixaProgresso.fillRect(240, 270, 320, 50);
 
+    let textoLoading = this.make.text({
+      x: 400,
+      y: 230,
+      text: "Carregando...",
+      style: {
+        font: "28px pixelArt",
+        fill: "#ffffff",
+      },
+    });
+    textoLoading.setOrigin(0.5, 0.5);
+
     //  Atualiza ao vivo a barra de progresso
     this.load.on("progress", function (value) {
       barraProgresso.clear();
@@ -24,12 +35,22 @@ class preload extends Phaser.Scene {
 
     //  Quando o jogo termina de carregar, a barra é destruída
     this.load.on("complete", () => {
+      textoLoading.setText("Carregado!")
       let iniciar = this.add.image(400, 380, "botaoComecar").setInteractive();
       iniciar.on("pointerdown", () => {
         barraProgresso.destroy();
         caixaProgresso.destroy();
+        textoLoading.destroy();
         this.scene.stop("preload");
         this.scene.start("menuInicial");
+      });
+
+      this.selecao = this.add.image(400, 380, "selecao").setVisible(false).setDepth(100);
+      iniciar.on("pointerover", () => {
+        this.selecao.setVisible(true);
+      });
+      iniciar.on("pointerout", () => {
+        this.selecao.setVisible(false);
       });
     });
 
@@ -68,6 +89,15 @@ class preload extends Phaser.Scene {
     this.load.audio("caiu", "src/assets/dia2/animacao/caiu.wav");
 
     //Preload das imagens utilizadas:
+
+    //Assets da cena base
+
+    this.load.spritesheet(
+      "notificacao",
+      "src/assets/materiais_apoio/notificacao.png",
+      { frameWidth: 32, frameHeight: 64 }
+    );
+    this.load.image("tablet", "src/assets/materiais_apoio/tablet.png");
 
     //Assets da Tela Inicial
 
@@ -128,6 +158,11 @@ class preload extends Phaser.Scene {
 
     //Assets da Hub 1
 
+    this.load.image("chefe", "src/assets/hub/chefe.png");
+    this.load.spritesheet("balaoFala", "src/assets/hub/balaoFala.png", {
+      frameWidth: 149,
+      frameHeight: 60,
+    });
     this.load.image("tiles", "src/assets/hub/tileset.png");
     this.load.image("player", "src/assets/players/player.png");
     this.load.tilemapTiledJSON("hub", "src/assets/hub/tilemap.json");
@@ -157,12 +192,54 @@ class preload extends Phaser.Scene {
       { frameWidth: 32, frameHeight: 64 }
     );
 
+    //Assets do Apoio Geral
+
+    this.load.image(
+      "imailFundoGeral",
+      "src/assets/materiais_apoio/SlickGeral.png"
+    );
+
+    for (let i = 1; i <= 6; i++) {
+      this.load.image(
+        "botaoMinigame" + i,
+        "src/assets/materiais_apoio/botaoMinigame" + i + ".png"
+      );
+      this.load.image(
+        "botaoMinigame" + i + "Selecionado",
+        "src/assets/materiais_apoio/botaoMinigame" + i + "Selecionado.png"
+      );
+    }
+
+    this.load.image(
+      "botaoListaTermos",
+      "src/assets/materiais_apoio/botaoListaTermos.png"
+    );
+
+    this.load.image(
+      "botaoProximo",
+      "src/assets/materiais_apoio/botaoProximo.png"
+    );
+
+    this.load.image(
+      "botaoAnterior",
+      "src/assets/materiais_apoio/botaoAnterior.png"
+    );
+
+    this.load.image(
+      "botaoDesistir",
+      "src/assets/materiais_apoio/botaoDesistir.png"
+    );
+
     //Assets do Apoio do Dia 1
 
     this.load.image("imailFundo", "src/assets/materiais_apoio/Slick.png");
     this.load.image(
       "imailFundoCelebracao",
       "src/assets/materiais_apoio/SlickCelebracao.png"
+    );
+    this.load.image(
+      "imailFundoGeral",
+      "src/assets/materiais_apoio/SlickGeral.png"
     );
     this.load.image(
       "botaoProximo",
@@ -177,9 +254,67 @@ class preload extends Phaser.Scene {
       "src/assets/materiais_apoio/botaoDesistir.png"
     );
     this.load.image(
+      "botaoDesistirApoioGeral",
+      "src/assets/materiais_apoio/botaoDesistirApoioGeral.png"
+    );
+    this.load.image(
       "botaoComecar",
       "src/assets/materiais_apoio/botaoComecar.png"
     );
+    this.load.image(
+      "botaoMinigame1",
+      "src/assets/materiais_apoio/botaoMinigame1.png"
+    );
+    this.load.image(
+      "botaoMinigame1Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame1Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame2",
+      "src/assets/materiais_apoio/botaoMinigame2.png"
+    );
+    this.load.image(
+      "botaoMinigame2Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame2Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame3",
+      "src/assets/materiais_apoio/botaoMinigame3.png"
+    );
+    this.load.image(
+      "botaoMinigame3Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame3Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame4",
+      "src/assets/materiais_apoio/botaoMinigame4.png"
+    );
+    this.load.image(
+      "botaoMinigame4Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame4Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame5",
+      "src/assets/materiais_apoio/botaoMinigame5.png"
+    );
+    this.load.image(
+      "botaoMinigame5Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame5Selecionado.png"
+    );
+    this.load.image(
+      "botaoMinigame6",
+      "src/assets/materiais_apoio/botaoMinigame6.png"
+    );
+    this.load.image(
+      "botaoMinigame6Selecionado",
+      "src/assets/materiais_apoio/botaoMinigame6Selecionado.png"
+    );
+
+    this.load.image(
+      "botaoListaTermos",
+      "src/assets/materiais_apoio/botaoListaTermos.png"
+    );
+
     this.load.image("selecao", "src/assets/materiais_apoio/selecao.png");
     this.load.image(
       "selecaoDesistir",
@@ -310,8 +445,12 @@ class preload extends Phaser.Scene {
       "jornalSemCrescimento",
       "src/assets/telas_pontuacao/jornalSemCrescimento.png"
     );
-    this.load.image("continuar", "src/assets/telas_pontuacao/continuar.png");
-    this.load.image("gameOver", "src/assets/telas_pontuacao/gameOver.png");
+    this.load.spritesheet("continuar", "src/assets/telas_pontuacao/continuarSheet.png",
+      { frameWidth: 172, frameHeight: 60 }
+    );
+    this.load.spritesheet("gameOver", "src/assets/telas_pontuacao/gameOverSheet.png",
+      { frameWidth: 172, frameHeight: 60 }
+    );
 
     //Assets do Minigame 4
 
@@ -469,10 +608,30 @@ class preload extends Phaser.Scene {
       "src/assets/dia2/salaDeGuerra/botaoFinal.png"
     );
     // Assets criados por brullov, disponível em: https://brullov.itch.io/fire-animation
-    this.load.spritesheet("fogo1", "src/assets/dia2/salaDeGuerra/burning_loop_1.png", { frameWidth: 64, frameHeight: 92 });
-    this.load.spritesheet("fogo2", "src/assets/dia2/salaDeGuerra/burning_loop_2.png", { frameWidth: 48, frameHeight: 72 });
-    this.load.spritesheet("fogo3", "src/assets/dia2/salaDeGuerra/burning_loop_3.png", { frameWidth: 32, frameHeight: 96 });
-    this.load.spritesheet("fogo4", "src/assets/dia2/salaDeGuerra/burning_loop_4.png", { frameWidth: 20, frameHeight: 80 });
-    this.load.spritesheet("fogo5", "src/assets/dia2/salaDeGuerra/burning_loop_5.png", { frameWidth: 16, frameHeight: 32 });
+    this.load.spritesheet(
+      "fogo1",
+      "src/assets/dia2/salaDeGuerra/burning_loop_1.png",
+      { frameWidth: 64, frameHeight: 92 }
+    );
+    this.load.spritesheet(
+      "fogo2",
+      "src/assets/dia2/salaDeGuerra/burning_loop_2.png",
+      { frameWidth: 48, frameHeight: 72 }
+    );
+    this.load.spritesheet(
+      "fogo3",
+      "src/assets/dia2/salaDeGuerra/burning_loop_3.png",
+      { frameWidth: 32, frameHeight: 96 }
+    );
+    this.load.spritesheet(
+      "fogo4",
+      "src/assets/dia2/salaDeGuerra/burning_loop_4.png",
+      { frameWidth: 20, frameHeight: 80 }
+    );
+    this.load.spritesheet(
+      "fogo5",
+      "src/assets/dia2/salaDeGuerra/burning_loop_5.png",
+      { frameWidth: 16, frameHeight: 32 }
+    );
   }
 }

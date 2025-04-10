@@ -18,7 +18,7 @@ let musicaIntro;
 
 //Cria a cena do menu inicial do jogo
 
-class menuInicial extends Phaser.Scene {
+class menuInicial extends baseCena {
   constructor() {
     super("menuInicial");
     this.clique;
@@ -72,15 +72,39 @@ class menuInicial extends Phaser.Scene {
       .setInteractive()
       .setScale(1);
 
+    // Adiciona a animação de pulsação do botão de iniciar
+
+      this.tweens.add({
+        targets: botaoIniciar,
+        scale: 1.2,
+        duration: 1000,
+        yoyo: true,
+        repeat: -1,
+      });
+
     // Verifica se o botão de iniciar foi clicado
 
     botaoIniciar.on("pointerdown", () => {
-      // Caso ele seja, o jogo para a cena atual e passa para a próxima
+      if (!transicionando) {
+        transicionando = true;
+        this.clique.play();
 
-      this.clique.play();
-      game.scene.stop("menuInicial");
-      game.scene.start("contratoInicial");
+        // Caso ele seja, o jogo para a cena atual e passa para a próxima
+        this.telaPreta = this.add
+          .rectangle(400, 300, 800, 600, 0x000000)
+          .setAlpha(0);
+
+        this.tweens.add({
+          targets: this.telaPreta,
+          alpha: 1,
+          duration: 2000,
+          onComplete: () => {
+            this.time.delayedCall(500, () => {
+              this.transicao("contratoInicial", true, false);
+            });
+          },
+        });
+      }
     });
   }
-  update() {}
 }
