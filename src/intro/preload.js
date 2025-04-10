@@ -586,6 +586,8 @@ class preload extends Phaser.Scene {
     this.load.image("jornal", "src/assets/dia2/animacao/jornal.png");
     this.load.image("mesa", "src/assets/dia2/animacao/mesa.png");
     this.load.image("fundoAnimacao", "src/assets/dia2/animacao/fundo.png");
+    this.load.image("posicaoFinal", "src/assets/dia2/animacao/posicaoFinal.png");
+    this.load.image("proximaTela", "src/assets/dia2/animacao/proximaTela.png");
 
     //Assets da Hub Final
 
