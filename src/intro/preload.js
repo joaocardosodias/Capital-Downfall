@@ -99,7 +99,7 @@ class preload extends Phaser.Scene {
     );
     this.load.image("tablet", "src/assets/materiais_apoio/tablet.png");
 
-    //Assets da Tela Inicial
+    //Assets da Tela Inicial e Tela de Créditos
 
     this.load.spritesheet("menu", "src/assets/intro/menuInicial.png", {
       frameWidth: 800,
@@ -107,6 +107,10 @@ class preload extends Phaser.Scene {
     });
 
     this.load.image("botaoIniciar", "src/assets/intro/botaoIniciar.png");
+    this.load.image("botaoCreditos", "src/assets/intro/botaoCreditos.png");
+
+    this.load.image("fundoEspaco", "src/assets/creditos_favicon/fundoEspaco.png")
+    this.load.image("logoInteli", "src/assets/creditos_favicon/inteli.png")
 
     //Assets do Contrato Inicial
 

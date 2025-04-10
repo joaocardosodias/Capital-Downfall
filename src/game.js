@@ -63,7 +63,7 @@ document.fonts.add(fontePixelArt);
 
 const fontePixelArtNegrito = new FontFace(
   "pixelArtNegrito",
-  "url(src/assets/fontes/fontePixelArt.ttf)"
+  "url(src/assets/fontes/fontePixelArtNegrito.ttf)"
 );
 fontePixelArtNegrito.load();
 document.fonts.add(fontePixelArtNegrito);

@@ -179,7 +179,7 @@ class hub2 extends baseCena {
     this.textoInteracao = this.add
       .text(0, 0, "Aperte ESPAÇO\npara interagir", {
         fontSize: "16px",
-        fontFamily: "pixelArtNegrito",
+        fontFamily: "pixelArt",
         fill: "#fff",
         align: "center",
       })

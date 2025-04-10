@@ -347,7 +347,7 @@ class salaDeGuerra extends baseCena {
       150,
       this.questions[this.perguntaAtual].text,
       {
-        font: "24px pixelArtNegrito",
+        font: "24px pixelArt",
         fill: "#fff",
         align: "center",
       }
