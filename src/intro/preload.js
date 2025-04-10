@@ -77,6 +77,10 @@ class preload extends Phaser.Scene {
     });
 
     this.load.image("botaoIniciar", "src/assets/intro/botaoIniciar.png");
+    this.load.image(
+      "botaoCreditos",
+      "src/assets/dia2/salaDeGuerra/botaoCreditos.png"
+    );
 
     //Assets do Contrato Inicial
 

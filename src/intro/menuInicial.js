@@ -23,7 +23,16 @@ class menuInicial extends Phaser.Scene {
     super("menuInicial");
     this.clique;
   }
-
+preload() {
+  this.load.image(
+    "creditos",
+    "src/assets/dia2/salaDeGuerra/creditos.png"
+  );
+  this.load.image(
+    "botaoAnterior",
+    "src/assets/materiais_apoio/botaoAnterior.png"
+  );
+}
   create() {
     // Cria o sprite da tela inicial
 
@@ -81,6 +90,34 @@ class menuInicial extends Phaser.Scene {
       game.scene.stop("menuInicial");
       game.scene.start("contratoInicial");
     });
-  }
-  update() {}
+  
+    this.botaoCreditos = this.add
+  .image(675, 470, "botaoCreditos")
+  .setScale(0.4)
+  .setInteractive();
+
+this.botaoCreditos.on("pointerdown", () => {
+  this.clique.play();
+  this.time.delayedCall(25000, () => {
+    window.location.reload();
+  });
+  // Adiciona a imagem dos créditos
+  this.creditosImagem = this.add.image(400, 300, "creditos").setScale(0.93);
+
+  // Adiciona o botão "Anterior" após 25 segundos
+  
+    this.botaoAnterior = this.add
+      .image(100, 110, "botaoAnterior")
+      .setScale(0.5)
+      .setInteractive();
+
+    this.botaoAnterior.on("pointerdown", () => {
+      this.clique.play();
+      this.creditosImagem.destroy();
+      this.botaoAnterior.destroy();
+    });
+  });
+};
+
+update() {}
 }
