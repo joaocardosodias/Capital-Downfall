@@ -19,7 +19,11 @@ class finalSalaDeGuerra extends baseCena {
       "cenaGameWin",
       "src/assets/dia2/salaDeGuerra/cenaGameWin.png"
     );
-
+    this.load.image(
+      "creditos",
+      "src/assets/dia2/salaDeGuerra/creditos.png"
+    );
+   
     this.load.audio("somAcerto", "src/assets/sounds/beepAcerto.mp3");
     this.load.audio("somErro", "src/assets/sounds/beepErro.mp3");
     this.load.audio("clique", "src/assets/sounds/clique.mp3");
@@ -48,7 +52,10 @@ class finalSalaDeGuerra extends baseCena {
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
         this.clique.play();
-        window.location.reload();
+        this.add.image(400, 300, "creditos").setScale(0.93);
+        this.time.delayedCall(25000, () => {
+          window.location.reload();
+        });
       });
     }
   }
