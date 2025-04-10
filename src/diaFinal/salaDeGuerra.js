@@ -16,8 +16,8 @@ class salaDeGuerra extends baseCena {
       7: "A",
       8: "A",
       9: "C",
-      10: "A",
-      11: "A",
+      10: "C",
+      11: "C",
       12: "B",
     };
 
@@ -104,21 +104,21 @@ class salaDeGuerra extends baseCena {
       },
       // Mini game 5
       {
-        text: "O que é a Taxa Interna de Retorno (TIR) em um contexto financeiro?",
+        text: "O que caracteriza um fundo de investimento como 'fechado'?",
         options: [
-          "A) Indicador que mede a variação do índice Bovespa ao longo do tempo.",
-          "B) Estratégia de proteção contra riscos financeiros usando derivativos.",
-          "C) Taxa que iguala as entradas e saídas de caixa de um investimento, indicando sua rentabilidade.",
-          "D) Prazo de liquidação financeira de um ativo após a venda.",
+            "A) Permite resgates diários a qualquer momento.",
+            "B) É exclusivo para investidores estrangeiros.",
+            "C) Não permite resgates antes do prazo estabelecido.",
+            "D) Tem isenção fiscal garantida por lei.",
         ],
       },
       {
-        text: "O que é um Swap no mercado financeiro?",
+        text: "Um investidor teve um rendimento de R$ 1.200,00 em um fundo de ações. Qual será o imposto de renda devido no resgate (15%)?",
         options: [
-          "A) Um contrato derivativo em que duas partes trocam fluxos financeiros baseados em diferentes índices.",
-          "B) Um fundo que investe exclusivamente em ações da B3.",
-          "C) Uma estratégia de hedge para garantir rentabilidade fixa em ativos.",
-          "D) Um fundo de private equity que adquire participação acionária em empresas privadas.",
+          "A) R$ 120,00",
+          "B) R$ 180,00",
+          "C) R$ 150,00",
+          "D) R$ 100,00",
         ],
       },
       // Mini game 6
