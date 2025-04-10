@@ -23,7 +23,16 @@ class menuInicial extends baseCena {
     super("menuInicial");
     this.clique;
   }
-
+preload() {
+  this.load.image(
+    "creditos",
+    "src/assets/dia2/salaDeGuerra/creditos.png"
+  );
+  this.load.image(
+    "botaoAnterior",
+    "src/assets/materiais_apoio/botaoAnterior.png"
+  );
+}
   create() {
     // Cria o sprite da tela inicial
 
@@ -200,3 +209,5 @@ class menuInicial extends baseCena {
     });
   }
 }
+
+

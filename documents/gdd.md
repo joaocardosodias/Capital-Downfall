@@ -1843,9 +1843,11 @@ A última _Sprint_ ficou marcada pela revisão geral do jogo, além de diversos 
 #
 
 <div align="center">
-<p> Figura x: Tela de carregamento</p>
+<p> Figura 68: Tela de carregamento</p>
 <img src="../assets/gdd_4.5/telaCarregamento.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1857,9 +1859,11 @@ Ademais, também trouxemos diversos refinamentos para a experiência do usuário
 #
 
 <div align="center">
-<p> Figura x: Contextualização da sala de guerra</p>
+<p> Figura 69: Contextualização da sala de guerra</p>
 <img src="../assets/gdd_4.5/apoioMiniboss.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1869,15 +1873,19 @@ Inserimos um _NPC_ na _hub_, servindo como um indicador visual do jogador para o
 #
 
 <div align="center">
-<p> Figura x: Adição da NPC para a hub</p>
+<p> Figura 70: Adição da NPC para a hub</p>
 <img src="../assets/gdd_4.5/telaNPC.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 <div align="center">
-<p> Figura x: Código referente à NPC</p>
+<p> Figura 71: Código referente à NPC</p>
 <img src="../assets/gdd_4.5/codigoNPC.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1887,15 +1895,19 @@ Além disso, implementamos uma cena ao final da Sala de Guerra, indicando ao jog
 #
 
 <div align="center">
-<p> Figura x: Exemplo da tela de fim de jogo</p>
+<p> Figura 71: Exemplo da tela de fim de jogo</p>
 <img src="../assets/gdd_4.5/cenaGameWin.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 <div align="center">
-<p> Figura x: Tela de créditos</p>
+<p> Figura 72: Tela de créditos</p>
 <img src="../assets/gdd_4.5/telaCréditos.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1905,15 +1917,19 @@ A alteração mais significativa realizada nessa _Sprint_ foi a adição de uma 
 #
 
 <div align="center">
-<p> Figura x: Exemplo da animação</p>
+<p> Figura 73: Exemplo da animação</p>
 <img src="../assets/gdd_4.5/telaAnimacao.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 <div align="center">
-<p> Figura x: Parte do código referente à animação</p>
+<p> Figura 74: Parte do código referente à animação</p>
 <img src="../assets/gdd_4.5/codigoAnimacao.png">
-<p> Produção autoral</p>
+  <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1925,9 +1941,11 @@ Daqueles que puderam ser implementados, estão: a alteração do botão "Voltar"
 #
 
 <div align="center">
-<p> Figura x: Exemplo do novo botão: Voltar</p>
+<p> Figura 75: Exemplo do novo botão: Voltar</p>
 <img src="../assets/gdd_4.5/botaoDesistir.png">
-<p> Produção autoral</p>
+ <p style="margin-top: 0.3em; font-size: 0.85em; font-style: italic;">
+    Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.
+  </p>
 </div>
 
 #
@@ -1943,8 +1961,8 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 
 | número | pré-condição                                                                                                                                                                                                                                                                  | descrição do teste                                                                                                        | pós-condição                                                                                                                                                                                                                                    |
 | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1      | entrar no _link_ do jogo                                                                                                                                                                                                                                                      | apertar o botão: jogar                                                                                                    | o jogo deve passar para uma cena explicando os controles básicos                                                                                                                                                                                |
-| 2      | posicionar o personagem em em frente a um objeto que ainda não foi interagido, demarcado por um ponto de exclamação                                                                                                                                                           | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                           | a explicação do _minigame_ deverá aparecer                                                                                                                                                                                                      |
+| 1      | entrar no _link_ do jogo                                                                                                                                                                                                                                                      | apertar o botão: "Começar!"                                                                                                  | o jogo deve passar para uma cena contendo o menu inicial do jogo                                                                                                                                                   |
+| 2      | posicionar o personagem em frente a um objeto que ainda não foi interagido, demarcado por um ponto de exclamação                                                                                                                                                           | enquanto o personagem estiver colidindo com o objeto, apertar a barra de espaço                                           | a explicação do _minigame_ deverá aparecer                                                                                                                                                                                                      |
 | 3      | clicar no botão "começar" do material de apoio do minigame 1, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar o _card_ que aparecer na parte central da tela para uma das gavetas, localizadas na esquerda e na direita        | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um novo card deverá entrar na tela                                                                                                           |
 | 4      | clicar no botão "começar" do material de apoio do minigame 2, acessado conforme o caso de teste #2                                                                                                                                                                            | clicar em uma das quatro opções de resposta, localizadas na parte inferior do _card_ na tela                              | o _card_ deverá sair da tela, a pontuação aumentar/diminuir (dependendo da precisão da resposta) e um dos _cards_ laterais deve ocupar a posição do _card_ antigo                                                                               |
 | 5      | clicar no botão "começar" do material de apoio do minigame 3, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar qualquer um dos _cards_ presentes na parte superior da tela para a linha do tempo, localizada na parte inferior  | o _card_ deverá assumir a posição na linha do tempo, não permitindo que outro _card_ seja arrastado para a mesma posição                                                                                                                        |
@@ -1952,17 +1970,20 @@ Os seguintes casos de teste abordam o funcionamento dos _minigames_ e da _hub_ r
 | 7      | clicar no botão "começar" do material de apoio do minigame 3, acessado conforme o caso de teste #2                                                                                                                                                                            | arrastar um _card_ presente na parte superior da tela para cima de outro _card_ presente na parte superior, sobrepondo-o  | o jogo deverá impedir que os _cards_ se sobreponham, movimentando o _card_ lateralmente                                                                                                                                                         |
 | 8      | executar todas as tarefas de um _minigame_, chegando na tela de pontuação. A tela de pontuação apresenta a pontuação do jogador no _minigame_, a pontuação acumulada e um botão de voltar ao mapa                                                                             | clicar no botão: "Voltar ao mapa"                                                                                         | o jogo deverá retornar para a _hub_, mantendo a progressão da música, além do posicionamento anterior do jogador                                                                                                                                |
 | 9      | o caso de teste #2 e #8 já foram realizados                                                                                                                                                                                                                                   | quando o jogador chegar no objeto que foi interagido no caso de teste #2, apertar a barra de espaço                       | o jogo deverá impedir que o _minigame_ ocorra novamente, e o pop-up explicando o botão para apertar não deverá aparecer                                                                                                                         |
-| 10     | O botão "Novo Jogo" da cena do menu inicial foi clicado, e o botão "Começar" da cena seguinte foi clicado                                                                                                                                                                     | clicar e uma das quatro das opções de personagem jogáveis, e depois apertar o botão "Selecionar"                          | o personagem selecionado deverá aparecer nas cenas da hub do jogo, com as animações correspondentes a seleção do jogador                                                                                                                        |
+| 10     | O botão "Novo Jogo" da cena do menu inicial foi clicado, e o botão "começar" da cena seguinte foi clicado                                                                                                                                                                     | clicar e uma das quatro das opções de personagem jogáveis, e depois apertar o botão "Selecionar"                          | o personagem selecionado deverá aparecer nas cenas da hub do jogo, com as animações correspondentes a seleção do jogador                                                                                                                        |
 | 11     | clicar no botão "começar" do material de apoio do minigame 4, acessado conforme o caso de teste #2, e clicar em uma das quatro opções presentes na tela                                                                                                                       | selecionar uma cor do lado esquerdo, e clicar e arrastar com o botão esquerdo na área branca da tela                      | o rastro do mouse deverá aparecer na cor escolhida                                                                                                                                                                                              |
 | 12     | clicar no botão "começar" do material de apoio do minigame 5, acessado conforme o caso de teste #2. Depois disso, conectar um _card_ do lado direito com uma definição presente no lado direito. A conexão é realizada ao clicar no _card_ e arrastar a linha até a definição | arrastar a linha de um _card_ vazio para a definição que já foi conectada                                                 | o jogo deverá impedir que a linha se conecte                                                                                                                                                                                                    |
 | 13     | clicar no botão "começar" do material de apoio do minigame 6, acessado conforme o caso de teste #2                                                                                                                                                                            | apertar o botão verde ou vermelho, presente na parte inferior da tela                                                     | o jogo deverá atualizar a pontuação no canto superior da tela, conforme a precisão da resposta                                                                                                                                                  |
 | 14     | iniciar o material de apoio de algum minigame, conforme o caso de teste #2                                                                                                                                                                                                    | clicar no botão de seguir adiante, e depois clicar no botão de voltar atrás, para todas as páginas do material            | o jogo deverá transicionar as cenas avançando e retornando na explicação dos conceitos                                                                                                                                                          |
 | 15     | terminar os três _minigames_ presentes na _hub_ do dia 1, e clicar no botão "Começar" na tela que aparece em seguida                                                                                                                                                          | responder uma questão do _miniboss_, clicando em uma das alternativas apresentadas                                        | o jogo deverá apresentar uma tela de _feedback_ da resposta, conforme a precisão da seleção                                                                                                                                                     |
-| 16     | responder todas as perguntas do _miniboss_ do dia 1                                                                                                                                                                                                                           | clicar no botão "Voltar ao mapa"                                                                                          | a capa de um jornal deverá aparecer na tela, conforme a pontuação do jogador. Se ele tiver uma pontuação total inferior a -100 pontos, o botão de Game Over deverá aparecer. Caso tenha uma pontuação maior, o botão de Avançar deverá aparecer |
-| 17     | terminar o _miniboss_ com uma pontuação inferior a -100 pontos                                                                                                                                                                                                                | clicar no botão de Game Over na tela do jornal                                                                            | o jogo deverá reiniciar a aba do navegador, trazendo o jogador de volta para o início                                                                                                                                                           |
-| 18     | terminar o _miniboss_ com uma pontuação superior a -100 pontos                                                                                                                                                                                                                | clicar no botão de Continuar na tela do jornal, e clicar no botão "começar" na tela de apoio seguinte                     | o jogo deverá transicionar para a _hub_ do dia 2, e a música de fundo deverá ser diferente da _hub_ do dia 1                                                                                                                                    |
+| 16     | responder todas as perguntas do _miniboss_ do dia 1                                                                                                                                                                                                                           | clicar no botão "Voltar ao mapa"                                                                                          | a capa de um jornal deverá aparecer na tela, conforme a pontuação do jogador. Se ele tiver uma pontuação total inferior a 700 pontos, o botão de Game Over deverá aparecer. Caso tenha uma pontuação maior, o botão de Avançar deverá aparecer |
+| 17     | terminar o _miniboss_ com uma pontuação inferior a 700 pontos                                                                                                                                                                                                                | clicar no botão de Game Over na tela do jornal                                                                            | o jogo deverá reiniciar a aba do navegador, trazendo o jogador de volta para o início                                                                                                                                                           |
+| 18     | terminar o _miniboss_ com uma pontuação superior a 700 pontos                                                                                                                                                                                                                | clicar no botão de Continuar na tela do jornal, e clicar no botão "começar" na tela de apoio seguinte                     | o jogo deverá transicionar para a _hub_ do dia 2, e a música de fundo deverá ser diferente da _hub_ do dia 1                                                                                                                                    |
 | 19     | o jogador estar localizado em uma das hubs do jogo                                                                                                                                                                                                                            | apertar as setinhas do teclado para movimentar o personagem                                                               | sons de passos deverão ser tocados, parando quando o jogador também parar de se movimentar                                                                                                                                                      |
-| 20     | o jogador acessar a Sala de Guerra, ao apertar a barra de espaço ao lado do objeto com o ponto de exclamação na hub da Sala de Guerra                                                                                                                                         | responder as perguntas presentes na tela, clicando em uma das respostas na parte inferior                                 | o jogo deverá validar a resposta, atualizando o placar de pontuação. Além disso, o _timer_ também deverá continuar, diminuindo o tempo                                                                                                          |
+| 20     |  o jogador estar localizado próximo ao NPC   |apertar a tecla de espaço    |                     o jogo deverá apresentar todos os conteúdos abordados no jogo em uma nova tela |
+| 21     | o jogador estar localizado próximo ao NPC   |apertar a tecla de espaço    |                              o jogo deverá apresentar todos os conteúdos abordados no jogo em uma nova tela
+| 22     | o jogador terminar o jogo   |clicar na tela no botão continuar , perdendo ou ganhando    |                              o jogo deverá trocar de tela  para uma de novo jogo
+| 23     | o jogador estar na tela de escolha dos personagens  |selecionar com o mouse qual personagem deseja utilizar e clicar na tela em um dos persogens     |                              o jogo deverá deixar o botão de selecionar chamando mais atenção para que o jogador clique nele
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
@@ -1990,9 +2011,8 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.2. Teste 2
-<sup>Quadro 6 - Playtest</sup>
 Informações  | Resposta
 --- | ---
 Teste realizado por | Renan
@@ -2015,7 +2035,7 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2024)
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025. </sup> <br>
 #### 5.2.1.3. Teste 3
 Informações  | Resposta
 --- | ---
@@ -2039,9 +2059,8 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.4. Teste 4
-<sup>Quadro 6 - Playtest</sup>
 Informações  | Resposta
 --- | ---
 Teste realizado por | Tatiane
@@ -2064,7 +2083,7 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2024)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.5. Teste 5
 
 Informações  | Resposta
@@ -2089,7 +2108,7 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.6. Teste 6
 
 Informações  | Resposta
@@ -2114,7 +2133,7 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.7. Teste 7
 
 Informações  | Resposta
@@ -2139,7 +2158,7 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.8. Teste 8
 
 Informações  | Resposta
@@ -2164,7 +2183,7 @@ A trilha sonora estava boa?|Sim
 As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 #### 5.2.1.9. Teste 9
 Informações  | Resposta
 --- | ---
@@ -2189,8 +2208,7 @@ As animações entre as telas estava fluída?|Sim
 Os botões da interface estão claros?|Sim
 
 
-<sup>Fonte: Material produzido pelos autores (2025)</sup> <br>
-
+<sup>Fonte: Grupo Level Zero, Turma 16 – Inteli, 2025.</sup> <br>
 
 
 ### 5.2.2 Melhorias
@@ -2222,11 +2240,50 @@ Com base no feedback dos testadores, implementamos as seguintes melhorias:
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-_Escreva de que formas a solução do jogo atingiu os objetivos descritos na seção 1 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral._
+O jogo desenvolvido atingiu com êxito os objetivos propostos na seção 1 deste documento: apresentar de forma lúdica e acessível os conceitos fundamentais da área de Análise de Fundos e auxiliar no onboarding de novos colaboradores do BTG, promovendo o engajamento com os conteúdos abordados.
 
-_Relacione os pontos de melhorias evidenciados nos testes com plano de ações para serem implementadas no jogo. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para futuros desenvolvimentos._
+A estrutura narrativa, aliada a uma mecânica interativa de minigames e desafios progressivos, proporcionou uma experiência imersiva e educativa. A ambientação do jogo em um contexto de crise global, a presença de personagens fictícios e a construção de fases temáticas contribuíram para reforçar o aprendizado, tornando-o mais leve e memorável.
 
-_Relacione também quaisquer ideias que o grupo tenha para melhorias futuras_
+Pontos fortes:
+- Clareza na apresentação dos conteúdos técnicos de forma gamificada;
+
+- Narrativa envolvente e coerente com a proposta do parceiro;
+
+- Variedade de mecânicas que ajudam a reforçar o aprendizado (minigames, explicações de resposta, feedbacks visuais);
+
+- Interface amigável e estética alinhada ao contexto corporativo.
+
+Durante os testes, alguns pontos de melhoria foram identificados:
+ 
+- Incluir um mapa interativo ou barra de progresso para que o jogador saiba em que ponto está e o que falta completar, pois faltou um sistema claro de progresso ao longo do jogo, o que dificultou o acompanhamento da jornada por parte dos usuários.
+
+- Otimizar o jogo para diferentes perfis de usuários, incluindo pessoas com baixa visão ou dificuldades motoras, aumentando a acessibilidade da nossa solução.
+
+## 6.1. Possibilidades de expansão:
+O grupo identificou a oportunidade de expandir o jogo para outras áreas do BTG Pactual além da Análise de Fundos. A estrutura modular do jogo permite a criação de novos mapas, fases e desafios temáticos voltados a diferentes frentes da instituição, como:
+
+- Área de Crédito;
+
+- Private Banking;
+
+- Mesa de Operações;
+
+- Compliance e Riscos;
+
+- Tecnologia (TI e Inovação).
+
+Essa expansão permitiria o uso da mesma plataforma como uma ferramenta de onboarding mais ampla e escalável, adaptada para diferentes perfis e trilhas de carreira dentro da organização. Além disso, ideias futuras incluem:
+
+- Sistema de pontuação com ranking interno entre novos analistas;
+
+- Integração com plataformas corporativas do BTG;
+
+- Versão mobile para acesso mais ágil;
+
+- Modo multiplayer para promover a colaboração entre os novos colaboradores.
+
+Essas melhorias e expansões tornam o jogo não apenas uma ferramenta pontual de integração, mas um recurso contínuo de aprendizado e engajamento institucional.
+
 
 # <a name="c7"></a>7. Referências (sprint 5)
 
@@ -2238,17 +2295,19 @@ ASANA. Análise SWOT/FOFA: o que é e como usá-la (com exemplos). 24 fev. 2025.
 
 BERWIG, Daniel. Valuation: análise de caso do Banco BTG Pactual S.A. 2023. Disponível em: https://lume.ufrgs.br/handle/10183/273883. Acesso em: 28 mar. 2025.
 
+BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
+
+BRULLOV. Fire animation - Pixel Art FX Sprites. Itch.io, 2019. Disponível em: https://brullov.itch.io/fire-animation. Acesso em: 8 abr. 2025.
+
 BTG PACTUAL. Negócio e Histórico, 2025. Disponível em: https://ri.btgpactual.com/sobre-o-banco/negocio-e-historico/#:~:text=O%20Banco%20BTG%20Pactual%20%C3%A9,internacional%20de%20investimentos%20e%20distribui%C3%A7%C3%A3o. Acesso em: 23 fev. 2025.
 
 BTG PACTUAL. Nosso DNA: Valores, [s.d.]. Disponível em: https://www.btgpactual.com/nosso-dna/valores. Acesso em: 28 fev. 2025.
 
-BRASIL. Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022: Resultados preliminares. Rio de Janeiro, 2022. Disponível em: https://www.ibge.gov.br. Acesso em: 24 mar. 2025.
-
 DEEP-FOLD. PixelSpace. GitHub, 2021. Disponível em: https://github.com/Deep-Fold/PixelSpace. Acesso em: 27 fev. 2025.
 
-BRULLOV. Fire animation - Pixel Art FX Sprites. Itch.io, 2019. Disponível em: https://brullov.itch.io/fire-animation. Acesso em: 8 abr. 2025.
-
 HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. Fundamentos de Física: Mecânica – Volume 1. 12. ed. Rio de Janeiro: LTC, 2023.
+
+LIMEZU. Modern Office. Disponível em: https://limezu.itch.io/. Acesso em: 09 abr. 2025.
 
 MAGRETTA, Joan. Entendendo Michael Porter: o guia essencial da competição e estratégia. Rio de Janeiro: Alta Books, 2019. 1 recurso online. ISBN 9788550805047. Disponível em: https://integrada.minhabiblioteca.com.br/books/9788550805047. Acesso em: 23 fev. 2025.
 
@@ -2258,15 +2317,13 @@ OSTERWALDER, Alexander et al. Value proposition design: How to create products a
 
 POLTERGEISTERS. Slightly Cuter Character Sprites. Nexus Mods, 2017. Disponível em: https://www.nexusmods.com/stardewvalley/mods/1437. Acesso em: 27 fev. 2025.
 
-PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva\*. Rio de Janeiro: Campus, 1998.
+PORTER, Michael E.; MONTGOMERY, Catherine. A busca da vantagem competitiva*. Rio de Janeiro: Campus, 1998.
 
 PROJECT MANAGEMENT INSTITUTE. A Guide to the Project Management Body of Knowledge (PMBOK® Guide). 6. ed. Newtown Square, PA: Project Management Institute, 2017.
 
 RIBEIRO, Luis Henrique de Oliveira; SODRÉ, Marina Fernandes; ALBUQUERQUE JUNIOR, Carlos Roberto Falcão de. A ascenção dos bancos digitais na era moderna: uma análise qualitativa através de ferramentas do planejamento estratégico. Brazilian Journal of Development, Curitiba, v. 8, n. 1, p. 4213-4226, jan. 2022.
 
 SEBRAE. Como determinar o público-alvo da sua empresa. Portal Sebrae, 8 maio 2023. Disponível em: https://sebrae.com.br/sites/PortalSebrae/artigos/como-determinar-o-publico-alvo-da-sua-empresa,fa1c7553c86c6810VgnVCM1000001b00320aRCRD. Acesso em: 28 mar. 2025.
-
-LIMEZU. Modern Office. Disponível em: https://limezu.itch.io/. Acesso em: 09 abr. 2025.
 
 # <a name="c8"></a>Anexos
 
