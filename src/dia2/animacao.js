@@ -1,4 +1,4 @@
-class movimento extends Phaser.Scene {
+class movimento extends baseCena {
   constructor() {
     super("movimento"); // Nome da cena
     // Declaração dos parâmetros usados para a animação
@@ -88,8 +88,36 @@ class movimento extends Phaser.Scene {
           1500,
           "Sine.easeInOut"
         ); // Movimenta a câmera até a posição do jornal
-        this.time.delayedCall(3000, () => this.scene.stop("movimento"));
-        this.time.delayedCall(3000, () => this.scene.start("apoioSalaDeGuerra"));
+        this.time.delayedCall(2000, () => {
+          this.posicaoFinal = this.add.image(400, 300, "posicaoFinal").setDepth(1)
+
+          this.cameras.main.setZoom(1).setScroll(0, 0)
+
+          this.transicao("apoioSalaDeGuerra", true, false, false)
+
+          this.proximaTela = this.add.image(1800, 300, "proximaTela").setDepth(10).setScale(0.75)
+
+          this.time.delayedCall(1230, () => {
+            this.tweens.add({ // Tablet vai para o centro da tela
+              targets: this.proximaTela,
+              x: 400,
+              y: 300,
+              duration: 1000,
+              ease: 'Power2',
+              onComplete: () => {
+
+                this.tweens.add({ // Tablet engloba toda a margem do jogo
+                  targets: this.proximaTela,
+                  x: 400,
+                  y: 300,
+                  scale: 1,
+                  duration: 700,
+                  ease: 'Power2',
+                });
+              }
+            });
+          });
+        });
       },
     });
   }

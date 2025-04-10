@@ -318,9 +318,25 @@ class hub2 extends baseCena {
       musicaMinigame4.stop();
       if (!transicionando && !this.fimDoDia2) {
         this.fimDoDia2 = true
-        this.time.delayedCall(1500, () => {
+        this.time.delayedCall(1000, () => {
           this.passos.stop();
-          this.transicao("finalDia2", true, true, true)
+          transicionando = true;
+
+          this.telaPreta = this.add
+            .rectangle(0, 0, 8000, 6000, 0x000000)
+            .setAlpha(0)
+            .setDepth(1000)
+            .setOrigin(0);
+
+          this.tweens.add({
+            targets: this.telaPreta,
+            alpha: 1,
+            duration: 2000,
+            onComplete: () => {
+              this.scene.stop("hub2")
+              this.scene.start("finalDia2")
+            },
+          });
         });
       }
     }
