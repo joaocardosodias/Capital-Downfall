@@ -99,7 +99,7 @@ class preload extends Phaser.Scene {
     );
     this.load.image("tablet", "src/assets/materiais_apoio/tablet.png");
 
-    //Assets da Tela Inicial
+    //Assets da Tela Inicial e Tela de Créditos
 
     this.load.spritesheet("menu", "src/assets/intro/menuInicial.png", {
       frameWidth: 800,
@@ -107,10 +107,13 @@ class preload extends Phaser.Scene {
     });
 
     this.load.image("botaoIniciar", "src/assets/intro/botaoIniciar.png");
-    this.load.image(
-      "botaoCreditos",
-      "src/assets/dia2/salaDeGuerra/botaoCreditos.png"
-    );
+
+    this.load.image("botaoCreditos", "src/assets/intro/botaoCreditos.png");
+
+    this.load.image("fundoEspaco", "src/assets/creditos_favicon/fundoEspaco.png")
+    this.load.image("logoInteli", "src/assets/creditos_favicon/inteli.png")
+    this.load.image("creditos", "src/assets/creditos_favicon/creditos.png")
+
 
     //Assets do Contrato Inicial
 
@@ -590,6 +593,8 @@ class preload extends Phaser.Scene {
     this.load.image("jornal", "src/assets/dia2/animacao/jornal.png");
     this.load.image("mesa", "src/assets/dia2/animacao/mesa.png");
     this.load.image("fundoAnimacao", "src/assets/dia2/animacao/fundo.png");
+    this.load.image("posicaoFinal", "src/assets/dia2/animacao/posicaoFinal.png");
+    this.load.image("proximaTela", "src/assets/dia2/animacao/proximaTela.png");
 
     //Assets da Hub Final
 

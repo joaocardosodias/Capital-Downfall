@@ -114,7 +114,7 @@ class hubFinal extends baseCena {
       .setDepth(3)
       .setVisible(false);
 
-      this.avisoApoioGeral.anims.play("fala");
+    this.avisoApoioGeral.anims.play("fala");
 
     //Adiciona os indicadores e inicia suas animações
     this.avisoBossFinal = this.add.sprite(400, 60, "avisoMinigame");
@@ -223,117 +223,125 @@ class hubFinal extends baseCena {
     if (!this.physics.overlap(this.player, this.colisaoApoioGeral)) {
       this.avisoApoioGeral.setVisible(false);
     }
-    
+
     /* Essa parte do código verifica se as setinhas foram pressionadas, tendo como consequência o movimento
     O movimento diagonal foi feito por meio da multiplicação das velocidades por (raiz de 2 / 2), que é aproximadamente igual a 0.7 */
+    if (!transicionando) {
+      if (
+        (this.teclado.left.isDown || this.A.isDown) &&
+        (this.teclado.up.isDown || this.W.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-210);
+        this.player.setVelocityY(-210);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (
+        (this.teclado.left.isDown || this.A.isDown) &&
+        (this.teclado.down.isDown || this.S.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-210);
+        this.player.setVelocityY(210);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (
+        (this.teclado.right.isDown || this.D.isDown) &&
+        (this.teclado.up.isDown || this.W.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(210);
+        this.player.setVelocityY(-210);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (
+        (this.teclado.right.isDown || this.D.isDown) &&
+        (this.teclado.down.isDown || this.S.isDown)
+      ) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(210);
+        this.player.setVelocityY(210);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (this.teclado.left.isDown || this.A.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(-300);
+        this.player.setVelocityY(0);
+        this.player.anims.play("movimentoEsquerda", true);
+        this.playerDirecao = "esquerda";
+      } else if (this.teclado.right.isDown || this.D.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(300);
+        this.player.setVelocityY(0);
+        this.player.anims.play("movimentoDireita", true);
+        this.playerDirecao = "direita";
+      } else if (this.teclado.up.isDown || this.W.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(-300);
+        this.player.anims.play("movimentoCima", true);
+        this.playerDirecao = "cima";
+      } else if (this.teclado.down.isDown || this.S.isDown) {
+        if (!this.andando) {
+          this.passos.play();
+        }
+        this.andando = true;
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(300);
+        this.player.anims.play("movimentoBaixo", true);
+        this.playerDirecao = "baixo";
+      }
+      //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
+      else {
+        this.player.setVelocityX(0);
+        this.player.setVelocityY(0);
+        if (this.andando) {
+          this.passos.stop();
+        }
+        this.andando = false;
 
-    if (
-      (this.teclado.left.isDown || this.A.isDown) &&
-      (this.teclado.up.isDown || this.W.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
+        //vê a direção que o player estava virado e toca a animação parado correspondente
+        if (this.playerDirecao === "cima") {
+          this.player.anims.play("movimentoParadoCima", true);
+        } else if (this.playerDirecao === "baixo") {
+          this.player.anims.play("movimentoParadoBaixo", true);
+        } else if (this.playerDirecao === "direita") {
+          this.player.anims.play("movimentoParadoDireita", true);
+        } else if (this.playerDirecao === "esquerda") {
+          this.player.anims.play("movimentoParadoEsquerda", true);
+        } else {
+          // define a animação parado default como a para baixo
+          this.player.anims.play("movimentoParadoBaixo", true);
+        }
       }
-      this.andando = true;
-      this.player.setVelocityX(-210);
-      this.player.setVelocityY(-210);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (
-      (this.teclado.left.isDown || this.A.isDown) &&
-      (this.teclado.down.isDown || this.S.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(-210);
-      this.player.setVelocityY(210);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (
-      (this.teclado.right.isDown || this.D.isDown) &&
-      (this.teclado.up.isDown || this.W.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(210);
-      this.player.setVelocityY(-210);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (
-      (this.teclado.right.isDown || this.D.isDown) &&
-      (this.teclado.down.isDown || this.S.isDown)
-    ) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(210);
-      this.player.setVelocityY(210);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (this.teclado.left.isDown || this.A.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(-300);
-      this.player.setVelocityY(0);
-      this.player.anims.play("movimentoEsquerda", true);
-      this.playerDirecao = "esquerda";
-    } else if (this.teclado.right.isDown || this.D.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(300);
-      this.player.setVelocityY(0);
-      this.player.anims.play("movimentoDireita", true);
-      this.playerDirecao = "direita";
-    } else if (this.teclado.up.isDown || this.W.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
+    } else {
       this.player.setVelocityX(0);
-      this.player.setVelocityY(-300);
-      this.player.anims.play("movimentoCima", true);
-      this.playerDirecao = "cima";
-    } else if (this.teclado.down.isDown || this.S.isDown) {
-      if (!this.andando) {
-        this.passos.play();
-      }
-      this.andando = true;
-      this.player.setVelocityX(0);
-      this.player.setVelocityY(300);
-      this.player.anims.play("movimentoBaixo", true);
-      this.playerDirecao = "baixo";
-    }
-    //Caso nenhuma seta esteja sendo pressionada, a velocidade do player será 0
-    else {
-      this.player.setVelocityX(0);
-      this.player.setVelocityY(0);
-      if (this.andando) {
-        this.passos.stop();
-      }
-      this.andando = false;
-
-      //vê a direção que o player estava virado e toca a animação parado correspondente
-      if (this.playerDirecao === "cima") {
-        this.player.anims.play("movimentoParadoCima", true);
-      } else if (this.playerDirecao === "baixo") {
-        this.player.anims.play("movimentoParadoBaixo", true);
-      } else if (this.playerDirecao === "direita") {
-        this.player.anims.play("movimentoParadoDireita", true);
-      } else if (this.playerDirecao === "esquerda") {
-        this.player.anims.play("movimentoParadoEsquerda", true);
-      } else {
-        // define a animação parado default como a para baixo
-        this.player.anims.play("movimentoParadoBaixo", true);
-      }
+        this.player.setVelocityY(0);
+        if (this.andando) {
+          this.passos.stop();
+        }
+        this.andando = false;
     }
   }
 }

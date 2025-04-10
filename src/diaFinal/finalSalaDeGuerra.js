@@ -52,8 +52,9 @@ class finalSalaDeGuerra extends baseCena {
         .setInteractive();
       this.botaoContinuar.on("pointerdown", () => {
         this.clique.play();
-        this.add.image(400, 300, "creditos").setScale(0.93);
-        this.time.delayedCall(25000, () => {
+        this.add.image(400, 300, "creditos").setOrigin(0.5).setDepth(9999);
+        this.time.delayedCall(15000, () => {
+
           window.location.reload();
         });
       });

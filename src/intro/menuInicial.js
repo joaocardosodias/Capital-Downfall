@@ -44,6 +44,12 @@ preload() {
 
     const iniciar = this.add.sprite(400, 300, "menu");
 
+    // Será usada para transição
+    this.telaPreta = this.add
+      .rectangle(400, 300, 800, 600, 0x000000)
+      .setAlpha(0)
+      .setDepth(10);
+
     //Variáveis do controle sobre os minigames
 
     minigame1Jogado = false;
@@ -83,13 +89,13 @@ preload() {
 
     // Adiciona a animação de pulsação do botão de iniciar
 
-      this.tweens.add({
-        targets: botaoIniciar,
-        scale: 1.2,
-        duration: 1000,
-        yoyo: true,
-        repeat: -1,
-      });
+    this.tweens.add({
+      targets: botaoIniciar,
+      scale: 1.2,
+      duration: 1000,
+      yoyo: true,
+      repeat: -1,
+    });
 
     // Verifica se o botão de iniciar foi clicado
 
@@ -99,10 +105,6 @@ preload() {
         this.clique.play();
 
         // Caso ele seja, o jogo para a cena atual e passa para a próxima
-        this.telaPreta = this.add
-          .rectangle(400, 300, 800, 600, 0x000000)
-          .setAlpha(0);
-
         this.tweens.add({
           targets: this.telaPreta,
           alpha: 1,
@@ -116,34 +118,96 @@ preload() {
       }
     });
 
- this.botaoCreditos = this.add
-  .image(675, 470, "botaoCreditos")
-  .setScale(0.4)
-  .setInteractive();
 
-this.botaoCreditos.on("pointerdown", () => {
-  this.clique.play();
-  this.time.delayedCall(25000, () => {
-    window.location.reload();
-  });
-  // Adiciona a imagem dos créditos
-  this.creditosImagem = this.add.image(400, 300, "creditos").setScale(0.93);
-
-  // Adiciona o botão "Anterior" após 25 segundos
-  
-    this.botaoAnterior = this.add
-      .image(100, 110, "botaoAnterior")
-      .setScale(0.5)
+    this.botaoCreditos = this.add
+      .image(675, 470, "botaoCreditos")
+      .setScale(1)
       .setInteractive();
 
-    this.botaoAnterior.on("pointerdown", () => {
-      this.clique.play();
-      this.creditosImagem.destroy();
-      this.botaoAnterior.destroy();
+    this.botaoCreditos.on("pointerdown", () => {
+      if (!transicionando) {
+        transicionando = true;
+        this.clique.play();
+
+        this.tweens.add({
+          targets: this.telaPreta,
+          alpha: 1,
+          duration: 1000,
+          onComplete: () => {
+
+            this.fundoEspaco = this.add.image(0, 0, "fundoEspaco").setOrigin(0).setScale(2);
+
+            this.retangulo = this.add.rectangle(0, 300, 450, 350, 0x324891).setOrigin(0, 0.5);
+            this.inteli = this.add.image(660, 500, "logoInteli");
+
+            this.botaoVoltar = this.add.image(30, 30, "botaoDesistir").setOrigin(0).setInteractive();
+            this.botaoVoltar.on("pointerdown", () => {
+              if (!transicionando) {
+                transicionando = true;
+                this.tweens.add({
+                  targets: this.telaPreta,
+                  alpha: 1,
+                  duration: 1000,
+                  onComplete: () => {
+                    this.fundoEspaco.destroy();
+                    this.retangulo.destroy();
+                    this.inteli.destroy();
+                    this.botaoVoltar.destroy();
+                    this.equipe.destroy();
+                    this.descricao.destroy();
+                    this.assetsExternos.destroy();
+                    this.tweens.add({
+                      targets: this.telaPreta,
+                      alpha: 0,
+                      duration: 1000,
+                      onComplete: () => {
+                        transicionando = false;
+                      },
+                    });
+                  }
+                });
+              }
+            });
+
+            this.equipe = this.add.text(70, 150, `Equipe de Desenvolvimento:
+
+ ×  Ana Jardim;
+ ×  Henrique da Rós;
+ ×  João Dias;
+ ×  Lucas Michel;
+ ×  Lucas Lopez;
+ ×  Nicole Zanin;
+ ×  Teodoro Neira.
+ `, {
+              fontFamily: "pixelArtNegrito",
+              fontSize: 20
+            });
+
+            this.descricao = this.add.text(500, 50, `O jogo "Capital Downfall" foi ideado, planejado e desenvolvido por alunos do Instituto de Tecnologia e Liderança (INTELI). O principal objetivo do projeto foi ajudar o famoso banco BTG pactual em seu processo de onboarding de novos analistas de fundos de investimentos - e aprender o máximo possível durante o processo!`, {
+              fontFamily: "pixelArtP",
+              fontSize: 16
+            }).setWordWrapWidth(270);
+
+            this.assetsExternos = this.add.text(40, 500, `Alguns assets não são autorais. Todos os autores e autoras destes estão presentes na seção "Referências" do GDD (Game Design Document).`, {
+              fontFamily: "pixelArtP",
+              fontSize: 16
+            }).setWordWrapWidth(460);
+
+            this.tweens.add({
+              targets: this.telaPreta,
+              alpha: 0,
+              duration: 1000,
+              onComplete: () => {
+                transicionando = false;
+              },
+            });
+
+          },
+        });
+        
+      }
     });
-  });
-};
-
-update() {}
-
+  }
 }
+
+
