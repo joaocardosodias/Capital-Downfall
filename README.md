@@ -28,11 +28,11 @@
 
 ### Instrutores
 
-- <a href="https://www.linkedin.com/in/victorbarq/">Bryan Ferreira </a>
-- <a href="https://github.com/brunamayer">Bruna Mayer </a>
-- <a href="https://www.linkedin.com/in/fernando-pizzo-208b526a/">Fernando Pizzo</a>
-- <a href="https://www.linkedin.com/in/victorbarq/">Renato Penha </a>
-- <a href="https://www.linkedin.com/in/victorbarq/">Marcelo Gonçalves</a>
+- <a href="https://www.linkedin.com/in/bryan-kano/"> Bryan Kano Ferreira </a>
+- <a href="https://github.com/brunamayer"> Bruna Mayer Costa </a>
+- <a href="https://www.linkedin.com/in/fernando-pizzo-208b526a/"> Fernando Pizzo Ribeiro </a>
+- <a href="https://www.linkedin.com/in/renato-penha/"> Renato Penha </a>
+- <a href="https://www.linkedin.com/in/marcelo-gon%C3%A7alves-phd-a550652/"> Marcelo Luiz do Amaral Gonçalves </a>
 
 ## 📜 Descrição
 
@@ -40,9 +40,9 @@
 
 ❓O jogo "Capital DownFall" foi desenvolvido no formato 2D(jogo com uma visão bidimensional, na qual todo o jogo se passa em um plano), para que qualquer pessoa consiga entender e jogar de forma fácil, além de o jogador ter uma perspectiva maior do ambiente. Ele é uma forma de onboarding gameficado feito para preparar novos analistas de fundos com pouca ou sem experiências no mercado.
 
-🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma grave crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. \*
+🎮O jogo ocorre em um período fictício, no qual o mundo está sofrendo uma grave crise financeira e um novo analista é contratado, ele tem 3 dias para reerguer o valor de mercado da empresa e ajudar o mundo nesse período extremo, por meio da aplicação de seus aprendizados nas tarefas do Banco. 
 
-link para jogar:https://inteli-college.github.io/2025-1A-T16-IN01-G05/
+\* Link para jogar: https://inteli-college.github.io/2025-1A-T16-IN01-G05/
 
 ## 📁 Estrutura de pastas
 
@@ -82,11 +82,35 @@ Observação: o jogo foi feito para o navegador Google Chrome, portanto há algu
 ## 🗃 Histórico de lançamentos
 
 - ## 0.5.0 - 11/04/2025
+
+  * Revisão da documentação;
+  * Revisão do jogo;
+  * Apresentação Pitch. 
+
 - ## 0.4.0 - 28/03/2025
+
+  * Documentação de testes de usabilidade e jogabilidade;
+  * Revisão do Entendimento do Negócio;
+  * Finalização do MVP;
+  * Adição da fase da Sala de Guerra.
+
 - ## 0.3.0 - 14/03/2025
+
+  * Documentação dos testes iniciais;
+  * Desenvolvimento;
+  * Adição do Dia 2.
+
 - ## 0.2.0 - 28/02/2025
+
+  * Documentação de concepção do jogo;
+  * Desenvolvimento básico;
+  *  Adição do Dia 1.
+  
 - ## 0.1.0 - 14/02/2025
+  
+  * Entendimento do problema, do negócio e do produto;
+  * Desenvolvimento preliminar do jogo.
 
 ## 📋 Licença/License
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli,Ana Cristina, Henrique Da Rós, João Cardoso, Lucas Lopes,Lucas Michel, Nicole Zanin, Teodoro Neira </a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Intelihub/Template_M1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Intelihub/Template_M1">Inteli</a> , <a href="https://github.com/AnaCris007">Ana Cristina</a> , <a href="https://github.com/Jow-tech">Henrique Da Rós</a> , <a href="https://github.com/joaocardosodias">João Cardoso</a> , <a href="https://github.com/LucasLopes964">Lucas Lopes</a> , <a href="https://github.com/m4ichel">Lucas Michel</a> , <a href="https://github.com/nizaninn">Nicole Zanin</a> and <a href="https://github.com/TeodoroNeira">Teodoro Neira </a> </a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
