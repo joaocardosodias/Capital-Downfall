@@ -97,7 +97,7 @@ Observação: o jogo foi feito para o navegador Google Chrome, portanto há algu
 - ## 0.3.0 - 14/03/2025
 
   * Documentação dos testes iniciais;
-  * Desenvolvimento;
+  * Desenvolvimento intermediário;
   * Adição do Dia 2.
 
 - ## 0.2.0 - 28/02/2025
